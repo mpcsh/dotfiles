@@ -1,1 +1,1 @@
-[[ $HOSTNAME == "Antenora" || $HOSTNAME == "Paradisio" ]] && chromium --force-device-scale-factor=1.25 || chromium
+[[ $HOSTNAME == "MacPherson" || $HOSTNAME == "Paradisio" ]] && chromium --force-device-scale-factor=1.25 || chromium

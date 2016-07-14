@@ -67,12 +67,12 @@ ssid() {
 }
 
 #Run
-if [[ $HOSTNAME == "Antenora" || $HOSTNAME == "Paradisio" ]]; then
+if [[ $HOSTNAME == "MacPherson" || $HOSTNAME == "Paradisio" ]]; then
 	while true; do
 		echo "%{l} $(desktop) | $(colortemp) | $(brightness)%{c}$(clock)%{r}$(ssid) | $(vpn) | $(volume) | $(battery) "
 		sleep 0.05
 	done
-elif [[ $HOSTNAME == "Skynet" ]]; then
+elif [[ $HOSTNAME == "Xanadu" ]]; then
 	while true; do
 		echo "%{l} $(desktop) | $(colortemp)%{c}$(clock)%{r}$(vpn) "
 		sleep 0.05
