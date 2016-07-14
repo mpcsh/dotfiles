@@ -1,0 +1,31 @@
+!borders
+URxvt*borderless: true
+URxvt*internalBorder: 10
+URxvt*externalBorder: 0
+
+!scrolling
+URxvt*scrollBar: false
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress: true
+URxvt*saveLines: 65535
+
+!font
+*font: xft:Tamsyn:size=10
+*iconFont: xft:FontAwesome:size=8
+
+!no bold fonts for you
+URxvt*boldFont:
+URxvt*italicFont:
+URxvt*bolditalicFont:
+
+!bar
+barHeight: 36
+barXOffset: 12
+barYOffset: 12
+
+!static colors
+*background: #222222
+*accent: #444444
+*foreground: #aaaaaa
+*cursorColor: #aaaaaa

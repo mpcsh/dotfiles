@@ -1,0 +1,103 @@
+#
+# bspwm-specific hotkeys
+#
+
+# kill focused node
+super + q
+	bspc node -c
+
+# swap focused node with node in given direction
+super + {Left,Right,Up,Down}
+	bspc node -s {west,east,north,south}
+
+# send focused node to given desktop
+super + shift + {0,1,2,3,4,5,6,7,8,9}
+	bspc node -d {0,1,2,3,4,5,6,7,8,9}
+
+# focus given desktop
+super + {0,1,2,3,4,5,6,7,8,9}
+	bspc desktop -f {0,1,2,3,4,5,6,7,8,9}
+
+# toggle fullscreen for focused node
+super + shift + f
+	bspc node -t ~fullscreen
+
+# swap focused node with biggest node
+super + shift + b
+	bspc node -s biggest
+
+# circulate windows forward or backward
+super + shift + {Left,Right}
+	bspc node @/ -C {forward,backward}
+
+# vertically mirror the desktop
+super + shift + v
+	bspc node @/ -F vertical
+
+#
+# application shortcuts
+#
+
+# lock
+super + Escape
+	~/dotfiles/scripts/lock
+
+# lock and suspend
+super + shift + Escape
+	~/dotfiles/scripts/suspend
+
+# launch urxvt
+super + grave
+	urxvt
+
+# launch chromium
+super + c
+	~/dotfiles/scripts/startchromium
+
+# take screenshot
+super + Print
+	scrot -e 'mv $f ~/scrots/'
+
+# launch ranger
+super + r
+	urxvt -e ranger
+
+# launch dmenu
+super + space
+	~/dotfiles/scripts/dmenu_run
+
+# launch spotify
+super + s
+	spotify --force-device-scale-factor=1.0001
+
+# launch irssi
+super + i
+	urxvt -e irssi
+
+# launch toxic
+super + t
+	urxvt -e toxic
+
+#
+# laptop function keys
+#
+
+# increase brightness
+XF86MonBrightnessUp
+	~/dotfiles/scripts/xbacklightup
+
+# decrease brightness
+XF86MonBrightnessDown
+	~/dotfiles/scripts/xbacklightdown
+
+# increase volume
+XF86AudioRaiseVolume
+	pamixer -i 5
+
+# decrease volume
+XF86AudioLowerVolume
+	pamixer -d 5
+
+# toggle mute
+XF86AudioMute
+	pamixer -t

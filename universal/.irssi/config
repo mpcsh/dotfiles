@@ -1,0 +1,61 @@
+utf8 = "on";
+
+servers = (
+	{
+		address = "unix.chat";
+		chatnet = "unixchat";
+		port = "6697";
+		use_ssl = "yes";
+		autoconnect = "yes";
+		ssl_capath = "/etc/ssl/certs";
+	}
+);
+
+chatnets = {
+	unixchat = {
+		type = "IRC";
+	};
+};
+
+channels = (
+	{
+		name = "#unix";
+		chatnet = "unixchat";
+		autojoin = "Yes";
+	}
+);
+
+settings = {
+	core = {
+		real_name = "mpcsh";
+		user_name = "mpcsh";
+		nick = "mpcsh";
+	};
+
+	"fe-text" = {
+		actlist_sort = "refnum";
+		term_force_colors = "yes";
+		indent = "12";
+	};
+
+	"fe-common/core" = {
+		theme = "irssi.theme";
+	};
+};
+
+statusbar = {
+	default = {
+		window = {
+			items = {
+				barstart = { priority = "100"; };
+				user = { };
+				window = { };
+				window_empty = { };
+				lag = { priority = "-1"; };
+				act = { priority = "10"; };
+				more = { priority = "-1"; alignment = "right"; };
+				barend = { priority = "100"; alignment = "right"; };
+			};
+		};
+	};
+};

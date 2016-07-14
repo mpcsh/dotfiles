@@ -1,0 +1,23 @@
+#! /bin/bash
+
+BG="$(xrq background)"
+FG="$(xrq foreground)"
+WIDTH="$(( $(xdpyinfo | awk '/dimensions:/ {print $2; exit}' | cut -dx -f1)-$(( 2*$(xrq barXOffset) )) ))"
+HEIGHT="$(xrq barHeight)"
+XOFF="$(xrq barXOffset)"
+YOFF="$(xrq barYOffset)"
+FONT="$(xrq font | sed 's/.*xft://g')"
+ICONS="$(xrq iconFont | sed 's/.*xft://g')"
+
+pgrep lemonbar &> /dev/null
+if (( $? == 0 )); then
+	killall lemonbar
+fi
+
+if [[ $HOSTNAME == "Antenora" || $HOSTNAME == "Paradisio" ]]; then
+	nice ~/.config/lemonbar/lemonbar | lemonbar -B $BG -F $FG -g $WIDTH\x$HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -o -1 -f $ICONS & disown
+elif [[ $HOSTNAME == "Skynet" ]]; then
+	nice ~/.config/lemonbar/lemonbar | lemonbar -B $BG -F $FG -g $WIDTH\x$HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -f $ICONS & disown
+else
+	echo "Need to configure lemonbar for new hostname"
+fi

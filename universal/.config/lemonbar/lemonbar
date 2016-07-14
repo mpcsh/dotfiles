@@ -1,0 +1,82 @@
+#! /bin/bash
+
+#Colors
+WARN="%{B#b71c1c}"
+
+#Universal
+clock() {
+	DATE=$(date "+%a %d %b, %T")
+	echo -n "${DATE,,}"
+}
+
+colortemp() {
+	TEMP=$(redshift -p | grep K | awk '{print $3}')
+	echo -en "\uf0eb $TEMP"
+}
+
+desktop() {
+	DESKS=$(bspc query -D -d focused)
+	echo -en "\uf108 $DESKS"
+}
+
+vpn() {
+	PIDFILE=(/run/openvpn*.pid)
+	if [ -e ${PIDFILE[0]} ]; then
+		CURR=$(echo ${PIDFILE[0]} | cut -d\@ -f2 | cut -d. -f1)
+		echo -en "\uf084 $CURR"
+	else
+		echo -en "$WARN\uf084 off%{B-}"
+	fi
+}
+
+#Laptop-specific
+battery() {
+	BAT=$(acpi -b | awk '{print $4}' | sed 's/%.*//g')
+	CHARGING=$(cat /sys/class/power_supply/AC/online)
+	if (( $CHARGING == 1 )); then
+		ICON="\uf1e6"
+	else
+		case "$BAT" in
+			[0-9]|1[0-9])
+				ICON="\uf244";;
+			[2-3][0-9])
+				ICON="\uf243";;
+			[4-5][0-9])
+				ICON="\uf242";;
+			[6-7][0-9])
+				ICON="\uf241";;
+			[8-9][0-9]|100)
+				ICON="\uf240";;
+		esac
+	fi
+	(( $BAT <= 10 )) && echo -en "$WARN$ICON $BAT%%{B-}" || echo -en "$ICON $BAT%"
+}
+
+volume() {
+	[[ $(pamixer --get-mute) == "true" ]]  && echo -en "\uf026 mute" || echo -en "\uf028 $(pamixer --get-volume)%"
+}
+
+brightness() {
+	BRIGHT=$(xbacklight | awk '{printf("%1.f\n", $1)}')
+	echo -en "\uf185 $BRIGHT%"
+}
+
+ssid() {
+	SSID=$(iwgetid -r)
+	(( $? == 0 )) && echo -en "\uf1eb $SSID" || echo -en "$WARN\uf1eb off%{B-}"
+}
+
+#Run
+if [[ $HOSTNAME == "Antenora" || $HOSTNAME == "Paradisio" ]]; then
+	while true; do
+		echo "%{l} $(desktop) | $(colortemp) | $(brightness)%{c}$(clock)%{r}$(ssid) | $(vpn) | $(volume) | $(battery) "
+		sleep 0.05
+	done
+elif [[ $HOSTNAME == "Skynet" ]]; then
+	while true; do
+		echo "%{l} $(desktop) | $(colortemp)%{c}$(clock)%{r}$(vpn) "
+		sleep 0.05
+	done
+else
+	echo "Invalid host"
+fi

@@ -1,0 +1,8 @@
+#! /bin/bash
+FONT=$(xrq font | cut -d: -f2,3)
+XOFF=$(xrq barXOffset)
+YOFF=$(xrq barYOffset)
+WIDTH=$(xrq barWidth)
+HEIGHT=$(xrq barHeight)
+SELBG=$(xrq URxvt*color0)
+dmenu -fn $FONT -x $XOFF -y $YOFF -w $WIDTH -h $HEIGHT -sb $SELBG

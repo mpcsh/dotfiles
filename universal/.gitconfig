@@ -1,0 +1,17 @@
+[user]
+	email = markpcohen@protonmail.com
+	name = Mark Cohen
+	signingkey = BD0B7F87
+[credential]
+	helper = store
+[push]
+	default = simple
+[alias]
+	co = checkout
+	ci = commit -m
+	ca = commit -am
+	st = status
+	br = branch
+	cp = cherry-pick
+	ls = log --oneline --decorate --graph --all --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]"
+	la = log --oneline --decorate --graph --all --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --numstat

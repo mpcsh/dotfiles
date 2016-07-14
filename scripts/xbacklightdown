@@ -1,0 +1,2 @@
+#! /bin/bash
+xbacklight -set $(( $(xbacklight | awk '{printf("%1.f\n", $1)}') - 5 )) -time 0 -steps 1

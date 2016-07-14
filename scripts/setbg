@@ -1,0 +1,24 @@
+#! /bin/bash
+#set wallpaper
+ln -sf $1 ~/.wallpaper
+feh --no-fehbg --bg-fill ~/.wallpaper
+
+#get middle 8 colors from k-means
+colors -en 16 $1 | sed '9,16p;d' > ~/.__colors
+
+#duplicate colors 0-7 for colors 8-15
+cat ~/.__colors > ~/._colors
+cat ~/.__colors >> ~/._colors
+rm -f ~/.__colors
+
+#loop through all colors, add xrdb formatting
+N=0
+rm -f ~/.colors
+cat ~/._colors | while read LINE; do
+	echo "*color$N: $LINE" >> ~/.colors
+	N=$((N+1))
+done
+rm -f ~/._colors
+
+xrdb -merge ~/.colors
+bspc config focused_border_color $(xrq color1)
