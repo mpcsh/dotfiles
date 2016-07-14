@@ -13,13 +13,6 @@ export MP_SITETYPE=maximum
 source ~/.bash_aliases
 
 #prompt
-source /usr/share/git/git-prompt.sh
-
-function prompt() {
-	BRANCH=$(__git_ps1 %s)
-	[[ $BRANCH ]] && echo -e " on $(tput setaf 4)$BRANCH$(tput sgr0)" || echo -e ''
-}
-
 function prompt_git() {
 	local s='';
 	local branchName='';
@@ -62,15 +55,13 @@ function prompt_git() {
 			git rev-parse --short HEAD 2> /dev/null || \
 			echo '(unknown)')";
 
-		[ -n "${s}" ] && s=" [${s}]";
-
-		echo -e "${branchName}${s}";
+		echo -e " on $(tput setaf 4)${branchName}${s}$(tput sgr0)";
 	else
 		return;
 	fi;
 }
 
-PS1='$(tput setaf 1)\u$(tput sgr0) at $(tput setaf 2)\h$(tput sgr0) in $(tput setaf 3)\W$(tput sgr0)$(prompt)\n» '
+PS1='$(tput setaf 1)\u$(tput sgr0) at $(tput setaf 2)\h$(tput sgr0) in $(tput setaf 3)\W$(tput sgr0)$(prompt_git)\n» '
 
 #display startx prompt on Antenora and Skynet when logging in to a tty
 if [[ -z $DISPLAY && $HOSTNAME == "Antenora" || -z $DISPLAY && $HOSTNAME == "Skynet" || -z $DISPLAY && $HOSTNAME == "Paradisio" ]]; then
