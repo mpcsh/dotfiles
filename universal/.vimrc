@@ -45,7 +45,7 @@ set t_Co=16
 
 "statusline
 set laststatus=2
-set statusline=%t\ %m\ %y%=[%04l][%02c]
+set statusline=\ %t\ %m\ %y%=[%04l][%02c]\ 
 
 "ics
 execute pathogen#infect()
