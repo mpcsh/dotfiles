@@ -27,7 +27,7 @@ super + shift + b
 	bspc node -s biggest
 
 # circulate windows forward or backward
-super + shift + {Left,Right}
+super + shift + {h,l}
 	bspc node @/ -C {forward,backward}
 
 # vertically mirror the desktop
