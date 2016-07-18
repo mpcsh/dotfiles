@@ -19,16 +19,6 @@ desktop() {
 	echo -en "\uf108 $DESKS"
 }
 
-vpn() {
-	PIDFILE=(/run/openvpn*.pid)
-	if [ -e ${PIDFILE[0]} ]; then
-		CURR=$(echo ${PIDFILE[0]} | cut -d\@ -f2 | cut -d. -f1)
-		echo -en "\uf084 $CURR"
-	else
-		echo -en "$WARN\uf084 off%{B-}"
-	fi
-}
-
 #Laptop-specific
 battery() {
 	BAT=$(acpi -b | awk '{print $4}' | sed 's/%.*//g')
