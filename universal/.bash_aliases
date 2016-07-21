@@ -36,9 +36,6 @@ alias ct='urxvt -cd $(pwd) & disown &> /dev/null'
 #run previous command as root
 alias fuck='sudo $(history -p \!\!)'
 
-#pastebin
-alias tb='nc termbin.com 9999'
-
 #mkdir and cd into it
 function mkcd() {
 	mkdir -p "$1"
