@@ -14,7 +14,7 @@ if (( $? == 0 )); then
 	killall lemonbar
 fi
 
-if [[ $HOSTNAME == "MacPherson" || $HOSTNAME == "Paradisio" ]]; then
+if [[ $HOSTNAME == "longs" || $HOSTNAME == "Paradisio" ]]; then
 	nice ~/.config/lemonbar/lemonbar | lemonbar -B $BG -F $FG -g $WIDTH\x$HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -o -1 -f $ICONS & disown
 elif [[ $HOSTNAME == "Xanadu" ]]; then
 	nice ~/.config/lemonbar/lemonbar | lemonbar -B $BG -F $FG -g $WIDTH\x$HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -f $ICONS & disown
