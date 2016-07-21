@@ -41,7 +41,8 @@ alias tb='nc termbin.com 9999'
 
 #mkdir and cd into it
 function mkcd() {
-	mkdir -p '$1' && cd '$1'
+	mkdir -p "$1"
+	cd "$1"
 }
 
 #cd .. repeatedly
