@@ -63,8 +63,8 @@ function prompt_git() {
 
 PS1='$(tput setaf 1)\u$(tput sgr0) at $(tput setaf 2)\h$(tput sgr0) in $(tput setaf 3)\W$(tput sgr0)$(prompt_git)\n» '
 
-#display startx prompt on longs and Xanadu when logging in to a tty
-if [[ -z $DISPLAY && $HOSTNAME == "longs" || -z $DISPLAY && $HOSTNAME == "Xanadu" || -z $DISPLAY && $HOSTNAME == "Paradisio" ]]; then
+#display startx prompt on longs and annapurna when logging in to a tty
+if [[ -z $DISPLAY && $HOSTNAME == "longs" || -z $DISPLAY && $HOSTNAME == "annapurna" || -z $DISPLAY && $HOSTNAME == "Paradisio" ]]; then
 	fortune calvin | cowsay
 	echo "startx?"
 	select yn in "yes" "no"; do

@@ -62,7 +62,7 @@ if [[ $HOSTNAME == "longs" || $HOSTNAME == "Paradisio" ]]; then
 		echo "%{l} $(desktop) | $(colortemp) | $(brightness)%{c}$(clock)%{r}$(ssid) | $(volume) | $(battery) "
 		sleep 0.05
 	done
-elif [[ $HOSTNAME == "Xanadu" ]]; then
+elif [[ $HOSTNAME == "annapurna" ]]; then
 	while true; do
 		echo "%{l} $(desktop) | $(colortemp)%{c}$(clock) "
 		sleep 0.05
