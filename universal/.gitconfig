@@ -13,5 +13,4 @@
 	st = status
 	br = branch
 	cp = cherry-pick
-	ls = log --oneline --decorate --graph --all --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]"
-	la = log --oneline --decorate --graph --all --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --numstat
+	ls = log --oneline --decorate --graph --all
