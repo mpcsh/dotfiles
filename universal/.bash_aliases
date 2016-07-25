@@ -14,6 +14,7 @@ alias ln='ln -sf'
 #work on directories
 alias cp='cp -r'
 alias rm='rm -rf'
+alias mkdir='mkdir -p'
 
 #shred and delete
 alias shred='shred --remove'
