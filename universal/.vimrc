@@ -41,7 +41,7 @@ set shiftwidth=2
 set shortmess+=I
 
 "colorscheme
-set t_Co=16
+source ~/.colors/sourcerer.vim
 
 "statusline
 set laststatus=2

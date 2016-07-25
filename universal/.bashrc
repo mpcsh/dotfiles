@@ -70,7 +70,7 @@ if [[ -z $DISPLAY && $HOSTNAME == "longs" || -z $DISPLAY && $HOSTNAME == "annapu
 	select yn in "yes" "no"; do
 		case $yn in
 			yes ) exec startx;;
-			no ) break;;
+			no ) source ~/.colors/sourcerer.sh;;
 		esac
 	done
 fi

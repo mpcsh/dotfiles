@@ -36,6 +36,12 @@ alias ct='urxvt -cd $(pwd) & disown &> /dev/null'
 #run previous command as root
 alias fuck='sudo $(history -p \!\!)'
 
+#set X background
+function setbg() {
+	ln -sf $1 ~/.wallpaper
+	feh --no-fehbg --bg-fill ~/.wallpaper
+}
+
 #mkdir and cd into it
 function mkcd() {
 	mkdir -p "$1"

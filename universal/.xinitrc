@@ -1,6 +1,7 @@
 #themes!
 xrdb ~/.Xresources
-xrdb -merge ~/.colors
+xrdb -merge ~/.colors/sourcerer.Xresources
+bspc config focused_border_color $(xrq color9)
 feh --bg-scale ~/.wallpaper &
 
 #basic xorg settings
