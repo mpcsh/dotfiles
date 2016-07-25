@@ -1,9 +1,0 @@
-#!/bin/bash
-
-#to call this script, set $IDENTIFIER and $SLEEP_TIME env variables
-
-while true; do
-	echo -n "$IDENTIFIER"
-	$@
-	sleep $SLEEP_TIME
-done
