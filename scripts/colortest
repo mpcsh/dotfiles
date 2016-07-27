@@ -1,3 +1,6 @@
 #! /bin/bash
 
-xrdb -q | grep color | awk '{print $2}' | sort | hex2col
+for i in $(seq 0 7); do
+	xrq color$i | hex2col
+	xrq color$((i+8)) | hex2col
+done
