@@ -13,3 +13,7 @@
 
 # Ignore vendored Go files
 --ignore-dir=vendor
+
+# Ignore sys/proc
+--ignore-dir=proc
+--ignore-dir=sys
