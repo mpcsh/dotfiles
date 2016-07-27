@@ -28,7 +28,7 @@ function prompt_git() {
 
 			# Check for uncommitted changes in the index.
 			if ! $(git diff --quiet --ignore-submodules --cached); then
-				s+='+';
+				s+='±';
 			fi;
 
 			# Check for unstaged changes.
