@@ -39,7 +39,7 @@ alias fuck='sudo $(history -p \!\!)'
 
 #set X background
 function setbg() {
-	ln -sf $1 ~/.wallpaper
+	cp $1 ~/.wallpaper
 	feh --no-fehbg --bg-fill ~/.wallpaper
 }
 
