@@ -14,3 +14,5 @@
 	br = branch
 	cp = cherry-pick
 	ls = log --oneline --decorate --graph --all
+
+	latest = diff HEAD HEAD~1
