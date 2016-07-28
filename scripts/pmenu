@@ -1,0 +1,8 @@
+#! /bin/bash
+FONT=$(xrq font | cut -d: -f2,3)
+XOFF=$(xrq barXOffset)
+YOFF=$(xrq barYOffset)
+WIDTH="$(( $(xdpyinfo | awk '/dimensions:/ {print $2; exit}' | cut -dx -f1)-$(( 2*$(xrq barXOffset) )) ))"
+HEIGHT=$(xrq barHeight)
+SELBG=$(xrq color1)
+passmenu -fn $FONT -x $XOFF -y $YOFF -w $WIDTH -h $HEIGHT -sb $SELBG

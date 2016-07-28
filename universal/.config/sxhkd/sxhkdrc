@@ -66,6 +66,10 @@ super + r
 super + space
 	~/dotfiles/scripts/dmenu_run
 
+# launch passmenu
+super + p
+	~/dotfiles/scripts/pmenu
+
 # launch spotify
 super + s
 	spotify --force-device-scale-factor=1.0001
