@@ -1,7 +1,7 @@
 [user]
-	email = markpcohen@protonmail.com
+	email = m@markpcohen.com
 	name = Mark Cohen
-	signingkey = BD0B7F87
+	signingkey = 869DD7FD17A9933A2E7A464CF1DBC528097D76F1
 [credential]
 	helper = store
 [push]
