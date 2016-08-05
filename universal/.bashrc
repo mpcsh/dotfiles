@@ -3,7 +3,7 @@
 
 export EDITOR=vim
 export PATH=$PATH:~/dotfiles/scripts
-export GOPATH=~/go
+export GOPATH=~/.go
 
 #masterpassword settings
 export MP_FULLNAME=mpcsh
