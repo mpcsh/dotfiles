@@ -1,6 +1,3 @@
 #!/bin/bash
-scrot /tmp/screen.png
-SCREEN=/tmp/screen.png
-convert $SCREEN -scale 10% -scale 1000% -fill black -colorize 25% $SCREEN
-i3lock -i $SCREEN
-#systemctl suspend -i
+scrot /tmp/screen.png -e 'convert $f -scale 10% -scale 1000% -fill black -colorize 25% $f'
+i3lock -i /tmp/screen.png
