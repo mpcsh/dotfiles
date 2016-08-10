@@ -39,7 +39,7 @@ battery() {
 				ICON="\uf240";;
 		esac
 	fi
-	(( $BAT <= 10 )) && echo -en "$WARN$ICON $BAT%%{B-}" || echo -en "$ICON $BAT%"
+	(( $BAT <= 10 && $CHARGING != 1 )) && echo -en "$WARN$ICON $BAT%%{B-}" || echo -en "$ICON $BAT%"
 }
 
 volume() {
