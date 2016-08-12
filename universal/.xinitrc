@@ -8,7 +8,7 @@ feh --bg-scale ~/.wallpaper &
 xsetroot -cursor_name left_ptr &
 
 #no bell
-xset -b
+xset -b &
 
 #key repeat rate
 xset r rate 250 &
@@ -21,6 +21,7 @@ xset s off -dpms &
 
 #autostart apps
 bar &
+nice dunst &
 nice redshift &
 
 #window manager
