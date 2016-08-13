@@ -10,10 +10,6 @@ URxvt*scrollWithBuffer: true
 URxvt*scrollTtyKeypress: true
 URxvt*saveLines: 65535
 
-!font
-*font: xft:Tamsyn:size=10
-*iconFont: xft:FontAwesome:size=8
-
 !no bold fonts for you
 URxvt*boldFont:
 URxvt*italicFont:
@@ -29,3 +25,8 @@ barYOffset: 12
 *accent: #444444
 *foreground: #aaaaaa
 *cursorColor: #aaaaaa
+
+!clickable URLs
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
