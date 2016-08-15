@@ -17,3 +17,6 @@
 # Ignore sys/proc
 --ignore-dir=proc
 --ignore-dir=sys
+
+# Colors
+--color-match=green
