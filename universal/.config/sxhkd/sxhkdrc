@@ -72,8 +72,8 @@ super + p
 
 # launch spotify
 super + s
-	spotify --force-device-scale-factor=1.0001
-
+	~/dotfiles/scripts/startspotify
+	
 # launch irssi
 super + i
 	urxvt -e irssi

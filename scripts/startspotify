@@ -1,0 +1,1 @@
+[[ $HOSTNAME == "longs" || $HOSTNAME == "Paradisio" ]] && spotify --force-device-scale-factor=1.25 || spotify --force-device-scale-factor=1.0001
