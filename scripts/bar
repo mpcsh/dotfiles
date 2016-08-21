@@ -6,7 +6,7 @@ WIDTH="$(( $(xdpyinfo | awk '/dimensions:/ {print $2; exit}' | cut -dx -f1)-$(( 
 HEIGHT="$(xrq barHeight)"
 XOFF="$(xrq barXOffset)"
 YOFF="$(xrq barYOffset)"
-FONT="$(xrq font | sed 's/.*xft://g')"
+FONT="Tamsyn"
 ICONS="$(xrq iconFont | sed 's/.*xft://g')"
 
 pgrep lemonbar &> /dev/null
