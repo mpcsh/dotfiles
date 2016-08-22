@@ -64,7 +64,7 @@ super + r
 
 # launch dmenu
 super + space
-	~/dotfiles/scripts/dmenu dmenu_run
+	~/dotfiles/scripts/menu dmenu_run
 
 # launch passmenu
 super + p
