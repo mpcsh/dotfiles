@@ -64,11 +64,11 @@ super + r
 
 # launch dmenu
 super + space
-	~/dotfiles/scripts/dmenu_run
+	~/dotfiles/scripts/dmenu dmenu_run
 
 # launch passmenu
 super + p
-	~/dotfiles/scripts/pmenu
+	~/dotfiles/scripts/menu passmenu
 
 # launch spotify
 super + s
