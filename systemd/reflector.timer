@@ -1,0 +1,10 @@
+[Unit]
+Description=Pacman mirrorlist updates
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=360min
+Unit=reflector.service
+
+[Install]
+WantedBy=multi-user.target

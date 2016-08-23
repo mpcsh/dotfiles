@@ -1,0 +1,14 @@
+[Unit]
+Description=Automatically refresh DNS from https://api.opennicproject.org
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/cp /etc/resolv.conf /etc/resolv.conf.bak
+ExecStart=/usr/bin/curl -o /etc/resolv.conf https://api.opennicproject.org/geoip/?resolv&res=5
+TimeoutStopSec=180
+KillMode=process
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Automatically refresh DNS from https://api.opennicproject.org
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=360min
+Unit=opennic.service
+
+[Install]
+WantedBy=multi-user.target

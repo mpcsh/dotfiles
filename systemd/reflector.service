@@ -1,11 +1,13 @@
 [Unit]
 Description=Pacman mirrorlist update
-Requires=network-online.target
 After=network-online.target
 
 [Service]
-Type=oneshot
+Type=simple
 ExecStart=/usr/bin/reflector --protocol https --latest 25 --sort rate --save /etc/pacman.d/mirrorlist
+TimeoutStopSec=180
+KillMode=process
+KillSignal=SIGINT
 
 [Install]
 WantedBy=network-online.target
