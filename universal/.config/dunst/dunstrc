@@ -1,24 +1,18 @@
 [global]
-    font = "Tamsyn 12"
     allow_markup = yes
     format = "%s\n%b"
     sort = yes
     indicate_hidden = yes
-    alignment = center
-    bounce_freq = 0
-    show_age_threshold = 60
+    alignment = left
     word_wrap = yes
     ignore_newline = no
-    geometry = "500x12-12+12"
+    geometry = "500x64-12+12"
     transparency = 0
-    idle_threshold = 120
-    monitor = 0
     follow = mouse
     sticky_history = yes
-    line_height = 0
-    separator_height = 2
-    padding = 10
-    horizontal_padding = 10
+    padding = 12
+    horizontal_padding = 12
+		line_height = 12
     separator_color = "#999999"
     startup_notification = false
 
