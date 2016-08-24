@@ -22,7 +22,7 @@ xset s off -dpms &
 
 #autostart apps
 bar &
-nice dunst &
+nice dunst -fn $(xrq iconFont | sed 's/.*xft://g') &
 nice redshift &
 
 #window manager
