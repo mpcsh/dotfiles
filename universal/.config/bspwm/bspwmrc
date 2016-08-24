@@ -10,4 +10,10 @@ bspc config ignore_ewmh_focus true
 bspc config normal_border_color $(xrq accent)
 bspc config focused_border_color $(xrq color1)
 
-bspc monitor -d 1 2 3 4 5 6 7 8 9 0
+if (( $(xrandr --listactivemonitors | grep -v eDP1 | grep DP1) == 0 )); then
+	~/.screenlayout/keybase.sh
+	bspc monitor eDP1 -d aux
+	bspc monitor DP1 -d 1 2 3 4 5 6 7 8 9 0
+else
+	bspc monitor -d 1 2 3 4 5 6 7 8 9 0
+fi
