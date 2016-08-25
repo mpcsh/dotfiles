@@ -59,7 +59,7 @@ ssid() {
 #Run
 if [[ $HOSTNAME == "longs" || $HOSTNAME == "Paradisio" ]]; then
 	while true; do
-		echo "%{l} $(desktop) | $(colortemp) | $(brightness)%{c}$(clock)%{r}$(ssid) | $(volume) | $(battery) "
+		echo "%{l}  $(desktop) | $(colortemp) | $(brightness)%{c}$(clock)%{r}$(ssid) | $(volume) | $(battery)  "
 		sleep 0.05
 	done
 elif [[ $HOSTNAME == "annapurna" ]]; then
