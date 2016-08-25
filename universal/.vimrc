@@ -43,6 +43,7 @@ set shortmess+=I
 "colorscheme
 set t_Co=16
 set background=light
+colorscheme sourcerer
 
 "statusline
 set laststatus=2
