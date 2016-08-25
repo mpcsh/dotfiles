@@ -12,7 +12,6 @@
     sticky_history = yes
     padding = 12
     horizontal_padding = 12
-		line_height = 12
     separator_color = "#999999"
     startup_notification = false
 
