@@ -2,7 +2,7 @@
 
 BG="$(xrq background)"
 FG="$(xrq foreground)"
-WIDTH="$(( $(xdpyinfo | awk '/dimensions:/ {print $2; exit}' | cut -dx -f1)-$(( 2*$(xrq barXOffset) )) ))"
+WIDTH="$(( $(xdpyinfo | awk '/dimensions:/ {print $2; exit}' | cut -dx -f1)-$(( 2*$(xrq barOffset) )) ))"
 HEIGHT="$(xrq barHeight)"
 XOFF="$(xrq barOffset)"
 YOFF=$XOFF
