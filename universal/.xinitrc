@@ -22,7 +22,7 @@ xset s off -dpms &
 
 #autostart apps
 bar &
-nice dunst -fn "$(xrq barFont | sed 's/.*xft://g' | sed 's/:size=/ /g')" &
+nice dunst -fn "$(xrq barFont | sed 's/.*xft://g' | sed 's/:size=/ /g' | sed 's/:antialias.*//g')" &
 nice redshift &
 nice compton &
 
