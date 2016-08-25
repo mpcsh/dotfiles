@@ -4,8 +4,8 @@ BG="$(xrq background)"
 FG="$(xrq foreground)"
 WIDTH="$(( $(xdpyinfo | awk '/dimensions:/ {print $2; exit}' | cut -dx -f1)-$(( 2*$(xrq barXOffset) )) ))"
 HEIGHT="$(xrq barHeight)"
-XOFF="$(xrq barXOffset)"
-YOFF="$(xrq barYOffset)"
+XOFF="$(xrq barOffset)"
+YOFF=$XOFF
 FONT=$(xrq barFont | cut -d: -f2,3)
 ICONS="$(xrq iconFont | sed 's/.*xft://g')"
 

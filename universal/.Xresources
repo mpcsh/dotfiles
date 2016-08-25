@@ -16,9 +16,8 @@ URxvt*italicFont:
 URxvt*bolditalicFont:
 
 !bar
-barHeight: 36
-barXOffset: 12
-barYOffset: 12
+barHeight: 48
+barOffset: 18
 
 !static colors
 *background: #222222
