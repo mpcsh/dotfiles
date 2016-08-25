@@ -24,6 +24,7 @@ xset s off -dpms &
 bar &
 nice dunst -fn "$(xrq barFont | sed 's/.*xft://g' | sed 's/:size=/ /g')" &
 nice redshift &
+nice compton &
 
 #window manager
 sxhkd &
