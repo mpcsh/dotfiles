@@ -1,4 +1,4 @@
 !font
-*font: xft:Iosevka:size=10
-*barFont: xft:Iosevka:size=10
-*iconFont: xft:FontAwesome:size=8
+*font: xft:Iosevka:size=10:antialias=true
+*barFont: xft:Iosevka:size=10:antialias=true
+*iconFont: xft:FontAwesome:size=8:antialias:true
