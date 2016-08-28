@@ -18,8 +18,8 @@ set undodir=$HOME/.vim/undo
 set undolevels=1000
 set undoreload=10000
 
-" syntax highlighting
-syntax on
+" disable the bell
+set vb t_vb=
 
 " x clipboard access
 set clipboard=unnamedplus
