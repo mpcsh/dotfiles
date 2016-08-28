@@ -1,0 +1,41 @@
+imports:
+  vim-abolish: universal/.vim/bundle/abolish.vim
+  vim-coffee-script: universal/.vim/bundle/coffee-script.vim
+  vim-commentary: universal/.vim/bundle/commentary.vim
+  vim-fugitive: universal/.vim/bundle/fugitive.vim
+  vim-replace: universal/.vim/bundle/replace.vim
+  vim-rust: universal/.vim/bundle/rust.vim
+  vim-sensible: universal/.vim/bundle/sensible.vim
+  vim-surround: universal/.vim/bundle/surround.vim
+
+git module vim-abolish:
+  url: https://github.com/tpope/vim-abolish.git
+  rev: 125908e01dd69294743c7e22d3028855158aa44c
+
+git module vim-coffee-script:
+  url: https://github.com/kchmck/vim-coffee-script.git
+  rev: 5de5f371a90d714296466239071473788865b6ef
+
+git module vim-commentary:
+  url: https://github.com/tpope/vim-commentary.git
+  rev: 73e0d9a9d1f51b6cc9dc965f62669194ae851cb1
+
+git module vim-fugitive:
+  url: https://github.com/tpope/vim-fugitive.git
+  rev: aac85a268e89a6c8be79341e130ac90256fadbd6
+
+git module vim-replace:
+  url: https://github.com/vim-scripts/ReplaceWithRegister.git
+  rev: 832efc23111d19591d495dc72286de2fb0b09345
+
+git module vim-rust:
+  url: https://github.com/rust-lang/rust.vim.git
+  rev: fc11d02fee330df7b30c83a80f09dd0c60ab43ce
+
+git module vim-sensible:
+  url: https://github.com/tpope/vim-sensible.git
+  rev: 9e91be7e0fb42949831fe3161ef583363648aa58
+
+git module vim-surround:
+  url: https://github.com/tpope/vim-surround.git
+  rev: e49d6c2459e0f5569ff2d533b4df995dd7f98313
