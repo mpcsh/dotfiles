@@ -49,6 +49,8 @@ imap <C-l> <Esc><C-l>a
 set shortmess+=I
 
 " colorscheme
+syntax enable
+set background=dark
 colorscheme sourcerer
 
 " statusline
