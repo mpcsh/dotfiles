@@ -36,10 +36,8 @@ set tabstop=2
 set shiftwidth=2
 
 " use <Tab> to indent lines
-inoremap <Tab> <C-o>>>
 noremap <Tab> <S-v>>
 " use <Shift-Tab> to unindent lines
-inoremap <S-Tab> <C-o><<
 noremap <S-Tab> <S-v>>
 " since CTRL-I and <Tab> are the same key (*sigh*), we need to unclobber the original CTRL-I binding.
 nnoremap <leader>CTRL-I CTRL-I
