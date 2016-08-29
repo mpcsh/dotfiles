@@ -37,6 +37,9 @@ alias ct='urxvt -cd $(pwd) & disown &> /dev/null'
 #run previous command as root
 alias fuck='sudo $(history -p \!\!)'
 
+#nvim
+alias vim='nvim'
+
 #set X background
 function setbg() {
 	[[ $# -eq 0 ]] && : || cp $1 ~/.wallpaper
