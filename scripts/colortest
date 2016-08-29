@@ -1,6 +1,5 @@
 #! /bin/bash
 
-for i in $(seq 0 7); do
+for i in $(seq 0 15); do
 	xrq color$i | hex2col
-	xrq color$((i+8)) | hex2col
 done

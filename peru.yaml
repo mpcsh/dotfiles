@@ -1,12 +1,19 @@
 imports:
+  dircolors-solarized: universal/.colors/dircolors-solarized
+
   vim-abolish: universal/.vim/bundle/abolish.vim
   vim-coffee-script: universal/.vim/bundle/coffee-script.vim
+  vim-colors-solarized: universal/.vim/bundle/solarized.vim
   vim-commentary: universal/.vim/bundle/commentary.vim
   vim-fugitive: universal/.vim/bundle/fugitive.vim
   vim-replace: universal/.vim/bundle/replace.vim
   vim-rust: universal/.vim/bundle/rust.vim
   vim-sensible: universal/.vim/bundle/sensible.vim
   vim-surround: universal/.vim/bundle/surround.vim
+
+git module dircolors-solarized:
+  url: https://github.com/seebi/dircolors-solarized.git
+  rev: 7ff9a697dcd7a0c452ed6cfc736b761c9a1714c4
 
 git module vim-abolish:
   url: https://github.com/tpope/vim-abolish.git
@@ -15,6 +22,10 @@ git module vim-abolish:
 git module vim-coffee-script:
   url: https://github.com/kchmck/vim-coffee-script.git
   rev: 5de5f371a90d714296466239071473788865b6ef
+
+git module vim-colors-solarized:
+  url: https://github.com/altercation/vim-colors-solarized.git
+  rev: 528a59f26d12278698bb946f8fb82a63711eec21
 
 git module vim-commentary:
   url: https://github.com/tpope/vim-commentary.git

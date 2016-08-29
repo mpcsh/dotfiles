@@ -61,7 +61,10 @@ function prompt_git() {
 	fi;
 }
 
-PS1='$(tput setaf 1)\u$(tput sgr0) at $(tput setaf 2)\h$(tput sgr0) in $(tput setaf 3)\W$(tput sgr0)$(prompt_git)\n» '
+PS1='$(tput setaf 3)\u$(tput sgr0) at $(tput setaf 1)\h$(tput sgr0) in $(tput setaf 2)\W$(tput sgr0)$(prompt_git)\n» '
+
+# dircolors
+eval $(dircolors ~/.colors/dircolors-solarized/dircolors.ansi-dark)
 
 #dem perms!
 [[ $HOSTNAME == "xyz" ]] && umask 022 || umask 077
@@ -73,7 +76,7 @@ if [[ -z $DISPLAY && $HOSTNAME == "longs" || -z $DISPLAY && $HOSTNAME == "annapu
 	select yn in "yes" "no"; do
 		case $yn in
 			yes ) exec startx;;
-			no ) source ~/.colors/sourcerer.sh; break;;
+			no ) break;;
 		esac
 	done
 fi

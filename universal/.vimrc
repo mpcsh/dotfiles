@@ -51,7 +51,7 @@ set shortmess+=I
 " colorscheme
 syntax enable
 set background=dark
-colorscheme sourcerer
+colorscheme solarized
 
 " statusline
 set laststatus=2

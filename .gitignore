@@ -3,3 +3,6 @@
 
 # vim
 universal/.vim/bundle
+
+# dircolors
+universal/.colors/dircolors-solarized
