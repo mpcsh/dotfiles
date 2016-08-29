@@ -19,12 +19,6 @@ URxvt*bolditalicFont:
 barHeight: 48
 barOffset: 18
 
-!static colors
-*background: #222222
-*accent: #444444
-*foreground: #aaaaaa
-*cursorColor: #aaaaaa
-
 !clickable URLs
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: /usr/bin/xdg-open
