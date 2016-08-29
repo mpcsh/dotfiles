@@ -67,7 +67,7 @@ PS1='$(tput setaf 4)\u$(tput sgr0) at $(tput setaf 3)\h$(tput sgr0) in $(tput se
 [[ $HOSTNAME == "xyz" ]] && umask 022 || umask 077
 
 #display startx prompt on longs and annapurna when logging in to a tty
-if [[ -z $DISPLAY && $HOSTNAME == "longs" || -z $DISPLAY && $HOSTNAME == "annapurna" || -z $DISPLAY && $HOSTNAME == "Paradisio" ]]; then
+if [[ -z $DISPLAY && $HOSTNAME == "longs" || -z $DISPLAY && $HOSTNAME == "annapurna" || -z $DISPLAY && $HOSTNAME == "eiger" ]]; then
 	fortune calvin | cowsay
 	echo "startx?"
 	select yn in "yes" "no"; do

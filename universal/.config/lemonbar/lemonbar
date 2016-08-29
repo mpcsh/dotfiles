@@ -57,7 +57,7 @@ ssid() {
 }
 
 #Run
-if [[ $HOSTNAME == "longs" || $HOSTNAME == "Paradisio" ]]; then
+if [[ $HOSTNAME == "longs" || $HOSTNAME == "eiger" ]]; then
 	while true; do
 		echo "%{l}  $(desktop) | $(colortemp) | $(brightness)%{c}$(clock)%{r}$(ssid) | $(volume) | $(battery)  "
 		sleep 0.05
