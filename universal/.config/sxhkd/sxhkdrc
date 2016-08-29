@@ -34,6 +34,10 @@ super + shift + {h,l}
 super + shift + v
 	bspc node @/ -F vertical
 
+# reload bspwm config
+super + shift + ctrl + Escape
+	~/.config/bspwm/bspwmrc
+
 #
 # application shortcuts
 #
