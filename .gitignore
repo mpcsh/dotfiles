@@ -5,5 +5,5 @@
 universal/.config/nvim/*
 !universal/.config/nvim/init.vim
 
-# dircolors
-universal/.colors/dircolors-solarized
+# colors
+universal/.colors
