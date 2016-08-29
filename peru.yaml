@@ -1,19 +1,26 @@
 imports:
   dircolors-solarized: universal/.colors/dircolors-solarized
 
-  vim-abolish: universal/.vim/bundle/abolish.vim
-  vim-coffee-script: universal/.vim/bundle/coffee-script.vim
-  vim-colors-solarized: universal/.vim/bundle/solarized.vim
-  vim-commentary: universal/.vim/bundle/commentary.vim
-  vim-fugitive: universal/.vim/bundle/fugitive.vim
-  vim-replace: universal/.vim/bundle/replace.vim
-  vim-rust: universal/.vim/bundle/rust.vim
-  vim-sensible: universal/.vim/bundle/sensible.vim
-  vim-surround: universal/.vim/bundle/surround.vim
+  vim-pathogen: universal/.config/nvim/autoload/
+  vim-abolish: universal/.config/nvim/bundle/abolish.vim
+  vim-coffee-script: universal/.config/nvim/bundle/coffee-script.vim
+  vim-colors-solarized: universal/.config/nvim/colors/
+  vim-commentary: universal/.config/nvim/bundle/commentary.vim
+  vim-fugitive: universal/.config/nvim/bundle/fugitive.vim
+  vim-replace: universal/.config/nvim/bundle/replace.vim
+  vim-rust: universal/.config/nvim/bundle/rust.vim
+  vim-sensible: universal/.config/nvim/bundle/sensible.vim
+  vim-surround: universal/.config/nvim/bundle/surround.vim
 
 git module dircolors-solarized:
   url: https://github.com/seebi/dircolors-solarized.git
+  pick: dircolors.ansi-dark
   rev: 7ff9a697dcd7a0c452ed6cfc736b761c9a1714c4
+
+git module vim-pathogen:
+  url: https://github.com/tpope/vim-pathogen.git
+  export: autoload/
+  rev: 8c91196cfd9c8fe619f35fac6f2ac81be10677f8
 
 git module vim-abolish:
   url: https://github.com/tpope/vim-abolish.git
@@ -25,6 +32,8 @@ git module vim-coffee-script:
 
 git module vim-colors-solarized:
   url: https://github.com/altercation/vim-colors-solarized.git
+  pick: colors/*
+  export: colors/
   rev: 528a59f26d12278698bb946f8fb82a63711eec21
 
 git module vim-commentary:

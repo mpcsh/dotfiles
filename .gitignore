@@ -1,8 +1,9 @@
 # peru
 .peru
 
-# vim
-universal/.vim/bundle
+# nvim
+universal/.config/nvim/*
+!universal/.config/nvim/init.vim
 
 # dircolors
 universal/.colors/dircolors-solarized

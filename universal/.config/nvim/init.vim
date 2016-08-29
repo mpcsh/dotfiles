@@ -1,5 +1,5 @@
 " load plugins
-call pathogen#infect()
+execute pathogen#infect()
 runtime! plugin/sensible.vim
 
 " mouse compatibility
@@ -14,7 +14,7 @@ nnoremap Q <Nop>
 
 " persistent undo
 set undofile
-set undodir=$HOME/.vim/undo
+set undodir=$HOME/.config/nvim/undo
 set undolevels=1000
 set undoreload=10000
 
@@ -28,8 +28,8 @@ set clipboard=unnamedplus
 set number
 
 " store all backup files centrally
-set backupdir=$HOME/.vim/tmp
-set directory=$HOME/.vim/tmp
+set backupdir=$HOME/.config/nvim/tmp
+set directory=$HOME/.config/nvim/tmp
 
 " display tabs characters as 2 spaces
 set tabstop=2
@@ -38,7 +38,7 @@ set shiftwidth=2
 " use <Tab> to indent lines
 noremap <Tab> <S-v>>
 " use <Shift-Tab> to unindent lines
-noremap <S-Tab> <S-v>>
+noremap <S-Tab> <S-v><
 " since CTRL-I and <Tab> are the same key (*sigh*), we need to unclobber the original CTRL-I binding.
 nnoremap <leader>CTRL-I CTRL-I
 
