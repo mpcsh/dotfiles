@@ -74,3 +74,9 @@ autocmd BufNewFile,BufRead *.json set expandtab
 set ignorecase
 set smartcase
 set hlsearch
+
+" easymotion settings
+let mapleader=" "
+let g:EasyMotion_keys = "asdghklqwertyuiopzxcvbnmfj"  " get rid of ;
+let g:EasyMotion_do_mapping = 0
+map <Leader>w <Plug>(easymotion-bd-w)

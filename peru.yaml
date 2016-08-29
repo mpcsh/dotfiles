@@ -7,6 +7,7 @@ imports:
   vim-abolish: universal/.config/nvim/bundle/abolish.vim
   vim-coffee-script: universal/.config/nvim/bundle/coffee-script.vim
   vim-commentary: universal/.config/nvim/bundle/commentary.vim
+  vim-easymotion: universal/.config/nvim/bundle/easymotion.vim
   vim-fugitive: universal/.config/nvim/bundle/fugitive.vim
   vim-replace: universal/.config/nvim/bundle/replace.vim
   vim-rust: universal/.config/nvim/bundle/rust.vim
@@ -32,6 +33,9 @@ git module vim-coffee-script:
 git module vim-commentary:
   url: https://github.com/tpope/vim-commentary.git
   rev: 73e0d9a9d1f51b6cc9dc965f62669194ae851cb1
+
+git module vim-easymotion:
+  url: https://github.com/easymotion/vim-easymotion.git
 
 git module vim-fugitive:
   url: https://github.com/tpope/vim-fugitive.git
