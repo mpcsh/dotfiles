@@ -5,10 +5,10 @@ imports:
   vim-sourcerer: universal/.config/nvim/colors/
 
   vim-abolish: universal/.config/nvim/bundle/abolish.vim
+  vim-better-whitespace: universal/.config/nvim/bundle/better-whitespace.vim
   vim-coffee-script: universal/.config/nvim/bundle/coffee-script.vim
   vim-commentary: universal/.config/nvim/bundle/commentary.vim
   vim-easymotion: universal/.config/nvim/bundle/easymotion.vim
-  vim-fugitive: universal/.config/nvim/bundle/fugitive.vim
   vim-replace: universal/.config/nvim/bundle/replace.vim
   vim-rust: universal/.config/nvim/bundle/rust.vim
   vim-sensible: universal/.config/nvim/bundle/sensible.vim
@@ -16,6 +16,7 @@ imports:
 
 curl module sourcerer-xresources:
   url: https://raw.githubusercontent.com/xero/sourcerer/master/sourcerer.Xresources
+  sha1: 6ada583a9dd27262ac59dc9abc720312c43a7954
 
 git module vim-pathogen:
   url: https://github.com/tpope/vim-pathogen.git
@@ -25,6 +26,10 @@ git module vim-pathogen:
 git module vim-abolish:
   url: https://github.com/tpope/vim-abolish.git
   rev: 0d6316824906725418b5532b19314cc40eb224eb
+
+git module vim-better-whitespace:
+  url: https://github.com/ntpeters/vim-better-whitespace.git
+  rev: 7b3889cd072847f952211693f9aaf0c4ccede0a4
 
 git module vim-coffee-script:
   url: https://github.com/kchmck/vim-coffee-script.git
@@ -36,10 +41,7 @@ git module vim-commentary:
 
 git module vim-easymotion:
   url: https://github.com/easymotion/vim-easymotion.git
-
-git module vim-fugitive:
-  url: https://github.com/tpope/vim-fugitive.git
-  rev: aac85a268e89a6c8be79341e130ac90256fadbd6
+  rev: 5c6f3cd9a713491e6b32752a05c45198aa91540a
 
 git module vim-replace:
   url: https://github.com/vim-scripts/ReplaceWithRegister.git
@@ -55,6 +57,7 @@ git module vim-sensible:
 
 curl module vim-sourcerer:
   url: https://raw.githubusercontent.com/xero/sourcerer/master/sourcerer.vim
+  sha1: 77d4634cb70442a4a1ad49e9a54b2a5f2af5d4ba
 
 git module vim-surround:
   url: https://github.com/tpope/vim-surround.git
