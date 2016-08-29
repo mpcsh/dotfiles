@@ -55,13 +55,13 @@ function prompt_git() {
 			git rev-parse --short HEAD 2> /dev/null || \
 			echo '(unknown)')";
 
-		echo -e " on $(tput setaf 4)${branchName}${s}$(tput sgr0)";
+		echo -e " on $(tput setaf 12)${branchName}${s}$(tput sgr0)";
 	else
 		return;
 	fi;
 }
 
-PS1='$(tput setaf 3)\u$(tput sgr0) at $(tput setaf 1)\h$(tput sgr0) in $(tput setaf 2)\W$(tput sgr0)$(prompt_git)\n» '
+PS1='$(tput setaf 4)\u$(tput sgr0) at $(tput setaf 3)\h$(tput sgr0) in $(tput setaf 2)\W$(tput sgr0)$(prompt_git)\n» '
 
 #dem perms!
 [[ $HOSTNAME == "xyz" ]] && umask 022 || umask 077
