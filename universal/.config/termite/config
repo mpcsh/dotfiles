@@ -1,8 +1,11 @@
 [options]
 allow_bold = false
+audible_bell = false
+cursor_blink = off
+cursor_shape = ibeam
+font = Tamsyn 12
 fullscreen = false
 scrollback_lines = 65536
-font = Tamsyn 12
 
 [colors]
 foreground = #c2c2b0
