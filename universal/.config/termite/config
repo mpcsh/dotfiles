@@ -1,9 +1,8 @@
 [options]
 allow_bold = false
 fullscreen = false
-font = Meslo LG M 11
 scrollback_lines = 65536
-#font = Tamsyn 12
+font = Tamsyn 12
 
 [colors]
 foreground = #c2c2b0
