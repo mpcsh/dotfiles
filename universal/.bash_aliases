@@ -31,14 +31,17 @@ alias racket='racket -I typed/racket'
 #custom neofetch colors
 alias neofetch='neofetch --colors 1 1 1 1 --ascii_colors 6 1'
 
-#clone terminal
-alias ct='urxvt -cd $(pwd) & disown &> /dev/null'
-
 #run previous command as root
 alias fuck='sudo $(history -p \!\!)'
 
 #nvim
 alias vim='nvim'
+
+#clone terminal
+function ct() {
+	PWD=$(pwd)
+	termite -e $(cd $PWD & disown &> /dev/null)
+}
 
 #set X background
 function setbg() {

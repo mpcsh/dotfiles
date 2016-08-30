@@ -1,28 +1,6 @@
-!borders
-URxvt*borderless: true
-URxvt*internalBorder: 10
-URxvt*externalBorder: 0
-
-!scrolling
-URxvt*scrollBar: false
-URxvt*scrollTtyOutput: false
-URxvt*scrollWithBuffer: true
-URxvt*scrollTtyKeypress: true
-URxvt*saveLines: 65535
-
-!no bold fonts for you
-URxvt*boldFont:
-URxvt*italicFont:
-URxvt*bolditalicFont:
-
 !bar
 barHeight: 48
 barOffset: 18
-
-!clickable URLs
-URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: /usr/bin/xdg-open
-URxvt.matcher.button: 1
 
 !font rendering
 Xft.antialias: true
