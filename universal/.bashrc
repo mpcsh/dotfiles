@@ -55,7 +55,7 @@ function prompt_git() {
 			git rev-parse --short HEAD 2> /dev/null || \
 			echo '(unknown)')";
 
-		echo -e " on $(tput setaf 12)${branchName}${s}$(tput sgr0)";
+		echo -e " on $(tput setaf 5)${branchName}${s}$(tput sgr0)";
 	else
 		return;
 	fi;
