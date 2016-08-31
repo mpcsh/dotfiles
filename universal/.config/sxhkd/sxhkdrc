@@ -50,9 +50,9 @@ super + Escape
 super + shift + Escape
 	~/dotfiles/scripts/suspend
 
-# launch termite
+# launch urxvt
 super + grave
-	termite
+	urxvt
 
 # launch chromium
 super + c
@@ -64,7 +64,7 @@ super + Print
 
 # launch ranger
 super + r
-	termite -e ranger
+	urxvt -e ranger
 
 # launch dmenu
 super + space
@@ -80,11 +80,11 @@ super + s
 
 # launch irssi
 super + i
-	termite -e irssi
+	urxvt -e irssi
 
 # launch toxic
 super + t
-	termite -e toxic
+	urxvt -e toxic
 
 #
 # laptop function keys

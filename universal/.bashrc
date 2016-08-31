@@ -1,7 +1,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-#env vars
+# env vars
 export EDITOR=nvim
 export PATH=$PATH:~/dotfiles/scripts
 export GOPATH=~/.go
@@ -9,10 +9,16 @@ export MP_FULLNAME=mpcsh
 export MP_SITETYPE=maximum
 export TERM=xterm
 
-#grab aliases
+# grab aliases
 source ~/.bash_aliases
 
-#prompt
+# term colors
+source ~/.colors/sourcerer.sh
+
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
+# prompt
 function prompt_git() {
 	local s='';
 	local branchName='';
@@ -63,10 +69,10 @@ function prompt_git() {
 
 PS1='$(tput setaf 4)\u$(tput sgr0) at $(tput setaf 3)\h$(tput sgr0) in $(tput setaf 2)\W$(tput sgr0)$(prompt_git)\n» '
 
-#dem perms!
+# dem perms!
 [[ $HOSTNAME == "xyz" ]] && umask 022 || umask 077
 
-#display startx prompt on longs and annapurna when logging in to a tty
+# display startx prompt on longs and annapurna when logging in to a tty
 if [[ -z $DISPLAY && $HOSTNAME == "longs" || -z $DISPLAY && $HOSTNAME == "annapurna" || -z $DISPLAY && $HOSTNAME == "eiger" ]]; then
 	fortune calvin | cowsay
 	echo "startx?"

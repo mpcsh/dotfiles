@@ -38,7 +38,7 @@ alias fuck='sudo $(history -p \!\!)'
 alias vim='nvim'
 
 #clone terminal
-#TODO
+alias ct='urxvt -cd $PWD &> /dev/null & disown'
 
 #set X background
 function setbg() {

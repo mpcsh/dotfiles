@@ -1,6 +1,9 @@
 imports:
-  vim-pathogen: universal/.config/nvim/autoload/
+  xresources-sourcerer: universal/.colors/
   vim-sourcerer: universal/.config/nvim/colors/
+  shell-sourcerer: universal/.colors/
+
+  vim-pathogen: universal/.config/nvim/autoload/
 
   vim-abolish: universal/.config/nvim/bundle/abolish.vim
   vim-better-whitespace: universal/.config/nvim/bundle/better-whitespace.vim
@@ -12,11 +15,27 @@ imports:
   vim-sensible: universal/.config/nvim/bundle/sensible.vim
   vim-surround: universal/.config/nvim/bundle/surround.vim
 
+
+# colors
+git module xresources-sourcerer:
+  url: https://github.com/xero/sourcerer.git
+  pick: sourcerer.Xresources
+
+git module vim-sourcerer:
+  url: https://github.com/xero/sourcerer.git
+  pick: sourcerer.vim
+
+git module shell-sourcerer:
+  url: https://github.com/xero/sourcerer.git
+  pick: sourcerer.sh
+
+# vim plugin management
 git module vim-pathogen:
   url: https://github.com/tpope/vim-pathogen.git
   export: autoload/
   rev: 8c91196cfd9c8fe619f35fac6f2ac81be10677f8
 
+# vim plugins
 git module vim-abolish:
   url: https://github.com/tpope/vim-abolish.git
   rev: 0d6316824906725418b5532b19314cc40eb224eb
@@ -48,10 +67,6 @@ git module vim-rust:
 git module vim-sensible:
   url: https://github.com/tpope/vim-sensible.git
   rev: 9e91be7e0fb42949831fe3161ef583363648aa58
-
-curl module vim-sourcerer:
-  url: https://raw.githubusercontent.com/xero/sourcerer/master/sourcerer.vim
-  sha1: 77d4634cb70442a4a1ad49e9a54b2a5f2af5d4ba
 
 git module vim-surround:
   url: https://github.com/tpope/vim-surround.git
