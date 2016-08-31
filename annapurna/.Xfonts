@@ -1,3 +1,3 @@
 !font
-*barFont: xft:Tamsyn:size=12
-*iconFont: xft:FontAwesome:size=10
+*barFont: xft:IosevkaTerm:size=10
+*iconFont: xft:FontAwesome:size=8

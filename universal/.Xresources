@@ -6,6 +6,6 @@ barOffset: 18
 Xft.antialias: true
 Xft.autohint: false
 Xft.hinting: true
-Xft.hintstyle: hintslight
-Xft.lcdfilter: lcddefault
-Xft.rgba: rgb
+Xft.hintstyle: hintfull
+Xft.lcdfilter: none
+Xft.rgba: rgba

@@ -38,10 +38,7 @@ alias fuck='sudo $(history -p \!\!)'
 alias vim='nvim'
 
 #clone terminal
-function ct() {
-	PWD=$(pwd)
-	termite -e $(cd $PWD & disown &> /dev/null)
-}
+#TODO
 
 #set X background
 function setbg() {
