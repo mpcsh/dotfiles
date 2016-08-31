@@ -1,6 +1,4 @@
 imports:
-  sourcerer-xresources: universal/.colors/
-
   vim-pathogen: universal/.config/nvim/autoload/
   vim-sourcerer: universal/.config/nvim/colors/
 
@@ -13,10 +11,6 @@ imports:
   vim-rust: universal/.config/nvim/bundle/rust.vim
   vim-sensible: universal/.config/nvim/bundle/sensible.vim
   vim-surround: universal/.config/nvim/bundle/surround.vim
-
-curl module sourcerer-xresources:
-  url: https://raw.githubusercontent.com/xero/sourcerer/master/sourcerer.Xresources
-  sha1: 6ada583a9dd27262ac59dc9abc720312c43a7954
 
 git module vim-pathogen:
   url: https://github.com/tpope/vim-pathogen.git
