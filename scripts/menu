@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 FONT=$(xrq barFont | cut -d: -f2,3)
 XOFF=$(xrq barOffset)
 YOFF=$XOFF
