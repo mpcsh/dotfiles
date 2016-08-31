@@ -1,14 +1,20 @@
 [options]
 allow_bold = false
 audible_bell = false
+browser = /usr/bin/xdg-open
+clickable_url = true
 cursor_blink = off
+cursor_shape = block
 font = Iosevka Term 12
 fullscreen = false
 scrollback_lines = 65536
+scroll_on_keystroke = true
+scroll_on_output = false
+search_wrap = true
 
 [colors]
-foreground = #c2c2b0
 background = #222222
+foreground = #c2c2b0
 cursorColor = #c2c2b0
 
 color0 = #111111
