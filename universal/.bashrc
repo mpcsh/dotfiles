@@ -1,11 +1,10 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export EDITOR=vim
+#env vars
+export EDITOR=nvim
 export PATH=$PATH:~/dotfiles/scripts
 export GOPATH=~/.go
-
-#masterpassword settings
 export MP_FULLNAME=mpcsh
 export MP_SITETYPE=maximum
 
