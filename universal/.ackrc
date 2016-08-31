@@ -18,5 +18,8 @@
 --ignore-dir=proc
 --ignore-dir=sys
 
+# Ignore peru
+--ignore-dir=.peru
+
 # Colors
 --color-match=green
