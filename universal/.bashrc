@@ -7,6 +7,7 @@ export PATH=$PATH:~/dotfiles/scripts
 export GOPATH=~/.go
 export MP_FULLNAME=mpcsh
 export MP_SITETYPE=maximum
+export TERM=xterm
 
 #grab aliases
 source ~/.bash_aliases
