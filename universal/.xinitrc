@@ -25,6 +25,9 @@ nice dunst -fn "$(xrq barFont | sed 's/.*xft://g' | sed 's/:size=/ /g' | sed 's/
 nice redshift &
 nice compton &
 
+# keymaps
+xmodmap ~/.config/xmodmap &
+
 # window manager
 sxhkd &
 exec bspwm
