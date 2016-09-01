@@ -15,9 +15,6 @@ source ~/.bash_aliases
 # term colors
 source ~/.colors/sourcerer.sh
 
-BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
-
 # prompt
 function prompt_git() {
 	local s='';
