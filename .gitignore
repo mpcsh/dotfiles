@@ -6,7 +6,8 @@ universal/.config/nvim/*
 !universal/.config/nvim/*.vim
 
 # colors
-universal/.colors
+universal/.colors/*
+!universal/.colors/sourcerer.Xresources
 
 # irssi theme
 universal/.irssi/*.theme

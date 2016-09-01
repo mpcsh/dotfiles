@@ -17,8 +17,8 @@ background = #222222
 foreground = #c2c2b0
 cursorColor = #c2c2b0
 
-color0 = #111111
-color8 = #181818
+color0 = #444444
+color8 = #666666
 
 color1 = #aa4450
 color9 = #ff6a6a
