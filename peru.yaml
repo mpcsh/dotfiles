@@ -19,14 +19,17 @@ imports:
 git module xresources-sourcerer:
   url: https://github.com/xero/sourcerer.git
   pick: sourcerer.Xresources
+  rev: 5d576a48b08b9f55d470223fb9beef871282a2b9
 
 git module vim-sourcerer:
   url: https://github.com/xero/sourcerer.git
   pick: sourcerer.vim
+  rev: 5d576a48b08b9f55d470223fb9beef871282a2b9
 
 git module shell-sourcerer:
   url: https://github.com/xero/sourcerer.git
   pick: sourcerer.sh
+  rev: 5d576a48b08b9f55d470223fb9beef871282a2b9
 
 # vim plugin management
 git module vim-pathogen:
