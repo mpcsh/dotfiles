@@ -23,7 +23,7 @@ xset s off -dpms &
 bar &
 nice dunst -fn "$(xrq barFont | sed 's/.*xft://g' | sed 's/:size=/ /g' | sed 's/:antialias.*//g')" &
 nice redshift &
-nice xcompmgr -CcFf -D 2 -I 0.01 -O 0.01 &
+nice compton &
 
 # window manager
 sxhkd &
