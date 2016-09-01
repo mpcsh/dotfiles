@@ -6,7 +6,6 @@ imports:
   vim-pathogen: universal/.config/nvim/autoload/
 
   vim-abolish: universal/.config/nvim/bundle/abolish.vim
-  vim-better-whitespace: universal/.config/nvim/bundle/better-whitespace.vim
   vim-coffee-script: universal/.config/nvim/bundle/coffee-script.vim
   vim-commentary: universal/.config/nvim/bundle/commentary.vim
   vim-easymotion: universal/.config/nvim/bundle/easymotion.vim
@@ -39,10 +38,6 @@ git module vim-pathogen:
 git module vim-abolish:
   url: https://github.com/tpope/vim-abolish.git
   rev: 0d6316824906725418b5532b19314cc40eb224eb
-
-git module vim-better-whitespace:
-  url: https://github.com/ntpeters/vim-better-whitespace.git
-  rev: 7b3889cd072847f952211693f9aaf0c4ccede0a4
 
 git module vim-coffee-script:
   url: https://github.com/kchmck/vim-coffee-script.git
