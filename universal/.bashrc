@@ -15,6 +15,9 @@ source ~/.bash_aliases
 # term colors
 source ~/.colors/sourcerer.sh
 
+# z.sh
+[[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
+
 # prompt
 function prompt_git() {
 	local s='';
