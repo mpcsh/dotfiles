@@ -36,9 +36,9 @@ set tabstop=2
 set shiftwidth=2
 
 " use <Tab> to indent lines
-noremap <Tab> <S-v>>
+vnoremap <Tab> >gv
 " use <Shift-Tab> to unindent lines
-noremap <S-Tab> <S-v><
+noremap <S-Tab> <gv
 " since CTRL-I and <Tab> are the same key (*sigh*), we need to unclobber the original CTRL-I binding.
 nnoremap <leader>CTRL-I CTRL-I
 
@@ -77,6 +77,7 @@ set hlsearch
 
 " easymotion settings
 let mapleader=" "
+noremap <Space> <Nop>
 let g:EasyMotion_keys = "asdghklqwertyuiopzxcvbnmfj"	" get rid of ;
 let g:EasyMotion_do_mapping = 0
 map <Leader>w <Plug>(easymotion-bd-w)
@@ -84,5 +85,8 @@ map <Leader>w <Plug>(easymotion-bd-w)
 " whitespace highlighting
 if !(&filetype == "txt")
 	set list " show special characters
-	set listchars=tab:→\ ,trail:·,nbsp:·
+	set listchars=tab:→\ ,trail:·
 endif
+
+" prefer // over /*...*/. Used by vim-commentary.
+autocmd FileType c,java set commentstring=//\ %s
