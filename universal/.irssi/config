@@ -39,7 +39,7 @@ settings = {
 	};
 
 	"fe-common/core" = {
-		theme = "irssi.theme";
+		theme = "nixers.theme";
 	};
 };
 

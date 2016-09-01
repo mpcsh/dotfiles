@@ -3,6 +3,8 @@ imports:
   vim-sourcerer: universal/.config/nvim/colors/
   shell-sourcerer: universal/.colors/
 
+  irssi-nixers-theme: universal/.irssi/
+
   vim-pathogen: universal/.config/nvim/autoload/
 
   vim-abolish: universal/.config/nvim/bundle/abolish.vim
@@ -30,6 +32,12 @@ git module shell-sourcerer:
   url: https://github.com/xero/sourcerer.git
   pick: sourcerer.sh
   rev: 5d576a48b08b9f55d470223fb9beef871282a2b9
+
+# irssi theme
+git module irssi-nixers-theme:
+  url: https://github.com/xero/dotfiles.git
+  pick: irssi/.irssi/nixers.theme
+  export: irssi/.irssi/
 
 # vim plugin management
 git module vim-pathogen:
