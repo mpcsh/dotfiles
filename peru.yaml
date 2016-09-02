@@ -15,7 +15,6 @@ imports:
   vim-sensible: universal/.config/nvim/bundle/sensible.vim
   vim-surround: universal/.config/nvim/bundle/surround.vim
 
-
 # colors
 git module vim-sourcerer:
   url: https://github.com/xero/sourcerer.git
