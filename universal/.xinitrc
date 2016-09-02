@@ -26,7 +26,7 @@ nice redshift &
 nice compton &
 
 # keymaps
-xmodmap ~/.config/xmodmap &
+xmodmap ~/.config/xmodmap
 
 # window manager
 sxhkd &
