@@ -55,7 +55,15 @@ colorscheme sourcerer
 
 " statusline
 set laststatus=2
-set statusline=\ %t\ %m\ %y%=[%04l][%02c]\ 
+"set statusline=\ %t\ %m\ %y%=[%04l][%02c]\ 
+let g:lightline = {
+	\ 'colorscheme': 'wombat',
+	\ 'component': {
+	\ 	'readonly': '%{&readonly?"⭤":""}',
+	\ },
+	\ 'separator': { 'left': '', 'right': '' },
+	\ 'subseparator': { 'left': '', 'right': '' }
+	\ }
 
 " ics
 autocmd BufNewFile,BufRead *.iced call SetICSOptions()
