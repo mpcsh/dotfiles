@@ -1,5 +1,4 @@
 imports:
-  vim-sourcerer: universal/.config/nvim/colors/
   irssi-nixers-theme: universal/.irssi/
 
   vim-pathogen: universal/.config/nvim/autoload/
@@ -8,15 +7,10 @@ imports:
   vim-coffee-script: universal/.config/nvim/bundle/coffee-script.vim
   vim-commentary: universal/.config/nvim/bundle/commentary.vim
   vim-easymotion: universal/.config/nvim/bundle/easymotion.vim
-  vim-lightline: universal/.config/nvim/bundle/lightline.vim
   vim-replace: universal/.config/nvim/bundle/replace.vim
   vim-rust: universal/.config/nvim/bundle/rust.vim
   vim-sensible: universal/.config/nvim/bundle/sensible.vim
   vim-surround: universal/.config/nvim/bundle/surround.vim
-
-git module vim-sourcerer:
-  url: https://github.com/xero/sourcerer.git
-  pick: sourcerer.vim
 
 # irssi theme
 git module irssi-nixers-theme:
@@ -47,9 +41,6 @@ git module vim-commentary:
 git module vim-easymotion:
   url: https://github.com/easymotion/vim-easymotion.git
   rev: 5c6f3cd9a713491e6b32752a05c45198aa91540a
-
-git module vim-lightline:
-  url: https://github.com/itchyny/lightline.vim.git
 
 git module vim-replace:
   url: https://github.com/vim-scripts/ReplaceWithRegister.git

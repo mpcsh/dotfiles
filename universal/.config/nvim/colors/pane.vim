@@ -7,7 +7,7 @@ endif
 
 let colors_name = "pane"
 
-" gutter
+"   gutter
 hi  LineNr       cterm=none  ctermbg=236   ctermfg=8
 "   comments
 hi  Comment      cterm=none  ctermbg=none  ctermfg=0
@@ -17,6 +17,8 @@ hi  Todo         cterm=bold  ctermbg=1     ctermfg=none
 hi  Visual       cterm=none  ctermbg=5     ctermfg=16
 "   colorcolumn
 hi  ColorColumn  cterm=none  ctermbg=0     ctermfg=none
+"   statusline
+hi  StatusLine   cterm=none  ctermbg=236   ctermfg=8
 
 "  █▓▒░ 256 colors 
 " hi Normal                 cterm=none             ctermbg=none  ctermfg=145
