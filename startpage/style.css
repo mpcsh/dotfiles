@@ -10,7 +10,7 @@ body {
 	height: 100%;
 	margin: 0;
 	background-color: #222222;
-	color: #c2c2b0;
+	color: #b5b5a4;
 }
 
 .container {
@@ -36,7 +36,7 @@ body {
 .search {
 	width: 30rem;
 	padding: 0.5rem;
-	border: 1px solid #c2c2b0;
+	border: 1px solid #b5b5a4;
 }
 
 .search-box {
@@ -44,7 +44,7 @@ body {
 	margin: auto;
 	padding: 0;
 	background-color: rgba(0, 0, 0, 0);
-	color: #c2c2b0;
+	color: #b5b5a4;
 	border: none;
 }
 
@@ -60,12 +60,12 @@ ul {
 ul > li > p {
 	font-weight: bold;
 	text-align: left;
-	border-bottom: 1px solid #c2c2b0;
+	border-bottom: 1px solid #b5b5a4;
 	padding-right: 100%;
 }
 
 ul > li > a {
-	color: #c2c2b0;
+	color: #b5b5a4;
 	outline: none;
 
 	display: block;
@@ -76,7 +76,7 @@ ul > li > a {
 
 ul > li > a:hover {
 	color: #222222;
-	background-color: #c2c2b0;
+	background-color: #b5b5a4;
 }
 
 /* webkit compat */
