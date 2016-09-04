@@ -8,13 +8,16 @@ endif
 let colors_name = "pane"
 
 " gutter
-hi LineNr cterm=none ctermbg=236 ctermfg=8
+hi  LineNr       cterm=none  ctermbg=236   ctermfg=8
+"   comments
+hi  Comment      cterm=none  ctermbg=none  ctermfg=0
+"   todo
+hi  Todo         cterm=bold  ctermbg=1     ctermfg=none
+"   visual       mode        highlighting
+hi  Visual       cterm=none  ctermbg=5     ctermfg=16
+"   colorcolumn
+hi  ColorColumn  cterm=none  ctermbg=0     ctermfg=none
 
-" comments
-hi Comment cterm=none ctermbg=none ctermfg=0
-
-" todo
-hi Todo cterm=bold ctermbg=1 ctermfg=none
 "  █▓▒░ 256 colors 
 " hi Normal                 cterm=none             ctermbg=none  ctermfg=145
 " hi ColorColumn            cterm=none             ctermbg=16    ctermfg=none
@@ -53,7 +56,6 @@ hi Todo cterm=bold ctermbg=1 ctermfg=none
 " hi TabLineFill            cterm=none             ctermbg=102   ctermfg=16
 " hi TabLineSel             cterm=bold             ctermbg=16    ctermfg=59
 " hi Title                  cterm=bold             ctermbg=none  ctermfg=66
-" hi Visual                 cterm=none             ctermbg=67    ctermfg=16
 " hi WarningMsg             cterm=none             ctermbg=234   ctermfg=208
 " hi WildMenu               cterm=none             ctermbg=116   ctermfg=16
 " hi ExtraWhitespace        cterm=none             ctermbg=66    ctermfg=fg
