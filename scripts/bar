@@ -16,7 +16,6 @@ fi
 
 if [[ $HOSTNAME == "annapurna" || $HOSTNAME == "longs" || $HOSTNAME == "eiger" ]]; then
 	nice ~/.config/lemonbar/lemonbar | lemonbar -B $BG -F $FG -g $WIDTH\x$HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -o -1 -f $ICONS & disown
-	chwso -l $(for win in $(lsw); do echo -en "$win $(wname $win)\n"; done | ack bar | awk '{print $1}')
 else
 	echo "Need to configure lemonbar for new hostname"
 fi
