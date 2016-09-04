@@ -1,7 +1,5 @@
 imports:
   vim-sourcerer: universal/.config/nvim/colors/
-  shell-sourcerer: universal/.colors/
-
   irssi-nixers-theme: universal/.irssi/
 
   vim-pathogen: universal/.config/nvim/autoload/
@@ -16,16 +14,9 @@ imports:
   vim-sensible: universal/.config/nvim/bundle/sensible.vim
   vim-surround: universal/.config/nvim/bundle/surround.vim
 
-# colors
 git module vim-sourcerer:
   url: https://github.com/xero/sourcerer.git
   pick: sourcerer.vim
-  rev: 5d576a48b08b9f55d470223fb9beef871282a2b9
-
-git module shell-sourcerer:
-  url: https://github.com/xero/sourcerer.git
-  pick: sourcerer.sh
-  rev: 5d576a48b08b9f55d470223fb9beef871282a2b9
 
 # irssi theme
 git module irssi-nixers-theme:

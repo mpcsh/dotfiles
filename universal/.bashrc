@@ -12,9 +12,6 @@ export TERM=xterm
 # grab aliases
 source ~/.bash_aliases
 
-# term colors
-source ~/.colors/sourcerer.sh
-
 # z.sh
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
 
@@ -64,7 +61,7 @@ function prompt_git() {
 	fi;
 }
 
-PS1='$(tput setaf 4)\u$(tput sgr0) at $(tput setaf 3)\h$(tput sgr0) in $(tput setaf 2)\W$(tput sgr0)$(prompt_git)\n» '
+PS1='$(tput setaf 4)\u$(tput sgr0) at $(tput setaf 3)\h$(tput sgr0) in $(tput setaf 2)\W$(tput sgr0)$(prompt_git)\n→ '
 
 # dem perms!
 [[ $HOSTNAME == "xyz" ]] && umask 022 || umask 077

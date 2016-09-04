@@ -15,7 +15,7 @@ if (( $? == 0 )); then
 fi
 
 if [[ $HOSTNAME == "annapurna" || $HOSTNAME == "longs" || $HOSTNAME == "eiger" ]]; then
-	nice ~/.config/lemonbar/lemonbar | lemonbar -B $BG -F $FG -g $WIDTH\x$HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -o -1 -f $ICONS & disown
+	nice ~/.config/lemonbar/lemonbar | lemonbar -B $BG -F $FG -g $WIDTH\x$HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -o -3 -f $ICONS & disown
 else
 	echo "Need to configure lemonbar for new hostname"
 fi

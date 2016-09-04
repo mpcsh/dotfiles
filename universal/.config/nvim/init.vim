@@ -50,16 +50,15 @@ set shortmess+=I
 
 " colorscheme
 syntax enable
-set background=dark
-colorscheme sourcerer
+colorscheme pane
 
 " statusline
 set laststatus=2
 "set statusline=\ %t\ %m\ %y%=[%04l][%02c]\ 
 let g:lightline = {
-	\ 'colorscheme': 'wombat',
+	\ 'colorscheme': 'seoul256',
 	\ 'component': {
-	\ 	'readonly': '%{&readonly?"⭤":""}',
+	\ 	'readonly': '%{&readonly?"(ro)":""}',
 	\ },
 	\ 'separator': { 'left': '', 'right': '' },
 	\ 'subseparator': { 'left': '', 'right': '' }
@@ -98,3 +97,12 @@ endif
 
 " prefer // over /*...*/. Used by vim-commentary.
 autocmd FileType c,java set commentstring=//\ %s
+
+" show highlighting groups for current word
+nmap <C-S-P> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+	if !exists("*synstack")
+		return
+	endif
+	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunction
