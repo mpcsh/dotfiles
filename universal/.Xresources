@@ -21,7 +21,6 @@ Xft.rgba: rgba
 ! special
 *.foreground:   #b5b5a4
 *.background:   #222222
-*.cursorColor:  #b5b5a4
 
 ! black
 *.color0:       #444444
