@@ -7,8 +7,12 @@ super + q
 	bspc node -c
 
 # swap focused node with node in given direction
-super + {h,j,k,l}
+super + {Left,Down,Up,Right}
 	bspc node -s {west,south,north,east}
+
+# focus given direction
+super + {h,j,k,l}
+	bspc node -f {west,south,north,east}
 
 # send focused node to given desktop
 super + shift + {0-9}
