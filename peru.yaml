@@ -7,6 +7,7 @@ imports:
   vim-coffee-script: universal/.config/nvim/bundle/coffee-script.vim
   vim-commentary: universal/.config/nvim/bundle/commentary.vim
   vim-easymotion: universal/.config/nvim/bundle/easymotion.vim
+  vim-goyo: universal/.config/nvim/bundle/goyo.vim
   vim-replace: universal/.config/nvim/bundle/replace.vim
   vim-rust: universal/.config/nvim/bundle/rust.vim
   vim-sensible: universal/.config/nvim/bundle/sensible.vim
@@ -42,6 +43,10 @@ git module vim-easymotion:
   url: https://github.com/easymotion/vim-easymotion.git
   rev: 5c6f3cd9a713491e6b32752a05c45198aa91540a
 
+git module vim-goyo:
+  url: https://github.com/junegunn/goyo.vim.git
+  rev: 8e8f1d45b61e1fce7f84ee061c38f9e033e86ff9
+
 git module vim-replace:
   url: https://github.com/vim-scripts/ReplaceWithRegister.git
   rev: 832efc23111d19591d495dc72286de2fb0b09345
@@ -52,7 +57,7 @@ git module vim-rust:
 
 git module vim-sensible:
   url: https://github.com/tpope/vim-sensible.git
-  rev: 9e91be7e0fb42949831fe3161ef583363648aa58
+  rev: 4b7535921819a5b2e39be68f81109ea684232503
 
 git module vim-surround:
   url: https://github.com/tpope/vim-surround.git
