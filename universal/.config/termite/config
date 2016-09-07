@@ -13,38 +13,37 @@ scroll_on_output = false
 search_wrap = true
 
 [colors]
-# special
-foreground      = #b5b5a4
-background      = #222222
+foreground = #839496
+background = #002b36
 
 # black
-color0  = #555555
-color8  = #888888
+color0 = #073642
+color8 = #002b36
 
 # red
-color1  = #9f4c56
-color9  = #ff7a8a
+color1 = #dc322f
+color9 = #cb4b16
 
 # green
-color2  = #709c49
-color10 = #b7ff77
+color2 = #859900
+color10 = #586e75
 
 # yellow
-color3  = #9d8c48
-color11 = #ffe375
+color3 = #b58900
+color11 = #657b83
 
 # blue
-color4  = #4b769d
-color12 = #7ac0ff
+color4 = #268bd2
+color12 = #839496
 
 # magenta
-color5  = #9a4d8d
-color13 = #ff80e9
+color5 = #d33682
+color13 = #6c71c4
 
 # cyan
-color6  = #4d9a9a
-color14 = #80ffff
+color6 = #2aa198
+color14 = #93a1a1
 
 # white
-color7  = #bbbbbb
-color15 = #eeeeee
+color7 = #eee8d5
+color15 = #fdf6e3
