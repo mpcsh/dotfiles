@@ -23,7 +23,7 @@ git module vim-pathogen:
 # dircolors
 git module dircolors-solarized:
   url: https://github.com/seebi/dircolors-solarized.git
-  pick: dircolors.256dark
+  pick: dircolors.ansi-dark
 
 # vim plugins
 git module vim-abolish:
