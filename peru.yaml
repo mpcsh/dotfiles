@@ -1,6 +1,4 @@
 imports:
-  irssi-nixers-theme: universal/.irssi/
-
   vim-pathogen: universal/.config/nvim/autoload/
 
   dircolors-solarized: universal/.colors/
@@ -15,13 +13,6 @@ imports:
   vim-rust: universal/.config/nvim/bundle/rust.vim
   vim-sensible: universal/.config/nvim/bundle/sensible.vim
   vim-surround: universal/.config/nvim/bundle/surround.vim
-
-# irssi theme
-git module irssi-nixers-theme:
-  url: https://github.com/xero/dotfiles.git
-  pick: irssi/.irssi/nixers.theme
-  export: irssi/.irssi/
-  rev: 5181168a18664c93c9fae9dde0a05edd3ae65504
 
 # vim plugin management
 git module vim-pathogen:

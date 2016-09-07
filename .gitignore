@@ -7,6 +7,3 @@ universal/.config/nvim/*
 
 # colors
 universal/.colors/*
-
-# irssi theme
-universal/.irssi/*.theme
