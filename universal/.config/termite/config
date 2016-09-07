@@ -15,7 +15,6 @@ search_wrap = true
 [colors]
 # special
 foreground      = #b5b5a4
-foreground_bold = #b5b5a4
 background      = #222222
 
 # black
@@ -23,29 +22,29 @@ color0  = #555555
 color8  = #888888
 
 # red
-color1  = #aa4450
-color9  = #ff6a6a
+color1  = #9f4c56
+color9  = #ff7a8a
 
 # green
-color2  = #719611
-color10 = #b1d631
+color2  = #709c49
+color10 = #b7ff77
 
 # yellow
-color3  = #cc8800
-color11 = #ff9800
+color3  = #9d8c48
+color11 = #ffe375
 
 # blue
-color4  = #6688aa
-color12 = #90b0d1
+color4  = #4b769d
+color12 = #7ac0ff
 
 # magenta
-color5  = #8f6f8f
-color13 = #8181a6
+color5  = #9a4d8d
+color13 = #ff80e9
 
 # cyan
-color6  = #528b8b
-color14 = #87ceeb
+color6  = #4d9a9a
+color14 = #80ffff
 
 # white
-color7  = #dddddd
-color15 = #ffffff
+color7  = #bbbbbb
+color15 = #eeeeee

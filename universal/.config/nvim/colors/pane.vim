@@ -7,23 +7,8 @@ endif
 
 let colors_name = "pane"
 
-"   gutter
-hi  LineNr       cterm=none  ctermbg=236   ctermfg=8
-"   comments
-hi  Comment      cterm=none  ctermbg=none  ctermfg=0
-"   todo
-hi  Todo         cterm=bold  ctermbg=1     ctermfg=none
-"   visual       mode        highlighting
-hi  Visual       cterm=none  ctermbg=5     ctermfg=16
-"   colorcolumn
-hi  ColorColumn  cterm=none  ctermbg=0     ctermfg=none
-"   statusline
-hi  StatusLine   cterm=none  ctermbg=236   ctermfg=8
-
 "  █▓▒░ 256 colors 
-" hi Normal                 cterm=none             ctermbg=none  ctermfg=145
-" hi ColorColumn            cterm=none             ctermbg=16    ctermfg=none
-" hi Cursor                 cterm=none             ctermbg=241   ctermfg=fg
+hi Normal                 cterm=none             ctermbg=none  ctermfg=none
 " hi CursorColumn           cterm=none             ctermbg=16    ctermfg=fg
 " hi CursorLine             cterm=none             ctermbg=236   ctermfg=fg
 " hi DiffAdd                cterm=none             ctermbg=71    ctermfg=16
@@ -35,7 +20,6 @@ hi  StatusLine   cterm=none  ctermbg=236   ctermfg=8
 " hi FoldColumn             cterm=bold             ctermbg=239   ctermfg=66
 " hi Folded                 cterm=none             ctermbg=16    ctermfg=60
 " hi IncSearch              cterm=bold             ctermbg=202   ctermfg=231
-" hi LineNr                 cterm=none             ctermbg=237   ctermfg=102
 " hi MatchParen             cterm=bold             ctermbg=none  ctermfg=226
 " hi ModeMsg                cterm=bold             ctermbg=none  ctermfg=145
 " hi MoreMsg                cterm=bold             ctermbg=234   ctermfg=29
@@ -51,8 +35,6 @@ hi  StatusLine   cterm=none  ctermbg=236   ctermfg=8
 " hi SpellCap               cterm=undercurl        ctermbg=none  ctermfg=21
 " hi SpellLocal             cterm=undercurl        ctermbg=none  ctermfg=30
 " hi SpellRare              cterm=undercurl        ctermbg=none  ctermfg=201
-" hi StatusLine             cterm=bold             ctermbg=101   ctermfg=16
-" hi StatusLineNC           cterm=none             ctermbg=102   ctermfg=16
 " hi VertSplit              cterm=none             ctermbg=102   ctermfg=102
 " hi TabLine                cterm=bold             ctermbg=102   ctermfg=16
 " hi TabLineFill            cterm=none             ctermbg=102   ctermfg=16
@@ -62,19 +44,17 @@ hi  StatusLine   cterm=none  ctermbg=236   ctermfg=8
 " hi WildMenu               cterm=none             ctermbg=116   ctermfg=16
 " hi ExtraWhitespace        cterm=none             ctermbg=66    ctermfg=fg
 
-" hi Comment                cterm=none             ctermbg=none  ctermfg=59
-" hi Boolean                cterm=none             ctermbg=none  ctermfg=208
-" hi String                 cterm=none             ctermbg=none  ctermfg=101
-" hi Identifier             cterm=none             ctermbg=none  ctermfg=145
-" hi Function               cterm=none             ctermbg=none  ctermfg=230
-" hi Type                   cterm=none             ctermbg=none  ctermfg=103
-" hi Statement              cterm=none             ctermbg=none  ctermfg=110
-" hi Keyword                cterm=none             ctermbg=none  ctermfg=110
-" hi Constant               cterm=none             ctermbg=none  ctermfg=208
-" hi Number                 cterm=none             ctermbg=none  ctermfg=172
-" hi Special                cterm=none             ctermbg=none  ctermfg=64
-" hi PreProc                cterm=none             ctermbg=none  ctermfg=66
-" hi Todo                   cterm=bold,underline   ctermbg=234   ctermfg=96
+hi Boolean                cterm=none             ctermbg=none  ctermfg=9
+hi String                 cterm=none             ctermbg=none  ctermfg=2
+hi Identifier             cterm=none             ctermbg=none  ctermfg=11
+hi Function               cterm=none             ctermbg=none  ctermfg=5
+hi Type                   cterm=none             ctermbg=none  ctermfg=1
+hi Statement              cterm=none             ctermbg=none  ctermfg=6
+hi Keyword                cterm=none             ctermbg=none  ctermfg=3
+hi Constant               cterm=none             ctermbg=none  ctermfg=3
+hi Number                 cterm=none             ctermbg=none  ctermfg=3
+hi Special                cterm=none             ctermbg=none  ctermfg=3
+hi PreProc                cterm=none             ctermbg=none  ctermfg=3
 
 " hi diffOldFile            cterm=none             ctermbg=none  ctermfg=67
 " hi diffNewFile            cterm=none             ctermbg=none  ctermfg=67
@@ -126,3 +106,16 @@ hi  StatusLine   cterm=none  ctermbg=236   ctermfg=8
 " hi PmenuSel               cterm=none             ctermfg=16    ctermbg=66
 " hi PmenuSbar              cterm=none             ctermfg=16    ctermbg=66
 " hi PmenuThumb             cterm=none             ctermfg=16    ctermbg=66
+
+"   gutter
+hi  LineNr       cterm=none  ctermbg=236   ctermfg=8
+"   comments
+hi  Comment      cterm=none  ctermbg=none  ctermfg=0
+"   todo
+hi  Todo         cterm=bold  ctermbg=1     ctermfg=none
+"   visual mode highlighting
+hi  Visual       cterm=none  ctermbg=5     ctermfg=16
+"   colorcolumn
+hi  ColorColumn  cterm=none  ctermbg=0     ctermfg=none
+"   statusline
+hi  StatusLine   cterm=none  ctermbg=236   ctermfg=8
