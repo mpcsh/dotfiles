@@ -23,7 +23,6 @@ bar &
 nice dunst -fn "$(xrq barFont | sed 's/.*xft://g' | sed 's/:size=/ /g' | sed 's/:antialias.*//g')" &
 nice redshift &
 nice compton &
-nice unclutter -idle 1 -jitter 1 -root &
 
 # keymaps
 xmodmap ~/.config/xmodmap
