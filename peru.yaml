@@ -1,6 +1,7 @@
 imports:
   vim-pathogen: universal/.config/nvim/autoload/
 
+  vim-a: universal/.config/nvim/bundle/a.vim
   vim-abolish: universal/.config/nvim/bundle/abolish.vim
   vim-coffee-script: universal/.config/nvim/bundle/coffee-script.vim
   vim-commentary: universal/.config/nvim/bundle/commentary.vim
@@ -18,6 +19,10 @@ git module vim-pathogen:
   rev: 8c91196cfd9c8fe619f35fac6f2ac81be10677f8
 
 # vim plugins
+git module vim-a:
+  url: https://github.com/vim-scripts/a.vim.git
+  rev: 2cbe946206ec622d9d8cf2c99317f204c4d41885
+
 git module vim-abolish:
   url: https://github.com/tpope/vim-abolish.git
   rev: 0d6316824906725418b5532b19314cc40eb224eb
