@@ -4,6 +4,3 @@
 # nvim
 universal/.config/nvim/*
 !universal/.config/nvim/*.vim
-
-# colors
-universal/.colors/*

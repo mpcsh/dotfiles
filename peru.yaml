@@ -1,11 +1,8 @@
 imports:
   vim-pathogen: universal/.config/nvim/autoload/
 
-  dircolors-solarized: universal/.colors/
-
   vim-abolish: universal/.config/nvim/bundle/abolish.vim
   vim-coffee-script: universal/.config/nvim/bundle/coffee-script.vim
-  vim-colors-solarized: universal/.config/nvim/bundle/solarized.vim
   vim-commentary: universal/.config/nvim/bundle/commentary.vim
   vim-easymotion: universal/.config/nvim/bundle/easymotion.vim
   vim-goyo: universal/.config/nvim/bundle/goyo.vim
@@ -20,11 +17,6 @@ git module vim-pathogen:
   export: autoload/
   rev: 8c91196cfd9c8fe619f35fac6f2ac81be10677f8
 
-# dircolors
-git module dircolors-solarized:
-  url: https://github.com/seebi/dircolors-solarized.git
-  pick: dircolors.ansi-dark
-
 # vim plugins
 git module vim-abolish:
   url: https://github.com/tpope/vim-abolish.git
@@ -33,9 +25,6 @@ git module vim-abolish:
 git module vim-coffee-script:
   url: https://github.com/kchmck/vim-coffee-script.git
   rev: 5de5f371a90d714296466239071473788865b6ef
-
-git module vim-colors-solarized:
-  url: https://github.com/altercation/vim-colors-solarized.git
 
 git module vim-commentary:
   url: https://github.com/tpope/vim-commentary.git
