@@ -1,0 +1,66 @@
+#! /usr/bin/env python3
+
+import binascii
+import io
+import sys
+import textwrap
+import umsgpack
+
+
+def format_list(obj):
+    out = "[\n"
+    for inner_obj in obj:
+        out += textwrap.indent(format_obj(inner_obj), '  ')
+        out += ",\n"
+    out += "]"
+    return out
+
+
+def format_bytes(obj):
+    try:
+        # If the bytes decode cleanly to utf8, return the normal repr.
+        obj.decode()
+        output = repr(obj)
+    except UnicodeDecodeError:
+        # Otherwise return hex.
+        output = binascii.hexlify(obj).decode()
+    # Attempt to double-decode the result. If the bytes decode as a single
+    # MessagePack object, add a comment.
+    stream = io.BytesIO(obj)
+    try:
+        double_decoded = umsgpack.unpack(stream)
+        if stream.tell() == len(obj):
+            output += ",\n# DECODING AGAIN:\n"
+            output += textwrap.indent(format_obj(double_decoded), "# ")
+    except Exception:
+        pass
+    return output
+
+
+def format_obj(obj):
+    if isinstance(obj, list):
+        return format_list(obj)
+    elif isinstance(obj, bytes):
+        return format_bytes(obj)
+    else:
+        # TODO: Handle dictionaries?
+        return repr(obj)
+
+
+def format_stream(stream):
+    # Read all the objects out of a stream, gracefully handling EOF, and then
+    # stringify those objects.
+    output = io.StringIO()
+    all_bytes = stream.read()
+    temp_stream = io.BytesIO(all_bytes)
+    while True:
+        obj = umsgpack.unpack(temp_stream)
+        output.write(format_obj(obj))
+        if temp_stream.tell() < len(all_bytes):
+            output.write(',\n')
+        else:
+            break
+    return output.getvalue()
+
+
+print(format_stream(sys.stdin.buffer))
