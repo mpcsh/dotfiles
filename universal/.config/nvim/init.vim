@@ -94,7 +94,7 @@ function! <SID>SynStack()
 endfunction
 
 " goyo mode (distraction-free writing)
-let g:goyo_width='128'
+let g:goyo_width='100'
 let g:goyo_height='75%'
 function! s:goyo_enter()
 	set wrap
