@@ -56,7 +56,7 @@ super + grave
 
 # launch chromium
 super + c
-	~/dotfiles/scripts/startchromium
+	chromium
 
 # take screenshot
 super + Print
