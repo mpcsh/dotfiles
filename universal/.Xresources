@@ -3,8 +3,7 @@ barHeight: 48
 barOffset: 18
 !font
 Xft.dpi: 96
-*font: xft:M+1mn:size=12
-*barFont: xft:M+1mn:size=12
+*font: xft:M+1mn:size=11
 *iconFont: xft:FontAwesome:size=12
 
 !font rendering
