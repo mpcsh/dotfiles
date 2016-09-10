@@ -1,5 +1,5 @@
 #!/bin/bash
-FONT=$(xrq barFont | cut -d: -f2,3)
+FONT=$(xrq font | cut -d: -f2,3)
 XOFF=$(xrq barOffset)
 YOFF=$XOFF
 WIDTH="$(( $(xdpyinfo | awk '/dimensions:/ {print $2; exit}' | cut -dx -f1)-$(( 2*$(xrq barOffset) )) ))"
