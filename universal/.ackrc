@@ -21,5 +21,11 @@
 # Ignore peru
 --ignore-dir=.peru
 
+# ignore browser history
+--ignore-dir=chromium
+
+# ignore npm junk
+--ignore-dir=.npm
+
 # Colors
 --color-match=green
