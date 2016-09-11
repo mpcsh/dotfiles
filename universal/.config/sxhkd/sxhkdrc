@@ -56,7 +56,7 @@ super + grave
 
 # launch chromium
 super + c
-	chromium
+	~/dotfiles/scripts/hidpi chromium 1.15 1
 
 # take screenshot
 super + Print
@@ -76,7 +76,7 @@ super + p
 
 # launch spotify
 super + s
-	~/dotfiles/scripts/startspotify
+	~/dotfiles/scripts/hidpi spotify 1.15 1.0001
 
 # launch irssi
 super + i
