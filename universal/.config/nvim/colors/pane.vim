@@ -20,7 +20,7 @@ hi Normal                 cterm=none             ctermbg=none  ctermfg=none
 " hi FoldColumn             cterm=bold             ctermbg=239   ctermfg=66
 " hi Folded                 cterm=none             ctermbg=16    ctermfg=60
 " hi IncSearch              cterm=bold             ctermbg=202   ctermfg=231
-" hi MatchParen             cterm=bold             ctermbg=none  ctermfg=226
+hi MatchParen             cterm=none             ctermbg=0  ctermfg=15
 " hi ModeMsg                cterm=bold             ctermbg=none  ctermfg=145
 " hi MoreMsg                cterm=bold             ctermbg=234   ctermfg=29
 " hi NonText                cterm=none             ctermbg=none  ctermfg=59
