@@ -30,7 +30,7 @@ hi MatchParen             cterm=none             ctermbg=0  ctermfg=15
 " hi Question               cterm=bold             ctermbg=none  ctermfg=46
 " hi Search                 cterm=bold             ctermbg=185   ctermfg=16
 " hi SignColumn             cterm=none             ctermbg=none  ctermfg=231
-" hi SpecialKey             cterm=none             ctermbg=none  ctermfg=59
+hi SpecialKey             cterm=none             ctermbg=none  ctermfg=0
 " hi SpellBad               cterm=undercurl        ctermbg=none  ctermfg=196
 " hi SpellCap               cterm=undercurl        ctermbg=none  ctermfg=21
 " hi SpellLocal             cterm=undercurl        ctermbg=none  ctermfg=30

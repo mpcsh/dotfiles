@@ -93,6 +93,12 @@ function! <SID>SynStack()
 	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunction
 
+" whitespace highlighting
+if !(&filetype == "txt")
+	set list " show special characters
+	set listchars=tab:→\ ,trail:·
+endif
+
 " goyo mode (distraction-free writing)
 let g:goyo_width='100'
 let g:goyo_height='75%'
