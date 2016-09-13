@@ -1,0 +1,10 @@
+[Unit]
+Description=Periodic pacman updates
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=6h
+Unit=autosyyu.service
+
+[Install]
+WantedBy=multi-user.target
