@@ -32,10 +32,13 @@ alias racket='racket -I typed/racket'
 alias neofetch='neofetch --colors 1 1 1 1 --ascii_colors 6 1'
 
 # run previous command as root
-alias fuck='sudo $(history -p \!\!)'
+alias fuck='sudo $(history -p \!\!) '
 
 # nvim
 alias vim='nvim'
+
+# rsync options
+alias rsync='rsync -aAXvzHE'
 
 # clone terminal
 alias ct='termite -d $PWD &> /dev/null & disown'
