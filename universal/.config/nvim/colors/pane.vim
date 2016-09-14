@@ -19,7 +19,7 @@ hi Normal                 cterm=none             ctermbg=none  ctermfg=none
 " hi ErrorMsg               cterm=bold             ctermbg=none  ctermfg=203
 " hi FoldColumn             cterm=bold             ctermbg=239   ctermfg=66
 " hi Folded                 cterm=none             ctermbg=16    ctermfg=60
-" hi IncSearch              cterm=bold             ctermbg=202   ctermfg=231
+hi IncSearch              cterm=none             ctermbg=0   ctermfg=none
 hi MatchParen             cterm=none             ctermbg=0  ctermfg=15
 " hi ModeMsg                cterm=bold             ctermbg=none  ctermfg=145
 " hi MoreMsg                cterm=bold             ctermbg=234   ctermfg=29
@@ -28,7 +28,7 @@ hi MatchParen             cterm=none             ctermbg=0  ctermfg=15
 " hi PmenuSbar              cterm=none             ctermbg=250   ctermfg=fg
 " hi PmenuSel               cterm=none             ctermbg=149   ctermfg=16
 " hi Question               cterm=bold             ctermbg=none  ctermfg=46
-" hi Search                 cterm=bold             ctermbg=185   ctermfg=16
+hi Search                 cterm=none             ctermbg=0   ctermfg=none
 " hi SignColumn             cterm=none             ctermbg=none  ctermfg=231
 hi SpecialKey             cterm=none             ctermbg=none  ctermfg=0
 " hi SpellBad               cterm=undercurl        ctermbg=none  ctermfg=196
