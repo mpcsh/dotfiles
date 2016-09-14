@@ -1,6 +1,5 @@
 " load plugins
 execute pathogen#infect()
-runtime! plugin/sensible.vim
 
 " mouse compatibility
 set mouse=a
@@ -32,19 +31,20 @@ set relativenumber
 set backupdir=$HOME/.config/nvim/tmp
 set directory=$HOME/.config/nvim/tmp
 
-" display tabs characters as 2 spaces
+" 2-space width tabs
 set tabstop=2
 set shiftwidth=2
 
-" use <Tab> to indent lines
+" se <Tab> to indent lines
 vnoremap <Tab> >gv
 " use <Shift-Tab> to unindent lines
 noremap <S-Tab> <gv
 " since CTRL-I and <Tab> are the same key (*sigh*), we need to unclobber the original CTRL-I binding.
 nnoremap <leader>CTRL-I CTRL-I
 
-" vim-sensible maps Ctrl-L to nohlsearch. let insert mode do that too.
-imap <C-l> <Esc><C-l>a
+" map CTRL-L to nohlsearch
+nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+inoremap <C-l> <Esc><C-l>a
 
 " disable startup message
 set shortmess+=I
@@ -97,8 +97,11 @@ endfunction
 " whitespace highlighting
 if !(&filetype == "txt")
 	set list " show special characters
-	set listchars=tab:→\ ,trail:·
+	set listchars=tab:→\ ,trail:·,extends:>,precedes:<,nbsp:‥
 endif
+
+" auto reload changed files
+set autoread
 
 " goyo mode (distraction-free writing)
 let g:goyo_width='100'
