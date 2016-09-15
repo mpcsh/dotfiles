@@ -103,6 +103,7 @@ if !(&filetype == "txt")
 	set list " show special characters
 	set listchars=tab:→\ ,trail:·,extends:>,precedes:<,nbsp:‥
 endif
+hi SpecialKey cterm=none ctermbg=none ctermfg=11
 
 " auto reload changed files
 set autoread
