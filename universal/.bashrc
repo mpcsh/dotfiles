@@ -8,6 +8,7 @@ export GOPATH=~/.go
 export MP_FULLNAME=mpcsh
 export MP_SITETYPE=maximum
 export TERM=xterm
+export vim=nvim
 
 # grab aliases
 source ~/.bash_aliases

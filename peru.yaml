@@ -1,4 +1,6 @@
 imports:
+  v: scripts/
+
   vim-pathogen: universal/.config/nvim/autoload/
 
   vim-a: universal/.config/nvim/bundle/a.vim
@@ -9,7 +11,13 @@ imports:
   vim-goyo: universal/.config/nvim/bundle/goyo.vim
   vim-replace: universal/.config/nvim/bundle/replace.vim
   vim-rust: universal/.config/nvim/bundle/rust.vim
+  vim-sensible: universal/.config/nvim/bundle/sensible.vim
   vim-surround: universal/.config/nvim/bundle/surround.vim
+
+# v - z for vim
+git module v:
+  url: https://github.com/rupa/v.git
+  pick: v
 
 # vim plugin management
 git module vim-pathogen:
@@ -49,6 +57,10 @@ git module vim-replace:
 git module vim-rust:
   url: https://github.com/rust-lang/rust.vim.git
   rev: fc11d02fee330df7b30c83a80f09dd0c60ab43ce
+
+git module vim-sensible:
+  url: https://github.com/tpope/vim-sensible.git
+
 
 git module vim-surround:
   url: https://github.com/tpope/vim-surround.git
