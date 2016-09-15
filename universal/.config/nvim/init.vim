@@ -25,7 +25,6 @@ set clipboard=unnamedplus
 
 " enable line numbering
 set number
-set relativenumber
 
 " store all backup files centrally
 set backupdir=$HOME/.config/nvim/tmp
