@@ -1,4 +1,8 @@
 imports:
+  vim-colors-solarized: universal/.config/nvim/bundle/solarized.vim
+  dircolors-solarized: universal/.colors/
+  xresources-solarized: universal/.colors/
+
   v: scripts/
 
   vim-pathogen: universal/.config/nvim/autoload/
@@ -13,6 +17,18 @@ imports:
   vim-rust: universal/.config/nvim/bundle/rust.vim
   vim-sensible: universal/.config/nvim/bundle/sensible.vim
   vim-surround: universal/.config/nvim/bundle/surround.vim
+
+# solarized
+git module vim-colors-solarized:
+  url: https://github.com/altercation/vim-colors-solarized.git
+
+git module xresources-solarized:
+  url: https://github.com/solarized/xresources.git
+  pick: Xresources.dark
+
+git module dircolors-solarized:
+  url: https://github.com/seebi/dircolors-solarized.git
+  pick: dircolors.ansi-dark
 
 # v - z for vim
 git module v:

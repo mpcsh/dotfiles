@@ -1,6 +1,6 @@
 # themes!
 xrdb ~/.Xresources
-xrdb -merge ~/.Xfonts
+xrdb -merge ~/.colors/Xresources.dark
 source ~/.bash_aliases; setbg &
 
 # basic xorg settings

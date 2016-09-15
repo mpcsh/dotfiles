@@ -5,3 +5,6 @@
 universal/.config/nvim/*
 !universal/.config/nvim/*.vim
 scripts/v
+
+# solarized
+universal/.colors
