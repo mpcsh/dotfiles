@@ -52,6 +52,7 @@ set shortmess+=I
 syntax enable
 set background=dark
 colorscheme solarized
+hi MatchParen cterm=none ctermbg=none ctermfg=15
 
 " statusline
 set laststatus=2
