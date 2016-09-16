@@ -23,9 +23,9 @@ hi  Keyword      cterm=none            ctermbg=none          ctermfg=3
 hi  Constant     cterm=none            ctermbg=none          ctermfg=3
 hi  Number       cterm=none            ctermbg=none          ctermfg=3
 hi  PreProc      cterm=none            ctermbg=none          ctermfg=3
-hi  LineNr       cterm=none            ctermbg=8             ctermfg=7
+hi  LineNr       cterm=none            ctermbg=236           ctermfg=7
 hi  Comment      cterm=none            ctermbg=none          ctermfg=8
 hi  Todo         cterm=bold            ctermbg=1             ctermfg=none
 hi  Visual       cterm=none            ctermbg=8             ctermfg=7
 hi  ColorColumn  cterm=none            ctermbg=8             ctermfg=none
-hi  StatusLine   cterm=none            ctermbg=8             ctermfg=7
+hi  StatusLine   cterm=none            ctermbg=236           ctermfg=7

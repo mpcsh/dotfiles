@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #Colors
-WARN="%{B$(xrq color5)}"
+WARN="%{B$(xrq color1)}"
 
 #Universal
 clock() {
