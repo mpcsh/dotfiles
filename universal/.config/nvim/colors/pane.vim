@@ -22,7 +22,6 @@ hi  Statement    cterm=none            ctermbg=none          ctermfg=6
 hi  Keyword      cterm=none            ctermbg=none          ctermfg=3
 hi  Constant     cterm=none            ctermbg=none          ctermfg=3
 hi  Number       cterm=none            ctermbg=none          ctermfg=3
-hi  Special      cterm=none            ctermbg=none          ctermfg=3
 hi  PreProc      cterm=none            ctermbg=none          ctermfg=3
 hi  LineNr       cterm=none            ctermbg=236           ctermfg=8
 hi  Comment      cterm=none            ctermbg=none          ctermfg=7
