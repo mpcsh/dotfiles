@@ -47,5 +47,5 @@ Xft.rgba: rgba
 *.color14:      #5ce6d5
 
 ! white
-*.color7:       #444444
+*.color7:       #555555
 *.color15:      #efefd9

@@ -23,7 +23,7 @@ hi  Keyword      cterm=none            ctermbg=none          ctermfg=3
 hi  Constant     cterm=none            ctermbg=none          ctermfg=3
 hi  Number       cterm=none            ctermbg=none          ctermfg=3
 hi  PreProc      cterm=none            ctermbg=none          ctermfg=3
-hi  LineNr       cterm=none            ctermbg=236           ctermfg=8
+hi  LineNr       cterm=none            ctermbg=7             ctermfg=8
 hi  Comment      cterm=none            ctermbg=none          ctermfg=7
 hi  Todo         cterm=bold            ctermbg=1             ctermfg=none
 hi  Visual       cterm=none            ctermbg=7             ctermfg=8
