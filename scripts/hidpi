@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [[ $HOSTNAME == "longs" || $HOSTNAME == "eiger" ]]; then
 	$1 --force-device-scale-factor=$2

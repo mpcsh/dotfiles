@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 BG="$(xrq background)"
 FG="$(xrq foreground)"
