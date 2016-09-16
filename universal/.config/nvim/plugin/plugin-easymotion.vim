@@ -1,6 +1,4 @@
 " easymotion settings
-let mapleader=","
-noremap <,> <Nop>
 let g:EasyMotion_keys = "asdghklqwertyuiopzxcvbnmfj"	" get rid of ;
 let g:EasyMotion_do_mapping = 0
 map <Leader>w <Plug>(easymotion-bd-w)
