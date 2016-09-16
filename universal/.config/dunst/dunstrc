@@ -12,12 +12,12 @@
 	sticky_history = yes
 	padding = 18
 	horizontal_padding = 18
-	separator_color = "#073642"
+	separator_color = "#444444"
 	startup_notification = false
 
 [frame]
 	width = 6
-	color = "#073642"
+	color = "#444444"
 
 [shortcuts]
 	close = ctrl+space
@@ -26,16 +26,16 @@
 	context = ctrl+shift+period
 
 [urgency_low]
-	background = "#002b36"
-	foreground = "#839496"
+	background = "#222222"
+	foreground = "#b5b5a4"
 	timeout = 5
 
 [urgency_normal]
-	background = "#002b36"
-	foreground = "#839496"
+	background = "#222222"
+	foreground = "#b5b5a4"
 	timeout = 10
 
 [urgency_critical]
-	background = "#002b36"
-	foreground = "#839496"
+	background = "#222222"
+	foreground = "#b5b5a4"
 	timeout = 0
