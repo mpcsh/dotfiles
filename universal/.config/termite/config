@@ -19,32 +19,32 @@ background      = #222222
 
 # black
 color0  = #222222
-color8  = #b5b5a4
+color8  = #555555
 
 # red
-color1  = #aa4450
-color9  = #e65c6c
+color1  = #b84131
+color9  = #d6837c
 
 # green
-color2  = #44aa6b
-color10 = #5ce691
+color2  = #7da900
+color10 = #c4f137
 
 # yellow
-color3  = #aa6b44
-color11 = #e6c05c
+color3  = #c4aa1f
+color11 = #fee14d
 
 # blue
-color4  = #4483aa
-color12 = #5cb1e6
+color4  = #62a3c4
+color12 = #8dcff0
 
 # magenta
-color5  = #aa4483
-color13 = #e65cb1
+color5  = #ba8acc
+color13 = #f79aff
 
 # cyan
-color6  = #44aa9e
-color14 = #5ce6d5
+color6  = #207383
+color14 = #6ad9cf
 
 # white
-color7  = #555555
+color7  = #b5b5a4
 color15 = #efefd9
