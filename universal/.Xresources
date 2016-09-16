@@ -13,3 +13,39 @@ Xft.hinting: true
 Xft.hintstyle: hintfull
 Xft.lcdfilter: none
 Xft.rgba: rgba
+
+! special
+*.foreground:   #b5b5a4
+*.background:   #222222
+
+! black
+*.color0:       #222222
+*.color8:       #b5b5a4
+
+! red
+*.color1:       #aa4450
+*.color9:       #e65c6c
+
+! green
+*.color2:       #44aa6b
+*.color10:      #5ce691
+
+! yellow
+*.color3:       #aa6b44
+*.color11:      #e6c05c
+
+! blue
+*.color4:       #4483aa
+*.color12:      #5cb1e6
+
+! magenta
+*.color5:       #aa4483
+*.color13:      #e65cb1
+
+! cyan
+*.color6:       #44aa9e
+*.color14:      #5ce6d5
+
+! white
+*.color7:       #444444
+*.color15:      #efefd9

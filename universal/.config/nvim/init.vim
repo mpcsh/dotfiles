@@ -50,9 +50,7 @@ set shortmess+=I
 
 " colorscheme
 syntax enable
-set background=dark
-colorscheme solarized
-hi MatchParen cterm=none ctermbg=none ctermfg=15
+colorscheme pane
 
 " statusline
 set laststatus=2
