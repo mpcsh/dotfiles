@@ -15,7 +15,7 @@ hi  Search       cterm=none            ctermbg=8             ctermfg=7
 hi  SpecialKey   cterm=none            ctermbg=none          ctermfg=8
 hi  Boolean      cterm=none            ctermbg=none          ctermfg=9
 hi  String       cterm=none            ctermbg=none          ctermfg=2
-hi  Identifier   cterm=none            ctermbg=none          ctermfg=none
+hi  Identifier   cterm=none            ctermbg=none          ctermfg=4
 hi  Function     cterm=none            ctermbg=none          ctermfg=5
 hi  Type         cterm=none            ctermbg=none          ctermfg=1
 hi  Statement    cterm=none            ctermbg=none          ctermfg=6
