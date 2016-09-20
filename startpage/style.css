@@ -9,7 +9,7 @@ body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	background-color: #eee8d5;
+	background-color: #fdf6e3;
 	color: #657b83;
 }
 
@@ -75,7 +75,7 @@ ul > li > a {
 }
 
 ul > li > a:hover {
-	color: #eee8d5;
+	color: #fdf6e3;
 	background-color: #657b83;
 }
 

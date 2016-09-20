@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BG="$(xrq color7)"
+BG="$(xrq color15)"
 FG="$(xrq color11)"
 SELBG="$(xrq color1)"
 WARN="$SELBG"
