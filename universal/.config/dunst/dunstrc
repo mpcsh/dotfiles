@@ -6,36 +6,31 @@
 	alignment = left
 	word_wrap = yes
 	ignore_newline = no
-	geometry = "700x72-18+18"
+	geometry = "700x72-0-0"
 	transparency = 0
 	follow = mouse
 	sticky_history = yes
-	padding = 18
-	horizontal_padding = 18
-	separator_color = "#555555"
+	padding = 24
+	horizontal_padding = 24
+	separator_color = "#586e75"
 	startup_notification = false
 
 [frame]
 	width = 6
-	color = "#555555"
-
-[shortcuts]
-	close = ctrl+space
-	close_all = ctrl+shift+space
-	history = ctrl+grave
-	context = ctrl+shift+period
+	color = "#586e75"
 
 [urgency_low]
-	background = "#222222"
-	foreground = "#b5b5a4"
+	background = "#eee8d5"
+	foreground = "#657b83"
 	timeout = 5
 
 [urgency_normal]
-	background = "#222222"
-	foreground = "#b5b5a4"
+	background = "#eee8d5"
+	foreground = "#657b83"
 	timeout = 10
 
 [urgency_critical]
-	background = "#222222"
-	foreground = "#b5b5a4"
+	background = "#eee8d5"
+	foreground = "#657b83"
+	separator_color = "#dc322f"
 	timeout = 0

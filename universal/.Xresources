@@ -1,6 +1,7 @@
 !bar
 barHeight: 48
-barOffset: 12
+barOffset: 480
+
 !font
 Xft.dpi: 96
 *font: xft:M+1mn:size=12
@@ -13,39 +14,3 @@ Xft.hinting: true
 Xft.hintstyle: hintfull
 Xft.lcdfilter: none
 Xft.rgba: rgba
-
-! special
-*.foreground:   #b5b5a4
-*.background:   #222222
-
-! black
-*.color0:       #222222
-*.color8:       #555555
-
-! red
-*.color1:       #b84131
-*.color9:       #d6837c
-
-! green
-*.color2:       #7da900
-*.color10:      #c4f137
-
-! yellow
-*.color3:       #c4aa1f
-*.color11:      #fee14d
-
-! blue
-*.color4:       #62a3c4
-*.color12:      #8dcff0
-
-! magenta
-*.color5:       #ba8acc
-*.color13:      #f79aff
-
-! cyan
-*.color6:       #207383
-*.color14:      #6ad9cf
-
-! white
-*.color7:       #b5b5a4
-*.color15:      #efefd9

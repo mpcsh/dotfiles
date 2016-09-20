@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-FONT=$(xrq font | cut -d: -f2,3)
-XOFF=$(xrq barOffset)
-YOFF=$XOFF
-WIDTH="$(( $(xdpyinfo | awk '/dimensions:/ {print $2; exit}' | cut -dx -f1)-$(( 2*$(xrq barOffset) )) ))"
-HEIGHT=$(xrq barHeight)
-SELBG=$(xrq color1)
-$1 -fn $FONT -x $XOFF -y $YOFF -w $WIDTH -h $HEIGHT -sb $SELBG
+
+source screen_vars
+
+$1 -fn $FONT -x $XOFF -y $YOFF -w $WIDTH -h $HEIGHT -nb $BG -nf $FG -sb $SELBG

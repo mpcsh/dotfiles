@@ -1,6 +1,7 @@
 " colorscheme
 syntax enable
-colorscheme pane
+set background=dark
+colorscheme solarized
 
 " show highlighting groups for current word
 nmap <C-S-P> :call <SID>SynStack()<CR>

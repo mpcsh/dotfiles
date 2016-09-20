@@ -12,39 +12,28 @@ scroll_on_keystroke = true
 scroll_on_output = false
 search_wrap = true
 
+# Solarized dark color scheme
 [colors]
-# special
-foreground      = #b5b5a4
-background      = #222222
+foreground = #839496
+background = #002b36
 
-# black
-color0  = #222222
-color8  = #555555
+# if unset, will reverse foreground and background
+#highlight = #839496
 
-# red
-color1  = #b84131
-color9  = #d6837c
-
-# green
-color2  = #7da900
-color10 = #c4f137
-
-# yellow
-color3  = #c4aa1f
-color11 = #fee14d
-
-# blue
-color4  = #62a3c4
-color12 = #8dcff0
-
-# magenta
-color5  = #ba8acc
-color13 = #f79aff
-
-# cyan
-color6  = #207383
-color14 = #6ad9cf
-
-# white
-color7  = #b5b5a4
-color15 = #efefd9
+# colors from color0 to color254 can be set
+color0 = #073642
+color1 = #dc322f
+color2 = #859900
+color3 = #b58900
+color4 = #268bd2
+color5 = #d33682
+color6 = #2aa198
+color7 = #eee8d5
+color8 = #002b36
+color9 = #cb4b16
+color10 = #586e75
+color11 = #657b83
+color12 = #839496
+color13 = #6c71c4
+color14 = #93a1a1
+color15 = #fdf6e3

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+BG="$(xrq color7)"
+FG="$(xrq color11)"
+SELBG="$(xrq color1)"
+WARN="$SELBG"
+SCREENWIDTH="$(xdpyinfo | awk '/dimensions:/ {print $2; exit}' | cut -dx -f1)"
+SCREENHEIGHT="$(xdpyinfo | awk '/dimensions:/ {print $2; exit}' | cut -dx -f2)"
+WIDTH="$(( $SCREENWIDTH-$(( 2*$(xrq barOffset) )) ))"
+HEIGHT="$(xrq barHeight)"
+XOFF="$(xrq barOffset)"
+YOFF="$(( $SCREENHEIGHT-$HEIGHT-$(bspc config window_gap) ))"
+FONT="$(xrq font | cut -d: -f2,3)"
+ICONS="$(xrq iconFont | sed 's/.*xft://g')"

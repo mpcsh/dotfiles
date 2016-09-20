@@ -14,6 +14,7 @@ export vim=nvim
 source ~/.bash_aliases
 
 # dircolors
+eval $(dircolors ~/.colors/dircolors.ansi-dark)
 
 # z.sh
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
