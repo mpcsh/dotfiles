@@ -1,6 +1,7 @@
 !bar
 barHeight: 48
-barOffset: 480
+barXOffset: 480
+barYOffset: 12
 
 !font
 Xft.dpi: 96
