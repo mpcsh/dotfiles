@@ -7,8 +7,9 @@ if (( $? == 0 )); then
 	killall lemonbar
 fi
 
-if [[ $HOSTNAME == "annapurna" || $HOSTNAME == "longs" || $HOSTNAME == "eiger" ]]; then
-	nice ~/.config/lemonbar/lemonbar | lemonbar -B $BG -F $FG -g $WIDTH\x$HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -o -2 -f $ICONS & disown
-else
-	echo "Need to configure lemonbar for new hostname"
-fi
+# if [[ $HOSTNAME == "annapurna" || $HOSTNAME == "longs" || $HOSTNAME == "eiger" ]]; then
+# 	nice ~/.config/lemonbar/lemonbar | lemonbar -B $BG -F $FG -g $WIDTH\x$HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -o -2 -f $ICONS & disown
+# else
+# 	echo "Need to configure lemonbar for new hostname"
+# fi
+nice lemonbar -B $BG -F $FG -g $WIDTH\x$HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -o -2 -f $ICONS

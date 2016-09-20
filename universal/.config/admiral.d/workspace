@@ -10,40 +10,16 @@ while read -r line; do
 				item="$1"
 				name="${item#?}"
 				case $item in
-					f*)
+					[ofu]*)
 						# free desktop
-						echo -n " %{A:bspc desktop -f $name:}"
-						echo -n "f"
+						echo -n "%{A:bspc desktop -f $name:}"
+						echo -n ""
 						echo -n "%{A} "
 						;;
-					F*)
+					[OFU]*)
 						# focused free desktop
-						echo -n " %{A:bspc desktop -f $name:}"
-						echo -n "F"
-						echo -n "%{A} "
-						;;
-					o*)
-						# occupied desktop
-						echo -n " %{A:bspc desktop -f $name:}"
-						echo -n "o"
-						echo -n "%{A} "
-						;;
-					O*)
-						# focused occupied desktop
-						echo -n " %{A:bspc desktop -f $name:}"
-						echo -n "O"
-						echo -n "%{A} "
-						;;
-					u*)
-						# urgent desktop
-						echo -n " %{A:bspc desktop -f $name:}"
-						echo -n "u"
-						echo -n "%{A} "
-						;;
-					U*)
-						# focused urgent desktop
-						echo -n " %{A:bspc desktop -f $name:}"
-						echo -n "U"
+						echo -n "%{A:bspc desktop -f $name:}"
+						echo -n ""
 						echo -n "%{A} "
 						;;
 				esac

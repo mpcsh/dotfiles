@@ -4,7 +4,12 @@
 networkIcon=""
 
 if ping -c 1 google.com >> /dev/null 2>&1; then
-	echo "%{F$GREEN}${networkIcon} %{F$FG}Online"
+	NAME=$(iwgetid -r 2> /dev/null)
+	if (( $? == 0 )); then
+		echo "${networkIcon} $NAME"
+	else
+		echo "${networkIcon} Online"
+	fi
 else
-	echo "%{F$FG}${networkIcon} %{F$FG}Offline"
+	echo "%{B$FG}%{F$BG}${networkIcon}%{B$FG}%{F$BG} Offline"
 fi	

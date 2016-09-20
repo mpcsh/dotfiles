@@ -3,8 +3,8 @@ items = ["left", "menu",
 				"center",
 					"volume", "delimeter",
 					"net", "delimeter",
-					"battery", "delimeter",
 					"clock", "delimeter",
+					"battery", "delimeter",
 					"workspace",
 				"right", "pow"]
 
@@ -54,5 +54,5 @@ path = "echo '%{r}'"
 static = true
 
 [delimeter]
-path = "echo ' '"
+path = "echo '  '"
 static = true
