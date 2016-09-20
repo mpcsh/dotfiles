@@ -1,0 +1,58 @@
+[admiral]
+items = ["left", "menu",
+				"center",
+					"volume", "delimeter",
+					"net", "delimeter",
+					"battery", "delimeter",
+					"clock", "delimeter",
+					"workspace",
+				"right", "pow"]
+
+[volume]
+path = "./vol"
+reload = 0.1
+
+[net]
+path = "./net"
+reload = 20
+
+[ram]
+path = "./ram"
+reload = 0.1
+
+[battery]
+path = "./battery"
+reload = 10
+
+[clock]
+path = "./clock"
+reload = 1
+
+[workspace]
+path = "./workspace"
+
+# Clickable areas
+[pow]
+path = 'echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{B#dc322f}%{F#fdf6e3}    %{F-}%{B-}%{A}"'
+static = true
+
+[menu]
+path = 'echo "%{A:. $HOME/.config/admiral.d/popups/menu/menu:}%{B#cb4b16}%{F#fdf6e3}    %{F-}%{B-}%{A}"'
+static = true
+
+# Used for formatting lemonbar
+[left]
+path = "echo '%{l}'"
+static = true
+
+[center]
+path = "echo '%{c}'"
+static = true
+
+[right]
+path = "echo '%{r}'"
+static = true
+
+[delimeter]
+path = "echo ' '"
+static = true
