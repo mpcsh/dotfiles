@@ -1,22 +1,22 @@
-#!/bin/bash
-#
+#!/usr/bin/env bash
 
-. $HOME/.config/admiral.d/config
+source screen_vars
 
-volumeState=$(pamixer --get-volume)
+_volumeState=$(pamixer --get-volume)
+volumeState="$(printf %02d $_volumeState)"
 
 # Determine volume icon depending on the level of volume.
 if [[ ${volumeState} -eq 0 ]]; then
-	volumeIcon=""
+	volumeIcon=" "
 elif [[ ${volumeState} -le 50 ]]; then
-	volumeIcon=""
+	volumeIcon=" "
 else
 	volumeIcon=""
 fi
 
-if $(ponymix is-muted); then
-	volumeColor=${RED}
+if [[ $(pamixer --get-mute) == 'true' ]]; then
+	volumeColor=$SELBG
+	echo "${volumeIcon} %{F$SELBG}00%{F$FG}"
 else
-	volumeColor=${FG}
+	echo "${volumeIcon} ${volumeState}"
 fi
-	echo "%{F$volumeColor}${volumeIcon} %{F$FG}${volumeState}%"

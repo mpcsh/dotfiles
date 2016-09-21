@@ -1,10 +1,9 @@
 [admiral]
-items = ["left", "menu",
-				"center",
-					"net", "delimeter",
+items = ["center",
+					"workspace", "delimeter",
 					"clock", "delimeter",
-					"workspace",
-				"right", "pow"]
+					"net"
+				]
 
 [volume]
 path = "./vol"
@@ -29,15 +28,6 @@ reload = 1
 [workspace]
 path = "./workspace"
 
-# Clickable areas
-[pow]
-path = 'echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{B#dc322f}%{F#fdf6e3}    %{F-}%{B-}%{A}"'
-static = true
-
-[menu]
-path = 'echo "%{A:. $HOME/.config/admiral.d/popups/menu/menu:}%{B#cb4b16}%{F#fdf6e3}    %{F-}%{B-}%{A}"'
-static = true
-
 # Used for formatting lemonbar
 [left]
 path = "echo '%{l}'"
@@ -52,5 +42,5 @@ path = "echo '%{r}'"
 static = true
 
 [delimeter]
-path = "echo ' '"
+path = "echo '  '"
 static = true

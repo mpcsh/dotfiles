@@ -1,7 +1,6 @@
-#!/bin/bash
-#
+#!/usr/bin/env bash
 
-. $HOME/.config/admiral.d/config
+source screen_vars
 
 if [[ -d /sys/class/power_supply/BAT0 ]]; then
 
@@ -11,7 +10,7 @@ if [[ -d /sys/class/power_supply/BAT0 ]]; then
         # Determine battery icon based on capacity and state.
         if [[ "${batteryState}" == "Discharging" && ${batteryPower} -le 20 ]]; then
             batteryIcon=""
-            batteryColor=${RED}
+            batteryColor=${SELBG}
         elif [[ "${batteryState}" == "Discharging" && ${batteryPower} -le 40 ]]; then
             batteryIcon=""
             batteryColor=${FG}
@@ -30,5 +29,5 @@ if [[ -d /sys/class/power_supply/BAT0 ]]; then
         fi
         echo "%{F$batteryColor}${batteryIcon} %{F$FG}${batteryPower}%"
     else
-        echo "%{F$red}No Battery Detected"
+        echo "%{F$SELBG}No Battery Detected"
 fi	
