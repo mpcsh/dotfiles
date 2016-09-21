@@ -8,10 +8,10 @@ super + q
 
 # focus given direction
 super + {h,j,k,l}
-	bspc node -f {west,south,north,east}
+	bspc config pointer_follows_focus true; bspc node -f {west,south,north,east}; bspc config pointer_follows_focus false;
 
 # swap focused node with node in given direction
-super + shift +  {h,j,k,l}
+super + shift + {h,j,k,l}
 	bspc node -s {west,south,north,east}
 
 # send focused node to given desktop

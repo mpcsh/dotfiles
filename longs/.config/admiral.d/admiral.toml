@@ -4,6 +4,7 @@ items = ["center",
 					"volume", "delimeter",
 					"clock", "delimeter",
 					"net", "delimeter",
+					"redshift", "delimeter",
 					"battery",
 				]
 
