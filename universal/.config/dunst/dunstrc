@@ -20,17 +20,17 @@
 	color = "#586e75"
 
 [urgency_low]
-	background = "#eee8d5"
+	background = "#fdf6e3"
 	foreground = "#657b83"
 	timeout = 5
 
 [urgency_normal]
-	background = "#eee8d5"
+	background = "#fdf6e3"
 	foreground = "#657b83"
 	timeout = 10
 
 [urgency_critical]
-	background = "#eee8d5"
+	background = "#fdf6e3"
 	foreground = "#657b83"
 	separator_color = "#dc322f"
 	timeout = 0
