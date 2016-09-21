@@ -4,15 +4,7 @@ source screen_vars
 
 _volumeState=$(pamixer --get-volume)
 volumeState="$(printf %02d $_volumeState)"
-
-# Determine volume icon depending on the level of volume.
-if [[ ${volumeState} -eq 0 ]]; then
-	volumeIcon=" "
-elif [[ ${volumeState} -le 50 ]]; then
-	volumeIcon=" "
-else
-	volumeIcon=""
-fi
+volumeIcon=""
 
 if [[ $(pamixer --get-mute) == 'true' ]]; then
 	volumeColor=$SELBG
