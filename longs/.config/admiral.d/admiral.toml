@@ -2,34 +2,39 @@
 items = ["center",
 					"workspace", "delimeter",
 					"volume", "delimeter",
+					"brightness", "delimeter",
 					"clock", "delimeter",
 					"net", "delimeter",
 					"redshift", "delimeter",
 					"battery",
 				]
 
+[workspace]
+path = "./workspace"
+
 [volume]
 path = "./vol"
 reload = 0.1
 
-[net]
-path = "./net"
-reload = 20
-
-[ram]
-path = "./ram"
+[brightness]
+path = "./brightness"
 reload = 0.1
-
-[battery]
-path = "./battery"
-reload = 10
 
 [clock]
 path = "./clock"
 reload = 1
 
-[workspace]
-path = "./workspace"
+[net]
+path = "./net"
+reload = 10
+
+[redshift]
+path = "./redshift"
+reload = 1
+
+[battery]
+path = "./battery"
+reload = 10
 
 # Used for formatting lemonbar
 [left]

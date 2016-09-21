@@ -2,8 +2,8 @@
 items = ["center",
 					"workspace", "delimeter",
 					"clock", "delimeter",
-					"redshift", "delimeter",
-					"net"
+					"net", "delimeter",
+					"redshift"
 				]
 
 [workspace]
@@ -13,13 +13,13 @@ path = "./workspace"
 path = "./clock"
 reload = 1
 
-[redshift]
-path = "./redshift"
-reload = 1
-
 [net]
 path = "./net"
 reload = 20
+
+[redshift]
+path = "./redshift"
+reload = 1
 
 # Used for formatting lemonbar
 [left]
