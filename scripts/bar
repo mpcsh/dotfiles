@@ -2,14 +2,11 @@
 
 source screen_vars
 
-pgrep lemonbar &> /dev/null
-if (( $? == 0 )); then
-	killall lemonbar
+if [[ $# != 1 ]]; then
+	echo "Usage: bar [top|bottom]"
+elif [[ $1 == "top" ]]; then
+	nice lemonbar -B $BG -F $FG -g $WIDTH\x$HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -o -2 -f $ICONS
+else
+	BOTTOM_YOFF=$(( $SCREENHEIGHT-$HEIGHT-$YOFF ))
+	nice lemonbar -B $BG -F $FG -g $WIDTH\x$HEIGHT\+$XOFF\+$BOTTOM_YOFF -o 1 -f $FONT -o -2 -f $ICONS
 fi
-
-# if [[ $HOSTNAME == "annapurna" || $HOSTNAME == "longs" || $HOSTNAME == "eiger" ]]; then
-# 	nice ~/.config/lemonbar/lemonbar | lemonbar -B $BG -F $FG -g $WIDTH\x$HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -o -2 -f $ICONS & disown
-# else
-# 	echo "Need to configure lemonbar for new hostname"
-# fi
-nice lemonbar -B $BG -F $FG -g $WIDTH\x$HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -o -2 -f $ICONS
