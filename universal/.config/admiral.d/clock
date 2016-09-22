@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
-clock=$(date "+%d %b %H:%M")
 clockIcon=""
-echo "${clockIcon} ${clock}"
+while read -r line; do
+	echo "${clockIcon} ${line}"
+done < <(clock -sf "%d %b %H:%M:%S" -i 1)

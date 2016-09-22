@@ -22,7 +22,6 @@ reload = 0.1
 
 [clock]
 path = "./clock"
-reload = 1
 
 [net]
 path = "./net"
