@@ -6,25 +6,28 @@ while read -r line; do
 		W*)
 			IFS=':'
 			set -- ${line#?}
+			desks=""
 			while [ $# -gt 0 ]; do
 				item="$1"
 				name="${item#?}"
 				case $item in
 					[ofu]*)
 						# free desktop
-						echo -n "%{A:bspc desktop -f $name:}"
-						echo -n ""
-						echo -n "%{A} "
+						desks="$desks %{A:bspc desktop -f $name:}"
+						desks="$desks"
+						desks="$desks%{A}"
 						;;
 					[OFU]*)
 						# focused free desktop
-						echo -n "%{A:bspc desktop -f $name:}"
-						echo -n ""
-						echo -n "%{A} "
+						desks="$desks %{A:bspc desktop -f $name:}"
+						desks="$desks"
+						desks="$desks%{A}"
 						;;
 				esac
 				shift
 			done
 	esac
+	desks = $(echo -n "$desks" | sed 's/ //')
+	echo -n "$desks"
 	echo "%{A}%{A}"
 done < <(bspc subscribe report)
