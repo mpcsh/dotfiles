@@ -10,5 +10,5 @@ if [[ $(pamixer --get-mute) == 'true' ]]; then
 	volumeColor=$SELBG
 	echo "${volumeIcon} %{F$SELBG}00%{F$FG}"
 else
-	echo "${volumeIcon} ${volumeState}"
+	echo "${volumeIcon} ${volumeState}%"
 fi
