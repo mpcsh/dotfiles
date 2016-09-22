@@ -2,4 +2,4 @@
 
 source screen_vars
 
-$1 -fn $FONT -x $XOFF -y $YOFF -w $WIDTH -h $HEIGHT -nb $BG -nf $FG -sb $SELBG
+$1 -fn $FONT -x $XOFF -y $YOFF -w $WIDTH -h $HEIGHT -nb $BG -nf $FG -sb $FG -sf $BG
