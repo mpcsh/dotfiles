@@ -21,7 +21,7 @@ if [[ $# != 1 ]]; then
 	echo $USAGE
 elif [[ $1 == "peek" ]]; then
 	if pgrep "admiral" > /dev/null; then
-		exit
+		hide
 	else
 		peek
 	fi
