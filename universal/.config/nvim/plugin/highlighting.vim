@@ -6,6 +6,9 @@ colorscheme solarized
 " whitespace highlighting
 hi SpecialKey cterm=none ctermbg=bg ctermfg=none
 
+" visual selection
+hi Visual cterm=none ctermbg=15 ctermfg=none
+
 " show highlighting groups for current word
 nmap <C-S-P> :call <SID>SynStack()<CR>
 function! <SID>SynStack()
