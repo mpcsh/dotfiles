@@ -4,7 +4,7 @@ After=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/reflector --protocol https --latest 25 --sort rate --save /etc/pacman.d/mirrorlist
+ExecStart=/usr/bin/reflector --latest 25 --sort rate --save /etc/pacman.d/mirrorlist
 TimeoutStopSec=180
 KillMode=process
 KillSignal=SIGINT
