@@ -25,7 +25,7 @@ EOF
 
 clip() {
     if command -v xclip >/dev/null 2>&1;then
-        printf '%s' "$@" | xclip
+        printf '%s' "$@" | xclip -selection clipboard
     fi
 }
 
