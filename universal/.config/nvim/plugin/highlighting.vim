@@ -4,7 +4,7 @@ set background=dark
 colorscheme solarized
 
 " whitespace highlighting
-hi SpecialKey cterm=none ctermbg=bg ctermfg=none
+hi SpecialKey cterm=none ctermbg=none ctermfg=11
 
 " visual selection
 hi Visual cterm=none ctermbg=15 ctermfg=none
