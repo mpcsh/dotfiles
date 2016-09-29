@@ -47,8 +47,8 @@ super + grave
 	termite
 
 # chromium
-super + c
-	~/dotfiles/scripts/hidpi chromium 1.15 1
+super + f
+	firefox-beta
 
 # take screenshot
 super + Print
