@@ -48,7 +48,7 @@ super + grave
 
 # chromium
 super + f
-	firefox-beta
+	firefox
 
 # take screenshot
 super + Print
