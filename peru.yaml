@@ -68,7 +68,7 @@ git module vim-replace:
 
 git module vim-rust:
   url: https://github.com/rust-lang/rust.vim.git
-  rev: fc11d02fee330df7b30c83a80f09dd0c60ab43ce
+  rev: 2030019e1a5d0593dc662a0c37f3d06c4de8c252
 
 git module vim-sensible:
   url: https://github.com/tpope/vim-sensible.git
