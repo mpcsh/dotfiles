@@ -74,3 +74,33 @@ function find_wids() {
 		fi
 	done
 }
+
+# playgrounds
+function playground() {
+	if [[ $# != 1 ]]; then
+		echo "must supply either c, rust, iced, or python"
+	fi
+	dir="$(mktemp -d)"
+	mkdir -p "$dir/playground"
+	cd "$dir/playground"
+	if [[ $1 == "c" ]]; then
+		cat << EOF > test.c
+#include <stdio.h>
+
+int main() {
+
+	return 0;
+}
+EOF
+		cat << EOF > Makefile
+.PHONY: default clean
+
+default:
+	gcc -Wall -g -o test.out test.c
+
+clean:
+	rm -rf *.out
+EOF
+		vim test.c
+	fi
+}
