@@ -96,10 +96,10 @@ EOF
 .PHONY: default clean
 
 default:
-	gcc -Wall -g -o test.out test.c
+	gcc -Wall -g -o out.test test.c
 
 clean:
-	rm -rf *.out
+	rm -f out.*
 EOF
 		vim test.c
 	fi
