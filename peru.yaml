@@ -11,6 +11,7 @@ imports:
   vim-commentary: universal/.config/nvim/bundle/commentary.vim
   vim-easymotion: universal/.config/nvim/bundle/easymotion.vim
   vim-goyo: universal/.config/nvim/bundle/goyo.vim
+  vim-repeat: universal/.config/nvim/bundle/repeat.vim
   vim-replace: universal/.config/nvim/bundle/replace.vim
   vim-rust: universal/.config/nvim/bundle/rust.vim
   vim-sensible: universal/.config/nvim/bundle/sensible.vim
@@ -61,6 +62,10 @@ git module vim-easymotion:
 git module vim-goyo:
   url: https://github.com/junegunn/goyo.vim.git
   rev: 8e8f1d45b61e1fce7f84ee061c38f9e033e86ff9
+
+git module vim-repeat:
+  url: https://github.com/tpope/vim-repeat.git
+  rev: 7a6675f092842c8f81e71d5345bd7cdbf3759415
 
 git module vim-replace:
   url: https://github.com/vim-scripts/ReplaceWithRegister.git
