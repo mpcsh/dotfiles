@@ -10,7 +10,7 @@ hi SpecialKey cterm=none ctermbg=none ctermfg=11
 hi Visual cterm=none ctermbg=15 ctermfg=none
 
 " closure highlighting
-hi MatchParen cterm=none ctermbg=15 ctermfg=none
+hi MatchParen cterm=none ctermbg=none ctermfg=15
 
 " show highlighting groups for current word
 nmap <C-S-P> :call <SID>SynStack()<CR>
