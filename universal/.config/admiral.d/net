@@ -3,7 +3,7 @@
 source screen_vars
 networkIcon=""
 
-if ping -q -w 1 -c 1 8.8.8.8 > /dev/null; then
+if ping -i 0.25 -q -w 1 -c 4 8.8.8.8 > /dev/null; then
 	NAME=$(iwgetid -r 2> /dev/null)
 	if (( $? == 0 )); then
 		echo "${networkIcon} $NAME"
