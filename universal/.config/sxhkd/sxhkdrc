@@ -48,7 +48,7 @@ super + grave
 
 # chromium
 super + c
-	~/dotfiles/scripts/hidpi chromium 1.15 1.0
+	~/dotfiles/scripts/hidpi chromium 1.25 1.0
 
 # take screenshot
 super + Print
@@ -68,7 +68,7 @@ super + p
 
 # spotify
 super + s
-	~/dotfiles/scripts/hidpi spotify 1.15 1.0001
+	~/dotfiles/scripts/hidpi spotify 1.25 1.0001
 
 # irssi
 super + i
