@@ -25,7 +25,7 @@ path = "./clock"
 
 [net]
 path = "./net"
-reload = 10
+reload = 1
 
 [redshift]
 path = "./redshift"
@@ -33,7 +33,7 @@ reload = 1
 
 [battery]
 path = "./battery"
-reload = 10
+reload = 1
 
 # Used for formatting lemonbar
 [left]

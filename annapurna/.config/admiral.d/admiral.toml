@@ -14,7 +14,7 @@ path = "./clock"
 
 [net]
 path = "./net"
-reload = 20
+reload = 1
 
 [redshift]
 path = "./redshift"
