@@ -1,6 +1,6 @@
-#
+##################################################
 # bspwm-specific hotkeys
-#
+##################################################
 
 # kill focused node
 super + q
@@ -19,8 +19,8 @@ super + shift + {0-5}
 	bspc node -d {0-5}
 
 # focus given desktop
-super + {0-5}
-	bspc desktop -f {0-5}
+super + {0-9}
+	bspc desktop -f {0-9}
 
 # toggle fullscreen for focused node
 super + shift + f
@@ -30,9 +30,9 @@ super + shift + f
 super + shift + v
 	bspc node @/ -F vertical
 
-#
+##################################################
 # application shortcuts
-#
+##################################################
 
 # lock
 super + Escape
@@ -60,11 +60,11 @@ super + r
 
 # dmenu
 super + space
-	~/dotfiles/scripts/menu dmenu_run
+	~/dotfiles/scripts/menu dmenu_run bottom
 
 # passmenu
 super + p
-	~/dotfiles/scripts/menu passmenu
+	~/dotfiles/scripts/menu passmenu bottom
 
 # spotify
 super + s
@@ -74,25 +74,17 @@ super + s
 super + i
 	termite -e irssi
 
-# pop up the lemonbar
-super + b
-	~/dotfiles/scripts/barctl peek
-
-# toggle the lemonbar
-super + shift + b
-	~/dotfiles/scripts/barctl toggle
-
-#
+##################################################
 # laptop function keys
-#
+##################################################
 
 # increase brightness
 XF86MonBrightnessUp
-	~/dotfiles/scripts/xbacklightup
+	~/dotfiles/scripts/xbacklight up
 
 # decrease brightness
 XF86MonBrightnessDown
-	~/dotfiles/scripts/xbacklightdown
+	~/dotfiles/scripts/xbacklight down
 
 # increase volume
 XF86AudioRaiseVolume

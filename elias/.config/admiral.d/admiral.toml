@@ -1,12 +1,13 @@
 [admiral]
-items = ["center",
-					"workspace", "delimeter",
+items = ["left",
+					"delimeter", "workspace",
+				"right",
 					"volume", "delimeter",
 					"brightness", "delimeter",
 					"clock", "delimeter",
 					"net", "delimeter",
 					"redshift", "delimeter",
-					"battery",
+					"battery", "delimeter"
 				]
 
 [workspace]

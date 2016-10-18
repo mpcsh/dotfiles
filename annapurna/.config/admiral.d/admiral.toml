@@ -1,9 +1,10 @@
 [admiral]
-items = ["center",
-					"workspace", "delimeter",
+items = ["left",
+					"delimeter", "workspace",
+				"right",
 					"clock", "delimeter",
 					"net", "delimeter",
-					"redshift"
+					"redshift", "delimeter"
 				]
 
 [workspace]
