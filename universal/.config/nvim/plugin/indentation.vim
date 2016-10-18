@@ -2,6 +2,12 @@
 set tabstop=2
 set shiftwidth=2
 
+" whitespace highlighting
+if !(&filetype == "txt")
+	set list " show special characters
+	set listchars=tab:→\ ,trail:·,extends:>,precedes:<,nbsp:‥
+endif
+
 " ics
 autocmd BufNewFile,BufRead *.iced call SetICSOptions()
 function SetICSOptions()
@@ -21,11 +27,5 @@ autocmd BufNewFile,BufRead *.as call SetAsmOptions()
 autocmd BufNewFile,BufRead *.asm call SetAsmOptions()
 function SetAsmOptions()
 	setlocal tabstop=8
-	hi SpecialKey cterm=none ctermbg=none ctermfg=bg
+	setlocal nolist
 endfunction
-
-" whitespace highlighting
-if !(&filetype == "txt")
-	set list " show special characters
-	set listchars=tab:→\ ,trail:·,extends:>,precedes:<,nbsp:‥
-endif
