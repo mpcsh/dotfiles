@@ -3,7 +3,7 @@
 source ~/dotfiles/scripts/screen_vars
 
 bspc config border_width $BORDER_WIDTH
-bspc config window_gap $WINDOW_GAP
+bspc config window_gap $GAPS
 bspc config split_ratio 0.5
 bspc config focus_follows_pointer true
 bspc config ignore_ewmh_focus true
