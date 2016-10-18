@@ -11,14 +11,14 @@ while read -r line; do
 				item="$1"
 				name="${item#?}"
 				case $item in
-					[ofu]*)
-						# free desktop
+					[ou]*)
+						# occupied urgent unfocused desktop
 						desks="$desks %{A:bspc desktop -f $name:}"
 						desks="$desks"
 						desks="$desks%{A}"
 						;;
 					[OFU]*)
-						# focused free desktop
+						# focused desktop
 						desks="$desks %{A:bspc desktop -f $name:}"
 						desks="$desks"
 						desks="$desks%{A}"
