@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+USAGE="Usage: xbacklight [up|down]"
+
+if [[ $# != 1 ]]; then
+	echo "$USAGE"
+elif [[ $1 == "up" ]]; then
+	xbacklight -set $(( $(xbacklight | awk '{printf("%1.f\n", $1)}') + 5 )) -time 0 -steps 1
+elif [[ $1 == "down" ]]; then
+	xbacklight -set $(( $(xbacklight | awk '{printf("%1.f\n", $1)}') - 5 )) -time 0 -steps 1
+else
+	echo "$USAGE"
+fi
