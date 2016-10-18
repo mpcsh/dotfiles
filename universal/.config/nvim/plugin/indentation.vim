@@ -15,6 +15,15 @@ autocmd BufNewFile,BufRead *.coffee set expandtab
 autocmd BufNewFile,BufRead *.js set expandtab
 autocmd BufNewFile,BufRead *.json set expandtab
 
+" assembly indentation
+autocmd BufNewFile,BufRead *.s call SetAsmOptions()
+autocmd BufNewFile,BufRead *.as call SetAsmOptions()
+autocmd BufNewFile,BufRead *.asm call SetAsmOptions()
+function SetAsmOptions()
+	setlocal tabstop=8
+	hi SpecialKey cterm=none ctermbg=none ctermfg=bg
+endfunction
+
 " whitespace highlighting
 if !(&filetype == "txt")
 	set list " show special characters
