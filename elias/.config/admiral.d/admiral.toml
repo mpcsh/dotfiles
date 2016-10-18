@@ -2,11 +2,11 @@
 items = ["left",
 					"delimeter", "workspace",
 				"right",
-					"volume", "delimeter",
-					"brightness", "delimeter",
 					"clock", "delimeter",
 					"net", "delimeter",
 					"redshift", "delimeter",
+					"volume", "delimeter",
+					"brightness", "delimeter",
 					"battery", "delimeter"
 				]
 
