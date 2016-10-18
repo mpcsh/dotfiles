@@ -1,8 +1,9 @@
 [admiral]
 items = ["left",
 					"delimeter", "workspace",
-				"right",
+				"center",
 					"clock", "delimeter",
+				"right",
 					"net", "delimeter",
 					"redshift", "delimeter",
 					"volume", "delimeter",
