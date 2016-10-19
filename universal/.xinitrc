@@ -22,7 +22,6 @@ xset m 1 0 &
 xset s off -dpms &
 
 # autostart apps
-nice admiral | bar | sh &
 nice dunst -fn "$(xrq font | sed 's/.*xft://g' | sed 's/:size=/ /g' | sed 's/:antialias.*//g')" &
 nice redshift &
 nice compton &
