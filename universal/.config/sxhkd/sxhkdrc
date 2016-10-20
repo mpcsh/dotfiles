@@ -30,6 +30,24 @@ super + shift + f
 super + shift + v
 	bspc node @/ -F vertical
 
+# toggle floating mode for focused node
+super + shift + space
+	bspc node -t ~floating
+
+# floating resize
+super + alt + {h,l}
+	wrs {-10,10} 0 $(pfw)
+
+super + alt + {j,k}
+	wrs 0 {10,-10} $(pfw)
+
+# floating move
+super + alt + shift + {h,l}
+	wmv {-10,10} 0 $(pfw)
+
+super + alt + shift + {j,k}
+	wmv 0 {10,-10} $(pfw)
+
 ##################################################
 # application shortcuts
 ##################################################
