@@ -28,28 +28,8 @@ body {
 }
 
 .favorites-list {
-	text-align: center;
 	width: 10rem;
 	margin: 2rem;
-}
-
-.search {
-	width: 30rem;
-	padding: 0.5rem;
-	border: 1px solid #839496;
-}
-
-.search-box {
-	width: 100%;
-	margin: auto;
-	padding: 0;
-	background-color: rgba(0, 0, 0, 0);
-	color: #839496;
-	border: none;
-}
-
-.search-box:focus {
-	outline: none;
 }
 
 ul {
@@ -77,17 +57,4 @@ ul > li > a {
 ul > li > a:hover {
 	color: #002b36;
 	background-color: #839496;
-}
-
-/* webkit compat */
-.container {
-	display: -webkit-flex;
-	-webkit-flex-direction: column;
-	-webkit-align-items: center;
-	-webkit-justify-content: center;
-}
-
-.favorites {
-	display: -webkit-flex;
-	-webkit-flex-direction: row;
 }
