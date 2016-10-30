@@ -1,0 +1,20 @@
+!wm
+gaps: 12
+
+!bar
+barHeight: 36
+barXOffset: 0
+barYOffset: 0
+
+!font
+Xft.dpi: 92
+*font: xft:M+1mn:size=16
+*iconFont: xft:FontAwesome:size=16
+
+!font rendering
+Xft.antialias: true
+Xft.autohint: false
+Xft.hinting: true
+Xft.hintstyle: hintfull
+Xft.lcdfilter: none
+Xft.rgba: rgba

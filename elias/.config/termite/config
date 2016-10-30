@@ -1,0 +1,39 @@
+[options]
+allow_bold = false
+audible_bell = false
+browser = /usr/bin/xdg-open
+clickable_url = true
+cursor_blink = off
+cursor_shape = block
+font = M+ 1mn 16
+fullscreen = false
+scrollback_lines = 65535
+scroll_on_keystroke = true
+scroll_on_output = false
+search_wrap = true
+
+# Solarized dark color scheme
+[colors]
+foreground = #839496
+background = #002b36
+
+# if unset, will reverse foreground and background
+#highlight = #839496
+
+# colors from color0 to color254 can be set
+color0 = #073642
+color1 = #dc322f
+color2 = #859900
+color3 = #b58900
+color4 = #268bd2
+color5 = #d33682
+color6 = #2aa198
+color7 = #eee8d5
+color8 = #002b36
+color9 = #cb4b16
+color10 = #586e75
+color11 = #657b83
+color12 = #839496
+color13 = #6c71c4
+color14 = #93a1a1
+color15 = #fdf6e3
