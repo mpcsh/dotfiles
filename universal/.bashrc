@@ -74,8 +74,8 @@ PS1='$(tput setaf 2)\u$(tput sgr0) at $(tput setaf 3)\h$(tput sgr0) in $(tput se
 # dem perms!
 [[ $HOSTNAME == "xyz" ]] && umask 022 || umask 077
 
-# display startx prompt on elias and annapurna when logging in to a tty
-if [[ -z $DISPLAY && $HOSTNAME == "elias" || -z $DISPLAY && $HOSTNAME == "annapurna" || -z $DISPLAY && $HOSTNAME == "eiger" ]]; then
+# display startx prompt on huascaran and annapurna when logging in to a tty
+if [[ -z $DISPLAY && $HOSTNAME == "huascaran" || -z $DISPLAY && $HOSTNAME == "annapurna" || -z $DISPLAY && $HOSTNAME == "eiger" ]]; then
 	fortune calvin | cowsay
 	echo "startx?"
 	select yn in "yes" "no"; do

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ $HOSTNAME == "elias" || $HOSTNAME == "eiger" ]]; then
+if [[ $HOSTNAME == "huascaran" || $HOSTNAME == "eiger" ]]; then
 	$1 --force-device-scale-factor=$2
 else
 	$1 --force-device-scale-factor=$3
