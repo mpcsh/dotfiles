@@ -26,6 +26,7 @@ nice dunst -fn "$(xrq font | sed 's/.*xft://g' | sed 's/:size=/ /g' | sed 's/:an
 nice seaf-daemon -c ~/.ccnet -d ~/Seafile/.seafile-data -w ~/Seafile &
 nice redshift &
 nice compton &
+nice run_keybase &
 
 # keymaps
 xmodmap ~/.config/xmodmap
