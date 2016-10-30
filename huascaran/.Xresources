@@ -2,14 +2,14 @@
 gaps: 12
 
 !bar
-barHeight: 36
+barHeight: 48
 barXOffset: 0
 barYOffset: 0
 
 !font
-Xft.dpi: 92
-*font: xft:M+1mn:size=16
-*iconFont: xft:FontAwesome:size=16
+Xft.dpi: 192
+*font: xft:M+1mn:size=10
+*iconFont: xft:FontAwesome:size=10
 
 !font rendering
 Xft.antialias: true
