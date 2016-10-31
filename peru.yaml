@@ -9,6 +9,7 @@ imports:
   vim-abolish: universal/.config/nvim/bundle/abolish.vim
   vim-coffee-script: universal/.config/nvim/bundle/coffee-script.vim
   vim-commentary: universal/.config/nvim/bundle/commentary.vim
+  vim-ctrlp: universal/.config/nvim/bundle/ctrlp.vim
   vim-easymotion: universal/.config/nvim/bundle/easymotion.vim
   vim-goyo: universal/.config/nvim/bundle/goyo.vim
   vim-repeat: universal/.config/nvim/bundle/repeat.vim
@@ -55,6 +56,10 @@ git module vim-coffee-script:
 git module vim-commentary:
   url: https://github.com/tpope/vim-commentary.git
   rev: 73e0d9a9d1f51b6cc9dc965f62669194ae851cb1
+
+git module vim-ctrlp:
+  url: https://github.com/ctrlpvim/ctrlp.vim.git
+  rev: f5a6ae2e37402c6d4299d29f922da58945efc074
 
 git module vim-easymotion:
   url: https://github.com/easymotion/vim-easymotion.git
