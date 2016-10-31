@@ -17,7 +17,6 @@ imports:
   vim-rust: universal/.config/nvim/bundle/rust.vim
   vim-sensible: universal/.config/nvim/bundle/sensible.vim
   vim-surround: universal/.config/nvim/bundle/surround.vim
-  vim-tex: universal/.config/nvim/bundle/tex.vim
 
 # solarized
 git module vim-colors-solarized:
@@ -88,7 +87,3 @@ git module vim-sensible:
 git module vim-surround:
   url: https://github.com/tpope/vim-surround.git
   rev: e49d6c2459e0f5569ff2d533b4df995dd7f98313
-
-git module vim-tex:
-  url: https://github.com/lervag/vimtex.git
-  rev: 7b35d3782ba2284a108dc5ae3bd0b4cfe04a80c1
