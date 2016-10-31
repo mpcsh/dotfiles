@@ -16,6 +16,7 @@ imports:
   vim-rust: universal/.config/nvim/bundle/rust.vim
   vim-sensible: universal/.config/nvim/bundle/sensible.vim
   vim-surround: universal/.config/nvim/bundle/surround.vim
+  vim-tex: universal/.config/nvim/bundle/tex.vim
 
 # solarized
 git module vim-colors-solarized:
@@ -57,7 +58,7 @@ git module vim-commentary:
 
 git module vim-easymotion:
   url: https://github.com/easymotion/vim-easymotion.git
-  rev: 5c6f3cd9a713491e6b32752a05c45198aa91540a
+  rev: 11632455de8caa40f264501df8f0a3e249cf0595
 
 git module vim-goyo:
   url: https://github.com/junegunn/goyo.vim.git
@@ -73,7 +74,7 @@ git module vim-replace:
 
 git module vim-rust:
   url: https://github.com/rust-lang/rust.vim.git
-  rev: 2030019e1a5d0593dc662a0c37f3d06c4de8c252
+  rev: 59e5e2f8b7df21eb438124b95c7295da9c53e1d7
 
 git module vim-sensible:
   url: https://github.com/tpope/vim-sensible.git
@@ -82,3 +83,7 @@ git module vim-sensible:
 git module vim-surround:
   url: https://github.com/tpope/vim-surround.git
   rev: e49d6c2459e0f5569ff2d533b4df995dd7f98313
+
+git module vim-tex:
+  url: https://github.com/lervag/vimtex.git
+  rev: 7b35d3782ba2284a108dc5ae3bd0b4cfe04a80c1
