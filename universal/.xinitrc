@@ -22,7 +22,7 @@ xset m 1 0 &
 xset s off -dpms &
 
 # autostart apps
-nice dunst -fn "$(xrq font | sed 's/.*xft://g' | sed 's/:size=/ /g' | sed 's/:antialias.*//g')" &
+nice dunst -fn "$(xrq font | cut -d: -f2) $(( $(xrq font | cut -d: -f3) * $(( $(xrq Xft.dpi) / 96 )) ))" &
 nice seaf-daemon -c ~/.ccnet -d ~/Seafile/.seafile-data -w ~/Seafile &
 nice redshift &
 nice compton &
