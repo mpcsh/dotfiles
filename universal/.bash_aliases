@@ -28,9 +28,6 @@ alias ping='ping -4'
 # typed racket
 alias racket='racket -I typed/racket'
 
-# custom neofetch colors
-alias neofetch='neofetch --colors 1 1 1 1 --ascii_colors 6 1'
-
 # run previous command as root
 alias fuck='sudo $(history -p \!\!) '
 
