@@ -1,5 +1,7 @@
 " set leader key
 let mapleader=","
+let maplocalleader="\\"
+set timeoutlen=100
 noremap <,> <Nop>
 
 " make j and k move inside of a split line
