@@ -1,6 +1,6 @@
-" 2-space width tabs
-set tabstop=2
-set shiftwidth=2
+" 4-space width tabs
+set tabstop=4
+set shiftwidth=4
 
 " whitespace highlighting
 if !(&filetype == "txt")
