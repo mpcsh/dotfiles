@@ -1,6 +1,9 @@
 # peru
 .peru
 
+# tmux
+universal/.config/tmux/*
+
 # nvim
 universal/.config/nvim/*
 !universal/.config/nvim/plugin

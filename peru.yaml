@@ -3,6 +3,8 @@ imports:
   dircolors-solarized: universal/.colors/
   xresources-solarized: universal/.colors/
 
+  tmux-sensible: universal/.config/tmux/sensible
+
   vim-pathogen: universal/.config/nvim/autoload/
 
   vim-a: universal/.config/nvim/bundle/a.vim
@@ -34,6 +36,11 @@ git module xresources-solarized:
   pick: Xresources.dark
   rev: 025ceddbddf55f2eb4ab40b05889148aab9699fc
 
+# tmux
+git module tmux-sensible:
+  url: https://github.com/tmux-plugins/tmux-sensible.git
+  rev: 526110eb9b60825d3276afba97ffa4cedb4b0ab9
+
 # vim plugin management
 git module vim-pathogen:
   url: https://github.com/tpope/vim-pathogen.git
@@ -59,7 +66,7 @@ git module vim-commentary:
 
 git module vim-ctrlp:
   url: https://github.com/ctrlpvim/ctrlp.vim.git
-  rev: c410d8452a6e2bf60199106f99223a9f34f84878
+  rev: 88b61e77a285d10d0163bd383d3bb2909ea2ddca
 
 git module vim-easymotion:
   url: https://github.com/easymotion/vim-easymotion.git
@@ -91,4 +98,4 @@ git module vim-surround:
 
 git module vim-tex:
   url: https://github.com/lervag/vimtex.git
-  rev: c1dabd446f2419d20d2a79e16b7abbba3d51ed82
+  rev: 68e6e3b27a04b518d64a9d67c4d987cedf80ff85
