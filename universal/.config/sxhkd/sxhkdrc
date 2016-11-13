@@ -62,7 +62,7 @@ super + shift + Escape
 
 # termite
 super + grave
-	termite
+	termite -e 'tmux -2'
 
 # chromium
 super + c
