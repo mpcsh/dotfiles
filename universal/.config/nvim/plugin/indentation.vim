@@ -8,6 +8,16 @@ if !(&filetype == "txt")
 	set listchars=tab:→\ ,trail:·,extends:>,precedes:<,nbsp:‥
 endif
 
+" rust
+autocmd BufNewFile,BufRead *.rs call SetRustOptions()
+function SetRustOptions()
+	setlocal filetype=rust
+	setlocal commentstring=//\ %s
+	setlocal noexpandtab
+	setlocal tabstop=2
+	setlocal shiftwidth=2
+endfunction
+
 " ics
 autocmd BufNewFile,BufRead *.iced call SetICSOptions()
 function SetICSOptions()
