@@ -98,11 +98,11 @@ super + i
 
 # increase brightness
 XF86MonBrightnessUp
-	~/dotfiles/scripts/xbacklight up
+	~/dotfiles/scripts/backlightctl up
 
 # decrease brightness
 XF86MonBrightnessDown
-	~/dotfiles/scripts/xbacklight down
+	~/dotfiles/scripts/backlightctl down
 
 # increase volume
 XF86AudioRaiseVolume

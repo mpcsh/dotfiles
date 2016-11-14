@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
 icon=""
-brightness=$(xbacklight | awk '{printf("%1.f\n", $1)}')
+brightness=$(backlightctl query)
 
 echo "${icon} ${brightness}%"
