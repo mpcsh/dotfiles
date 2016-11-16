@@ -31,45 +31,63 @@ function prompt_git() {
 		if [ "$(git rev-parse --is-inside-git-dir 2> /dev/null)" == 'false' ]; then
 
 			if [[ -O "$(git rev-parse --show-toplevel)/.git/index" ]]; then
-				git update-index --really-refresh -q &> /dev/null;
-			fi;
+				git update-index --really-refresh -q &> /dev/null
+			fi
 
 			# Check for uncommitted changes in the index.
 			if ! $(git diff --quiet --ignore-submodules --cached); then
-				s+='+';
-			fi;
+				s+='±'
+			fi
 
 			# Check for unstaged changes.
 			if ! $(git diff-files --quiet --ignore-submodules --); then
-				s+='!';
-			fi;
+				s+='!'
+			fi
 
 			# Check for untracked files.
 			if [ -n "$(git ls-files --others --exclude-standard)" ]; then
-				s+='?';
-			fi;
+				s+='?'
+			fi
 
 			# Check for stashed files.
 			if $(git rev-parse --verify refs/stash &>/dev/null); then
-				s+='$';
-			fi;
+				s+='$'
+			fi
 
-		fi;
+		fi
 
 		# Get the short symbolic ref.
 		# If HEAD isn’t a symbolic ref, get the short SHA for the latest commit
 		# Otherwise, just give up.
 		branchName="$(git symbolic-ref --quiet --short HEAD 2> /dev/null || \
 			git rev-parse --short HEAD 2> /dev/null || \
-			echo '(unknown)')";
+			echo '(unknown)')"
 
 		echo -e " on $(tput setaf 5)${branchName}${s}$(tput sgr0)";
 	else
-		return;
-	fi;
+		return
+	fi
 }
 
-PS1='$(tput setaf 2)\u$(tput sgr0) at $(tput setaf 3)\h$(tput sgr0) in $(tput setaf 4)\W$(tput sgr0)$(prompt_git)\n→ '
+function prompt_svn() {
+	local s='';
+	local rev='';
+
+	# Check if the current directory is in a svn repository
+	if [ $(svn info &> /dev/null; echo "${?}") == '0' ]; then
+		rev=$(svn info 2> /dev/null | sed -n 's/Revision:\ //p')
+		# Check if PWD is dirty
+		if [ $(svn status "$PWD" 2> /dev/null | command grep -Eq '^\s*[ACDIM!?L]') ]; then
+			s="±"
+		fi
+	else
+		return
+	fi
+
+	echo -e " at $(tput setaf 5)${rev}${s}$(tput sgr0)"
+}
+
+PS1='$(tput setaf 2)\u$(tput sgr0) at $(tput setaf 3)\h$(tput sgr0) in $(tput setaf 4)\W$(tput sgr0)$(prompt_git)$(prompt_svn)\n→ '
 
 # dem perms!
 # [[ $HOSTNAME == "xyz" ]] && umask 022 || umask 077
