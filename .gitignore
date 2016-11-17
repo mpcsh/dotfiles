@@ -2,13 +2,12 @@
 .peru
 
 # tmux
-universal/.config/tmux/*
+tmux/.config/tmux/*
 
 # nvim
-universal/.config/nvim/*
-!universal/.config/nvim/plugin
-!universal/.config/nvim/*.vim
-scripts/v
+nvim/.config/nvim/*
+!nvim/.config/nvim/plugin
+!nvim/.config/nvim/*.vim
 
 # solarized
-universal/.colors
+colors

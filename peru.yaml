@@ -1,26 +1,26 @@
 imports:
-  vim-colors-solarized: universal/.config/nvim/bundle/solarized.vim
-  dircolors-solarized: universal/.colors/
-  xresources-solarized: universal/.colors/
+  vim-colors-solarized: nvim/.config/nvim/bundle/solarized.vim
+  dircolors-solarized: colors/.colors/
+  xresources-solarized: colors/.colors/
 
-  tmux-colors-solarized: universal/.config/tmux/solarized
-  tmux-sensible: universal/.config/tmux/sensible
+  tmux-colors-solarized: tmux/.config/tmux/solarized
+  tmux-sensible: tmux/.config/tmux/sensible
 
-  vim-pathogen: universal/.config/nvim/autoload/
+  vim-pathogen: nvim/.config/nvim/autoload/
 
-  vim-a: universal/.config/nvim/bundle/a.vim
-  vim-abolish: universal/.config/nvim/bundle/abolish.vim
-  vim-coffee-script: universal/.config/nvim/bundle/coffee-script.vim
-  vim-commentary: universal/.config/nvim/bundle/commentary.vim
-  vim-ctrlp: universal/.config/nvim/bundle/ctrlp.vim
-  vim-easymotion: universal/.config/nvim/bundle/easymotion.vim
-  vim-goyo: universal/.config/nvim/bundle/goyo.vim
-  vim-repeat: universal/.config/nvim/bundle/repeat.vim
-  vim-replace: universal/.config/nvim/bundle/replace.vim
-  vim-rust: universal/.config/nvim/bundle/rust.vim
-  vim-sensible: universal/.config/nvim/bundle/sensible.vim
-  vim-surround: universal/.config/nvim/bundle/surround.vim
-  vim-tex: universal/.config/nvim/bundle/vimtex.vim
+  vim-a: nvim/.config/nvim/bundle/a.vim
+  vim-abolish: nvim/.config/nvim/bundle/abolish.vim
+  vim-coffee-script: nvim/.config/nvim/bundle/coffee-script.vim
+  vim-commentary: nvim/.config/nvim/bundle/commentary.vim
+  vim-ctrlp: nvim/.config/nvim/bundle/ctrlp.vim
+  vim-easymotion: nvim/.config/nvim/bundle/easymotion.vim
+  vim-goyo: nvim/.config/nvim/bundle/goyo.vim
+  vim-repeat: nvim/.config/nvim/bundle/repeat.vim
+  vim-replace: nvim/.config/nvim/bundle/replace.vim
+  vim-rust: nvim/.config/nvim/bundle/rust.vim
+  vim-sensible: nvim/.config/nvim/bundle/sensible.vim
+  vim-surround: nvim/.config/nvim/bundle/surround.vim
+  vim-tex: nvim/.config/nvim/bundle/vimtex.vim
 
 # solarized
 git module vim-colors-solarized:
