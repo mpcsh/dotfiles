@@ -1,12 +1,18 @@
 " set leader key
 let mapleader=","
 let maplocalleader=" "
-set timeoutlen=300
+set timeoutlen=100
 noremap <,> <Nop>
 
 " make j and k move inside of a split line
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+
+" make HJKL jump to the extreme of their lowercase counterparts
+noremap <silent> H ^
+noremap <silent> L $
+noremap <silent> J G
+noremap <silent> K gg
 
 " disable "ex mode"
 nnoremap Q <Nop>
