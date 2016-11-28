@@ -5,7 +5,7 @@ set shiftwidth=2
 " whitespace highlighting
 if !(&filetype == "txt")
 	set list " show special characters
-	set listchars=tab:→\ ,trail:·,extends:>,precedes:<,nbsp:‥
+	set listchars=tab:⇢\ ,trail:·,extends:>,precedes:<,nbsp:‥
 endif
 
 " rust
