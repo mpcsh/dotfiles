@@ -17,10 +17,13 @@ noremap <silent> K gg
 " disable "ex mode"
 nnoremap Q <Nop>
 
-" set <Tab> to indent lines
+" set <Tab>, <S-tab> to indent/unindent lines
 vnoremap <Tab> >gv
-" use <Shift-Tab> to unindent lines
-noremap <S-Tab> <gv
+vnoremap <S-Tab> <gv
+" normal mode equivalents
+nnoremap <Tab> >>
+nnoremap <S-Tab> <<
+
 " since CTRL-I and <Tab> are the same key (*sigh*), we need to unclobber the original CTRL-I binding.
 nnoremap <leader>CTRL-I CTRL-I
 
