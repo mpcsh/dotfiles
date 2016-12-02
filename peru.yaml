@@ -16,6 +16,7 @@ imports:
   vim-easymotion: nvim/.config/nvim/bundle/easymotion.vim
   vim-fugitive: nvim/.config/nvim/bundle/fugitive.vim
   vim-goyo: nvim/.config/nvim/bundle/goyo.vim
+  vim-obsession: nvim/.config/nvim/bundle/obsession.vim
   vim-repeat: nvim/.config/nvim/bundle/repeat.vim
   vim-replace: nvim/.config/nvim/bundle/replace.vim
   vim-rust: nvim/.config/nvim/bundle/rust.vim
@@ -26,14 +27,17 @@ imports:
 # gruvbox
 git module vim-colors-gruvbox:
   url: https://github.com/morhetz/gruvbox.git
+  rev: 127c9d14d4bac1bac31e328b835a8919a255789c
 
 git module xresources-gruvbox:
   url: https://github.com/morhetz/gruvbox-contrib.git
   pick: xresources/gruvbox-dark.xresources
+  rev: 92d2c2f8e19ac8b0583e6dc1551eba478da633c2
 
 # tmux
 git module tmux-tpm:
   url: https://github.com/tmux-plugins/tpm
+  rev: b4c89884e0a8a97fdc1fd470688677867e14e801
 
 # vim plugins
 git module vim-pathogen:
@@ -47,7 +51,7 @@ git module vim-a:
 
 git module vim-abolish:
   url: https://github.com/tpope/vim-abolish.git
-  rev: 0d6316824906725418b5532b19314cc40eb224eb
+  rev: 05c7d31f6b3066582017edf5198502a94f6a7cb5
 
 git module vim-coffee-script:
   url: https://github.com/kchmck/vim-coffee-script.git
@@ -63,10 +67,15 @@ git module vim-easymotion:
 
 git module vim-fugitive:
   url: https://github.com/tpope/vim-fugitive.git
+  rev: b754bc2031f21a532c083dd0d072ba373bbe3a37
 
 git module vim-goyo:
   url: https://github.com/junegunn/goyo.vim.git
   rev: 8e8f1d45b61e1fce7f84ee061c38f9e033e86ff9
+
+git module vim-obsession:
+  url: https://github.com/tpope/vim-obsession.git
+  rev: ad1ef9a0db9a03463b005b488fd27cb735317394
 
 git module vim-repeat:
   url: https://github.com/tpope/vim-repeat.git
@@ -78,7 +87,7 @@ git module vim-replace:
 
 git module vim-rust:
   url: https://github.com/rust-lang/rust.vim.git
-  rev: 59e5e2f8b7df21eb438124b95c7295da9c53e1d7
+  rev: eed97e75117faaf210cb6103cf39a797fe21bfbe
 
 git module vim-sensible:
   url: https://github.com/tpope/vim-sensible.git
@@ -90,4 +99,4 @@ git module vim-surround:
 
 git module vim-tex:
   url: https://github.com/lervag/vimtex.git
-  rev: 68e6e3b27a04b518d64a9d67c4d987cedf80ff85
+  rev: 305eb161330af05c8a95587796a628b0e62d6d17
