@@ -2,9 +2,13 @@
 # bspwm-specific hotkeys
 ##################################################
 
-# kill focused node
+# close focused node
 super + q
 	bspc node -c
+
+# kill focused node
+super + shift + q
+	bspc node -k
 
 # focus given direction
 super + {h,j,k,l}
