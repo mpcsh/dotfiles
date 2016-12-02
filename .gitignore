@@ -9,7 +9,7 @@ nvim/.config/nvim/*
 !nvim/.config/nvim/plugin
 !nvim/.config/nvim/*.vim
 
-# solarized
+# colorscheme
 colors
 
 # gnome :(

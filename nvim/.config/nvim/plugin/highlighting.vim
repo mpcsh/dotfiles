@@ -1,16 +1,10 @@
 " colorscheme
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
 
-" whitespace highlighting
-hi SpecialKey cterm=none ctermbg=none ctermfg=11
-
-" comments
+" italic comments
 hi Comment cterm=italic
-
-" visual selection
-hi Visual cterm=none ctermbg=15 ctermfg=none
 
 " closure highlighting
 hi MatchParen cterm=none ctermbg=none ctermfg=15
