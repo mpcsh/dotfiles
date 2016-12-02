@@ -1,5 +1,5 @@
 [options]
-allow_bold = false
+allow_bold = true
 audible_bell = false
 browser = /usr/bin/xdg-open
 clickable_url = true
