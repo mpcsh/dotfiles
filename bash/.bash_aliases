@@ -34,6 +34,9 @@ alias fuck='sudo $(history -p \!\!) '
 # nvim
 [[ $HOSTNAME != "marowak" && $HOSTNAME != "doduo" ]] && alias vim='nvim'
 
+# tmux
+[[ $HOSTNAME == "marowak" ]] && alias tmux='~/local/bin/tmux'
+
 # rsync options
 alias rsync='rsync -aAXvzHE'
 
