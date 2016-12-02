@@ -11,3 +11,6 @@ nvim/.config/nvim/*
 
 # solarized
 colors
+
+# gnome :(
+gtk-standard/.config/gtk-3.0/bookmarks
