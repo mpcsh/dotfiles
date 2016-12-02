@@ -2,7 +2,7 @@
 .peru
 
 # tmux
-tmux/.config/tmux/*
+tmux/.tmux/*
 
 # nvim
 nvim/.config/nvim/*

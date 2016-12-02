@@ -1,11 +1,13 @@
 imports:
+  # solarized
   vim-colors-solarized: nvim/.config/nvim/bundle/solarized.vim
   dircolors-solarized: colors/.colors/
   xresources-solarized: colors/.colors/
 
-  tmux-colors-solarized: tmux/.config/tmux/solarized
-  tmux-sensible: tmux/.config/tmux/sensible
+  # tmux
+  tmux-tpm: tmux/.tmux/plugins/tpm
 
+  # vim
   vim-pathogen: nvim/.config/nvim/autoload/
 
   vim-a: nvim/.config/nvim/bundle/a.vim
@@ -14,6 +16,7 @@ imports:
   vim-commentary: nvim/.config/nvim/bundle/commentary.vim
   vim-ctrlp: nvim/.config/nvim/bundle/ctrlp.vim
   vim-easymotion: nvim/.config/nvim/bundle/easymotion.vim
+  vim-fugitive: nvim/.config/nvim/bundle/fugitive.vim
   vim-goyo: nvim/.config/nvim/bundle/goyo.vim
   vim-repeat: nvim/.config/nvim/bundle/repeat.vim
   vim-replace: nvim/.config/nvim/bundle/replace.vim
@@ -38,15 +41,10 @@ git module xresources-solarized:
   rev: 025ceddbddf55f2eb4ab40b05889148aab9699fc
 
 # tmux
-git module tmux-colors-solarized:
-  url: https://github.com/seebi/tmux-colors-solarized.git
-  rev: c84905ca4ee902835811f88c4955e592799aa12c
+git module tmux-tpm:
+  url: https://github.com/tmux-plugins/tpm
 
-git module tmux-sensible:
-  url: https://github.com/tmux-plugins/tmux-sensible.git
-  rev: 526110eb9b60825d3276afba97ffa4cedb4b0ab9
-
-# vim plugin management
+# vim plugins
 git module vim-pathogen:
   url: https://github.com/tpope/vim-pathogen.git
   export: autoload/
@@ -60,6 +58,12 @@ git module vim-a:
 git module vim-abolish:
   url: https://github.com/tpope/vim-abolish.git
   rev: 0d6316824906725418b5532b19314cc40eb224eb
+
+git module vim-airline:
+  url: https://github.com/vim-airline/vim-airline.git
+
+git module vim-airline-themes:
+  url: https://github.com/vim-airline/vim-airline-themes.git
 
 git module vim-coffee-script:
   url: https://github.com/kchmck/vim-coffee-script.git
@@ -76,6 +80,9 @@ git module vim-ctrlp:
 git module vim-easymotion:
   url: https://github.com/easymotion/vim-easymotion.git
   rev: 11632455de8caa40f264501df8f0a3e249cf0595
+
+git module vim-fugitive:
+  url: https://github.com/tpope/vim-fugitive.git
 
 git module vim-goyo:
   url: https://github.com/junegunn/goyo.vim.git
