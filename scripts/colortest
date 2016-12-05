@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-for i in $(seq 0 15); do
-	xrq color$i | hex2col
-done
