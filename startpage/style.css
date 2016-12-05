@@ -9,8 +9,8 @@ body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	background-color: #282828;
-	color: #ebdbb2;
+	background-color: #002b36;
+	color: #839496;
 }
 
 .container {
@@ -40,12 +40,12 @@ ul {
 ul > li > p {
 	font-weight: bold;
 	text-align: left;
-	border-bottom: 1px solid #ebdbb2;
+	border-bottom: 1px solid #839496;
 	padding-right: 100%;
 }
 
 ul > li > a {
-	color: #ebdbb2;
+	color: #839496;
 	outline: none;
 
 	display: block;
@@ -55,6 +55,6 @@ ul > li > a {
 }
 
 ul > li > a:hover {
-	color: #282828;
-	background-color: #ebdbb2;
+	color: #002b36;
+	background-color: #839496;
 }

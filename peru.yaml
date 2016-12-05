@@ -37,7 +37,7 @@ git module xresources-solarized:
 
 git module dircolors-solarized:
   url: https://github.com/seebi/dircolors-solarized.git
-  pick: dircolors.256dark
+  pick: dircolors.ansi-dark
 
 # tmux
 git module tmux-tpm:
