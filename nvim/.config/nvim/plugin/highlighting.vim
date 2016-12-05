@@ -1,7 +1,7 @@
 " colorscheme
 syntax enable
 set background=dark
-colorscheme gruvbox
+colorscheme solarized
 
 " italic comments
 hi Comment cterm=italic
