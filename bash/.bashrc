@@ -87,7 +87,7 @@ function prompt_svn() {
 	echo -e " at $(tput setaf 5)${rev}${s}$(tput sgr0)"
 }
 
-PS1='$(tput setaf 2)\u$(tput sgr0) at $(tput setaf 3)\h$(tput sgr0) in $(tput setaf 4)\W$(tput sgr0)$(prompt_git)\n↪ '
+PS1='$(tput setaf 2)\u$(tput sgr0) at $(tput setaf 3)\h$(tput sgr0) in $(tput setaf 4)\w$(tput sgr0)$(prompt_git)\n↪ '
 
 # dem perms!
 # [[ $HOSTNAME == "xyz" ]] && umask 022 || umask 077
