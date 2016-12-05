@@ -11,25 +11,25 @@
 	sticky_history = yes
 	padding = 24
 	horizontal_padding = 24
-	separator_color = "#ebdbb2"
+	separator_color = "#657b83"
 	startup_notification = false
 	geometry = "700x72-0-0"
 
 [frame]
 	width = 6
-	color = "#ebdbb2"
+	color = "#657b83"
 
 [urgency_low]
-	background = "#282828"
-	foreground = "#ebdbb2"
+	background = "#002b36"
+	foreground = "#839496"
 	timeout = 5
 
 [urgency_normal]
-	background = "#282828"
-	foreground = "#ebdbb2"
+	background = "#002b36"
+	foreground = "#839496"
 	timeout = 10
 
 [urgency_critical]
-	background = "#282828"
-	foreground = "#ebdbb2"
+	background = "#002b36"
+	foreground = "#839496"
 	timeout = 0
