@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 while true; do
-	notify-send "Take a break!"
-	sleep 17m
 	notify-send "Get to work!"
 	sleep 52m
+	notify-send "Take a break!"
+	sleep 17m
 done
