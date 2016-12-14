@@ -32,7 +32,7 @@ alias racket='racket -I typed/racket'
 alias fuck='sudo $(history -p \!\!) '
 
 # nvim
-[[ $HOSTNAME != "cubone" && $HOSTNAME != "doduo" ]] && alias vim='nvim'
+[[ $HOSTNAME != "magneton" && $HOSTNAME != "doduo" ]] && alias vim='nvim'
 
 # rsync options
 alias rsync='rsync -aAXvzHE'
