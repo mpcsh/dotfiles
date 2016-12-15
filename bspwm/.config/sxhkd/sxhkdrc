@@ -42,20 +42,6 @@ super + shift + v
 super + shift + space
 	bspc node -t ~floating
 
-# floating resize
-super + alt + {h,l}
-	wrs {-10,10} 0 $(pfw)
-
-super + alt + {j,k}
-	wrs 0 {10,-10} $(pfw)
-
-# floating move
-super + alt + shift + {h,l}
-	wmv {-10,10} 0 $(pfw)
-
-super + alt + shift + {j,k}
-	wmv 0 {10,-10} $(pfw)
-
 ##################################################
 # application shortcuts
 ##################################################
@@ -78,7 +64,10 @@ super + c
 
 # take screenshot
 super + Print
-	scrot -e 'mv $f ~/scrots/'
+	scrot -q 100 -e 'mv $f ~/scrots/'
+
+super + shift + Print
+	scrot -s -q 100 -e 'mv $f ~/scrots/'
 
 # ranger
 super + r
