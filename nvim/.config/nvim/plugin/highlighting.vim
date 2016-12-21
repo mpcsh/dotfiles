@@ -8,6 +8,7 @@ hi Comment cterm=italic
 
 " closure highlighting
 hi MatchParen cterm=none ctermbg=none ctermfg=15
+hi link MatchParen LinkDelimiter
 
 " show highlighting groups for current word
 nmap <C-S-s> :call <SID>SynStack()<CR>
