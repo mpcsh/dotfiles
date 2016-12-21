@@ -1,6 +1,6 @@
 " configure goyo dimensions
-let g:goyo_width='120'
-let g:goyo_height='90%'
+let g:goyo_width='80'
+let g:goyo_height='85%'
 
 " set line wrapping stuff, as well as quit-on-exit-goyo
 function! s:goyo_enter()
