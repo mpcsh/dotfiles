@@ -7,7 +7,7 @@ barXOffset: 0
 barYOffset: 0
 
 !font
-Xft.dpi: 120
+Xft.dpi: 132
 *font: xft:Input:size=12
 *iconFont: xft:FontAwesome:size=12
 
