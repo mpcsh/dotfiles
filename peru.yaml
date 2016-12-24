@@ -44,7 +44,7 @@ git module dircolors-solarized:
 # tmux
 git module tmux-tpm:
   url: https://github.com/tmux-plugins/tpm
-  rev: 350fa9ee5fe538ef86ba3df1f7cdc1402dd73d56
+  rev: 0ea31ae2d624413719e97dc7e138ed6cf749c7d2
 
 # vim plugins
 git module vim-pathogen:
@@ -85,8 +85,8 @@ git module vim-obsession:
   rev: ad1ef9a0db9a03463b005b488fd27cb735317394
 
 git module vim-pass:
-  url: git://mpcsh.xyz/vim-pass.git
-  rev: de726c89ff8bdb4a2c31f05e8458715e001e6c66
+  url: https://github.com/mpcsh/vim-pass.git
+  rev: 61929cb9213201030116a79aad5a5cb98cb7a612
 
 git module vim-repeat:
   url: https://github.com/tpope/vim-repeat.git
@@ -110,4 +110,4 @@ git module vim-surround:
 
 git module vim-tex:
   url: https://github.com/lervag/vimtex.git
-  rev: cade17d13ee6e592df023ab47c24f18fe44fa7fd
+  rev: 6b5c633fc8d109c8a966ce4dba9497f8be32fe09
