@@ -17,6 +17,7 @@ imports:
   vim-easymotion: nvim/.config/nvim/bundle/easymotion.vim
   vim-fugitive: nvim/.config/nvim/bundle/fugitive.vim
   vim-goyo: nvim/.config/nvim/bundle/goyo.vim
+  vim-haskell: nvim/.config/nvim/bundle/haskell.vim
   vim-obsession: nvim/.config/nvim/bundle/obsession.vim
   vim-pass: nvim/.config/nvim/bundle/pass.vim
   vim-repeat: nvim/.config/nvim/bundle/repeat.vim
@@ -79,6 +80,9 @@ git module vim-fugitive:
 git module vim-goyo:
   url: https://github.com/junegunn/goyo.vim.git
   rev: 8e8f1d45b61e1fce7f84ee061c38f9e033e86ff9
+
+git module vim-haskell:
+  url: https://github.com/neovimhaskell/haskell-vim.git
 
 git module vim-obsession:
   url: https://github.com/tpope/vim-obsession.git
