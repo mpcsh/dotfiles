@@ -14,3 +14,8 @@ colors
 
 # gnome :(
 gtk-standard/.config/gtk-3.0/bookmarks
+gtk-hidpi/.config/gtk-3.0/bookmarks
+
+# ghci
+ghc/.ghc/*
+!ghc/.ghc/ghci.conf
