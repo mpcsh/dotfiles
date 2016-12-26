@@ -11,7 +11,7 @@ arch:
 	stow ack irssi; sudo stow -t / issue pacman; sudo bash -c "systemctl enable $$PWD/systemd/*"
 
 dev:
-	stow bash colors git nvim tmux
+	stow bash colors ghc git nvim tmux
 
 xorg-base:
 	stow admiral bspwm colors dunst input redshift termite xinitrc xmodmap
