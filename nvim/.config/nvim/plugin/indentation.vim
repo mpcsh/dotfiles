@@ -8,6 +8,12 @@ if !(&filetype == "txt")
 	set listchars=tab:⇢\ ,trail:·,extends:>,precedes:<,nbsp:‥
 endif
 
+" haskell
+autocmd BufNewFile,BufRead *.hs call SetHaskellOptions()
+function SetHaskellOptions()
+	setlocal expandtab
+endfunction
+
 " rust
 autocmd BufNewFile,BufRead *.rs call SetRustOptions()
 function SetRustOptions()
