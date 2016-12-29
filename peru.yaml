@@ -25,6 +25,7 @@ imports:
   vim-rust: nvim/.config/nvim/bundle/rust.vim
   vim-sensible: nvim/.config/nvim/bundle/sensible.vim
   vim-surround: nvim/.config/nvim/bundle/surround.vim
+  vim-tabular: nvim/.config/nvim/bundle/tabular.vim
   vim-tex: nvim/.config/nvim/bundle/vimtex.vim
 
 # solarized
@@ -63,7 +64,7 @@ git module vim-abolish:
 
 git module vim-coffee-script:
   url: https://github.com/kchmck/vim-coffee-script.git
-  rev: b91dbe92ad794a85a03b089f384fa324ff4e0c3d
+  rev: 72f48c3f9bb6ba4f9ba1e6e4933c2c25686a1b62
 
 git module vim-commentary:
   url: https://github.com/tpope/vim-commentary.git
@@ -71,7 +72,7 @@ git module vim-commentary:
 
 git module vim-easymotion:
   url: https://github.com/easymotion/vim-easymotion.git
-  rev: 11632455de8caa40f264501df8f0a3e249cf0595
+  rev: af9786ee5780bf0cbafbd7b341c2b5234d18c1c0
 
 git module vim-fugitive:
   url: https://github.com/tpope/vim-fugitive.git
@@ -83,6 +84,7 @@ git module vim-goyo:
 
 git module vim-haskell:
   url: https://github.com/neovimhaskell/haskell-vim.git
+  rev: 434f5903556e2bea99d433d48adb681cb4967d27
 
 git module vim-obsession:
   url: https://github.com/tpope/vim-obsession.git
@@ -112,6 +114,10 @@ git module vim-surround:
   url: https://github.com/tpope/vim-surround.git
   rev: e49d6c2459e0f5569ff2d533b4df995dd7f98313
 
+git module vim-tabular:
+  url: https://github.com/godlygeek/tabular.git
+  rev: 00e1e7fcdbc6d753e0bc8043e0d2546fa81bf367
+
 git module vim-tex:
   url: https://github.com/lervag/vimtex.git
-  rev: 6b5c633fc8d109c8a966ce4dba9497f8be32fe09
+  rev: b98d4db8d0d264056e5e74b4a03b1044a3e42270
