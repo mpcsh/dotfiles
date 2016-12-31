@@ -8,6 +8,12 @@ if !(&filetype == "txt")
 	set listchars=tab:⇢\ ,trail:·,extends:>,precedes:<,nbsp:‥
 endif
 
+" markdown
+autocmd BufNewFile,BufRead *.md call SetMarkdownOptions()
+function SetMarkdownOptions()
+	setlocal textwidth=80
+endfunction
+
 " haskell
 autocmd BufNewFile,BufRead *.hs call SetHaskellOptions()
 function SetHaskellOptions()
