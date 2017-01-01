@@ -31,6 +31,9 @@ alias racket='racket -I typed/racket'
 # run previous command as root
 alias fuck='sudo $(history -p \!\!) '
 
+# marked
+alias marked='marked --lang-prefix=""'
+
 # nvim
 [[ $HOSTNAME != "magneton" && $HOSTNAME != "doduo" ]] && alias vim='nvim'
 
