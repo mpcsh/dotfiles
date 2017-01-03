@@ -13,7 +13,7 @@ sync:
 	peru sync
 
 arch:
-	sudo stow -t / issue pacman; sudo bash -c "systemctl enable $$PWD/systemd/*"
+	sudo stow -t / issue pacman; sudo bash -c "systemctl enable $$PWD/systemd/*.timer"
 
 dev:
 	stow $(DEV_MODULES)
