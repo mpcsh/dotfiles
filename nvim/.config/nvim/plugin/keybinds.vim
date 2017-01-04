@@ -39,3 +39,13 @@ set mouse=a
 
 " x clipboard access
 set clipboard=unnamedplus
+
+" disable arrow keys
+inoremap <Up> <Nop>
+noremap <Up> <Nop>
+inoremap <Down> <Nop>
+noremap <Down> <Nop>
+inoremap <Left> <Nop>
+noremap <Left> <Nop>
+inoremap <Right> <Nop>
+noremap <Right> <Nop>
