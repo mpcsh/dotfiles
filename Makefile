@@ -5,7 +5,6 @@ DEV_MODULES = ack bash colors ghc git irssi nvim tmux
 
 XORG_MODULES = admiral bspwm dunst input redshift termite xinitrc xmodmap
 
-
 default:
 	@echo 'Usage: make $$HOSTNAME'
 
