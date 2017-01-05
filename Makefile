@@ -1,18 +1,16 @@
 SHELL := /bin/bash
 .PHONY: sync arch dev xorg-base huascaran annapurna eiger xyz magneton
 
-DEV_MODULES = ack bash colors ghc git irssi nvim tmux
-
-XORG_MODULES = admiral bspwm dunst input redshift termite xinitrc xmodmap
-
+# Utilities
 default:
 	@echo 'Usage: make $$HOSTNAME'
 
 sync:
 	peru sync
 
+# Modules
 arch:
-	sudo stow -t / issue pacman; sudo bash -c "systemctl enable $$PWD/systemd/*.timer"
+	sudo stow -t / issue pacman
 
 dev:
 	stow $(DEV_MODULES)
@@ -20,18 +18,22 @@ dev:
 root-dev:
 	sudo stow -t /root $(DEV_MODULES)
 
+systemd:
+	sudo bash -c "systemctl enable $$PWD/systemd/*.timer"
+
 xorg-base:
 	stow $(XORG_MODULES)
 
-huascaran: sync arch dev xorg-base root-dev
+# Bootstrapping rules
+huascaran: sync arch dev root-dev systemd xorg-base
 	stow bar-laptop gtk-hidpi xresources-hidpi
 
-annapurna: sync arch dev xorg-base root-dev
+annapurna: sync arch dev root-dev systemd xorg-base
 	stow bar-desktop gtk-standard xresources-standard
 
-eiger: sync arch dev xorg-base root-dev
+eiger: sync arch dev root-dev systemd xorg-base
 	stow bar-laptop gtk-standard xresources-standard
 
-xyz: sync arch dev root-dev
+xyz: sync arch dev root-dev systemd
 
 magneton: sync dev
