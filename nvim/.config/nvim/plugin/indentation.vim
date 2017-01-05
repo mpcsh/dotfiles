@@ -8,6 +8,14 @@ if !(&filetype == "txt")
 	set listchars=tab:⇢\ ,trail:·,extends:>,precedes:<,nbsp:‥
 endif
 
+" c
+autocmd BufNewFile,BufRead *.c call SetCOptions()
+autocmd BufNewFile,BufRead *.h call SetCOptions()
+function SetCOptions()
+	setlocal colorcolumn=81
+	setlocal expandtab
+endfunction
+
 " markdown
 autocmd BufNewFile,BufRead *.md call SetMarkdownOptions()
 function SetMarkdownOptions()
