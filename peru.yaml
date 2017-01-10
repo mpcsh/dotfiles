@@ -18,7 +18,6 @@ imports:
   vim-fugitive: nvim/.config/nvim/bundle/fugitive.vim
   vim-goyo: nvim/.config/nvim/bundle/goyo.vim
   vim-haskell: nvim/.config/nvim/bundle/haskell.vim
-  vim-markdown: nvim/.config/nvim/bundle/markdown.vim
   vim-obsession: nvim/.config/nvim/bundle/obsession.vim
   vim-pass: nvim/.config/nvim/bundle/pass.vim
   vim-repeat: nvim/.config/nvim/bundle/repeat.vim
@@ -42,7 +41,7 @@ git module xresources-solarized:
 git module dircolors-solarized:
   url: https://github.com/seebi/dircolors-solarized.git
   pick: dircolors.ansi-dark
-  rev: 7ff9a697dcd7a0c452ed6cfc736b761c9a1714c4
+  rev: 71dbfd5ea3e39b41977df36a61bedc5f9374d47e
 
 # tmux
 git module tmux-tpm:
@@ -81,14 +80,11 @@ git module vim-fugitive:
 
 git module vim-goyo:
   url: https://github.com/junegunn/goyo.vim.git
-  rev: 8e8f1d45b61e1fce7f84ee061c38f9e033e86ff9
+  rev: ebdd67fd6160b7f95ac8fe50b382694c9961d6b8
 
 git module vim-haskell:
   url: https://github.com/neovimhaskell/haskell-vim.git
   rev: 434f5903556e2bea99d433d48adb681cb4967d27
-
-git module vim-markdown:
-  url: https://github.com/plasticboy/vim-markdown.git
 
 git module vim-obsession:
   url: https://github.com/tpope/vim-obsession.git
@@ -108,7 +104,7 @@ git module vim-replace:
 
 git module vim-rust:
   url: https://github.com/rust-lang/rust.vim.git
-  rev: eed97e75117faaf210cb6103cf39a797fe21bfbe
+  rev: 732b5fcb3652f81726d5f0f5b97c9027c01f057a
 
 git module vim-sensible:
   url: https://github.com/tpope/vim-sensible.git
@@ -124,4 +120,4 @@ git module vim-tabular:
 
 git module vim-tex:
   url: https://github.com/lervag/vimtex.git
-  rev: b98d4db8d0d264056e5e74b4a03b1044a3e42270
+  rev: ce316881ef7b21716d38481144ab9400e9a43116
