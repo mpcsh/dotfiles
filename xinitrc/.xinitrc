@@ -22,7 +22,6 @@ xset m 1 0 &
 xset s off -dpms &
 
 # autostart apps
-nice dunst -fn "$(xrq font | cut -d: -f2) $(( $(xrq font | cut -d= -f2) * $(( $(xrq Xft.dpi) / 96 )) ))" &
 nice redshift &
 nice compton &
 nice run_keybase &

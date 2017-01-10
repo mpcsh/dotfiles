@@ -27,7 +27,6 @@ sub notify {
 
 	$stripped =~ s/[^a-zA-Z0-9 .,!?\@:\>]//g;
 	system("aplay -f cd ~/.irssi/Europa.wav &> /dev/null &");
-	system("notify-send '$dest->{target}' '$stripped' &");
 }
 
 Irssi::signal_add('print text', 'notify');
