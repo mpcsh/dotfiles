@@ -1,6 +1,10 @@
 SHELL := /bin/bash
 .PHONY: sync arch dev xorg-base huascaran annapurna eiger xyz magneton
 
+# Modules
+DEV_MODULES = ack bash colors ghc git irssi nvim tmux
+XORG_MODULES = admiral bspwm dunst input redshift termite xinitrc xmodmap
+
 # Utilities
 default:
 	@echo 'Usage: make $$HOSTNAME'

@@ -14,6 +14,8 @@ autocmd BufNewFile,BufRead *.h call SetCOptions()
 function SetCOptions()
 	setlocal colorcolumn=81
 	setlocal expandtab
+	setlocal tabstop=4
+	setlocal shiftwidth=4
 endfunction
 
 " markdown

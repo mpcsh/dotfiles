@@ -34,6 +34,9 @@ alias fuck='sudo $(history -p \!\!) '
 # marked
 alias marked='marked --lang-prefix=""'
 
+# astyle
+alias astyle='astyle --style=stroustrup'
+
 # nvim
 [[ $HOSTNAME != "magneton" && $HOSTNAME != "doduo" ]] && alias vim='nvim'
 

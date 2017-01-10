@@ -7,7 +7,7 @@ servers = (
 		port = "6697";
 		use_ssl = "yes";
 		autoconnect = "yes";
-	};
+	}
 	{
 		address = "irc.freenode.net";
 		port = "6697";
