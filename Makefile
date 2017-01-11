@@ -2,7 +2,7 @@ SHELL := /bin/bash
 .PHONY: sync arch dev xorg-base huascaran annapurna eiger xyz magneton
 
 # Modules
-DEV_MODULES = ack bash colors ghc git irssi nvim tmux
+DEV_MODULES = ack bash colors ghc git irssi nvim ssh tmux
 XORG_MODULES = admiral bspwm input redshift termite xinitrc xmodmap
 
 # Utilities
