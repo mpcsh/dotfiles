@@ -1,6 +1,6 @@
-" 2-space width tabs
-set tabstop=2
-set shiftwidth=2
+" 4-space width tabs
+set tabstop=4
+set shiftwidth=4
 
 " whitespace highlighting
 if !(&filetype == "txt")
@@ -14,8 +14,6 @@ autocmd BufNewFile,BufRead *.h call SetCOptions()
 function SetCOptions()
 	setlocal colorcolumn=81
 	setlocal expandtab
-	setlocal tabstop=4
-	setlocal shiftwidth=4
 endfunction
 
 " markdown
@@ -36,8 +34,6 @@ function SetRustOptions()
 	setlocal filetype=rust
 	setlocal commentstring=//\ %s
 	setlocal noexpandtab
-	setlocal tabstop=2
-	setlocal shiftwidth=2
 endfunction
 
 " ics

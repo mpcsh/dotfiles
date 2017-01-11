@@ -10,6 +10,9 @@ hi Comment cterm=italic
 hi MatchParen cterm=none ctermbg=none ctermfg=15
 hi link MatchParen LinkDelimiter
 
+" indentation highlighting
+hi SpecialKey cterm=none ctermbg=none ctermfg=11
+
 " show highlighting groups for current word
 nmap <C-S-s> :call <SID>SynStack()<CR>
 function! <SID>SynStack()
