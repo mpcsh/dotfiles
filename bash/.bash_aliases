@@ -31,9 +31,6 @@ alias racket='racket -I typed/racket'
 # run previous command as root
 alias fuck='sudo $(history -p \!\!) '
 
-# marked
-alias marked='marked --lang-prefix=""'
-
 # astyle
 alias astyle='astyle --style=stroustrup'
 
