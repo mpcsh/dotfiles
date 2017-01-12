@@ -29,7 +29,6 @@ nnoremap <leader>CTRL-I CTRL-I
 
 " map CTRL-L to nohlsearch
 nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
-inoremap <C-l> <Esc><C-l>a
 
 " toggle relative line numbering
 nnoremap <silent> <leader>r :set relativenumber!<CR>
