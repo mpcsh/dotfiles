@@ -18,6 +18,7 @@ imports:
   vim-fugitive: nvim/.config/nvim/bundle/fugitive.vim
   vim-goyo: nvim/.config/nvim/bundle/goyo.vim
   vim-haskell: nvim/.config/nvim/bundle/haskell.vim
+  vim-nerdtree: nvim/.config/nvim/bundle/nerdtree.vim
   vim-obsession: nvim/.config/nvim/bundle/obsession.vim
   vim-pass: nvim/.config/nvim/bundle/pass.vim
   vim-repeat: nvim/.config/nvim/bundle/repeat.vim
@@ -85,6 +86,9 @@ git module vim-goyo:
 git module vim-haskell:
   url: https://github.com/neovimhaskell/haskell-vim.git
   rev: 434f5903556e2bea99d433d48adb681cb4967d27
+
+git module vim-nerdtree:
+  url: https://github.com/scrooloose/nerdtree.git
 
 git module vim-obsession:
   url: https://github.com/tpope/vim-obsession.git
