@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
-scrot -q100 /tmp/screen.jpg
-convert /tmp/screen.jpg -filter point -resize 10% -resize 1000% -fill black -colorize 25% /tmp/screen.png
-i3lock -i /tmp/screen.png
+TMP_BG=/tmp/screen.png
+ICON=~/dotfiles/scripts/rmlock.png
+
+scrot $TMP_BG
+convert $TMP_BG -filter point -resize 10% -resize 1000% -gamma 0.7 $TMP_BG
+convert $TMP_BG $ICON -gravity center -composite -matte $TMP_BG
+
+i3lock -u -i $TMP_BG
