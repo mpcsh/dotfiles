@@ -13,8 +13,8 @@ autocmd BufNewFile,BufRead *.c call SetCOptions()
 autocmd BufNewFile,BufRead *.h call SetCOptions()
 function SetCOptions()
 	setlocal colorcolumn=81
-	setlocal tabstop=2
-	setlocal shiftwidth=2
+	setlocal tabstop=4
+	setlocal shiftwidth=4
 	setlocal expandtab
 endfunction
 
