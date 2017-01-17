@@ -13,6 +13,9 @@ export vim=nvim
 # grab aliases
 source ~/.bash_aliases
 
+# don't record duplicate commands in history
+export HISTCONTROL=ignoreboth:erasedups
+
 # dircolors
 eval "$(dircolors ~/.colors/dircolors.ansi-dark)"
 
@@ -69,28 +72,8 @@ function prompt_git() {
 	fi
 }
 
-function prompt_svn() {
-	local s='';
-	local rev='';
-
-	# Check if the current directory is in a svn repository
-	if [ $(svn info &> /dev/null; echo "${?}") == '0' ]; then
-		rev=$(svn info 2> /dev/null | sed -n 's/Revision:\ //p')
-		# Check if PWD is dirty
-		if [ $(svn status "$PWD" 2> /dev/null | command grep -Eq '^\s*[ACDIM!?L]') ]; then
-			s="±"
-		fi
-	else
-		return
-	fi
-
-	echo -e " at $(tput setaf 5)${rev}${s}$(tput sgr0)"
-}
-
+# pretty prompt
 PS1='$(tput setaf 2)\u$(tput sgr0) at $(tput setaf 3)\h$(tput sgr0) in $(tput setaf 4)\w$(tput sgr0)$(prompt_git)\n↪ '
-
-# dem perms!
-# [[ $HOSTNAME == "xyz" ]] && umask 022 || umask 077
 
 # display startx prompt on huascaran and annapurna when logging in to a tty
 if [[ -z $DISPLAY && $HOSTNAME == "huascaran" || -z $DISPLAY && $HOSTNAME == "annapurna" || -z $DISPLAY && $HOSTNAME == "eiger" ]]; then
