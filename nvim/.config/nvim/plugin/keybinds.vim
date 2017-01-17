@@ -38,3 +38,6 @@ set mouse=a
 
 " x clipboard access
 set clipboard=unnamedplus
+
+" NERDTreeToggle
+nnoremap <silent> <C-N> :NERDTreeToggle<CR>
