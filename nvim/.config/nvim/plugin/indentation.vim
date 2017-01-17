@@ -1,6 +1,6 @@
-" 4-space width tabs
-set tabstop=4
-set shiftwidth=4
+" 2-space width tabs
+set tabstop=2
+set shiftwidth=2
 
 " whitespace highlighting
 if !(&filetype == "txt")
@@ -13,6 +13,8 @@ autocmd BufNewFile,BufRead *.c call SetCOptions()
 autocmd BufNewFile,BufRead *.h call SetCOptions()
 function SetCOptions()
 	setlocal colorcolumn=81
+	setlocal tabstop=2
+	setlocal shiftwidth=2
 	setlocal expandtab
 endfunction
 
