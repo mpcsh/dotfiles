@@ -16,6 +16,5 @@
 	hub = "!f() { if [[ $# == 1 ]]; then cd ~/projects; git clone --depth 1 https://github.com/$1.git; else echo "must supply a repo"; fi }; f"
 	latest = diff HEAD HEAD~1
 	undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
-	land = "!f() { ~/dotfiles/scripts/gitland; }; f"
 [web]
 	browser = xdg-open
