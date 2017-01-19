@@ -16,6 +16,7 @@ imports:
   vim-commentary: nvim/.config/nvim/bundle/commentary.vim
   vim-easymotion: nvim/.config/nvim/bundle/easymotion.vim
   vim-fugitive: nvim/.config/nvim/bundle/fugitive.vim
+  vim-go: nvim/.config/nvim/bundle/go.vim
   vim-goyo: nvim/.config/nvim/bundle/goyo.vim
   vim-haskell: nvim/.config/nvim/bundle/haskell.vim
   vim-nerdtree: nvim/.config/nvim/bundle/nerdtree.vim
@@ -79,6 +80,10 @@ git module vim-fugitive:
   url: https://github.com/tpope/vim-fugitive.git
   rev: b754bc2031f21a532c083dd0d072ba373bbe3a37
 
+git module vim-go:
+  url: https://github.com/fatih/vim-go.git
+  rev: 3eb57ac3a8e02a3d6e2bfba981144c6e1af3545b
+
 git module vim-goyo:
   url: https://github.com/junegunn/goyo.vim.git
   rev: ebdd67fd6160b7f95ac8fe50b382694c9961d6b8
@@ -89,6 +94,7 @@ git module vim-haskell:
 
 git module vim-nerdtree:
   url: https://github.com/scrooloose/nerdtree.git
+  rev: 281701021c5001332a862da80175bf585d24e2e8
 
 git module vim-obsession:
   url: https://github.com/tpope/vim-obsession.git
@@ -124,4 +130,4 @@ git module vim-tabular:
 
 git module vim-tex:
   url: https://github.com/lervag/vimtex.git
-  rev: ce316881ef7b21716d38481144ab9400e9a43116
+  rev: a9e8f2e502bb27529a2f186eb508bbe7ca3aae4f
