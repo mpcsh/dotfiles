@@ -3,7 +3,7 @@
 
 # env vars
 export EDITOR=nvim
-export PATH="~/dotfiles/scripts:~/.cargo/bin:$PATH"
+export PATH="~/dotfiles/scripts:~/.cargo/bin:~/.go/bin:$PATH"
 export GOPATH=~/.go
 export MP_FULLNAME=mpcsh
 export MP_SITETYPE=maximum
