@@ -11,8 +11,8 @@
 	ci = commit -m
 	ca = commit -am
 	st = status
-	ls = log --oneline --decorate --graph --all -n 10
-	la = log --oneline --decorate --graph --all
+	ls = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n 15
+	la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	hub = "!f() { if [[ $# == 1 ]]; then cd ~/projects; git clone https://github.com/$1.git; else echo must supply a repo; fi }; f"
 	undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
 [web]
