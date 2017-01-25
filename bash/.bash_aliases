@@ -46,6 +46,12 @@ alias ct='termite -d $PWD &> /dev/null & disown'
 # clipboard
 alias xclip='xclip -selection clipboard'
 
+# weather
+alias weather='curl wttr.in'
+
+# moon
+alias moon='curl wttr.in/Moon'
+
 # set X background
 function setbg() {
 	[[ $# -eq 0 ]] && : || cp $1 ~/.wallpaper
