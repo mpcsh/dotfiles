@@ -73,7 +73,7 @@ function prompt_git() {
 }
 
 # pretty prompt
-PS1='$(tput setaf 2)\u$(tput sgr0) at $(tput setaf 3)\h$(tput sgr0) in $(tput setaf 4)\w$(tput sgr0)$(prompt_git)\n↪ '
+PS1='$(tput setaf 2)\u$(tput sgr0) at $(tput setaf 3)\h$(tput sgr0) in $(tput setaf 4)\w$(tput sgr0)$(prompt_git)\n$ '
 
 # display startx prompt on huascaran and annapurna when logging in to a tty
 if [[ -z $DISPLAY && $HOSTNAME == "huascaran" || -z $DISPLAY && $HOSTNAME == "annapurna" || -z $DISPLAY && $HOSTNAME == "eiger" ]]; then
