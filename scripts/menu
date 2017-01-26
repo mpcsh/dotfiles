@@ -6,9 +6,9 @@ USAGE="Usage: menu [dmenu_run|passmenu] [top|bottom]"
 if [[ $# != 2 ]]; then
 	echo "$USAGE"
 elif [[ $2 == "top" ]]; then
-	$1 -fn $FONT -x $XOFF -y $YOFF -w $BAR_WIDTH -h $BAR_HEIGHT -nb $BG -nf $FG -sb $FG -sf $BG
+	$1 -fn "$FONT" -x $XOFF -y $YOFF -w $BAR_WIDTH -h $BAR_HEIGHT -nb $BG -nf $FG -sb $FG -sf $BG
 elif [[ $2 == "bottom" ]]; then
-	$1 -fn $FONT -x $XOFF -y $YOFF -w $BAR_WIDTH -h $BAR_HEIGHT -nb $BG -nf $FG -sb $FG -sf $BG -b
+	$1 -fn "$FONT" -x $XOFF -y $YOFF -w $BAR_WIDTH -h $BAR_HEIGHT -nb $BG -nf $FG -sb $FG -sf $BG -b
 else
 	echo "$USAGE"
 fi
