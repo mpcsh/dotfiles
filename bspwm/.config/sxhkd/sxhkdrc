@@ -12,7 +12,7 @@ super + shift + q
 
 # focus given direction
 super + {h,j,k,l}
-	bspc config pointer_follows_focus true; bspc node -f {west,south,north,east}; bspc config pointer_follows_focus false;
+	bspc node -f {west,south,north,east}
 
 # preselect given direction
 super + alt + {h,j,k,l}
@@ -59,8 +59,8 @@ super + grave
 	termite
 
 # chromium
-super + f
-	firefox
+super + c
+	chromium
 
 # take screenshot
 super + Print
