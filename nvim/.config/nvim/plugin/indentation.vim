@@ -59,3 +59,9 @@ function SetAsmOptions()
 	setlocal tabstop=8
 	setlocal nolist
 endfunction
+
+" latex indentation
+autocmd BufNewFile,BufRead *.tex call SetLatexOptions()
+function SetLatexOptions()
+	setlocal textwidth=80
+endfunction
