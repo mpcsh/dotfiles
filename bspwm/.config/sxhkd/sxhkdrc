@@ -89,6 +89,10 @@ super + s
 super + i
 	termite -e irssi
 
+# signal
+super + g
+	chromium --profile-directory=Default --app-id=bikioccmkafdpakkkcpdbppfkghcmihk
+
 ##################################################
 # laptop function keys
 ##################################################
