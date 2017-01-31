@@ -1,9 +1,12 @@
 #!/usr/bin/env python
 
-import os, re, random
+import os, sys, re, random
 
 base_dir = os.getenv("HOME") + "/media"
 show = ""
+
+if len(sys.argv) == 2:
+    show = sys.argv[1]
 
 # select archer or ricknmorty
 while show not in ["archer", "ricknmorty"]:
