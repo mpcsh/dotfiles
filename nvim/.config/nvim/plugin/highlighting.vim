@@ -10,6 +10,9 @@ hi Comment cterm=italic
 hi MatchParen cterm=none ctermbg=none ctermfg=15
 hi link MatchParen LinkDelimiter
 
+" search highlighting
+hi Search cterm=none ctermbg=3 ctermfg=4
+
 " show highlighting groups for current word
 nmap <C-S-s> :call <SID>SynStack()<CR>
 function! <SID>SynStack()
