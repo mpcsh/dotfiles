@@ -8,7 +8,7 @@ barYOffset: 0
 
 !font
 Xft.dpi: 132
-*font: xft:IosevkaTerm:size=12
+*font: xft:Input:size=12
 *iconFont: xft:FontAwesome:size=12
 
 !font rendering
