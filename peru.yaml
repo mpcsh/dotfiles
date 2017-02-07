@@ -29,6 +29,7 @@ imports:
   vim-surround: nvim/.config/nvim/bundle/surround.vim
   vim-tabular: nvim/.config/nvim/bundle/tabular.vim
   vim-tex: nvim/.config/nvim/bundle/vimtex.vim
+  vim-toml: nvim/.config/nvim/bundle/toml.vim
 
 # solarized
 git module vim-colors-solarized:
@@ -78,11 +79,11 @@ git module vim-easymotion:
 
 git module vim-fugitive:
   url: https://github.com/tpope/vim-fugitive.git
-  rev: b754bc2031f21a532c083dd0d072ba373bbe3a37
+  rev: 444ba9fda5d05aa14c7e8664fa4a66a59c62a550
 
 git module vim-go:
   url: https://github.com/fatih/vim-go.git
-  rev: 3eb57ac3a8e02a3d6e2bfba981144c6e1af3545b
+  rev: 1425decf6d4e1b313955cefe08c859d07c2c2822
 
 git module vim-goyo:
   url: https://github.com/junegunn/goyo.vim.git
@@ -130,4 +131,8 @@ git module vim-tabular:
 
 git module vim-tex:
   url: https://github.com/lervag/vimtex.git
-  rev: a9e8f2e502bb27529a2f186eb508bbe7ca3aae4f
+  rev: beb5d4eb59e65fd6436350e67dd10067342dc2c2
+
+git module vim-toml:
+  url: https://github.com/cespare/vim-toml.git
+  rev: b0fd99cee783df4eb5fbfa46285c61c4a9d9d122
