@@ -23,8 +23,8 @@ super + shift + {h,j,k,l}
 	bspc node -s {west,south,north,east}
 
 # send focused node to given desktop
-super + shift + {0-5}
-	bspc node -d {0-5}
+super + shift + {0-9}
+	bspc node -d {0-9}
 
 # focus given desktop
 super + {0-9}
