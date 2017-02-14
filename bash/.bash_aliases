@@ -1,56 +1,56 @@
 # allows sudo to use aliases
-alias sudo="sudo "
+alias sudo='sudo '
 
 # better ls
-alias ls="ls -lhF --color=auto"
-alias la="ls -lhFA --color=auto"
+alias ls='ls -lhF --color=auto'
+alias la='ls -lhFA --color=auto'
 
 # colors
-alias grep="grep --color=auto"
+alias grep='grep --color=auto'
 
 # symlink by default
-alias ln="ln -sf"
+alias ln='ln -sf'
 
 # work on directories
-alias cp="cp -r"
-alias rm="rm -rf"
-alias mkdir="mkdir -p"
+alias cp='cp -r'
+alias rm='rm -rf'
+alias mkdir='mkdir -p'
 
 # shred and delete
-alias shred="shred --remove"
+alias shred='shred --remove'
 
 # refresh htop faster
-alias htop="nice htop -d 5"
+alias htop='nice htop -d 5'
 
 # typed racket
-alias racket="racket -I typed/racket"
+alias racket='racket -I typed/racket'
 
 # run previous command as root
-alias fuck="sudo $(history -p \!\!) "
+alias fuck='sudo $(history -p \!\!) '
 
 # astyle
-alias astyle="astyle --style=stroustrup"
+alias astyle='astyle --style=stroustrup'
 
 # nvim
-[[ $HOSTNAME != "magneton" && $HOSTNAME != "doduo" ]] && alias vim="nvim"
+[[ $HOSTNAME != "magneton" && $HOSTNAME != "doduo" ]] && alias vim='nvim'
 
 # rsync options
-alias rsync="rsync -aAXvzHE"
+alias rsync='rsync -aAXvzHE'
 
 # clone terminal
-alias ct="termite -d $PWD &> /dev/null & disown"
+alias ct='termite -d $PWD &> /dev/null & disown'
 
 # colored iproute2
-alias ip="ip -c"
+alias ip='ip -c'
 
 # clipboard
-alias xclip="xclip -selection clipboard"
+alias xclip='xclip -selection clipboard'
 
 # weather
-alias weather="curl wttr.in"
+alias weather='curl wttr.in'
 
 # moon
-alias moon="curl wttr.in/Moon"
+alias moon='curl wttr.in/Moon'
 
 # set X background
 function setbg() {
