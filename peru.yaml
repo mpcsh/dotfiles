@@ -30,6 +30,7 @@ imports:
   vim-tabular: nvim/.config/nvim/bundle/tabular.vim
   vim-tex: nvim/.config/nvim/bundle/vimtex.vim
   vim-toml: nvim/.config/nvim/bundle/toml.vim
+  vim-unimpaired: nvim/.config/nvim/bundle/unimpaired.vim
 
 # solarized
 git module vim-colors-solarized:
@@ -136,3 +137,6 @@ git module vim-tex:
 git module vim-toml:
   url: https://github.com/cespare/vim-toml.git
   rev: b0fd99cee783df4eb5fbfa46285c61c4a9d9d122
+
+git module vim-unimpaired:
+  url: https://github.com/tpope/vim-unimpaired.git
