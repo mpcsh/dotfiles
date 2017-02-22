@@ -1,6 +1,6 @@
 imports:
   # solarized
-  vim-colors-solarized: nvim/.config/nvim/bundle/solarized.vim
+  vim-colours-solarized: nvim/.config/nvim/bundle/solarized.vim
   xresources-solarized: colors/.colors/
   dircolors-solarized: colors/.colors/
 
