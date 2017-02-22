@@ -13,3 +13,7 @@ set statusline=\ %t\ %m\ %y%=[%04l]\ [%03c]\
 
 " auto reload changed files
 set autoread
+
+" open new split panes to right and bottom
+set splitbelow
+set splitright

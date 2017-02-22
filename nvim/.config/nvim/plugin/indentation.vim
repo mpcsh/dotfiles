@@ -9,9 +9,9 @@ if !(&filetype == "txt")
 endif
 
 " c
-autocmd BufNewFile,BufRead *.c call SetCOptions()
-autocmd BufNewFile,BufRead *.h call SetCOptions()
+autocmd BufNewFile,BufRead *.c,*.h call SetCOptions()
 function SetCOptions()
+	setlocal ft=c
 	setlocal colorcolumn=81
 	setlocal tabstop=4
 	setlocal shiftwidth=4
