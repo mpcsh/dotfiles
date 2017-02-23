@@ -16,6 +16,9 @@ hi StatusLine gui=italic guibg=bg guifg=#928374
 " visual selection
 hi Visual gui=none guibg=#928374 guifg=bg
 
+" indentation
+hi SpecialKey guibg=bg guifg=#928374
+
 " show highlighting groups for current word
 nmap <C-S-s> :call <SID>SynStack()<CR>
 function! <SID>SynStack()
