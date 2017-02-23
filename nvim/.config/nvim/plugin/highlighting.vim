@@ -8,7 +8,6 @@ colorscheme gruvbox
 hi Comment gui=italic
 
 " closure highlighting
-hi MatchParen gui=bold guibg=fg guifg=bg
 hi link MatchParen LinkDelimiter
 
 " statusline
