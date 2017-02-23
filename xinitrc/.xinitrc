@@ -23,7 +23,7 @@ xset s off -dpms &
 
 # autostart apps
 nice redshift &
-nice compton -r 12 -o 0.65 &
+nice compton -r 6 -o 0.75 &
 nice run_keybase &
 
 # keymaps
