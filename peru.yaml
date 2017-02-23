@@ -23,6 +23,7 @@ imports:
   vim-go: nvim/.config/nvim/bundle/go.vim
   vim-goyo: nvim/.config/nvim/bundle/goyo.vim
   vim-haskell: nvim/.config/nvim/bundle/haskell.vim
+  vim-markdown: nvim/.config/nvim/bundle/markdown.vim
   vim-nerdtree: nvim/.config/nvim/bundle/nerdtree.vim
   vim-obsession: nvim/.config/nvim/bundle/obsession.vim
   vim-pass: nvim/.config/nvim/bundle/pass.vim
@@ -36,28 +37,15 @@ imports:
   vim-toml: nvim/.config/nvim/bundle/toml.vim
   vim-unimpaired: nvim/.config/nvim/bundle/unimpaired.vim
 
-# solarized
-# git module vim-colors-solarized:
-#   url: https://github.com/altercation/vim-colors-solarized.git
-#   rev: 528a59f26d12278698bb946f8fb82a63711eec21
-
-# git module xresources-solarized:
-#   url: https://github.com/solarized/xresources.git
-#   pick: Xresources.dark
-#   rev: 025ceddbddf55f2eb4ab40b05889148aab9699fc
-
-# git module dircolors-solarized:
-#   url: https://github.com/seebi/dircolors-solarized.git
-#   pick: dircolors.ansi-dark
-#   rev: 71dbfd5ea3e39b41977df36a61bedc5f9374d47e
-
 # gruvbox
 git module vim-colors-gruvbox:
   url: https://github.com/morhetz/gruvbox.git
+  rev: 127c9d14d4bac1bac31e328b835a8919a255789c
 
 git module xresources-gruvbox:
   url: https://github.com/morhetz/gruvbox-contrib.git
   pick: xresources/gruvbox-dark.xresources
+  rev: 6996fcce0d37b491b07b3962e35eafe3eb266ddd
 
 
 # tmux
@@ -106,7 +94,11 @@ git module vim-goyo:
 
 git module vim-haskell:
   url: https://github.com/neovimhaskell/haskell-vim.git
-  rev: 40011132d4ffae60e7a5db04faef1a198a822ad9
+  rev: c7cfbd1cc239976c6ffca214c6c8d01e2dd22b57
+
+git module vim-markdown:
+  url: https://github.com/plasticboy/vim-markdown.git
+  rev: d6d59eef6f604b6430fd6adade9e18364666232b
 
 git module vim-nerdtree:
   url: https://github.com/scrooloose/nerdtree.git
@@ -146,7 +138,7 @@ git module vim-tabular:
 
 git module vim-tex:
   url: https://github.com/lervag/vimtex.git
-  rev: adb8bdae908909a08befc75c039ab7b0be307144
+  rev: 90329a5863bdbb0f355aa29036c801d3fc012ed2
 
 git module vim-toml:
   url: https://github.com/cespare/vim-toml.git
