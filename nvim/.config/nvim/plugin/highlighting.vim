@@ -1,20 +1,21 @@
 " colorscheme
+set termguicolors
 syntax enable
 set background=dark
 colorscheme gruvbox
 
 " italic comments
-hi Comment cterm=italic
+hi Comment gui=italic
 
 " closure highlighting
-hi MatchParen cterm=none ctermbg=0 ctermfg=15
+hi MatchParen gui=bold guibg=fg guifg=bg
 hi link MatchParen LinkDelimiter
 
 " statusline
-hi StatusLine cterm=none ctermbg=0 ctermfg=8
+hi StatusLine gui=italic guibg=bg guifg=#928374
 
 " visual selection
-hi Visual cterm=none ctermbg=8 ctermfg=0
+hi Visual gui=none guibg=#928374 guifg=bg
 
 " show highlighting groups for current word
 nmap <C-S-s> :call <SID>SynStack()<CR>
