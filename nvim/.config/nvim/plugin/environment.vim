@@ -9,7 +9,7 @@ set shortmess+=I
 
 " statusline
 set laststatus=2
-set statusline=\ %t\ %m\ %y%=[%04l]\ [%03c]\ 
+set statusline=%=%f
 
 " auto reload changed files
 set autoread

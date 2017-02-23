@@ -13,6 +13,9 @@ hi link MatchParen LinkDelimiter
 " search highlighting
 hi Search cterm=none ctermbg=3 ctermfg=4
 
+" statusline
+hi StatusLine cterm=none ctermbg=8 ctermfg=10
+
 " show highlighting groups for current word
 nmap <C-S-s> :call <SID>SynStack()<CR>
 function! <SID>SynStack()
