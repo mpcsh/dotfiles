@@ -3,7 +3,7 @@ xrandr --rate 144 &
 
 # themes!
 xrdb ~/.Xresources
-xrdb -merge ~/.colors/Xresources.dark
+xrdb -merge ~/.colors/xresources/gruvbox-dark.xresources
 source ~/.bash_aliases; setbg &
 
 # basic xorg settings
