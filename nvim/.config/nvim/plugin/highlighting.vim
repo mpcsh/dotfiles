@@ -7,7 +7,7 @@ colorscheme gruvbox
 hi Comment cterm=italic
 
 " closure highlighting
-hi MatchParen cterm=none ctermbg=none ctermfg=15
+hi MatchParen cterm=none ctermbg=0 ctermfg=15
 hi link MatchParen LinkDelimiter
 
 " statusline
