@@ -1,8 +1,12 @@
 imports:
   # solarized
-  vim-colors-solarized: nvim/.config/nvim/bundle/solarized.vim
-  xresources-solarized: colors/.colors/
-  dircolors-solarized: colors/.colors/
+  # vim-colors-solarized: nvim/.config/nvim/bundle/solarized.vim
+  # xresources-solarized: colors/.colors/
+  # dircolors-solarized: colors/.colors/
+
+  # gruvbox
+  vim-colors-gruvbox: nvim/.config/nvim/bundle/gruvbox.vim
+  xresources-gruvbox: colors/.colors/
 
   # tmux
   tmux-tpm: tmux/.tmux/plugins/tpm
@@ -33,24 +37,34 @@ imports:
   vim-unimpaired: nvim/.config/nvim/bundle/unimpaired.vim
 
 # solarized
-git module vim-colors-solarized:
-  url: https://github.com/altercation/vim-colors-solarized.git
-  rev: 528a59f26d12278698bb946f8fb82a63711eec21
+# git module vim-colors-solarized:
+#   url: https://github.com/altercation/vim-colors-solarized.git
+#   rev: 528a59f26d12278698bb946f8fb82a63711eec21
 
-git module xresources-solarized:
-  url: https://github.com/solarized/xresources.git
-  pick: Xresources.dark
-  rev: 025ceddbddf55f2eb4ab40b05889148aab9699fc
+# git module xresources-solarized:
+#   url: https://github.com/solarized/xresources.git
+#   pick: Xresources.dark
+#   rev: 025ceddbddf55f2eb4ab40b05889148aab9699fc
 
-git module dircolors-solarized:
-  url: https://github.com/seebi/dircolors-solarized.git
-  pick: dircolors.ansi-dark
-  rev: 71dbfd5ea3e39b41977df36a61bedc5f9374d47e
+# git module dircolors-solarized:
+#   url: https://github.com/seebi/dircolors-solarized.git
+#   pick: dircolors.ansi-dark
+#   rev: 71dbfd5ea3e39b41977df36a61bedc5f9374d47e
+
+# gruvbox
+git module vim-colors-gruvbox:
+  url: https://github.com/morhetz/gruvbox.git
+
+git module xresources-gruvbox:
+  url: https://github.com/morhetz/gruvbox-contrib.git
+  pick: xresources/gruvbox-dark.xresources
+
 
 # tmux
 git module tmux-tpm:
   url: https://github.com/tmux-plugins/tpm
   rev: 0ea31ae2d624413719e97dc7e138ed6cf749c7d2
+
 
 # vim plugins
 git module vim-pathogen:

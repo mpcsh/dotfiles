@@ -27,8 +27,8 @@ nnoremap <S-Tab> <<
 " since CTRL-I and <Tab> are the same key (*sigh*), we need to unclobber the original CTRL-I binding.
 nnoremap <leader>CTRL-I CTRL-I
 
-" vim-sensible maps Ctrl-L to nohlsearch; let insert mode do that too
-imap <C-l> <Esc><C-l>a
+" C-l = nohlsearch
+imap <silent> <C-l> <Esc><C-l>a
 
 " toggle relative line numbering
 nnoremap <silent> <leader>r :set relativenumber!<CR>
@@ -42,9 +42,3 @@ set clipboard=unnamedplus
 " NERDTreeToggle
 nnoremap <silent> <C-n> :NERDTreeToggle<CR>
 imap <silent> <C-n> <Esc><C-n>
-
-" better split navigation
-nnoremap <C-h> <C-w><C-h>
-nnoremap <C-j> <C-w><C-j>
-nnoremap <C-k> <C-w><C-k>
-nnoremap <C-l> <C-w><C-l>

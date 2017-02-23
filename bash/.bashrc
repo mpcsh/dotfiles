@@ -17,9 +17,6 @@ source ~/.bash_aliases
 # don't record duplicate commands in history
 export HISTCONTROL=ignoreboth:erasedups
 
-# dircolors
-eval "$(dircolors ~/.colors/dircolors.ansi-dark)"
-
 # z.sh
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
 

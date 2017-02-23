@@ -9,8 +9,8 @@ body {
 	width: 100vw;
 	height: 100vh;
 	margin: 0;
-	background-color: #002b36;
-	color: #839496;
+	background-color: #282828;
+	color: #ebdbb2;
 
 	display: flex;
 	flex-direction: row;
@@ -31,12 +31,12 @@ ul {
 ul > li > p {
 	font-weight: bold;
 	text-align: left;
-	border-bottom: 1px solid #839496;
+	border-bottom: 1px solid #ebdbb2;
 	padding-right: 100%;
 }
 
 ul > li > a {
-	color: #839496;
+	color: #ebdbb2;
 	outline: none;
 
 	display: block;
@@ -46,6 +46,6 @@ ul > li > a {
 }
 
 ul > li > a:hover {
-	color: #002b36;
-	background-color: #839496;
+	color: #282828;
+	background-color: #ebdbb2;
 }

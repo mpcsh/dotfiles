@@ -1,7 +1,7 @@
 " colorscheme
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
 
 " italic comments
 hi Comment cterm=italic
@@ -10,11 +10,11 @@ hi Comment cterm=italic
 hi MatchParen cterm=none ctermbg=none ctermfg=15
 hi link MatchParen LinkDelimiter
 
-" search highlighting
-hi Search cterm=none ctermbg=3 ctermfg=4
-
 " statusline
-hi StatusLine cterm=none ctermbg=8 ctermfg=10
+hi StatusLine cterm=none ctermbg=0 ctermfg=8
+
+" visual selection
+hi Visual cterm=none ctermbg=8 ctermfg=0
 
 " show highlighting groups for current word
 nmap <C-S-s> :call <SID>SynStack()<CR>
@@ -25,7 +25,9 @@ function! <SID>SynStack()
 	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunction
 
+" search highlighting
+set hlsearch
+
 " case-insensitive searching - case-sensitive if uppercase letters are used
 set ignorecase
 set smartcase
-set hlsearch
