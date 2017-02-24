@@ -40,5 +40,5 @@ eiger: sync arch dev root-dev systemd xorg-base
 
 xyz: sync arch dev root-dev systemd
 
-magneton: sync dev xorg-base
+csil: sync dev xorg-base
 	source venv/bin/activate; stow gtk-standard xresources-standard; deactivate
