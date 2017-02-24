@@ -40,4 +40,4 @@ eiger: sync arch dev root-dev systemd xorg-base
 
 xyz: sync arch dev root-dev systemd
 
-magneton: sync dev
+magneton: sync dev xorg-base
