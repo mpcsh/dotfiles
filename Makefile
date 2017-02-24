@@ -12,6 +12,9 @@ default:
 sync:
 	peru sync
 
+csil-sync:
+	source venv/bin/activate; peru sync; deactivate
+
 # Modules
 arch:
 	sudo stow -t / issue pacman
@@ -40,5 +43,5 @@ eiger: sync arch dev root-dev systemd xorg-base
 
 xyz: sync arch dev root-dev systemd
 
-csil: sync dev xorg-base
-	source venv/bin/activate; stow gtk-standard xresources-standard; deactivate
+csil: csil-sync dev xorg-base
+	stow gtk-standard xresources-standard
