@@ -1,58 +1,57 @@
 utf8 = "on";
 
 servers = (
-	{
-		address = "irc.nixers.net";
-		chatnet = "nixers";
-		port = "6697";
-		use_ssl = "yes";
-		autoconnect = "yes";
-	}
-	{
-		address = "irc.freenode.net";
-		port = "6697";
-		use_ssl = "yes";
-	}
+  {
+    address = "irc.nixers.net";
+    chatnet = "nixers";
+    port = "6697";
+    use_ssl = "yes";
+    autoconnect = "yes";
+  },
+  { address = "irc.freenode.net"; port = "6697"; use_ssl = "yes"; }
 );
-
-chatnets = { nixers = { type = "IRC"; }; };
 
 channels = ( { name = "#unix"; chatnet = "nixers"; autojoin = "Yes"; } );
 
 settings = {
-	core = { real_name = "mpcsh"; user_name = "mpcsh"; nick = "mpcsh"; };
+  core = { 
+    real_name = "Mark Cohen";
+    user_name = "mpcsh";
+    nick = "mpcsh";
+  };
 
-	"fe-text" = {
-		actlist_sort = "refnum";
-		term_force_colors = "yes";
-		indent = "12";
-	};
+  "fe-text" = {
+    actlist_sort = "refnum";
+    term_force_colors = "yes";
+    indent = "12";
+  };
 
-	"fe-common/core" = { theme = "nixers.theme"; };
+  "fe-common/core" = { theme = "nixers.theme"; };
 };
 
 statusbar = {
-	default = {
-		window = {
-			items = {
-				barstart = { priority = "100"; };
-				user = { };
-				window = { };
-				window_empty = { };
-				lag = { priority = "-1"; };
-				act = { priority = "10"; };
-				more = { priority = "-1"; alignment = "right"; };
-				barend = { priority = "100"; alignment = "right"; };
-			};
-		};
-		topic = {
-			items = {
-				topicbarstart = { priority = "100"; };
-				topic = { };
-				topic_empty = { };
-				topicbarend = { priority = "100"; alignment = "right"; };
-			};
-			disabled = "yes";
-		};
-	};
+  default = {
+    window = {
+      items = {
+        barstart = { priority = "100"; };
+        user = { };
+        window = { };
+        window_empty = { };
+        lag = { priority = "-1"; };
+        act = { priority = "10"; };
+        more = { priority = "-1"; alignment = "right"; };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+    topic = {
+      items = {
+        topicbarstart = { priority = "100"; };
+        topic = { };
+        topic_empty = { };
+        topicbarend = { priority = "100"; alignment = "right"; };
+      };
+      disabled = "yes";
+    };
+  };
 };
+chatnets = { nixers = { type = "IRC"; }; };
