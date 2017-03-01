@@ -46,4 +46,4 @@ yourself, you can either:
 - Fork, and make modifications as you see fit
 If you fork, add an entry in the Makefile for your hostname, following the
 structure of what's already there. Once that's done, just type `make $HOSTNAME`
-or `make [some-hostname-thats-not-yours] to install.
+or `make [some-hostname-thats-not-yours]` to install.
