@@ -95,7 +95,7 @@ super + g
 
 # keybase
 super + k
-	/opt/keybase/Keybase
+	run_keybase
 
 ##################################################
 # laptop function keys
