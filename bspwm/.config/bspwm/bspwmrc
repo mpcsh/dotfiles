@@ -25,4 +25,7 @@ xbacklight -set 50
 # disable coasting
 synclient CoastingSpeed=0
 
+# enable two-finger horizontal scrolling
+synclient HorizTwoFingerScroll=1
+
 nice admiral | bar bottom | sh
