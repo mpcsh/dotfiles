@@ -1,0 +1,17 @@
+[2017-03-10 14:05:40] WeeChat 1.7 (compiled on Jan 18 2017 17:48:07)
+[2017-03-10 14:05:40] Reading configuration file sec.conf
+[2017-03-10 14:05:40] Reading configuration file weechat.conf
+[2017-03-10 14:05:40] Reading configuration file plugins.conf
+[2017-03-10 14:05:40] Reading configuration file charset.conf
+[2017-03-10 14:05:40] Reading configuration file logger.conf
+[2017-03-10 14:05:40] Reading configuration file exec.conf
+[2017-03-10 14:05:40] Reading configuration file trigger.conf
+[2017-03-10 14:05:40] Reading configuration file aspell.conf
+[2017-03-10 14:05:40] Reading configuration file alias.conf
+[2017-03-10 14:05:40] Reading configuration file fifo.conf
+[2017-03-10 14:05:40] Reading configuration file xfer.conf
+[2017-03-10 14:05:40] Reading configuration file irc.conf
+[2017-03-10 14:05:40] Reading configuration file relay.conf
+[2017-03-10 14:05:40] Reading configuration file buffers.conf
+[2017-03-10 14:05:40] Reading configuration file script.conf
+[2017-03-10 14:05:44] irc: connecting to server unix.chat/6697 (SSL)...
