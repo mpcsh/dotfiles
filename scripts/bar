@@ -8,11 +8,11 @@ if [[ $# != 1 ]]; then
 elif [[ $1 == "top" ]]; then
 	bspc config bottom_padding 0
 	bspc config top_padding $BAR_HEIGHT+$GAPS
-	nice lemonbar -B $BG -F $FG -g $BAR_WIDTH\x$BAR_HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -o -2 -f $ICONS
+	nice lemonbar -B $BG -F $FG -g $BAR_WIDTH\x$BAR_HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -o -1 -f $ICONS
 elif [[ $1 == "bottom" ]]; then
 	bspc config top_padding 0
 	bspc config bottom_padding $BAR_HEIGHT+$GAPS
-	nice lemonbar -B $BG -F $FG -g $BAR_WIDTH\x$BAR_HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -o -2 -f $ICONS -b
+	nice lemonbar -B $BG -F $FG -g $BAR_WIDTH\x$BAR_HEIGHT\+$XOFF\+$YOFF -o 1 -f $FONT -o -1 -f $ICONS -b
 else
 	echo "$USAGE"
 fi
