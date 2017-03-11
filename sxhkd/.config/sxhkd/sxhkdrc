@@ -85,9 +85,9 @@ super + p
 super + s
 	~/dotfiles/scripts/hidpi spotify
 
-# irssi
-super + i
-	termite -e irssi
+# weechat
+super + w
+	termite -e weechat
 
 # signal
 super + g
