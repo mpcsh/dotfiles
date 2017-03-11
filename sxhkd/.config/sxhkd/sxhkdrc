@@ -58,9 +58,9 @@ super + shift + Escape
 super + grave
 	termite
 
-# chromium
-super + c
-	chromium
+# firefox
+super + f
+	firefox
 
 # take screenshot
 super + Print
@@ -92,10 +92,6 @@ super + i
 # signal
 super + g
 	chromium --profile-directory=Default --app-id=bikioccmkafdpakkkcpdbppfkghcmihk
-
-# keybase
-super + k
-	run_keybase
 
 ##################################################
 # laptop function keys
