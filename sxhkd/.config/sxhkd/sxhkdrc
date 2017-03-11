@@ -58,9 +58,9 @@ super + shift + Escape
 super + grave
 	termite
 
-# firefox
-super + f
-	firefox
+# chromium
+super + c
+	chromium
 
 # take screenshot
 super + Print
