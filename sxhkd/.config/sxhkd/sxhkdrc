@@ -62,6 +62,10 @@ super + grave
 super + c
 	chromium
 
+# firefox
+super + f
+	firefox
+
 # take screenshot
 super + Print
 	scrot -q 100 -e 'mv $f ~/scrots/'
