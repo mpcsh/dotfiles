@@ -17,5 +17,5 @@ gtk-standard/.config/gtk-3.0/bookmarks
 gtk-hidpi/.config/gtk-3.0/bookmarks
 
 # weechat
-weechat/.weechat/logs
-weechat/.weechat/weechat.log
+weechat/.weechat/*
+!weechat/.weechat/*.conf
