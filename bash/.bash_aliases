@@ -19,8 +19,8 @@ alias mkdir='mkdir -p'
 # shred and delete
 alias shred='shred --remove'
 
-# refresh htop faster
-alias htop='nice htop -d 5'
+# don't let htop count itself
+alias htop='nice htop'
 
 # typed racket
 alias racket='racket -I typed/racket'
