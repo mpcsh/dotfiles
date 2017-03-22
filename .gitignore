@@ -18,4 +18,5 @@ gtk-hidpi/.config/gtk-3.0/bookmarks
 
 # weechat
 weechat/.weechat/*
-!weechat/.weechat/*.conf
+!weechat/.weechat/weechat.conf
+!weechat/.weechat/irc.conf
