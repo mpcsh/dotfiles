@@ -3,7 +3,7 @@ SHELL := /bin/bash
 
 # Modules
 DEV_MODULES = ack bash colors git nvim ssh tmux weechat
-XORG_MODULES = admiral bspwm font redshift sxhkd xinitrc xmodmap
+XORG_MODULES = admiral bspwm font redshift sxhkd termite xinitrc xmodmap
 
 # Utilities
 default:
@@ -33,13 +33,13 @@ xorg-base:
 
 # Bootstrapping rules
 huascaran: sync arch dev root-dev systemd xorg-base
-	stow bar-laptop gtk-hidpi termite-hidpi xresources-hidpi
+	stow bar-laptop gtk-hidpi xresources-hidpi
 
 annapurna: sync arch dev root-dev systemd xorg-base
-	stow bar-desktop gtk-standard termite-standard xresources-standard
+	stow bar-desktop gtk-standard xresources-standard
 
 eiger: sync arch dev root-dev systemd xorg-base
-	stow bar-laptop gtk-standard termite-standard xresources-standard
+	stow bar-laptop gtk-standard xresources-standard
 
 xyz: sync arch dev root-dev systemd
 
