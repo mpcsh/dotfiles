@@ -60,7 +60,7 @@ super + grave
 
 # chromium
 super + c
-	chromium
+	~/dotfiles/scripts/hidpi chromium
 
 # firefox
 super + f
@@ -95,7 +95,7 @@ super + w
 
 # signal
 super + g
-	chromium --profile-directory=Default --app-id=bikioccmkafdpakkkcpdbppfkghcmihk
+	~/dotfiles/scripts/hidpi chromium --profile-directory=Default --app-id=bikioccmkafdpakkkcpdbppfkghcmihk
 
 ##################################################
 # laptop function keys
