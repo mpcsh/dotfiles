@@ -7,9 +7,9 @@ barXOffset: 0
 barYOffset: 0
 
 !font
-Xft.dpi: 144
-*font: xft:IosevkaTerm:size=12
-*iconFont: xft:FontAwesome:size=12
+Xft.dpi: 96
+*font: xft:IosevkaTerm:size=16
+*iconFont: xft:FontAwesome:size=14
 
 !font rendering
 Xft.antialias: true
