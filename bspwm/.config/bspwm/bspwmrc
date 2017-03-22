@@ -1,6 +1,6 @@
 #! /bin/bash
 
-source ~/dotfiles/scripts/screen_vars
+source screen_vars
 
 # configure borders, gaps
 bspc config border_width $BORDER_WIDTH
@@ -28,4 +28,5 @@ synclient CoastingSpeed=0
 # enable two-finger horizontal scrolling
 synclient HorizTwoFingerScroll=1
 
-nice admiral | bar bottom | sh
+# start the bar
+bar bottom
