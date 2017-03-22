@@ -1,8 +1,6 @@
 imports:
-  # solarized
-  # vim-colors-solarized: nvim/.config/nvim/bundle/solarized.vim
-  # xresources-solarized: colors/.colors/
-  # dircolors-solarized: colors/.colors/
+  # tekup
+  tekup: scripts/
 
   # gruvbox
   vim-colors-gruvbox: nvim/.config/nvim/bundle/gruvbox.vim
@@ -35,6 +33,13 @@ imports:
   vim-tex: nvim/.config/nvim/bundle/vimtex.vim
   vim-toml: nvim/.config/nvim/bundle/toml.vim
   vim-unimpaired: nvim/.config/nvim/bundle/unimpaired.vim
+
+
+# tekup
+git module tekup:
+  url: https://github.com/danielfgray/tekup.git
+  pick: tekup
+
 
 # gruvbox
 git module vim-colors-gruvbox:
