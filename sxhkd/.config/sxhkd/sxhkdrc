@@ -48,11 +48,11 @@ super + shift + space
 
 # lock
 super + Escape
-	~/dotfiles/scripts/lock
+	lock
 
 # lock and suspend
 super + shift + Escape
-	~/dotfiles/scripts/suspend
+	suspend
 
 # termite
 super + grave
@@ -60,7 +60,7 @@ super + grave
 
 # chromium
 super + c
-	~/dotfiles/scripts/hidpi chromium
+	chromium
 
 # firefox
 super + f
@@ -79,15 +79,15 @@ super + r
 
 # dmenu
 super + space
-	~/dotfiles/scripts/menu dmenu_run bottom
+	menu dmenu_run bottom
 
 # passmenu
 super + p
-	~/dotfiles/scripts/menu passmenu bottom
+	menu passmenu bottom
 
 # spotify
 super + s
-	~/dotfiles/scripts/hidpi spotify
+	hidpi spotify
 
 # weechat
 super + w
@@ -95,7 +95,7 @@ super + w
 
 # signal
 super + g
-	~/dotfiles/scripts/hidpi chromium --profile-directory=Default --app-id=bikioccmkafdpakkkcpdbppfkghcmihk
+	chromium --profile-directory=Default --app-id=bikioccmkafdpakkkcpdbppfkghcmihk
 
 ##################################################
 # laptop function keys
@@ -103,11 +103,11 @@ super + g
 
 # increase brightness
 XF86MonBrightnessUp
-	~/dotfiles/scripts/backlightctl up
+	backlightctl up
 
 # decrease brightness
 XF86MonBrightnessDown
-	~/dotfiles/scripts/backlightctl down
+	backlightctl down
 
 # increase volume
 XF86AudioRaiseVolume
