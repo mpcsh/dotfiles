@@ -19,6 +19,7 @@ gtk-hidpi/.config/gtk-3.0/bookmarks
 # weechat
 weechat/.weechat/*
 !weechat/.weechat/weechat.conf
+!weechat/.weechat/buffers.conf
 
 # tekup
 scripts/tekup
