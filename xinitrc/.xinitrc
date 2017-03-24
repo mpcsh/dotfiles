@@ -24,6 +24,7 @@ xset s off -dpms &
 # autostart apps
 nice redshift &
 nice compton -r 6 -o 0.75 &
+nice dunst -fn "$(xrq font | cut -d: -f2) $(( $(xrq font | cut -d= -f2) * $(( $(xrq Xft.dpi) / 96 )) ))" &
 nice run_keybase &
 
 # keymaps
