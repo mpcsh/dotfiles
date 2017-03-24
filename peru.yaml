@@ -2,6 +2,9 @@ imports:
   # tekup
   tekup: scripts/
 
+  # weebullet
+  weebullet: weechat/.weechat/python/
+
   # gruvbox
   vim-colors-gruvbox: nvim/.config/nvim/bundle/gruvbox.vim
   xresources-gruvbox: colors/.colors/
@@ -39,6 +42,12 @@ imports:
 git module tekup:
   url: https://github.com/danielfgray/tekup.git
   pick: tekup
+
+
+# weebullet
+git module weebullet:
+  url: https://github.com/leftybc/weebullet.git
+  pick: weebullet.py
 
 
 # gruvbox
