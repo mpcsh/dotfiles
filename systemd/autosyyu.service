@@ -1,6 +1,6 @@
 [Unit]
 Description=Automatic pacman updates
-After=network-online.target 
+After=network-online.target
 
 [Service]
 Type=simple
