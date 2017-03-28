@@ -1,6 +1,7 @@
 [Unit]
 Description=Automatically refresh DNS from https://api.opennicproject.org
 After=network-online.target
+Wants=network-online.target
 
 [Service]
 Type=oneshot
