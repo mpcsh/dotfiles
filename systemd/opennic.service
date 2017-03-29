@@ -6,7 +6,7 @@ Wants=network-online.target
 [Service]
 Type=oneshot
 ExecStart=/usr/bin/cp /etc/resolv.conf /etc/resolv.conf.bak
-ExecStart=/usr/bin/echo "nameserver 8.8.8.8" > /etc/resolv.conf
+ExecStart=/usr/bin/bash -c "/usr/bin/echo 'nameserver 8.8.8.8' > /etc/resolv.conf"
 ExecStart=/usr/bin/curl -o /etc/resolv.conf https://api.opennicproject.org/geoip/?resolv&res=5
 TimeoutStopSec=180
 KillMode=process
