@@ -3,7 +3,7 @@ imports:
   tekup: scripts/
 
   # weebullet
-  weebullet: weechat/.weechat/python/
+  weebullet: weechat/.weechat/python/autoload/
 
   # gruvbox
   vim-colors-gruvbox: nvim/.config/nvim/bundle/gruvbox.vim
