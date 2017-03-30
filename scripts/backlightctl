@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-USAGE="Usage: backlightctl [up|down|query]"
+USAGE="Usage: backlightctl [up|down|set|query]"
 
 if [[ $# != 1 ]]; then
 	echo "$USAGE"
@@ -8,6 +8,8 @@ elif [[ $1 == "up" ]]; then
 	xbacklight -set $(( $(xbacklight | awk '{printf("%1.f\n", $1)}') + 5 )) -time 0 -steps 1
 elif [[ $1 == "down" ]]; then
 	xbacklight -set $(( $(xbacklight | awk '{printf("%1.f\n", $1)}') - 5 )) -time 0 -steps 1
+elif [[ $1 == "set" ]]; then
+	xbacklight -set "$2"
 elif [[ $1 == "query" ]]; then
 	xbacklight | awk '{printf("%1.f\n", $1)}'
 else
