@@ -7,4 +7,4 @@ Target = pacman-mirrorlist
 Description = Updating pacman-mirrorlist with reflector and removing pacnew...
 When = PostTransaction
 Depends = reflector
-Exec = /usr/bin/bash -c "reflector --country 'United States' --latest 200 --sort rate --save /etc/pacman.d/mirrorlist"
+Exec = /usr/bin/bash -c "reflector --country 'United States' --fastest 100 --number 10 --threads 4 --sort score --save /etc/pacman.d/mirrorlist"
