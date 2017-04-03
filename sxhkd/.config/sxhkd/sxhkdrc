@@ -48,11 +48,11 @@ super + shift + space
 
 # lock
 super + Escape
-	lock
+	~/dotfiles/scripts/lock
 
 # lock and suspend
 super + shift + Escape
-	suspend
+	~/dotfiles/scripts/suspend
 
 # termite
 super + grave
@@ -79,11 +79,11 @@ super + r
 
 # dmenu
 super + space
-	menu dmenu_run bottom
+	~/dotfiles/scripts/menu dmenu_run bottom
 
-# passmenu
+# pass~/dotfiles/scripts/menu
 super + p
-	menu passmenu bottom
+	~/dotfiles/scripts/menu passmenu bottom
 
 # spotify
 super + s
