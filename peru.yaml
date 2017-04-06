@@ -24,7 +24,9 @@ imports:
   vim-go: nvim/.config/nvim/bundle/go.vim
   vim-haskell: nvim/.config/nvim/bundle/haskell.vim
   vim-markdown: nvim/.config/nvim/bundle/markdown.vim
+  vim-misc: nvim/.config/nvim/bundle/misc.vim
   vim-nerdtree: nvim/.config/nvim/bundle/nerdtree.vim
+  vim-notes: nvim/.config/nvim/bundle/notes.vim
   vim-obsession: nvim/.config/nvim/bundle/obsession.vim
   vim-pass: nvim/.config/nvim/bundle/pass.vim
   vim-repeat: nvim/.config/nvim/bundle/repeat.vim
@@ -42,12 +44,14 @@ imports:
 git module tekup:
   url: https://github.com/danielfgray/tekup.git
   pick: tekup
+  rev: 4b0befea99c3d413673399c92b9b01377c7a927f
 
 
 # weebullet
 git module weebullet:
   url: https://github.com/leftybc/weebullet.git
   pick: weebullet.py
+  rev: 9bca73903cf53355f6e284398da27ca6eac56ec8
 
 
 # gruvbox
@@ -79,39 +83,47 @@ git module vim-a:
 
 git module vim-abolish:
   url: https://github.com/tpope/vim-abolish.git
-  rev: 05c7d31f6b3066582017edf5198502a94f6a7cb5
+  rev: b6a8b49e2173ba5a1b34d00e68e0ed8addac3ebd
 
 git module vim-coffee-script:
   url: https://github.com/kchmck/vim-coffee-script.git
-  rev: 72f48c3f9bb6ba4f9ba1e6e4933c2c25686a1b62
+  rev: aace5c23d812a205c93e87ff79df72d9366928df
 
 git module vim-commentary:
   url: https://github.com/tpope/vim-commentary.git
-  rev: 73e0d9a9d1f51b6cc9dc965f62669194ae851cb1
+  rev: be79030b3e8c0ee3c5f45b4333919e4830531e80
 
 git module vim-easymotion:
   url: https://github.com/easymotion/vim-easymotion.git
-  rev: af9786ee5780bf0cbafbd7b341c2b5234d18c1c0
+  rev: 19d00afefe5a1b8f6d891ce0b73dcde38c718fdd
 
 git module vim-fugitive:
   url: https://github.com/tpope/vim-fugitive.git
-  rev: f44845e4408aae03e018e98afb7fbf0c2ee87dd5
+  rev: 4f24757df2a57fc01900334114b1790fcb75ad54
 
 git module vim-go:
   url: https://github.com/fatih/vim-go.git
-  rev: b9c81562630e9dfc098d25814c16bedcfcf9ffa9
+  rev: b4936d89bd1480a864382108b49ebf5d2d16728a
 
 git module vim-haskell:
   url: https://github.com/neovimhaskell/haskell-vim.git
-  rev: c7cfbd1cc239976c6ffca214c6c8d01e2dd22b57
+  rev: 9811f3803317c4f39c868e71b3202b5559735aef
 
 git module vim-markdown:
   url: https://github.com/plasticboy/vim-markdown.git
-  rev: d6d59eef6f604b6430fd6adade9e18364666232b
+  rev: 2cd50d2ca657091c6aa787a3847284fb4cceff49
+
+git module vim-misc:
+  url: https://github.com/xolox/vim-misc.git
+  rev: 3e6b8fb6f03f13434543ce1f5d24f6a5d3f34f0b
 
 git module vim-nerdtree:
   url: https://github.com/scrooloose/nerdtree.git
-  rev: 281701021c5001332a862da80175bf585d24e2e8
+  rev: 97d2d70f6c548ed797b47e4e49c37ab8295fdfd6
+
+git module vim-notes:
+  url: https://github.com/xolox/vim-notes.git
+  rev: e465a0a987dbacdf7291688215b8545f8584d409
 
 git module vim-obsession:
   url: https://github.com/tpope/vim-obsession.git
@@ -119,7 +131,7 @@ git module vim-obsession:
 
 git module vim-pass:
   url: https://github.com/mpcsh/vim-pass.git
-  rev: 61929cb9213201030116a79aad5a5cb98cb7a612
+  rev: ae961dcdb2c6e464cf1c82024839446aa830554d
 
 git module vim-repeat:
   url: https://github.com/tpope/vim-repeat.git
@@ -135,7 +147,7 @@ git module vim-rust:
 
 git module vim-sensible:
   url: https://github.com/tpope/vim-sensible.git
-  rev: 4b7535921819a5b2e39be68f81109ea684232503
+  rev: e57222db3b3236782dc33b7cdbb648528b7377d9
 
 git module vim-surround:
   url: https://github.com/tpope/vim-surround.git
@@ -147,7 +159,7 @@ git module vim-tabular:
 
 git module vim-tex:
   url: https://github.com/lervag/vimtex.git
-  rev: 90329a5863bdbb0f355aa29036c801d3fc012ed2
+  rev: f0e7de42f0dd09299d32e37ccda80c56e371ee42
 
 git module vim-toml:
   url: https://github.com/cespare/vim-toml.git
@@ -155,4 +167,4 @@ git module vim-toml:
 
 git module vim-unimpaired:
   url: https://github.com/tpope/vim-unimpaired.git
-  rev: 11dc568dbfd7a56866a4354c737515769f08e9fe
+  rev: e939771979393c502e2331fc7d44a963efd7bb46
