@@ -97,6 +97,10 @@ super + w
 super + g
 	chromium --profile-directory=Default --app-id=bikioccmkafdpakkkcpdbppfkghcmihk
 
+# cs notes
+super + m
+	compsci
+
 ##################################################
 # laptop function keys
 ##################################################

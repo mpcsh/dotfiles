@@ -1,0 +1,3 @@
+#!/bin/bash
+
+termite -d ~/school/cs232/notes -e "nvim $(date +%F)"
