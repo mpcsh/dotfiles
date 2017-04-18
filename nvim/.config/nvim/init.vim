@@ -37,6 +37,16 @@ Plug 'tpope/vim-repeat'
 " replace with register
 Plug 'vim-scripts/replacewithregister'
 
+" lightline
+Plug 'itchyny/lightline.vim'
+
+" lightline gruvbox theme
+Plug 'shinchu/lightline-gruvbox.vim'
+
+" buffer bar
+Plug 'ap/vim-buftabline'
+
+
 """ syntax
 " gruvbox
 Plug 'morhetz/gruvbox'
@@ -58,6 +68,10 @@ Plug 'lervag/vimtex'
 
 " toml syntax
 Plug 'cespare/vim-toml'
+
+" markdown
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
