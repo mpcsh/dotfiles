@@ -13,31 +13,7 @@ imports:
   tmux-tpm: tmux/.tmux/plugins/tpm
 
   # vim
-  vim-pathogen: nvim/.config/nvim/autoload/
-
-  vim-a: nvim/.config/nvim/bundle/a.vim
-  vim-abolish: nvim/.config/nvim/bundle/abolish.vim
-  vim-coffee-script: nvim/.config/nvim/bundle/coffee-script.vim
-  vim-commentary: nvim/.config/nvim/bundle/commentary.vim
-  vim-easymotion: nvim/.config/nvim/bundle/easymotion.vim
-  vim-fugitive: nvim/.config/nvim/bundle/fugitive.vim
-  vim-go: nvim/.config/nvim/bundle/go.vim
-  vim-haskell: nvim/.config/nvim/bundle/haskell.vim
-  vim-markdown: nvim/.config/nvim/bundle/markdown.vim
-  vim-misc: nvim/.config/nvim/bundle/misc.vim
-  vim-nerdtree: nvim/.config/nvim/bundle/nerdtree.vim
-  vim-notes: nvim/.config/nvim/bundle/notes.vim
-  vim-obsession: nvim/.config/nvim/bundle/obsession.vim
-  vim-pass: nvim/.config/nvim/bundle/pass.vim
-  vim-repeat: nvim/.config/nvim/bundle/repeat.vim
-  vim-replace: nvim/.config/nvim/bundle/replace.vim
-  vim-rust: nvim/.config/nvim/bundle/rust.vim
-  vim-sensible: nvim/.config/nvim/bundle/sensible.vim
-  vim-surround: nvim/.config/nvim/bundle/surround.vim
-  vim-tabular: nvim/.config/nvim/bundle/tabular.vim
-  vim-tex: nvim/.config/nvim/bundle/vimtex.vim
-  vim-toml: nvim/.config/nvim/bundle/toml.vim
-  vim-unimpaired: nvim/.config/nvim/bundle/unimpaired.vim
+  vim-plug: nvim/.config/nvim/autoload/
 
 
 # tekup
@@ -72,99 +48,6 @@ git module tmux-tpm:
 
 
 # vim plugins
-git module vim-pathogen:
-  url: https://github.com/tpope/vim-pathogen.git
-  export: autoload/
-  rev: 020ab25c38f62627c1dab6c7a851176c6ad309f9
-
-git module vim-a:
-  url: https://github.com/vim-scripts/a.vim.git
-  rev: 2cbe946206ec622d9d8cf2c99317f204c4d41885
-
-git module vim-abolish:
-  url: https://github.com/tpope/vim-abolish.git
-  rev: b6a8b49e2173ba5a1b34d00e68e0ed8addac3ebd
-
-git module vim-coffee-script:
-  url: https://github.com/kchmck/vim-coffee-script.git
-  rev: aace5c23d812a205c93e87ff79df72d9366928df
-
-git module vim-commentary:
-  url: https://github.com/tpope/vim-commentary.git
-  rev: be79030b3e8c0ee3c5f45b4333919e4830531e80
-
-git module vim-easymotion:
-  url: https://github.com/easymotion/vim-easymotion.git
-  rev: 19d00afefe5a1b8f6d891ce0b73dcde38c718fdd
-
-git module vim-fugitive:
-  url: https://github.com/tpope/vim-fugitive.git
-  rev: 4f24757df2a57fc01900334114b1790fcb75ad54
-
-git module vim-go:
-  url: https://github.com/fatih/vim-go.git
-  rev: b4936d89bd1480a864382108b49ebf5d2d16728a
-
-git module vim-haskell:
-  url: https://github.com/neovimhaskell/haskell-vim.git
-  rev: 9811f3803317c4f39c868e71b3202b5559735aef
-
-git module vim-markdown:
-  url: https://github.com/plasticboy/vim-markdown.git
-  rev: 2cd50d2ca657091c6aa787a3847284fb4cceff49
-
-git module vim-misc:
-  url: https://github.com/xolox/vim-misc.git
-  rev: 3e6b8fb6f03f13434543ce1f5d24f6a5d3f34f0b
-
-git module vim-nerdtree:
-  url: https://github.com/scrooloose/nerdtree.git
-  rev: 97d2d70f6c548ed797b47e4e49c37ab8295fdfd6
-
-git module vim-notes:
-  url: https://github.com/xolox/vim-notes.git
-  rev: e465a0a987dbacdf7291688215b8545f8584d409
-
-git module vim-obsession:
-  url: https://github.com/tpope/vim-obsession.git
-  rev: ad1ef9a0db9a03463b005b488fd27cb735317394
-
-git module vim-pass:
-  url: https://github.com/mpcsh/vim-pass.git
-  rev: ae961dcdb2c6e464cf1c82024839446aa830554d
-
-git module vim-repeat:
-  url: https://github.com/tpope/vim-repeat.git
-  rev: 7a6675f092842c8f81e71d5345bd7cdbf3759415
-
-git module vim-replace:
-  url: https://github.com/vim-scripts/ReplaceWithRegister.git
-  rev: 832efc23111d19591d495dc72286de2fb0b09345
-
-git module vim-rust:
-  url: https://github.com/rust-lang/rust.vim.git
-  rev: 732b5fcb3652f81726d5f0f5b97c9027c01f057a
-
-git module vim-sensible:
-  url: https://github.com/tpope/vim-sensible.git
-  rev: e57222db3b3236782dc33b7cdbb648528b7377d9
-
-git module vim-surround:
-  url: https://github.com/tpope/vim-surround.git
-  rev: e49d6c2459e0f5569ff2d533b4df995dd7f98313
-
-git module vim-tabular:
-  url: https://github.com/godlygeek/tabular.git
-  rev: 00e1e7fcdbc6d753e0bc8043e0d2546fa81bf367
-
-git module vim-tex:
-  url: https://github.com/lervag/vimtex.git
-  rev: f0e7de42f0dd09299d32e37ccda80c56e371ee42
-
-git module vim-toml:
-  url: https://github.com/cespare/vim-toml.git
-  rev: 00ecc580aef1f7f80779af577b6e2b7a056f260f
-
-git module vim-unimpaired:
-  url: https://github.com/tpope/vim-unimpaired.git
-  rev: e939771979393c502e2331fc7d44a963efd7bb46
+git module vim-plug:
+  url: https://github.com/junegunn/vim-plug.git
+  pick: plug.vim
