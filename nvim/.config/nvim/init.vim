@@ -41,7 +41,7 @@ Plug 'vim-scripts/replacewithregister'
 Plug 'itchyny/lightline.vim'
 
 " lightline gruvbox theme
-Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'deens/lightline_gruvbox_theme'
 
 " buffer bar
 Plug 'ap/vim-buftabline'
