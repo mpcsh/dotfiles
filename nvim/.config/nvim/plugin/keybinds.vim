@@ -42,3 +42,15 @@ set clipboard=unnamedplus
 " NERDTreeToggle
 nnoremap <silent> <C-n> :NERDTreeToggle<CR>
 imap <silent> <C-n> <Esc><C-n>
+
+" new buffer
+nmap <leader>t :enew<CR>
+
+" next buffer
+nmap <leader>l :bnext<CR>
+
+" previous buffer
+nmap <leader>h :bprevious
+
+" close current buffer and move to previous one
+nmap <leader>q :bprevious <BAR> bdelete #<CR>
