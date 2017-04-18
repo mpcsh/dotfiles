@@ -6,7 +6,6 @@ imports:
   weebullet: weechat/.weechat/python/autoload/
 
   # gruvbox
-  vim-colors-gruvbox: nvim/.config/nvim/bundle/gruvbox.vim
   xresources-gruvbox: colors/.colors/
 
   # tmux
