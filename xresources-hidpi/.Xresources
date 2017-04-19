@@ -8,7 +8,7 @@ barYOffset: 0
 
 !font
 Xft.dpi: 144
-*font: xft:FiraMono:size=12
+*font: xft:MesloLGS:size=12
 *iconFont: xft:FontAwesome:size=12
 
 !font rendering
