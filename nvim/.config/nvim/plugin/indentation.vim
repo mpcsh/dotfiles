@@ -6,7 +6,7 @@ set expandtab
 " whitespace highlighting
 if !(&filetype == "txt")
 	set list " show special characters
-	set listchars=trail:!
+	set listchars=tab:·\ ,trail:·,precedes:\ ,extends:\ ,nbsp:·
 endif
 
 " c
