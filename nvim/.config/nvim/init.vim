@@ -46,6 +46,9 @@ Plug 'deens/lightline_gruvbox_theme'
 " buffer bar
 Plug 'ap/vim-buftabline'
 
+" git integration
+Plug 'tpope/vim-fugitive'
+
 
 """ syntax
 " gruvbox
