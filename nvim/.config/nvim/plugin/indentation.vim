@@ -1,11 +1,12 @@
-" 2-space width tabs
+" 2 spaces for tabs
 set tabstop=2
 set shiftwidth=2
+set expandtab
 
 " whitespace highlighting
 if !(&filetype == "txt")
 	set list " show special characters
-	set listchars=tab:·\ ,trail:·,extends:>,precedes:<,nbsp:·
+	set listchars=trail:!
 endif
 
 " c
@@ -13,21 +14,12 @@ autocmd BufNewFile,BufRead *.c,*.h call SetCOptions()
 function SetCOptions()
 	setlocal ft=c
 	setlocal colorcolumn=81
-	setlocal tabstop=4
-	setlocal shiftwidth=4
-	setlocal expandtab
 endfunction
 
 " markdown
 autocmd BufNewFile,BufRead *.md call SetMarkdownOptions()
 function SetMarkdownOptions()
 	setlocal textwidth=80
-endfunction
-
-" haskell
-autocmd BufNewFile,BufRead *.hs call SetHaskellOptions()
-function SetHaskellOptions()
-	setlocal expandtab
 endfunction
 
 " rust
@@ -43,24 +35,18 @@ autocmd BufNewFile,BufRead *.iced call SetICSOptions()
 function SetICSOptions()
 	setlocal filetype=coffee
 	setlocal commentstring=#\ %s
-	setlocal expandtab
 endfunction
 
-" js indentation
-autocmd BufNewFile,BufRead *.coffee set expandtab
-autocmd BufNewFile,BufRead *.js set expandtab
-autocmd BufNewFile,BufRead *.json set expandtab
-
-" assembly indentation
+" assembly
 autocmd BufNewFile,BufRead *.s call SetAsmOptions()
 autocmd BufNewFile,BufRead *.as call SetAsmOptions()
 autocmd BufNewFile,BufRead *.asm call SetAsmOptions()
 function SetAsmOptions()
 	setlocal tabstop=8
-	setlocal nolist
+	setlocal noexpandtab
 endfunction
 
-" latex indentation
+" latex
 autocmd BufNewFile,BufRead *.tex call SetLatexOptions()
 function SetLatexOptions()
 	setlocal textwidth=80
