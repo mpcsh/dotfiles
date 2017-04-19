@@ -9,7 +9,6 @@ set shortmess+=I
 
 " statusline
 set laststatus=2
-set statusline=%=%f
 
 " auto reload changed files
 set autoread
