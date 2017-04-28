@@ -52,6 +52,9 @@ alias weather='curl wttr.in'
 # moon
 alias moon='curl wttr.in/Moon'
 
+# pacaur --noconfirm
+alias yolo='pacaur --noconfirm'
+
 # set X background
 function setbg() {
 	[[ $# -eq 0 ]] && : || cp $1 ~/.wallpaper
