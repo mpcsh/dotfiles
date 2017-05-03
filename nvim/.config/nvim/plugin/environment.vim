@@ -16,3 +16,6 @@ set autoread
 " open new split panes to right and bottom
 set splitbelow
 set splitright
+
+" no cursor styling
+set guicursor=
