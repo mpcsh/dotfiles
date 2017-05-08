@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+set -euo pipefail
+IFS=$'\n\t'
+
 TMP_BG=/tmp/screen.png
 ICON=~/dotfiles/scripts/rmlock.png
 
