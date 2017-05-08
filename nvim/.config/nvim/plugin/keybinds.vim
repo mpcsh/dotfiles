@@ -50,7 +50,7 @@ nmap <leader>t :enew<CR>
 nmap <leader>l :bnext<CR>
 
 " previous buffer
-nmap <leader>h :bprevious
+nmap <leader>h :bprevious<CR>
 
 " close current buffer and move to previous one
 nmap <leader>q :bprevious <BAR> bdelete #<CR>
