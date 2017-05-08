@@ -44,7 +44,7 @@ nnoremap <silent> <C-n> :NERDTreeToggle<CR>
 imap <silent> <C-n> <Esc><C-n>
 
 " new buffer
-nmap <leader>t :enew<CR>
+nmap <leader>t :enew<CR>:edit 
 
 " next buffer
 nmap <leader>l :bnext<CR>
