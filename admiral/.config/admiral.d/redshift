@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-temp=$(echo -n $(redshift -p | ack temperature | awk '{print $3}'))
-icon=""
-echo "${icon} ${temp}"
