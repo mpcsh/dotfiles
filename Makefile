@@ -33,13 +33,13 @@ xorg-base:
 
 # Bootstrapping rules
 huascaran: sync arch dev root-dev systemd xorg-base
-	stow bar-laptop gtk-hidpi xresources-hidpi
+	stow gtk-hidpi xresources-hidpi
 
 annapurna: sync arch dev root-dev systemd xorg-base
-	stow bar-desktop gtk-standard xresources-standard
+	stow gtk-standard xresources-standard
 
 eiger: sync arch dev root-dev systemd xorg-base
-	stow bar-laptop gtk-standard xresources-standard
+	stow gtk-standard xresources-standard
 
 xyz: sync arch dev root-dev systemd
 
