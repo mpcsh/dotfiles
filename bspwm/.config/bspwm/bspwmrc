@@ -29,4 +29,4 @@ synclient CoastingSpeed=0
 synclient HorizTwoFingerScroll=1
 
 # start the bar
-bar bottom
+polybar main
