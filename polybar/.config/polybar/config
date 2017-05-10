@@ -21,10 +21,9 @@ bottom = true
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 36
-offset-x = 0%
-offset-y = 0%
+offset-x = 0
+offset-y = 0
 radius = 0.0
-fixed-center = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -44,8 +43,8 @@ module-margin-right = 2
 font-0 = "M+ 1mn:size=12"
 font-1 = "FontAwesome:size=12"
 
-modules-left = bspwm
-modules-center = 
+modules-left = bspwm xwindow
+modules-center =
 modules-right = xbacklight volume wlan eth battery date powermenu
 
 tray-position = right
@@ -53,27 +52,36 @@ tray-padding = 2
 
 [module/bspwm]
 type = internal/bspwm
-
-ws-icon-0 = web;
-ws-icon-1 = term;
-ws-icon-2 = chat;
-ws-icon-default = 
+format = <label-state> <label-mode>
 
 label-focused = %icon%
-label-focused-background = ${colors.foreground}
-label-focused-foreground = ${colors.background}
-label-focused-padding = 1
+;label-focused-font = 1
+label-focused-background = ${colors.background-alt}
+;label-focused-underline= ${colors.primary}
+label-focused-underline= ${colors.foreground}
+label-focused-padding = 2
 
 label-occupied = %icon%
-label-occupied-padding = 1
+label-occupied-foreground = ${colors.foreground}
+label-occupied-padding = 2
 
 label-urgent = %icon%!
 label-urgent-background = ${colors.alert}
-label-urgent-padding = 1
+label-urgent-padding = 2
 
-label-empty =
+label-empty = %icon%
 label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 0
+label-empty-padding = 2
+
+ws-icon-1 = 1;
+ws-icon-2 = 2;
+ws-icon-0 = 0;
+ws-icon-default = 
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:120:...%
+label-padding = 4
 
 [module/xbacklight]
 type = internal/xbacklight
@@ -116,7 +124,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 type = internal/network
 interface = enp0s31f6
 
-format-connected-prefix = " "
+format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
@@ -178,19 +186,23 @@ format-charging = <animation-charging> <label-charging>
 
 format-discharging = <ramp-capacity> <label-discharging>
 
-format-full-prefix = " "
+format-full-prefix = ""
 format-full-prefix-foreground = ${colors.foreground-alt}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
 ramp-capacity-foreground = ${colors.foreground-alt}
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
 animation-charging-foreground = ${colors.foreground-alt}
-animation-charging-framerate = 750
+animation-charging-framerate = 15
 
 [module/powermenu]
 type = custom/menu
@@ -198,25 +210,25 @@ type = custom/menu
 format-spacing = 1
 
 label-open = 
-label-open-foreground = ${colors.secondary}
-label-close = cancel
-label-close-foreground = ${colors.secondary}
+label-open-foreground = ${colors.foreground}
+label-close = Cancel
+label-close-foreground = ${colors.foreground}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
-menu-0-0 = reboot
+menu-0-0 = Reboot
 menu-0-0-exec = menu-open-1
-menu-0-1 = power off
+menu-0-1 = Power Off
 menu-0-1-exec = menu-open-2
 
-menu-1-0 = cancel
+menu-1-0 = Cancel
 menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
-menu-1-1-exec = sudo reboot
+menu-1-1 = Reboot
+menu-1-1-exec = reboot
 
-menu-2-0 = power off
-menu-2-0-exec = sudo poweroff
-menu-2-1 = cancel
+menu-2-0 = Power Off
+menu-2-0-exec = shutdown now
+menu-2-1 = Cancel
 menu-2-1-exec = menu-open-0
 
 [settings]
