@@ -46,12 +46,6 @@ alias ip='ip -c'
 # clipboard
 alias xclip='xclip -selection clipboard'
 
-# weather
-alias weather='curl wttr.in'
-
-# moon
-alias moon='curl wttr.in/Moon'
-
 # pacaur --noconfirm
 alias yolo='pacaur --noconfirm'
 
@@ -70,18 +64,6 @@ function mkcd() {
 # cd .. repeatedly
 function up() {
 	cd $(eval printf ../%.0s {1..$1})
-}
-
-# find the WID with the given WNAME
-function find_wids() {
-	for wid in $(lsw); do
-		wname=$(wname $wid)
-		if (( $# == 0)); then
-			echo "$wid $wname"
-		elif [[ $wname =~ "$1" ]]; then
-			echo $wid
-		fi
-	done
 }
 
 # playgrounds
