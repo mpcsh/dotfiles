@@ -23,12 +23,12 @@ super + shift + {h,j,k,l}
 	bspc node -s {west,south,north,east}
 
 # send focused node to given desktop
-super + shift + {0-4}
-	bspc node -d {0-4}
+super + shift + {0-9}
+	bspc node -d {0-9}
 
 # focus given desktop
-super + {0-4}
-	bspc desktop -f {0-4}
+super + {0-9}
+	bspc desktop -f {0-9}
 
 # toggle fullscreen for focused node
 super + shift + f
