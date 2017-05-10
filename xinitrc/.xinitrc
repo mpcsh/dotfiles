@@ -22,9 +22,9 @@ xset m 1 0 &
 xset s off -dpms &
 
 # autostart apps
-nice redshift &
-nice compton -r 6 -o 0.75 &
-nice run_keybase &
+redshift &
+compton -r 6 -o 0.75 &
+run_keybase &
 
 # keymaps
 xmodmap ~/.config/xmodmap
