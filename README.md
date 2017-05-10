@@ -21,7 +21,7 @@ dependencies:
 ## (n)vim plugins
 See [peru.yaml](peru.yaml) for full reference. Here are my favorites:
 
-- [vim-pathogen](https://github.com/tpope/vim-pathogen): plugin management
+- [vim-plug](https://github.com/junegunn/vim-plug): plugin management
 - [vim-a](https://github.com/vim-scripts/a.vim): switch between `.c` and `.h`
 	files with `:A`
 - [vim-abolish](https://github.com/tpope/vim-abolish): advanced replacements
@@ -36,7 +36,6 @@ See [peru.yaml](peru.yaml) for full reference. Here are my favorites:
 	easily
 - [vim-tex](https://github.com/lervag/vimtex): live LaTeX (re)compiling
 
-These, and more, are all bootstrapped with a simple `peru sync` command.
 
 ## Usage
 My dotfiles are licensed under the BSD 3-Clause license, so feel free to adopt
