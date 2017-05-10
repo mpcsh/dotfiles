@@ -23,7 +23,7 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 padding-left = 0
-padding-right = 2
+padding-right = 1
 
 module-margin-left = 1
 module-margin-right = 1
@@ -57,19 +57,19 @@ format = <label-state> <label-mode>
 label-focused = %name%
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.foreground}
-label-focused-padding = 2
+label-focused-padding = 1
 
 label-occupied = %name%
 label-occupied-foreground = ${colors.foreground}
-label-occupied-padding = 2
+label-occupied-padding = 1
 
 label-urgent = %name%!
 label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+label-urgent-padding = 1
 
 label-empty =
 label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
+label-empty-padding = 1
 
 [module/xbacklight]
 type = internal/xbacklight
