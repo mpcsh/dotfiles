@@ -3,7 +3,7 @@ SHELL := /bin/bash
 
 # Modules
 DEV_MODULES = ack bash colors git nvim ssh tmux weechat
-XORG_MODULES = bspwm font polybar redshift sxhkd termite xinitrc xmodmap
+XORG_MODULES = bspwm polybar redshift sxhkd termite xinitrc xmodmap
 
 # Utilities
 default:
