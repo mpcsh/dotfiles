@@ -7,13 +7,9 @@ server, and university server (the last of which I don't even have root on).
 
 ## Installation dependencies
 - GNU stow: for symlink management
-- [peru](https://github.com/buildinspace/peru): to bootstrap other people's code
-(mainly plugins for tmux and vim) into place.
+- [peru](https://github.com/buildinspace/peru): to bootstrap other repositories
 
 ## Usage dependencies
-These will obviously depend on what you decide to use from this repo, likely
-some subset of what's have available. However, a few things have hard version
-dependencies:
 - neovim, *not* vim
 - tmux >= 1.9
 - bspwm >= 0.9.2
@@ -35,14 +31,3 @@ See [peru.yaml](peru.yaml) for full reference. Here are my favorites:
 - [vim-surround](https://github.com/tpope/vim-surround): change delimiters
 	easily
 - [vim-tex](https://github.com/lervag/vimtex): live LaTeX (re)compiling
-
-
-## Usage
-My dotfiles are licensed under the BSD 3-Clause license, so feel free to adopt
-them in your own repositories. If you'd like to use this repository for
-yourself, you can either:
-- Use it as-is if you think it's perfect
-- Fork, and make modifications as you see fit
-If you fork, add an entry in the Makefile for your hostname, following the
-structure of what's already there. Once that's done, just type `make $HOSTNAME`
-or `make [some-hostname-thats-not-yours]` to install.
