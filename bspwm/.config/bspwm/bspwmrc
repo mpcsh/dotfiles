@@ -17,7 +17,7 @@ bspc config focus_follows_pointer true
 bspc config ignore_ewmh_focus true
 
 # set workspaces
-bspc monitor -d 1 2 3 4 0
+bspc monitor -d 1 2 3 4 5 6 7 8 9 0
 
 # start the bar
 polybar main &
