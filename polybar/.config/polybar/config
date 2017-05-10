@@ -29,9 +29,11 @@ module-margin-left = 1
 module-margin-right = 1
 
 ; font configuration
-font-0 = "M+ 1mn:size=16;2"
-font-1 = "FontAwesome:size=16;2"
-font-2 = "Material Icons:size=16;4"
+font-0 = "M+ 1mn:size=12;2"
+font-1 = "FontAwesome:size=12;2"
+font-2 = "Material Icons:size=12;4"
+
+dpi = ${xrdb:Xft.dpi}
 
 ; modules list
 modules-left = bspwm
