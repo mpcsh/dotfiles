@@ -16,12 +16,8 @@ alert = ${xrdb:color1}
 
 [bar/main]
 bottom = true
-;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 48
-offset-x = 0
-offset-y = 0
-radius = 0.0
+height = ${xrdb:barHeight}
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -30,21 +26,27 @@ padding-left = 0
 padding-right = 2
 
 module-margin-left = 1
-module-margin-right = 2
+module-margin-right = 1
 
+; font configuration
 font-0 = "M+ 1mn:size=16;2"
 font-1 = "FontAwesome:size=16;2"
 font-2 = "Material Icons:size=16;4"
 
+; modules list
 modules-left = bspwm
 modules-center = date
 modules-right = xbacklight volume wlan eth battery powermenu
 
+; systray settings
 tray-position = right
 tray-padding = 0
 
 ; don't let the bar be drawn over other windows
 wm-restack = bspwm
+
+; underline size
+line-size = 3
 
 [module/bspwm]
 type = internal/bspwm
@@ -124,7 +126,7 @@ label-volume = %percentage%%
 format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
 label-muted = 00%
-mapping = false
+mapping = true
 
 [module/battery]
 type = internal/battery
