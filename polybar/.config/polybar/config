@@ -9,12 +9,10 @@
 
 [colors]
 background = ${xrdb:background}
-background-alt = #444
+background-alt = ${xrdb:color8}
 foreground = ${xrdb:foreground}
-foreground-alt = #555
-primary = #ffb52a
-secondary = #e60053
-alert = #bd2c40
+foreground-alt = ${xrdb:color7}
+alert = ${xrdb:color1}
 
 [bar/main]
 bottom = true
@@ -50,9 +48,12 @@ modules-right = xbacklight volume wlan eth battery powermenu
 
 tray-position = right
 tray-padding = 2
-tray-detached = true
+; tray-detached = true
 
-fixed-center = true
+; fixed-center = true
+
+; don't let the bar be drawn over other windows
+wm-restack = bspwm
 
 [module/bspwm]
 type = internal/bspwm
@@ -61,7 +62,6 @@ format = <label-state> <label-mode>
 label-focused = %icon%
 ;label-focused-font = 1
 label-focused-background = ${colors.background-alt}
-;label-focused-underline= ${colors.primary}
 label-focused-underline= ${colors.foreground}
 label-focused-padding = 2
 
@@ -113,7 +113,7 @@ type = internal/network
 interface = enp0s31f6
 
 format-connected-prefix = " "
-format-connected-prefix-foreground = ${colors.foreground-alt}
+format-connected-prefix-foreground = ${colors.foreground}
 label-connected = %local_ip%
 
 format-disconnected = "Disconnected"
@@ -123,28 +123,26 @@ format-disconnected = "Disconnected"
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 1
 
-date =
-date-alt = " %Y-%m-%d"
+date = "%d %B,"
 
-time = %H:%M
-time-alt = %H:%M:%S
+time = %H:%M:%S
 
-format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground}
 
 label = %date% %time%
 
 [module/volume]
 type = internal/volume
 
-format-volume = <label-volume> %percentage%
-label-volume = 
+format-volume = <label-volume>
+label-volume =  %percentage%%
 
-format-muted-prefix = ""
+format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
+label-muted = 00%
 
 [module/battery]
 type = internal/battery
