@@ -28,8 +28,8 @@ radius = 0.0
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 3
-line-color = #f00
+; line-size = 3
+; line-color = #f00
 
 border-size = 4
 border-color = #00000000
@@ -42,13 +42,17 @@ module-margin-right = 2
 
 font-0 = "M+ 1mn;2"
 font-1 = "FontAwesome;3"
+font-2 = "Material Icons;5"
 
-modules-left = bspwm xwindow
-modules-center =
-modules-right = xbacklight volume wlan eth battery date powermenu
+modules-left = bspwm
+modules-center = date
+modules-right = xbacklight volume wlan eth battery powermenu
 
 tray-position = right
 tray-padding = 2
+tray-detached = true
+
+fixed-center = true
 
 [module/bspwm]
 type = internal/bspwm
@@ -75,30 +79,14 @@ label-empty-padding = 2
 
 ws-icon-1 = 1;
 ws-icon-2 = 2;
-ws-icon-0 = 0;
-ws-icon-default = 
-
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:120:...%
-label-padding = 4
+ws-icon-0 = 0;
+ws-icon-default = 
 
 [module/xbacklight]
 type = internal/xbacklight
 
-format = <label> <bar>
-label = BL
-
-bar-width = 10
-bar-indicator = |
-bar-indicator-foreground = #ff
-bar-indicator-font = 2
-bar-fill = ─
-bar-fill-font = 2
-bar-fill-foreground = #9f78e1
-bar-empty = ─
-bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
+format = <label> %percentage:%%
+label = 
 
 [module/wlan]
 type = internal/network
@@ -151,30 +139,12 @@ label = %date% %time%
 [module/volume]
 type = internal/volume
 
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL
-label-volume-foreground = ${root.foreground}
+format-volume = <label-volume> %percentage%
+label-volume = 
 
-format-muted-prefix = " "
+format-muted-prefix = ""
 format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
-
-bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/battery]
 type = internal/battery
