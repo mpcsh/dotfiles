@@ -42,6 +42,14 @@ super + shift + v
 super + shift + space
 	bspc node -t ~floating
 
+# increase/decrease split ratio
+super + {plus,underscore}
+	bspc node @parent -r {+,-}10
+
+# equalize split ratios
+super + equal
+	bspc node @/ -E
+
 ##################################################
 # application shortcuts
 ##################################################
