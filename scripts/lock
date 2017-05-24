@@ -2,11 +2,11 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-TMP_BG=/tmp/screen.png
-ICON=~/dotfiles/scripts/rmlock.png
+# TMP_BG=/tmp/screen.png
+ICON=~/dotfiles/scripts/rmlock-$HOSTNAME.png
 
-scrot $TMP_BG
-convert $TMP_BG -filter point -resize 10% -resize 1000% -fill black -colorize 50% $TMP_BG
-convert $TMP_BG $ICON -gravity center -composite -matte $TMP_BG
+# scrot $TMP_BG
+# convert $TMP_BG -filter point -resize 10% -resize 1000% -fill black -colorize 50% $TMP_BG
+# convert $TMP_BG $ICON -gravity center -composite -matte $TMP_BG
 
-i3lock -i $TMP_BG
+i3lock -i $ICON
