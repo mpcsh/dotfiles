@@ -66,9 +66,13 @@ super + shift + Escape
 super + grave
 	termite
 
-# firefox
-super + f
-	firefox
+# chromium
+super + c
+	chromium
+
+# signal
+super + g
+	chromium --profile-directory=Default --app-id=bikioccmkafdpakkkcpdbppfkghcmihk
 
 # take screenshot
 super + Print

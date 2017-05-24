@@ -11,6 +11,9 @@ imports:
   # vim
   vim-plug: nvim/.config/nvim/autoload/
 
+  # weebullet
+  weebullet: weechat/.weechat/python/autoload/
+
 
 # tekup
 git module tekup:
@@ -18,26 +21,25 @@ git module tekup:
   pick: tekup
   rev: 77abe7b07d5c8ec7007965818f666ced76203644
 
-
 # gruvbox
-git module vim-colors-gruvbox:
-  url: https://github.com/morhetz/gruvbox.git
-  rev: 127c9d14d4bac1bac31e328b835a8919a255789c
-
 git module xresources-gruvbox:
   url: https://github.com/morhetz/gruvbox-contrib.git
   pick: xresources/gruvbox-dark.xresources
   rev: b46dd7c61859eaf4b1466b005b906783d1235a5e
-
 
 # tmux
 git module tmux-tpm:
   url: https://github.com/tmux-plugins/tpm
   rev: c8ac32a085d382c43190bda4fb5972e531f501fd
 
-
 # vim plugins
 git module vim-plug:
   url: https://github.com/junegunn/vim-plug.git
   pick: plug.vim
   rev: 06992bcfb96835535d27c28c06f5d0387f681957
+
+# weebullet
+git module weebullet:
+  url: https://github.com/leftybc/weebullet.git
+  pick: weebullet.py
+  rev: 9bca73903cf53355f6e284398da27ca6eac56ec8
