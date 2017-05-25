@@ -46,9 +46,9 @@ super + shift + space
 super + {plus,underscore}
 	bspc node @parent -r {+,-}10
 
-# equalize split ratios
-super + equal
-	bspc node @/ -E
+# equalize/balance split ratios
+super + shift + {e,b}
+	bspc node @/ -{E,B}
 
 ##################################################
 # application shortcuts
