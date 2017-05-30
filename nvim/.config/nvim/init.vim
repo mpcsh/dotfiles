@@ -6,24 +6,14 @@ call plug#begin()
 " sensible defaults
 Plug 'tpope/vim-sensible'
 
-" surround
-Plug 'tpope/vim-surround'
-
 " .c -> .h
 Plug 'vim-scripts/a.vim'
-
-" {despa,sepe}rat{e,es,ed,ing,ely,ion,ions,or} {despe,sepa}rat{}
-Plug 'tpope/vim-abolish'
 
 " better commenting
 Plug 'tpope/vim-commentary'
 
 " easymotion!
 Plug 'easymotion/vim-easymotion'
-
-" vim-notes!
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-notes'
 
 " filesystem browser
 Plug 'scrooloose/nerdtree'
@@ -51,25 +41,25 @@ Plug 'tpope/vim-fugitive'
 
 
 """ syntax
-" gruvbox
+" gruvbox colors
 Plug 'morhetz/gruvbox'
 
-" rust syntax
+" rust
 Plug 'rust-lang/rust.vim'
 
-" coffeescript syntax
+" coffeescript
 Plug 'kchmck/vim-coffee-script'
 
-" golang syntax
+" go
 Plug 'fatih/vim-go'
 
-" haskell syntax
+" haskell
 Plug 'neovimhaskell/haskell-vim'
 
 " latex
 Plug 'lervag/vimtex'
 
-" toml syntax
+" toml
 Plug 'cespare/vim-toml'
 
 " markdown
