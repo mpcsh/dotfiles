@@ -17,7 +17,7 @@ csil-sync:
 
 # Modules
 arch:
-	sudo stow -t / issue pacman
+	sudo stow -t / pacman
 
 dev:
 	stow $(DEV_MODULES)
