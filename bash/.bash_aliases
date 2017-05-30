@@ -5,9 +5,6 @@ alias sudo='sudo '
 alias ls='ls -lhF --color=auto'
 alias la='ls -lhFA --color=auto'
 
-# colors
-alias grep='grep --color=auto'
-
 # symlink by default
 alias ln='ln -sf'
 
@@ -31,14 +28,14 @@ alias fuck='sudo $(history -p \!\!) '
 # astyle
 alias astyle='astyle --style=stroustrup'
 
+# ack
+alias ack='ack --smart-case --type-set=tags:is:tags --notags --ignore-file=match:.bundle.js --ignore-dir=node_modules --ignore-dir=vendor --ignore-dir=proc --ignore-dir=sys --ignor-dir=.peru --ignore-dir=chromium --ignore-dir=.npm --color-match=green'
+
 # nvim
 [[ $HOSTNAME != "magneton" && $HOSTNAME != "doduo" ]] && alias vim='nvim'
 
 # rsync options
 alias rsync='rsync -aAXvzHE'
-
-# clone terminal
-alias ct='termite -d $PWD &> /dev/null & disown'
 
 # colored iproute2
 alias ip='ip -c'
@@ -64,34 +61,4 @@ function mkcd() {
 # cd .. repeatedly
 function up() {
 	cd $(eval printf ../%.0s {1..$1})
-}
-
-# playgrounds
-function playground() {
-	if [[ $# != 1 ]]; then
-		echo "must supply either c, rust, iced, or python"
-	fi
-	dir="$(mktemp -d)"
-	mkdir -p "$dir/playground"
-	cd "$dir/playground"
-	if [[ $1 == "c" ]]; then
-		cat << EOF > test.c
-#include <stdio.h>
-
-int main() {
-
-	return 0;
-}
-EOF
-		cat << EOF > Makefile
-.PHONY: default clean
-
-default:
-	gcc -Wall -g -o out.test test.c
-
-clean:
-	rm -f out.*
-EOF
-		vim test.c
-	fi
 }
