@@ -29,7 +29,7 @@ alias fuck='sudo $(history -p \!\!) '
 alias astyle='astyle --style=stroustrup'
 
 # ack
-alias ack='ack --smart-case --type-set=tags:is:tags --notags --ignore-file=match:.bundle.js --ignore-dir=node_modules --ignore-dir=vendor --ignore-dir=proc --ignore-dir=sys --ignor-dir=.peru --ignore-dir=chromium --ignore-dir=.npm --color-match=green'
+alias ack='ack --smart-case --type-set=tags:is:tags --notags --ignore-file=match:.bundle.js --ignore-dir=node_modules --ignore-dir=vendor --ignore-dir=proc --ignore-dir=sys --ignore-dir=.peru --ignore-dir=chromium --ignore-dir=.npm --color-match=green'
 
 # nvim
 [[ $HOSTNAME != "magneton" && $HOSTNAME != "doduo" ]] && alias vim='nvim'
