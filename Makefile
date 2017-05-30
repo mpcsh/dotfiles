@@ -3,7 +3,7 @@ SHELL := /bin/bash
 
 # Modules
 DEV_MODULES = bash colors git nvim ssh tmux weechat
-XORG_MODULES = bspwm polybar termite xinitrc xmodmap
+XORG_MODULES = bspwm polybar termite
 
 # Utilities
 default:
