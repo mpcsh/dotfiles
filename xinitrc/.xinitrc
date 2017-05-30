@@ -22,7 +22,7 @@ xset m 1 0 &
 xset s off -dpms &
 
 # autostart apps
-redshift &
+redshift -l geoclue2 -t 5500:3300 &
 compton -r 6 -o 0.75 &
 run_keybase &
 
