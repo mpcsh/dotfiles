@@ -27,7 +27,7 @@ nnoremap <S-Tab> <<
 nnoremap <leader>CTRL-I CTRL-I
 
 " C-l = nohlsearch, even in insert mode
-inoremap <silent> <C-l> <Esc><C-l>a
+imap <silent> <C-l> <Esc><C-l>a
 
 " NERDTreeToggle
 nnoremap <silent> <C-n> :NERDTreeToggle<CR>
