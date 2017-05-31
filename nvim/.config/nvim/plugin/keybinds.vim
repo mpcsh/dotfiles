@@ -1,6 +1,6 @@
 " set leader key
-let mapleader=" "
-let maplocalleader=" "
+let mapleader=","
+let maplocalleader=","
 set timeoutlen=500
 noremap <,> <Nop>
 
