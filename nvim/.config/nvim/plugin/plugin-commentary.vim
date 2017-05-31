@@ -1,6 +1,5 @@
-" prefer // over /*...*/. Used by vim-commentary.
+" prefer // over /*...*/ for single-line C comments
 autocmd FileType c set commentstring=//\ %s
 
-" only do the auto-insertion for multiline comments
-autocmd FileType c setlocal comments-=:// comments+=f://
-autocmd FileType vim setlocal comments-=:\" comments+=f:\"
+" don't keep commenting on enter or o/O
+autocmd BufNewFile,BufRead * setlocal formatoptions-=ro
