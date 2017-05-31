@@ -25,3 +25,20 @@ set mouse=a
 
 " x clipboard access
 set clipboard=unnamedplus
+
+" case-insensitive searching - case-sensitive if uppercase letters are used
+set ignorecase
+set smartcase
+
+" store all backup files centrally
+set backupdir=$HOME/.config/nvim/tmp
+set directory=$HOME/.config/nvim/tmp
+
+" persistent undo
+set undofile
+set undodir=$HOME/.config/nvim/undo
+set undolevels=1000
+set undoreload=10000
+
+" don't keep commenting on enter or o/O
+autocmd BufNewFile,BufRead * setlocal formatoptions-=ro

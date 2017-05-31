@@ -13,6 +13,7 @@ autocmd BufNewFile,BufRead *.c,*.h call SetCOptions()
 function SetCOptions()
 	setlocal ft=c
 	setlocal colorcolumn=81
+	setlocal commentstring=//\ %s " prefer // over /*...*/ for single-line comments
 endfunction
 
 " markdown
