@@ -3,12 +3,10 @@ set tabstop=2
 set shiftwidth=2
 
 " whitespace highlighting
-if !(&filetype == "txt")
-	let g:indentLine_char = '│'
-	let g:indentLine_first_char = '│'
-	let g:indentLine_showFirstIndentLevel = 1
-	set list listchars=tab:│\ ,trail:·
-endif
+let g:indentLine_char = '│'
+let g:indentLine_first_char = '│'
+let g:indentLine_showFirstIndentLevel = 1
+set list listchars=tab:│\ ,trail:·
 
 " c
 autocmd BufNewFile,BufRead *.c,*.h call SetCOptions()
