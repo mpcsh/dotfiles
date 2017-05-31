@@ -26,21 +26,24 @@ nnoremap <S-Tab> <<
 " since CTRL-I and <Tab> are the same key (*sigh*), we need to unclobber the original CTRL-I binding.
 nnoremap <leader>CTRL-I CTRL-I
 
-" C-l = nohlsearch
-imap <silent> <C-l> <Esc><C-l>a
+" C-l = nohlsearch, even in insert mode
+inoremap <silent> <C-l> <Esc><C-l>a
 
 " NERDTreeToggle
 nnoremap <silent> <C-n> :NERDTreeToggle<CR>
-imap <silent> <C-n> <Esc><C-n>
+inoremap <silent> <C-n> <Esc><C-n>
 
 " new buffer
-nmap <leader>t :enew<CR>:edit 
+nnoremap <leader>t :enew<CR>:edit 
 
 " next buffer
-nmap <leader>l :bnext<CR>
+nnoremap <leader>l :bnext<CR>
 
 " previous buffer
-nmap <leader>h :bprevious<CR>
+nnoremap <leader>h :bprevious<CR>
 
 " close current buffer and move to previous one
-nmap <leader>q :bprevious <BAR> bdelete #<CR>
+nnoremap <leader>q :bprevious <BAR> bdelete #<CR>
+
+" EasyAlign
+map ga <Plug>(EasyAlign)
