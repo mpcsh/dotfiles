@@ -20,14 +20,14 @@ Plug 'morhetz/gruvbox'               " gruvbox colors
 Plug 'deens/lightline_gruvbox_theme' " lightline gruvbox theme
 
 " languages
-Plug 'kchmck/vim-coffee-script'  " coffeescript
-Plug 'fatih/vim-go'              " go
-Plug 'neovimhaskell/haskell-vim' " haskell
-Plug 'lervag/vimtex'             " latex
-Plug 'godlygeek/tabular'         " necessary for markdown
-Plug 'plasticboy/vim-markdown'   " markdown
-Plug 'rust-lang/rust.vim'        " rust
-Plug 'cespare/vim-toml'          " toml
+Plug 'kchmck/vim-coffee-script',  { 'for': 'coffee'}   " coffeescript
+Plug 'fatih/vim-go',              { 'for': 'go'}       " go
+Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell'}  " haskell
+Plug 'lervag/vimtex',             { 'for': 'tex'}      " latex
+Plug 'godlygeek/tabular',         { 'for': 'markdown'} " necessary for markdown
+Plug 'plasticboy/vim-markdown',   { 'for': 'markdown'} " markdown
+Plug 'rust-lang/rust.vim',        { 'for': 'rust'}     " rust
+Plug 'cespare/vim-toml',          { 'for': 'toml'}     " toml
 
 call plug#end()
 
