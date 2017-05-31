@@ -4,8 +4,10 @@ set shiftwidth=2
 
 " whitespace highlighting
 if !(&filetype == "txt")
-	set list " show special characters
-	set listchars=tab:·\ ,trail:·,precedes:\ ,extends:\ ,nbsp:·
+	let g:indentLine_char = '│'
+	let g:indentLine_first_char = '│'
+	let g:indentLine_showFirstIndentLevel = 1
+	set list listchars=tab:│\ ,trail:·
 endif
 
 " c

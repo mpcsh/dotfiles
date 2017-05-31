@@ -8,6 +8,7 @@ Plug 'tpope/vim-commentary'            " better commenting
 Plug 'junegunn/vim-easy-align'         " easy alignment
 Plug 'easymotion/vim-easymotion'       " easymotion!
 Plug 'tpope/vim-fugitive'              " git integration
+Plug 'yggdroot/indentline'             " for space indentation
 Plug 'itchyny/lightline.vim'           " lightline
 Plug 'scrooloose/nerdtree'             " filesystem browser
 Plug 'mpcsh/vim-pass'                  " pass(1) helper
