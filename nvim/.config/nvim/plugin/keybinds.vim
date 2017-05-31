@@ -1,8 +1,6 @@
 " set leader key
 let mapleader=","
 let maplocalleader=","
-set timeoutlen=500
-noremap <,> <Nop>
 
 " make j and k move inside of a split line
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
@@ -20,6 +18,7 @@ nnoremap Q <Nop>
 " set <Tab>, <S-tab> to indent/unindent lines
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
+
 " normal mode equivalents
 nnoremap <Tab> >>
 nnoremap <S-Tab> <<
@@ -29,15 +28,6 @@ nnoremap <leader>CTRL-I CTRL-I
 
 " C-l = nohlsearch
 imap <silent> <C-l> <Esc><C-l>a
-
-" toggle relative line numbering
-nnoremap <silent> <leader>r :set relativenumber!<CR>
-
-" mouse compatibility
-set mouse=a
-
-" x clipboard access
-set clipboard=unnamedplus
 
 " NERDTreeToggle
 nnoremap <silent> <C-n> :NERDTreeToggle<CR>

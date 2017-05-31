@@ -19,3 +19,9 @@ set splitright
 
 " no cursor styling
 set guicursor=
+
+" mouse compatibility
+set mouse=a
+
+" x clipboard access
+set clipboard=unnamedplus
