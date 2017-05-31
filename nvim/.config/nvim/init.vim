@@ -3,7 +3,6 @@ runtime! bundle/sensible.vim
 
 call plug#begin()
 " environment
-Plug 'vim-scripts/a.vim'               " .c -> .h
 Plug 'ap/vim-buftabline'               " buffer bar
 Plug 'tpope/vim-commentary'            " better commenting
 Plug 'junegunn/vim-easy-align'         " easy alignment
