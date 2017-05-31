@@ -15,6 +15,7 @@ Plug 'mpcsh/vim-pass'                  " pass(1) helper
 Plug 'tpope/vim-repeat'                " make . work for everything
 Plug 'vim-scripts/replacewithregister' " replace with register
 Plug 'tpope/vim-sensible'              " sensible defaults
+Plug 'tpope/vim-surround'              " delimiter manipulation
 Plug 'vim-scripts/visualrepeat'        " make . work for *everything* (visual mode)
 
 " colorscheme
