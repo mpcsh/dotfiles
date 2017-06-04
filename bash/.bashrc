@@ -17,9 +17,6 @@ source ~/.bash_aliases
 # don't record duplicate commands in history
 export HISTCONTROL=ignoreboth:erasedups
 
-# z.sh
-[[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
-
 # prompt
 function prompt_git() {
 	local s='';
