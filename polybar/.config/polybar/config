@@ -99,9 +99,9 @@ label-disconnected = "Disconnected"
 
 [module/date]
 type = internal/date
-interval = 60
+interval = 1
 
-time = "%R"
+time = "%H:%M:%S"
 date-alt = "%A %d %B"
 
 format-prefix = " "
