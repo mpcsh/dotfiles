@@ -30,15 +30,23 @@ set clipboard=unnamedplus
 set ignorecase
 set smartcase
 
+" no swapfiles
+set noswapfile
+
 " store all backup files centrally
-set backupdir=$HOME/.config/nvim/tmp
-set directory=$HOME/.config/nvim/tmp
+set backupdir=$HOME/.config/nvim/tmp/backup/
+if !isdirectory(expand(&backupdir))
+	call mkdir(expand(&backupdir), 'p')
+endif
 
 " persistent undo
 set undofile
-set undodir=$HOME/.config/nvim/undo
-set undolevels=1000
-set undoreload=10000
+set undodir=$HOME/.config/nvim/tmp/undo/
+set undolevels=500
+set undoreload=500
+if !isdirectory(expand(&undodir))
+	call mkdir(expand(&undodir), 'p')
+endif
 
 " don't keep commenting on enter or o/O
 autocmd BufNewFile,BufRead * setlocal formatoptions-=ro
