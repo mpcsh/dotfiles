@@ -1,33 +1,33 @@
 [options]
-allow_bold = true
-audible_bell = false
-browser = /usr/bin/xdg-open
-clickable_url = true
-cursor_blink = off
-cursor_shape = block
-font = M+ 1mn 12
-fullscreen = false
-mouse_autohide = true
-scrollback_lines = 65535
+allow_bold          = true
+audible_bell        = false
+browser             = /usr/bin/xdg-open
+clickable_url       = true
+cursor_blink        = off
+cursor_shape        = block
+font                = M+ 1mn 12
+fullscreen          = false
+mouse_autohide      = true
+scrollback_lines    = 65535
 scroll_on_keystroke = true
-scroll_on_output = false
-search_wrap = true
+scroll_on_output    = false
+search_wrap         = true
 
 # gruvbox dark
 [colors]
-background = #282828
-foreground = #ebdbb2
+background      = #282828
+foreground      = #ebdbb2
 foreground_bold = #ebdbb2
 
-color0 = #282828
-color1 = #cc241d
-color2 = #98971a
-color3 = #d79921
-color4 = #458588
-color5 = #b16286
-color7 = #a89984
-color8 = #928374
-color9 = #fb4934
+color0  = #282828
+color1  = #cc241d
+color2  = #98971a
+color3  = #d79921
+color4  = #458588
+color5  = #b16286
+color7  = #a89984
+color8  = #928374
+color9  = #fb4934
 color10 = #b8bb26
 color11 = #fabd2f
 color12 = #83a598
