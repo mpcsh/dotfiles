@@ -99,16 +99,15 @@ label-disconnected = "Disconnected"
 
 [module/date]
 type = internal/date
-interval = 1
+interval = 60
 
-date = "%d %B,"
-
-time = %H:%M:%S
+time = "%R"
+date-alt = "%A %d %B"
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground}
 
-label = %date% %time%
+label = %time%%date%
 
 [module/volume]
 type = internal/volume
@@ -160,16 +159,10 @@ label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
 menu-0-0 = Reboot
-menu-0-0-exec = menu-open-1
+menu-0-0-exec = reboot
 
 menu-0-1 = Power Off
-menu-0-1-exec = menu-open-2
-
-menu-1-0 = Are you sure?
-menu-1-0-exec = reboot
-
-menu-2-0 = Are you sure?
-menu-2-0-exec = shutdown now
+menu-0-1-exec = shutdown now
 
 [settings]
 screenchange-reload = true
