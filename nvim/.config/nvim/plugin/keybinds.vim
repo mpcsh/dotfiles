@@ -47,3 +47,6 @@ nnoremap <leader>q :bprevious <BAR> bdelete #<CR>
 
 " EasyAlign
 map ga <Plug>(EasyAlign)
+
+" EasyMotion
+map <LocalLeader>w <Plug>(easymotion-bd-w)
