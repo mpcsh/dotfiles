@@ -23,7 +23,7 @@ xset s off -dpms &
 
 # autostart apps
 redshift -l geoclue2 -t 5500:3300 &
-compton -r 6 -o 0.75 &
+compton -I 0.01 -O 0.01 -D 3 &
 run_keybase &
 
 # keymaps
