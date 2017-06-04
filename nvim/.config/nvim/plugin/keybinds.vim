@@ -2,9 +2,9 @@
 let mapleader=","
 let maplocalleader=","
 
-" make j and k move inside of a split line
-noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
-noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+" move inside of softwrapped lines
+noremap <silent> j gj
+noremap <silent> k gk
 
 " make HJKL jump to the extreme of their lowercase counterparts
 noremap <silent> H ^
@@ -13,37 +13,34 @@ noremap <silent> J G
 noremap <silent> K gg
 
 " disable "ex mode"
-nnoremap Q <Nop>
+nnoremap <silent> Q <Nop>
 
 " set <Tab>, <S-tab> to indent/unindent lines
-vnoremap <Tab> >gv
-vnoremap <S-Tab> <gv
+vnoremap <silent> <Tab> >gv
+vnoremap <silent> <S-Tab> <gv
 
 " normal mode equivalents
-nnoremap <Tab> >>
-nnoremap <S-Tab> <<
-
-" since CTRL-I and <Tab> are the same key (*sigh*), we need to unclobber the original CTRL-I binding.
-nnoremap <leader>CTRL-I CTRL-I
+nnoremap <silent> <Tab> >>
+nnoremap <silent> <S-Tab> <<
 
 " C-l = nohlsearch, even in insert mode
 imap <silent> <C-l> <Esc><C-l>a
 
 " NERDTreeToggle
 nnoremap <silent> <C-n> :NERDTreeToggle<CR>
-inoremap <silent> <C-n> <Esc><C-n>
+imap <silent> <C-n> <Esc><C-n>
 
 " new buffer
-nnoremap <leader>t :enew<CR>:edit 
+noremap <leader>t :enew<CR>:edit 
 
 " next buffer
-nnoremap <leader>l :bnext<CR>
+noremap <silent> <leader><Tab> :bnext<CR>
 
 " previous buffer
-nnoremap <leader>h :bprevious<CR>
+noremap <silent> <leader><S-Tab> :bprevious<CR>
 
 " close current buffer and move to previous one
-nnoremap <leader>q :bprevious <BAR> bdelete #<CR>
+nnoremap <silent> <leader>w :bprevious <BAR> bdelete #<CR>
 
 " EasyAlign
 map ga <Plug>(EasyAlign)
