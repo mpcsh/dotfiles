@@ -30,3 +30,11 @@ endfunction
 
 " search highlighting
 set hlsearch
+
+" easymotion highlighting
+hi EasyMotionTarget gui=none guibg=none guifg=#fb4934
+hi EasyMotionTargetDefault gui=none guibg=none guifg=#fb4934
+hi EasyMotionTarget2First gui=none guibg=none guifg=#fb4934
+hi EasyMotionTarget2FirstDefault gui=none guibg=none guifg=#fb4934
+hi EasyMotionTarget2Second gui=none guibg=none guifg=#fb4934
+hi EasyMotionTarget2SecondDefault gui=none guibg=none guifg=#fb4934
