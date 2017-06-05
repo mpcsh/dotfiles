@@ -14,3 +14,5 @@ disable_menu_access=0
 disable_tab_menu_shortcuts=1
 colour_scheme=gruvbox
 cursor_blink_mode=2
+scroll_on_output=0
+scroll_on_keystroke=1
