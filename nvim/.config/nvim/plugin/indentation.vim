@@ -46,6 +46,7 @@ endfunction
 " latex
 autocmd BufNewFile,BufRead *.tex call SetLatexOptions()
 function SetLatexOptions()
+	setlocal filetype=tex
 	setlocal textwidth=80
 	setlocal colorcolumn=81
 endfunction
