@@ -1,7 +1,4 @@
 imports:
-  # tekup
-  tekup: scripts/
-
   # gruvbox
   xresources-gruvbox: colors/.colors/
 
@@ -14,12 +11,6 @@ imports:
   # weebullet
   weebullet: weechat/.weechat/python/autoload/
 
-
-# tekup
-git module tekup:
-  url: https://github.com/danielfgray/tekup.git
-  pick: tekup
-  rev: 77abe7b07d5c8ec7007965818f666ced76203644
 
 # gruvbox
 git module xresources-gruvbox:
