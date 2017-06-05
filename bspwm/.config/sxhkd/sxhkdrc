@@ -62,9 +62,9 @@ super + Escape
 super + shift + Escape
 	~/dotfiles/scripts/suspend
 
-# termite
+# roxterm
 super + grave
-	termite
+	roxterm
 
 # chromium
 super + c

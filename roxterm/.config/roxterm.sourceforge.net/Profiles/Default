@@ -1,0 +1,16 @@
+[roxterm profile]
+font=M+ 1mn 12
+always_show_tabs=0
+full_screen=0
+maximise=1
+hide_menubar=1
+show_add_tab_btn=0
+cursor_shape=0
+autowrap=1
+bell_highlights_tab=1
+scrollbar_pos=0
+scrollback_lines=1000
+disable_menu_access=0
+disable_tab_menu_shortcuts=1
+colour_scheme=gruvbox
+cursor_blink_mode=2
