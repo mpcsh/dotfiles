@@ -16,8 +16,8 @@ endfunction
 " markdown
 autocmd BufNewFile,BufRead *.md call SetMarkdownOptions()
 function SetMarkdownOptions()
-	setlocal textwidth=80
-	setlocal colorcolumn=81
+	setlocal textwidth=100
+	setlocal colorcolumn=101
 endfunction
 
 " rust
@@ -47,6 +47,6 @@ endfunction
 autocmd BufNewFile,BufRead *.tex call SetLatexOptions()
 function SetLatexOptions()
 	setlocal filetype=tex
-	setlocal textwidth=80
-	setlocal colorcolumn=81
+	setlocal textwidth=100
+	setlocal colorcolumn=101
 endfunction
