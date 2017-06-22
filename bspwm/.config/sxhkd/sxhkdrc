@@ -83,7 +83,7 @@ super + shift + Print
 
 # ranger
 super + r
-	termite -e ranger
+	roxterm -e ranger
 
 # dmenu
 super + space
@@ -99,7 +99,7 @@ super + s
 
 # weechat
 super + w
-	termite -e weechat
+	roxterm -e weechat
 
 ##################################################
 # laptop function keys
