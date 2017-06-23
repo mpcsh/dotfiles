@@ -1,10 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+IFS=$'\n\t'
+
 # high refresh when available
-xrandr --rate 144 &
+if [[ $HOSTNAME == "annapurna" ]]; then
+	xrandr --rate 144 &
+fi
 
 # themes!
 xrdb ~/.Xresources
 xrdb -merge ~/.colors/xresources/gruvbox-dark.xresources
 source ~/.bash_aliases; setbg &
+
+# hidpi
+if [[ $HOSTNAME == "huascaran" ]]; then
+	echo "Xft.dpi: 144" | xrdb -merge
+else
+	echo "Xft.dpi: 96" | xrdb -merge
+fi
 
 # basic xorg settings
 xsetroot -cursor_name left_ptr &

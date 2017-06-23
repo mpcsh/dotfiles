@@ -1,11 +1,3 @@
-!wm
-gaps: 16
-
-!bar
-barHeight: 48
-barXOffset: 0
-barYOffset: 0
-
 !font
 Xft.dpi: 144
 *font: xft:M+1mn:size=12
