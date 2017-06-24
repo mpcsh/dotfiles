@@ -2,15 +2,19 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-source screen_vars
+BG="$(xrq background)"
+FG="$(xrq foreground)"
+BAR_WIDTH="$(xdpyinfo | awk '/dimensions:/ {print $2; exit}' | cut -dx -f1)"
+BAR_HEIGHT="$(xrq barHeight)"
+FONT="$(xrq font | cut -d: -f2,3)"
 USAGE="Usage: menu [dmenu_run|passmenu] [top|bottom]"
 
 if [[ $# != 2 ]]; then
 	echo "$USAGE"
 elif [[ $2 == "top" ]]; then
-	"$1" -fn "$FONT" -x "$XOFF" -y "$YOFF" -w "$BAR_WIDTH" -h "$BAR_HEIGHT" -nb "$BG" -nf "$FG" -sb "$FG" -sf "$BG"
+	"$1" -fn "$FONT" -w "$BAR_WIDTH" -h "$BAR_HEIGHT" -nb "$BG" -nf "$FG" -sb "$FG" -sf "$BG"
 elif [[ $2 == "bottom" ]]; then
-	"$1" -fn "$FONT" -x "$XOFF" -y "$YOFF" -w "$BAR_WIDTH" -h "$BAR_HEIGHT" -nb "$BG" -nf "$FG" -sb "$FG" -sf "$BG" -b
+	"$1" -fn "$FONT" -w "$BAR_WIDTH" -h "$BAR_HEIGHT" -nb "$BG" -nf "$FG" -sb "$FG" -sf "$BG" -b
 else
 	echo "$USAGE"
 fi

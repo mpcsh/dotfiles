@@ -1,3 +1,6 @@
+! bar
+barHeight: 36
+
 !font
 Xft.dpi: 96
 *font: xft:M+1mn:size=12
