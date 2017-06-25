@@ -89,10 +89,6 @@ super + r
 super + space
 	~/dotfiles/scripts/menu dmenu_run bottom
 
-# pass~/dotfiles/scripts/menu
-super + p
-	~/dotfiles/scripts/menu passmenu bottom
-
 # spotify
 super + s
 	hidpi spotify
