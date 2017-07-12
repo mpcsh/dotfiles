@@ -91,7 +91,7 @@ super + space
 
 # spotify
 super + s
-	hidpi spotify
+	~/dotfiles/scripts/hidpi spotify
 
 # weechat
 super + w
@@ -103,11 +103,11 @@ super + w
 
 # increase brightness
 XF86MonBrightnessUp
-	backlightctl up
+	~/dotfiles/scripts/backlightctl up
 
 # decrease brightness
 XF86MonBrightnessDown
-	backlightctl down
+	~/dotfiles/scripts/backlightctl down
 
 # increase volume
 XF86AudioRaiseVolume

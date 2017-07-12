@@ -50,3 +50,9 @@ function SetLatexOptions()
 	setlocal textwidth=100
 	setlocal colorcolumn=101
 endfunction
+
+" nix
+autocmd BufNewFile,BufRead *.tex call SetNixOptions()
+function SetNixOptions()
+	setlocal filetype=nix
+endfunction

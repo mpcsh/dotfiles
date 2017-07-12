@@ -1,6 +1,42 @@
-#! /bin/bash
+#! /usr/bin/env bash
 set -euo pipefail
 IFS=$'\n\t'
+
+# high refresh when available
+if [[ $HOSTNAME == "annapurna" ]]; then
+	xrandr --rate 144 &
+fi
+
+# themes!
+xrdb ~/.Xresources
+xrdb -merge ~/.colors/xresources/gruvbox-dark.xresources
+source ~/.bash_aliases; setbg &
+
+# hidpi
+if [[ $HOSTNAME == "alpamayo" ]]; then
+	echo "Xft.dpi: 144" | xrdb -merge
+else
+	echo "Xft.dpi: 96" | xrdb -merge
+fi
+
+# basic xorg settings
+xsetroot -cursor_name left_ptr &
+
+# no bell
+xset -b &
+
+# key repeat rate
+xset r rate 250 &
+
+# no mouse acceleration
+xset m 1 0 &
+
+# disable auto screensaver
+xset s off -dpms &
+
+# autostart apps
+redshift -l geoclue2 -t 5500:3300 &
+compton -I 0.01 -O 0.01 -D 3 &
 
 # configure borders, gaps
 bspc config border_width 6
@@ -8,7 +44,7 @@ bspc config window_gap 18
 bspc config split_ratio 0.5
 
 # preselection color
-bspc config presel_feedback_color "$(xrq foreground)"
+bspc config presel_feedback_color "#ebdbb2"
 
 # focusing
 bspc config focus_follows_pointer true
@@ -26,9 +62,3 @@ polybar main &
 
 # don't blind me
 xbacklight -set 50
-
-# disable coasting
-synclient CoastingSpeed=0
-
-# enable two-finger horizontal scrolling
-synclient HorizTwoFingerScroll=1

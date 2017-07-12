@@ -71,7 +71,7 @@ function prompt_git() {
 PS1='$(tput setaf 2)\u$(tput sgr0) at $(tput setaf 3)\h$(tput sgr0) in $(tput setaf 4)\w$(tput sgr0)$(prompt_git)\n» '
 
 # dem perms!
-if [[ $HOSTNAME == "huascaran" || $HOSTNAME == "annapurna" || $HOSTNAME == "eiger" ]]; then
+if [[ $HOSTNAME == "alpamayo" || $HOSTNAME == "annapurna" || $HOSTNAME == "eiger" ]]; then
 	umask 077
 fi
 

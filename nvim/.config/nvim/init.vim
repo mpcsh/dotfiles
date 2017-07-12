@@ -10,7 +10,6 @@ Plug 'easymotion/vim-easymotion'       " easymotion!
 Plug 'tpope/vim-fugitive'              " git integration
 Plug 'itchyny/lightline.vim'           " lightline
 Plug 'scrooloose/nerdtree'             " filesystem browser
-Plug 'mpcsh/vim-pass'                  " pass(1) helper
 Plug 'tpope/vim-repeat'                " make . work for everything
 Plug 'vim-scripts/replacewithregister' " replace with register
 Plug 'tpope/vim-sensible'              " sensible defaults
@@ -28,6 +27,7 @@ Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell'}  " haskell
 Plug 'lervag/vimtex',             { 'for': 'tex'}      " latex
 Plug 'godlygeek/tabular',         { 'for': 'markdown'} " necessary for markdown
 Plug 'plasticboy/vim-markdown',   { 'for': 'markdown'} " markdown
+Plug 'LnL7/vim-nix',              { 'for': 'nix'}      " nix
 Plug 'rust-lang/rust.vim',        { 'for': 'rust'}     " rust
 Plug 'cespare/vim-toml',          { 'for': 'toml'}     " toml
 

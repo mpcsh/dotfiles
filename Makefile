@@ -1,5 +1,5 @@
-SHELL := /bin/bash
-.PHONY: sync arch dev xorg-base huascaran annapurna eiger xyz magneton
+SHELL := /usr/bin/env bash
+.PHONY: sync dev xorg-base huascaran annapurna eiger xyz magneton
 
 # Modules
 DEV_MODULES = bash colors git nvim ssh tmux weechat
@@ -12,27 +12,21 @@ default:
 sync:
 	peru sync
 
-csil-sync:
-	source venv/bin/activate; peru sync; deactivate
-
 # Modules
-arch:
-	sudo stow -t / pacman
-
 dev:
 	stow $(DEV_MODULES)
 
 root-dev:
 	sudo stow -t /root $(DEV_MODULES)
 
-systemd:
-	sudo bash -c "systemctl enable $$PWD/systemd/*.timer"
-
 xorg-base:
 	stow $(XORG_MODULES)
 
 # Bootstrapping rules
 huascaran: sync arch dev root-dev systemd xorg-base
+	stow gtk-hidpi xresources-hidpi
+
+alpamayo: sync dev root-dev xorg-base
 	stow gtk-hidpi xresources-hidpi
 
 annapurna: sync arch dev root-dev systemd xorg-base
