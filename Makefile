@@ -23,9 +23,6 @@ xorg-base:
 	stow $(XORG_MODULES)
 
 # Bootstrapping rules
-huascaran: sync arch dev root-dev systemd xorg-base
-	stow gtk-hidpi xresources-hidpi
-
 alpamayo: sync dev root-dev xorg-base
 	stow gtk-hidpi xresources-hidpi
 
