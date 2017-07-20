@@ -19,8 +19,11 @@ else
 	echo "Xft.dpi: 96" | xrdb -merge
 fi
 
-# basic xorg settings
+# don't use that stupid cross pointer
 xsetroot -cursor_name left_ptr &
+
+# swap caps and escape
+setxkbmap -option caps:escape &
 
 # no bell
 xset -b &
