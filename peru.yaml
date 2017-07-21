@@ -8,9 +8,6 @@ imports:
   # vim
   vim-plug: nvim/.config/nvim/autoload/
 
-  # weebullet
-  weebullet: weechat/.weechat/python/autoload/
-
 
 # gruvbox
 git module xresources-gruvbox:
@@ -28,9 +25,3 @@ git module vim-plug:
   url: https://github.com/junegunn/vim-plug.git
   pick: plug.vim
   rev: 06992bcfb96835535d27c28c06f5d0387f681957
-
-# weebullet
-git module weebullet:
-  url: https://github.com/leftybc/weebullet.git
-  pick: weebullet.py
-  rev: 9bca73903cf53355f6e284398da27ca6eac56ec8
