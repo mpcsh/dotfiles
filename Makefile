@@ -1,7 +1,8 @@
 SHELL := /usr/bin/env bash
-.PHONY: sync dev xorg-base huascaran annapurna eiger xyz magneton
+.PHONY: default sync arch dev root-dev systemd xorg-base alpamayo annapurna eiger xyz csil
 
 # Modules
+ARCH_MODULES = pacman
 DEV_MODULES = bash colors git nvim ssh tmux weechat
 XORG_MODULES = bspwm roxterm
 
@@ -13,17 +14,23 @@ sync:
 	peru sync
 
 # Modules
+arch:
+	sudo stow -t / $(ARCH_MODULES)
+
 dev:
 	stow $(DEV_MODULES)
 
 root-dev:
 	sudo stow -t /root $(DEV_MODULES)
 
+systemd:
+	sudo systemctl enable --now $$PWD/systemd/*
+
 xorg-base:
 	stow $(XORG_MODULES)
 
 # Bootstrapping rules
-alpamayo: sync dev root-dev xorg-base
+alpamayo: sync arch dev root-dev systemd xorg-base
 	stow gtk-hidpi xresources-hidpi
 
 annapurna: sync arch dev root-dev systemd xorg-base
