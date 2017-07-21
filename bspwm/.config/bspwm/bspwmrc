@@ -65,3 +65,6 @@ polybar main &
 
 # don't blind me
 xbacklight -set 50
+
+# no coasting
+synclient CoastingSpeed=0
