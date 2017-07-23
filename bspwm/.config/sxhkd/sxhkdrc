@@ -55,7 +55,7 @@ super + shift + {e,b}
 ##################################################
 
 # lock
-super + Escape
+super + {Escape,Caps_Lock}
 	~/dotfiles/scripts/lock
 
 # lock and suspend
@@ -84,6 +84,9 @@ super + shift + Print
 # ranger
 super + r
 	roxterm -e ranger
+
+super + t
+	thunar
 
 # dmenu
 super + space

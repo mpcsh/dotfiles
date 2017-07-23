@@ -37,10 +37,6 @@ xset m 1 0 &
 # disable auto screensaver
 xset s off -dpms &
 
-# autostart apps
-redshift -l geoclue2 -t 5500:3300 &
-compton -I 0.01 -O 0.01 -D 3 &
-
 # configure borders, gaps
 bspc config border_width 6
 bspc config window_gap 18
@@ -60,11 +56,24 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 0
 bspc rule -a Zathura state=tiled
 bspc rule -a *:libreoffice state=tiled
 
-# start the bar
+# autostart apps
+redshift -l geoclue2 -t 5500:3300 &
+compton -I 0.01 -O 0.01 -D 3 &
+run_keybase &
+thunar --daemon &
 polybar main &
 
+################################################################################
+### Laptop specific stuff - on desktop this will fail, and the script will exit
+################################################################################
+# networkmanager
+nm-applet &
+
 # don't blind me
-xbacklight -set 50
+xbacklight -set 50 &
 
 # no coasting
-synclient CoastingSpeed=0
+synclient CoastingSpeed=0 &
+
+# horizontal scrolling
+synclient HorizTwoFingerScroll=true &
