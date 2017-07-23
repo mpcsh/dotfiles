@@ -12,10 +12,6 @@ nvim/.config/nvim/*
 # colorscheme
 colors
 
-# gnome :(
-gtk-standard/.config/gtk-3.0/bookmarks
-gtk-hidpi/.config/gtk-3.0/bookmarks
-
 # weechat
 weechat/.weechat/*
 !weechat/.weechat/weechat.conf
@@ -23,5 +19,5 @@ weechat/.weechat/*
 !weechat/.weechat/buflist.conf
 !weechat/.weechat/irc.conf
 
-# tekup
-scripts/tekup
+# oh-my-zsh
+oh-my-zsh

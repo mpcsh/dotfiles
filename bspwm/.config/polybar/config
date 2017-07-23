@@ -29,9 +29,8 @@ module-margin-left = 1
 module-margin-right = 1
 
 ; font configuration
-font-0 = "M+ 1mn:size=12;3"
-font-1 = "FontAwesome:size=12;3"
-font-2 = "Material Icons:size=12;5"
+font-0 = "mplus Nerd Font:size=12;4"
+font-1 = "Material Icons:size=12;5"
 
 dpi = ${xrdb:Xft.dpi}
 
@@ -73,7 +72,7 @@ label-empty =
 type = internal/xbacklight
 
 format = <label>
-format-prefix = " "
+format-prefix = "  "
 label = %percentage%%
 
 [module/wlan]
@@ -104,7 +103,7 @@ interval = 1
 time = "%H:%M:%S"
 date-alt = "%A %d %B"
 
-format-prefix = " "
+format-prefix = "  "
 format-prefix-foreground = ${colors.foreground}
 
 label = %time%%date%
@@ -131,19 +130,19 @@ format-charging = <animation-charging> <label-charging>
 
 format-discharging = <ramp-capacity> <label-discharging>
 
-format-full-prefix = " "
+format-full-prefix = "  "
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
+ramp-capacity-0 = " "
+ramp-capacity-1 = " "
+ramp-capacity-2 = " "
+ramp-capacity-3 = " "
+ramp-capacity-4 = " "
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-4 = 
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-2 = " "
+animation-charging-3 = " "
+animation-charging-4 = " "
 animation-charging-framerate = 500
 
 [module/powermenu]

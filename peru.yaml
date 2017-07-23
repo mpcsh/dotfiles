@@ -2,6 +2,9 @@ imports:
   # gruvbox
   xresources-gruvbox: colors/.colors/
 
+  # oh-my-zsh
+  oh-my-zsh: oh-my-zsh
+
   # tmux
   tmux-tpm: tmux/.tmux/plugins/tpm
 
@@ -14,6 +17,10 @@ git module xresources-gruvbox:
   url: https://github.com/morhetz/gruvbox-contrib.git
   pick: xresources/gruvbox-dark.xresources
   rev: b46dd7c61859eaf4b1466b005b906783d1235a5e
+
+# oh-my-zsh
+git module oh-my-zsh:
+  url: https://github.com/robbyrussell/oh-my-zsh
 
 # tmux
 git module tmux-tpm:
