@@ -62,9 +62,9 @@ super + {Escape,Caps_Lock}
 super + shift + Escape
 	~/dotfiles/scripts/suspend
 
-# roxterm
+# termite
 super + grave
-	roxterm
+	termite
 
 # chromium
 super + c
@@ -83,7 +83,7 @@ super + shift + Print
 
 # ranger
 super + r
-	roxterm -e ranger
+	termite -e ranger
 
 super + t
 	thunar
@@ -98,7 +98,7 @@ super + s
 
 # weechat
 super + w
-	roxterm -e weechat
+	termite -e weechat
 
 ##################################################
 # laptop function keys
