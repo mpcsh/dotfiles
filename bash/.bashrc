@@ -75,8 +75,8 @@ if [[ $HOSTNAME == "alpamayo" || $HOSTNAME == "annapurna" || $HOSTNAME == "eiger
 	umask 077
 fi
 
-# display startx prompt on huascaran and annapurna when logging in to a tty
-if [[ -z $DISPLAY && $HOSTNAME == "huascaran" || -z $DISPLAY && $HOSTNAME == "annapurna" || -z $DISPLAY && $HOSTNAME == "eiger" ]]; then
+# display startx prompt on alpamayo and annapurna when logging in to a tty
+if [[ -z $DISPLAY && $HOSTNAME == "alpamayo" || -z $DISPLAY && $HOSTNAME == "annapurna" || -z $DISPLAY && $HOSTNAME == "eiger" ]]; then
 	fortune calvin | cowsay
 	echo "startx?"
 	select yn in "yes" "no"; do
