@@ -79,7 +79,7 @@ label = %percentage%%
 [module/wlan]
 type = internal/network
 interface = wlp58s0
-interval = 3.0
+interval = 1
 
 format-connected-prefix = " "
 label-connected = %essid%
