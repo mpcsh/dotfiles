@@ -44,7 +44,7 @@ alias ip='ip -c'
 alias xclip='xclip -selection clipboard'
 
 # pacaur --noconfirm
-alias yolo='pacaur --noconfirm'
+alias yolo='pacaur --noconfirm --noedit'
 
 # set X background
 function setbg() {
