@@ -22,7 +22,7 @@ fi
 # don't use that stupid cross pointer
 xsetroot -cursor_name left_ptr &
 
-# swap caps and escape
+# make caps behave as another escape
 setxkbmap -option caps:escape &
 
 # no bell
@@ -30,9 +30,6 @@ xset -b &
 
 # key repeat rate
 xset r rate 250 &
-
-# no mouse acceleration
-xset m 1 0 &
 
 # disable auto screensaver
 xset s off -dpms &

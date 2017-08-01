@@ -4,7 +4,7 @@ SHELL := /usr/bin/env bash
 # Modules
 ARCH_MODULES = pacman
 DEV_MODULES = bash colors git nvim ssh tmux weechat
-XORG_MODULES = bspwm fonts termite
+XORG_MODULES = bspwm termite
 
 # Utilities
 default:

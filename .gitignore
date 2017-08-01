@@ -21,3 +21,7 @@ weechat/.weechat/*
 
 # oh-my-zsh
 oh-my-zsh
+
+# gnome standards...
+gtk-standard/.config/gtk-3.0/bookmarks
+gtk-hidpi/.config/gtk-3.0/bookmarks
