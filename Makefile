@@ -30,7 +30,7 @@ xorg-base:
 	stow $(XORG_MODULES)
 
 # Bootstrapping rules
-alpamayo: sync arch dev root-dev systemd xorg-base
+alpamayo: sync dev root-dev xorg-base
 	stow gtk-hidpi xresources-hidpi
 
 annapurna: sync arch dev root-dev systemd xorg-base
