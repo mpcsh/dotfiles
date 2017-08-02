@@ -16,6 +16,8 @@ alert = ${xrdb:color1}
 
 [bar/main]
 bottom = true
+dpi = ${xrdb:Xft.dpi}
+
 width = 100%
 height = ${xrdb:barHeight}
 
@@ -33,8 +35,6 @@ font-0 = "M+ 1mn:size=12;3"
 font-1 = "FontAwesome:size=12;3"
 font-2 = "Material Icons:size=12;5"
 
-dpi = ${xrdb:Xft.dpi}
-
 ; modules list
 modules-left = bspwm
 modules-center = date
@@ -43,6 +43,7 @@ modules-right = xbacklight volume wlan eth battery powermenu
 ; systray settings
 tray-position = right
 tray-padding = 0
+tray-maxsize = 32
 
 ; don't let the bar be drawn over other windows
 wm-restack = bspwm

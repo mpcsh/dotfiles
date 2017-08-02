@@ -2,7 +2,6 @@
 barHeight: 48
 
 !font
-Xft.dpi: 144
 *font: xft:M+1mn:size=12
 *iconFont: xft:FontAwesome:size=12
 

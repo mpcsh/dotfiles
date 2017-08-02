@@ -4,7 +4,7 @@ SHELL := /usr/bin/env bash
 # Modules
 ARCH_MODULES = pacman
 DEV_MODULES = bash colors git nvim ssh tmux weechat
-XORG_MODULES = bspwm termite
+XORG_MODULES = bspwm termite xresources
 
 # Utilities
 default:
@@ -31,15 +31,15 @@ xorg-base:
 
 # Bootstrapping rules
 alpamayo: sync dev root-dev xorg-base
-	stow gtk-hidpi xresources-hidpi
+	stow gtk-hidpi
 
 annapurna: sync arch dev root-dev systemd xorg-base
-	stow gtk-standard xresources-standard
+	stow gtk-standard
 
 eiger: sync arch dev root-dev systemd xorg-base
-	stow gtk-standard xresources-standard
+	stow gtk-standard
 
 xyz: sync arch dev root-dev systemd
 
 csil: csil-sync dev xorg-base
-	stow gtk-standard xresources-standard
+	stow gtk-standard
