@@ -90,7 +90,7 @@ super + t
 
 # dmenu
 super + space
-	~/dotfiles/scripts/menu dmenu_run bottom
+	~/dotfiles/scripts/menu bottom
 
 # spotify
 super + s

@@ -9,11 +9,11 @@ BAR_HEIGHT="$(xrq barHeight)"
 FONT="$(xrq font | cut -d: -f2,3)"
 USAGE="Usage: menu [top|bottom]"
 
-if [[ $# != 2 ]]; then
+if [[ $# != 1 ]]; then
 	echo "$USAGE"
-elif [[ $2 == "top" ]]; then
+elif [[ $1 == "top" ]]; then
 	dmenu_run -fn "$FONT" -w "$BAR_WIDTH" -h "$BAR_HEIGHT" -nb "$BG" -nf "$FG" -sb "$FG" -sf "$BG"
-elif [[ $2 == "bottom" ]]; then
+elif [[ $1 == "bottom" ]]; then
 	dmenu_run -fn "$FONT" -w "$BAR_WIDTH" -h "$BAR_HEIGHT" -nb "$BG" -nf "$FG" -sb "$FG" -sf "$BG" -b
 else
 	echo "$USAGE"
