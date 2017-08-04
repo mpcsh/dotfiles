@@ -35,6 +35,7 @@ xset r rate 250 &
 xset s off -dpms &
 
 # configure borders, gaps
+bspc config bottom_padding 48 # temporary
 bspc config border_width 0
 bspc config window_gap 18
 bspc config split_ratio 0.5
