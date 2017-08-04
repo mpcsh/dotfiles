@@ -2,11 +2,6 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-# high refresh when available
-if [[ $HOSTNAME == "annapurna" ]]; then
-	xrandr --rate 144 &
-fi
-
 # themes!
 xrdb ~/.Xresources
 xrdb -merge ~/.colors/xresources/gruvbox-dark.xresources
@@ -22,14 +17,8 @@ fi
 # don't use that stupid cross pointer
 xsetroot -cursor_name left_ptr &
 
-# make caps behave as another escape
-setxkbmap -option caps:escape &
-
 # no bell
 xset -b &
-
-# key repeat rate
-xset r rate 250 &
 
 # disable auto screensaver
 xset s off -dpms &
@@ -55,8 +44,6 @@ bspc rule -a Zathura state=tiled
 bspc rule -a *:libreoffice state=tiled
 
 # autostart apps
-redshift -l geoclue2 -t 5500:3300 &
-compton -I 0.01 -O 0.01 -D 3 &
 run_keybase &
 thunar --daemon &
 polybar main &
@@ -73,10 +60,4 @@ if [[ $HOSTNAME == "alpamayo" || $HOSTNAME == "eiger" ]]; then
 
 	# don't blind me
 	xbacklight -set 50 &
-
-	# no coasting
-	synclient CoastingSpeed=0 &
-
-	# horizontal scrolling
-	synclient HorizTwoFingerScroll=true &
 fi
