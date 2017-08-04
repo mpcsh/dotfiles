@@ -86,24 +86,24 @@ format-connected-prefix = " "
 label-connected = %essid%
 
 format-disconnected-prefix = " "
-label-disconnected = "Disconnected"
+label-disconnected = "Offline"
 
 [module/eth]
 type = internal/network
 interface = enp0s31f6
 
 format-connected-prefix = " "
-label-connected = %local_ip%
+label-connected = "Online"
 
 format-disconnected-prefix = " "
-label-disconnected = "Disconnected"
+label-disconnected = "Offline"
 
 [module/date]
 type = internal/date
 interval = 1
 
-time = "%H:%M:%S"
-date-alt = "%A %d %B"
+time = "%H:%M"
+date-alt = "%a, %b %d"
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground}
