@@ -1,6 +1,3 @@
-! bar
-barHeight: 48
-
 !font
 *font: xft:M+1mn:size=12
 *iconFont: xft:FontAwesome:size=12

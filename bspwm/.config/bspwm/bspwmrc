@@ -10,8 +10,10 @@ source ~/.bash_aliases; setbg &
 # hidpi
 if [[ $HOSTNAME == "alpamayo" ]]; then
 	echo "Xft.dpi: 144" | xrdb -merge
+	echo "barHeight: 48" | xrdb -merge
 else
 	echo "Xft.dpi: 96" | xrdb -merge
+	echo "barHeight: 36" | xrdb -merge
 fi
 
 # don't use that stupid cross pointer
