@@ -60,7 +60,7 @@ super + {Escape,Caps_Lock}
 
 # lock and suspend
 super + shift + {Escape,Caps_Lock}
-	~/dotfiles/scripts/lock_and_suspend
+	~/dotfiles/scripts/lock_suspend
 
 # termite
 super + grave
