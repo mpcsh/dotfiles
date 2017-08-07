@@ -59,7 +59,7 @@ super + {Escape,Caps_Lock}
 	~/dotfiles/scripts/lock
 
 # lock and suspend
-super + shift + Escape
+super + shift + {Escape,Caps_Lock}
 	~/dotfiles/scripts/suspend
 
 # termite
