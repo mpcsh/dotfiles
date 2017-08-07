@@ -49,6 +49,7 @@ bspc rule -a *:libreoffice state=tiled
 run_keybase &
 thunar --daemon &
 polybar main &
+redshift -l 36.00:-80.00 -t 5500:3300
 
 ################################################################################
 ### laptop specific stuff
