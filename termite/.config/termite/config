@@ -1,7 +1,7 @@
 [options]
 allow_bold          = true
 audible_bell        = false
-browser             = /usr/bin/xdg-open
+browser             = xdg-open
 clickable_url       = true
 cursor_blink        = off
 cursor_shape        = block
