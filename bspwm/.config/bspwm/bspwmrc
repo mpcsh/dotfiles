@@ -25,6 +25,9 @@ xset -b &
 # disable auto screensaver
 xset s off -dpms &
 
+# no mouse acceleration
+xset m 0 0
+
 # configure borders, gaps
 bspc config bottom_padding $(xrq barHeight)
 bspc config border_width 0
