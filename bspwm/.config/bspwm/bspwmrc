@@ -4,7 +4,7 @@ IFS=$'\n\t'
 
 # themes!
 xrdb ~/.Xresources
-xrdb -merge ~/.colors/xresources/gruvbox-dark.xresources
+xrdb -merge ~/.colors/nord
 source ~/.bash_aliases; setbg &
 
 # hidpi

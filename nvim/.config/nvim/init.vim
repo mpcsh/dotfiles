@@ -17,8 +17,7 @@ Plug 'tpope/vim-surround'              " delimiter manipulation
 Plug 'vim-scripts/visualrepeat'        " make . work for *everything* (visual mode)
 
 " colorscheme
-Plug 'morhetz/gruvbox'               " gruvbox colors
-Plug 'deens/lightline_gruvbox_theme' " lightline gruvbox theme
+Plug 'arcticicestudio/nord-vim'        " nord colors
 
 " languages
 Plug 'kchmck/vim-coffee-script',  { 'for': 'coffee'}   " coffeescript

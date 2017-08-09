@@ -1,6 +1,6 @@
 imports:
-  # gruvbox
-  xresources-gruvbox: colors/.colors/
+  # nord
+  xresources-nord: colors/.colors/
 
   # tmux
   tmux-tpm: tmux/.tmux/plugins/tpm
@@ -9,11 +9,11 @@ imports:
   vim-plug: nvim/.config/nvim/autoload/
 
 
-# gruvbox
-git module xresources-gruvbox:
-  url: https://github.com/morhetz/gruvbox-contrib.git
-  pick: xresources/gruvbox-dark.xresources
-  rev: b46dd7c61859eaf4b1466b005b906783d1235a5e
+# nord
+git module xresources-nord:
+  url: https://github.com/arcticicestudio/nord-xresources
+  pick: src/nord
+  export: src/
 
 # tmux
 git module tmux-tpm:
@@ -22,6 +22,6 @@ git module tmux-tpm:
 
 # vim plugins
 git module vim-plug:
-  url: https://github.com/junegunn/vim-plug.git
+  url: https://github.com/junegunn/vim-plug
   pick: plug.vim
   rev: 06992bcfb96835535d27c28c06f5d0387f681957

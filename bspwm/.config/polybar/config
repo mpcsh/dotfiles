@@ -9,9 +9,9 @@
 
 [colors]
 background = ${xrdb:background}
-background-alt = #504945
+background-alt = ${xrdb:color0}
 foreground = ${xrdb:foreground}
-foreground-alt = #a88984
+foreground-alt = ${xrdb:color8}
 alert = ${xrdb:color1}
 
 [bar/main]
