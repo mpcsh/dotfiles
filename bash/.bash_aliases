@@ -46,6 +46,11 @@ alias xclip='xclip -selection clipboard'
 # pacaur --noconfirm
 alias yolo='pacaur --noconfirm --noedit'
 
+# screencasting
+function screencast() {
+	ffmpeg -f x11grab -video_size 2560x1440 -framerate 30 -i $DISPLAY -f pulse -ac 2 -i default "$1"
+}
+
 # set X background
 function setbg() {
 	[[ $# -eq 0 ]] && : || cp $1 ~/.wallpaper
