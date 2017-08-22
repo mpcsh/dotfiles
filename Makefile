@@ -33,7 +33,7 @@ alpamayo: sync base nixos root-base xorg-base
 annapurna: sync base nixos root-base xorg-base
 	stow gtk-standard
 
-antero: sync base root-base
+antero: sync base nixos root-base
 
 csil: csil-sync base xorg-base
 	stow gtk-standard
