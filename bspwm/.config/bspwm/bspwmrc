@@ -53,10 +53,8 @@ run_keybase &
 thunar --daemon &
 polybar main &
 
-################################################################################
-### laptop specific stuff
-################################################################################
-if [[ $HOSTNAME == "alpamayo" || $HOSTNAME == "eiger" ]]; then
+# laptop specific stuff
+if [[ $HOSTNAME == "alpamayo" ]]; then
 	# no hissing noises
 	amixer -c PCH cset 'name=Headphone Mic Boost Volume' 1
 
