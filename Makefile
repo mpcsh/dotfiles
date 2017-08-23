@@ -18,7 +18,7 @@ base:
 	stow $(BASE_MODULES)
 
 nixos:
-	sudo stow -t / $(NIXOS_MODULES)
+	stow $(NIXOS_MODULES)
 
 root-base:
 	sudo stow -t /root $(BASE_MODULES)
