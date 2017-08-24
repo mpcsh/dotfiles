@@ -76,10 +76,10 @@ super + g
 
 # take screenshot
 super + Print
-	scrot -q 100 -e 'mv $f ~/scrots/'
+	maim ~/scrots/$(date +%F-%H%M%S).png
 
 super + shift + Print
-	scrot -s -q 100 -e 'mv $f ~/scrots/'
+	maim -s ~/scrots/$(date +%F-%H%M%S).png
 
 # ranger
 super + r
