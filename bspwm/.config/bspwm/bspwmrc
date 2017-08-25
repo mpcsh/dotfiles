@@ -49,7 +49,9 @@ bspc rule -a Zathura state=tiled
 bspc rule -a *:libreoffice state=tiled
 
 # autostart apps
-run_keybase &
+systemctl --user start keybase
+systemctl --user start kbfs
+keybase-gui &
 thunar --daemon &
 polybar main &
 
