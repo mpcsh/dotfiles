@@ -25,9 +25,6 @@ alias racket='racket -I typed/racket'
 # run previous command as root
 alias fuck='sudo $(history -p \!\!) '
 
-# astyle
-alias astyle='astyle --style=stroustrup'
-
 # ack
 alias ack='ack --smart-case --type-set=tags:is:tags --notags --ignore-file=match:.bundle.js --ignore-dir=node_modules --ignore-dir=vendor --ignore-dir=proc --ignore-dir=sys --ignore-dir=.peru --ignore-dir=chromium --ignore-dir=.npm --color-match=green'
 
@@ -42,9 +39,6 @@ alias ip='ip -c'
 
 # clipboard
 alias xclip='xclip -selection clipboard'
-
-# pacaur --noconfirm
-alias yolo='pacaur --noconfirm --noedit'
 
 # screencasting
 function screencast() {
