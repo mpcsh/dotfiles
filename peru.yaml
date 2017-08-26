@@ -1,27 +1,22 @@
 imports:
-  # nord
+  nixpkgs-mpcsh: nixos/etc/nixos/nixpkgs-mpcsh/
+  tmux-tpm: tmux/.tmux/plugins/tpm
+  vim-plug: nvim/.config/nvim/autoload/
   xresources-nord: colors/.colors/
 
-  # tmux
-  tmux-tpm: tmux/.tmux/plugins/tpm
+git module nixpkgs-mpcsh:
+  url: https://github.com/mpcsh/nixpkgs-mpcsh
 
-  # vim
-  vim-plug: nvim/.config/nvim/autoload/
-
-
-# nord
-git module xresources-nord:
-  url: https://github.com/arcticicestudio/nord-xresources
-  pick: src/nord
-  export: src/
-
-# tmux
 git module tmux-tpm:
   url: https://github.com/tmux-plugins/tpm
   rev: c8ac32a085d382c43190bda4fb5972e531f501fd
 
-# vim plugins
 git module vim-plug:
   url: https://github.com/junegunn/vim-plug
   pick: plug.vim
   rev: 06992bcfb96835535d27c28c06f5d0387f681957
+
+git module xresources-nord:
+  url: https://github.com/arcticicestudio/nord-xresources
+  pick: src/nord
+  export: src/

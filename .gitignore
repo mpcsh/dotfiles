@@ -19,9 +19,5 @@ weechat/.weechat/*
 !weechat/.weechat/buflist.conf
 !weechat/.weechat/irc.conf
 
-# oh-my-zsh
-oh-my-zsh
-
-# gnome standards...
-gtk-standard/.config/gtk-3.0/bookmarks
-gtk-hidpi/.config/gtk-3.0/bookmarks
+# nixpkgs-mpcsh
+nixos/etc/nixos/nixpkgs-mpcsh
