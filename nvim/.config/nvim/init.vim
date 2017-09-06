@@ -8,6 +8,8 @@ Plug 'tpope/vim-commentary'            " better commenting
 Plug 'junegunn/vim-easy-align'         " easy alignment
 Plug 'easymotion/vim-easymotion'       " easymotion!
 Plug 'tpope/vim-fugitive'              " git integration
+Plug 'junegunn/fzf.vim'                " fuzzy finder
+Plug 'junegunn/fzf'                    " ^
 Plug 'itchyny/lightline.vim'           " lightline
 Plug 'scrooloose/nerdtree'             " filesystem browser
 Plug 'tpope/vim-repeat'                " make . work for everything
