@@ -5,7 +5,7 @@ IFS=$'\n\t'
 # themes!
 xrdb ~/.Xresources
 xrdb -merge ~/.colors/nord
-source ~/.bash_aliases; setbg &
+feh --no-fehbg --bg-fill ~/.wallpaper &
 
 # hidpi
 if [[ $HOSTNAME == "alpamayo" ]]; then
