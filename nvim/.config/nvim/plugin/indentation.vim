@@ -52,7 +52,14 @@ function SetLatexOptions()
 endfunction
 
 " nix
-autocmd BufNewFile,BufRead *.tex call SetNixOptions()
+autocmd BufNewFile,BufRead *.nix call SetNixOptions()
 function SetNixOptions()
 	setlocal filetype=nix
+endfunction
+
+" yaml
+autocmd BufNewFile,BufRead *.yaml call SetYamlOptions()
+autocmd BufNewFile,BufRead *.yml call SetYamlOptions()
+function SetYamlOptions()
+	setlocal indentkeys-=<:>
 endfunction
