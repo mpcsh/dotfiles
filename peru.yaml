@@ -1,29 +1,41 @@
 imports:
-  nixpkgs-mpcsh: nixos/etc/nixos/nixpkgs-mpcsh/
   oh-my-zsh: oh-my-zsh/.oh-my-zsh/
   spaceship-zsh-theme: oh-my-zsh/.oh-my-zsh/custom/themes/spaceship/
+  zsh-syntax-highlighting: oh-my-zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+  nixpkgs-mpcsh: nixos/etc/nixos/nixpkgs-mpcsh/
   tmux-tpm: tmux/.tmux/plugins/tpm/
   vim-plug: nvim/.config/nvim/autoload/
   xresources-nord: colors/.colors/
 
-git module nixpkgs-mpcsh:
-  url: https://github.com/mpcsh/nixpkgs-mpcsh
-
+# zsh
 git module oh-my-zsh:
   url: https://github.com/robbyrussell/oh-my-zsh
 
 git module spaceship-zsh-theme:
   url: https://github.com/denysdovhan/spaceship-zsh-theme
 
+git module zsh-syntax-highlighting:
+  url: https://github.com/zsh-users/zsh-syntax-highlighting
+
+# nixos
+git module nixpkgs-mpcsh:
+  url: https://github.com/mpcsh/nixpkgs-mpcsh
+
+
+# tmux
 git module tmux-tpm:
   url: https://github.com/tmux-plugins/tpm
   rev: c8ac32a085d382c43190bda4fb5972e531f501fd
 
+
+# vim
 git module vim-plug:
   url: https://github.com/junegunn/vim-plug
   pick: plug.vim
   rev: 06992bcfb96835535d27c28c06f5d0387f681957
 
+
+# nord
 git module xresources-nord:
   url: https://github.com/arcticicestudio/nord-xresources
   pick: src/nord
