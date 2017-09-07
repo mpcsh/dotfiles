@@ -1,5 +1,6 @@
 imports:
   oh-my-zsh: oh-my-zsh/.oh-my-zsh/
+  geometry-zsh-theme: oh-my-zsh/.oh-my-zsh/custom/themes/geometry/
   spaceship-zsh-theme: oh-my-zsh/.oh-my-zsh/custom/themes/spaceship/
   zsh-syntax-highlighting: oh-my-zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
   nixpkgs-mpcsh: nixos/etc/nixos/nixpkgs-mpcsh/
@@ -10,6 +11,9 @@ imports:
 # zsh
 git module oh-my-zsh:
   url: https://github.com/robbyrussell/oh-my-zsh
+
+git module geometry-zsh-theme:
+  url: https://github.com/geometry-zsh/geometry
 
 git module spaceship-zsh-theme:
   url: https://github.com/denysdovhan/spaceship-zsh-theme

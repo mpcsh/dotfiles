@@ -7,41 +7,43 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship/spaceship"
-SPACESHIP_PROMPT_ORDER=(
-	user
-	host
-	dir
-	git
-	node
-	golang
-	rust
-	haskell
-	venv
-	exec_time
-	jobs
-	exit_code
-	char
-)
-SPACESHIP_PROMPT_ADD_NEWLINE=false # no newline before prompt
-SPACESHIP_BATTERY_SHOW=false # don't show battery
-SPACESHIP_EXEC_TIME_ELAPSED=30 # only show exec time if it's longer than 30s
-SPACESHIP_PROMPT_SYMBOL="»"
-SPACESHIP_DIR_TRUNC=0
-SPACESHIP_GIT_SYMBOL="\0" # don't show branch symbol before branch name
-SPACESHIP_GIT_STATUS_COLOR=magenta
-SPACESHIP_GIT_STATUS_PREFIX="("
-SPACESHIP_GIT_STATUS_SUFFIX=")"
-SPACESHIP_GIT_STATUS_UNTRACKED="?"
-SPACESHIP_GIT_STATUS_ADDED="+"
-SPACESHIP_GIT_STATUS_MODIFIED="!"
-SPACESHIP_GIT_STATUS_RENAMED="»"
-SPACESHIP_GIT_STATUS_DELETED="X"
-SPACESHIP_GIT_STATUS_STASHED="$"
-SPACESHIP_GIT_STATUS_UNMERGED="="
-SPACESHIP_GIT_STATUS_AHEAD="↑"
-SPACESHIP_GIT_STATUS_BEHIND="↓"
-SPACESHIP_GIT_STATUS_DIVERGED="↕"
+ZSH_THEME="geometry/geometry"
+
+
+# SPACESHIP_PROMPT_ORDER=(
+# 	user
+# 	host
+# 	dir
+# 	git
+# 	node
+# 	golang
+# 	rust
+# 	haskell
+# 	venv
+# 	exec_time
+# 	jobs
+# 	exit_code
+# 	char
+# )
+# SPACESHIP_PROMPT_ADD_NEWLINE=false # no newline before prompt
+# SPACESHIP_BATTERY_SHOW=false # don't show battery
+# SPACESHIP_EXEC_TIME_ELAPSED=30 # only show exec time if it's longer than 30s
+# SPACESHIP_PROMPT_SYMBOL="»"
+# SPACESHIP_DIR_TRUNC=0
+# SPACESHIP_GIT_SYMBOL="\0" # don't show branch symbol before branch name
+# SPACESHIP_GIT_STATUS_COLOR=magenta
+# SPACESHIP_GIT_STATUS_PREFIX="("
+# SPACESHIP_GIT_STATUS_SUFFIX=")"
+# SPACESHIP_GIT_STATUS_UNTRACKED="?"
+# SPACESHIP_GIT_STATUS_ADDED="+"
+# SPACESHIP_GIT_STATUS_MODIFIED="!"
+# SPACESHIP_GIT_STATUS_RENAMED="»"
+# SPACESHIP_GIT_STATUS_DELETED="X"
+# SPACESHIP_GIT_STATUS_STASHED="$"
+# SPACESHIP_GIT_STATUS_UNMERGED="="
+# SPACESHIP_GIT_STATUS_AHEAD="↑"
+# SPACESHIP_GIT_STATUS_BEHIND="↓"
+# SPACESHIP_GIT_STATUS_DIVERGED="↕"
 
 export TERM=xterm-256color
 
