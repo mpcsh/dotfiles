@@ -1,11 +1,19 @@
 imports:
   nixpkgs-mpcsh: nixos/etc/nixos/nixpkgs-mpcsh/
-  tmux-tpm: tmux/.tmux/plugins/tpm
+  oh-my-zsh: oh-my-zsh/.oh-my-zsh/
+  spaceship-zsh-theme: oh-my-zsh/.oh-my-zsh/custom/themes/spaceship/
+  tmux-tpm: tmux/.tmux/plugins/tpm/
   vim-plug: nvim/.config/nvim/autoload/
   xresources-nord: colors/.colors/
 
 git module nixpkgs-mpcsh:
   url: https://github.com/mpcsh/nixpkgs-mpcsh
+
+git module oh-my-zsh:
+  url: https://github.com/robbyrussell/oh-my-zsh
+
+git module spaceship-zsh-theme:
+  url: https://github.com/denysdovhan/spaceship-zsh-theme
 
 git module tmux-tpm:
   url: https://github.com/tmux-plugins/tpm

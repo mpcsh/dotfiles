@@ -21,3 +21,6 @@ weechat/.weechat/*
 
 # nixpkgs-mpcsh
 nixos/etc/nixos/nixpkgs-mpcsh
+
+# oh-my-zsh
+oh-my-zsh

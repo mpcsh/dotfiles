@@ -4,7 +4,7 @@ SHELL := /usr/bin/env bash
 # Modules
 BASE_MODULES = bash colors git nvim ssh tmux weechat
 NIXOS_MODULES = nixpkgs
-XORG_MODULES = bspwm termite xresources
+XORG_MODULES = bspwm fonts termite xresources
 
 # Utilities
 default:
