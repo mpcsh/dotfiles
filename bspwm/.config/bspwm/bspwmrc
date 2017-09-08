@@ -50,7 +50,7 @@ bspc rule -a *:libreoffice state=tiled
 # autostart apps
 systemctl --user start keybase
 systemctl --user start kbfs
-keybase-gui &
+NIX_SKIP_KEYBASE_CHECKS=1 keybase-gui &> ~/keybase-gui.out&
 thunar --daemon &
 polybar main &
 
