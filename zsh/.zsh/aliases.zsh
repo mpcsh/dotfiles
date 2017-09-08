@@ -1,13 +1,12 @@
+# clear default aliases
+unalias -m '*'
+
 # allows sudo to use aliases
 alias sudo='sudo '
 
 # better ls
 alias ls='ls -lhF --color=auto'
 alias la='ls -lhFA --color=auto'
-
-# remove nixos default ls aliases
-unalias l
-unalias ll
 
 # symlink by default
 alias ln='ln -sf'
