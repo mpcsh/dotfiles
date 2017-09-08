@@ -1,4 +1,4 @@
-SHELL := /usr/bin/env bash
+SHELL := /usr/bin/env zsh
 .PHONY: default sync base nixos root-base xorg-base alpamayo annapurna antero csil
 
 # Modules

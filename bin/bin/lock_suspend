@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-set -euo pipefail
-IFS=$'\n\t'
+#!/usr/bin/env zsh
 
 lock
 systemctl suspend -i

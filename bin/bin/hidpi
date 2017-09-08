@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-set -euo pipefail
-IFS=$'\n\t'
+#!/usr/bin/env zsh
 
 USAGE="Usage: hidpi [command] [args]"
 

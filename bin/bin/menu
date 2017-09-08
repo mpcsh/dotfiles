@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-set -euo pipefail
-IFS=$'\n\t'
+#!/usr/bin/env zsh
 
 BG="$(xrq background)"
 FG="$(xrq foreground)"

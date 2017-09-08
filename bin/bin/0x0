@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-# 0x0 - client for 0x0.st
+#!/usr/bin/env zsh
 
 me=${0##*/}
 host=https://0x0.st
