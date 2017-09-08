@@ -6,7 +6,7 @@
 super + q
 	bspc node -c
 
-# kill focused node
+# force close focused node
 super + shift + q
 	bspc node -k
 
@@ -54,19 +54,15 @@ super + shift + {e,b}
 # application shortcuts
 ##################################################
 
-# lock
 super + {Escape,Caps_Lock}
 	~/dotfiles/scripts/lock
 
-# lock and suspend
 super + shift + {Escape,Caps_Lock}
 	~/dotfiles/scripts/lock_suspend
 
-# termite
 super + grave
 	termite
 
-# chromium
 super + c
 	chromium
 
@@ -74,29 +70,25 @@ super + c
 super + g
 	chromium --profile-directory=Default --app-id=bikioccmkafdpakkkcpdbppfkghcmihk
 
-# take screenshot
 super + Print
 	maim ~/scrots/$(date +%F-%H%M%S).png
 
 super + shift + Print
-	maim -s ~/scrots/$(date +%F-%H%M%S).png
+	f="~/scrots/$(date +%F-%H%M%S).png"; maim -s "$f"; ~/dotfiles/scripts/0x0 "$f"
 
-# ranger
 super + r
 	termite -e ranger
 
-super + t
-	thunar
+super + n
+	nautilus
 
 # dmenu
 super + space
 	~/dotfiles/scripts/menu bottom
 
-# spotify
 super + s
 	~/dotfiles/scripts/hidpi spotify
 
-# weechat
 super + w
 	termite -e weechat
 
