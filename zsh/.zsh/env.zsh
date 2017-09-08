@@ -13,9 +13,6 @@ setopt autopushd
 # mass-rename file utility
 autoload -U zmv
 
-# add scripts to $PATH
-export PATH="~/dotfiles/scripts:$PATH"
-
 # gopath
 export GOPATH=~/.go
 

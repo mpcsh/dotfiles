@@ -2,7 +2,7 @@ SHELL := /usr/bin/env bash
 .PHONY: default sync base nixos root-base xorg-base alpamayo annapurna antero csil
 
 # Modules
-BASE_MODULES = colors git nvim oh-my-zsh ssh tmux weechat zsh
+BASE_MODULES = bin colors git nvim oh-my-zsh ssh tmux weechat zsh
 NIXOS_MODULES = nixpkgs
 XORG_MODULES = bspwm fonts termite xresources
 
