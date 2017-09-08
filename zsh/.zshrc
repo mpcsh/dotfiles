@@ -28,14 +28,11 @@ SPACESHIP_PROMPT_ORDER=(
 	rust
 	haskell
 	venv
-	exec_time
 	jobs
 	exit_code
 	char
 )
 SPACESHIP_PROMPT_ADD_NEWLINE=false # no newline before prompt
-SPACESHIP_BATTERY_SHOW=false
-SPACESHIP_EXEC_TIME_ELAPSED=30 # only show exec time if it's longer than 30s
 SPACESHIP_PROMPT_SYMBOL="»"
 SPACESHIP_DIR_TRUNC=0
 SPACESHIP_GIT_SYMBOL="\0" # don't show branch symbol before branch name
