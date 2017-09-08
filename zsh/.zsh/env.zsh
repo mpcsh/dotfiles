@@ -18,3 +18,6 @@ export GOPATH=~/.go
 
 # https://blog.packagecloud.io/eng/2017/02/21/set-environment-variable-save-thousands-of-system-calls/
 export TZ=:/etc/localtime
+
+# don't warn before doing something like rm ~/Downloads/*
+setopt rm_star_silent
