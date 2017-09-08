@@ -71,10 +71,10 @@ super + g
 	chromium --profile-directory=Default --app-id=bikioccmkafdpakkkcpdbppfkghcmihk
 
 super + Print
-	f="~/scrots/$(date +%F-%H%M%S).png"; maim "$f"; 0x0 "$f"
+	screenshot
 
 super + shift + Print
-	f="~/scrots/$(date +%F-%H%M%S).png"; maim -s "$f"; 0x0 "$f"
+	screenshot select
 
 super + r
 	termite -e ranger
