@@ -2,5 +2,5 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-~/dotfiles/scripts/lock
+lock
 systemctl suspend -i

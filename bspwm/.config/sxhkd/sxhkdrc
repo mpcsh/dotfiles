@@ -55,10 +55,10 @@ super + shift + {e,b}
 ##################################################
 
 super + {Escape,Caps_Lock}
-	~/dotfiles/scripts/lock
+	lock
 
 super + shift + {Escape,Caps_Lock}
-	~/dotfiles/scripts/lock_suspend
+	lock_suspend
 
 super + grave
 	termite
@@ -71,10 +71,10 @@ super + g
 	chromium --profile-directory=Default --app-id=bikioccmkafdpakkkcpdbppfkghcmihk
 
 super + Print
-	maim ~/scrots/$(date +%F-%H%M%S).png
+	f="~/scrots/$(date +%F-%H%M%S).png"; maim "$f"; 0x0 "$f"
 
 super + shift + Print
-	f="~/scrots/$(date +%F-%H%M%S).png"; maim -s "$f"; ~/dotfiles/scripts/0x0 "$f"
+	f="~/scrots/$(date +%F-%H%M%S).png"; maim -s "$f"; 0x0 "$f"
 
 super + r
 	termite -e ranger
@@ -84,10 +84,10 @@ super + n
 
 # dmenu
 super + space
-	~/dotfiles/scripts/menu bottom
+	menu bottom
 
 super + s
-	~/dotfiles/scripts/hidpi spotify
+	hidpi spotify
 
 super + w
 	termite -e weechat
@@ -98,11 +98,11 @@ super + w
 
 # increase brightness
 XF86MonBrightnessUp
-	~/dotfiles/scripts/backlightctl up
+	backlightctl up
 
 # decrease brightness
 XF86MonBrightnessDown
-	~/dotfiles/scripts/backlightctl down
+	backlightctl down
 
 # increase volume
 XF86AudioRaiseVolume

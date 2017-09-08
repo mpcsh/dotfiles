@@ -3,7 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 TMP_BG=/tmp/screen.png
-ICON=~/dotfiles/scripts/rmlock.png
+ICON=~/bin/rmlock.png
 
 maim $TMP_BG
 convert $TMP_BG -scale 10% -scale 1000% -fill black -colorize 50% $TMP_BG
