@@ -14,7 +14,7 @@ DISABLE_LS_COLORS="true"
 plugins=(zsh-syntax-highlighting)
 
 # clear the default nixos zsh prompt
-prompt off
+autoload -U promptinit && promptinit && prompt off
 
 # prompt configuration
 ZSH_THEME="spaceship/spaceship"
