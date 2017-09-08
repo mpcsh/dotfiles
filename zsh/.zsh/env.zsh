@@ -12,3 +12,12 @@ setopt autopushd
 
 # mass-rename file utility
 autoload -U zmv
+
+# add scripts to $PATH
+export PATH="~/dotfiles/scripts:$PATH"
+
+# gopath
+export GOPATH=~/.go
+
+# https://blog.packagecloud.io/eng/2017/02/21/set-environment-variable-save-thousands-of-system-calls/
+export TZ=:/etc/localtime
