@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./networking.nix
+    ./daemons.nix
   ];
 
   networking.hostName = "antero";
