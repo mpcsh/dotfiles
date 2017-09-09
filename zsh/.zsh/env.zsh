@@ -1,23 +1,11 @@
-# for ssh compatibility
-export TERM=xterm-256color
-
-# enable command autocorrection
-ENABLE_CORRECTION="true"
-
-# immediate job notifications
-setopt notify
-
-# make cd work like pushd
-setopt autopushd
-
-# mass-rename file utility
-autoload -U zmv
-
-# gopath
+# environment variables
+export TZ=:/etc/localtime # https://blog.packagecloud.io/eng/2017/02/21/set-environment-variable-save-thousands-of-system-calls/
 export GOPATH=~/.go
+export EDITOR=nvim
 
-# https://blog.packagecloud.io/eng/2017/02/21/set-environment-variable-save-thousands-of-system-calls/
-export TZ=:/etc/localtime
-
-# don't warn before doing something like rm ~/Downloads/*
-setopt rm_star_silent
+# zsh configuration
+ENABLE_CORRECTION="true" # enable command autocorrection
+setopt rm_star_silent # don't warn before doing something like rm ~/Downloads/*
+setopt notify # immediate job notifications
+setopt autopushd # make cd work like pushd
+autoload -U zmv # mass-rename file utility
