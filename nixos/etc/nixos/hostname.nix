@@ -1,1 +1,0 @@
-profiles/annapurna/hostname.nix
