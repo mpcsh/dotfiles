@@ -22,5 +22,8 @@ weechat/.weechat/*
 # nixpkgs-mpcsh
 nixos/etc/nixos/nixpkgs-mpcsh
 
+# nautilus
+gtk-*/.config/gtk-3.0/bookmarks
+
 # oh-my-zsh
 oh-my-zsh
