@@ -1,5 +1,14 @@
 { config, pkgs, ... }:
 
-networking = {
-  networkmanager.enable = true;
-};
+imports = [
+  # import hostname from the script
+  ./hostname.nix
+];
+
+networking.networkmanager.enable = true;
+time.timeZone = "US/Eastern";
+
+environment.systemPackages = with pkgs; [
+  inetutils
+  networkmanagerapplet
+];

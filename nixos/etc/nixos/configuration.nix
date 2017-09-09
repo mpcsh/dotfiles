@@ -4,61 +4,20 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
+
+    # import custom configuration
+    ./networking.nix
   ];
-
-
-  #######################
-  ##### boot/kernel #####
-  #######################
-  boot.loader.grub = {
-    # required for uefi
-    device = "nodev";
-    efiSupport = true;
-
-    # winblows entry
-    extraEntries = ''
-      menuentry "Winblows 8.1" {
-        insmod part_gpt
-        insmod search_fs_uuid
-        insmod chain
-        search --fs-uuid --no-floppy --set=root 4023-cd4e
-        chainloader ($root)/EFI/MICROSOFT/BOOT/bootmgfw.efi
-      }
-    '';
-  };
-
-
-  ######################
-  ##### networking #####
-  ######################
-
-  networking = {
-    hostName = "annapurna";
-    networkmanager.enable = true;
-  };
-
-  time.timeZone = "US/Eastern";
 
 
   ###############################
   ##### nix/system packages #####
   ###############################
 
-  nixpkgs.config.allowUnfree = true;
-
-  nixpkgs.overlays = [ (import ./nixpkgs-mpcsh) ];
-
-  nix.useSandbox = true;
-
-  system.autoUpgrade = {
-    enable = true;
-    channel = https://nixos.org/channels/nixos-unstable;
-  };
-
   environment.systemPackages = with pkgs; [
     ack
     acpi
-    arc-theme
+    adapta-gtk-theme
     arc-icon-theme
     chromium
     cmus
@@ -67,32 +26,37 @@
     exfat-utils
     feh
     ffmpeg
+    fzf
     gist
     git
+    gnome3.dconf
     gnome3.gnome_keyring
+    gnome3.nautilus
     gnumake
     go
     htop
     hugo
     i3lock
     imagemagick
-    inetutils
     kbfs
     keybase
     keybase-gui
-    minecraft
+    libnotify
     maim
     mpv
     neofetch
     neovim
-    networkmanagerapplet
     nix-prefetch-scripts
+    notify-osd
     pamixer
     pavucontrol
     peru
     polybar
     psmisc
-    # todo: python
+    python
+    python27Packages.pip
+    python3
+    python36Packages.pip
     ranger
     rsync
     sass
@@ -100,7 +64,7 @@
     spotify
     stow
     termite
-    # todo: latex
+    texlive.combined.scheme-full
     tmux
     usbutils
     weechat
@@ -108,10 +72,8 @@
     wirelesstools
     xclip
     xrq
-    xfce.thunar
     xorg.xbacklight
     xorg.xdpyinfo
-    zathura
   ];
 
 
@@ -143,6 +105,10 @@
 
   services.unifi.enable = true;
 
+  # auto mounting
+  services.gnome3.gvfs.enable = true;
+  services.udisks2.enable = true;
+  environment.variables = { GIO_EXTRA_MODULES = "${pkgs.gnome3.dconf}/lib/gio/modules:${pkgs.gvfs}/lib/gio/modules"; };
 
   ####################
   ##### xorg env #####
@@ -209,18 +175,6 @@
     noto-fonts-cjk
     noto-fonts-emoji
   ]);
-
-  #################
-  ##### users #####
-  #################
-
-  security.sudo.wheelNeedsPassword = false;
-
-  users.users.mpcsh = {
-    isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" ];
-  };
-
 
   ######################
   ##### nixos info #####

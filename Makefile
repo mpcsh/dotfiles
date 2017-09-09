@@ -3,7 +3,7 @@ SHELL := /usr/bin/env zsh
 
 # Modules
 BASE_MODULES = bin colors git nvim oh-my-zsh ssh tmux weechat zsh
-NIXOS_MODULES = nixpkgs
+NIXOS_MODULES = nixos nixpkgs
 XORG_MODULES = bspwm fonts termite xresources
 
 # Utilities
@@ -28,12 +28,15 @@ xorg-base:
 
 # Bootstrapping rules
 alpamayo: sync base nixos root-base xorg-base
+	cd nixos/etc/nixos/profiles; stow $@ \
 	stow gtk-hidpi
 
 annapurna: sync base nixos root-base xorg-base
+	cd nixos/etc/nixos/profiles; stow $@ \
 	stow gtk-standard
 
 antero: sync base nixos root-base
+	cd nixos/etc/nixos/profiles; stow $@
 
 csil: csil-sync base xorg-base
 	stow gtk-standard
