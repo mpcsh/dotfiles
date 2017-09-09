@@ -1,7 +1,9 @@
 { config, pkgs, ... }:
 
-boot.loader.grub = {
-  enable = true;
-  version = 2;
-  device = "/dev/vda";
-};
+{
+  boot.loader.grub = {
+    enable = true;
+    version = 2;
+    device = "/dev/vda";
+  };
+}

@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
-hardware.cpu.intel.updateMicrocode = true;
-boot.loader.efi.canTouchEfiVariables = true;
+{
+  hardware.cpu.intel.updateMicrocode = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
-boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.enable = true;
+}

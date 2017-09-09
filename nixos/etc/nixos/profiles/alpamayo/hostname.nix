@@ -1,3 +1,10 @@
 { config, pkgs, ...}:
 
-networking.hostName = "alpamayo";
+{
+  imports = [
+    ./trackpad.nix
+    ../../x.nix
+  ];
+
+  networking.hostName = "alpamayo";
+}

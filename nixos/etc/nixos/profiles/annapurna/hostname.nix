@@ -1,3 +1,10 @@
 { config, pkgs, ...}:
 
-networking.hostName = "annapurna";
+{
+  imports = [
+    ./nvidia.nix
+    ../../x.nix
+  ];
+
+  networking.hostName = "annapurna";
+}

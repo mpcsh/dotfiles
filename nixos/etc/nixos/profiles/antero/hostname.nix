@@ -1,3 +1,9 @@
 { config, pkgs, ...}:
 
-networking.hostName = "antero";
+{
+  imports = [
+    ./networking.nix
+  ];
+
+  networking.hostName = "antero";
+}

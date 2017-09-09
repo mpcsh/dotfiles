@@ -1,14 +1,16 @@
 { config, pkgs, ... }:
 
-nixpkgs.config.allowUnfree = true;
+{
+  nixpkgs.config.allowUnfree = true;
 
-nixpkgs.overlays = [ (import ./nixpkgs-mpcsh) ];
+  nixpkgs.overlays = [ (import ./nixpkgs-mpcsh) ];
 
-nix.useSandbox = true;
+  nix.useSandbox = true;
 
-system.autoUpgrade = {
-  enable = true;
-  channel = https://nixos.org/channels/nixos-unstable;
-};
+  system.autoUpgrade = {
+    enable = true;
+    channel = https://nixos.org/channels/nixos-unstable;
+  };
 
-programs.command-not-found.enable = true;
+  programs.command-not-found.enable = true;
+}
