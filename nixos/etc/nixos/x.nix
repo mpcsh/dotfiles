@@ -17,12 +17,12 @@
     keybase
     libnotify
     maim
-    notify-osd
     pamixer
     pavucontrol
     polybar
     slop
     xclip
+    xfce.xfce4notifyd
     xrq
     xorg.xbacklight
     xorg.xdpyinfo
