@@ -1,7 +1,8 @@
 # environment variables
-export TZ=:/etc/localtime # https://blog.packagecloud.io/eng/2017/02/21/set-environment-variable-save-thousands-of-system-calls/
 export GOPATH=~/.go
 export EDITOR=nvim
+export TERM=xterm-256color # for ssh compatibility
+export TZ=:/etc/localtime # https://blog.packagecloud.io/eng/2017/02/21/set-environment-variable-save-thousands-of-system-calls/
 
 # zsh configuration
 ENABLE_CORRECTION="true" # enable command autocorrection
