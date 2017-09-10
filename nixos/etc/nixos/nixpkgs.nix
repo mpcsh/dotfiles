@@ -3,7 +3,7 @@
 {
   nixpkgs.config.allowUnfree = true;
 
-  nixpkgs.overlays = [ (import ./nixpkgs-mpcsh) ];
+  nixpkgs.overlays = [ (import ./overlay) ];
 
   nix.useSandbox = true;
 

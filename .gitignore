@@ -19,9 +19,6 @@ weechat/.weechat/*
 !weechat/.weechat/buflist.conf
 !weechat/.weechat/irc.conf
 
-# nixpkgs-mpcsh
-nixos/etc/nixos/nixpkgs-mpcsh
-
 # nautilus
 gtk-*/.config/gtk-3.0/bookmarks
 

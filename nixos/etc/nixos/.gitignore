@@ -8,3 +8,5 @@
 !services.nix
 !users.nix
 !x.nix
+
+!overlay/*

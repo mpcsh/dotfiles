@@ -2,7 +2,6 @@ imports:
   oh-my-zsh: oh-my-zsh/.oh-my-zsh/
   spaceship-zsh-theme: oh-my-zsh/.oh-my-zsh/custom/themes/spaceship/
   zsh-syntax-highlighting: oh-my-zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-  nixpkgs-mpcsh: nixos/etc/nixos/nixpkgs-mpcsh/
   tmux-tpm: tmux/.tmux/plugins/tpm/
   vim-plug: nvim/.config/nvim/autoload/
   xresources-nord: colors/.colors/
@@ -16,10 +15,6 @@ git module spaceship-zsh-theme:
 
 git module zsh-syntax-highlighting:
   url: https://github.com/zsh-users/zsh-syntax-highlighting
-
-# nixos
-git module nixpkgs-mpcsh:
-  url: https://github.com/mpcsh/nixpkgs-mpcsh
 
 
 # tmux
