@@ -73,7 +73,7 @@ label-empty =
 type = internal/xbacklight
 
 format = <label>
-format-prefix = "  "
+format-prefix = " "
 label = %percentage%%
 
 [module/date]
@@ -83,7 +83,6 @@ interval = 1
 time = "%H:%M"
 date-alt = "%a, %b %d"
 
-format-prefix = "  "
 format-prefix-foreground = ${colors.foreground}
 
 label = %time%%date%
@@ -92,10 +91,10 @@ label = %time%%date%
 type = internal/volume
 
 format-volume = <label-volume>
-format-volume-prefix = "  "
+format-volume-prefix = " "
 label-volume = %percentage%%
 
-format-muted-prefix = "  "
+format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
 label-muted = 00%
 mapping = true
@@ -110,19 +109,19 @@ format-charging = <animation-charging> <label-charging>
 
 format-discharging = <ramp-capacity> <label-discharging>
 
-format-full-prefix = "  "
+format-full-prefix = " "
 
-ramp-capacity-0 =  
-ramp-capacity-1 =  
-ramp-capacity-2 =  
-ramp-capacity-3 =  
-ramp-capacity-4 =  
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
 
-animation-charging-0 =  
-animation-charging-1 =  
-animation-charging-2 =  
-animation-charging-3 =  
-animation-charging-4 =  
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
 animation-charging-framerate = 500
 
 [module/powermenu]
