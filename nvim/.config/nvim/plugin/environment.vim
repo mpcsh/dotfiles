@@ -17,9 +17,6 @@ set autoread
 set splitbelow
 set splitright
 
-" no cursor styling
-set guicursor=
-
 " mouse compatibility
 set mouse=a
 
