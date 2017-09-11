@@ -18,7 +18,6 @@
     rsync
     stow
     termite
-    texlive.combined.scheme-full
     tmux
     usbutils
     weechat

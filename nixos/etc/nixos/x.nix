@@ -17,12 +17,12 @@
     keybase
     libnotify
     maim
+    notify-osd
     pamixer
     pavucontrol
     polybar
     slop
     xclip
-    xfce.xfce4notifyd
     xrq
     xorg.xbacklight
     xorg.xdpyinfo
@@ -37,6 +37,7 @@
     mpv
     ranger
     spotify
+    texlive.combined.scheme-full
   ];
 
   fonts.fonts = (with pkgs; [

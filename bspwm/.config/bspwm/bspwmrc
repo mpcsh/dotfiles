@@ -50,7 +50,7 @@ polybar main &
 systemctl --user start keybase
 systemctl --user start kbfs
 NIX_SKIP_KEYBASE_CHECKS=1 keybase-gui
-xfce4-notifyd &
+notify-osd &
 nm-applet &
 
 # laptop specific stuff
