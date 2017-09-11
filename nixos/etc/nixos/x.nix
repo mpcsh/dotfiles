@@ -34,6 +34,7 @@
     gnome3.nautilus
     keybase-gui
     maim
+    mpv
     ranger
     spotify
   ];
