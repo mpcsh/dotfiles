@@ -11,7 +11,7 @@ COMMAND=$1
 shift
 ARGS=$*
 
-if [[ $HOSTNAME == "alpamayo" ]]; then
+if [[ $HOST == "alpamayo" ]]; then
 	$COMMAND --force-device-scale-factor=1.65 "$ARGS"
 else
 	$COMMAND --force-device-scale-factor=1.0 "$ARGS"

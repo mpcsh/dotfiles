@@ -8,7 +8,7 @@ xrdb -merge ~/.colors/nord
 feh --no-fehbg --bg-fill ~/.wallpaper &
 
 # hidpi
-if [[ $HOSTNAME == "alpamayo" ]]; then
+if [[ $HOST == "alpamayo" ]]; then
 	echo "Xft.dpi: 144" | xrdb -merge
 	echo "barHeight: 48" | xrdb -merge
 else
@@ -56,7 +56,7 @@ xfce4-notifyd &
 nm-applet &
 
 # laptop specific stuff
-if [[ $HOSTNAME == "alpamayo" ]]; then
+if [[ $HOST == "alpamayo" ]]; then
 	# no hissing noises
 	amixer -c PCH cset 'name=Headphone Mic Boost Volume' 1
 

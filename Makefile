@@ -9,7 +9,7 @@ XORG_MODULES = bspwm fonts termite xresources
 
 # Utilities
 default:
-	make `hostname`
+	make $$HOST
 
 sync:
 	peru sync
