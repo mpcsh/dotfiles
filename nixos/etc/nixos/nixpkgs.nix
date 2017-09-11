@@ -10,7 +10,7 @@
   system.autoUpgrade = {
     enable = true;
     channel = https://nixos.org/channels/nixos-unstable;
-    dates = "0/3:00:00"; # means "every hour divisible by 3, on the hour"
+    dates = "0/1:00:00"; # means "every hour on the hour"
   };
 
   programs.command-not-found.enable = true;
