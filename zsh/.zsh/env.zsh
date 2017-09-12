@@ -11,3 +11,5 @@ setopt rm_star_silent # don't warn before doing something like rm ~/Downloads/*
 setopt notify # immediate job notifications
 setopt autopushd # make cd work like pushd
 autoload -U zmv # mass-rename file utility
+
+source /run/current-system/sw/bin/z
