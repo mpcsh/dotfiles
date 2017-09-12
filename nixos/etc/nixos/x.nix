@@ -20,7 +20,7 @@
     notify-osd
     pamixer
     pavucontrol
-    polybar
+    polybar-git
     slop
     xclip
     xrq
