@@ -5,7 +5,7 @@ SHELL := /usr/bin/env zsh
 BASE_MODULES = bin colors git nvim oh-my-zsh ssh tmux weechat zsh
 NIXOS_MODULES = nixos
 NIXPKGS_MODULES = nixpkgs
-XORG_MODULES = bspwm fonts termite xresources
+XORG_MODULES = bspwm termite xresources
 
 # Utilities
 default:
