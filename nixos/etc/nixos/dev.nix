@@ -22,6 +22,7 @@
     usbutils
     weechat
     wget
+    z-git
 
 
     # languages
