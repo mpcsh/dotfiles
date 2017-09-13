@@ -51,6 +51,17 @@
 
   hardware.pulseaudio.enable = true;
 
+  programs.chromium.extensions = [
+    "cjpalhdlnbpafiamejdnhcphjbkeiagm" # ublock origin
+    "gcbommkclmclpchllfjekcdonpmejbdp" # https everywhere
+    "pkehgijcmpdhfbdbbnkijodmdjhbjlgp" # privacy badger
+    "hdokiejnpimakedhajhdlcegeplioahd" # lastpass
+    "bikioccmkafdpakkkcpdbppfkghcmihk" # signal
+    "chlffgpmiacpedhhbkiomidkjlcfhogd" # pushbullet
+    "ekopmclclddpoipchmcbhifohhbmjafd" # minimal scrollbar
+    "laookkfknpbbblfpciffpaejjkokdgca" # momentum
+  ];
+
   services.xserver = {
     enable = true;
 
