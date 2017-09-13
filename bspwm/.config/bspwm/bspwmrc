@@ -47,11 +47,11 @@ bspc rule -a *:libreoffice state=tiled
 
 # autostart apps
 polybar main &
+nm-applet &
 systemctl --user start keybase
 systemctl --user start kbfs
 NIX_SKIP_KEYBASE_CHECKS=1 keybase-gui
 notify-osd &
-nm-applet &
 
 # laptop specific stuff
 if [[ $HOST == "alpamayo" ]]; then
