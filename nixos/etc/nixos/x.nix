@@ -29,7 +29,6 @@
 
     # apps
     chromium
-    cmus
     discord
     gnome3.nautilus
     keybase-gui

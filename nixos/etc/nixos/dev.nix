@@ -23,6 +23,8 @@
     weechat
     wget
     z-git
+    zip
+    unzip
 
 
     # languages
