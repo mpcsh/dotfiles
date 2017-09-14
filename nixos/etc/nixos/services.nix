@@ -1,18 +1,14 @@
 { config, pkgs, ... }:
 
 {
+  environment.systemPackages = with pkgs; [
+    dropbox
+  ];
+
   # CUPS
   services.printing.enable = true;
 
   networking.firewall.enable = false;
-
-  services.syncthing = {
-    enable = true;
-    dataDir = "/home/mpcsh/.config/syncthing";
-    group = "users";
-    user = "mpcsh";
-    useInotify = true;
-  };
 
   services.keybase.enable = true;
   services.kbfs = {
