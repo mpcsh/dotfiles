@@ -1,5 +1,5 @@
 SHELL := /usr/bin/env zsh
-.PHONY: default sync base nixos nixpkgs root-base xorg-base alpamayo annapurna antero csil
+.PHONY: default sync base nixos nixpkgs root-base xorg-base alpamayo annapurna csil
 
 # Modules
 BASE_MODULES = bin colors git nvim oh-my-zsh ssh tmux weechat zsh
@@ -37,10 +37,6 @@ annapurna: sync base nixos root-base xorg-base
 	cd nixos/etc/nixos/profiles; stow $@
 	sudo stow -t / $(NIXOS_MODULES)
 	stow gtk-standard
-
-antero: sync base nixos root-base
-	cd nixos/etc/nixos/profiles; stow $@
-	sudo stow -t / $(NIXOS_MODULES)
 
 csil: csil-sync base xorg-base
 	stow gtk-standard

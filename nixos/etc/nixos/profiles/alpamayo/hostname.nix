@@ -2,8 +2,8 @@
 
 {
   imports = [
+    ./boot.nix
     ./trackpad.nix
-    ../../x.nix
   ];
 
   networking.hostName = "alpamayo";

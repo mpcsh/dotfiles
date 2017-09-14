@@ -2,8 +2,8 @@
 
 {
   imports = [
+    ./boot.nix
     ./nvidia.nix
-    ../../x.nix
   ];
 
   networking.hostName = "annapurna";
