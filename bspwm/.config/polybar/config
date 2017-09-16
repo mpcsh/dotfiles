@@ -43,7 +43,6 @@ modules-right = xbacklight volume wlan eth battery powermenu
 ; systray settings
 tray-position = right
 tray-padding = 0
-tray-maxsize = 32
 
 ; don't let the bar be drawn over other windows
 wm-restack = bspwm
