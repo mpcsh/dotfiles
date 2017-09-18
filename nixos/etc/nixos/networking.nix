@@ -2,7 +2,7 @@
 
 {
   networking.networkmanager.enable = true;
-  time.timeZone = "US/Eastern";
+  time.timeZone = "US/Central";
 
   environment.systemPackages = with pkgs; [
     inetutils
