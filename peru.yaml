@@ -9,25 +9,28 @@ imports:
 # zsh
 git module oh-my-zsh:
   url: https://github.com/robbyrussell/oh-my-zsh
+  rev: d848c94804918138375041a9f800f401bec12068
 
 git module spaceship-zsh-theme:
   url: https://github.com/denysdovhan/spaceship-zsh-theme
+  rev: 09b3c764f3cfe99bdcaf92f79699542f247978ac
 
 git module zsh-syntax-highlighting:
   url: https://github.com/zsh-users/zsh-syntax-highlighting
+  rev: 5436d3e5fc1ea86203ea4c6b48575809836930b3
 
 
 # tmux
 git module tmux-tpm:
   url: https://github.com/tmux-plugins/tpm
-  rev: c8ac32a085d382c43190bda4fb5972e531f501fd
+  rev: 95f78336c3972f3e6648b7b3db754f2224320a5e
 
 
 # vim
 git module vim-plug:
   url: https://github.com/junegunn/vim-plug
   pick: plug.vim
-  rev: 06992bcfb96835535d27c28c06f5d0387f681957
+  rev: cd44b03db2158bf60f12415a91d27434589992f7
 
 
 # nord
@@ -35,3 +38,4 @@ git module xresources-nord:
   url: https://github.com/arcticicestudio/nord-xresources
   pick: src/nord
   export: src/
+  rev: c4b8a29871ece1b3a9d9ef792880decdddacd837

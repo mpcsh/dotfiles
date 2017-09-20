@@ -20,10 +20,6 @@ SPACESHIP_PROMPT_ORDER=(
 	host
 	dir
 	git
-	node
-	golang
-	rust
-	haskell
 	venv
 	jobs
 	exit_code
