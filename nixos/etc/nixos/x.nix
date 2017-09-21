@@ -28,9 +28,9 @@
     xorg.xdpyinfo
 
     # apps
-    chromium
     discord
     gnome3.nautilus
+    google-chrome
     keybase-gui
     maim
     mpv

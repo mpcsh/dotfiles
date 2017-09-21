@@ -64,7 +64,7 @@ super + grave
 	termite
 
 super + c
-	chromium
+	google-chrome-stable
 
 # signal
 super + g
