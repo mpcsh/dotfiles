@@ -66,6 +66,9 @@ super + grave
 super + c
 	chromium
 
+super + a
+	atom
+
 # signal
 super + g
 	chromium --profile-directory=Default --app-id=bikioccmkafdpakkkcpdbppfkghcmihk
