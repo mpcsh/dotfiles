@@ -37,6 +37,7 @@
     ranger
     spotify
     texlive.combined.scheme-full
+    zathura
   ];
 
   fonts.fonts = (with pkgs; [
