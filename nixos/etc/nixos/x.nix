@@ -28,6 +28,7 @@
     xorg.xdpyinfo
 
     # apps
+    atom
     chromium
     discord
     gnome3.nautilus
