@@ -1,4 +1,0 @@
-#!/usr/bin/env zsh
-
-lock
-systemctl suspend -i
