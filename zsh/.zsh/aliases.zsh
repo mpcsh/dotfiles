@@ -5,8 +5,8 @@ unalias -m '*'
 alias sudo='sudo '
 
 # better ls
-alias ls='ls -lhF --color=auto'
-alias la='ls -lhFA --color=auto'
+alias ls='ls -lhFG'
+alias la='ls -lhFGA'
 
 # symlink by default
 alias ln='ln -sf'
@@ -29,27 +29,10 @@ alias racket='racket -I typed/racket'
 alias ack='ack --smart-case --type-set=tags:is:tags --notags --ignore-file=match:.bundle.js --ignore-dir=node_modules --ignore-dir=vendor --ignore-dir=proc --ignore-dir=sys --ignore-dir=.peru --ignore-dir=chromium --ignore-dir=.npm --color-match=green'
 
 # nvim
-[[ $HOST != "magneton" && $HOST != "doduo" ]] && alias vim='nvim'
+alias vim='nvim'
 
 # rsync options
 alias rsync='rsync -aAXvzHE'
-
-# colored iproute2
-alias ip='ip -c'
-
-# clipboard
-alias xclip='xclip -selection clipboard'
-
-# screencasting
-function screencast() {
-	ffmpeg -f x11grab -video_size 2560x1440 -framerate 30 -i $DISPLAY -f pulse -ac 2 -i default "$1"
-}
-
-# set X background
-function setbg() {
-	[[ $# -eq 0 ]] && : || cp $1 ~/.wallpaper
-	feh --no-fehbg --bg-fill ~/.wallpaper
-}
 
 # mkdir and cd into it
 function mkcd() {

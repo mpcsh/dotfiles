@@ -6,7 +6,7 @@ let g:lightline = {
 	\ 	'left':  [ ['filename'], ['modified', 'readonly'], ['fugitive'] ],
 	\ 	'right': [ ['lineinfo'], ['filetype'] ]
 	\ },
-	\ 'separator': { 'left': '▓▒░', 'right': '░▒▓' },
+	\ 'separator': { 'left': '', 'right': '' },
 	\ 'subseparator': { 'left': '', 'right': '' },
 	\ 'colorscheme': 'nord',
 \ }
