@@ -33,8 +33,7 @@
     fileExtension: ".md"
   welcome:
     showOnStartup: false
-  whitespace:
-    ensureSingleTrailingNewline: false
+  whitespace: {}
 ".latex.tex.text":
   editor:
     showIndentGuide: true
