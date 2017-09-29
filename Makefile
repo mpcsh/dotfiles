@@ -1,42 +1,18 @@
 SHELL := /usr/bin/env zsh
-.PHONY: default sync base nixos nixpkgs root-base xorg-base alpamayo annapurna csil
+.PHONY: default sync install clean
 
 # Modules
-BASE_MODULES = bin colors git nvim oh-my-zsh ssh tmux weechat zsh
-NIXOS_MODULES = nixos
-NIXPKGS_MODULES = nixpkgs
-XORG_MODULES = bspwm termite xresources
+MODULES = atom git iterm2 nvim oh-my-zsh ssh tmux weechat zsh
 
-# Utilities
-default:
-	make $$HOST
+default: install
 
 sync:
 	peru sync
 
-# Modules
-base:
-	stow $(BASE_MODULES)
+install: sync
+	stow $(MODULES)
+	sudo stow -t /var/root $(MODULES)
 
-nixos:
-	stow $(NIXPKGS_MODULES)
-
-root-base:
-	sudo stow -t /root $(BASE_MODULES)
-
-xorg-base:
-	stow $(XORG_MODULES)
-
-# Bootstrapping rules
-alpamayo: sync base nixos root-base xorg-base
-	cd nixos/etc/nixos/profiles; stow $@
-	sudo stow -t / $(NIXOS_MODULES)
-	stow gtk-hidpi
-
-annapurna: sync base nixos root-base xorg-base
-	cd nixos/etc/nixos/profiles; stow $@
-	sudo stow -t / $(NIXOS_MODULES)
-	stow gtk-standard
-
-csil: csil-sync base xorg-base
-	stow gtk-standard
+clean:
+	stow -D $(MODULES)
+	sudo stow -t /var/root $(MODULES)
