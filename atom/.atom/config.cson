@@ -1,0 +1,40 @@
+"*":
+  core:
+    closeDeletedFileTabs: true
+    closeEmptyWindows: false
+    disabledPackages: [
+      "language-gfm"
+    ]
+    packagesWithKeymapsDisabled: []
+    projectHome: "/Users/mpcsh/projects"
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "nord-atom-syntax"
+    ]
+    titleBar: "custom-inset"
+  editor:
+    fontFamily: "mplus-1mn-regular"
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrap: true
+  "exception-reporting":
+    userId: "14db4045-c92e-423f-b02b-101a181e1111"
+  "git-plus":
+    remoteInteractions:
+      pullBeforePush: true
+  latex:
+    buildOnSave: true
+    opener: "pdf-view"
+    outputDirectory: ".latex"
+  "latex-plus":
+    texBin: "/Library/TeX/texbin"
+  "markdown-writer":
+    fileExtension: ".md"
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+".latex.tex.text":
+  editor:
+    showIndentGuide: true
