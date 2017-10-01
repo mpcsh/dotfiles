@@ -4,6 +4,7 @@
     closeEmptyWindows: false
     disabledPackages: [
       "language-gfm"
+      "wrap-guide"
     ]
     packagesWithKeymapsDisabled: []
     projectHome: "/Users/mpcsh/projects"
