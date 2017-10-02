@@ -451,11 +451,11 @@
 		</array>
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>112 238 937 512 0 0 1680 1050 </string>
+	<string>609 456 937 512 0 0 1680 1050 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>127 466 592 584 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>200 250 584 571 0 0 1680 1050 </string>
+	<string>840 1 840 1049 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>212 106 584 571 0 0 1680 1050 </string>
 	<key>NeverWarnAboutShortLivedSessions_85AD9590-7C77-48DF-BB4B-8602BF84122E</key>
@@ -470,9 +470,9 @@
 			<key>ASCII Ligatures</key>
 			<false/>
 			<key>Allow Title Reporting</key>
-			<true/>
+			<false/>
 			<key>Allow Title Setting</key>
-			<true/>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -945,6 +945,8 @@
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>528442267.60505497</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -972,7 +974,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-01T05:31:19Z</date>
+	<date>2017-10-02T14:32:36Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
