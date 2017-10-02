@@ -30,8 +30,6 @@
   "git-plus":
     remoteInteractions:
       pullBeforePush: true
-  "goto-definition":
-    performanceMode: true
   latex:
     buildOnSave: true
     opener: "pdf-view"
