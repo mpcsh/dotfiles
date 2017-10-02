@@ -32,7 +32,7 @@ alias ack='ack --smart-case --type-set=tags:is:tags --notags --ignore-file=match
 alias vim='nvim'
 
 # rsync options
-alias rsync='rsync -aAXvzHE'
+alias rsync='rsync -avzHE'
 
 # mkdir and cd into it
 function mkcd() {
