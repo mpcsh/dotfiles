@@ -3,6 +3,8 @@
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
   "autocomplete-python":
     useKite: false
+  "code-peek":
+    askIfSaveOnModified: false
   core:
     closeDeletedFileTabs: true
     closeEmptyWindows: false
@@ -28,6 +30,8 @@
   "git-plus":
     remoteInteractions:
       pullBeforePush: true
+  "goto-definition":
+    performanceMode: true
   latex:
     buildOnSave: true
     opener: "pdf-view"
