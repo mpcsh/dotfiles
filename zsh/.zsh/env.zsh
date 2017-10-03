@@ -10,6 +10,7 @@ ENABLE_CORRECTION="true" # enable command autocorrection
 autoload -U zmv # mass-rename file utility
 
 setopt autopushd # make cd work like pushd
+unsetopt AUTO_CD # don't cd with just a dirname
 setopt nomatch # if I do rm Downloads/* and there's nothing in Downloads, don't print a "no matches found" message
 setopt notify # immediate job notifications
 setopt rm_star_silent # don't warn before doing something like rm Downloads/*
