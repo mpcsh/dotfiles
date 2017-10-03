@@ -21,7 +21,7 @@ set splitright
 set mouse=a
 
 " x clipboard access
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 " case-insensitive searching - case-sensitive if uppercase letters are used
 set ignorecase
