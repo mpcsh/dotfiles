@@ -13,3 +13,6 @@ setopt autopushd # make cd work like pushd
 setopt nomatch # if I do rm Downloads/* and there's nothing in Downloads, don't print a "no matches found" message
 setopt notify # immediate job notifications
 setopt rm_star_silent # don't warn before doing something like rm Downloads/*
+
+# github.com/rupa/z
+source /usr/local/etc/profile.d/z.sh
