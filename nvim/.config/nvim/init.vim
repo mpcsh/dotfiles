@@ -13,7 +13,7 @@ Plug 'junegunn/vim-easy-align'         " easy alignment
 Plug 'easymotion/vim-easymotion'       " easymotion!
 Plug 'tpope/vim-fugitive'              " git integration
 Plug 'itchyny/lightline.vim'           " lightline
-Plug 'scrooloose/nerdtree'             " filesystem browser
+Plug 'ctrlpvim/ctrlp.vim'              " fuzzy finder
 Plug 'tpope/vim-repeat'                " make . work for everything
 Plug 'vim-scripts/replacewithregister' " replace with register
 Plug 'tpope/vim-sensible'              " sensible defaults
