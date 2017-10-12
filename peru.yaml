@@ -2,7 +2,6 @@ imports:
   oh-my-zsh: oh-my-zsh/.oh-my-zsh/
   spaceship-zsh-theme: oh-my-zsh/.oh-my-zsh/custom/themes/spaceship/
   zsh-syntax-highlighting: oh-my-zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-  tmux-tpm: tmux/.tmux/plugins/tpm/
   vim-plug: nvim/.config/nvim/autoload/
 
 # zsh
@@ -17,12 +16,6 @@ git module spaceship-zsh-theme:
 git module zsh-syntax-highlighting:
   url: https://github.com/zsh-users/zsh-syntax-highlighting
   rev: 5436d3e5fc1ea86203ea4c6b48575809836930b3
-
-
-# tmux
-git module tmux-tpm:
-  url: https://github.com/tmux-plugins/tpm
-  rev: 95f78336c3972f3e6648b7b3db754f2224320a5e
 
 
 # vim
