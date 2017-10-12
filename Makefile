@@ -2,7 +2,7 @@ SHELL := /usr/bin/env zsh
 .PHONY: default sync install clean
 
 # Modules
-MODULES = atom git nvim oh-my-zsh ssh tmux weechat zsh
+MODULES = atom git nvim oh-my-zsh ssh zsh
 
 default: install
 
