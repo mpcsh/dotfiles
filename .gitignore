@@ -1,26 +1,10 @@
 # peru
 .peru
 
-# tmux
-tmux/.tmux/*
-
 # nvim
 nvim/.config/nvim/*
 !nvim/.config/nvim/plugin
 !nvim/.config/nvim/*.vim
-
-# colorscheme
-colors
-
-# weechat
-weechat/.weechat/*
-!weechat/.weechat/weechat.conf
-!weechat/.weechat/buffers.conf
-!weechat/.weechat/buflist.conf
-!weechat/.weechat/irc.conf
-
-# nautilus
-gtk-*/.config/gtk-3.0/bookmarks
 
 # oh-my-zsh
 oh-my-zsh
