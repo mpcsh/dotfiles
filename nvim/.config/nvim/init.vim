@@ -2,14 +2,16 @@
 runtime! bundle/sensible.vim
 
 call plug#begin()
+
+" colorscheme
+Plug 'arcticicestudio/nord-vim' " nord colors
+
 " environment
 Plug 'ap/vim-buftabline'               " buffer bar
 Plug 'tpope/vim-commentary'            " better commenting
 Plug 'junegunn/vim-easy-align'         " easy alignment
 Plug 'easymotion/vim-easymotion'       " easymotion!
 Plug 'tpope/vim-fugitive'              " git integration
-Plug 'junegunn/fzf.vim'                " fuzzy finder
-Plug 'junegunn/fzf'                    " ^
 Plug 'itchyny/lightline.vim'           " lightline
 Plug 'scrooloose/nerdtree'             " filesystem browser
 Plug 'tpope/vim-repeat'                " make . work for everything
@@ -18,9 +20,6 @@ Plug 'tpope/vim-sensible'              " sensible defaults
 Plug 'tpope/vim-surround'              " delimiter manipulation
 Plug 'vim-scripts/visualrepeat'        " make . work for *everything* (visual mode)
 
-" colorscheme
-Plug 'arcticicestudio/nord-vim'        " nord colors
-
 " languages
 Plug 'kchmck/vim-coffee-script',  { 'for': 'coffee'}   " coffeescript
 Plug 'fatih/vim-go',              { 'for': 'go'}       " go
@@ -28,7 +27,6 @@ Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell'}  " haskell
 Plug 'lervag/vimtex',             { 'for': 'tex'}      " latex
 Plug 'godlygeek/tabular',         { 'for': 'markdown'} " necessary for markdown
 Plug 'plasticboy/vim-markdown',   { 'for': 'markdown'} " markdown
-Plug 'LnL7/vim-nix',              { 'for': 'nix'}      " nix
 Plug 'rust-lang/rust.vim',        { 'for': 'rust'}     " rust
 Plug 'cespare/vim-toml',          { 'for': 'toml'}     " toml
 

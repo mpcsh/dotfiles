@@ -13,10 +13,6 @@ set laststatus=2
 " auto reload changed files
 set autoread
 
-" open new split panes to right and bottom
-set splitbelow
-set splitright
-
 " mouse compatibility
 set mouse=a
 

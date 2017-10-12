@@ -13,13 +13,6 @@ function SetCOptions()
 	setlocal commentstring=//\ %s " prefer // over /*...*/ for single-line comments
 endfunction
 
-" markdown
-autocmd BufNewFile,BufRead *.md call SetMarkdownOptions()
-function SetMarkdownOptions()
-	setlocal textwidth=100
-	setlocal colorcolumn=101
-endfunction
-
 " rust
 autocmd BufNewFile,BufRead *.rs call SetRustOptions()
 function SetRustOptions()
@@ -27,34 +20,10 @@ function SetRustOptions()
 	setlocal commentstring=//\ %s
 endfunction
 
-" ics
-autocmd BufNewFile,BufRead *.iced call SetICSOptions()
-function SetICSOptions()
-	setlocal filetype=coffee
-	setlocal commentstring=#\ %s
-	setlocal expandtab
-endfunction
-
-" assembly
-autocmd BufNewFile,BufRead *.s call SetAsmOptions()
-autocmd BufNewFile,BufRead *.as call SetAsmOptions()
-autocmd BufNewFile,BufRead *.asm call SetAsmOptions()
-function SetAsmOptions()
-	setlocal tabstop=8
-endfunction
-
-" latex
+" latex - fix "plaintex" filetype detection shit
 autocmd BufNewFile,BufRead *.tex call SetLatexOptions()
 function SetLatexOptions()
 	setlocal filetype=tex
-	setlocal textwidth=100
-	setlocal colorcolumn=101
-endfunction
-
-" nix
-autocmd BufNewFile,BufRead *.nix call SetNixOptions()
-function SetNixOptions()
-	setlocal filetype=nix
 endfunction
 
 " yaml

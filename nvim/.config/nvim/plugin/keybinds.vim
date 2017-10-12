@@ -23,15 +23,12 @@ vnoremap <silent> <S-Tab> <gv
 nnoremap <silent> <Tab> >>
 nnoremap <silent> <S-Tab> <<
 
-" C-l = nohlsearch, even in insert mode
-imap <silent> <C-l> <Esc><C-l>a
-
 " NERDTreeToggle
 nnoremap <silent> <C-n> :NERDTreeToggle<CR>
 imap <silent> <C-n> <Esc><C-n>
 
 " new buffer
-noremap <leader>t :enew<CR>:edit 
+noremap <leader>t :enew<CR>:NERDTreeToggle<CR>
 
 " next buffer
 noremap <silent> <leader><Tab> :bnext<CR>
@@ -43,7 +40,7 @@ noremap <silent> <leader><S-Tab> :bprevious<CR>
 nnoremap <silent> <leader>w :bprevious <BAR> bdelete #<CR>
 
 " EasyAlign
-map ga <Plug>(EasyAlign)
+map <Leader>a <Plug>(EasyAlign)
 
 " EasyMotion
 map <Leader>e <Plug>(easymotion-bd-w)
