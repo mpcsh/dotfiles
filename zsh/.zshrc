@@ -47,6 +47,6 @@ SPACESHIP_GIT_STATUS_DIVERGED="↕"
 source $ZSH/oh-my-zsh.sh
 
 # source config files
-for f in $(ls ~/.zsh/*.zsh); do
+for f in $(find ~/.zsh/*.zsh); do
 	source $f
 done
