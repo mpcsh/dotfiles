@@ -23,12 +23,8 @@ vnoremap <silent> <S-Tab> <gv
 nnoremap <silent> <Tab> >>
 nnoremap <silent> <S-Tab> <<
 
-" NERDTreeToggle
-nnoremap <silent> <C-n> :NERDTreeToggle<CR>
-imap <silent> <C-n> <Esc><C-n>
-
 " new buffer
-noremap <leader>t :enew<CR>:NERDTreeToggle<CR>
+noremap <leader>t :enew<CR>:CtrlP<CR>
 
 " next buffer
 noremap <silent> <leader><Tab> :bnext<CR>
