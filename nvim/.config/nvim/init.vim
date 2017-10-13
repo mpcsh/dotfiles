@@ -5,6 +5,7 @@ call plug#begin()
 
 " colorscheme
 Plug 'arcticicestudio/nord-vim' " nord colors
+Plug 'morhetz/gruvbox'          " nord colors
 
 " environment
 Plug 'ap/vim-buftabline'               " buffer bar
