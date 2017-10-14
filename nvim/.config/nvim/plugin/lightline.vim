@@ -8,5 +8,5 @@ let g:lightline = {
 	\ },
 	\ 'separator': { 'left': '', 'right': '' },
 	\ 'subseparator': { 'left': '', 'right': '' },
-	\ 'colorscheme': 'gruvbox',
+	\ 'colorscheme': 'nord',
 \ }

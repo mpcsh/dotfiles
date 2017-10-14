@@ -17,7 +17,7 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "gruvbox"
+      "nord-atom-syntax"
     ]
     titleBar: "custom-inset"
   editor:
