@@ -798,13 +798,13 @@
 		</array>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1052 88 445 313 0 0 1680 1050 </string>
+	<string>157 229 445 179 0 0 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>369 472 796 473 0 0 1680 1050 </string>
+	<string>369 616 918 401 0 0 1680 1050 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>127 466 592 584 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>840 1 840 1049 0 0 1680 1050 </string>
+	<string>840 17 836 1033 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>212 106 584 571 0 0 1680 1050 </string>
 	<key>NeverWarnAboutShortLivedSessions_85AD9590-7C77-48DF-BB4B-8602BF84122E</key>
@@ -1192,7 +1192,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FiraMonoForPowerline-Regular 14</string>
+			<string>mplus-1mn-regular 14</string>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
