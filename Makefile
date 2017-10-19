@@ -15,4 +15,4 @@ install: sync
 
 clean:
 	stow -D $(MODULES)
-	sudo stow -t /var/root $(MODULES)
+	sudo stow -D -t /var/root $(MODULES)
