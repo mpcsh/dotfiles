@@ -14,34 +14,7 @@ plugins=(zsh-syntax-highlighting)
 autoload -U promptinit && promptinit && prompt off
 
 # prompt configuration
-ZSH_THEME="spaceship/spaceship"
-SPACESHIP_PROMPT_ORDER=(
-	user
-	host
-	dir
-	git
-	venv
-	jobs
-	exit_code
-	char
-)
-SPACESHIP_PROMPT_ADD_NEWLINE=false # no newline before prompt
-SPACESHIP_PROMPT_SYMBOL="»"
-SPACESHIP_DIR_TRUNC=0
-SPACESHIP_GIT_SYMBOL="\0" # don't show branch symbol before branch name
-SPACESHIP_GIT_STATUS_COLOR=magenta
-SPACESHIP_GIT_STATUS_PREFIX="("
-SPACESHIP_GIT_STATUS_SUFFIX=")"
-SPACESHIP_GIT_STATUS_UNTRACKED="?"
-SPACESHIP_GIT_STATUS_ADDED="+"
-SPACESHIP_GIT_STATUS_MODIFIED="!"
-SPACESHIP_GIT_STATUS_RENAMED="»"
-SPACESHIP_GIT_STATUS_DELETED="X"
-SPACESHIP_GIT_STATUS_STASHED="$"
-SPACESHIP_GIT_STATUS_UNMERGED="="
-SPACESHIP_GIT_STATUS_AHEAD="↑"
-SPACESHIP_GIT_STATUS_BEHIND="↓"
-SPACESHIP_GIT_STATUS_DIVERGED="↕"
+ZSH_THEME="geometry/geometry"
 
 # load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
