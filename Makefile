@@ -2,7 +2,7 @@ SHELL := /usr/bin/env zsh
 .PHONY: default sync install clean
 
 # Modules
-MODULES = atom git nvim oh-my-zsh ssh zsh
+MODULES = atom fish git nvim ssh
 
 default: install
 
