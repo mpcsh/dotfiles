@@ -15,6 +15,13 @@ autoload -U promptinit && promptinit && prompt off
 
 # prompt configuration
 ZSH_THEME="geometry/geometry"
+GEOMETRY_PROMPT_PLUGINS=(jobs git virtualenv node)
+GEOMETRY_PROMPT_PREFIX="" # don't print a newline before each prompt
+GEOMETRY_SYMBOL_PROMPT="λ"
+GEOMETRY_SYMBOL_RPROMPT="→"
+GEOMETRY_SYMBOL_EXIT_VALUE="Δ"
+
+PROMPT_GEOMETRY_COLORIZE_ROOT=true
 
 # load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
