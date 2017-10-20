@@ -1,10 +1,2 @@
 # peru
 .peru
-
-# nvim
-nvim/.config/nvim/*
-!nvim/.config/nvim/plugin
-!nvim/.config/nvim/*.vim
-
-# oh-my-zsh
-oh-my-zsh
