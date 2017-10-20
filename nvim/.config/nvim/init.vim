@@ -22,14 +22,15 @@ Plug 'tpope/vim-surround'              " delimiter manipulation
 Plug 'vim-scripts/visualrepeat'        " make . work for *everything* (visual mode)
 
 " languages
-Plug 'kchmck/vim-coffee-script',  { 'for': 'coffee'}   " coffeescript
-Plug 'fatih/vim-go',              { 'for': 'go'}       " go
-Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell'}  " haskell
-Plug 'lervag/vimtex',             { 'for': 'tex'}      " latex
-Plug 'godlygeek/tabular',         { 'for': 'markdown'} " necessary for markdown
-Plug 'plasticboy/vim-markdown',   { 'for': 'markdown'} " markdown
-Plug 'rust-lang/rust.vim',        { 'for': 'rust'}     " rust
-Plug 'cespare/vim-toml',          { 'for': 'toml'}     " toml
+Plug 'kchmck/vim-coffee-script'  " coffeescript
+Plug 'dag/vim-fish'              " fish
+Plug 'fatih/vim-go'              " go
+Plug 'neovimhaskell/haskell-vim' " haskell
+Plug 'lervag/vimtex'             " latex
+Plug 'godlygeek/tabular'         " necessary for markdown
+Plug 'plasticboy/vim-markdown'   " markdown
+Plug 'rust-lang/rust.vim'        " rust
+Plug 'cespare/vim-toml'          " toml
 
 call plug#end()
 
