@@ -45,13 +45,6 @@ function racket
 	command racket -I typed/racket $argv
 end
 
-
-# ack
-function ack
-	command ack --smart-case --color-match=green $argv
-end
-
-
 # nvim
 function vim
 	command nvim $argv
