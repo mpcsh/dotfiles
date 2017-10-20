@@ -13,6 +13,7 @@ Plug 'tpope/vim-commentary'            " better commenting
 Plug 'junegunn/vim-easy-align'         " easy alignment
 Plug 'easymotion/vim-easymotion'       " easymotion!
 Plug 'tpope/vim-fugitive'              " git integration
+Plug 'airblade/vim-gitgutter'          " git status in gutter
 Plug 'itchyny/lightline.vim'           " lightline
 Plug 'ctrlpvim/ctrlp.vim'              " fuzzy finder
 Plug 'tpope/vim-repeat'                " make . work for everything
@@ -22,9 +23,7 @@ Plug 'tpope/vim-surround'              " delimiter manipulation
 Plug 'vim-scripts/visualrepeat'        " make . work for *everything* (visual mode)
 
 " languages
-Plug 'kchmck/vim-coffee-script'  " coffeescript
 Plug 'dag/vim-fish'              " fish
-Plug 'fatih/vim-go'              " go
 Plug 'neovimhaskell/haskell-vim' " haskell
 Plug 'lervag/vimtex'             " latex
 Plug 'godlygeek/tabular'         " necessary for markdown
