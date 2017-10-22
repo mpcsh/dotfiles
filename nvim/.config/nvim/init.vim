@@ -2,7 +2,7 @@
 call plug#begin()
 
 " colorscheme
-Plug 'arcticicestudio/nord-vim' " nord colors
+Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' } " nord colors
 
 " environment
 Plug 'ap/vim-buftabline'                                          " buffer bar
