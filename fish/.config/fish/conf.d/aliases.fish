@@ -66,5 +66,5 @@ end
 
 # cd .. repeatedly
 function up
-	cd (eval printf ../%.0s (seq $argv))
+	cd (eval printf ../%.0s (seq 1 $argv))
 end
