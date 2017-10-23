@@ -1,4 +1,6 @@
 function fish_prompt
+	# save exit status so it's not clobbered by successful commands below
+	set -l exit_code $status
 	set -l hostname_prefix ""
 	set -l directory_prefix ""
 
@@ -31,8 +33,12 @@ function fish_prompt
 	printf "%s%s " $directory_prefix (prompt_pwd)
 	set_color normal
 
-	# prompt char
+	# prompt char - red if previous command failed
+	if test $exit_code -ne 0
+		set_color red
+	end
 	printf "» "
+	set_color normal
 end
 
 function fish_right_prompt
