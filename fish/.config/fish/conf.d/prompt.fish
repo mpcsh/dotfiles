@@ -6,31 +6,32 @@ function fish_prompt
 
 	# if we're not who we logged in as, display the username
 	if [ (whoami) != "mpcsh" ]
-		set hostname_prefix "at "
-		set directory_prefix "in "
+		set hostname_prefix "at"
+		set directory_prefix "in"
 
 		if [ (whoami) = "root" ]
 			set_color red
 		else
-			set_color yellow
+			set_color green
 		end
-
 		printf "%s " (whoami)
 		set_color normal
 	end
 
 	# if we're ssh'ed, display the hostname
 	if test -n "$SSH_CONNECTION"
-		set directory_prefix "in "
+		set directory_prefix "in"
 
+		printf "%s " $hostname_prefix
 		set_color yellow
-		printf "%s%s " $hostname_prefix (hostname)
+		printf "%s " (hostname)
 		set_color normal
 	end
 
-	# print PWD - git status includes a prefix space, so don't print a suffix one here
+	# print PWD
+	printf "%s " $directory_prefix
 	set_color blue
-	printf "%s%s " $directory_prefix (prompt_pwd)
+	printf "%s " (prompt_pwd)
 	set_color normal
 
 	# prompt char - red if previous command failed
