@@ -23,6 +23,9 @@ vnoremap <silent> <S-Tab> <gv
 nnoremap <silent> <Tab> >>
 nnoremap <silent> <S-Tab> <<
 
+" fzf is the new ctrlp
+noremap <C-p> :Files<CR>
+
 " new buffer
 noremap <leader>t :enew<CR>:Files<CR>
 
