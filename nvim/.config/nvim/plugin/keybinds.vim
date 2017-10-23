@@ -23,6 +23,9 @@ vnoremap <silent> <S-Tab> <gv
 nnoremap <silent> <Tab> >>
 nnoremap <silent> <S-Tab> <<
 
+" nohlsearch
+noremap <C-l> :nohlsearch<CR>
+
 " fzf is the new ctrlp
 noremap <C-p> :Files<CR>
 
