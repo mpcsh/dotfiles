@@ -8,7 +8,8 @@ colorscheme NeoSolarized
 hi Comment gui=italic
 
 " closure highlighting
-hi link MatchParen LinkDelimiter
+hi LinkDelimiter gui=bold guibg=none guifg=none
+hi MatchParen gui=bold guibg=none guifg=none
 
 " visual selection
 hi Visual gui=none guibg=fg guifg=bg
