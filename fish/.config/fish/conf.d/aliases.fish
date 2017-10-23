@@ -34,12 +34,6 @@ function mkdir
 end
 
 
-# shred and delete
-function shred
-	command shred --remove $argv
-end
-
-
 # typed racket
 function racket
 	command racket -I typed/racket $argv
