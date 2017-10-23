@@ -24,7 +24,7 @@ function fish_prompt
 		set -l directory_prefix "in "
 
 		set_color yellow
-		printf "%s%s " $hostname_prefix (prompt_hostname)
+		printf "%s%s " $hostname_prefix (hostname)
 		set_color normal
 	end
 
