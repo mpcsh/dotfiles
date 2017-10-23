@@ -28,14 +28,16 @@ function fish_prompt
 
 	# print PWD - git status includes a prefix space, so don't print a suffix one here
 	set_color blue
-	printf "%s%s" $directory_prefix (prompt_pwd)
+	printf "%s%s " $directory_prefix (prompt_pwd)
 	set_color normal
 
+	# prompt char
+	printf "» "
+end
+
+function fish_right_prompt
 	# git status
 	set_color purple
 	printf "%s" (__fish_git_prompt)
 	set_color normal
-
-	# prompt char
-	printf " » "
 end
