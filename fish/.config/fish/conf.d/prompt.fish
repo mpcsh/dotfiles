@@ -6,8 +6,8 @@ function fish_prompt
 
 	# if we're not who we logged in as, display the username
 	if [ (whoami) != "mpcsh" ]
-		set hostname_prefix "at"
-		set directory_prefix "in"
+		set hostname_prefix "at "
+		set directory_prefix "in "
 
 		if [ (whoami) = "root" ]
 			set_color red
@@ -20,16 +20,16 @@ function fish_prompt
 
 	# if we're ssh'ed, display the hostname
 	if test -n "$SSH_CONNECTION"
-		set directory_prefix "in"
+		set directory_prefix "in "
 
-		printf "%s " $hostname_prefix
+		printf "%s" $hostname_prefix
 		set_color yellow
 		printf "%s " (hostname)
 		set_color normal
 	end
 
 	# print PWD
-	printf "%s " $directory_prefix
+	printf "%s" $directory_prefix
 	set_color blue
 	printf "%s " (prompt_pwd)
 	set_color normal
