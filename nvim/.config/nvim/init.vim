@@ -2,7 +2,9 @@
 call plug#begin()
 
 " colorscheme
-Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' } " nord colors
+Plug 'morhetz/gruvbox'                                   " gruvbox
+Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' } " nord
+Plug 'icymind/neosolarized'                              " solarized
 
 " environment
 Plug 'ap/vim-buftabline'                                          " buffer bar
