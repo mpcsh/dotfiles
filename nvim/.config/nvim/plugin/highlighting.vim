@@ -13,5 +13,10 @@ hi link MatchParen LinkDelimiter
 " visual selection
 hi Visual gui=none guibg=fg guifg=bg
 
+" don't underline tabline
+hi TabLine gui=none
+hi TabLineFill gui=none
+hi TabLineSel gui=none
+
 " search highlighting
 set hlsearch
