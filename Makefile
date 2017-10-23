@@ -1,4 +1,4 @@
-SHELL := /usr/bin/env zsh
+SHELL := /usr/bin/env bash
 .PHONY: default sync install clean
 
 # Modules
