@@ -1,5 +1,5 @@
 # nvim
-*
-!.gitignore
-!plugin/
-!*.vim
+autoload
+plugged
+tmp
+.netrwhist
