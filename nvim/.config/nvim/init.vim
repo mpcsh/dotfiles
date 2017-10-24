@@ -28,6 +28,7 @@ Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'} " completion engine
 
 " language completion
 Plug 'Shougo/neco-syntax'            " language-agnostic completion (based on syntax files)
+Plug 'tweekmonster/deoplete-clang2'  " C completion
 Plug 'ponko2/deoplete-fish'          " fish completion
 Plug 'zchee/deoplete-go'             " go completion
 Plug 'eagletmt/neco-ghc'             " haskell completion
