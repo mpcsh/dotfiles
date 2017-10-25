@@ -12,6 +12,12 @@ function SetGitCommitOptions()
 	let b:deoplete_disable_auto_complete = 1
 endfunction
 
+" javascript
+autocmd FileType javascript call SetJSOptions()
+function SetJSOptions()
+	setlocal expandtab
+endfunction
+
 " latex - fix "plaintex" filetype detection shit
 autocmd BufNewFile,BufRead *.tex call SetLatexOptions()
 function SetLatexOptions()
