@@ -6,6 +6,12 @@ function SetCOptions()
 	setlocal commentstring=//\ %s " prefer // over /*...*/ for single-line comments
 endfunction
 
+" fish
+autocmd BufNewFile,BufRead *.fish call SetFishOptions()
+function SetFishOptions()
+	setlocal filetype=fish
+endfunction
+
 " javascript
 autocmd FileType javascript,html call SetJSOptions()
 function SetJSOptions()
