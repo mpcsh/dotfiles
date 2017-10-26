@@ -26,7 +26,7 @@ Plug 'vim-scripts/visualrepeat'        " make . work for in visual mode
 Plug 'dag/vim-fish',              {'for': 'fish'}     " fish
 Plug 'fatih/vim-go',              {'for': 'go'}       " go
 Plug 'neovimhaskell/haskell-vim', {'for': 'haskell'}  " haskell
-Plug 'lervag/vimtex',             {'for': 'latex'}    " latex
+Plug 'lervag/vimtex',             {'for': 'tex'}      " latex
 Plug 'godlygeek/tabular',         {'for': 'markdown'} " necessary for markdown
 Plug 'plasticboy/vim-markdown',   {'for': 'markdown'} " markdown
 Plug 'rust-lang/rust.vim',        {'for': 'rust'}     " rust
