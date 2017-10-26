@@ -6,12 +6,6 @@ function SetCOptions()
 	setlocal commentstring=//\ %s " prefer // over /*...*/ for single-line comments
 endfunction
 
-" git commit
-autocmd FileType gitcommit call SetGitCommitOptions()
-function SetGitCommitOptions()
-	let b:deoplete_disable_auto_complete = 1
-endfunction
-
 " javascript
 autocmd FileType javascript,html call SetJSOptions()
 function SetJSOptions()
