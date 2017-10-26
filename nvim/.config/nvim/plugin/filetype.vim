@@ -13,7 +13,7 @@ function SetGitCommitOptions()
 endfunction
 
 " javascript
-autocmd FileType javascript call SetJSOptions()
+autocmd FileType javascript,html call SetJSOptions()
 function SetJSOptions()
 	setlocal expandtab
 endfunction
