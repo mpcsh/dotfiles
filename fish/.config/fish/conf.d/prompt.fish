@@ -5,16 +5,16 @@ function fish_prompt
 	set -l directory_prefix ""
 
 	# if we're not who we logged in as, display the username
-	if [ (whoami) != "mpcsh" ]
+	if [ $USER != "mpcsh" ]
 		set hostname_prefix "at "
 		set directory_prefix "in "
 
-		if [ (whoami) = "root" ]
+		if [ $USER = "root" ]
 			set_color red
 		else
 			set_color green
 		end
-		printf "%s " (whoami)
+		printf "%s " $USER
 		set_color normal
 	end
 
