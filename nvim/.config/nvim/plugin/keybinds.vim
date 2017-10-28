@@ -33,13 +33,13 @@ noremap <C-p> :Files<CR>
 noremap <leader>t :enew<CR>:Files<CR>
 
 " next buffer
-noremap <silent> <leader><Tab> :w<CR> :bnext<CR>
+noremap <silent> <leader><Tab> :bnext<CR>
 
 " previous buffer
-noremap <silent> <leader><S-Tab> :w<CR> :bprevious<CR>
+noremap <silent> <leader><S-Tab> :bprevious<CR>
 
 " close current buffer and move to previous one
-nnoremap <silent> <leader>w :w<CR> :bprevious <BAR> bdelete #<CR>
+nnoremap <silent> <leader>w :bprevious <BAR> bdelete #<CR>
 
 " EasyAlign
 map <Leader>a <Plug>(EasyAlign)
