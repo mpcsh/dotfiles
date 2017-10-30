@@ -7,7 +7,6 @@ Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' } " nord
 Plug 'icymind/neosolarized'                              " solarized
 
 " environment
-Plug 'jiangmiao/auto-pairs'            " delimiter matching
 Plug 'ap/vim-buftabline'               " buffer bar
 Plug 'tpope/vim-commentary'            " better commenting
 Plug 'junegunn/vim-easy-align'         " easy alignment
@@ -19,7 +18,6 @@ Plug 'airblade/vim-gitgutter'          " git status in gutter
 Plug 'itchyny/lightline.vim'           " lightline
 Plug 'tpope/vim-repeat'                " make . work for everything
 Plug 'vim-scripts/replacewithregister' " replace with register
-Plug 'tpope/vim-sensible'              " sensible defaults
 Plug 'tpope/vim-surround'              " delimiter manipulation
 Plug 'vim-scripts/visualrepeat'        " make . work for in visual mode
 
@@ -36,3 +34,6 @@ Plug 'cespare/vim-toml',          {'for': 'toml'}     " toml
 call plug#end()
 
 let g:plug_window = 'new'
+
+" source all custom files
+runtime! custom/*.vim
