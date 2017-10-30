@@ -34,6 +34,3 @@ Plug 'cespare/vim-toml',          {'for': 'toml'}     " toml
 call plug#end()
 
 let g:plug_window = 'new'
-
-" source all custom files
-runtime! custom/*.vim
