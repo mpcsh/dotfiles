@@ -1,6 +1,6 @@
 let g:vimtex_compiler_latexmk = {
 	\ 'background' : 1,
-	\ 'build_dir' : 'build',
+	\ 'build_dir' : '.latex',
 	\ 'callback' : 1,
 	\ 'continuous' : 1,
 	\ 'executable' : 'latexmk',
