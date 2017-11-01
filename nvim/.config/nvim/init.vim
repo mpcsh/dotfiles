@@ -7,6 +7,7 @@ Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' } " nord
 Plug 'icymind/neosolarized'                              " solarized
 
 " environment
+Plug 'tpope/vim-abolish'               " crazy text manipulation
 Plug 'ap/vim-buftabline'               " buffer bar
 Plug 'tpope/vim-commentary'            " better commenting
 Plug 'junegunn/vim-easy-align'         " easy alignment
