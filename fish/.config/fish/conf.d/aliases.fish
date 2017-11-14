@@ -26,7 +26,7 @@ function cp
 end
 
 function rm
-	command rm -r $argv
+	command rm -rf $argv
 end
 
 function mkdir
