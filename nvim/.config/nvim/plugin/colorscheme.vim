@@ -2,7 +2,7 @@
 set termguicolors
 syntax enable
 set background=dark
-colorscheme nord
+colorscheme gruvbox
 
 " italic comments
 hi Comment gui=italic
