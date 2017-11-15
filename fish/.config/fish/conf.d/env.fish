@@ -1,3 +1,6 @@
+# don't show annoying welcome message
+set fish_greeting ""
+
 # environment variables
 set -gx GOPATH ~/.go
 set -gx fish_user_paths $GOPATH/bin
