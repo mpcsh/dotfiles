@@ -1,14 +1,8 @@
 imports:
   vim-plug: nvim/.config/nvim/autoload/
-  tmux-tpm: tmux/.tmux/plugins/tpm
 
 # vim
 git module vim-plug:
   url: https://github.com/junegunn/vim-plug
   pick: plug.vim
   rev: 9813d5ead5b6f419e9ca55fc767d9548baed6b40
-
-# tmux
-git module tmux-tpm:
-  url: https://github.com/tmux-plugins/tpm
-  rev: 95f78336c3972f3e6648b7b3db754f2224320a5e
