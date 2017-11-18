@@ -24,7 +24,10 @@ set ignorecase
 set smartcase
 
 " no swapfiles
-set noswapfile
+set directory=$HOME/.config/nvim/tmp/swap/
+if !isdirectory(expand(&directory))
+	call mkdir(expand(&directory), 'p')
+endif
 
 " store all backup files centrally
 set backupdir=$HOME/.config/nvim/tmp/backup/
