@@ -13,3 +13,5 @@
 	ls = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n 10
 	la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	hub = "!f() { if [[ $# == 1 ]]; then cd ~/projects; git clone https://github.com/$1.git; else echo must supply a repo; fi }; f"
+[init]
+	templatedir = /Users/mpcsh/.git-template
