@@ -810,11 +810,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>15 550 796 473 0 0 1680 1050 </string>
+	<string>15 498 796 473 0 0 1680 1050 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>127 466 592 584 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>840 0 840 1050 0 0 1680 1050 </string>
+	<string>212 181 664 496 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>212 106 584 571 0 0 1680 1050 </string>
 	<key>NeverWarnAboutMeta</key>
@@ -1338,7 +1338,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-19T22:16:16Z</date>
+	<date>2017-11-25T18:34:13Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1359,6 +1359,8 @@
 	<integer>12</integer>
 	<key>TerminalVMargin</key>
 	<integer>12</integer>
+	<key>TmuxUsesDedicatedProfile</key>
+	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1510769408</real>
 	<key>URLHandlersByGuid</key>
