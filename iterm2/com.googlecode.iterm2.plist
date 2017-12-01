@@ -13,7 +13,7 @@
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
 	<key>CheckTestRelease</key>
-	<false/>
+	<true/>
 	<key>ClosingTmuxTabKillsTmuxWindows</key>
 	<true/>
 	<key>ClosingTmuxTabKillsTmuxWindows_selection</key>
@@ -804,17 +804,17 @@
 		</array>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>55 33 848 77 0 0 1680 1050 </string>
+	<string>56 33 848 77 0 0 1680 1050 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 477 620 392 0 0 1680 1028 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>736 556 796 473 0 0 1680 1050 </string>
+	<string>15 570 796 473 0 0 1680 1050 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>127 466 592 584 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>840 24 840 1026 0 0 1680 1050 </string>
+	<string>0 0 840 1050 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>212 106 584 571 0 0 1680 1050 </string>
 	<key>NeverWarnAboutMeta</key>
@@ -1213,8 +1213,6 @@
 			<false/>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
-			<key>Place Prompt at First Column</key>
-			<false/>
 			<key>Prompt Before Closing 2</key>
 			<false/>
 			<key>Right Option Key Sends</key>
@@ -1257,8 +1255,6 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
-			<key>Show Mark Indicators</key>
-			<false/>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Smart Cursor Color</key>
@@ -1313,8 +1309,6 @@
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>528442267.60505497</real>
-	<key>NoSyncTurnOffBracketedPasteOnHostChange</key>
-	<true/>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenTmuxWindowsIn</key>
@@ -1336,15 +1330,15 @@
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
-	<false/>
+	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=63</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=63</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-27T04:31:18Z</date>
+	<date>2017-11-30T18:50:24Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1365,6 +1359,8 @@
 	<integer>12</integer>
 	<key>TerminalVMargin</key>
 	<integer>12</integer>
+	<key>TmuxUsesDedicatedProfile</key>
+	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1510769408</real>
 	<key>URLHandlersByGuid</key>
