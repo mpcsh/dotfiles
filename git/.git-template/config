@@ -1,0 +1,3 @@
+[git-town]
+	pull-branch-strategy = merge
+	hack-push-flag = true
