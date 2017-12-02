@@ -24,7 +24,7 @@ nnoremap <silent> <Tab> >>
 nnoremap <silent> <S-Tab> <<
 
 " nohlsearch
-noremap <C-l> :nohlsearch<CR>
+noremap <silent> <C-l> :nohlsearch<CR>
 
 " fzf is the new ctrlp
 noremap <C-p> :Files<CR>
@@ -33,13 +33,26 @@ noremap <C-p> :Files<CR>
 noremap <leader>t :enew<CR>:Files<CR>
 
 " next buffer
-noremap <silent> <leader><Tab> :bnext<CR>
+noremap <silent> <leader><Tab> :silent! bnext<CR>
 
 " previous buffer
-noremap <silent> <leader><S-Tab> :bprevious<CR>
+noremap <silent> <leader><S-Tab> :silent! bprevious<CR>
 
-" close current buffer and move to previous one
-nnoremap <silent> <leader>w :bprevious <BAR> bdelete #<CR>
+" close current buffer
+function CloseBuffer()
+  let bufferCount = 0
+  for i in range(0, bufnr("$"))
+    if buflisted(i)
+      let bufferCount += 1
+    endif
+  endfor
+  if bufferCount <= 1
+    quit
+  else
+    bdelete
+  endif
+endfunction
+nnoremap <silent> <leader>w :silent! call CloseBuffer()<CR>
 
 " EasyAlign
 map <Leader>a <Plug>(EasyAlign)
