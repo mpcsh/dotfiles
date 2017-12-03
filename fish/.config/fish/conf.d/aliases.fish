@@ -26,7 +26,12 @@ function cp
 end
 
 function rm
-	command rm -rf $argv
+  switch (uname)
+    case Darwin
+      command trash $argv
+    case Linux
+      command rm -rf $argv
+    end
 end
 
 function mkdir
