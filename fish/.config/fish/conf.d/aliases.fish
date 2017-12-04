@@ -51,8 +51,8 @@ end
 
 
 # rsync options
-function rsync
-	command rsync -avzHE $argv
+function rcp
+  command rsync -avzHE --progress -h $argv
 end
 
 
