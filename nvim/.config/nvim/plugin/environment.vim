@@ -23,7 +23,7 @@ set clipboard=unnamed
 set ignorecase
 set smartcase
 
-" no swapfiles
+" store all swap files centrally
 set directory=$HOME/.config/nvim/tmp/swap/
 if !isdirectory(expand(&directory))
 	call mkdir(expand(&directory), 'p')
@@ -43,6 +43,9 @@ set undoreload=500
 if !isdirectory(expand(&undodir))
 	call mkdir(expand(&undodir), 'p')
 endif
+
+" allow switching between buffers without writing
+set hidden
 
 " don't keep commenting on enter or o/O
 autocmd BufNewFile,BufRead * setlocal formatoptions-=ro
