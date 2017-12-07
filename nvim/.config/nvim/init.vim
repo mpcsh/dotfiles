@@ -33,6 +33,10 @@ Plug 'plasticboy/vim-markdown',   {'for': 'markdown'} " markdown
 Plug 'rust-lang/rust.vim',        {'for': 'rust'}     " rust
 Plug 'cespare/vim-toml',          {'for': 'toml'}     " toml
 
+" completion
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/neco-syntax'
+
 call plug#end()
 
 let g:plug_window = 'new'
