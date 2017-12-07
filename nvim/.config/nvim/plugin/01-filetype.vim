@@ -12,12 +12,6 @@ function SetFishOptions()
 	setlocal filetype=fish
 endfunction
 
-" javascript
-autocmd FileType javascript,html call SetJSOptions()
-function SetJSOptions()
-	setlocal expandtab
-endfunction
-
 " latex - fix "plaintex" filetype detection shit
 autocmd BufNewFile,BufRead *.tex call SetLatexOptions()
 function SetLatexOptions()
@@ -29,6 +23,12 @@ autocmd BufNewFile,BufRead *.rs call SetRustOptions()
 function SetRustOptions()
 	setlocal filetype=rust
 	setlocal commentstring=//\ %s
+endfunction
+
+" typescript
+autocmd BufNewFile,BufRead *.ts call SetTSOptions()
+function SetTSOptions()
+  setlocal filetype=typescript
 endfunction
 
 " yaml
