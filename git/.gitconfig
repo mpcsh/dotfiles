@@ -17,3 +17,5 @@
 	templatedir = ~/.git-template
 [advice]
 	detachedHead = false
+[help]
+	autoCorrect = -1
