@@ -1,3 +1,6 @@
+# thefuck
+thefuck --alias | source
+
 # allows sudo to use aliases
 function sudo
 	command sudo $argv
