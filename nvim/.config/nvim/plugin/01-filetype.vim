@@ -6,12 +6,6 @@ function SetCOptions()
 	setlocal commentstring=//\ %s " prefer // over /*...*/ for single-line comments
 endfunction
 
-" fish
-autocmd BufNewFile,BufRead *.fish call SetFishOptions()
-function SetFishOptions()
-	setlocal filetype=fish
-endfunction
-
 " latex - fix "plaintex" filetype detection shit
 autocmd BufNewFile,BufRead *.tex call SetLatexOptions()
 function SetLatexOptions()
