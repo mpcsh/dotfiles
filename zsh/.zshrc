@@ -7,3 +7,5 @@ fi
 for f in $('ls' ~/.zsh/*.zsh); do
   source $f
 done
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
