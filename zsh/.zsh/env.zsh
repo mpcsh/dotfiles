@@ -13,6 +13,7 @@ export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -l -g ""'
 export FZF_CTRL_R_OPTS='--reverse'
 
 # zsh options
+setopt globdots # allow tab to match dotfiles
 setopt nobanghist # allow bangs in quotes
 setopt rm_star_silent # don't warn before doing something like rm ~/Downloads/*
 
