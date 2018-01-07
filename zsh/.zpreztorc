@@ -1,0 +1,18 @@
+# color output (auto set to 'no' on dumb terminals)
+zstyle ':prezto:*:*' color 'yes'
+
+# set the prezto modules to load - order matters
+zstyle ':prezto:load' pmodule \
+  'environment' \
+  'terminal' \
+  'history' \
+  'completion' \
+  'prompt' \
+  'git' \
+  'syntax-highlighting' \
+  'autosuggestions'
+
+# Set the prompt theme to load.
+# Setting it to 'random' loads a random theme.
+# Auto set to 'off' on dumb terminals.
+zstyle ':prezto:module:prompt' theme 'giddie'
