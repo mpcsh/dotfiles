@@ -31,7 +31,6 @@ Plug 'godlygeek/tabular',          {'for': 'markdown'}   " necessary for markdow
 Plug 'plasticboy/vim-markdown',    {'for': 'markdown'}   " markdown
 Plug 'rust-lang/rust.vim',         {'for': 'rust'}       " rust
 Plug 'cespare/vim-toml',           {'for': 'toml'}       " toml
-Plug 'leafgarland/typescript-vim', {'for': 'typescript'} " typescript
 Plug 'chrisbra/vim-zsh',           {'for': 'zsh'}        " zsh
 
 " completion
