@@ -2,15 +2,11 @@ SHELL := /usr/bin/env bash
 .PHONY: default sync install clean
 
 # Modules
-MODULES = fish git nvim ssh
+MODULES = git nvim ssh zsh
 
 default: install
 
-~/.config/fish/conf.d/omf.fish:
-	curl -L https://get.oh-my.fish | fish
-	omf install fish
-
-sync: ~/.config/fish/conf.d/omf.fish
+sync:
 	peru sync
 
 install: sync
