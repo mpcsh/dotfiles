@@ -1,5 +1,10 @@
 imports:
+  prezto: zsh/.zprezto/
   vim-plug: nvim/.config/nvim/autoload/
+
+# prezto
+git module prezto:
+  url: https://github.com/sorin-ionescu/prezto
 
 # vim
 git module vim-plug:
