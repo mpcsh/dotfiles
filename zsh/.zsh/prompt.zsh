@@ -40,14 +40,6 @@ function __set_prompt() {
   echo -n "%b"
 }
 
-# set -g __fish_git_prompt_char_dirtystate " !"
-# set -g __fish_git_prompt_char_invalidstate " X"
-# set -g __fish_git_prompt_char_stagedstate " Δ"
-# set -g __fish_git_prompt_char_untrackedfiles " ?"
-# set -g __fish_git_prompt_char_cleanstate ""
-# set -g __fish_git_prompt_char_upstream_ahead " ↑"
-# set -g __fish_git_prompt_char_upstream_behind " ↓"
-
 # rprompt function
 function __set_rprompt() {
   # bold prompts
@@ -66,48 +58,48 @@ function __set_rprompt() {
     echo -n "%F{magenta}("
 
     # print branch name
-    branch_name="$('git' symbolic-ref --quiet --short HEAD 2> /dev/null || \
+    branch_name="$(git symbolic-ref --quiet --short HEAD 2> /dev/null || \
       git rev-parse --short HEAD 2> /dev/null || \
       echo '(unknown)')";
     echo -n "$branch_name"
 
     # count staged files
-    staged_count="$('git' diff --name-status --staged | grep -v '^U' | wc -l | xargs)"
+    staged_count="$(git diff --name-status --staged | grep -v '^U' | wc -l | xargs)"
     if (( $staged_count != 0 )); then
       echo -n " Δ$staged_count"
     fi
 
     # count dirty files
-    dirty_count="$('git' diff --name-status | grep -v '^U' | wc -l | xargs)"
+    dirty_count="$(git diff --name-status | grep -v '^U' | wc -l | xargs)"
     if (( $dirty_count != 0 )); then
       echo -n " !$dirty_count"
     fi
 
     # count deleted files
-    deleted_count="$('git' diff --staged --name-status | grep '^U' | wc -l | xargs)"
+    deleted_count="$(git diff --staged --name-status | grep '^U' | wc -l | xargs)"
     if (( $deleted_count != 0 )); then
       echo -n " X$deleted_count"
     fi
 
     # count untracked files
-    untracked_count="$('git' ls-files --others --exclude-standard | wc -l | xargs)"
+    untracked_count="$(git ls-files --others --exclude-standard | wc -l | xargs)"
     if (( $untracked_count != 0 )); then
       echo -n " ?$untracked_count"
     fi
 
     # get upstream state
-    upstream_state="$('git' rev-list --count --left-right $upstream...HEAD | xargs)"
-
-    # count commits behind upstream
-    behind_count="$(echo $upstream_state | cut -d ' ' -f 1)"
-    if (( $behind_count != 0 )); then
-      echo -n " ↓$behind_count"
-    fi
+    upstream_state="$(git rev-list --count --left-right $(git status -sb | head -n 1 | cut -d ' ' -f 2) | xargs)"
 
     # count commits ahead of upstream
-    ahead_count="$(echo $upstream_state | cut -d ' ' -f 2)"
+    ahead_count="$(echo $upstream_state | cut -d ' ' -f 1)"
     if (( $ahead_count != 0 )); then
       echo -n " ↑$ahead_count"
+    fi
+
+    # count commits behind upstream
+    behind_count="$(echo $upstream_state | cut -d ' ' -f 2)"
+    if (( $behind_count != 0 )); then
+      echo -n " ↓$behind_count"
     fi
 
     # suffix
