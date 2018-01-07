@@ -6,7 +6,11 @@ MODULES = fish git nvim ssh
 
 default: install
 
-sync:
+~/.config/fish/conf.d/omf.fish:
+	curl -L https://get.oh-my.fish | fish
+	omf install fish
+
+sync: ~/.config/fish/conf.d/omf.fish
 	peru sync
 
 install: sync
