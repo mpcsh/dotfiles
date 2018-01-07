@@ -12,6 +12,9 @@ export FZF_DEFAULT_OPTS='--color=16,fg+:4 --ansi'
 export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -l -g ""'
 export FZF_CTRL_R_OPTS='--reverse'
 
+# zsh options
+setopt nobanghist
+
 # paths
 export GOPATH='~/.go'
 path=(
