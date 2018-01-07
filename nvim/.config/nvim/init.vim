@@ -24,7 +24,6 @@ Plug 'tpope/vim-surround'                                         " delimiter ma
 Plug 'vim-scripts/visualrepeat'                                   " make . work for in visual mode
 
 " languages
-Plug 'dag/vim-fish',               {'for': 'fish'}       " fish
 Plug 'fatih/vim-go',               {'for': 'go'}         " go
 Plug 'urso/haskell_syntax.vim',    {'for': 'haskell'}    " haskell
 Plug 'lervag/vimtex',              {'for': 'tex'}        " latex
@@ -33,6 +32,7 @@ Plug 'plasticboy/vim-markdown',    {'for': 'markdown'}   " markdown
 Plug 'rust-lang/rust.vim',         {'for': 'rust'}       " rust
 Plug 'cespare/vim-toml',           {'for': 'toml'}       " toml
 Plug 'leafgarland/typescript-vim', {'for': 'typescript'} " typescript
+Plug 'chrisbra/vim-zsh',           {'for': 'zsh'}        " zsh
 
 " completion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
