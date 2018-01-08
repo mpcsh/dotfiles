@@ -112,6 +112,7 @@ function __set_rprompt() {
 }
 
 # set prompt variables
+setopt PROMPT_SUBST
 export PROMPT='$(__set_prompt)'
 export RPROMPT='$(__set_rprompt)'
 export PS2="» "
