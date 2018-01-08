@@ -4,6 +4,9 @@ unalias -m '*'
 # thefuck
 eval $(thefuck --alias)
 
+# z
+source /usr/local/etc/profile.d/z.sh
+
 # allows sudo to use aliases
 alias sudo='sudo '
 
