@@ -7,12 +7,12 @@ MODULES = git nvim ssh zsh
 default: install
 
 sync:
-	peru sync
+  peru sync
 
 install: sync
-	stow $(MODULES)
-	sudo stow -t /var/root $(MODULES)
+  stow $(MODULES)
+  sudo stow -t /var/root $(MODULES)
 
 clean:
-	stow -D $(MODULES)
-	sudo stow -D -t /var/root $(MODULES)
+  stow -D $(MODULES)
+  sudo stow -D -t /var/root $(MODULES)
