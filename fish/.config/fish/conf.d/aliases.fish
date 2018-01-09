@@ -9,11 +9,21 @@ end
 
 # better ls
 function ls
-  command ls -lhFG $argv
+  switch (uname)
+  case Darwin
+    command ls -lhFG $argv
+  case Linux
+    command ls -lhF --color=auto $argv
+  end
 end
 
 function la
-  command ls -lhFGA $argv
+  switch (uname)
+  case Darwin
+    command ls -lhFGA $argv
+  case Linux
+    command ls -lhFA --color=auto $argv
+  end
 end
 
 
