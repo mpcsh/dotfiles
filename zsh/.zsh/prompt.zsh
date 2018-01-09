@@ -10,6 +10,7 @@ function __set_prompt() {
   # if we're not mpcsh, display the username
   if [[ $USER != "mpcsh" ]]; then
     hostname_prefix="%bat%B "
+    directory_prefix="%bin%B "
 
     if [[ $USER == "root" ]]; then
       echo -n "%F{red}"
