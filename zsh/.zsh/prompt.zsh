@@ -17,7 +17,7 @@ function __set_prompt() {
       echo -n "%F{green}"
     fi
 
-    echo -n "%n%F "
+    echo -n "%n%f "
   fi
 
   # if we're ssh'ed, display the hostname
