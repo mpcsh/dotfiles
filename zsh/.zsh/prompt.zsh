@@ -9,7 +9,7 @@ function __set_prompt() {
 
   # if we're not mpcsh, display the username
   if [[ $USER != "mpcsh" ]]; then
-    hostname_prefix="at "
+    hostname_prefix="%bat%B "
 
     if [[ $USER == "root" ]]; then
       echo -n "%F{red}"
@@ -22,7 +22,7 @@ function __set_prompt() {
 
   # if we're ssh'ed, display the hostname
   if [[ -v $SSH_CONNECTION || -v $SSH_CLIENT || -v $SSH_TTY ]]; then
-    directory_prefix="in "
+    directory_prefix="%bin%B "
     echo -n "$hostname_prefix%F{yellow}%M%f "
   fi
 
