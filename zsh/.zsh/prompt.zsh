@@ -64,20 +64,24 @@ function __set_rprompt() {
       echo '(unknown)')";
     echo -n "$branch_name"
 
+    # cache diff outputs
+    git_diff="$(git diff --name-status)"
+    git_diff_staged="$(git diff --name-status --staged)"
+
     # count staged files
-    staged_count="$(git diff --name-status --staged | grep -v '^U' | wc -l | xargs)"
+    staged_count="$(echo git_diff_staged | grep -v '^U' | wc -l | xargs)"
     if (( $staged_count != 0 )); then
       echo -n " Δ$staged_count"
     fi
 
     # count dirty files
-    dirty_count="$(git diff --name-status | grep -v '^U' | wc -l | xargs)"
+    dirty_count="$(echo git_diff | grep -v '^U' | wc -l | xargs)"
     if (( $dirty_count != 0 )); then
       echo -n " !$dirty_count"
     fi
 
     # count deleted files
-    deleted_count="$(git diff --staged --name-status | grep '^U' | wc -l | xargs)"
+    deleted_count="$(echo git_diff_staged | grep '^U' | wc -l | xargs)"
     if (( $deleted_count != 0 )); then
       echo -n " X$deleted_count"
     fi
