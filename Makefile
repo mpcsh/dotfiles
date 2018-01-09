@@ -2,7 +2,7 @@ SHELL := /usr/bin/env bash
 .PHONY: default sync install clean
 
 # Modules
-MODULES = git nvim ssh zsh
+MODULES = fish git nvim ssh
 
 default: install
 
