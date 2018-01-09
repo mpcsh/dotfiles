@@ -3,29 +3,29 @@ thefuck --alias | source
 
 # allows sudo to use aliases
 function sudo
-	command sudo $argv
+  command sudo $argv
 end
 
 
 # better ls
 function ls
-	command ls -lhFG $argv
+  command ls -lhFG $argv
 end
 
 function la
-	command ls -lhFGA $argv
+  command ls -lhFGA $argv
 end
 
 
 # symlink by default
 function ln
-	command ln -s $argv
+  command ln -s $argv
 end
 
 
 # work on directories
 function cp
-	command cp -r $argv
+  command cp -r $argv
 end
 
 function rm
@@ -33,18 +33,18 @@ function rm
 end
 
 function mkdir
-	command mkdir -p $argv
+  command mkdir -p $argv
 end
 
 
 # typed racket
 function racket
-	command racket -I typed/racket $argv
+  command racket -I typed/racket $argv
 end
 
 # nvim
 function vim
-	command nvim $argv
+  command nvim $argv
 end
 
 
@@ -56,12 +56,12 @@ end
 
 # mkdir and cd into it
 function mkcd
-	command mkdir -p $argv
-	cd $argv
+  command mkdir -p $argv
+  cd $argv
 end
 
 
 # cd .. repeatedly
 function up
-	cd (eval printf ../%.0s (seq 1 $argv))
+  cd (eval printf ../%.0s (seq 1 $argv))
 end
