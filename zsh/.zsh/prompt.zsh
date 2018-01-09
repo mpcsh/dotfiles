@@ -21,7 +21,7 @@ function __set_prompt() {
   fi
 
   # if we're ssh'ed, display the hostname
-  if [[ -v $SSH_CONNECTION || -v $SSH_CLIENT || -v $SSH_TTY ]]; then
+  if [[ -n $SSH_CONNECTION || -n $SSH_CLIENT || -n $SSH_TTY ]]; then
     directory_prefix="%bin%B "
     echo -n "$hostname_prefix%F{yellow}%M%f "
   fi
