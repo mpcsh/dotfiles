@@ -26,13 +26,13 @@ set smartcase
 " store all swap files centrally
 set directory=$HOME/.config/nvim/tmp/swap/
 if !isdirectory(expand(&directory))
-	call mkdir(expand(&directory), 'p')
+  call mkdir(expand(&directory), 'p')
 endif
 
 " store all backup files centrally
 set backupdir=$HOME/.config/nvim/tmp/backup/
 if !isdirectory(expand(&backupdir))
-	call mkdir(expand(&backupdir), 'p')
+  call mkdir(expand(&backupdir), 'p')
 endif
 
 " persistent undo
@@ -41,7 +41,7 @@ set undodir=$HOME/.config/nvim/tmp/undo/
 set undolevels=500
 set undoreload=500
 if !isdirectory(expand(&undodir))
-	call mkdir(expand(&undodir), 'p')
+  call mkdir(expand(&undodir), 'p')
 endif
 
 " allow switching between buffers without writing

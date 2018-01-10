@@ -1,21 +1,21 @@
 [user]
-	email = m@mpc.sh
-	name = Mark Cohen
+  email = m@mpc.sh
+  name = Mark Cohen
 [credential]
-	helper = store
+  helper = store
 [push]
-	default = simple
+  default = simple
 [alias]
-	co = checkout
-	ci = commit
-	ca = commit -a
-	st = status
-	ls = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n 10
-	la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	hub = "!f() { if [[ $# == 1 ]]; then cd ~/projects; git clone https://github.com/$1.git; else echo must supply a repo; fi }; f"
+  co = checkout
+  ci = commit
+  ca = commit -a
+  st = status
+  ls = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n 10
+  la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  hub = "!f() { if [[ $# == 1 ]]; then cd ~/projects; git clone https://github.com/$1.git; else echo must supply a repo; fi }; f"
 [init]
-	templatedir = ~/.git-template
+  templatedir = ~/.git-template
 [advice]
-	detachedHead = false
+  detachedHead = false
 [help]
-	autoCorrect = -1
+  autoCorrect = -1
