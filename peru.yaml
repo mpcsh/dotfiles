@@ -5,4 +5,4 @@ imports:
 git module vim-plug:
   url: https://github.com/junegunn/vim-plug
   pick: plug.vim
-  rev: 9813d5ead5b6f419e9ca55fc767d9548baed6b40
+  rev: 96375cb7d30b7caf2a9417799ff509b59b43a627
