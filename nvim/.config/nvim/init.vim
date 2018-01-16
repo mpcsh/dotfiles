@@ -2,7 +2,8 @@
 call plug#begin()
 
 " colorscheme
-Plug 'morhetz/gruvbox'                                   " gruvbox
+Plug 'morhetz/gruvbox'          " gruvbox
+Plug 'arcticicestudio/nord-vim' " nord
 
 " environment
 Plug 'tpope/vim-sensible'                                       " sensible defaults
