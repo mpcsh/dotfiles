@@ -1,5 +1,4 @@
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#disable_auto_complete = 1
 
 " from https://github.com/Shougo/deoplete.nvim/issues/310
 inoremap <silent><expr> <TAB>
