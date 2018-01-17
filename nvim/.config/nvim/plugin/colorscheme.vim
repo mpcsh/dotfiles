@@ -1,3 +1,6 @@
+" brighten comments
+let g:nord_comment_brightness = 7
+
 " colorscheme
 set termguicolors
 syntax enable
