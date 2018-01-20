@@ -16,5 +16,5 @@ set -gx fish_prompt_pwd_dir_length 0
 umask 077
 
 # pyenv
-status --is-interactive; and . (pyenv init -|psub)
-status --is-interactive; and . (pyenv virtualenv-init -|psub)
+status --is-interactive; and source (pyenv init -|psub)
+status --is-interactive; and source (pyenv virtualenv-init -|psub)
