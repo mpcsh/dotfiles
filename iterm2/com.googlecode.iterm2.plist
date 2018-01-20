@@ -792,10 +792,12 @@
 		<key>Split Vertically with Current Profile</key>
 		<string>@$\</string>
 	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>1169 33 445 77 0 0 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>40 1021 918 381 0 0 2560 1440 </string>
+	<string>1195 908 796 473 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1280 0 1280 1440 0 0 2560 1440 </string>
+	<string>840 0 840 1050 0 0 1680 1050 </string>
 	<key>NeverWarnAboutMeta</key>
 	<true/>
 	<key>NeverWarnAboutMeta_selection</key>
@@ -1202,7 +1204,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>OperatorMono-Book 14</string>
+			<string>FiraCode-Regular 14</string>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
