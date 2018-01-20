@@ -4,6 +4,7 @@ call plug#begin()
 " colorscheme
 Plug 'morhetz/gruvbox'          " gruvbox
 Plug 'arcticicestudio/nord-vim' " nord
+Plug 'rakr/vim-one'             " one dark
 
 " environment
 Plug 'tpope/vim-sensible'                                       " sensible defaults

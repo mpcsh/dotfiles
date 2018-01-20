@@ -5,7 +5,7 @@ let g:nord_comment_brightness = 7
 set termguicolors
 syntax enable
 set background=dark
-colorscheme nord
+colorscheme one
 
 " italic comments
 hi Comment gui=italic
