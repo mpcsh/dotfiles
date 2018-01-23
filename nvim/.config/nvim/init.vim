@@ -10,6 +10,7 @@ Plug 'rakr/vim-one'             " one dark
 Plug 'tpope/vim-sensible'                                       " sensible defaults
 Plug 'vim-scripts/a.vim', {'for': 'c'}                          " switch between .c and .h
 Plug 'tpope/vim-abolish'                                        " crazy text manipulation
+Plug 'ConradIrwin/vim-bracketed-paste'                          " bracketed paste
 Plug 'ap/vim-buftabline'                                        " buffer bar
 Plug 'tpope/vim-commentary'                                     " better commenting
 Plug 'junegunn/vim-easy-align'                                  " easy alignment
@@ -26,8 +27,10 @@ Plug 'tpope/vim-surround'                                       " delimiter mani
 Plug 'vim-scripts/visualrepeat'                                 " make . work for in visual mode
 
 " completion
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/neco-syntax'
+if has('python3')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'Shougo/neco-syntax'
+endif
 
 call plug#end()
 
