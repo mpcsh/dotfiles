@@ -1,3 +1,6 @@
+# show one directory in prompt
+set -x fish_prompt_pwd_dir_length 1
+
 function fish_prompt
   # save exit status so it's not clobbered by successful commands below
   set -l exit_code $status
