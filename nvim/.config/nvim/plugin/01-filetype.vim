@@ -3,7 +3,10 @@ autocmd BufNewFile,BufRead *.c,*.h call SetCOptions()
 function SetCOptions()
   setlocal filetype=c
   setlocal colorcolumn=81
+  setlocal textwidth=80
   setlocal commentstring=//\ %s " prefer // over /*...*/ for single-line comments
+  setlocal tabstop=4
+  setlocal shiftwidth=4
 endfunction
 
 " java
