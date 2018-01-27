@@ -1134,11 +1134,11 @@
 		<string>@$\</string>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>289 241 445 77 0 0 1680 1050 </string>
+	<string>289 33 445 77 0 0 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>86 521 796 473 0 0 1680 1050 </string>
+	<string>85 595 918 401 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 554 664 496 0 0 1680 1050 </string>
+	<string>191 129 584 471 0 0 1680 1050 </string>
 	<key>NeverWarnAboutMeta</key>
 	<true/>
 	<key>NeverWarnAboutMeta_selection</key>
@@ -1545,7 +1545,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>OperatorMonoLig-Book 14</string>
+			<string>PragmataPro 14</string>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
