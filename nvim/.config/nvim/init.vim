@@ -35,4 +35,3 @@ endif
 call plug#end()
 
 let g:plug_window = 'new'
-test
