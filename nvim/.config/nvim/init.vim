@@ -10,7 +10,6 @@ Plug 'rakr/vim-one'             " one dark
 Plug 'tpope/vim-sensible'                                       " sensible defaults
 Plug 'vim-scripts/a.vim', {'for': 'c'}                          " switch between .c and .h
 Plug 'tpope/vim-abolish'                                        " crazy text manipulation
-Plug 'ConradIrwin/vim-bracketed-paste'                          " bracketed paste
 Plug 'ap/vim-buftabline'                                        " buffer bar
 Plug 'tpope/vim-commentary'                                     " better commenting
 Plug 'junegunn/vim-easy-align'                                  " easy alignment
@@ -24,6 +23,7 @@ Plug 'sheerun/vim-polyglot'                                     " all languages
 Plug 'tpope/vim-repeat'                                         " make . work for everything
 Plug 'vim-scripts/replacewithregister'                          " replace with register
 Plug 'tpope/vim-surround'                                       " delimiter manipulation
+Plug 'wincent/terminus'                                         " auto read, bracketed paste
 Plug 'vim-scripts/visualrepeat'                                 " make . work for in visual mode
 
 " completion
@@ -35,3 +35,4 @@ endif
 call plug#end()
 
 let g:plug_window = 'new'
+test
