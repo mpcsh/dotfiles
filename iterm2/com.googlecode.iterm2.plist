@@ -1083,6 +1083,8 @@
 	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
+	<key>NSFontPanelSizeSliderParams</key>
+	<string>1 0 100</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/Downloads</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -1134,11 +1136,11 @@
 		<string>@$\</string>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>51 949 445 77 0 0 2560 1440 </string>
+	<string>30 144 445 77 0 0 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>170 1017 918 401 0 0 2560 1440 </string>
+	<string>85 636 918 401 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1280 0 1280 1440 0 0 2560 1440 </string>
+	<string>840 205 654 845 0 0 1680 1050 </string>
 	<key>NeverWarnAboutMeta</key>
 	<true/>
 	<key>NeverWarnAboutMeta_selection</key>
@@ -1545,7 +1547,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Iosevka-Type 14</string>
+			<string>PragmataPro 14</string>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
