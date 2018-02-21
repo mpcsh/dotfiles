@@ -22,6 +22,12 @@ function SetLatexOptions()
   setlocal filetype=tex
 endfunction
 
+" markdown
+autocmd BufNewFile,BufRead *.md call SetMarkdownOptions()
+function SetMarkdownOptions()
+  setlocal textwidth=80
+endfunction
+
 " rust
 autocmd BufNewFile,BufRead *.rs call SetRustOptions()
 function SetRustOptions()
