@@ -2,6 +2,7 @@
 call plug#begin()
 
 " colorscheme
+Plug 'dracula/vim'              " dracula
 Plug 'morhetz/gruvbox'          " gruvbox
 Plug 'arcticicestudio/nord-vim' " nord
 Plug 'rakr/vim-one'             " one dark
