@@ -15,8 +15,10 @@ set -x FZF_CTRL_R_OPTS '--reverse'
 umask 077
 
 # pyenv
-status --is-interactive; and source (pyenv init -|psub)
-status --is-interactive; and source (pyenv virtualenv-init -|psub)
+if test -e ~/.pyenv
+  status --is-interactive; and source (pyenv init -|psub)
+  status --is-interactive; and source (pyenv virtualenv-init -|psub)
+end
 
 # colorized manpages
 set -x LESS_TERMCAP_mb (printf "\033[01;31m")
