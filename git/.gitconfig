@@ -21,6 +21,3 @@
   autoCorrect = -1
 [protocol "keybase"]
 	allow = always
-[git-town]
-  pull-branch-strategy = merge
-  hack-push-flag = true
