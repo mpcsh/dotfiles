@@ -4,7 +4,7 @@ set fish_greeting ""
 # environment variables
 set -x GOPATH ~/.go
 set -x PYENV_ROOT ~/.pyenv
-set -x fish_user_paths $GOPATH/bin /usr/local/sbin $PYENV_ROOT/shims $PYENV_ROOT/bin
+set -x fish_user_paths /usr/local/sbin
 set -x EDITOR nvim
 set -x FZF_DEFAULT_COMMAND 'ag --hidden --ignore .git -l -g ""'
 set -x FZF_DEFAULT_OPTS '--color=16,fg+:4 --ansi'
@@ -14,8 +14,14 @@ set -x FZF_CTRL_R_OPTS '--reverse'
 # permissions
 umask 077
 
+# go
+if test -e $GOPATH
+  set -x fish_user_paths $GOPATH/bin $fish_user_paths
+end
+
 # pyenv
-if test -e ~/.pyenv
+if test -e $PYENV_ROOT
+  set -x fish_user_paths $PYENV_ROOT/shims $PYENV_ROOT/bin $fish_user_paths
   status --is-interactive; and source (pyenv init -|psub)
   status --is-interactive; and source (pyenv virtualenv-init -|psub)
 end
