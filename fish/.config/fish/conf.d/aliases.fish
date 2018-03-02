@@ -1,5 +1,7 @@
 # thefuck
-thefuck --alias | source
+if which thefuck > /dev/null
+  thefuck --alias | source
+end
 
 # allows sudo to use aliases
 function sudo
