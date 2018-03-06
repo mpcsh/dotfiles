@@ -34,7 +34,7 @@ xset r rate 250
 
 # configure borders, gaps
 bspc config bottom_padding $(xrq barHeight)
-bspc config border_width 0
+bspc config border_width 4
 bspc config window_gap 18
 bspc config split_ratio 0.5
 
