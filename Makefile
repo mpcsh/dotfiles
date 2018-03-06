@@ -1,7 +1,7 @@
 SHELL := /usr/bin/env bash
 .PHONY: default sync install clean
 
-MODULES = fish git nvim ssh
+MODULES = bspwm colors fish git gtk nvim redshift ssh termite weechat xresources
 
 default: install
 
@@ -10,8 +10,6 @@ sync:
 
 install: sync
 	stow $(MODULES)
-	sudo stow -t /var/root $(MODULES)
 
 clean:
 	stow -D $(MODULES)
-	sudo stow -D -t /var/root $(MODULES)
