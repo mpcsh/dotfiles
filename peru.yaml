@@ -1,8 +1,15 @@
 imports:
   vim-plug: nvim/.config/nvim/autoload/
+  xresources-nord: colors/.colors
 
 # vim
 git module vim-plug:
   url: https://github.com/junegunn/vim-plug
   pick: plug.vim
   rev: 96375cb7d30b7caf2a9417799ff509b59b43a627
+
+# xresources
+git module xresources-nord:
+  url: https://github.com/arcticicestudio/nord-xresources
+  pick: src/nord
+  export: src/

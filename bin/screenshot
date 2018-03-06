@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+USAGE="Usage: screenshot [select]"
+
+FILE=~/scrots/$(date +%F-%H%M%S).jpg
+
+if [[ $# == 0 ]]; then
+  maim -m 10 "$FILE"
+  ~/dotfiles/bin/0x0 "$FILE" | xclip -selection clipboard
+  notify-send "Screenshot uploaded"
+elif [[ $1 == "select" && $# == 1 ]]; then
+  maim -m 10 -s "$FILE"
+  ~/dotfiles/bin/0x0 "$FILE" | xclip -selection clipboard
+  notify-send "Screenshot uploaded"
+else
+  echo "$USAGE"
+fi

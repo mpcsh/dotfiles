@@ -26,6 +26,11 @@ if test -e $PYENV_ROOT
   status --is-interactive; and source (pyenv virtualenv-init -|psub)
 end
 
+# scripts
+if test -e ~/dotfiles/scripts
+  set -x fish_user_paths ~/dotfiles/scripts $fish_user_paths
+end
+
 # colorized manpages
 set -x LESS_TERMCAP_mb (printf "\033[01;31m")
 set -x LESS_TERMCAP_md (printf "\033[01;31m")
