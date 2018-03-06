@@ -10,6 +10,8 @@ sync:
 
 install: sync
 	stow $(MODULES)
+	sudo stow -t /root $(MODULES)
 
 clean:
 	stow -D $(MODULES)
+	sudo stow -D -t /root $(MODULES)
