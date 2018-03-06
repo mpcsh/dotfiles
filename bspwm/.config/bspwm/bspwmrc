@@ -57,6 +57,7 @@ notify-osd &
 polybar main &
 nm-applet &
 dropbox &
+run_keybase &
 
 # laptop specific stuff
 if [[ $HOST == "alpamayo" ]]; then
@@ -68,4 +69,7 @@ if [[ $HOST == "alpamayo" ]]; then
 fi
 
 # start pulseaudio
-pulseaudio --start
+pulseaudio --start &
+
+# start sxhkd
+sxhkd &
