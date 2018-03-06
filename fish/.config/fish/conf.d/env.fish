@@ -28,7 +28,7 @@ end
 
 # scripts
 if test -e ~/dotfiles/scripts
-  set -x fish_user_paths ~/dotfiles/scripts $fish_user_paths
+  set -x fish_user_paths ~/dotfiles/bin $fish_user_paths
 end
 
 # colorized manpages
