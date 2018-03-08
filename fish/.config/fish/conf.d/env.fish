@@ -10,6 +10,7 @@ set -x FZF_DEFAULT_COMMAND 'ag --hidden --ignore .git -l -g ""'
 set -x FZF_DEFAULT_OPTS '--color=16,fg+:4 --ansi'
 set -x FZF_CTRL_T_COMMAND 'ag --hidden --ignore .git -l -g ""'
 set -x FZF_CTRL_R_OPTS '--reverse'
+set -x TERM xterm-256color
 
 # permissions
 umask 077

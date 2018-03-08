@@ -57,6 +57,7 @@ notify-osd &
 polybar main &
 nm-applet &
 dropbox &
+redshift &
 run_keybase &
 
 # laptop specific stuff
