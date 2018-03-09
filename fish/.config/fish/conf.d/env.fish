@@ -8,7 +8,7 @@ set -x fish_user_paths /usr/local/sbin
 set -x EDITOR nvim
 set -x FZF_DEFAULT_COMMAND 'ag --hidden --ignore .git -l -g ""'
 set -x FZF_DEFAULT_OPTS '--color=16,fg+:4 --ansi'
-set -x FZF_CTRL_T_COMMAND 'ag --hidden --ignore .git -l -g ""'
+set -x FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
 set -x FZF_CTRL_R_OPTS '--reverse'
 set -x TERM xterm-256color
 
