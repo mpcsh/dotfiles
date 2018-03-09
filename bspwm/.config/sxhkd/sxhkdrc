@@ -61,7 +61,7 @@ super + shift + {Escape,Caps_Lock}
   ~/dotfiles/bin/lock_suspend
 
 super + grave
-  termite
+  kitty
 
 super + c
   chromium
