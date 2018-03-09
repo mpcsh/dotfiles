@@ -1,0 +1,16 @@
+[options]
+  term
+
+[common]
+  l = hooky
+  i = hooky
+  a = doublestorey
+  g = opendoublestorey
+  asterisk = low
+  dollar = open
+
+[upright]
+
+[italic]
+
+[oblique]
