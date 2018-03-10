@@ -5,15 +5,6 @@ xrdb ~/.Xresources
 xrdb -merge ~/.colors/nord
 feh --no-fehbg --bg-fill ~/.wallpaper &
 
-# hidpi
-if [[ $HOST == "alpamayo" ]]; then
-  echo "Xft.dpi: 144" | xrdb -merge
-  echo "barHeight: 48" | xrdb -merge
-else
-  echo "Xft.dpi: 96" | xrdb -merge
-  echo "barHeight: 36" | xrdb -merge
-fi
-
 # make caps be escape
 setxkbmap -option caps:escape &
 
@@ -59,15 +50,7 @@ nm-applet &
 dropbox &
 redshift &
 run_keybase &
-
-# laptop specific stuff
-if [[ $HOST == "alpamayo" ]]; then
-  # no hissing noises
-  amixer -c PCH cset 'name=Headphone Mic Boost Volume' 1
-
-  # don't blind me
-  xbacklight -set 50 &
-fi
+compton -r 6 -o 0.75 &
 
 # start pulseaudio
 pulseaudio --start &
