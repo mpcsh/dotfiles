@@ -84,5 +84,5 @@ end
 
 # make CLI ripgrep match fzf
 function rg
-  command rg --hidden --glob "!.git" --smart-case
+  command rg --hidden --glob "!.git" --smart-case $argv
 end
