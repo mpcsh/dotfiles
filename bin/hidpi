@@ -11,8 +11,8 @@ COMMAND=$1
 shift
 ARGS=$*
 
-if [[ $HOST == "alpamayo" ]]; then
-  $COMMAND --force-device-scale-factor=1.65 "$ARGS"
+if [[ $(xrq dpi) != "96" ]]; then
+  $COMMAND --force-device-scale-factor=1.5 "$ARGS"
 else
   $COMMAND --force-device-scale-factor=1.0 "$ARGS"
 fi
