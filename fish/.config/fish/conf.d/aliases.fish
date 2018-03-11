@@ -81,3 +81,8 @@ end
 function up
   cd (eval printf ../%.0s (seq 1 $argv))
 end
+
+# make CLI ripgrep match fzf
+function rg
+  command rg --hidden --glob "!.git" --smart-case
+end
