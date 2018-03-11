@@ -27,6 +27,11 @@ function la
   end
 end
 
+# because I like pain
+function yay
+  yay --noconfirm $argv
+end
+
 
 # symlink by default
 function ln
