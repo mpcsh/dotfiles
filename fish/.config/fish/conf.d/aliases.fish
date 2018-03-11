@@ -29,7 +29,7 @@ end
 
 # because I like pain
 function yay
-  yay --noconfirm $argv
+  command yay --noconfirm $argv
 end
 
 
