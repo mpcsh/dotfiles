@@ -73,7 +73,7 @@ super + shift + 4
   ~/dotfiles/bin/screenshot select
 
 super + r
-  termite -e ranger
+  kitty ranger
 
 super + n
   nautilus
@@ -86,7 +86,7 @@ super + s
   ~/dotfiles/bin/hidpi spotify
 
 super + w
-  termite -e weechat
+  kitty weechat
 
 ##################################################
 # languages
