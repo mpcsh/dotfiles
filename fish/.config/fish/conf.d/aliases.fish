@@ -8,11 +8,6 @@ function sudo
   command sudo -sE $argv
 end
 
-# because I like pain
-function pacaur
-  command pacaur --noconfirm --noedit $argv
-end
-
 # better ls
 function ls
   switch (uname)
