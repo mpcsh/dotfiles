@@ -27,6 +27,10 @@ if test -e $PYENV_ROOT
   status --is-interactive; and source (pyenv virtualenv-init -|psub)
 end
 
+# ruby
+if test -e ~/.gem
+  set -x fish_user_paths ~/.gem/ruby/2.5.0/bin $fish_user_paths
+
 # scripts
 if test -e ~/dotfiles/scripts
   set -x fish_user_paths ~/dotfiles/bin $fish_user_paths
