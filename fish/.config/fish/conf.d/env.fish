@@ -30,6 +30,7 @@ end
 # ruby
 if test -e ~/.gem
   set -x fish_user_paths ~/.gem/ruby/2.5.0/bin $fish_user_paths
+end
 
 # scripts
 if test -e ~/dotfiles/scripts
