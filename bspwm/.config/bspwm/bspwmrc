@@ -44,7 +44,6 @@ bspc rule -a *:libreoffice state=tiled
 bspc rule -a Zathura state=tiled
 
 # autostart apps
-notify-osd &
 polybar main &
 nm-applet &
 dropbox &
