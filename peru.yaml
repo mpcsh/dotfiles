@@ -1,15 +1,22 @@
 imports:
+  tmux-tpm: tmux/.tmux/plugins/tpm
   vim-plug: nvim/.config/nvim/autoload/
   xresources-nord: colors/.colors
+
+# tmux
+git module tmux-tpm:
+  url: https://github.com/tmux-plugins/tpm
+  rev: 95f78336c3972f3e6648b7b3db754f2224320a5e
 
 # vim
 git module vim-plug:
   url: https://github.com/junegunn/vim-plug
   pick: plug.vim
-  rev: 96375cb7d30b7caf2a9417799ff509b59b43a627
+  rev: e6a775e0df3180d3cfea55b351aa7b112c58c139
 
 # xresources
 git module xresources-nord:
   url: https://github.com/arcticicestudio/nord-xresources
   pick: src/nord
   export: src/
+  rev: c4b8a29871ece1b3a9d9ef792880decdddacd837
