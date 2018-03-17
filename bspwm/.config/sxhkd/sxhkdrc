@@ -107,11 +107,11 @@ super + alt + s
 
 # increase brightness
 XF86MonBrightnessUp
-  backlightctl up
+  ~/dotfiles/bin/backlightctl up
 
 # decrease brightness
 XF86MonBrightnessDown
-  backlightctl down
+  ~/dotfiles/bin/backlightctl down
 
 # increase volume
 XF86AudioRaiseVolume
