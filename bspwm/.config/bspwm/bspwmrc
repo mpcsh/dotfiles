@@ -51,8 +51,5 @@ redshift &
 run_keybase &
 compton -r 6 -o 0.75 &
 
-# start pulseaudio
-pulseaudio --start &
-
 # start sxhkd
 sxhkd &
