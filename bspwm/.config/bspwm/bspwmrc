@@ -51,7 +51,7 @@ redshift &
 run_keybase &
 compton -r 6 -o 0.75 &
 
-if [[ $HOSTNAME = "greeley" ]]; then
+if [[ $HOSTNAME = "greeley" || $HOSTNAME = "blanc" ]]; then
   # don't blind me
   xbacklight -set 50
 
