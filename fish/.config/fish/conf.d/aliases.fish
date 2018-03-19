@@ -1,5 +1,5 @@
 # thefuck
-if which thefuck > /dev/null
+if type -q thefuck
   thefuck --alias | source
 end
 
