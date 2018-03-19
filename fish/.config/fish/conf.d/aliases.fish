@@ -19,12 +19,7 @@ function ls
 end
 
 function la
-  switch (uname)
-  case Darwin
-    command ls -lhFGA $argv
-  case Linux
-    command ls -lhFA --color=auto $argv
-  end
+  ls -A $argv
 end
 
 # because I like pain
@@ -82,7 +77,7 @@ function up
   cd (eval printf ../%.0s (seq 1 $argv))
 end
 
-# make CLI ripgrep match fzf
+# make CLI ag match fzf
 function ag
   command ag --hidden --ignore .git --smart-case $argv
 end
