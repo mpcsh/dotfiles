@@ -56,7 +56,7 @@ if [[ $HOSTNAME = "greeley" || $HOSTNAME = "blanc" ]]; then
   xbacklight -set 50
 
   # two/three finger click!
-  xinput set-prop 12 296 0, 1
+  xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Click Method Enabled" 0 1
 fi
 
 # start sxhkd
