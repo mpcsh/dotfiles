@@ -1,12 +1,6 @@
 imports:
-  tmux-tpm: tmux/.tmux/plugins/tpm
   vim-plug: nvim/.config/nvim/autoload/
   xresources-nord: colors/.colors
-
-# tmux
-git module tmux-tpm:
-  url: https://github.com/tmux-plugins/tpm
-  rev: 95f78336c3972f3e6648b7b3db754f2224320a5e
 
 # vim
 git module vim-plug:
