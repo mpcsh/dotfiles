@@ -1,7 +1,13 @@
 imports:
+  terminator-clone-session: terminator/.config/terminator/plugins/
   tmux-tpm: tmux/.tmux/plugins/tpm
   vim-plug: nvim/.config/nvim/autoload/
   xresources-nord: colors/.colors
+
+# terminator-clone-session
+git module terminator-clone-session:
+  url: https://github.com/ilgarm/terminator_plugins
+  pick: clone_session.py
 
 # tmux
 git module tmux-tpm:

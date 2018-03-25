@@ -61,7 +61,7 @@ super + shift + {Escape,Caps_Lock}
   ~/dotfiles/bin/lock_suspend
 
 super + grave
-  kitty
+  terminator
 
 super + c
   chromium
@@ -73,7 +73,7 @@ super + shift + 4
   ~/dotfiles/bin/screenshot select
 
 super + r
-  kitty ranger
+  terminator -e ranger
 
 super + n
   nautilus
@@ -86,7 +86,7 @@ super + s
   ~/dotfiles/bin/hidpi spotify
 
 super + w
-  kitty weechat
+  terminator -e weechat
 
 ##################################################
 # languages
