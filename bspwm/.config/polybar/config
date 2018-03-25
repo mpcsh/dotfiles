@@ -91,12 +91,17 @@ label = %time%%date%
 [module/volume]
 type = internal/volume
 
-format-volume = <label-volume>
-format-volume-prefix = " "
+format-volume = <ramp-volume> <label-volume>
+
 label-volume = %percentage%%
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
 
 format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
+
 label-muted = 00%
 mapping = true
 
