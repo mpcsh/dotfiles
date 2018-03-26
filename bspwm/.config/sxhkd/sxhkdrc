@@ -66,10 +66,10 @@ super + grave
 super + c
   chromium
 
-super + shift + 3
+super + Print
   ~/dotfiles/bin/screenshot
 
-super + shift + 4
+super + shift + Print
   ~/dotfiles/bin/screenshot select
 
 super + r

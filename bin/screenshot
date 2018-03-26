@@ -4,14 +4,14 @@ USAGE="Usage: screenshot [select]"
 
 FILE=~/scrots/$(date +%F-%H%M%S).jpg
 
-if [[ $# == 0 ]]; then
-  maim -m 10 "$FILE"
-  ~/dotfiles/bin/0x0 "$FILE" | xsel -selection clipboard
-  notify-send "Screenshot uploaded"
-elif [[ $1 == "select" && $# == 1 ]]; then
-  maim -m 10 -s "$FILE"
-  ~/dotfiles/bin/0x0 "$FILE" | xsel -selection clipboard
-  notify-send "Screenshot uploaded"
-else
-  echo "$USAGE"
+if [[ $1 == "select" && $# == 1 ]]; then
+  MAIM_ARGS="-s"
+elif [[ $# != 0 ]]; then
+  echo $USAGE
+  exit
 fi
+
+mkdir -p ~/scrots
+maim $MAIM_ARGS -m 10 "$FILE"
+~/dotfiles/bin/0x0 "$FILE" | xsel -i --clipboard
+notify-send "Screenshot uploaded"
