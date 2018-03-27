@@ -16,25 +16,30 @@ set -x TERM xterm-256color
 umask 077
 
 # go
-if test -e $GOPATH
-  set -x fish_user_paths $GOPATH/bin $fish_user_paths
+set go_path $GOPATH/bin
+if test -e $go_path
+  set -x fish_user_paths $go_path $fish_user_paths
 end
 
 # pyenv
-if test -e $PYENV_ROOT
-  set -x fish_user_paths $PYENV_ROOT/shims $PYENV_ROOT/bin $fish_user_paths
+set pyenv_shims $PYENV_ROOT/shims
+set pyenv_bin $PYENV_ROOT/bin
+if test -e $pyenv_shims; and test -e $pyenv_bin
+  set -x fish_user_paths $pyenv_shims $pyenv_bin $fish_user_paths
   status --is-interactive; and source (pyenv init -|psub)
   status --is-interactive; and source (pyenv virtualenv-init -|psub)
 end
 
-# ruby
-if test -e ~/.gem
-  set -x fish_user_paths ~/.gem/ruby/2.5.0/bin $fish_user_paths
+# scripts
+set dotfiles_bin ~/dotfiles/bin
+if test -e $dotfiles_bin
+  set -x fish_user_paths $dotfiles_bin $fish_user_paths
 end
 
-# scripts
-if test -e ~/dotfiles/scripts
-  set -x fish_user_paths ~/dotfiles/bin $fish_user_paths
+# SML
+set sml_bin /usr/lib/smlnj/bin
+if test -e $sml_bin
+  set -x fish_user_paths $sml_bin $fish_user_paths
 end
 
 # colorized manpages
