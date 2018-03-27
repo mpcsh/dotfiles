@@ -63,8 +63,8 @@ super + shift + {Escape,Caps_Lock}
 super + grave
   terminator
 
-super + c
-  chromium
+super + f
+  firefox
 
 super + Print
   ~/dotfiles/bin/screenshot
