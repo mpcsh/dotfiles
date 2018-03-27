@@ -1,7 +1,7 @@
 SHELL := /usr/bin/env bash
 .PHONY: default sync install clean
 
-MODULES = bspwm colors fish git gtk iosevka nvim redshift ssh terminator tmux weechat xresources
+MODULES = bspwm colors fish firefox git gtk iosevka nvim redshift ssh terminator weechat xresources
 
 default: install
 
