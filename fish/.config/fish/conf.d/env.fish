@@ -6,7 +6,7 @@ set -x GOPATH ~/.go
 set -x PYENV_ROOT ~/.pyenv
 set -x fish_user_paths /usr/local/sbin
 set -x EDITOR nvim
-set -x FZF_DEFAULT_COMMAND 'command ag --hidden --files-with-matches --ignore .git --smart-case'
+set -x FZF_DEFAULT_COMMAND 'rg --files-with-matches .'
 set -x FZF_DEFAULT_OPTS '--color=16,fg+:4 --ansi'
 set -x FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
 set -x FZF_CTRL_R_OPTS '--reverse'

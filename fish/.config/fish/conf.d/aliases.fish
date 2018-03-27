@@ -77,7 +77,7 @@ function up
   cd (eval printf ../%.0s (seq 1 $argv))
 end
 
-# make CLI ag match fzf
-function ag
-  command ag --hidden --ignore .git --smart-case $argv
+# make CLI rg match fzf
+function rg
+  command rg --hidden --smart-case --glob !.git $argv
 end

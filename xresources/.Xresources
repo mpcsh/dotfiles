@@ -11,5 +11,5 @@ Xft.lcdfilter: lcddefault
 Xft.rgba: rgba
 
 !bar
-*dpi: 128
+*dpi: 120
 barHeight: 48
