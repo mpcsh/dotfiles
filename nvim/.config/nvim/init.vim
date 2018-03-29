@@ -27,7 +27,6 @@ Plug 'vim-scripts/visualrepeat'                                 " make . work fo
 
 " languages
 Plug 'fatih/vim-go'            " go
-Plug 'lervag/vimtex'           " latex
 Plug 'godlygeek/tabular'       " markdown
 Plug 'plasticboy/vim-markdown' " markdown
 Plug 'nvie/vim-flake8'         " python PEP8
