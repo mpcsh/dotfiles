@@ -19,20 +19,12 @@ Plug 'junegunn/fzf.vim'                                         " fzf
 Plug 'tpope/vim-fugitive'                                       " git integration
 Plug 'airblade/vim-gitgutter'                                   " git status in gutter
 Plug 'itchyny/lightline.vim'                                    " lightline
+Plug 'sheerun/vim-polyglot'                                     " language support
 Plug 'tpope/vim-repeat'                                         " make . work for everything
 Plug 'vim-scripts/replacewithregister'                          " replace with register
 Plug 'tpope/vim-surround'                                       " delimiter manipulation
 Plug 'wincent/terminus'                                         " auto read, bracketed paste
 Plug 'vim-scripts/visualrepeat'                                 " make . work for in visual mode
-
-" languages
-Plug 'fatih/vim-go'            " go
-Plug 'godlygeek/tabular'       " markdown
-Plug 'plasticboy/vim-markdown' " markdown
-Plug 'nvie/vim-flake8'         " python PEP8
-Plug 'rust-lang/rust.vim'      " rust
-Plug 'jez/vim-better-sml'      " standard ML
-Plug 'cespare/vim-toml'        " toml
 
 " completion
 if has('python3')
