@@ -9,5 +9,6 @@
 !users.nix
 !x.nix
 
-!overlay/*
-!overlay/*/*
+!profiles/
+
+!overlay/
