@@ -16,6 +16,9 @@ sync:
 base:
 	stow $(BASE_MODULES)
 
+bootstrap:
+	stow -t /mnt $(NIXOS_MODULES)
+
 nixos:
 	cd nixos/etc/nixos/profiles; stow $$(hostname)
 	sudo stow -t / $(NIXOS_MODULES)
