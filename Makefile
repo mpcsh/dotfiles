@@ -8,11 +8,9 @@ XORG_MODULES = bspwm firefox gtk iosevka terminator xresources
 
 default: sync base nixos nixpkgs xorg
 
-# Utilities
 sync:
 	peru sync
 
-# Modules
 base:
 	stow $(BASE_MODULES)
 
