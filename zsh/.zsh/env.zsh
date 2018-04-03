@@ -8,6 +8,7 @@ export GOPATH="~/.go"
 export PAGER="less -FRX"
 export PYENV_ROOT="~/.pyenv"
 export TERM="screen-256color"
+export DISABLE_AUTO_TITLE="true" # https://github.com/robbyrussell/oh-my-zsh/issues/1338
 
 # zsh configuration
 ENABLE_CORRECTION="true" # enable command autocorrection
