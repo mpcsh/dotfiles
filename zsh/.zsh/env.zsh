@@ -5,6 +5,7 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_COMMAND="rg --files-with-matches ."
 export FZF_DEFAULT_OPTS="--color=16,fg+:4 --ansi"
 export GOPATH="~/.go"
+export PAGER="less -FR"
 export PYENV_ROOT="~/.pyenv"
 export TERM="xterm-256color"
 
