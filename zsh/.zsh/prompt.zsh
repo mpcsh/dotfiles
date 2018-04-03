@@ -1,7 +1,7 @@
 # ZSH Git Prompt Plugin from:
 # http://github.com/olivierverdier/zsh-git-prompt
 
-__GIT_PROMPT_DIR="${0:A:h}"
+__GIT_PROMPT_DIR="$ZSH/plugins/git-prompt"
 
 ## Hook function definitions
 function update_current_git_vars() {
