@@ -7,7 +7,7 @@ export FZF_CTRL_R_OPTS="--reverse"
 export GOPATH="~/.go"
 export PAGER="less -FRX"
 export PYENV_ROOT="~/.pyenv"
-export TERM="xterm-256color"
+export TERM="screen-256color"
 
 # zsh configuration
 ENABLE_CORRECTION="true" # enable command autocorrection
