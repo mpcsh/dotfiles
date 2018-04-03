@@ -9,6 +9,7 @@
     gist
     git
     gnumake
+    gptfdisk
     htop
     neofetch
     neovim
