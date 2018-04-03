@@ -1,10 +1,10 @@
 .PHONY: default sync base nixos nixpkgs xorg
 
 # Modules
-BASE_MODULES = colors fish git nvim ssh weechat
+BASE_MODULES = colors git nvim ssh zsh
 NIXOS_MODULES = nixos
 NIXPKGS_MODULES = nixpkgs
-XORG_MODULES = bspwm firefox gtk iosevka terminator xresources
+XORG_MODULES = bspwm firefox gtk terminator xresources
 
 default: sync base nixos nixpkgs xorg
 
