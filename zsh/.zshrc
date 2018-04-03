@@ -1,47 +1,22 @@
-###################################################
-###################################################
-#####                   ###########################
-##### .zshrc / RESLOVED ###########################
-#####                   ###########################
-###################################################
-###################################################
+# path to oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
-###### OHMYZSH ####################################
+# disable oh-my-zsh's auto updater
+DISABLE_AUTO_UPDATE="true"
 
-# PATH
-export ZSH=~/.oh-my-zsh
-plugins=(git git-prompt)
+# disable oh-my-zsh's ls aliases
+DISABLE_LS_COLORS="true"
+
+# load plugins
+# plugins=(zsh-syntax-highlighting)
+
+# clear the default nixos zsh prompt
+autoload -U promptinit && promptinit && prompt off
+
+# load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-source ~/.zsh/*.zsh
 
-##### BINDS #######################################
-
-# SUDO BIND (https://stackoverflow.com/a/970202)
-# insert_sudo () { zle beginning-of-line; zle -U "sudo " }
-# zle -N insert-sudo insert_sudo
-# bindkey "^a" insert-sudo
-
-# CLIMB BIND
-# bindkey -s "^k" '^Ucd ..^M'
-# DIR BIND
-# bindkey -s "^l" '^Ule^M'
-
-##### ALIAS #######################################
-
-# SPACED DIR
-# alias le="echo ''; ls; echo ''"
-# SPACED NEO
-# alias neo="clear; echo '\n'; neofetch"
-
-##### PATH ######################################## 
-
-# PYTHON
-# export PYTHONPATH=/usr/lib/python3.6/site-packages
-# JAVA
-# export PATH=/usr/lib/jvm/java-10-jdk/bin/:$PATH
-
-###################################################
-##### end #########################################
-###################################################
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# source config files
+for f in $(find ~/.zsh/*.zsh); do
+	source $f
+done
