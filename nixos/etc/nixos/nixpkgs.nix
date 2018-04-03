@@ -19,5 +19,5 @@
     dates = "0/1:00:00"; # means "every hour on the hour"
   };
 
-  programs.command-not-found.enable = true;
+  system.stateVersion = "unstable";
 }
