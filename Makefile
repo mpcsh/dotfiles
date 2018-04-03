@@ -18,7 +18,7 @@ bootstrap:
 	stow -t /mnt $(NIXOS_MODULES)
 
 nixos:
-	cd nixos/etc/nixos/profiles; stow $$(hostname)
+	sudo stow -d nixos/etc/nixos/profiles -t / $$(hostname)
 	sudo stow -t / $(NIXOS_MODULES)
 
 nixpkgs:
