@@ -35,6 +35,7 @@
     maim
     mpv
     ranger
+    slack
     spotify
     terminator
     texlive.combined.scheme-full
