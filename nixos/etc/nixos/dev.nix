@@ -19,12 +19,17 @@
     peru
     psmisc
     ripgrep
+    rlwrap
     rsync
     stow
+    thefuck
     usbutils
     weechat
     wget
     zip
     unzip
+
+    # languages
+    smlnj
   ];
 }
