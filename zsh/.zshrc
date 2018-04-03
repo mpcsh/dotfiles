@@ -8,13 +8,13 @@ DISABLE_AUTO_UPDATE="true"
 DISABLE_LS_COLORS="true"
 
 # load plugins
-# plugins=(zsh-syntax-highlighting)
-
-# clear the default nixos zsh prompt
-autoload -U promptinit && promptinit && prompt off
+plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 
 # load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+
+# clear the default nixos zsh prompt
+autoload -U promptinit && promptinit && prompt off
 
 # source config files
 for f in $(find ~/.zsh/*.zsh); do
