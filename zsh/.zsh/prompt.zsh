@@ -42,7 +42,37 @@ chpwd_functions+=(chpwd_update_git_vars)
 precmd_functions+=(precmd_update_git_vars)
 preexec_functions+=(preexec_update_git_vars)
 
-## Function definitions
+git_super_status() {
+  precmd_update_git_vars
+  if [ -n "$__CURRENT_GIT_STATUS" ]; then
+    STATUS="${ZSH_THEME_GIT_PROMPT_PREFIX}${ZSH_THEME_GIT_PROMPT_BRANCH}${GIT_BRANCH}"
+    if [ "$GIT_BEHIND" -ne "0" ]; then
+      STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_BEHIND}${GIT_BEHIND}"
+    fi
+    if [ "$GIT_AHEAD" -ne "0" ]; then
+      STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_AHEAD}${GIT_AHEAD}"
+    fi
+    STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_SEPARATOR}"
+    if [ "$GIT_STAGED" -ne "0" ]; then
+      STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_STAGED}${GIT_STAGED}"
+    fi
+    if [ "$GIT_CONFLICTS" -ne "0" ]; then
+      STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_CONFLICTS}${GIT_CONFLICTS}"
+    fi
+    if [ "$GIT_CHANGED" -ne "0" ]; then
+      STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_CHANGED}${GIT_CHANGED}"
+    fi
+    if [ "$GIT_UNTRACKED" -ne "0" ]; then
+      STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_UNTRACKED}${GIT_UNTRACKED}"
+    fi
+    if [ "$GIT_CHANGED" -eq "0" ] && [ "$GIT_CONFLICTS" -eq "0" ] && [ "$GIT_STAGED" -eq "0" ] && [ "$GIT_UNTRACKED" -eq "0" ]; then
+      STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_CLEAN}"
+    fi
+    STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_SUFFIX}"
+    echo "${STATUS}"
+  fi
+}
+
 ###################
 # environment setup
 ###################
@@ -76,37 +106,6 @@ function _prompt_color() {
 
 function _prompt_reset() {
   _prompt_add "%f"
-}
-
-git_super_status() {
-  precmd_update_git_vars
-  if [ -n "$__CURRENT_GIT_STATUS" ]; then
-    STATUS="${ZSH_THEME_GIT_PROMPT_PREFIX}${ZSH_THEME_GIT_PROMPT_BRANCH}${GIT_BRANCH}"
-    if [ "$GIT_BEHIND" -ne "0" ]; then
-      STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_BEHIND}${GIT_BEHIND}"
-    fi
-    if [ "$GIT_AHEAD" -ne "0" ]; then
-      STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_AHEAD}${GIT_AHEAD}"
-    fi
-    STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_SEPARATOR}"
-    if [ "$GIT_STAGED" -ne "0" ]; then
-      STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_STAGED}${GIT_STAGED}"
-    fi
-    if [ "$GIT_CONFLICTS" -ne "0" ]; then
-      STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_CONFLICTS}${GIT_CONFLICTS}"
-    fi
-    if [ "$GIT_CHANGED" -ne "0" ]; then
-      STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_CHANGED}${GIT_CHANGED}"
-    fi
-    if [ "$GIT_UNTRACKED" -ne "0" ]; then
-      STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_UNTRACKED}${GIT_UNTRACKED}"
-    fi
-    if [ "$GIT_CHANGED" -eq "0" ] && [ "$GIT_CONFLICTS" -eq "0" ] && [ "$GIT_STAGED" -eq "0" ] && [ "$GIT_UNTRACKED" -eq "0" ]; then
-      STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_CLEAN}"
-    fi
-    STATUS="${STATUS}${ZSH_THEME_GIT_PROMPT_SUFFIX}"
-    echo "${STATUS}"
-  fi
 }
 
 #################
