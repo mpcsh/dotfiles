@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     # utils
+    autojump
     exfat-utils
     fzf
     gist
