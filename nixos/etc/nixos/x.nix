@@ -41,14 +41,24 @@
     zathura
   ];
 
-  fonts.fonts = (with pkgs; [
-    mplus-outline-fonts
-    font-awesome-ttf
-    material-icons
-    noto-fonts
-    noto-fonts-cjk
-    noto-fonts-emoji
-  ]);
+  fonts = {
+    fonts = with pkgs; [
+      mplus-outline-fonts
+      font-awesome-ttf
+      material-icons
+      noto-fonts
+      noto-fonts-cjk
+      noto-fonts-emoji
+      cantarell_fonts
+    ];
+    fontconfig = {
+      defaultFonts = {
+        monospace = [ "M+ 1mn" ];
+        sansSerif = [ "Noto Sans" ];
+        serif = [ "Noto Serif" ];
+      };
+    };
+  };
 
   hardware.pulseaudio.enable = true;
 

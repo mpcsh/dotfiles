@@ -1,5 +1,5 @@
 !font
-*font: xft:IosevkaTerm:size=12
+*font: xft:M+1mn:size=12
 *iconFont: xft:FontAwesome:size=12
 
 !font rendering

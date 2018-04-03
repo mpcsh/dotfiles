@@ -12,6 +12,9 @@
     htop
     neofetch
     neovim
+    python27Packages.neovim
+    python36Packages.neovim
+    neovim-remote
     nix-prefetch-scripts
     peru
     psmisc

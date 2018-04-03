@@ -1,6 +1,11 @@
 imports:
+  oh-my-zsh: oh-my-zsh/.oh-my-zsh/
   vim-plug: nvim/.config/nvim/autoload/
   xresources-nord: colors/.colors
+
+# oh-my-zsh
+git module oh-my-zsh:
+  url: https://github.com/robbyrussell/oh-my-zsh
 
 # vim
 git module vim-plug:
