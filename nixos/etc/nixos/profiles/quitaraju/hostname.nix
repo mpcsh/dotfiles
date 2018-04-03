@@ -11,12 +11,12 @@
     enable = true;
 
     accelProfile = "flat";
-  #   buttonMapping = "1 3 2";
-  #   clickMethod = "clickfinger";
-  #   disableWhileTyping = true;
-  #   middleEmulation = false;
-  #   tappingDragLock = false;
-  #   tapping = false;
+    # buttonMapping = "1 3 2";
+    # clickMethod = "clickfinger";
+    # disableWhileTyping = true;
+    # middleEmulation = false;
+    tappingDragLock = false;
+    tapping = false;
   };
   # services.xserver.synaptics = rec {
   #   enable = true;
