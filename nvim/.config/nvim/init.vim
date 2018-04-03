@@ -18,6 +18,7 @@ Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'} " fzf
 Plug 'junegunn/fzf.vim'                                         " fzf
 Plug 'tpope/vim-fugitive'                                       " git integration
 Plug 'airblade/vim-gitgutter'                                   " git status in gutter
+Plug 'lervag/vimtex'                                            " LaTeX
 Plug 'itchyny/lightline.vim'                                    " lightline
 Plug 'sheerun/vim-polyglot'                                     " language support
 Plug 'tpope/vim-repeat'                                         " make . work for everything
