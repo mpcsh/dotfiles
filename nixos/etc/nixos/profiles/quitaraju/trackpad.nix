@@ -5,7 +5,7 @@
     enable = true;
 
     accelProfile = "flat";
-    buttonMapping = [ 1 3 2 ];
+    buttonMapping = "1 3 2";
     clickMethod = "clickfinger";
     disableWhileTyping = true;
     middleEmulation = false;
