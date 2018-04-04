@@ -40,6 +40,7 @@ autocmd BufNewFile,BufRead *.sml call SetSMLOptions()
 function SetSMLOptions()
   setlocal filetype=sml
   setlocal commentstring=(*\ %s\ *)
+  setlocal textwidth&
 endfunction
 
 " typescript
