@@ -60,6 +60,7 @@
         serif = [ "Noto Serif" ];
       };
     };
+    enableDefaultFonts = false; # disable unifont fallback
   };
 
   hardware.pulseaudio.enable = true;
