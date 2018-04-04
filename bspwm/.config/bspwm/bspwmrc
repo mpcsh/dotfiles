@@ -47,6 +47,7 @@ bspc rule -a Zathura state=tiled
 polybar main &
 nm-applet &
 dropbox &
+NIX_SKIP_KEYBASE_CHECKS=1 keybase-gui
 
 if [[ $HOSTNAME = "greeley" || $HOSTNAME = "blanc" ]]; then
   # don't blind me
