@@ -49,7 +49,7 @@ nm-applet &
 dropbox &
 NIX_SKIP_KEYBASE_CHECKS=1 keybase-gui
 
-if [[ $HOSTNAME = "greeley" || $HOSTNAME = "blanc" ]]; then
+if [[ $(hostname) = "quitaraju" || $(hostname) = "blanc" ]]; then
   # don't blind me
   xbacklight -set 50
 fi
