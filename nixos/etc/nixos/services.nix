@@ -16,6 +16,9 @@
     mountPoint = "/keybase";
   };
 
+  # CPU frequency
+  powerManagement.cpuFreqGovernor = "powersave";
+
   # auto mounting
   services.gnome3.gvfs.enable = true;
   services.udisks2.enable = true;
