@@ -35,6 +35,13 @@ function SetRustOptions()
   setlocal commentstring=//\ %s
 endfunction
 
+" SML
+autocmd BufNewFile,BufRead *.sml call SetSMLOptions()
+function SetSMLOptions()
+  setlocal filetype=sml
+  setlocal commentstring=(*\ %s\ *)
+endfunction
+
 " typescript
 autocmd BufNewFile,BufRead *.ts call SetTSOptions()
 function SetTSOptions()
