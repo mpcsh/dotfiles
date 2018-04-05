@@ -15,7 +15,7 @@ base:
 	stow $(BASE_MODULES)
 
 bootstrap:
-	stow -d nixos/etc/nixos/profiles -t /mnt $$INSTALL_HOST
+	stow -d nixos/etc/nixos/profiles -t nixos/etc/nixos $$INSTALL_HOST
 	stow -t /mnt $(NIXOS_MODULES)
 
 nixos:
