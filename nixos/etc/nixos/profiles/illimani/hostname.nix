@@ -1,6 +1,10 @@
 { config, pkgs, ...}:
 
 {
+  imports = [
+    ./x.nix
+  ];
+
   networking.hostName = "illimani";
 
   hardware.cpu.intel.updateMicrocode = true;
