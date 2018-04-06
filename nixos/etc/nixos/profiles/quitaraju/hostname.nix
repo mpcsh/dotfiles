@@ -1,10 +1,6 @@
 { config, pkgs, ...}:
 
 {
-  imports = [
-    ./x.nix
-  ];
-
   networking.hostName = "quitaraju";
 
   hardware.cpu.intel.updateMicrocode = true;

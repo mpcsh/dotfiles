@@ -11,6 +11,7 @@
     ./nixpkgs.nix
     ./services.nix
     ./users.nix
+    ./x.nix
 
     # import hostname-specific configuration
     ./hostname.nix
