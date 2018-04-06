@@ -6,6 +6,7 @@
     autojump
     exfat-utils
     fzf
+    gcc
     gist
     git
     gnumake
@@ -24,6 +25,7 @@
     rsync
     stow
     thefuck
+    tldr
     usbutils
     weechat
     wget
