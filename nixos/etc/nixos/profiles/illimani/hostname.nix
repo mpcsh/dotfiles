@@ -14,6 +14,7 @@
     # required for uefi
     device = "nodev";
     efiSupport = true;
+    timeout = null;
 
     # winblows entry
     extraEntries = ''
