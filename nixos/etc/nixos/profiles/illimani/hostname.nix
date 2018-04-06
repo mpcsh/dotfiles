@@ -17,7 +17,7 @@
 
     # winblows entry
     extraEntries = ''
-      menuentry "Winblows 8.1" {
+      menuentry "Winblows 10" {
       insmod part_gpt
       insmod search_fs_uuid
       insmod chain
