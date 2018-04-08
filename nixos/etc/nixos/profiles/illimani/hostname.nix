@@ -6,11 +6,11 @@
   hardware.cpu.intel.updateMicrocode = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  boot.loader.timeout = null;
   boot.loader.grub = {
     # required for uefi
     device = "nodev";
     efiSupport = true;
-    timeout = null;
 
     # winblows entry
     extraEntries = ''
