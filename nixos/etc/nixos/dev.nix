@@ -11,6 +11,7 @@
     git
     gnumake
     gptfdisk
+    hugo
     htop
     neofetch
     neovim
@@ -23,6 +24,7 @@
     ripgrep
     rlwrap
     rsync
+    smlnj
     stow
     thefuck
     tldr
@@ -31,8 +33,5 @@
     wget
     zip
     unzip
-
-    # languages
-    smlnj
   ];
 }
