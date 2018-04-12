@@ -11,7 +11,6 @@
     git
     gnumake
     gptfdisk
-    hugo
     htop
     neofetch
     neovim

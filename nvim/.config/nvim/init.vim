@@ -2,30 +2,31 @@
 call plug#begin()
 
 " colorscheme
-Plug 'morhetz/gruvbox'          " gruvbox
 Plug 'arcticicestudio/nord-vim' " nord
-Plug 'rakr/vim-one'             " one dark
 
-" environment
-Plug 'tpope/vim-sensible'                                       " sensible defaults
-Plug 'vim-scripts/a.vim', {'for': 'c'}                          " switch between .c and .h
-Plug 'tpope/vim-abolish'                                        " crazy text manipulation
-Plug 'ap/vim-buftabline'                                        " buffer bar
-Plug 'tpope/vim-commentary'                                     " better commenting
-Plug 'junegunn/vim-easy-align'                                  " easy alignment
-Plug 'easymotion/vim-easymotion'                                " easymotion!
-Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'} " fzf
-Plug 'junegunn/fzf.vim'                                         " fzf
-Plug 'tpope/vim-fugitive'                                       " git integration
-Plug 'airblade/vim-gitgutter'                                   " git status in gutter
-Plug 'lervag/vimtex'                                            " LaTeX
-Plug 'itchyny/lightline.vim'                                    " lightline
-Plug 'sheerun/vim-polyglot'                                     " language support
-Plug 'tpope/vim-repeat'                                         " make . work for everything
-Plug 'vim-scripts/replacewithregister'                          " replace with register
-Plug 'tpope/vim-surround'                                       " delimiter manipulation
-Plug 'wincent/terminus'                                         " auto read, bracketed paste
-Plug 'vim-scripts/visualrepeat'                                 " make . work for in visual mode
+" sensible defaults
+Plug 'tpope/vim-sensible'              " sensible defaults
+Plug 'tpope/vim-repeat'                " make . work for everything
+Plug 'vim-scripts/replacewithregister' " replace with register
+Plug 'wincent/terminus'                " auto read, bracketed paste
+Plug 'vim-scripts/visualrepeat'        " make . work for in visual mode
+
+" cosmetic enhancements
+Plug 'ap/vim-buftabline'     " buffer bar
+Plug 'mhinz/vim-signify'     " git status in gutter
+Plug 'itchyny/lightline.vim' " lightline
+
+" language support
+Plug 'sheerun/vim-polyglot' " syntax plugins for most languages
+Plug 'lervag/vimtex'        " LaTeX
+
+" new features
+Plug 'jiangmiao/auto-pairs'                                       " auto delimiter pairing
+Plug 'tpope/vim-commentary'                                       " better commenting
+Plug 'junegunn/vim-easy-align'                                    " easy alignment
+Plug 'junegunn/fzf', {'dir' : '~/.fzf', 'do' : './install --all'} " fzf
+Plug 'junegunn/fzf.vim'                                           " fzf
+Plug 'tpope/vim-surround'                                         " delimiter manipulation
 
 " completion
 if has('python3')

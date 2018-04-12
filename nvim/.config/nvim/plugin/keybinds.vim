@@ -63,6 +63,3 @@ nnoremap <silent> <leader>w :silent! call CloseBuffer()<CR>
 
 " EasyAlign
 map <Leader>a <Plug>(EasyAlign)
-
-" EasyMotion
-map <Leader>e <Plug>(easymotion-bd-w)

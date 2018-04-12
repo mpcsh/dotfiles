@@ -17,7 +17,7 @@ set autoread
 set mouse=a
 
 " x clipboard access
-set clipboard=unnamed
+set clipboard+=unnamedplus
 
 " case-insensitive searching - case-sensitive if uppercase letters are used
 set ignorecase
