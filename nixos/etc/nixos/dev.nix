@@ -27,6 +27,7 @@
     stow
     thefuck
     tldr
+    tree
     usbutils
     weechat
     wget
