@@ -32,6 +32,7 @@
     firefox
     gnome3.nautilus
     keybase-gui
+    libreoffice
     maim
     mpv
     ranger
