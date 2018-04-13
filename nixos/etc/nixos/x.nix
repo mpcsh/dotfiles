@@ -52,6 +52,7 @@
       noto-fonts-cjk
       noto-fonts-emoji
       cantarell_fonts
+      corefonts
     ];
     fontconfig = {
       defaultFonts = {
