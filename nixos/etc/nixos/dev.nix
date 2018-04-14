@@ -23,6 +23,8 @@
     ripgrep
     rlwrap
     rsync
+    python2
+    python3
     smlnj
     stow
     thefuck
