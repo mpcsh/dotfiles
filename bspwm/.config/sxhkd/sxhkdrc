@@ -64,7 +64,7 @@ super + grave
   terminator
 
 super + c
-  chromium
+  google-chrome-stable
 
 super + f
   firefox

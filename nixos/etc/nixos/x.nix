@@ -28,9 +28,9 @@
     xorg.xdpyinfo
 
     # apps
-    chromium
     discord
     firefox
+    google-chrome
     gnome3.nautilus
     keybase-gui
     libreoffice
