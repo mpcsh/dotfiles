@@ -84,7 +84,6 @@
     windowManager = {
       bspwm = {
         enable = true;
-        package = pkgs.bspwm-unstable;
       };
       default = "bspwm";
     };
