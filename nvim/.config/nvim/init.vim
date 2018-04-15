@@ -17,13 +17,13 @@ Plug 'itchyny/lightline.vim' " lightline
 Plug 'mhinz/vim-signify'     " git status in gutter
 
 " language support
-Plug 'fatih/vim-go'            " go
-Plug 'godlygeek/tabular'       " markdown
-Plug 'jez/vim-better-sml'      " standard ML
-Plug 'lervag/vimtex'           " LaTeX
-Plug 'LnL7/vim-nix'            " nix
-Plug 'plasticboy/vim-markdown' " markdown
-Plug 'wlangstroth/vim-racket'  " racket
+Plug 'godlygeek/tabular'         " markdown
+Plug 'jez/vim-better-sml'        " standard ML
+Plug 'lervag/vimtex'             " LaTeX
+Plug 'LnL7/vim-nix'              " nix
+Plug 'neovimhaskell/haskell-vim' " haskell
+Plug 'plasticboy/vim-markdown'   " markdown
+Plug 'wlangstroth/vim-racket'    " racket
 
 " new features
 Plug 'junegunn/fzf', {'dir' : '~/.fzf', 'do' : './install --all'} " fzf

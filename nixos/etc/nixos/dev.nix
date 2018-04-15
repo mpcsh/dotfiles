@@ -7,10 +7,10 @@
     exfat-utils
     fzf
     gcc
+    ghc
     gist
     git
     gnumake
-    go
     gptfdisk
     htop
     neofetch
