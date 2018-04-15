@@ -4,7 +4,7 @@ export FZF_DEFAULT_COMMAND="command rg --hidden --smart-case --glob !.git --file
 export FZF_DEFAULT_OPTS="--color=16,fg+:4 --ansi"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_R_OPTS="--reverse"
-export GOPATH="~/.go"
+export GOPATH="$HOME/.go"
 export PAGER="less -FRX"
 export PYENV_ROOT="~/.pyenv"
 export TERM="screen-256color"

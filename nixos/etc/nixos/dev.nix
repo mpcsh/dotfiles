@@ -10,6 +10,7 @@
     gist
     git
     gnumake
+    go
     gptfdisk
     htop
     neofetch
