@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     # utils
     acpi
+    arandr
     arc-theme
     arc-icon-theme
     dmenu2
