@@ -101,6 +101,9 @@
     fade = true;
     fadeSteps = [ "0.03" "0.03" ];
     fadeDelta = 6;
+    activeOpacity = "1.0";
+    inactiveOpacity = "0.85";
+    vSync = "opengl";
   };
 
   services.redshift = {
