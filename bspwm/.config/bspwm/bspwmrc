@@ -31,15 +31,15 @@ bspc config ignore_ewmh_focus true
 # set workspaces
 bspc monitor -d 1 2 3 4 5 6 7 8 9 0
 
-# libreoffice starts floating for some reason
-bspc rule -a *:libreoffice state=tiled
-bspc rule -a Zathura state=tiled
+# libreoffice, zathura start floating for some reason
+bspc rule -a libreoffice state=tiled
+bspc rule -a .zathura-wrapped_ state=tiled
 
 # autostart apps
 polybar main &
 nm-applet &
 dropbox &
-NIX_SKIP_KEYBASE_CHECKS=1 keybase-gui
+NIX_SKIP_KEYBASE_CHECKS=1 keybase-gui &
 
 if [[ $(hostname) = "quitaraju" || $(hostname) = "blanc" ]]; then
   # don't blind me
