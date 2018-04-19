@@ -29,37 +29,17 @@ noremap <silent> <C-l> :nohlsearch<CR>
 " fzf is the new ctrlp
 noremap <C-p> :Files<CR>
 
-" new buffer
-noremap <leader>t :enew<CR>:Files<CR>
+" new tab
+noremap <leader>t :tabnew<CR>:Files<CR>
 
-" next buffer
-noremap <silent> <leader><Tab> :bnext<CR>
+" next tab
+noremap <silent> <leader><Tab> :tabnext<CR>
 
-" previous buffer
-noremap <silent> <leader><S-Tab> :bprevious<CR>
+" previous tab
+noremap <silent> <leader><S-Tab> :tabprevious<CR>
 
-" close current buffer
-function CloseBuffer()
-  " count up buffers
-  let bufferCount = 0
-  for i in range(0, bufnr("$"))
-    if buflisted(i)
-      let bufferCount += 1
-    endif
-  endfor
-
-  " if we're on the last buffer, quit
-  if bufferCount <= 1
-    quit
-
-  " otherwise just write and bdelete
-  else
-    write
-    bdelete
-  endif
-
-endfunction
-nnoremap <silent> <leader>w :silent! call CloseBuffer()<CR>
+" close current tab
+nnoremap <silent> <leader>w :q<CR>
 
 " EasyAlign
 map <Leader>a <Plug>(EasyAlign)

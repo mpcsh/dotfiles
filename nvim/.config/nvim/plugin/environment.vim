@@ -49,3 +49,6 @@ set hidden
 
 " don't keep commenting on enter or o/O
 autocmd BufNewFile,BufRead * setlocal formatoptions-=ro
+
+" always show tab line
+set showtabline=2

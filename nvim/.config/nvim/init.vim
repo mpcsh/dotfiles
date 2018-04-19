@@ -12,9 +12,10 @@ Plug 'vim-scripts/visualrepeat'        " make . work for in visual mode
 Plug 'wincent/terminus'                " auto read, bracketed paste
 
 " cosmetic enhancements
-Plug 'ap/vim-buftabline'     " buffer bar
-Plug 'itchyny/lightline.vim' " lightline
-Plug 'mhinz/vim-signify'     " git status in gutter
+Plug 'itchyny/lightline.vim'  " lightline
+Plug 'junegunn/goyo.vim'      " distraction-free mode
+Plug 'junegunn/limelight.vim' " distraction-free mode
+Plug 'mhinz/vim-signify'      " git status in gutter
 
 " language support
 Plug 'godlygeek/tabular'         " markdown
