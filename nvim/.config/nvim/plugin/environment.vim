@@ -52,3 +52,6 @@ autocmd BufNewFile,BufRead * setlocal formatoptions-=ro
 
 " always show tab line
 set showtabline=2
+
+" don't show mode in command line
+set noshowmode
