@@ -72,7 +72,7 @@
 
     layout = "us";
     xkbOptions = "ctrl_alt_bksp:terminate, caps:escape";
-    autoRepeatDelay = 200;
+    autoRepeatDelay = 250;
 
     displayManager.lightdm = {
       enable = true;
