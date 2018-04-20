@@ -21,6 +21,10 @@ bindsym XF86AudioMute exec pamixer -t
 bindsym XF86AudioLowerVolume exec pamixer -d 5
 bindsym XF86AudioRaiseVolume exec pamixer -i 5
 
+# brightness
+bindsym XF86MonBrightnessUp exec ~/dotfiles/bin/backlightctl up
+bindsym XF86MonBrightnessDown exec ~/dotfiles/bin/backlightctl down
+
 # playerctl bindings
 # bindsym XF86AudioNext exec mpc next
 # bindsym XF86AudioPlay exec mpc toggle
