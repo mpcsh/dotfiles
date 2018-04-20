@@ -7,7 +7,6 @@
     arandr
     arc-theme
     arc-icon-theme
-    dmenu2
     feh
     ffmpeg
     gnome3.dconf
@@ -22,6 +21,7 @@
     pamixer
     pavucontrol
     polybar
+    rofi
     slop
     xrq
     xsel
