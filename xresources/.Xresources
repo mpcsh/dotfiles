@@ -13,3 +13,5 @@ Xft.rgba: rgba
 !bar
 *dpi: 120
 barHeight: 48
+
+#include ".colors/nord"
