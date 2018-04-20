@@ -39,7 +39,7 @@
     mpv
     ranger
     slack
-    spotify
+    spotify-new
     terminator
     texlive.combined.scheme-full
     zathura
