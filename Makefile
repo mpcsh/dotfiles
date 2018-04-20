@@ -4,7 +4,7 @@
 BASE_MODULES = colors git oh-my-zsh nvim ssh zsh
 NIXOS_MODULES = nixos
 NIXPKGS_MODULES = nixpkgs
-XORG_MODULES = bspwm firefox gtk terminator xresources
+XORG_MODULES = bspwm firefox gtk rofi terminator xresources
 
 default: sync base nixos nixpkgs xorg
 
