@@ -6,6 +6,7 @@
     autojump
     exfat-utils
     fzf
+    hugo
     gcc
     ghc
     gist
