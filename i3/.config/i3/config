@@ -25,10 +25,13 @@ bindsym XF86AudioRaiseVolume exec pamixer -i 5
 bindsym XF86MonBrightnessUp exec ~/dotfiles/bin/backlightctl up
 bindsym XF86MonBrightnessDown exec ~/dotfiles/bin/backlightctl down
 
-# playerctl bindings
-# bindsym XF86AudioNext exec mpc next
-# bindsym XF86AudioPlay exec mpc toggle
-# bindsym XF86AudioPrev exec mpc prev
+bindsym $mod+Up exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+
+# next song
+bindsym $mod+Right exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+
+# prev song
+bindsym $mod+Left exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
 
 # start a terminal without tmux (to attach to some other session)
 bindsym $mod+grave exec terminator
