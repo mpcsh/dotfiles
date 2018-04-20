@@ -21,5 +21,3 @@
   autoCorrect = -1
 [protocol "keybase"]
 	allow = always
-[core]
-	pager = less -FR
