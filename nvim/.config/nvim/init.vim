@@ -27,6 +27,7 @@ Plug 'plasticboy/vim-markdown'   " markdown
 Plug 'wlangstroth/vim-racket'    " racket
 
 " new features
+Plug 'easymotion/vim-easymotion'                                  " futuristic jumping
 Plug 'junegunn/fzf', {'dir' : '~/.fzf', 'do' : './install --all'} " fzf
 Plug 'junegunn/fzf.vim'                                           " fzf
 Plug 'junegunn/vim-easy-align'                                    " easy alignment
