@@ -9,13 +9,6 @@ function SetCOptions()
   setlocal shiftwidth=4
 endfunction
 
-" java
-autocmd BufNewFile,BufRead *.java call SetJavaOptions()
-function SetJavaOptions()
-  setlocal tabstop=4
-  setlocal shiftwidth=4
-endfunction
-
 " latex - fix "plaintex" filetype detection shit
 autocmd BufNewFile,BufRead *.tex call SetLatexOptions()
 function SetLatexOptions()
@@ -41,12 +34,6 @@ function SetSMLOptions()
   setlocal filetype=sml
   setlocal commentstring=(*\ %s\ *)
   setlocal textwidth&
-endfunction
-
-" typescript
-autocmd BufNewFile,BufRead *.ts call SetTSOptions()
-function SetTSOptions()
-  setlocal filetype=typescript
 endfunction
 
 " yaml

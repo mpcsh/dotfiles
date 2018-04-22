@@ -28,18 +28,11 @@ Plug 'plasticboy/vim-markdown'   " markdown
 Plug 'wlangstroth/vim-racket'    " racket
 
 " new features
-Plug 'easymotion/vim-easymotion'                                  " futuristic jumping
 Plug 'junegunn/fzf', {'dir' : '~/.fzf', 'do' : './install --all'} " fzf
 Plug 'junegunn/fzf.vim'                                           " fzf
 Plug 'junegunn/vim-easy-align'                                    " easy alignment
 Plug 'tpope/vim-commentary'                                       " better commenting
 Plug 'tpope/vim-surround'                                         " delimiter manipulation
-
-" completion
-if has('python3')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'Shougo/neco-syntax'
-endif
 
 call plug#end()
 

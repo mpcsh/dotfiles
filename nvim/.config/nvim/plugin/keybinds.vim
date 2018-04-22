@@ -43,6 +43,3 @@ nnoremap <silent> <leader>w :q<CR>
 
 " EasyAlign
 map <Leader>a <Plug>(EasyAlign)
-
-" EasyMotion
-map <Leader>e <Plug>(easymotion-bd-w)

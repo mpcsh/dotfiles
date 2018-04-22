@@ -44,9 +44,6 @@ if !isdirectory(expand(&undodir))
   call mkdir(expand(&undodir), 'p')
 endif
 
-" allow switching between buffers without writing
-set hidden
-
 " don't keep commenting on enter or o/O
 autocmd BufNewFile,BufRead * setlocal formatoptions-=ro
 

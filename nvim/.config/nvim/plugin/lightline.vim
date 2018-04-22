@@ -1,9 +1,6 @@
 let g:lightline = {
-  \ 'component': {
-  \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
-  \ },
   \ 'active': {
-  \   'left':  [ ['filename'], ['modified', 'readonly'], ['fugitive'] ],
+  \   'left':  [ ['filename'], ['modified', 'readonly'] ],
   \   'right': [ ['lineinfo'], ['filetype'] ]
   \ },
   \ 'separator': { 'left': '', 'right': '' },
