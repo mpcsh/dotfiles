@@ -1,8 +1,4 @@
-!font
-*font: xft:M+1mn:size=12
-*iconFont: xft:FontAwesome:size=12
-
-!font rendering
+! font rendering
 Xft.antialias: true
 Xft.autohint: false
 Xft.hinting: true
@@ -10,8 +6,5 @@ Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 Xft.rgba: rgba
 
-!bar
+! hidpi
 *dpi: 120
-barHeight: 48
-
-#include ".colors/nord"
