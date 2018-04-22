@@ -5,6 +5,7 @@ call plug#begin()
 Plug 'arcticicestudio/nord-vim' " nord
 
 " sensible defaults
+Plug 'pbrisbin/vim-mkdir'              " make any nonexistent dirs before writing
 Plug 'tpope/vim-repeat'                " make . work for everything
 Plug 'tpope/vim-sensible'              " sensible defaults
 Plug 'vim-scripts/replacewithregister' " replace with register
