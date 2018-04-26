@@ -40,7 +40,7 @@
     ranger
     slack
     spotify-new
-    terminator
+    termite
     texlive.combined.scheme-full
     zathura
   ];

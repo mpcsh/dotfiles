@@ -1,0 +1,42 @@
+[options]
+allow_bold          = true
+audible_bell        = false
+browser             = xdg-open
+clickable_url       = true
+cursor_blink        = off
+cursor_shape        = block
+font                = Monospace 12
+fullscreen          = false
+mouse_autohide      = true
+scrollback_lines    = 65535
+scroll_on_keystroke = true
+scroll_on_output    = false
+search_wrap         = true
+
+# nord
+[colors]
+foreground = #D8DEE9
+background = #2E3440
+foreground_bold = #D8DEE9
+cursor = #D8DEE9
+cursor_foreground = #2E3440
+highlight = #4C566A
+
+color0  = #3B4252
+color1  = #BF616A
+color2  = #A3BE8C
+color3  = #EBCB8B
+color4  = #81A1C1
+color5  = #B48EAD
+color6  = #88C0D0
+color7  = #E5E9F0
+color8  = #4C566A
+color9  = #BF616A
+color10 = #A3BE8C
+color11 = #EBCB8B
+color12 = #81A1C1
+color13 = #B48EAD
+color14 = #8FBCBB
+color15 = #ECEFF4
+
+# vim: ft=dosini cms=#%s

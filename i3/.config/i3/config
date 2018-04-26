@@ -37,7 +37,7 @@ bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer
 bindsym $mod+Left exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
 
 # start a terminal without tmux (to attach to some other session)
-bindsym $mod+grave exec terminator
+bindsym $mod+grave exec termite
 
 # kill focused window
 bindsym $mod+q kill
