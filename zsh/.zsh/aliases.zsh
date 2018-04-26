@@ -34,7 +34,7 @@ alias rsync="rsync -aAXvzHE --progress -h"
 alias racket="racket -I typed/racket"
 
 # make SML REPL understand up-arrow
-alias sml="rlwrap sml"
+alias sml="rlwrap sml -Cprint.depth=1000"
 
 # mkdir and cd into it
 function mkcd() {
