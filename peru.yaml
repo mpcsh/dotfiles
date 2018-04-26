@@ -8,9 +8,11 @@ imports:
 # zsh
 git module oh-my-zsh:
   url: https://github.com/robbyrussell/oh-my-zsh
+  rev: 9cd3701ac0297f4bdf9673ea0dffa8ffdaea63e8
 
 git module zsh-syntax-highlighting:
   url: https://github.com/zsh-users/zsh-syntax-highlighting
+  rev: 02a37dd919dc48e0821186e5f20e78bd0215f86a
 
 # vim
 git module vim-plug:
