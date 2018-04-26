@@ -36,7 +36,7 @@ bspc rule -a libreoffice state=tiled
 bspc rule -a .zathura-wrapped_ state=tiled
 
 # autostart apps
-~/dotfiles/bin/launch_polybar
+polybar main &
 nm-applet &
 dropbox &
 NIX_SKIP_KEYBASE_CHECKS=1 keybase-gui &

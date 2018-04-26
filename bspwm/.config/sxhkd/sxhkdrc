@@ -61,7 +61,7 @@ super + shift + {Escape,Caps_Lock}
   ~/dotfiles/bin/lock_suspend
 
 super + grave
-  termite
+  terminator
 
 super + c
   google-chrome-stable
@@ -76,7 +76,7 @@ super + shift + Print
   ~/dotfiles/bin/screenshot select
 
 super + r
-  termite -e ranger
+  terminator -e ranger
 
 super + n
   nautilus
@@ -89,7 +89,7 @@ super + s
   ~/dotfiles/bin/hidpi spotify
 
 super + w
-  termite -e weechat
+  terminator -e weechat
 
 ##################################################
 # languages
