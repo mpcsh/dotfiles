@@ -7,8 +7,6 @@
     exfat-utils
     fzf
     hugo
-    gcc
-    ghc
     gist
     git
     gnumake
@@ -25,17 +23,24 @@
     ripgrep
     rlwrap
     rsync
-    python2
-    python3
-    smlnj
     stow
     thefuck
     tldr
+    tmux
     tree
     usbutils
     weechat
     wget
     zip
     unzip
+
+    # languages
+    gcc
+    ghc
+    python2
+    python3
+    rustup
+    smlnj
+    texlive.combined.scheme-full
   ];
 }

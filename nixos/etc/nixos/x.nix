@@ -16,7 +16,6 @@
     kbfs
     keybase
     libnotify
-    maim
     notify-osd
     pamixer
     pavucontrol
@@ -41,7 +40,6 @@
     slack
     spotify-new
     termite
-    texlive.combined.scheme-full
     zathura
   ];
 
