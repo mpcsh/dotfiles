@@ -1,7 +1,7 @@
 .PHONY: default sync base nixos nixpkgs xorg
 
 # Modules
-BASE_MODULES = colors fish git nvim ssh
+BASE_MODULES = colors git oh-my-zsh nvim ssh zsh
 XORG_MODULES = bspwm firefox gtk termite xresources
 
 default: sync base xorg
