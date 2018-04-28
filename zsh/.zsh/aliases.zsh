@@ -36,6 +36,9 @@ alias racket="racket -I typed/racket"
 # make SML REPL understand up-arrow
 alias sml="rlwrap sml -Cprint.depth=1000"
 
+# don't ask to edit PKGBUILDs, import PGP keys, etc
+alias yay="yay --noconfirm"
+
 # mkdir and cd into it
 function mkcd() {
   mkdir -p $argv
