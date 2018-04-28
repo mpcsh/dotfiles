@@ -11,6 +11,9 @@ xset -b &
 # disable auto screensaver
 xset s off -dpms &
 
+# default cursor
+xsetroot -cursor_name left_ptr
+
 # autostart apps
 nm-applet &
 dropbox &
