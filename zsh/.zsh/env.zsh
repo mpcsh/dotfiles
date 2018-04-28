@@ -29,7 +29,7 @@ if test -e $_go_path; then
 fi
 
 # scripts
-_dotfiles_bin="~/dotfiles/bin"
+_dotfiles_bin="$HOME/dotfiles/bin"
 if test -e $_dotfiles_bin; then
   export PATH="$PATH:$_dotfiles_bin"
 fi
