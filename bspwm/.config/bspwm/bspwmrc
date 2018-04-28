@@ -35,11 +35,17 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 0
 bspc rule -a libreoffice state=tiled
 bspc rule -a .zathura-wrapped_ state=tiled
 
+# configure keyboard
+xset r rate 250
+setxkbmap -option caps:escape
+
 # autostart apps
 polybar main &
 nm-applet &
 dropbox &
-NIX_SKIP_KEYBASE_CHECKS=1 keybase-gui &
+run_keybase &
+redshift -t 5500:3000 &
+compton -i 0.75 &
 
 if [[ $(hostname) = "quitaraju" || $(hostname) = "blanc" ]]; then
   # don't blind me

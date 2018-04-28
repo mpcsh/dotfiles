@@ -81,9 +81,9 @@ super + r
 super + n
   nautilus
 
-# rofi
+# dmenu
 super + space
-  rofi -show drun
+  ~/dotfiles/bin/menu bottom
 
 super + s
   ~/dotfiles/bin/hidpi spotify
