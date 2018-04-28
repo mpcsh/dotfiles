@@ -23,26 +23,28 @@ setopt rm_star_silent # don't warn before doing something like rm Downloads/*
 umask 077
 
 # go
-go_path="$GOPATH/bin"
-if test -e $go_path; then
-  export PATH="$PATH:$go_path"
+_go_path="$GOPATH/bin"
+if test -e $_go_path; then
+  export PATH="$PATH:$_go_path"
 fi
 
 # scripts
-dotfiles_bin="~/dotfiles/bin"
-if test -e $dotfiles_bin; then
-  export PATH="$PATH:$dotfiles_bin"
+_dotfiles_bin="~/dotfiles/bin"
+if test -e $_dotfiles_bin; then
+  export PATH="$PATH:$_dotfiles_bin"
 fi
 
 # fzf
-if type fzf-share > /dev/null; then
-  source $(fzf-share)/completion.zsh
-  source $(fzf-share)/key-bindings.zsh
+_fzf_path="/usr/share/fzf"
+if test -e $_fzf_path; then
+  source $_fzf_path/completion.zsh
+  source $_fzf_path/key-bindings.zsh
 fi
 
 # autojump
-if type autojump-share > /dev/null; then
-  source $(autojump-share)/autojump.zsh
+_z_path="/usr/lib/z.sh"
+if test -e $_z_path; then
+  source $_z_path
 fi
 
 # colorized manpages
