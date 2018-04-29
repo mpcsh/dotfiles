@@ -2,12 +2,11 @@
 call plug#begin()
 
 " colorscheme
-Plug 'arcticicestudio/nord-vim'
+Plug 'morhetz/gruvbox'
 
 " sensible defaults
 Plug 'pbrisbin/vim-mkdir'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-sensible'
 Plug 'vim-scripts/replacewithregister'
 Plug 'vim-scripts/visualrepeat'
 
@@ -66,14 +65,11 @@ function SetYamlOptions()
   setlocal indentkeys-=<:>
 endfunction
 
-" brighten nord comments
-let g:nord_comment_brightness=8
-
 " colorscheme
 set termguicolors
 syntax enable
 set background=dark
-colorscheme nord
+colorscheme gruvbox
 
 " remove tildes for blank lines
 hi EndOfBuffer guifg=bg
@@ -82,11 +78,15 @@ hi EndOfBuffer guifg=bg
 hi LinkDelimiter gui=bold guibg=none guifg=none
 hi MatchParen gui=bold guibg=none guifg=none
 
+" italic comments
+hi Comment gui=italic
+
 " visual selection
 hi Visual gui=none guibg=fg guifg=bg
 
 " search highlighting
 set hlsearch
+
 " disable the bell
 set vb t_vb=
 
@@ -138,6 +138,7 @@ endif
 
 " don't keep commenting on enter or o/O
 autocmd BufNewFile,BufRead * setlocal formatoptions-=ro
+
 " 2-space width tabs
 set tabstop=2
 set shiftwidth=2
@@ -153,6 +154,8 @@ noremap <silent> k gk
 " make H, J jump to the extreme of their lowercase counterparts
 noremap <silent> H ^
 noremap <silent> L $
+noremap <silent> J <Nop>
+noremap <silent> K <Nop>
 
 " disable "ex mode"
 nnoremap <silent> Q <Nop>
@@ -167,6 +170,8 @@ nnoremap <silent> <S-Tab> <<
 
 " nohlsearch
 noremap <silent> <C-l> :nohlsearch<CR>
+
+" vimtex
 let g:vimtex_compiler_latexmk = {
   \ 'background' : 1,
   \ 'build_dir' : 'build',
