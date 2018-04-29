@@ -14,51 +14,27 @@ foreground = ${xrdb:foreground}
 foreground-alt = ${xrdb:color8}
 alert = ${xrdb:color1}
 
-[bar/base]
+[bar/main]
+background = ${colors.background}
+foreground = ${colors.foreground}
+
 bottom = true
 dpi = ${xrdb:Xft.dpi}
 
-width = 96
+wm-restack = bspwm
+
+width = 100%
 height = ${xrdb:barHeight}
 
-background = ${colors.foreground}
-foreground = ${colors.background}
+padding-left = 0
+padding-right = 1
+
+line-size = 3
 
 ; font configuration
 font-0 = "M+ 1mn:size=12;3"
 font-1 = "Font Awesome:size=12;3"
 font-2 = "Material Icons:size=12;5"
-
-; don't let the bar be drawn over other windows
-; wm-restack = bspwm
-
-
-[bar/volume]
-inherit = bar/base
-modules-center = volume
-
-[bar/brightness]
-inherit = bar/base
-modules-center = xbacklight
-
-
-[bar/main]
-background = ${colors.background}
-foreground = ${colors.foreground}
-inherit = bar/base
-bottom = true
-dpi = ${xrdb:Xft.dpi}
-
-width = 100%
-
-padding-left = 0
-padding-right = 1
-
-module-margin-left = 1
-module-margin-right = 1
-
-; underline size
-line-size = 3
 
 ; modules list
 modules-left = bspwm
@@ -69,6 +45,8 @@ modules-right = xbacklight volume battery powermenu
 tray-position = right
 tray-padding = 0
 tray-maxsize = 36
+module-margin-left = 1
+module-margin-right = 1
 
 [module/bspwm]
 type = internal/bspwm
