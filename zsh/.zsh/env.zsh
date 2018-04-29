@@ -1,16 +1,16 @@
 # environment variables
-export DISABLE_AUTO_TITLE="true" # https://github.com/robbyrussell/oh-my-zsh/issues/1338
 export EDITOR="nvim"
-export FZF_CTRL_R_OPTS="--reverse"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_COMMAND="command rg --hidden --smart-case --glob !.git --files-with-matches ."
 export FZF_DEFAULT_OPTS="--color=16,fg+:4 --ansi"
-export GIT_ASKPASS=""
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_CTRL_R_OPTS="--reverse"
 export GOPATH="$HOME/.go"
 export PAGER="less -FR"
 export PYENV_ROOT="~/.pyenv"
+export TERM="screen-256color"
+export DISABLE_AUTO_TITLE="true" # https://github.com/robbyrussell/oh-my-zsh/issues/1338
 export SSH_ASKPASS="" # https://gist.github.com/joseluisq/d0e66c5f718250c90075
-export TERM="xterm-256color"
+export GIT_ASKPASS=""
 
 # zsh configuration
 ENABLE_CORRECTION="true" # enable command autocorrection
