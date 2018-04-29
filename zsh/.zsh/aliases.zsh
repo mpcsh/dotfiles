@@ -10,8 +10,8 @@ fi
 alias sudo="sudo -sE "
 
 # better ls
-alias ls="ls -lhF --color=auto"
-alias la="ls -lhFA --color=auto"
+alias ls="ls -hF --color=auto"
+alias la="ls -hFA --color=auto"
 
 # symlink by default
 alias ln="ln -s"
