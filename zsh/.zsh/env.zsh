@@ -12,12 +12,16 @@ export DISABLE_AUTO_TITLE="true" # https://github.com/robbyrussell/oh-my-zsh/iss
 export SSH_ASKPASS="" # https://gist.github.com/joseluisq/d0e66c5f718250c90075
 export GIT_ASKPASS=""
 
-# zsh configuration
-ENABLE_CORRECTION="true" # enable command autocorrection
-unsetopt AUTO_CD # don't cd with just a dirname
-setopt notify # immediate job notifications
-setopt nomatch # if I do rm Downloads/* and there's nothing in Downloads, don't print a "no matches found" message
-setopt rm_star_silent # don't warn before doing something like rm Downloads/*
+# don't cd with just a dirname
+unsetopt AUTO_CD
+# immediate job notifications
+setopt notify
+# if I do rm Downloads/* and there's nothing in Downloads, don't print a "no matches found" message
+setopt nomatch
+# don't warn before doing something like rm Downloads/*
+setopt rm_star_silent
+# don't autocorrect
+unsetopt correct_all
 
 # permissions
 umask 077
