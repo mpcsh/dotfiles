@@ -77,7 +77,7 @@ function _prompt_left() {
   if [ $exit_code -ne 0 ]; then
     _prompt_color red
   fi
-  _prompt_add "$ "
+  _prompt_add "» "
   _prompt_reset
 }
 
