@@ -4,7 +4,6 @@ function SetCOptions()
   setlocal filetype=c
   setlocal colorcolumn=81
   setlocal textwidth=80
-  setlocal commentstring=//\ %s " prefer // over /*...*/ for single-line comments
   setlocal tabstop=4
   setlocal shiftwidth=4
 endfunction
@@ -25,14 +24,12 @@ endfunction
 autocmd BufNewFile,BufRead *.rs call SetRustOptions()
 function SetRustOptions()
   setlocal filetype=rust
-  setlocal commentstring=//\ %s
 endfunction
 
 " SML
 autocmd BufNewFile,BufRead *.sml call SetSMLOptions()
 function SetSMLOptions()
   setlocal filetype=sml
-  setlocal commentstring=(*\ %s\ *)
   setlocal textwidth&
 endfunction
 

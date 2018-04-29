@@ -1,14 +1,11 @@
-" brighten comments
-let g:nord_comment_brightness = 7
-
 " colorscheme
 set termguicolors
 syntax enable
 set background=dark
 colorscheme nord
 
-" italic comments
-hi Comment gui=italic
+" remove tildes for blank lines
+hi EndOfBuffer guifg=bg
 
 " closure highlighting
 hi LinkDelimiter gui=bold guibg=none guifg=none

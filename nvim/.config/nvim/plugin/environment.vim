@@ -4,14 +4,17 @@ set vb t_vb=
 " enable line numbering
 set number
 
-" disable startup message
+" no startup message
 set shortmess+=I
 
-" statusline
-set laststatus=2
+" no statusline
+set laststatus=0
 
-" auto reload changed files
-set autoread
+" no ruler
+set noruler
+
+" no mode
+set noshowmode
 
 " mouse compatibility
 set mouse=a
@@ -43,9 +46,6 @@ set undoreload=500
 if !isdirectory(expand(&undodir))
   call mkdir(expand(&undodir), 'p')
 endif
-
-" allow switching between buffers without writing
-set hidden
 
 " don't keep commenting on enter or o/O
 autocmd BufNewFile,BufRead * setlocal formatoptions-=ro

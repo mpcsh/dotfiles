@@ -2,6 +2,3 @@
 set tabstop=2
 set shiftwidth=2
 set expandtab
-
-" whitespace highlighting
-set list listchars=trail:·
