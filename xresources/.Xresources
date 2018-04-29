@@ -6,8 +6,8 @@ Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 Xft.rgba: rgba
 
-! for polybar, dmenu
-font: xft:M+ 1mn:size=13
+! dmenu
+font: xft:M+ 1mn:size=12
 barHeight: 48
 
 ! hidpi
