@@ -8,7 +8,7 @@ DISABLE_AUTO_UPDATE="true"
 DISABLE_LS_COLORS="true"
 
 # load plugins
-plugins=(git-prompt zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git-prompt zsh-syntax-highlighting)
 
 # load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
