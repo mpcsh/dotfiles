@@ -11,10 +11,13 @@ Plug 'vim-scripts/replacewithregister'
 Plug 'vim-scripts/visualrepeat'
 
 " cosmetic enhancements
-Plug 'junegunn/goyo.vim'      " distraction-free mode
+Plug 'junegunn/goyo.vim' " distraction-free mode
 
 " language support
-Plug 'lervag/vimtex'             " LaTeX
+Plug 'lervag/vimtex'
+
+" new features
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
@@ -57,6 +60,7 @@ autocmd BufNewFile,BufRead *.sml call SetSMLOptions()
 function SetSMLOptions()
   setlocal filetype=sml
   setlocal textwidth&
+  setlocal comment commentstring=(*\ %s\ *)
 endfunction
 
 " yaml
