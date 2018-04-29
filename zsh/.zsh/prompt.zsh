@@ -4,10 +4,9 @@
 setopt PROMPT_SUBST
 
 PROMPT='$(_prompt_left)'
-RPROMPT='$(_prompt_right)'
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%F{magenta}("
-ZSH_THEME_GIT_PROMPT_SUFFIX="%F{magenta})"
+ZSH_THEME_GIT_PROMPT_PREFIX="on %F{magenta}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%f"
 ZSH_THEME_GIT_PROMPT_SEPARATOR=""
 ZSH_THEME_GIT_PROMPT_BRANCH="%F{magenta}"
 ZSH_THEME_GIT_PROMPT_STAGED=" %F{magenta}Δ"
@@ -73,16 +72,13 @@ function _prompt_left() {
   _prompt_add "%~ "
   _prompt_reset
 
+  # print git status
+  _prompt_add "$(git_super_status)"
+
   # prompt char - red if previous command failed
   if [ $exit_code -ne 0 ]; then
     _prompt_color red
   fi
-  _prompt_add "$ "
-  _prompt_reset
-}
-
-_prompt_right() {
-  _prompt_color magenta
-  _prompt_add "$(git_super_status)"
+  _prompt_add "\n$ "
   _prompt_reset
 }
