@@ -43,6 +43,8 @@ modules-center = xbacklight
 
 
 [bar/main]
+background = ${colors.background}
+foreground = ${colors.foreground}
 inherit = bar/base
 bottom = true
 dpi = ${xrdb:Xft.dpi}
