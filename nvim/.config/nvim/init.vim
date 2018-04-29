@@ -6,6 +6,7 @@ Plug 'morhetz/gruvbox'
 
 " sensible defaults
 Plug 'pbrisbin/vim-mkdir'
+Plug 'thirtythreeforty/lessspace.vim' " strip trailing whitespace only on lines I write
 Plug 'tpope/vim-repeat'
 Plug 'vim-scripts/replacewithregister'
 Plug 'vim-scripts/visualrepeat'
