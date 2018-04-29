@@ -3,7 +3,6 @@ imports:
   zsh-syntax-highlighting: oh-my-zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
 
   vim-plug: nvim/.config/nvim/autoload/
-  xresources-nord: colors/.colors
 
 # zsh
 git module oh-my-zsh:
@@ -19,10 +18,3 @@ git module vim-plug:
   url: https://github.com/junegunn/vim-plug
   pick: plug.vim
   rev: e6a775e0df3180d3cfea55b351aa7b112c58c139
-
-# xresources
-git module xresources-nord:
-  url: https://github.com/arcticicestudio/nord-xresources
-  pick: src/nord
-  export: src/
-  rev: c4b8a29871ece1b3a9d9ef792880decdddacd837

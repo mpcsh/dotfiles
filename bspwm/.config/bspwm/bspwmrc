@@ -2,7 +2,6 @@
 
 # themes!
 xrdb ~/.Xresources
-xrdb -merge ~/.colors/nord
 feh --no-fehbg --bg-fill ~/.wallpaper &
 
 # don't use that stupid cross pointer
