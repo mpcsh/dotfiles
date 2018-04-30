@@ -1,7 +1,7 @@
-.PHONY: default sync base nixos nixpkgs xorg
+.PHONY: default sync base arch xorg
 
 # Modules
-ARCH_MODULES = pacman
+ARCH_MODULES = arch
 BASE_MODULES = git oh-my-zsh nvim ssh zsh
 XORG_MODULES = bspwm firefox gtk termite xresources
 
