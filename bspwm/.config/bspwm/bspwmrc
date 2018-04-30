@@ -44,7 +44,7 @@ nm-applet &
 dropbox &
 run_keybase &
 redshift -t 5500:3000 &
-compton -i 0.75 &
+compton -I 0.01 -O 0.01 -D 3 -i 0.75 &
 
 if [[ $(hostname) = "quitaraju" || $(hostname) = "blanc" ]]; then
   # don't blind me
