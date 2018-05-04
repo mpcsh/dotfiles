@@ -26,6 +26,15 @@ unsetopt correct_all
 # permissions
 umask 077
 
+# colorized manpages
+export LESS_TERMCAP_mb=$(printf "\033[01;31m")
+export LESS_TERMCAP_md=$(printf "\033[01;31m")
+export LESS_TERMCAP_me=$(printf "\033[0m")
+export LESS_TERMCAP_se=$(printf "\033[0m")
+export LESS_TERMCAP_so=$(printf "\033[01;44;33m")
+export LESS_TERMCAP_ue=$(printf "\033[0m")
+export LESS_TERMCAP_us=$(printf "\033[01;32m")
+
 # go
 _go_path="$GOPATH/bin"
 if test -e $_go_path; then
@@ -50,12 +59,3 @@ _z_path="/usr/lib/z.sh"
 if test -e $_z_path; then
   source $_z_path
 fi
-
-# colorized manpages
-export LESS_TERMCAP_mb=$(printf "\033[01;31m")
-export LESS_TERMCAP_md=$(printf "\033[01;31m")
-export LESS_TERMCAP_me=$(printf "\033[0m")
-export LESS_TERMCAP_se=$(printf "\033[0m")
-export LESS_TERMCAP_so=$(printf "\033[01;44;33m")
-export LESS_TERMCAP_ue=$(printf "\033[0m")
-export LESS_TERMCAP_us=$(printf "\033[01;32m")
