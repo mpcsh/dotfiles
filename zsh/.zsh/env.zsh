@@ -35,6 +35,10 @@ export LESS_TERMCAP_so=$(printf "\033[01;44;33m")
 export LESS_TERMCAP_ue=$(printf "\033[0m")
 export LESS_TERMCAP_us=$(printf "\033[01;32m")
 
+# automatically source completions for newly installed packages
+# https://wiki.archlinux.org/index.php/zsh#Persistent_rehash
+zstyle ':completion:*' rehash true
+
 # go
 _go_path="$GOPATH/bin"
 if test -e $_go_path; then
