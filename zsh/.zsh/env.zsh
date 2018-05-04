@@ -59,3 +59,9 @@ _z_path="/usr/lib/z.sh"
 if test -e $_z_path; then
   source $_z_path
 fi
+
+# comamnd-not-found
+_pkgfile_path="/usr/share/doc/pkgfile"
+if test -e $_pkgfile_path; then
+  source $_pkgfile_path/command-not-found.zsh
+fi
