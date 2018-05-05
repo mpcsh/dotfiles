@@ -1,0 +1,25 @@
+#! /usr/bin/env bash
+
+# themes!
+xrdb ~/.Xresources
+xrdb -merge ~/.colors/nord
+feh --no-fehbg --bg-fill ~/.wallpaper &
+
+# no bell
+xset -b &
+
+# disable auto screensaver
+xset s off -dpms &
+
+# default cursor
+xsetroot -cursor_name left_ptr
+
+# autostart apps
+nm-applet &
+dropbox &
+NIX_SKIP_KEYBASE_CHECKS=1 keybase-gui
+
+if [[ $(hostname) = "quitaraju" || $(hostname) = "blanc" ]]; then
+  # don't blind me
+  xbacklight -set 50
+fi
