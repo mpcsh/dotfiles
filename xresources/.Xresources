@@ -13,6 +13,9 @@ barHeight: 48
 ! hidpi
 *dpi: 120
 
+! cursor size
+Xcursor.size: 18
+
 ! gruvbox
 ! hard contrast: *background: #1d2021
 *background: #282828
