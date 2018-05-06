@@ -39,6 +39,9 @@ alias sml="rlwrap sml -Cprint.depth=1000"
 # don't ask to edit PKGBUILDs, import PGP keys, etc
 alias yay="yay --noconfirm"
 
+# xclip into clipboard by default
+alias xclip="xclip -selection clipboard"
+
 # mkdir and cd into it
 function mkcd() {
   mkdir -p $argv

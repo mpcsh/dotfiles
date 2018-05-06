@@ -19,6 +19,7 @@ Plug 'baskerville/vim-sxhkdrc'
 Plug 'lervag/vimtex'
 
 " new features
+Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-commentary'
 
 call plug#end()
@@ -62,7 +63,7 @@ autocmd BufNewFile,BufRead *.sml call SetSMLOptions()
 function SetSMLOptions()
   setlocal filetype=sml
   setlocal textwidth&
-  setlocal comment commentstring=(*\ %s\ *)
+  setlocal commentstring=(*\ %s\ *)
 endfunction
 
 " yaml
@@ -76,6 +77,15 @@ set termguicolors
 syntax enable
 set background=dark
 colorscheme gruvbox
+
+" sign column
+hi clear SignColumn
+hi GruvboxAquaSign guibg=bg
+hi GruvboxBlueSign guibg=bg
+hi GruvboxGreenSign guibg=bg
+hi GruvboxPurpleSign guibg=bg
+hi GruvboxRedSign guibg=bg
+hi GruvboxYellowSign guibg=bg
 
 " remove tildes for blank lines
 hi EndOfBuffer guifg=bg
