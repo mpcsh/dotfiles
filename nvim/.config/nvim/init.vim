@@ -10,6 +10,7 @@ Plug 'thirtythreeforty/lessspace.vim' " strip trailing whitespace only on lines 
 Plug 'tpope/vim-repeat'
 Plug 'vim-scripts/replacewithregister'
 Plug 'vim-scripts/visualrepeat'
+Plug 'wincent/terminus'
 
 " cosmetic enhancements
 Plug 'junegunn/goyo.vim' " distraction-free mode
@@ -205,3 +206,6 @@ let g:vimtex_compiler_latexmk = {
 
 let g:vimtex_view_general_viewer = 'zathura'
 let g:vimtex_compiler_progname = 'nvr'
+
+" signify
+let g:signify_update_on_focusgained = 1
