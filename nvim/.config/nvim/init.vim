@@ -160,6 +160,10 @@ autocmd BufNewFile,BufRead * setlocal formatoptions-=ro
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+" display whitespace
+set list
+
 " set leader key
 let mapleader=","
 let maplocalleader=","
