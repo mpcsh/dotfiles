@@ -25,6 +25,9 @@ bindsym $mod+f exec firefox
 bindsym $mod+grave exec termite
 bindsym $mod+space exec ~/dotfiles/bin/menu bottom
 
+# bar
+bindsym $mod+b exec $HOME/dotfiles/bin/toggle_polybar
+
 # lockscreen
 bindsym $mod+Escape exec $HOME/dotfiles/bin/lock
 bindsym $mod+Shift+Escape exec $HOME/dotfiles/bin/lock_suspend
