@@ -15,8 +15,8 @@ super + {h,j,k,l}
   bspc node -f {west,south,north,east}
 
 # preselect given direction
-super + alt + {h,j,k,l}
-  bspc node -p \~{west,south,north,east}
+super + {backslash,minus}
+  bspc node -p \~{east,south}
 
 # swap focused node with node in given direction
 super + shift + {h,j,k,l}
