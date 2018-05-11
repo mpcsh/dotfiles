@@ -118,13 +118,13 @@ XF86AudioMute
   pamixer -t
 
 # play/pause
-XF86AudioPlay
+{XF86AudioPlay, super + Up}
   dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 
 # next song
-XF86AudioNext
+{XF86AudioNext, super + Right}
   dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 
 # prev song
-XF86AudioPrev
+{XF86AudioPrev, super + Left}
   dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
