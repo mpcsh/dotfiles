@@ -80,6 +80,9 @@ super + space
 super + s
   ~/dotfiles/bin/hidpi spotify
 
+super + b
+  ~/dotfiles/bin/toggle_polybar
+
 ##################################################
 # languages
 ##################################################
