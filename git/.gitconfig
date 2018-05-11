@@ -20,4 +20,4 @@
 [help]
   autoCorrect = -1
 [protocol "keybase"]
-	allow = always
+  allow = always
