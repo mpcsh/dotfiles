@@ -3,7 +3,7 @@
 TMP_BG=/tmp/screen.png
 ICON=~/dotfiles/bin/rmlock.png
 
-maim $TMP_BG
+scrot -q 100 $TMP_BG
 convert $TMP_BG -scale 10% -scale 1000% -fill black -colorize 50% $TMP_BG
 convert $TMP_BG $ICON -gravity center -composite -matte $TMP_BG
 
