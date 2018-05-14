@@ -12,7 +12,9 @@ super + shift + q
 
 # focus node in given direction
 super + {h,j,k,l}
-  bspc node -f {west,south,north,east}
+  bspc config pointer_follows_focus true; \
+  bspc node -f {west,south,north,east}; \
+  bspc config pointer_follows_focus false
 
 # preselect given direction
 super + {backslash,minus}
