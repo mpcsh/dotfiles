@@ -24,7 +24,6 @@ bspc config presel_feedback_color $(xrq color0)
 
 # focusing
 bspc config focus_follows_pointer true
-bspc config pointer_follows_focus true
 bspc config ignore_ewmh_focus true
 
 # set workspaces
