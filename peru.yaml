@@ -7,14 +7,14 @@ imports:
 # zsh
 git module oh-my-zsh:
   url: https://github.com/robbyrussell/oh-my-zsh
-  rev: 9cd3701ac0297f4bdf9673ea0dffa8ffdaea63e8
+  rev: 0aa645f8033ef86f8c8b0729a94fc54fbec49a25
 
 git module zsh-syntax-highlighting:
   url: https://github.com/zsh-users/zsh-syntax-highlighting
-  rev: 02a37dd919dc48e0821186e5f20e78bd0215f86a
+  rev: 5b539663c0d740a0c00169d5ecbd58e47ff16252
 
 # vim
 git module vim-plug:
   url: https://github.com/junegunn/vim-plug
   pick: plug.vim
-  rev: e6a775e0df3180d3cfea55b351aa7b112c58c139
+  rev: fef4e434baf9edbe0bd1c241efdb76d47172bd4f
