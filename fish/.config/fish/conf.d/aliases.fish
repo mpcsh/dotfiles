@@ -10,12 +10,7 @@ end
 
 # better ls
 function ls
-  switch (uname)
-  case Darwin
-    command ls -lhFG $argv
-  case Linux
-    command ls -lhF --color=auto $argv
-  end
+  command ls -hF --color=auto $argv
 end
 
 function la
