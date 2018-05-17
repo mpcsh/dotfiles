@@ -41,7 +41,7 @@ function fish_prompt
   if test $exit_code -ne 0
     set_color red
   end
-  printf "» "
+  printf "> "
   set_color normal
 end
 
