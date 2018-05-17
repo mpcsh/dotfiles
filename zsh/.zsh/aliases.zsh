@@ -42,6 +42,9 @@ alias yay="yay --noconfirm"
 # xclip into clipboard by default
 alias xclip="xclip -selection clipboard"
 
+# flash ergodox firmware
+alias ergodox="teensy-loader-cli -mmcu=atmega32u4 -w -v"
+
 # mkdir and cd into it
 function mkcd() {
   mkdir -p $argv
