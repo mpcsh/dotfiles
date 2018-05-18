@@ -18,6 +18,8 @@ alert = ${xrdb:color1}
 background = ${colors.background}
 foreground = ${colors.foreground}
 
+wm-restack = bspwm
+
 bottom = true
 dpi = ${xrdb:Xft.dpi}
 
