@@ -22,12 +22,10 @@ function yay
   command yay --noconfirm $argv
 end
 
-
 # symlink by default
 function ln
   command ln -s $argv
 end
-
 
 # work on directories
 function cp
@@ -42,7 +40,6 @@ function mkdir
   command mkdir -p $argv
 end
 
-
 # typed racket
 function racket
   command racket -I typed/racket $argv
@@ -53,19 +50,16 @@ function vim
   command nvim $argv
 end
 
-
 # rsync options
-function rcp
+function rsync
   command rsync -avzHE --progress -h $argv
 end
-
 
 # mkdir and cd into it
 function mkcd
   command mkdir -p $argv
   cd $argv
 end
-
 
 # cd .. repeatedly
 function up
@@ -75,4 +69,9 @@ end
 # make CLI rg match fzf
 function rg
   command rg --hidden --smart-case --glob !.git $argv
+end
+
+# ergodox firmware
+function ergodox
+  command teensy-loader-cli -mmcu=atmega32u4 -v -w $argv
 end
