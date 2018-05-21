@@ -32,6 +32,11 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 0
 bspc rule -a libreoffice state=tiled
 bspc rule -a .zathura-wrapped_ state=tiled
 
+# special app desktops
+bspc rule -a Slack desktop=0
+bspc rule -a Spotify desktop=0
+bspc rule -a Keybase desktop=0
+
 # configure keyboard
 xset r rate 250
 setxkbmap -option caps:escape
