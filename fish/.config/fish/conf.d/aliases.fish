@@ -55,6 +55,11 @@ function rsync
   command rsync -avzHE --progress -h $argv
 end
 
+# make SML repl work with arrow keys
+function sml
+  rlwrap sml
+end
+
 # mkdir and cd into it
 function mkcd
   command mkdir -p $argv
