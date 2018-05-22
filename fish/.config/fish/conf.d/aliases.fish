@@ -57,7 +57,7 @@ end
 
 # make SML repl work with arrow keys
 function sml
-  rlwrap sml
+  rlwrap sml -Cprint.depth=10000
 end
 
 # mkdir and cd into it
