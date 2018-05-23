@@ -22,7 +22,7 @@ alias rm="rm -rf"
 alias mkdir="mkdir -p"
 
 # make CLI rg match fzf
-alias rg="rg --hidden --smart-case --glob !.git $argv"
+alias rg="rg --hidden --smart-case --glob !.git"
 
 # nvim
 alias vim="nvim"
