@@ -1,12 +1,10 @@
 # environment variables
 export EDITOR="nvim"
-export FZF_DEFAULT_COMMAND="command rg --hidden --smart-case --glob !.git --files-with-matches ."
+export FZF_DEFAULT_COMMAND="rg --files-with-matches ."
 export FZF_DEFAULT_OPTS="--color=16,fg+:4 --ansi"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_R_OPTS="--reverse"
-export GOPATH="$HOME/.go"
 export PAGER="less -FR"
-export PYENV_ROOT="~/.pyenv"
 export TERM="xterm-256color"
 export DISABLE_AUTO_TITLE="true" # https://github.com/robbyrussell/oh-my-zsh/issues/1338
 export SSH_ASKPASS="" # https://gist.github.com/joseluisq/d0e66c5f718250c90075
@@ -39,12 +37,6 @@ export LESS_TERMCAP_us=$(printf "\033[01;32m")
 # automatically source completions for newly installed packages
 # https://wiki.archlinux.org/index.php/zsh#Persistent_rehash
 zstyle ':completion:*' rehash true
-
-# go
-_go_path="$GOPATH/bin"
-if test -e $_go_path; then
-  export PATH="$PATH:$_go_path"
-fi
 
 # scripts
 _dotfiles_bin="$HOME/dotfiles/bin"
