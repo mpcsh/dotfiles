@@ -5,7 +5,7 @@ ARCH_MODULES = arch
 BASE_MODULES = fish git nvim ssh
 XORG_MODULES = bspwm firefox gtk termite xresources
 
-default: clean sync base arch xorg
+default: sync clean base arch xorg
 
 sync:
 	peru sync
