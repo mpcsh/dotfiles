@@ -1,17 +1,5 @@
 imports:
-  oh-my-zsh: oh-my-zsh/.oh-my-zsh/
-  zsh-syntax-highlighting: oh-my-zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
-
   vim-plug: nvim/.config/nvim/autoload/
-
-# zsh
-git module oh-my-zsh:
-  url: https://github.com/robbyrussell/oh-my-zsh
-  rev: 0aa645f8033ef86f8c8b0729a94fc54fbec49a25
-
-git module zsh-syntax-highlighting:
-  url: https://github.com/zsh-users/zsh-syntax-highlighting
-  rev: 5b539663c0d740a0c00169d5ecbd58e47ff16252
 
 # vim
 git module vim-plug:
