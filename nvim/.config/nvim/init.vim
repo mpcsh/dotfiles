@@ -94,9 +94,6 @@ hi EndOfBuffer guifg=bg
 hi LinkDelimiter gui=bold guibg=none guifg=none
 hi MatchParen gui=bold guibg=none guifg=none
 
-" italic comments
-hi Comment gui=italic
-
 " visual selection
 hi Visual gui=none guibg=fg guifg=bg
 
