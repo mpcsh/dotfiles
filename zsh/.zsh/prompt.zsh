@@ -43,7 +43,7 @@ function _prompt_left() {
   directory_prefix=""
 
   # if we're not who we logged in as, display the username
-  if [ "$USER" != "mpcsh" ] && [ "$USER" != "njw" ]; then
+  if [ "$USERNAME" != "$LOGNAME" ]; then
     hostname_prefix="at "
     directory_prefix="in "
 
