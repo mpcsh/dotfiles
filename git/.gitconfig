@@ -22,3 +22,7 @@
   autoCorrect = -1
 [protocol "keybase"]
   allow = always
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = red
