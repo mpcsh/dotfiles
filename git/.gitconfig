@@ -10,6 +10,9 @@
   ci = commit
   ca = commit -a
   st = status
+  stage = add
+  unstage = reset HEAD
+  unchange = checkout --
   ls = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n 10
   la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   hub = "!f() { git clone https://github.com/$1.git ~/projects/$1 }; f"
