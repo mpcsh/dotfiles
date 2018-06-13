@@ -6,7 +6,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_R_OPTS="--reverse"
 export PAGER="less -FR"
 export TERM="xterm-256color"
-export DISABLE_AUTO_TITLE="true" # https://github.com/robbyrussell/oh-my-zsh/issues/1338
 export SSH_ASKPASS="" # https://gist.github.com/joseluisq/d0e66c5f718250c90075
 export GIT_ASKPASS=""
 export NVIM_LISTEN_ADDRESS="/tmp/nvimsocket" # for nvr support
