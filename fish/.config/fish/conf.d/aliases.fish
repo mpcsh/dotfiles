@@ -62,7 +62,7 @@ end
 
 # mkdir and cd into it
 function mkcd
-  command mkdir -p $argv
+  mkdir -p $argv
   cd $argv
 end
 
