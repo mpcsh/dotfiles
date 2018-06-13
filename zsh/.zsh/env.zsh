@@ -38,26 +38,26 @@ export LESS_TERMCAP_us=$(printf "\033[01;32m")
 zstyle ':completion:*' rehash true
 
 # scripts
-_dotfiles_bin="$HOME/dotfiles/bin"
+_dotfiles_bin=$HOME/dotfiles/bin
 if test -e $_dotfiles_bin; then
   export PATH="$PATH:$_dotfiles_bin"
 fi
 
 # fzf
-_fzf_path="/usr/share/fzf"
+_fzf_path=/usr/share/fzf
 if test -e $_fzf_path; then
   source $_fzf_path/completion.zsh
   source $_fzf_path/key-bindings.zsh
 fi
 
 # autojump
-_z_path="/usr/lib/z.sh"
+_z_path=~/.antigen/bundles/rupa/z
 if test -e $_z_path; then
-  source $_z_path
+  source $_z_path/z.sh
 fi
 
 # comamnd-not-found
-_pkgfile_path="/usr/share/doc/pkgfile"
+_pkgfile_path=/usr/share/doc/pkgfile
 if test -e $_pkgfile_path; then
   source $_pkgfile_path/command-not-found.zsh
 fi
