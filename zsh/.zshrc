@@ -2,7 +2,6 @@
 source .zsh/antigen/antigen.zsh
 
 # load plugins
-antigen bundle olivierverdier/zsh-git-prompt
 antigen bundle zsh-users/zsh-autosuggestions
 
 # syntax highlighting must come last
