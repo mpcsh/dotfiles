@@ -1,7 +1,10 @@
 # load antigen
 source .zsh/antigen/antigen.zsh
 
-# load plugins
+# autojump
+antigen bundle rupa/z
+
+# fish-like command suggestions
 antigen bundle zsh-users/zsh-autosuggestions
 
 # syntax highlighting must come last
