@@ -2,7 +2,7 @@
 unalias -m '*'
 
 # thefuck
-if type thefuck >> /dev/null; then
+if type thefuck &> /dev/null; then
   eval $(thefuck --alias)
 fi
 
@@ -10,8 +10,17 @@ fi
 alias sudo="sudo -sE "
 
 # better ls
-alias ls="ls -hF --color=auto"
-alias la="ls -hFA --color=auto"
+if type exa &> /dev/null; then
+  alias ls="exa -1"
+  alias la="exa -1a"
+  alias ll="exa -l"
+  alias lla="exa -la"
+else
+  alias ls="ls -1hF --color=auto"
+  alias la="ls -1hFA --color=auto"
+  alias ll="ls -lhF --color=auto"
+  alias lla="ls -lhFA --color=auto"
+fi
 
 # symlink by default
 alias ln="ln -s"
@@ -22,28 +31,44 @@ alias rm="rm -rf"
 alias mkdir="mkdir -p"
 
 # make CLI rg match fzf
-alias rg="rg --hidden --smart-case --glob !.git"
+if type rg &> /dev/null; then
+  alias rg="rg --hidden --smart-case --glob !.git"
+fi
 
 # nvim
-alias vim="nvim"
+if type nvim &> /dev/null; then
+  alias vim="nvim"
+fi
 
 # rsync options
-alias rsync="rsync -aAXvzHE --progress -h"
+if type rsync &> /dev/null; then
+  alias rsync="rsync -aAXvzHE --progress -h"
+fi
 
 # typed racket
-alias racket="racket -I typed/racket"
+if type racket &> /dev/null; then
+  alias racket="racket -I typed/racket"
+fi
 
 # make SML REPL understand up-arrow
-alias sml="rlwrap sml -Cprint.depth=1000"
+if type rlwrap &> /dev/null && type sml &> /dev/null; then
+  alias sml="rlwrap sml -Cprint.depth=1000"
+fi
 
 # don't ask to edit PKGBUILDs, import PGP keys, etc
-alias yay="yay --noconfirm"
+if type yay &> /dev/null; then
+  alias yay="yay --noconfirm"
+fi
 
 # xclip into clipboard by default
-alias xclip="xclip -selection clipboard"
+if type xclip &> /dev/null; then
+  alias xclip="xclip -selection clipboard"
+fi
 
 # flash ergodox firmware
-alias ergodox="teensy-loader-cli -mmcu=atmega32u4 -w -v"
+if type teensy-loader-cli &> /dev/null; then
+  alias ergodox="teensy-loader-cli -mmcu=atmega32u4 -w -v"
+fi
 
 # mkdir and cd into it
 function mkcd() {
