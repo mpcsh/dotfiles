@@ -1,8 +1,5 @@
 # peru
 .peru
 
-# colors
-colors
-
-# oh-my-zsh
-oh-my-zsh
+# antigen
+zsh/.zsh/antigen

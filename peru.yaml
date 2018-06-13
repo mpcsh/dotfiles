@@ -1,20 +1,15 @@
 imports:
-  oh-my-zsh: oh-my-zsh/.oh-my-zsh/
-  zsh-syntax-highlighting: oh-my-zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
-
+  antigen: zsh/.zsh/antigen/
   vim-plug: nvim/.config/nvim/autoload/
-
-# zsh
-git module oh-my-zsh:
-  url: https://github.com/robbyrussell/oh-my-zsh
-  rev: 0aa645f8033ef86f8c8b0729a94fc54fbec49a25
-
-git module zsh-syntax-highlighting:
-  url: https://github.com/zsh-users/zsh-syntax-highlighting
-  rev: 5b539663c0d740a0c00169d5ecbd58e47ff16252
 
 # vim
 git module vim-plug:
-  url: https://github.com/junegunn/vim-plug
+  url: https://github.com/junegunn/vim-plug.git
   pick: plug.vim
   rev: fef4e434baf9edbe0bd1c241efdb76d47172bd4f
+
+# zsh
+git module antigen:
+  url: https://github.com/zsh-users/antigen.git
+  pick: bin/antigen.zsh
+  export: bin/
