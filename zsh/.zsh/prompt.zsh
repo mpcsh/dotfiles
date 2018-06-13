@@ -5,6 +5,7 @@ setopt PROMPT_SUBST
 
 PROMPT='$(_prompt_left)'
 RPROMPT='$(_prompt_right)'
+PS2='> '
 
 ##################
 # helper functions
