@@ -6,18 +6,6 @@ setopt PROMPT_SUBST
 PROMPT='$(_prompt_left)'
 RPROMPT='$(_prompt_right)'
 
-ZSH_THEME_GIT_PROMPT_PREFIX="("
-ZSH_THEME_GIT_PROMPT_SUFFIX="%F{magenta})"
-ZSH_THEME_GIT_PROMPT_SEPARATOR=""
-ZSH_THEME_GIT_PROMPT_BRANCH="%F{magenta}"
-ZSH_THEME_GIT_PROMPT_STAGED=" %F{magenta}Δ"
-ZSH_THEME_GIT_PROMPT_CONFLICTS=" %F{magenta}X"
-ZSH_THEME_GIT_PROMPT_CHANGED=" %F{magenta}!"
-ZSH_THEME_GIT_PROMPT_BEHIND=" %F{magenta}↓"
-ZSH_THEME_GIT_PROMPT_AHEAD=" %F{magenta}↑"
-ZSH_THEME_GIT_PROMPT_UNTRACKED=" %F{magenta}?"
-ZSH_THEME_GIT_PROMPT_CLEAN=""
-
 ##################
 # helper functions
 ##################
@@ -31,6 +19,69 @@ function _prompt_color() {
 
 function _prompt_reset() {
   _prompt_add "%f"
+}
+
+function _vcs_status() {
+  # ensure we're in a git repository
+  if ! git rev-parse --is-inside-work-tree &> /dev/null; then
+    return
+  fi
+
+  # ensure we're not in the .git directory
+  if [ $(git rev-parse --is-inside-git-dir 2> /dev/null) = "true" ]; then
+    return
+  fi
+
+  # update the index, but only if this user owns this repo
+  if test -O $(git rev-parse --show-toplevel)/.git/index; then
+    git update-index --really-refresh -q &> /dev/null
+  fi
+
+  # get the current status and branch name
+  local _git_status=$(git status --porcelain=v1 --branch)
+  local remote_info=$(echo $_git_status | head -n 1 | cut -d ' ' -f 2)
+  local git_status=$(echo $_git_status | tail -n +2)
+  local branch_name=$(git symbolic-ref --quiet --short HEAD 2> /dev/null || \
+                      git rev-parse --short HEAD 2> /dev/null || \
+                      echo '(unknown)')
+
+  # start building up the status string
+  local ret="($branch_name"
+
+  # get remote tracking status
+  if echo $remote_info | grep '\.\.\.' &> /dev/null; then
+    local count=$(git rev-list --count --left-right $remote_info)
+    local ahead=$(echo $count | cut -f 1)
+    local behind=$(echo $count | cut -f 2)
+    if (( $ahead > 0 )); then
+      ret+=" ↑$ahead"
+    fi
+    if (( $behind > 0 )); then
+      ret+=" ↓$behind"
+    fi
+  fi
+
+  # check for staged changes
+  local num_staged=$(echo $git_status | grep "M  " | wc -l)
+  if (( $num_staged > 0 )); then
+    ret+=" Δ$num_staged"
+  fi
+
+  # check for unstaged changes
+  local num_unstaged=$(echo $git_status | grep " M " | wc -l)
+  if (( $num_unstaged > 0 )); then
+    ret+=" !$num_unstaged"
+  fi
+
+  # check for unknown files
+  local num_unknown=$(echo $git_status | grep "?? " | wc -l)
+  if (( $num_unknown > 0 )); then
+    ret+=" ?$num_unknown"
+  fi
+
+  ret+=")"
+
+  echo -n $ret
 }
 
 #################
@@ -84,6 +135,6 @@ function _prompt_left() {
 
 _prompt_right() {
   _prompt_color magenta
-  _prompt_add "$(git_super_status)"
+  _prompt_add "$(_vcs_status)"
   _prompt_reset
 }
