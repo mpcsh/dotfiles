@@ -49,6 +49,10 @@ if test -e $_fzf_path; then
   source $_fzf_path/completion.zsh
   source $_fzf_path/key-bindings.zsh
 fi
+_brew_fzf_path=~/.fzf.zsh
+if test -e $_brew_fzf_path; then
+  source $_brew_fzf_path
+fi
 
 # autojump
 _z_path=~/.antigen/bundles/rupa/z

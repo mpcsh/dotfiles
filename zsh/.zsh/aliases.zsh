@@ -35,11 +35,6 @@ if type rg &> /dev/null; then
   alias rg="rg --hidden --smart-case --glob !.git"
 fi
 
-# nvim
-if type nvim &> /dev/null; then
-  alias vim="nvim"
-fi
-
 # rsync options
 if type rsync &> /dev/null; then
   alias rsync="rsync -aAXvzHE --progress -h"
