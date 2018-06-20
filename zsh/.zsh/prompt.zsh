@@ -63,7 +63,9 @@ function _vcs_status() {
   fi
 
   # check for staged changes
-  local num_staged=$(echo $git_status | grep "M  " | wc -l)
+  local num_changed=$(echo $git_status | grep "M  " | wc -l)
+  local num_new=$(echo $git_status | grep "A  " | wc -l)
+  local num_staged=$(( $num_changed + $num_new ))
   if (( $num_staged > 0 )); then
     ret+=" Δ$num_staged"
   fi
