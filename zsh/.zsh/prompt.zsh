@@ -63,21 +63,21 @@ function _vcs_status() {
   fi
 
   # check for staged changes
-  local num_changed=$(echo $git_status | grep "M  " | wc -l)
-  local num_new=$(echo $git_status | grep "A  " | wc -l)
+  local num_changed=$(echo $git_status | grep "M  " | wc -l | xargs)
+  local num_new=$(echo $git_status | grep "A  " | wc -l | xargs)
   local num_staged=$(( $num_changed + $num_new ))
   if (( $num_staged > 0 )); then
     ret+=" Δ$num_staged"
   fi
 
   # check for unstaged changes
-  local num_unstaged=$(echo $git_status | grep " M " | wc -l)
+  local num_unstaged=$(echo $git_status | grep " M " | wc -l | xargs)
   if (( $num_unstaged > 0 )); then
     ret+=" !$num_unstaged"
   fi
 
   # check for unknown files
-  local num_unknown=$(echo $git_status | grep "?? " | wc -l)
+  local num_unknown=$(echo $git_status | grep "?? " | wc -l | xargs)
   if (( $num_unknown > 0 )); then
     ret+=" ?$num_unknown"
   fi
