@@ -18,6 +18,7 @@ Plug 'junegunn/goyo.vim' " distraction-free mode
 Plug 'baskerville/vim-sxhkdrc'
 Plug 'cespare/vim-toml'
 Plug 'lervag/vimtex'
+Plug 'wlangstroth/vim-racket'
 
 " new features
 Plug 'mhinz/vim-signify'
