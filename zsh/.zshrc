@@ -1,5 +1,5 @@
 # load antigen
-source .zsh/antigen/antigen.zsh
+source ~/.zsh/antigen/antigen.zsh
 
 # autojump
 antigen bundle rupa/z
