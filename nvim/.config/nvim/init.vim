@@ -18,8 +18,10 @@ Plug 'junegunn/goyo.vim' " distraction-free mode
 Plug 'baskerville/vim-sxhkdrc'
 Plug 'cespare/vim-toml'
 Plug 'lervag/vimtex'
+Plug 'wlangstroth/vim-racket'
 
 " new features
+Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
@@ -189,6 +191,9 @@ nnoremap <silent> <S-Tab> <<
 
 " nohlsearch
 noremap <silent> <C-l> :nohlsearch<CR>
+
+" fzf
+noremap <silent> <C-p> :Files<CR>
 
 " vimtex
 let g:vimtex_compiler_latexmk = {
