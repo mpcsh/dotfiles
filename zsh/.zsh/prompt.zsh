@@ -65,7 +65,8 @@ function _vcs_status() {
   # check for staged changes
   local num_changed=$(echo $git_status | grep "M  " | wc -l | xargs)
   local num_new=$(echo $git_status | grep "A  " | wc -l | xargs)
-  local num_staged=$(( $num_changed + $num_new ))
+  local num_removed=$(echo $git_status | grep "D  " | wc -l | xargs)
+  local num_staged=$(( $num_changed + $num_new + $num_removed ))
   if (( $num_staged > 0 )); then
     ret+=" Δ$num_staged"
   fi
@@ -80,6 +81,12 @@ function _vcs_status() {
   local num_unknown=$(echo $git_status | grep "?? " | wc -l | xargs)
   if (( $num_unknown > 0 )); then
     ret+=" ?$num_unknown"
+  fi
+
+  # check for deleted files
+  local num_deleted=$(echo $git_status | grep " D " | wc -l | xargs)
+  if (( $num_deleted > 0 )); then
+    ret+=" X$num_deleted"
   fi
 
   ret+=")"
