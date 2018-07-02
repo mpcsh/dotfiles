@@ -37,6 +37,9 @@ export LESS_TERMCAP_us=$(printf "\033[01;32m")
 # https://wiki.archlinux.org/index.php/zsh#Persistent_rehash
 zstyle ':completion:*' rehash true
 
+# fuzzy completion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
 # scripts
 _dotfiles_bin=$HOME/dotfiles/bin
 if test -e $_dotfiles_bin; then
