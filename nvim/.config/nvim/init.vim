@@ -17,6 +17,7 @@ Plug 'junegunn/goyo.vim' " distraction-free mode
 " language support
 Plug 'baskerville/vim-sxhkdrc'
 Plug 'cespare/vim-toml'
+Plug 'dag/vim-fish'
 Plug 'lervag/vimtex'
 Plug 'wlangstroth/vim-racket'
 
