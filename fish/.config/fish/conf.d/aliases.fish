@@ -9,12 +9,32 @@ function sudo
 end
 
 # better ls
-function ls
-  command ls -hF --color=auto $argv
-end
-
-function la
-  ls -A $argv
+if type -q exa
+  function ls
+    command exa -1
+  end
+  function la
+    command exa -1a
+  end
+  function ll
+    command exa -l
+  end
+  function lla
+    command exa -la
+  end
+else
+  function ls
+    command ls -1hF --color=auto
+  end
+  function la
+    command ls -1hFA --color=auto
+  end
+  function ll
+    command ls -lhF --color=auto
+  end
+  function lla
+    command ls -lhFA --color=auto
+  end
 end
 
 # because I like pain
