@@ -11,29 +11,29 @@ end
 # better ls
 if type -q exa
   function ls
-    command exa -1
+    command exa -1 $argv
   end
   function la
-    command exa -1a
+    command exa -1a $argv
   end
   function ll
-    command exa -l
+    command exa -l $argv
   end
   function lla
-    command exa -la
+    command exa -la $argv
   end
 else
   function ls
-    command ls -1hF --color=auto
+    command ls -1hF --color=auto $argv
   end
   function la
-    command ls -1hFA --color=auto
+    command ls -1hFA --color=auto $argv
   end
   function ll
-    command ls -lhF --color=auto
+    command ls -lhF --color=auto $argv
   end
   function lla
-    command ls -lhFA --color=auto
+    command ls -lhFA --color=auto $argv
   end
 end
 
