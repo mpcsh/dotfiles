@@ -1,15 +1,8 @@
 imports:
   vim-plug: nvim/.config/nvim/autoload/
-  antigen: zsh/.zsh/antigen/
 
 # vim
 git module vim-plug:
   url: https://github.com/junegunn/vim-plug.git
   pick: plug.vim
   rev: fef4e434baf9edbe0bd1c241efdb76d47172bd4f
-
-# zsh
-git module antigen:
-  url: https://github.com/zsh-users/antigen.git
-  pick: bin/antigen.zsh
-  export: bin/
