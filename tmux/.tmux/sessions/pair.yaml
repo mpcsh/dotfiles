@@ -6,4 +6,9 @@ windows:
     - clear
   panes:
     -
+- window_name: dotfiles
+  shell_command_before:
+    - cd ~/dotfiles
+    - clear
+  panes:
     -
