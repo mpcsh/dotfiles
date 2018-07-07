@@ -1,0 +1,14 @@
+session_name: pair
+windows:
+- window_name: dev
+  shell_command_before:
+    - git duet mpcsh njw
+    - clear
+  panes:
+    -
+- window_name: dotfiles
+  shell_command_before:
+    - cd ~/dotfiles
+    - clear
+  panes:
+    -
