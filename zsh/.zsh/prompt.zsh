@@ -124,7 +124,7 @@ function _prompt_left() {
     _prompt_add "$hostname_prefix"
 
     _prompt_color yellow
-    _prompt_add "$(hostname)"
+    _prompt_add "$(hostname) "
     _prompt_reset
   fi
 
