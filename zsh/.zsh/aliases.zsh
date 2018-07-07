@@ -59,7 +59,7 @@ fi
 
 # don't ask to edit PKGBUILDs, import PGP keys, etc
 if type yay &> /dev/null; then
-  alias yay="yay --noconfirm"
+  alias yolo="yay --noconfirm"
 fi
 
 # xclip into clipboard by default
