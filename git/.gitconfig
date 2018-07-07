@@ -8,7 +8,9 @@
 [alias]
   co = checkout
   ci = commit
+  dci = duet-commit
   ca = commit -a
+  dca = duet-commit -a
   st = status
   stage = add
   unstage = reset HEAD
