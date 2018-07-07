@@ -18,6 +18,6 @@ for f in $(ls ~/.zsh/*.zsh); do
 done
 
 # start up tmux if we're not in it
-if [ -z $TMUX ]; then
+if [ $(hostname) = "cpair" ] && [ -z $TMUX ]; then
   tmuxp load -y ~/.tmux/sessions/$('ls' -1 ~/.tmux/sessions | sed 's/\.yaml//' | fzf -1 --reverse).yaml
 fi
