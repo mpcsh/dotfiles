@@ -17,3 +17,7 @@ setopt HIST_SAVE_NO_DUPS
 
 # don't execute immediately upon history expansion.
 setopt HIST_VERIFY
+
+# history sharing
+setopt APPEND_HISTORY
+setopt SHARE_HISTORY
