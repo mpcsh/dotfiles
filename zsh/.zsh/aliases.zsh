@@ -1,10 +1,9 @@
 # clear default aliases
 unalias -m '*'
 
-# thefuck
-if type thefuck &> /dev/null; then
-  eval $(thefuck --alias)
-fi
+###########
+# coreutils
+###########
 
 # allows sudo to use aliases
 alias sudo="sudo -sE "
@@ -22,27 +21,30 @@ else
   alias lla="ls -lhFA --color=auto"
 fi
 
-# nvim
-if type nvim &> /dev/null; then
-  alias vim="nvim"
-fi
-
-# symlink by default
-alias ln="ln -s"
-
 # work on directories
 alias cp="cp -r"
 alias rm="rm -rf"
 alias mkdir="mkdir -p"
 
+# symlink by default
+alias ln="ln -s"
+
+# rsync options
+if type rsync &> /dev/null; then
+  alias rsync="rsync -aAXvzHE --progress -h"
+fi
+
+######################
+# default replacements
+######################
 # make CLI rg match fzf
 if type rg &> /dev/null; then
   alias rg="rg --hidden --smart-case --glob !.git"
 fi
 
-# rsync options
-if type rsync &> /dev/null; then
-  alias rsync="rsync -aAXvzHE --progress -h"
+# nvim
+if type nvim &> /dev/null; then
+  alias vim="nvim"
 fi
 
 # typed racket
@@ -65,10 +67,9 @@ if type xclip &> /dev/null; then
   alias xclip="xclip -selection clipboard"
 fi
 
-# flash ergodox firmware
-if type teensy-loader-cli &> /dev/null; then
-  alias ergodox="teensy-loader-cli -mmcu=atmega32u4 -w -v"
-fi
+#########################
+# custom functions & misc
+#########################
 
 # mkdir and cd into it
 function mkcd() {
@@ -80,3 +81,13 @@ function mkcd() {
 function up() {
   cd $(eval printf ../%.0s $(seq 1 $argv))
 }
+
+# thefuck
+if type thefuck &> /dev/null; then
+  eval $(thefuck --alias)
+fi
+
+# flash ergodox firmware
+if type teensy-loader-cli &> /dev/null; then
+  alias ergodox="teensy-loader-cli -mmcu=atmega32u4 -w -v"
+fi
