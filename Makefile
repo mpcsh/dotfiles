@@ -2,7 +2,7 @@
 
 # Modules
 ARCH_MODULES = arch
-BASE_MODULES = fish git nvim ssh
+BASE_MODULES = fish git nvim ssh zsh
 XORG_MODULES = iosevka
 
 default: sync clean base arch xorg
