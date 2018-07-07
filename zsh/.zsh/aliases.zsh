@@ -22,6 +22,11 @@ else
   alias lla="ls -lhFA --color=auto"
 fi
 
+# nvim
+if type nvim &> /dev/null; then
+  alias vim="nvim"
+fi
+
 # symlink by default
 alias ln="ln -s"
 
