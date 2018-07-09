@@ -12,6 +12,7 @@
   ca = commit -a
   dca = duet-commit -a
   st = status
+  staged = diff --cached
   stage = add
   unstage = reset HEAD
   unchange = checkout --
