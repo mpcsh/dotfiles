@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+~/dotfiles/bin/lock
+systemctl suspend -i
