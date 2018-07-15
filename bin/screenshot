@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+USAGE="Usage: screenshot [select]"
+
+FILE=~/scrots/$(date +%F-%H%M%S).jpg
+
+if [[ $1 == "select" && $# == 1 ]]; then
+  SCROT_ARGS="-s"
+elif [[ $# != 0 ]]; then
+  echo $USAGE
+  exit
+fi
+
+mkdir -p ~/scrots
+scrot -q 100 $SCROT_ARGS "$FILE"
+~/dotfiles/bin/0x0 "$FILE"
+notify-send "Screenshot uploaded"

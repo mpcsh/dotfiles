@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if pgrep -u $UID -x polybar > /dev/null; then
+  # polybar is running, kill it
+  killall -q polybar
+  bspc config bottom_padding 0
+else
+  # polybar is not running, start it
+  polybar main &
+fi
