@@ -45,7 +45,7 @@ setxkbmap -option caps:escape
 nm-applet &
 dropbox &
 run_keybase &
-redshift -t 5500:3000 &
+redshift -t 5500:3000 -l 41.88:-87.63 &
 compton -I 0.01 -O 0.01 -D 2 &
 
 if [[ $(hostname) = "quitaraju" || $(hostname) = "blanc" ]]; then
