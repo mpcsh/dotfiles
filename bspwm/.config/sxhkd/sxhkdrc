@@ -59,7 +59,7 @@ super + shift + {Escape,Caps_Lock}
   ~/dotfiles/bin/lock_suspend
 
 super + grave
-  kitty
+  alacritty
 
 super + c
   google-chrome-stable
