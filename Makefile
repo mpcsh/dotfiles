@@ -3,7 +3,7 @@
 # Modules
 ARCH_MODULES = arch
 BASE_MODULES = fish git nvim ssh tmux
-XORG_MODULES = bspwm firefox iosevka kitty gtk xresources
+XORG_MODULES = alacritty bspwm firefox iosevka gtk xresources
 
 default: sync base arch xorg
 
