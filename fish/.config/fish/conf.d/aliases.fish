@@ -38,7 +38,7 @@ else
 end
 
 # because I like pain
-function yay
+function yolo
   command yay --noconfirm $argv
 end
 
