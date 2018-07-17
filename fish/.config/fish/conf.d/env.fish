@@ -27,6 +27,10 @@ set _autojump_bin /usr/share/autojump
 if test -e $_autojump_bin
   source $_autojump_bin/autojump.fish
 end
+set _brew_autojump_bin /usr/local/share/autojump
+if test -e $_brew_autojump_bin
+  source $_brew_autojump_bin/autojump.fish
+end
 
 # scripts
 set dotfiles_bin ~/dotfiles/bin
