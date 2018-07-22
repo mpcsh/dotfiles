@@ -18,7 +18,7 @@ for f in $(ls ~/.zsh/*.zsh); do
 done
 
 # start up tmux if we're not in it
-if type tmuxp &> /dev/null && [ $HOSTNAME = "cpair" ] && [ -z $TMUX ]; then
+if type tmuxp &> /dev/null && [ $(hostname) = "cpair" ] && [ -z $TMUX ]; then
   export GIT_DUET_CO_AUTHORED_BY=1
   tmuxp load -y ~/.tmux/sessions/$('ls' -1 ~/.tmux/sessions | sed 's/\.yaml//' | fzf -1 --reverse).yaml
 fi
