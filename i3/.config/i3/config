@@ -106,4 +106,3 @@ for_window [class="Discord"] move container to workspace 0
 
 ### startup scripts
 exec --no-startup-id ~/.config/i3/i3rc
-exec_always --no-startup-id ~/dotfiles/bin/launch_polybar
