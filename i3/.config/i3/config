@@ -22,7 +22,7 @@ for_window [class="^.*"] border pixel 0
 bindsym $mod+s exec $HOME/dotfiles/bin/hidpi spotify
 bindsym $mod+c exec google-chrome-stable
 bindsym $mod+f exec firefox
-bindsym $mod+grave exec termite
+bindsym $mod+grave exec alacritty
 bindsym $mod+space exec ~/dotfiles/bin/menu bottom
 
 # bar
