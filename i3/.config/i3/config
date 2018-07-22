@@ -9,7 +9,7 @@ font pango:M+ 1mn 12
 floating_modifier $mod
 
 # Gaps around windows
-gaps inner 18
+gaps inner 24
 
 # disable focus wrapping
 focus_wrapping no
