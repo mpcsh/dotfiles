@@ -1143,7 +1143,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1191 603 445 77 0 0 2560 1440 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>573 948 928 401 0 0 2560 1440 </string>
+	<string>573 909 796 473 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>1280 919 584 521 0 0 2560 1440 </string>
 	<key>NeverWarnAboutMeta</key>
@@ -1604,7 +1604,7 @@
 			<key>Show Mark Indicators</key>
 			<false/>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Smart Cursor Color</key>
 			<false/>
 			<key>Sync Title</key>
