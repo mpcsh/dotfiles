@@ -1141,11 +1141,11 @@
 		<string>@$\</string>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>51 33 445 77 0 0 2560 1440 </string>
+	<string>1191 603 445 77 0 0 2560 1440 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1548 927 796 473 0 0 2560 1440 </string>
+	<string>573 948 928 401 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1280 292 997 1148 0 0 2560 1440 </string>
+	<string>1280 919 584 521 0 0 2560 1440 </string>
 	<key>NeverWarnAboutMeta</key>
 	<true/>
 	<key>NeverWarnAboutMeta_selection</key>
@@ -1503,7 +1503,7 @@
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>1</real>
+			<real>0.90000000000000002</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Jobs to Ignore</key>
@@ -1552,7 +1552,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Iosevka-Term 14</string>
+			<string>mplus-1mn-regular 14</string>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -1630,7 +1630,7 @@
 			<key>Use Tab Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.0037968279367471</real>
+			<real>0.90605821724397595</real>
 			<key>Visual Bell</key>
 			<false/>
 			<key>Window Type</key>
@@ -1639,6 +1639,8 @@
 			<string>/Users/mpcsh</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveUsedCopyMode</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
