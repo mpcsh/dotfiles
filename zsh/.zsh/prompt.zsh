@@ -66,7 +66,8 @@ function _vcs_status() {
   local num_changed=$(echo $git_status | grep "M  " | wc -l | xargs)
   local num_new=$(echo $git_status | grep "A  " | wc -l | xargs)
   local num_removed=$(echo $git_status | grep "D  " | wc -l | xargs)
-  local num_staged=$(( $num_changed + $num_new + $num_removed ))
+  local num_renamed=$(echo $git_status | grep "R  " | wc -l | xargs)
+  local num_staged=$(( $num_changed + $num_new + $num_removed + $num_renamed ))
   if (( $num_staged > 0 )); then
     ret+=" Δ$num_staged"
   fi
