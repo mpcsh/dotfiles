@@ -82,6 +82,15 @@ function up() {
   cd $(eval printf ../%.0s $(seq 1 $argv))
 }
 
+function setbg() {
+  if [ $# -eq 0 ]; then
+    feh --no-fehbg --bg-fill ~/.wallpaper
+  elif [ $# -eq 1 ]; then
+    ln -s $1 ~/.wallpaper
+    setbg
+  fi
+}
+
 # thefuck
 if type thefuck &> /dev/null; then
   eval $(thefuck --alias)
