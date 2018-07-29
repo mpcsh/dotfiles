@@ -86,7 +86,7 @@ function setbg() {
   if [ $# -eq 0 ]; then
     feh --no-fehbg --bg-fill ~/.wallpaper
   elif [ $# -eq 1 ]; then
-    ln -s $1 ~/.wallpaper
+    ln -sf $1 ~/.wallpaper
     setbg
   fi
 }
