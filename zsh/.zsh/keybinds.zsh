@@ -44,8 +44,8 @@ fi
 
 bindkey ' ' magic-space                                      # [Space] - do history expansion
 
-bindkey '^[[1;5C' forward-word                               # [Ctrl-RightArrow] - move forward one word
-bindkey '^[[1;5D' backward-word                              # [Ctrl-LeftArrow] - move backward one word
+bindkey '^w' forward-word                                    # [Ctrl-w] - move forward one word
+bindkey '^b' backward-word                                   # [Ctrl-b] - move backward one word
 
 if [[ "${terminfo[kcbt]}" != "" ]]; then
   bindkey "${terminfo[kcbt]}" reverse-menu-complete          # [Shift-Tab] - move through the completion menu backwards
