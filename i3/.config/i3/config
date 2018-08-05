@@ -3,7 +3,7 @@
 set $mod Mod4
 
 # font for nagbars
-font pango:Essential PragmataPro 12
+font pango:Iosevka Term 12
 
 # mouse+mod for floating mode dragging
 floating_modifier $mod
