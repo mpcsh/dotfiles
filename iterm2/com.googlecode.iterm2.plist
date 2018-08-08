@@ -1141,11 +1141,11 @@
 		<string>@$\</string>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1191 603 445 77 0 0 2560 1440 </string>
+	<string>1191 469 445 77 0 0 2560 1440 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>573 909 796 473 0 0 2560 1440 </string>
+	<string>573 981 918 401 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1280 919 584 521 0 0 2560 1440 </string>
+	<string>1280 894 584 546 0 0 2560 1440 </string>
 	<key>NeverWarnAboutMeta</key>
 	<true/>
 	<key>NeverWarnAboutMeta_selection</key>
@@ -1503,7 +1503,7 @@
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>0.90000000000000002</real>
+			<real>1</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Jobs to Ignore</key>
@@ -1552,7 +1552,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>mplus-1mn-regular 14</string>
+			<string>Iosevka-Term 14</string>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -1630,7 +1630,7 @@
 			<key>Use Tab Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>0.90605821724397595</real>
+			<real>1</real>
 			<key>Visual Bell</key>
 			<false/>
 			<key>Window Type</key>
