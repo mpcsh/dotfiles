@@ -23,39 +23,39 @@ bindsym $mod+s exec $HOME/dotfiles/bin/hidpi spotify
 bindsym $mod+c exec google-chrome-stable
 bindsym $mod+f exec firefox
 bindsym $mod+grave exec kitty
-bindsym $mod+space exec ~/dotfiles/bin/menu bottom
+bindsym $mod+space exec --no-startup-id ~/dotfiles/bin/menu bottom
 
 # bar
-bindsym $mod+b exec $HOME/dotfiles/bin/toggle_polybar
+bindsym $mod+b exec --no-startup-id $HOME/dotfiles/bin/toggle_polybar
 
 # lockscreen
-bindsym $mod+Escape exec $HOME/dotfiles/bin/lock
-bindsym $mod+Shift+Escape exec $HOME/dotfiles/bin/lock_suspend
+bindsym $mod+Escape exec --no-startup-id $HOME/dotfiles/bin/lock
+bindsym $mod+Shift+Escape exec --no-startup-id $HOME/dotfiles/bin/lock_suspend
 
 # volume
-bindsym XF86AudioMute exec pamixer -t
-bindsym XF86AudioLowerVolume exec pamixer -d 5
-bindsym XF86AudioRaiseVolume exec pamixer -i 5
+bindsym XF86AudioMute exec --no-startup-id pamixer -t
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 5
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 5
 
 # brightness
-bindsym XF86MonBrightnessUp exec ~/dotfiles/bin/backlightctl up
-bindsym XF86MonBrightnessDown exec ~/dotfiles/bin/backlightctl down
+bindsym XF86MonBrightnessUp exec --no-startup-id ~/dotfiles/bin/backlightctl up
+bindsym XF86MonBrightnessDown exec --no-startup-id ~/dotfiles/bin/backlightctl down
 
 # play/pause
-bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
-bindsym $mod+Up exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+bindsym XF86AudioPlay exec --no-startup-id "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+bindsym $mod+Up exec --no-startup-id "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
 
 # next song
-bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
-bindsym $mod+Right exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+bindsym XF86AudioNext exec --no-startup-id "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+bindsym $mod+Right exec --no-startup-id "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
 
 # prev song
-bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
-bindsym $mod+Left exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+bindsym XF86AudioPrev exec --no-startup-id "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+bindsym $mod+Left exec --no-startup-id "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
 
 # keyboard layout switching
-bindsym $mod+Mod1+e exec setxkbmap -layout us -option caps:escape
-bindsym $mod+Mod1+s exec setxkbmap -layout es -option caps:escape
+bindsym $mod+Mod1+e exec --no-startup-id setxkbmap -layout us -option caps:escape
+bindsym $mod+Mod1+s exec --no-startup-id setxkbmap -layout es -option caps:escape
 
 # change focus, move window
 bindsym $mod+h focus left
