@@ -97,6 +97,7 @@ bindsym $mod+Shift+r restart
 ### window type auto rules
 # make pavucontrol always floating
 for_window [class="Pavucontrol"] floating enable
+for_window [class="Blueberry"] floating enable
 
 # make slack, spotify, keybase, discord always show up on workspace 0
 for_window [class="Slack"] move container to workspace 0
