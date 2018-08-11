@@ -1,11 +1,11 @@
 #! /usr/bin/env bash
 
 # themes!
-xrdb ~/.Xresources
+xrdb ~/.Xresources &
 feh --no-fehbg --bg-fill ~/.wallpaper &
 
 # don't use that stupid cross pointer
-xsetroot -cursor_name left_ptr
+xsetroot -cursor_name left_ptr &
 
 # no bell
 xset -b &
@@ -14,8 +14,8 @@ xset -b &
 xset s off -dpms &
 
 # configure keyboard
-xset r rate 250
-setxkbmap -option caps:escape
+xset r rate 250 &
+setxkbmap -option caps:escape &
 
 # autostart apps
 nm-applet &
@@ -26,5 +26,5 @@ compton -I 0.01 -O 0.01 -D 3 &
 
 if [[ $(hostname) = "quitaraju" || $(hostname) = "blanc" ]]; then
   # don't blind me
-  xbacklight -set 50
+  xbacklight -set 50 &
 fi
