@@ -20,7 +20,7 @@ for_window [class="^.*"] border pixel 0
 ### keybinds
 # applications
 bindsym $mod+s exec $HOME/dotfiles/bin/hidpi spotify
-bindsym $mod+c exec google-chrome-stable
+bindsym $mod+r exec kitty ranger
 bindsym $mod+f exec firefox
 bindsym $mod+grave exec kitty
 bindsym $mod+space exec --no-startup-id ~/dotfiles/bin/menu bottom
