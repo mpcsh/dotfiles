@@ -33,3 +33,5 @@
 	added = green
 	changed = yellow
 	untracked = red
+[core]
+	pager = less -FR

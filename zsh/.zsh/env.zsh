@@ -4,7 +4,6 @@ export FZF_DEFAULT_COMMAND="rg --hidden --smart-case --glob !.git --files-with-m
 export FZF_DEFAULT_OPTS="--color=16,fg+:4 --ansi"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_R_OPTS="--reverse"
-export PAGER="less -FR"
 export TERM="xterm-256color"
 export SSH_ASKPASS="" # https://gist.github.com/joseluisq/d0e66c5f718250c90075
 export GIT_ASKPASS=""
