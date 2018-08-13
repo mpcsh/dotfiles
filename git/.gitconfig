@@ -1,35 +1,35 @@
 [user]
-  email = m@mpc.sh
-  name = Mark Cohen
+	email = m@mpc.sh
+	name = Mark Cohen
 [credential]
-  helper = store
+	helper = store
 [push]
-  default = simple
+	default = simple
 [alias]
-  co = checkout
-  ci = commit
-  dci = duet-commit
-  ca = commit -a
-  dca = duet-commit -a
-  st = status
-  staged = diff --cached
-  stage = add
-  unstage = reset HEAD
-  unchange = checkout --
-  push-please = push --force-with-lease
-  ls = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n 10
-  la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  hub = "!f() { git clone https://github.com/$1.git ~/projects/$1 }; f"
-  lab = "!f() { git clone https://gitlab.com/$1.git ~/projects/$1 }; f"
+	co = checkout
+	ci = commit
+	dci = duet-commit
+	ca = commit -a
+	dca = duet-commit -a
+	st = status
+	staged = diff --cached
+	stage = add
+	unstage = reset HEAD
+	unchange = checkout --
+	push-please = push --force-with-lease
+	ls = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n 10
+	la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	hub = "!f() { git clone https://github.com/$1.git ~/projects/$1 }; f"
+	lab = "!f() { git clone https://gitlab.com/$1.git ~/projects/$1 }; f"
 [init]
-  templatedir = ~/.git-template
+	templatedir = ~/.git-template
 [advice]
-  detachedHead = false
+	detachedHead = false
 [help]
-  autoCorrect = -1
+	autoCorrect = -1
 [protocol "keybase"]
-  allow = always
+	allow = always
 [color "status"]
-  added = green
-  changed = yellow
-  untracked = red
+	added = green
+	changed = yellow
+	untracked = red
