@@ -29,8 +29,8 @@ bindsym $mod+space exec --no-startup-id ~/dotfiles/bin/menu bottom
 bindsym $mod+b exec --no-startup-id $HOME/dotfiles/bin/toggle-polybar
 
 # displays
-bindsym $mod+Mod1+l exec --no-startup-id $HOME/dotfiles/bin/laptop-mode
-bindsym $mod+Mod1+d exec --no-startup-id $HOME/dotfiles/bin/desktop-mode
+bindsym $mod+Mod1+l exec --no-startup-id $HOME/dotfiles/bin/display-mode laptop
+bindsym $mod+Mod1+d exec --no-startup-id $HOME/dotfiles/bin/display-mode desktop
 
 # lockscreen
 bindsym $mod+Escape exec --no-startup-id $HOME/dotfiles/bin/lock
