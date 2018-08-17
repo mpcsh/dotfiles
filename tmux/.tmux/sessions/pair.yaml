@@ -1,10 +1,14 @@
 session_name: pair
 windows:
 - window_name: dev
+  shell_command_before:
+    - source ~/.zshrc
+    - clear
   panes:
     -
 - window_name: dotfiles
   shell_command_before:
+    - source ~/.zshrc
     - cd ~/dotfiles
     - clear
   panes:
