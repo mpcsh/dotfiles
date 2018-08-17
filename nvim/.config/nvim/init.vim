@@ -23,6 +23,7 @@ Plug 'wlangstroth/vim-racket'
 " new features
 Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-easy-align'
