@@ -6,10 +6,6 @@ Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 Xft.rgba: rgba
 
-! dmenu
-font: xft:Iosevka Term:size=12
-barHeight: 48
-
 ! hidpi
 *dpi: 120
 
