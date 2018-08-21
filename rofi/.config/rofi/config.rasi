@@ -1,0 +1,17 @@
+configuration {
+  modi: "drun,run,ssh";
+  width: 50;
+  lines: 15;
+  columns: 2;
+  font: "Iosevka Term 12";
+  bw: 2;
+  padding: 10;
+  show-icons: true;
+  drun-icon-theme: "Arc";
+  sort: true;
+  levenshtein-sort: true;
+  matching: "fuzzy";
+  separator-style: "solid";
+  hide-scrollbar: true;
+  theme: "gruvbox-dark";
+}
