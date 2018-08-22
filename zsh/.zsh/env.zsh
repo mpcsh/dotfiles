@@ -20,9 +20,6 @@ setopt rm_star_silent
 # don't autocorrect
 unsetopt correct_all
 
-# permissions
-umask 077
-
 # colorized manpages
 export LESS_TERMCAP_mb=$(printf "\033[01;31m")
 export LESS_TERMCAP_md=$(printf "\033[01;31m")
