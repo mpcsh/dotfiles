@@ -5,13 +5,17 @@ ARCH_MODULES = arch
 BASE_MODULES = git nvim ssh tmux zsh
 XORG_MODULES = firefox fonts gtk kitty i3 xresources
 
-default: sync base arch xorg
+default: sync base base-root arch xorg
+headless: sync base base-root arch
+permissionless: sync base
 
 sync:
 	peru sync
 
 base:
 	stow $(BASE_MODULES)
+
+base-root:
 	sudo stow -t /root $(BASE_MODULES)
 
 arch:
@@ -20,10 +24,12 @@ arch:
 xorg:
 	stow $(XORG_MODULES)
 
-clean: clean-base clean-arch clean-xorg
+clean: clean-base clean-root clean-arch clean-xorg
 
 clean-base:
 	stow -D $(BASE_MODULES)
+
+clean-root:
 	sudo stow -t /root -D $(BASE_MODULES)
 
 clean-arch:
