@@ -106,16 +106,16 @@ function _prompt_left() {
   directory_prefix=""
 
   # if we're not who we logged in as, display the username
-  if [ "$USERNAME" != "$LOGNAME" ]; then
+  if [ "$(whoami)" != "$(logname)" ]; then
     hostname_prefix="at "
     directory_prefix="in "
 
-    if [ "$USER" = "root" ]; then
+    if [ "$(whoami)" = "root" ]; then
       _prompt_color red
     else
       _prompt_color green
     fi
-    _prompt_add "$USER "
+    _prompt_add "$(whoami) "
     _prompt_reset
   fi
 
