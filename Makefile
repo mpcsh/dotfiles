@@ -14,6 +14,7 @@ sync:
 
 base:
 	stow $(BASE_MODULES)
+	nvim -c "PlugInstall --sync" -c "qa"
 
 base-root:
 	sudo stow -t /root $(BASE_MODULES)
