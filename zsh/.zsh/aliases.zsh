@@ -12,8 +12,8 @@ alias sudo="sudo -sE "
 if type exa &> /dev/null; then
   alias ls="exa -1"
   alias la="exa -1a"
-  alias ll="exa -l"
-  alias lla="exa -la"
+  alias ll="exa -lg"
+  alias lla="exa -lga"
 else
   alias ls="ls -1hF --color=auto"
   alias la="ls -1hFA --color=auto"
