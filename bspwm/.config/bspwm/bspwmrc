@@ -36,6 +36,8 @@ bspc rule -a .zathura-wrapped_ state=tiled
 bspc rule -a Slack desktop=0
 bspc rule -a Spotify desktop=0
 bspc rule -a Keybase desktop=0
+bspc rule -a Bluetooth state=floating
+bspc rule -a Pavucontrol state=floating
 
 # configure keyboard
 xset r rate 250
