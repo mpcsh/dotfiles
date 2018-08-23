@@ -24,7 +24,7 @@ bottom = true
 dpi = ${xrdb:Xft.dpi}
 
 width = 100%
-height = ${xrdb:barHeight}
+height = 48
 
 padding-left = 0
 padding-right = 1
