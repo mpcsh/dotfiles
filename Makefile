@@ -3,7 +3,7 @@
 # Modules
 ARCH_MODULES = arch
 BASE_MODULES = git nvim ssh tmux zsh
-XORG_MODULES = firefox fonts gtk kitty i3 xresources
+XORG_MODULES = bspwm firefox fonts gtk kitty xresources
 
 default: sync base base-root arch xorg
 headless: sync base base-root arch
