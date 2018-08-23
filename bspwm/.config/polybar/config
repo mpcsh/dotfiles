@@ -37,7 +37,7 @@ font-1 = "Font Awesome:size=12;3"
 font-2 = "Material Icons:size=12;5"
 
 ; modules list
-modules-left = i3
+modules-left = bspwm
 modules-center = date
 modules-right = xbacklight volume battery powermenu
 
@@ -48,18 +48,18 @@ tray-maxsize = 36
 module-margin-left = 1
 module-margin-right = 1
 
-[module/i3]
-type = internal/i3
-format = <label-state>
+[module/bspwm]
+type = internal/bspwm
+format = <label-state> <label-mode>
 
 label-focused = %name%
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.foreground}
 label-focused-padding = 1
 
-label-unfocused = %name%
-label-unfocused-foreground = ${colors.foreground}
-label-unfocused-padding = 1
+label-occupied = %name%
+label-occupied-foreground = ${colors.foreground}
+label-occupied-padding = 1
 
 label-urgent = %name%
 label-urgent-background = ${colors.alert}
