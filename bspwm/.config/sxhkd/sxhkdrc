@@ -77,7 +77,7 @@ super + s
   ~/dotfiles/bin/hidpi spotify
 
 super + b
-  ~/dotfiles/bin/toggle_polybar
+  ~/dotfiles/bin/toggle-polybar
 
 ### display mode switching
 # laptop mode
