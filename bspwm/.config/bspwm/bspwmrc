@@ -36,7 +36,7 @@ bspc rule -a Zathura state=tiled
 bspc rule -a Slack desktop=0
 bspc rule -a Spotify desktop=0
 bspc rule -a Keybase desktop=0
-bspc rule -a Bluetooth state=floating
+bspc rule -a Blueberry.py state=floating
 bspc rule -a Pavucontrol state=floating
 
 # configure keyboard
@@ -45,6 +45,7 @@ setxkbmap -option caps:escape
 
 # autostart apps
 nm-applet &
+blueberry-tray &
 dropbox &
 run_keybase &
 redshift -t 5500:3000 -l 41.88:-87.63 &
