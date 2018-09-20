@@ -58,6 +58,9 @@ super + shift + {Escape,Caps_Lock}
 super + grave
   kitty
 
+super + c
+  chromium
+
 super + f
   firefox
 
