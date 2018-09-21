@@ -1,40 +1,25 @@
-.PHONY: default sync base arch xorg clean clean-base clean-arch clean-xorg
+.PHONY: default sync base root clean clean-base clean-root
 
 # Modules
-ARCH_MODULES = arch
-BASE_MODULES = git nvim ssh tmux zsh
-XORG_MODULES = bspwm firefox fonts gtk kitty xresources
+MODULES = git nvim ssh tmux zsh
 
-default: sync base base-root arch xorg
-headless: sync base base-root arch
-permissionless: sync base
+default: sync base base-root
 
 sync:
 	peru sync
 
 base:
-	stow $(BASE_MODULES)
+	stow $(MODULES)
 	nvim -c "PlugInstall --sync" -c "qa"
 
 base-root:
-	sudo stow -t /root $(BASE_MODULES)
+	sudo stow -t /var/root $(MODULES)
+	sudo nvim -c "PlugInstall --sync" -c "qa"
 
-arch:
-	sudo stow -t / $(ARCH_MODULES)
-
-xorg:
-	stow $(XORG_MODULES)
-
-clean: clean-base clean-root clean-arch clean-xorg
+clean: clean-base clean-root
 
 clean-base:
-	stow -D $(BASE_MODULES)
+	stow -D $(MODULES)
 
 clean-root:
-	sudo stow -t /root -D $(BASE_MODULES)
-
-clean-arch:
-	sudo stow -t / -D $(ARCH_MODULES)
-
-clean-xorg:
-	stow -D $(XORG_MODULES)
+	sudo stow -t /var/root -D $(MODULES)
