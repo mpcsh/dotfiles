@@ -53,6 +53,12 @@ if test -e $_brew_fzf_path; then
   source $_brew_fzf_path
 fi
 
+# mactex
+mactex_path=/Library/TeX/texbin
+if test -e $mactex_path; then
+  export PATH="$PATH:$mactex_path"
+fi
+
 # autojump
 _z_path=~/.antigen/bundles/rupa/z
 if test -e $_z_path; then
