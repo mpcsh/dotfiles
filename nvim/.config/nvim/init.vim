@@ -21,6 +21,7 @@ Plug 'lervag/vimtex'
 Plug 'wlangstroth/vim-racket'
 
 " new features
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-abolish'
