@@ -37,3 +37,5 @@
 	insteadOf = gh://
 [url "https://gitlab.com/"]
 	insteadOf = gl://
+[url "https://mit.cs.uchicago.edu/"]
+	insteadOf = mit://
