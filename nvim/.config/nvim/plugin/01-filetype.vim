@@ -11,6 +11,8 @@ endfunction
 autocmd BufNewFile,BufRead *.tex call SetLatexOptions()
 function SetLatexOptions()
   setlocal filetype=tex
+  setlocal colorcolumn=81
+  setlocal textwidth=80
 endfunction
 
 " markdown
