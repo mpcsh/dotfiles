@@ -39,3 +39,5 @@
 	insteadOf = gl://
 [url "https://mit.cs.uchicago.edu/"]
 	insteadOf = mit://
+[url "https://mit.cs.uchicago.edu/cmsc12100-aut-18/"]
+	insteadOf = 121://
