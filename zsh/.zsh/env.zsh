@@ -8,6 +8,9 @@ export TERM="xterm-256color"
 export SSH_ASKPASS="" # https://gist.github.com/joseluisq/d0e66c5f718250c90075
 export GIT_ASKPASS=""
 export NVIM_LISTEN_ADDRESS="/tmp/nvimsocket" # for nvr support
+if test $(hostname) = "cs-vm"; then
+  export REQUESTS_CA_BUNDLE="/etc/ssl/certs/ca-certificates.crt"
+fi
 
 # don't cd with just a dirname
 unsetopt AUTO_CD
