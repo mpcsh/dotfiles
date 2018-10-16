@@ -39,7 +39,7 @@ function _vcs_status() {
   fi
 
   # get the current status and branch name
-  local _git_status=$(git status --porcelain=v1 --branch)
+  local _git_status=$(git status --porcelain --branch)
   local remote_info=$(echo $_git_status | head -n 1 | cut -d ' ' -f 2)
   local git_status=$(echo $_git_status | tail -n +2)
   local branch_name=$(git symbolic-ref --quiet --short HEAD 2> /dev/null || \
