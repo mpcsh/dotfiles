@@ -9,20 +9,20 @@ function SetCOptions()
   setlocal filetype=c
   setlocal tabstop=4
   setlocal shiftwidth=4
-  Width80()
+  call Width80()
 endfunction
 
 " latex - fix "plaintex" filetype detection shit
 autocmd BufNewFile,BufRead *.tex call SetLatexOptions()
 function SetLatexOptions()
   setlocal filetype=tex
-  Width80()
+  call Width80()
 endfunction
 
 " markdown
 autocmd BufNewFile,BufRead *.md call SetMarkdownOptions()
 function SetMarkdownOptions()
-  Width80()
+  call Width80()
 endfunction
 
 " rust
@@ -35,7 +35,7 @@ endfunction
 autocmd BufNewFile,BufRead *.py call SetPythonOptions()
 function SetPythonOptions()
   if hostname() == "cs-vm"
-    Width80()
+    call Width80()
   endif
 endfunction
 autocmd BufWritePre *.py call BlackGuarded()
