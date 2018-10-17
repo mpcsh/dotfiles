@@ -15,6 +15,7 @@ Plug 'wincent/terminus'
 Plug 'junegunn/goyo.vim' " distraction-free mode
 
 " language support
+Plug 'ambv/vim-black'
 Plug 'baskerville/vim-sxhkdrc'
 Plug 'cespare/vim-toml'
 Plug 'lervag/vimtex'
