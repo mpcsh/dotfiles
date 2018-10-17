@@ -1,7 +1,7 @@
 .PHONY: default sync base root clean clean-base clean-root
 
 # Modules
-MODULES = git nvim ssh tmux zsh
+MODULES = fish git nvim ssh tmux
 
 default: sync base base-root
 
