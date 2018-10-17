@@ -1,25 +1,28 @@
+function Width80()
+  setlocal colorcolumn=81
+  setlocal textwidth=80
+endfunction
+
 " c
 autocmd BufNewFile,BufRead *.c,*.h call SetCOptions()
 function SetCOptions()
   setlocal filetype=c
-  setlocal colorcolumn=81
   setlocal tabstop=4
   setlocal shiftwidth=4
+  Width80()
 endfunction
 
 " latex - fix "plaintex" filetype detection shit
 autocmd BufNewFile,BufRead *.tex call SetLatexOptions()
 function SetLatexOptions()
   setlocal filetype=tex
-  setlocal colorcolumn=81
-  setlocal textwidth=80
+  Width80()
 endfunction
 
 " markdown
 autocmd BufNewFile,BufRead *.md call SetMarkdownOptions()
 function SetMarkdownOptions()
-  setlocal colorcolumn=81
-  setlocal textwidth=80
+  Width80()
 endfunction
 
 " rust
@@ -51,7 +54,7 @@ function SetSMLOptions()
 endfunction
 
 " yaml
-autocmd FileType yaml call SetYamlOptions()
+autocmd BufNewFile,BufRead *.yml,*.yaml SetYamlOptions()
 function SetYamlOptions()
   setlocal indentkeys-=<:>
 endfunction

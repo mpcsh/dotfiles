@@ -15,7 +15,7 @@ Plug 'wincent/terminus'
 Plug 'junegunn/goyo.vim' " distraction-free mode
 
 " language support
-Plug 'ambv/vim-black'
+Plug 'ambv/black'
 Plug 'baskerville/vim-sxhkdrc'
 Plug 'cespare/vim-toml'
 Plug 'lervag/vimtex'
@@ -24,11 +24,11 @@ Plug 'wlangstroth/vim-racket'
 " new features
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/vim-easy-align'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
-Plug 'junegunn/vim-easy-align'
 
 call plug#end()
 
