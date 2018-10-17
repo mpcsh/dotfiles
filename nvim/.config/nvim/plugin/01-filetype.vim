@@ -28,6 +28,20 @@ function SetRustOptions()
   setlocal filetype=rust
 endfunction
 
+" python
+autocmd BufNewFile,BufRead *.py call SetPythonOptions()
+function SetPythonOptions()
+  if hostname() == "cs-vm"
+    Width80()
+  endif
+endfunction
+autocmd BufWritePre *.py call BlackGuarded()
+function BlackGuarded()
+  if hostname() != "cs-vm"
+    :Black
+  endif
+endfunction
+
 " SML
 autocmd BufNewFile,BufRead *.sml call SetSMLOptions()
 function SetSMLOptions()
