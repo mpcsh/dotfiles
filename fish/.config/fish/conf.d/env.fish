@@ -47,6 +47,10 @@ set autojump_bin /usr/local/share/autojump/autojump.fish
 if test -e $autojump_bin
   source $autojump_bin
 end
+set linux_autojump_bin /usr/share/autojump/autojump.fish
+if test -e $linux_autojump_bin
+  source $linux_autojump_bin
+end
 
 # SML
 set sml_bin /usr/lib/smlnj/bin
