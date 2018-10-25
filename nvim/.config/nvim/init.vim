@@ -23,7 +23,6 @@ Plug 'lervag/vimtex'
 Plug 'wlangstroth/vim-racket'
 
 " new features
-Plug 'jiangmiao/auto-pairs',
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
