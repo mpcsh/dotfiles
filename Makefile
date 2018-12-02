@@ -9,6 +9,7 @@ sync:
 	peru sync
 
 base:
+	mkdir -p ~/.config ~/.ssh
 	stow $(MODULES)
 	nvim -c "PlugInstall --sync" -c "qa"
 
