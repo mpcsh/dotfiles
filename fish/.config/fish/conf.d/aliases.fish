@@ -113,5 +113,4 @@ function pair-with
   set session_file "/shared/$pair/tmux.session"
   # echo $session_file
   tmux -S "$session_file" attach -t pair; or tmux -S "$session_file" new -t pair
-  chgrp hackers "$session_file"; or echo "Couldn't change group of session file!"
 end
