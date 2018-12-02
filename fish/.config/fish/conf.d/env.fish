@@ -58,3 +58,9 @@ set sml_bin /usr/lib/smlnj/bin
 if test -e $sml_bin
   set -x fish_user_paths $_sml_bin $fish_user_paths
 end
+
+# rust
+set rust_bin ~/.cargo/bin
+if test -e $rust_bin
+  set -x fish_user_paths $rust_bin $fish_user_paths
+end
