@@ -16,10 +16,10 @@ if type -q exa
     command exa -1a $argv
   end
   function ll
-    command exa -l $argv
+    command exa -lg $argv
   end
   function lla
-    command exa -la $argv
+    command exa -lga $argv
   end
 else
   function ls
@@ -29,10 +29,10 @@ else
     command ls -1hFA --color=auto $argv
   end
   function ll
-    command ls -lghF --color=auto $argv
+    command ls -lhF --color=auto $argv
   end
   function lla
-    command ls -lghFA --color=auto $argv
+    command ls -lhFA --color=auto $argv
   end
 end
 
