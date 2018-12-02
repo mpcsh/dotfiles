@@ -1,4 +1,4 @@
-.PHONY: default sync base root clean clean-base clean-root
+.PHONY: default sync base clean
 
 # Modules
 MODULES = fish git nvim ssh tmux
@@ -12,14 +12,5 @@ base:
 	stow $(MODULES)
 	nvim -c "PlugInstall --sync" -c "qa"
 
-base-root:
-	sudo stow -t /var/root $(MODULES)
-	sudo nvim -c "PlugInstall --sync" -c "qa"
-
-clean: clean-base clean-root
-
-clean-base:
+clean:
 	stow -D $(MODULES)
-
-clean-root:
-	sudo stow -t /var/root -D $(MODULES)
