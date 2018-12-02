@@ -114,5 +114,5 @@ function pair-with
   # echo $session_file
   chown (whoami) "$session_file"
   chgrp hackers "$session_file"
-  tmux -S "$session_file" attach -t pair; or tmux -S "$session_file" attach -t pair
+  tmux -S "$session_file" attach -t pair; or tmux -S "$session_file" new -t pair
 end
