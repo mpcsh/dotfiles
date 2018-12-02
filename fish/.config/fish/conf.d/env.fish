@@ -4,10 +4,11 @@ set -x FZF_DEFAULT_COMMAND "rg --files-with-matches ."
 set -x FZF_DEFAULT_OPTS "--color=16,fg+:4 --ansi"
 set -x FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
 set -x FZF_CTRL_R_OPTS "--reverse"
-set -x TERM xterm-256color
-set -x SSH_ASKPASS "" # https://gist.github.com/joseluisq/d0e66c5f718250c90075
+set -x GIT_DUET_CO_AUTHORED_BY 1
 set -x GIT_ASKPASS ""
 set -x NVIM_LISTEN_ADDRESS "/tmp/nvimsocket" # for nvr support
+set -x SSH_ASKPASS "" # https://gist.github.com/joseluisq/d0e66c5f718250c90075
+set -x TERM xterm-256color
 if test (hostname) = "cs-vm"
   set -x REQUESTS_CA_BUNDLE "/etc/ssl/certs/ca-certificates.crt"
 end
