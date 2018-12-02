@@ -3,7 +3,7 @@
 # Modules
 MODULES = fish git nvim ssh tmux
 
-default: sync base base-root
+default: sync base
 
 sync:
 	peru sync
