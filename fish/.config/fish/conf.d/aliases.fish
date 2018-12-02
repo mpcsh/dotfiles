@@ -29,10 +29,10 @@ else
     command ls -1hFA --color=auto $argv
   end
   function ll
-    command ls -lhF --color=auto $argv
+    command ls -lghF --color=auto $argv
   end
   function lla
-    command ls -lhFA --color=auto $argv
+    command ls -lghFA --color=auto $argv
   end
 end
 
