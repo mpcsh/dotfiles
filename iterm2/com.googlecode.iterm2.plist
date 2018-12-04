@@ -429,9 +429,9 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>269 126 606 469 0 0 3008 1692 </string>
+	<string>120 60 606 469 0 0 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>216 1276 928 394 0 0 3008 1692 </string>
+	<string>215 1157 1016 512 0 0 3008 1692 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>1504 0 1504 1692 0 0 3008 1692 </string>
 	<key>NeverWarnAboutMeta</key>
@@ -803,6 +803,14 @@
 			</array>
 			<key>Keyboard Map</key>
 			<dict>
+				<key>0x3d-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>25</integer>
+					<key>Text</key>
+					<string>Make Text Bigger
+Make Text Bigger</string>
+				</dict>
 				<key>0x53-0x120000</key>
 				<dict>
 					<key>Action</key>
@@ -987,7 +995,7 @@
 		<array>
 			<string>session.jobName</string>
 			<string>session.id</string>
-			<string>session.presentationName</string>
+			<string>session.pid</string>
 			<string>session.profileName</string>
 			<string>session.name</string>
 			<string>session.terminalIconName</string>
@@ -1013,9 +1021,9 @@
 			<string>session.autoNameFormat</string>
 			<string>session.jobPid</string>
 			<string>session.lastCommand</string>
+			<string>session.presentationName</string>
 			<string>session.mouseReportingMode</string>
 			<string>session.columns</string>
-			<string>session.pid</string>
 		</array>
 		<key>16</key>
 		<array>
@@ -1033,6 +1041,7 @@
 			<string>currentTab.currentSession.session.rows</string>
 			<string>iterm2</string>
 			<string>currentTab.currentSession.session.hostname</string>
+			<string>currentTab.currentSession.session.termid</string>
 			<string>currentTab.currentSession.session.jobPid</string>
 			<string>currentTab.currentSession.session.path</string>
 		</array>
@@ -1040,6 +1049,7 @@
 		<array>
 			<string>currentSession</string>
 			<string>titleOverride</string>
+			<string>currentSession.session.termid</string>
 			<string>currentSession.session.pid</string>
 			<string>currentSession.session.name</string>
 			<string>currentSession.session.mouseReportingMode</string>
