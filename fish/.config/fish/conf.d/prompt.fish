@@ -8,7 +8,7 @@ function fish_prompt
   set -l directory_prefix ""
 
   # if we're not who we logged in as, display the username
-  if test $USER != $LOGNAME
+  if test (who am i | cut -d ' ' -f 1) != (whoami)
     set hostname_prefix "at "
     set directory_prefix "in "
 
