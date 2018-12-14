@@ -5,6 +5,7 @@ call plug#begin()
 Plug 'morhetz/gruvbox'
 
 " sensible defaults
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'tpope/vim-repeat'
 Plug 'vim-scripts/replacewithregister'

@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-set -e
-dir="$(git rev-parse --git-dir)"
-git ls-files | ctags --tag-relative -f "$dir/tags" -L -
