@@ -66,3 +66,6 @@ let g:plug_window = 'new'
 
 " signify
 let g:signify_update_on_focusgained = 1
+
+" hide tag files in .git directories
+let g:gutentags_cache_dir = '.git'
