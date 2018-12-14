@@ -12,9 +12,6 @@ Plug 'vim-scripts/replacewithregister'
 Plug 'vim-scripts/visualrepeat'
 Plug 'wincent/terminus'
 
-" cosmetic enhancements
-Plug 'junegunn/goyo.vim' " distraction-free mode
-
 " language support
 Plug 'ambv/black'
 Plug 'baskerville/vim-sxhkdrc'
