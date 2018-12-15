@@ -13,7 +13,9 @@ Plug 'vim-scripts/visualrepeat'
 Plug 'wincent/terminus'
 
 " language support
-Plug 'ambv/black'
+if hostname() != "cs-vm"
+  Plug 'ambv/black'
+endif
 Plug 'baskerville/vim-sxhkdrc'
 Plug 'cespare/vim-toml'
 Plug 'dag/vim-fish'
