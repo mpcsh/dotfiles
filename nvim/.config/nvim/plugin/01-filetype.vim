@@ -39,12 +39,6 @@ function SetPythonOptions()
     call Width80()
   endif
 endfunction
-autocmd BufWritePre *.py call BlackGuarded()
-function BlackGuarded()
-  if hostname() != "cs-vm"
-    :Black
-  endif
-endfunction
 
 " SML
 autocmd BufNewFile,BufRead *.sml call SetSMLOptions()
