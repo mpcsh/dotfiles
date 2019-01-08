@@ -12,6 +12,8 @@
 	<string>manual</string>
 	<key>Default Bookmark Guid</key>
 	<string>85AD9590-7C77-48DF-BB4B-8602BF84122E</string>
+	<key>DimInactiveSplitPanes</key>
+	<false/>
 	<key>EnableDivisionView</key>
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
@@ -59,11 +61,11 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1517 716 814 486 0 0 3008 1692 </string>
+	<string>1517 755 1018 447 0 0 3008 1692 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>913 708 570 494 0 0 3008 1692 </string>
+	<string>913 672 588 518 0 0 3008 1692 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>212 106 570 494 0 0 1680 1050 </string>
+	<string>464 191 592 522 0 0 3008 1692 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>191 129 570 455 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -615,6 +617,10 @@ Make Text Bigger</string>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>6C7E14F6-A9FF-41CF-86B4-732A004A37FC</string>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>1</key>
@@ -1215,6 +1221,10 @@ Make Text Bigger</string>
 	<true/>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
+	<key>TerminalMargin</key>
+	<integer>14</integer>
+	<key>TerminalVMargin</key>
+	<integer>14</integer>
 	<key>WindowNumber</key>
 	<false/>
 	<key>WordCharacters</key>
