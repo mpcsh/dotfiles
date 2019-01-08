@@ -107,9 +107,3 @@ end
 function ergodox
   command teensy-loader-cli -mmcu=atmega32u4 -v -w $argv
 end
-
-function pair-with
-  set pair (echo $argv (whoami) | tr " " "\n" | sort | head -c -1 | tr '\n' ',')
-  set session_file "/shared/$pair/.tmux.session"
-  tmux -S "$session_file" attach -t pair; or tmux -S "$session_file" new -t pair -c "/shared/$pair"
-end
