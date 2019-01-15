@@ -13,6 +13,9 @@ if test (hostname) = "cs-vm"
   set -x REQUESTS_CA_BUNDLE "/etc/ssl/certs/ca-certificates.crt"
 end
 
+# umask
+umask 077
+
 # don't show annoying welcome message
 set fish_greeting ""
 
