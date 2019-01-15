@@ -49,7 +49,7 @@ function SetSMLOptions()
 endfunction
 
 " yaml
-autocmd BufNewFile,BufRead *.yml,*.yaml SetYamlOptions()
+autocmd BufNewFile,BufRead *.yml,*.yaml call SetYamlOptions()
 function SetYamlOptions()
   setlocal indentkeys-=<:>
 endfunction
