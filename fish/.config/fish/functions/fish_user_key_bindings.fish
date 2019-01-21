@@ -5,13 +5,19 @@ end
 
 function __git_fzf_git_status
   __git_fzf_is_in_git_repo; or return
-  set result (git -c color.status=always status --short | \
-    fzf -m --ansi --preview 'git diff --color=always HEAD -- {-1} | head -500' | \
+  git status --short | \
+    fzf -m --preview 'git diff HEAD -- {-1}' | \
     cut -c4- | \
-    sed 's/.* -> //')
+    sed 's/.* -> //' | \
+    while read -l r
+      set result $result $r
+    end
 
   if [ -n "$result" ]
-    commandline -t -- (string escape $result)
+    for r in $result
+      commandline -it -- (string escape $r)
+      commandline -it -- ' '
+    end
   end
 
   commandline -f repaint
@@ -19,16 +25,19 @@ end
 
 function __git_fzf_git_branch
   __git_fzf_is_in_git_repo; or return
-  set result (git branch -a --color=always | \
-    grep -v '/HEAD\s' | \
-    fzf -m --ansi --preview-window right:70% --preview 'git log --color=always --oneline --graph --date=short \
-      --pretty="format:%C(auto)%cd %h%d %s %C(magenta)[%an]%Creset" \
-      (echo {} | sed s/^..// | cut -d" " -f1) | head -'$LINES | \
+  git branch -a | \
+    fzf -m --preview 'git la (echo {} | sed s/^..// | cut -d" " -f1)' | \
     sed 's/^..//' | cut -d' ' -f1 | \
-    sed 's#^remotes/##')
+    sed 's#^remotes/##' | \
+    while read -l r
+      set result $result $r
+    end
 
   if [ -n "$result" ]
-    commandline -t -- (string escape $result)
+    for r in $result
+      commandline -it -- (string escape $r)
+      commandline -it -- ' '
+    end
   end
 
   commandline -f repaint
@@ -36,11 +45,17 @@ end
 
 function __git_fzf_git_tag
   __git_fzf_is_in_git_repo; or return
-  set result (git tag --sort -version:refname | \
-    fzf -m --ansi --preview-window right:70% --preview 'git show --color=always {} | head -'$LINES)
+  git tag --list | \
+    fzf -m --preview 'git show {}'| \
+    while read -l r
+      set result $result $r
+    end
 
   if [ -n "$result" ]
-    commandline -t -- (string escape $result)
+    for r in $result
+      commandline -it -- (string escape $r)
+      commandline -it -- ' '
+    end
   end
 
   commandline -f repaint
@@ -48,12 +63,18 @@ end
 
 function __git_fzf_git_log
   __git_fzf_is_in_git_repo; or return
-  set result (git log --color=always --graph --date=short --format="%C(auto)%cd %h%d %s %C(magenta)[%an]%Creset" | \
-    fzf -m --ansi --reverse --preview 'git show --color=always (echo {} | grep -o "[a-f0-9]\{7,\}") | head -'$LINES | \
-    cut -d ' ' -f 3)
+  git la | \
+    fzf -m --reverse --preview 'git show (echo {} | grep -o "[a-f0-9]\{7,\}")' | \
+    sed -E 's/.*([a-f0-9]{7,}).*/\1/' | \
+    while read -l r
+      set result $result $r
+    end
 
   if [ -n "$result" ]
-    commandline -t -- (string escape $result)
+    for r in $result
+      commandline -it -- (string escape $r)
+      commandline -it -- ' '
+    end
   end
 
   commandline -f repaint
