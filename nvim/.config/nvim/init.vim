@@ -25,6 +25,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 
 call plug#end()
