@@ -33,6 +33,7 @@
 	untracked = red
 [core]
 	pager = less -FR
+	fileMode = false
 [url "https://github.com/"]
 	insteadOf = gh://
 [url "https://gitlab.com/"]
