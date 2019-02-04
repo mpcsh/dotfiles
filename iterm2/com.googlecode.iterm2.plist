@@ -64,13 +64,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>253 65 445 103 0 0 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>82 494 916 514 0 0 1680 1050 </string>
+	<string>82 555 770 425 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>848 516 588 518 0 0 1680 1050 </string>
+	<string>1512 16 1480 1660 0 0 3008 1692 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>984 262 588 518 0 0 3008 1692 </string>
+	<string>432 16 816 1018 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>451 191 588 518 0 0 3008 1692 </string>
+	<string>16 16 1480 1660 0 0 3008 1692 </string>
 	<key>NeverWarnAboutShortLivedSessions_85AD9590-7C77-48DF-BB4B-8602BF84122E</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_85AD9590-7C77-48DF-BB4B-8602BF84122E_selection</key>
@@ -619,15 +619,17 @@ Make Text Bigger</string>
 	<key>NoSyncInstallationId</key>
 	<string>C8D2C44F-FE70-4E4C-AA16-06D67D653EEC</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>13</integer>
+	<integer>25</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>569994880.13649094</real>
+	<real>570216964.05081105</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>1</key>
@@ -1237,6 +1239,8 @@ Make Text Bigger</string>
 	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>iTerm Version</key>
 	<string>3.3.20190120-nightly</string>
 </dict>
