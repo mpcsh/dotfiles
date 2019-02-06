@@ -58,8 +58,10 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-" display whitespace
-set list
+" set up line wrapping http://vimcasts.org/episodes/soft-wrapping-text/
+set wrap
+set linebreak
+set nolist
 
 " don't open vim-plug output weird split buffers and shit
 let g:plug_window = 'new'
