@@ -21,6 +21,8 @@ Plug 'wlangstroth/vim-racket'
 " new features
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-abolish'
