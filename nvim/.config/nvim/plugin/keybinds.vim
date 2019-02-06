@@ -7,10 +7,10 @@ noremap <silent> j gj
 noremap <silent> k gk
 
 " make HJKL jump to the extreme of their lowercase counterparts
-noremap <silent> H ^
+noremap <silent> H g^
 noremap <silent> J G
 noremap <silent> K gg
-noremap <silent> L $
+noremap <silent> L g$
 
 " disable "ex mode"
 nnoremap <silent> Q <Nop>
