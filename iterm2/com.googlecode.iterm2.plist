@@ -63,14 +63,16 @@
 	<true/>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>253 65 445 103 0 0 1680 1050 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 126 606 469 0 0 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>82 555 770 425 0 0 1680 1050 </string>
+	<string>82 475 918 566 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1512 16 1480 1660 0 0 3008 1692 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
 	<string>432 16 816 1018 0 0 1680 1050 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>880 545 588 518 0 0 3008 1692 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>16 16 1480 1660 0 0 3008 1692 </string>
+	<string>16 16 1648 1018 0 0 1680 1050 </string>
 	<key>NeverWarnAboutShortLivedSessions_85AD9590-7C77-48DF-BB4B-8602BF84122E</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_85AD9590-7C77-48DF-BB4B-8602BF84122E_selection</key>
@@ -82,6 +84,18 @@
 			<true/>
 			<key>ASCII Ligatures</key>
 			<true/>
+			<key>AWDS Pane Directory</key>
+			<string></string>
+			<key>AWDS Pane Option</key>
+			<string>No</string>
+			<key>AWDS Tab Directory</key>
+			<string></string>
+			<key>AWDS Tab Option</key>
+			<string>No</string>
+			<key>AWDS Window Directory</key>
+			<string></string>
+			<key>AWDS Window Option</key>
+			<string>No</string>
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Allow Title Setting</key>
@@ -619,7 +633,7 @@ Make Text Bigger</string>
 	<key>NoSyncInstallationId</key>
 	<string>C8D2C44F-FE70-4E4C-AA16-06D67D653EEC</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>25</integer>
+	<integer>70</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
