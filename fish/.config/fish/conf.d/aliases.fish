@@ -105,5 +105,5 @@ end
 
 # ergodox firmware
 function ergodox
-  command teensy-loader-cli -mmcu=atmega32u4 -v -w $argv
+  command teensy_loader_cli -mmcu=atmega32u4 -v -w $argv
 end
