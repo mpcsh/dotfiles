@@ -1,8 +1,6 @@
 [user]
 	email = m@mpc.sh
 	name = Mark Cohen
-[credential]
-	helper = store
 [push]
 	default = simple
 [pull]
@@ -34,16 +32,16 @@
 [core]
 	pager = less -FR
 	fileMode = false
-[url "https://github.com/"]
+[url "git@github.com:"]
 	insteadOf = gh://
-[url "https://gitlab.com/"]
+[url "git@gitlab.com:"]
 	insteadOf = gl://
-[url "https://mit.cs.uchicago.edu/"]
+[url "git@mit.cs.uchicago.edu:"]
 	insteadOf = mit://
-[url "https://mit.cs.uchicago.edu/cmsc23300-win-19/"]
-	insteadOf = 233://
-[url "https://mit.cs.uchicago.edu/cmsc23300-win-19-STAGING/"]
-	insteadOf = 233S://
+[url "git@mit.cs.uchicago.edu:cmsc22000-spr-19/"]
+  insteadOf = 220://
+[url "git@mit.cs.uchicago.edu:cmsc22000-spr-19-staging/"]
+  insteadOf = 220S://
 [color]
 	status = always
 	ui = always
