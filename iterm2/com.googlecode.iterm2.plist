@@ -92,11 +92,11 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>208 1005 814 486 0 0 3008 1692 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1512 1158 588 518 0 0 3008 1692 </string>
+	<string>16 16 1648 1018 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>848 16 816 1018 0 0 1680 1050 </string>
+	<string>16 16 816 1018 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>1512 190 914 1312 0 0 3008 1692 </string>
+	<string>16 16 1648 1018 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>254 60 588 518 0 0 1680 1050 </string>
 	<key>NeverWarnAboutShortLivedSessions_85AD9590-7C77-48DF-BB4B-8602BF84122E</key>
@@ -657,16 +657,16 @@ Make Text Bigger</string>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {3008, 1692}}</string>
+		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{1337, 1021}</string>
+		<string>{269, 595}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>C8D2C44F-FE70-4E4C-AA16-06D67D653EEC</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>247</integer>
+	<integer>312</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -679,6 +679,17 @@ Make Text Bigger</string>
 	<false/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
+		<key>0</key>
+		<array>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>id</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+		</array>
 		<key>1</key>
 		<array>
 			<dict>
@@ -1300,12 +1311,16 @@ Make Text Bigger</string>
 	<integer>1</integer>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict/>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/mpcsh/dotfiles/iterm2</string>
 	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
 	<false/>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>RemapModifiersWithoutEventTap</key>
@@ -1323,7 +1338,7 @@ Make Text Bigger</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-03-13T19:25:08Z</date>
+	<date>2019-04-17T16:56:26Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -1353,6 +1368,6 @@ Make Text Bigger</string>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.20190313-nightly</string>
+	<string>3.3.20190415-nightly</string>
 </dict>
 </plist>
