@@ -28,12 +28,14 @@
 	<false/>
 	<key>GlobalKeyMap</key>
 	<dict/>
+	<key>HapticFeedbackForEsc</key>
+	<false/>
 	<key>HideActivityIndicator</key>
 	<false/>
 	<key>HideScrollbar</key>
 	<false/>
 	<key>HideTab</key>
-	<true/>
+	<false/>
 	<key>HideTabCloseButton</key>
 	<true/>
 	<key>HideTabNumber</key>
@@ -92,11 +94,11 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>208 1005 814 486 0 0 3008 1692 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>16 16 1648 1018 0 0 1680 1050 </string>
+	<string>991 189 588 516 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>16 16 816 1018 0 0 1680 1050 </string>
+	<string>981 372 588 516 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>16 16 1648 1018 0 0 1680 1050 </string>
+	<string>16 16 816 1018 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>254 60 588 518 0 0 1680 1050 </string>
 	<key>NeverWarnAboutShortLivedSessions_85AD9590-7C77-48DF-BB4B-8602BF84122E</key>
@@ -659,14 +661,14 @@ Make Text Bigger</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{269, 595}</string>
+		<string>{900, 670}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>C8D2C44F-FE70-4E4C-AA16-06D67D653EEC</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>312</integer>
+	<integer>326</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1142,6 +1144,14 @@ Make Text Bigger</string>
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentSession.jobPid</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>window</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -1303,6 +1313,10 @@ Make Text Bigger</string>
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSearchHistory</key>
+	<array>
+		<string>Right</string>
+	</array>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>569822080.13561106</real>
 	<key>NoSyncVeryOldNightlyBuildWarning_SilenceUntil</key>
@@ -1338,7 +1352,7 @@ Make Text Bigger</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-04-17T16:56:26Z</date>
+	<date>2019-05-01T20:30:07Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -1351,6 +1365,8 @@ Make Text Bigger</string>
 	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
+	<key>SoundForEsc</key>
+	<false/>
 	<key>StretchTabsToFillBar</key>
 	<true/>
 	<key>TabStyleWithAutomaticOption</key>
@@ -1361,6 +1377,8 @@ Make Text Bigger</string>
 	<integer>14</integer>
 	<key>UseBorder</key>
 	<false/>
+	<key>VisualIndicatorForEsc</key>
+	<false/>
 	<key>WindowNumber</key>
 	<false/>
 	<key>WordCharacters</key>
@@ -1368,6 +1386,6 @@ Make Text Bigger</string>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.20190415-nightly</string>
+	<string>3.3.20190429-nightly</string>
 </dict>
 </plist>
