@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>mpcsh.startpage</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python</string>
+    <string>-m</string>
+    <string>SimpleHTTPServer</string>
+    <string>19970</string>
+  </array>
+  <key>KeepAlive</key>
+  <true/>
+  <key>StandardErrorPath</key>
+  <string>/Users/mpcsh/Library/Logs/mpcsh.startpage.log</string>
+  <key>StandardOutPath</key>
+  <string>/Users/mpcsh/Library/Logs/mpcsh.startpage.log</string>
+  <key>WorkingDirectory</key>
+  <string>/Users/mpcsh/dotfiles/startpage</string>
+</dict>
+</plist>

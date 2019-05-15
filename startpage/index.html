@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>startpage</title>
+    <meta charset="utf-8">
+<style>
+html {
+  font-family: Iosevka Term Custom, monospace;
+  font-size: 16px;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: #fafafa;
+  color: #555555;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+div.favorites-list {
+  width: 160px;
+  margin: 32px;
+}
+
+div.favorites-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+div.favorites-list p {
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 1px solid #555555;
+  padding-right: 100%;
+}
+
+div.favorites-list a {
+  color: #555555;
+  outline: none;
+
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px;
+}
+
+div.favorites-list a:hover {
+  background-color: #555555;
+  color: #fafafa;
+}
+</style>
+  </head>
+  <body>
+
+    <div class="favorites-list">
+      <ul>
+        <li><p></p></li>
+        <li><a href="https://lobste.rs">lobsters</a></li>
+        <li><a href="https://xkcd.com">xkcd</a></li>
+        <li><a href="https://canvas.uchicago.edu">canvas</a></li>
+        <li><a href="https://newconnect.mheducation.com/flow/connect.html">connect</a></li>
+        <li><p></p></li>
+      </ul>
+    </div>
+
+    <div class="favorites-list">
+      <ul>
+        <li><p></p></li>
+        <li><a href="https://github.com/pulls/review-requested">pr reviews</a></li>
+        <li><a href="https://github.com/uchicago-cs/chiventure/issues?q=is%3Aopen+is%3Aissue+-label%3Acomponent%2Fgame-state+-label%3Acomponent%2Fcli+-label%3Acomponent%2Fwdl">team issues</a></li>
+        <li><a href="https://github.com/uchicago-cs/chiventure/pulls?q=is%3Aopen+is%3Aissue+-label%3Acomponent%2Fgame-state+-label%3Acomponent%2Fcli+-label%3Acomponent%2Fwdl">team prs</a></li>
+        <li><a href="https://uchicago-cs.github.io/cmsc22000/labs/">labs</a></li>
+        <li><p></p></li>
+      </ul>
+    </div>
+
+  </body>
+</html>
