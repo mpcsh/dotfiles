@@ -33,8 +33,7 @@ line-size = 3
 
 ; font configuration
 font-0 = "monospace:size=12;5"
-font-1 = "Font Awesome 5 Free Solid:size=12;5"
-font-2 = "Material Icons:size=12;5"
+font-1 = "Typicons:size=16;4"
 
 ; modules list
 modules-left = bspwm
@@ -71,7 +70,7 @@ label-empty =
 type = internal/xbacklight
 
 format = <label>
-format-prefix = " "
+format-prefix = " "
 label = %percentage%%
 
 [module/date]
@@ -92,11 +91,11 @@ format-volume = <ramp-volume> <label-volume>
 
 label-volume = %percentage%%
 
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
 
-format-muted-prefix = " "
+format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
 
 label-muted = 00%
@@ -112,19 +111,18 @@ format-charging = <animation-charging> <label-charging>
 
 format-discharging = <ramp-capacity> <label-discharging>
 
-format-full-prefix = " "
+format-full-prefix = " "
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-4 = 
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+
 animation-charging-framerate = 500
 
 [module/powermenu]
@@ -132,7 +130,7 @@ type = custom/menu
 
 format-spacing = 1
 
-label-open = 
+label-open = 
 label-open-foreground = ${colors.foreground}
 label-close = Cancel
 label-close-foreground = ${colors.foreground}
