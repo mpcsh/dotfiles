@@ -59,6 +59,11 @@ function rsync
   command rsync -avzHE --progress -h $argv
 end
 
+# make xclip use system clipboard
+function xclip
+  command xclip -selection clipboard $argv
+end
+
 ######################
 # default replacements
 ######################
