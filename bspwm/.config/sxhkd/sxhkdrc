@@ -90,15 +90,6 @@ super + s
 super + b
   ~/dotfiles/bin/toggle-polybar
 
-### display mode switching
-# laptop mode
-super + alt + l
-  ~/dotfiles/bin/display-mode laptop
-
-# desktop mode
-super + alt + d
-  ~/dotfiles/bin/display-mode desktop
-
 ### layout switching
 # english
 super + alt + e

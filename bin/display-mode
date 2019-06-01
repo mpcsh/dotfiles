@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-~/.screenlayout/"$1".sh
-
-feh --no-fehbg --bg-fill ~/.wallpaper
