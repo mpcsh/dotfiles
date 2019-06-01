@@ -1,7 +1,7 @@
 " colorscheme
 set termguicolors
 syntax enable
-set background=light
+set background=dark
 colorscheme gruvbox
 
 " sign column
