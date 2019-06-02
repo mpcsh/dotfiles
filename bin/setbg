@@ -3,9 +3,9 @@
 set -l USAGE "usage: setbg [filename]"
 
 if test (count argv) = 0
-  ln -sf "$argv[1]" ~/.wallpaper
   feh --no-fehbg --bg-fill ~/.wallpaper
 else if test (count argv) = 1
+  ln -sf $argv[1] ~/.wallpaper
   feh --no-fehbg --bg-fill ~/.wallpaper
 else
   echo $USAGE
