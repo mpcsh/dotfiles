@@ -72,10 +72,10 @@ super + c
 super + f
   firefox
 
-super + shift + 3
+super + alt + 3
   ~/dotfiles/bin/screenshot
 
-super + shift + 4
+super + alt + 4
   ~/dotfiles/bin/screenshot select
 
 super + n
