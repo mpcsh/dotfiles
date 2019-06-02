@@ -27,6 +27,7 @@ kitty
 lxdm-gtk3
 neofetch
 neovim
+neovim-remote
 network-manager-applet
 networkmanager
 noto-fonts
