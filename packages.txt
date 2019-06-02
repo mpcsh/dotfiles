@@ -61,3 +61,5 @@ xf86-video-intel
 xorg
 xrq-git
 yay-bin
+zathura
+zathura-pdf-poppler
