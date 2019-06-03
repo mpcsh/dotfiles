@@ -5,11 +5,11 @@ set -l USAGE "usage: pomo [start|break|longbreak]"
 if test (count $argv) != 1
   echo $USAGE
 else if test $argv[1] = "start"
-  termdown -B 25m
+  termdown -t "DONE" 25m
 else if test $argv[1] = "break"
-  termdown -B 5m
+  termdown -t "DONE" 5m
 else if test $argv[1] = "longbreak"
-  termdown -B 15m
+  termdown -t "DONE" 15m
 else
   echo $USAGE
 end
