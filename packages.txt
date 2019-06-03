@@ -18,6 +18,7 @@ flashfocus-git
 fzf
 git
 gnome-keyring
+htop
 i3lock
 imagemagick
 intel-ucode
