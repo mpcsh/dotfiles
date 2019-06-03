@@ -29,41 +29,31 @@ set -x LESS_TERMCAP_ue (printf "\033[0m")
 set -x LESS_TERMCAP_us (printf "\033[01;32m")
 
 # scripts
-set dotfiles_bin ~/dotfiles/bin
+set -l dotfiles_bin ~/dotfiles/bin
 if test -e $dotfiles_bin
-  set -x fish_user_paths $fish_user_paths $dotfiles_bin
+  set -a fish_user_paths $dotfiles_bin
 end
 
 # fzf
-set fzf_bin = ~/.fzf.fish
+set -l fzf_bin = ~/.fzf.fish
 if test -e $fzf_bin
   source $fzf_bin
 end
 
-# mactex
-set mactex_path /Library/TeX/texbin
-if test -e $mactex_path
-  set -x fish_user_paths $fish_user_paths $mactex_path
-end
-
 # autojump
-set autojump_bin /usr/local/share/autojump/autojump.fish
+set -l autojump_bin /usr/share/autojump/autojump.fish
 if test -e $autojump_bin
   source $autojump_bin
 end
-set linux_autojump_bin /usr/share/autojump/autojump.fish
-if test -e $linux_autojump_bin
-  source $linux_autojump_bin
-end
 
 # SML
-set sml_bin /usr/lib/smlnj/bin
+set -l sml_bin /usr/lib/smlnj/bin
 if test -e $sml_bin
-  set -x fish_user_paths $_sml_bin $fish_user_paths
+  set -a fish_user_paths $sml_bin
 end
 
 # rust
-set rust_bin ~/.cargo/bin
+set -l rust_bin ~/.cargo/bin
 if test -e $rust_bin
-  set -x fish_user_paths $rust_bin $fish_user_paths
+  set -a fish_user_paths $rust_bin
 end
