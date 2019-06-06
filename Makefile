@@ -2,7 +2,7 @@
 
 # Modules
 MODULES = fish git nvim ssh
-XORG_MODULES = alacritty bspwm fonts gtk rofi xresources
+XORG_MODULES = alacritty bspwm firefox fonts gtk rofi xresources
 ARCH_MODULES = arch
 
 default: sync base xorg arch
