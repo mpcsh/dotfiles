@@ -11,6 +11,7 @@ ctags
 darkhttpd
 dropbox
 exa
+exfat-utils
 feh
 firefox
 fish
