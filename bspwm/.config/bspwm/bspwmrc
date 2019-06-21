@@ -48,7 +48,6 @@ run_keybase &
 redshift -t 6000:3500 &
 compton -I 0.01 -O 0.01 -D 2 &
 flashfocus -o 0.9 &
-darkhttpd ~/dotfiles/startpage --port 19970 --daemon &
 
 if [[ $(hostname) = "tezzeret" ]]; then
   # don't blind me
