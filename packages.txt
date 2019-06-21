@@ -8,7 +8,6 @@ blueberry
 bspwm
 compton
 ctags
-darkhttpd
 dropbox
 exa
 exfat-utils
