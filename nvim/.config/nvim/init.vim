@@ -16,9 +16,7 @@ Plug 'wincent/terminus'
 Plug 'cespare/vim-toml'
 Plug 'dag/vim-fish'
 Plug 'godlygeek/tabular'
-Plug 'lervag/vimtex'
 Plug 'plasticboy/vim-markdown'
-Plug 'wlangstroth/vim-racket'
 
 " new features
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
