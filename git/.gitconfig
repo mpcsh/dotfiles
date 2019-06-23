@@ -32,16 +32,10 @@
 [core]
 	pager = less -FR
 	fileMode = false
+[color]
+	status = always
+	ui = always
 [url "git@github.com:"]
 	insteadOf = gh://
 [url "git@gitlab.com:"]
 	insteadOf = gl://
-[url "git@mit.cs.uchicago.edu:"]
-	insteadOf = mit://
-[url "git@mit.cs.uchicago.edu:cmsc22000-spr-19/"]
-  insteadOf = 220://
-[url "git@mit.cs.uchicago.edu:cmsc22000-spr-19-staging/"]
-  insteadOf = 220S://
-[color]
-	status = always
-	ui = always
