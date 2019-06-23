@@ -78,15 +78,6 @@ function vim
   command nvim $argv
 end
 
-# typed racket
-function racket
-  command racket -I typed/racket $argv
-end
-
-# make SML repl work with arrow keys
-function sml
-  rlwrap sml -Cprint.depth=10000
-end
 
 #########################
 # custom functions & misc
