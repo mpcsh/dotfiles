@@ -56,6 +56,7 @@ unzip
 wget
 wireguard-arch
 wireguard-tools
+xclip
 xdg-utils
 xf86-video-intel
 xorg
