@@ -30,6 +30,7 @@ networkmanager
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
+openssh
 package-query
 pamixer
 pavucontrol
