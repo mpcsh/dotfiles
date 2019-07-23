@@ -18,6 +18,7 @@ fzf
 git
 gptfdisk
 htop
+hugo
 i3lock
 imagemagick
 irssi
