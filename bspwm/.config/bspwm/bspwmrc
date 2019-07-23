@@ -46,7 +46,7 @@ blueberry-tray &
 dropbox &
 run_keybase &
 redshift -t 6000:3500 &
-compton -I 0.01 -O 0.01 -D 2 &
+compton -I 0.01 -O 0.01 -D 2 --vsync &
 flashfocus -o 0.9 &
 polybar main &
 
