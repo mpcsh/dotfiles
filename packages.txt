@@ -10,6 +10,7 @@ compton
 ctags
 dropbox
 exa
+exfat-utils
 feh
 firefox
 fish
