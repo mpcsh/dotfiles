@@ -778,8 +778,14 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>35 56 400 129 0 0 2560 1440 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>970 786 620 392 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1271 845 588 516 0 0 2560 1440 </string>
+	<string>1241 751 588 516 0 0 2560 1440 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>343 186 588 516 0 0 2560 1440 </string>
 	<key>NeverWarnAboutShortLivedSessions_85AD9590-7C77-48DF-BB4B-8602BF84122E</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_85AD9590-7C77-48DF-BB4B-8602BF84122E_selection</key>
@@ -1337,6 +1343,7 @@ Make Text Bigger</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.20190807-nightly</string>
 		<string>3.3.20190806-nightly</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
@@ -1349,7 +1356,7 @@ Make Text Bigger</string>
 	<key>NoSyncInstallationId</key>
 	<string>A838470D-9723-44EB-ACB8-237D2857A487</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>2</integer>
+	<integer>11</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1693,6 +1700,14 @@ Make Text Bigger</string>
 				<true/>
 				<key>name</key>
 				<string>currentTab.currentSession.pid</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentTab.currentSession.termid</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -2052,6 +2067,8 @@ Make Text Bigger</string>
 	<true/>
 	<key>RightOption</key>
 	<integer>3</integer>
+	<key>SUAutomaticallyUpdate</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -2061,11 +2078,13 @@ Make Text Bigger</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-06T19:12:11Z</date>
+	<date>2019-08-07T19:12:11Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SUUpdateRelaunchingMarker</key>
+	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>ShowPaneTitles</key>
@@ -2091,6 +2110,6 @@ Make Text Bigger</string>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.20190806-nightly</string>
+	<string>3.3.20190807-nightly</string>
 </dict>
 </plist>
