@@ -42,6 +42,11 @@ if test -e $autojump_bin
   source $autojump_bin
 end
 
+set -l mac_autojump_bin /usr/local/share/autojump/autojump.fish
+if test -e $mac_autojump_bin
+  source $mac_autojump_bin
+end
+
 # rust
 set -l rust_bin ~/.cargo/bin
 if test -e $rust_bin
