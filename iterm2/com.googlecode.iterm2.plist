@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AllowClipboardAccess</key>
+	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>AppleScrollAnimationEnabled</key>
@@ -783,9 +785,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 786 620 392 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1241 751 588 516 0 0 2560 1440 </string>
+	<string>16 16 2528 1408 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>343 186 588 516 0 0 2560 1440 </string>
+	<string>708 331 588 516 0 0 2560 1440 </string>
 	<key>NeverWarnAboutShortLivedSessions_85AD9590-7C77-48DF-BB4B-8602BF84122E</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_85AD9590-7C77-48DF-BB4B-8602BF84122E_selection</key>
@@ -1343,28 +1345,33 @@ Make Text Bigger</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
+		<string>3.3.20190809-nightly</string>
+		<string>3.3.20190808-nightly</string>
 		<string>3.3.20190807-nightly</string>
 		<string>3.3.20190806-nightly</string>
+		<string>3.3.20190812-nightly</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {2560, 1440}}</string>
+		<string>{{0, 0}, {1920, 1200}}</string>
 		<key>topLeft</key>
-		<string>{958, 1132}</string>
+		<string>{269, 595}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>A838470D-9723-44EB-ACB8-237D2857A487</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>11</integer>
+	<integer>31</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>586983011.736009</real>
+	<real>587075172.89137602</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>0</key>
@@ -2078,7 +2085,7 @@ Make Text Bigger</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-07T19:12:11Z</date>
+	<date>2019-08-12T15:01:12Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -2110,6 +2117,6 @@ Make Text Bigger</string>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.20190807-nightly</string>
+	<string>3.3.20190812-nightly</string>
 </dict>
 </plist>
