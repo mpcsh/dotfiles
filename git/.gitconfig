@@ -39,5 +39,3 @@
 	insteadOf = gh://
 [url "git@gitlab.com:"]
 	insteadOf = gl://
-[url "git@github.braintreeps.com:"]
-  insteadOf = ghe://
