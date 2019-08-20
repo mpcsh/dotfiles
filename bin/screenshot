@@ -13,5 +13,5 @@ fi
 
 mkdir -p ~/scrots
 scrot -q 100 $SCROT_ARGS "$FILE"
-~/dotfiles/bin/0x0 "$FILE"
+~/dotfiles/bin/0x0 "$FILE" | tr -d '\n' | xclip -selection clipboard
 notify-send "Screenshot uploaded"
