@@ -64,9 +64,6 @@ super + shift + {Escape,Caps_Lock}
 super + grave
   env WINIT_HIDPI_FACTOR=1.25 alacritty
 
-super + c
-  chromium
-
 super + f
   firefox
 
@@ -75,9 +72,6 @@ super + alt + 3
 
 super + alt + 4
   ~/dotfiles/bin/screenshot select
-
-super + n
-  nautilus
 
 super + space
   rofi -show drun
