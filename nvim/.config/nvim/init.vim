@@ -17,7 +17,10 @@ Plug 'cespare/vim-toml'
 Plug 'dag/vim-fish'
 Plug 'godlygeek/tabular'
 Plug 'lervag/vimtex'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
 Plug 'plasticboy/vim-markdown'
+Plug 'prettier/vim-prettier'
 
 " new features
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
