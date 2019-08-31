@@ -1,7 +1,7 @@
 .PHONY: default sync base xorg arch clean-base clean-xorg clean-arch clean
 
 # Modules
-MODULES = fish git nvim ssh
+MODULES = fish git nvim ssh tmux
 XORG_MODULES = alacritty bspwm firefox fonts gtk rofi xresources
 ARCH_MODULES = arch
 
