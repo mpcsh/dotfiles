@@ -58,7 +58,7 @@ super + {Escape,Caps_Lock}
 
 # lock & suspend
 super + shift + {Escape,Caps_Lock}
-  ~/dotfiles/bin/lock_suspend
+  ~/dotfiles/bin/lock-suspend
 
 ### application shortcuts
 super + grave
