@@ -18,7 +18,7 @@
   <alias>
     <family>monospace</family>
     <prefer>
-      <family>Iosevka Term Custom</family>
+      <family>Iosevka</family>
     </prefer>
   </alias>
 </fontconfig>

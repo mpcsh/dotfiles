@@ -785,9 +785,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 786 620 392 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>16 16 2528 1408 0 0 2560 1440 </string>
+	<string>2411 257 1421 1092 0 0 3840 1600 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>708 331 588 516 0 0 2560 1440 </string>
+	<string>3082 448 588 516 0 0 3840 1600 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>2039 -201 1896 1568 0 0 3840 1600 </string>
 	<key>NeverWarnAboutShortLivedSessions_85AD9590-7C77-48DF-BB4B-8602BF84122E</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_85AD9590-7C77-48DF-BB4B-8602BF84122E_selection</key>
@@ -1252,7 +1254,7 @@ Make Text Bigger</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Iosevka-Term-Custom 14</string>
+			<string>Iosevka-Term 14</string>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -1345,23 +1347,44 @@ Make Text Bigger</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.20190809-nightly</string>
-		<string>3.3.20190808-nightly</string>
+		<string>3.3.20190917-nightly</string>
 		<string>3.3.20190807-nightly</string>
-		<string>3.3.20190806-nightly</string>
+		<string>3.3.20190818-nightly</string>
+		<string>3.3.20190808-nightly</string>
+		<string>3.3.20190919-nightly</string>
+		<string>3.3.20190809-nightly</string>
+		<string>3.3.20190820-nightly</string>
+		<string>3.3.20190904-nightly</string>
+		<string>3.3.20190905-nightly</string>
+		<string>3.3.20190906-nightly</string>
+		<string>3.3.20190823-nightly</string>
+		<string>3.3.20190909-nightly</string>
+		<string>3.3.20190826-nightly</string>
+		<string>3.3.20190828-nightly</string>
+		<string>3.3.20190920-nightly</string>
+		<string>3.3.20190829-nightly</string>
 		<string>3.3.20190812-nightly</string>
+		<string>3.3.20190814-nightly</string>
+		<string>3.3.20190914-nightly</string>
+		<string>3.3.20190816-nightly</string>
+		<string>3.3.20190806-nightly</string>
+	</array>
+	<key>NoSyncBFPRecents</key>
+	<array>
+		<string>Iosevka Term</string>
+		<string>Iosevka Type</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1920, 1200}}</string>
+		<string>{{0, 0}, {3840, 1600}}</string>
 		<key>topLeft</key>
-		<string>{269, 595}</string>
+		<string>{254, 671}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>A838470D-9723-44EB-ACB8-237D2857A487</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>31</integer>
+	<integer>65</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1867,6 +1890,22 @@ Make Text Bigger</string>
 			</dict>
 			<dict>
 				<key>isTerminal</key>
+				<false/>
+				<key>name</key>
+				<string>title</string>
+				<key>nonterminalContext</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>title</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
 				<string>tmuxWindowTitle</string>
@@ -2085,7 +2124,7 @@ Make Text Bigger</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-12T15:01:12Z</date>
+	<date>2019-09-23T15:11:00Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -2117,6 +2156,6 @@ Make Text Bigger</string>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.20190812-nightly</string>
+	<string>3.3.20190920-nightly</string>
 </dict>
 </plist>
