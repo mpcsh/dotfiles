@@ -1,32 +1,16 @@
-.PHONY: default sync base xorg arch clean-base clean-xorg clean-arch clean
+.PHONY: default sync install uninstall
 
 # Modules
-MODULES = fish git nvim ssh tmux
-XORG_MODULES = alacritty bspwm firefox fonts gtk rofi xresources
-ARCH_MODULES = arch
+MODULES = fish git nvim tmux
 
-default: sync base xorg arch
+default: sync install
 
 sync:
 	peru sync
 
-base:
+install:
 	stow --no-folding $(MODULES)
 	nvim -c "PlugInstall --sync" -c "qa"
 
-xorg:
-	stow --no-folding $(XORG_MODULES)
-
-arch:
-	sudo stow --no-folding -t / $(ARCH_MODULES)
-
-clean-base:
+uninstall:
 	stow --no-folding -D $(MODULES)
-
-clean-xorg:
-	stow --no-folding -D $(XORG_MODULES)
-
-clean-arch:
-	sudo stow --no-folding -t / -D $(ARCH_MODULES)
-
-clean: clean-base clean-xorg clean-arch
