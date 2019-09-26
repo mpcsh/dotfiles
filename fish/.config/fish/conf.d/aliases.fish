@@ -100,11 +100,7 @@ if type -q thefuck
 end
 
 # ergodox firmware
-if type -q teensy-loader-cli
-  function ergodox
-    command teensy-loader-cli -mmcu=atmega32u4 -v -w $argv
-  end
-else if type -q teensy_loader_cli
+if type -q teensy_loader_cli
   function ergodox
     command teensy_loader_cli -mmcu=atmega32u4 -v -w $argv
   end

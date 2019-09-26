@@ -28,6 +28,3 @@ noremap <silent> <C-l> :nohlsearch<CR>
 
 " fzf
 noremap <silent> <C-p> :Files<CR>
-
-" monad alignment
-vnoremap <silent> <C-a> :'<,'>EasyAlign * />>=\\|>>/ {'da': 'l'}<CR>
