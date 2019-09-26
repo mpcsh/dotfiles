@@ -3,6 +3,7 @@ call plug#begin()
 
 " colorscheme
 Plug 'morhetz/gruvbox'
+Plug 'arcticicestudio/nord-vim'
 
 " sensible defaults
 Plug 'ludovicchabant/vim-gutentags'
