@@ -14,7 +14,7 @@ Plug 'wincent/terminus'
 Plug 'dag/vim-fish'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
-Plug 'prettier/vim-prettier'
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 
 " new features
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -124,6 +124,10 @@ let g:plug_window = 'new'
 " signify
 let g:signify_update_on_focusgained = 1
 
+" prettier
+let g:prettier#exec_cmd_async = 1
+let g:prettier#quickfix_auto_focus = 0
+
 
 """"""""""
 " keybinds
@@ -157,18 +161,3 @@ noremap <silent> <C-l> :nohlsearch<CR>
 
 " fzf
 noremap <silent> <C-p> :Files<CR>
-
-
-"""""""""""""""""""
-" filetype-specific
-"""""""""""""""""""
-
-" javascript
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
-
-" yaml
-autocmd BufNewFile,BufRead *.yml,*.yaml call SetYamlOptions()
-function SetYamlOptions()
-  setlocal indentkeys-=<:>
-endfunction
