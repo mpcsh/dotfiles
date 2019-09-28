@@ -33,7 +33,7 @@ call plug#end()
 set termguicolors
 syntax enable
 set background=dark
-colorscheme nord
+silent! colorscheme nord
 
 " remove tildes for blank lines
 hi EndOfBuffer guifg=bg
