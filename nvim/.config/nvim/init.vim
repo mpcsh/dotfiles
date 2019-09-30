@@ -133,10 +133,6 @@ let g:prettier#quickfix_auto_focus = 0
 " keybinds
 """"""""""
 
-" set leader key
-let mapleader=","
-let maplocalleader=","
-
 " move inside of softwrapped lines
 noremap <silent> j gj
 noremap <silent> k gk
