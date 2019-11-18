@@ -125,8 +125,10 @@ let g:plug_window = 'new'
 let g:signify_update_on_focusgained = 1
 
 " prettier
+let g:prettier#autoformat = 0
 let g:prettier#exec_cmd_async = 1
 let g:prettier#quickfix_auto_focus = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 
 """"""""""
