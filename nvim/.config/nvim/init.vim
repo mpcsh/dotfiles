@@ -135,6 +135,9 @@ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.gra
 " keybinds
 """"""""""
 
+" reload vimrc
+nnoremap <silent> <leader>r :source ~/.config/nvim/init.vim<CR>
+
 " move inside of softwrapped lines
 noremap <silent> j gj
 noremap <silent> k gk
