@@ -12,7 +12,7 @@ Plug 'wincent/terminus'
 
 " language support
 Plug 'dag/vim-fish'
-Plug 'mxw/vim-jsx'
+Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 
