@@ -5,9 +5,6 @@ call plug#begin()
 Plug 'arcticicestudio/nord-vim'
 
 " sensible defaults
-Plug 'tpope/vim-repeat'
-Plug 'vim-scripts/replacewithregister'
-Plug 'vim-scripts/visualrepeat'
 Plug 'wincent/terminus'
 
 " language support
@@ -49,9 +46,6 @@ hi Comment gui=italic
 """""""""""""
 " environment
 """""""""""""
-
-" override vim-sensible settings by default
-runtime! plugin/sensible.vim
 
 " search highlighting
 set hlsearch
@@ -128,7 +122,7 @@ let g:signify_update_on_focusgained = 1
 let g:prettier#autoformat = 0
 let g:prettier#exec_cmd_async = 1
 let g:prettier#quickfix_auto_focus = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+autocmd BufWritePre *.js,*.css PrettierAsync
 
 
 """"""""""
