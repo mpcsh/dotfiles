@@ -14,9 +14,9 @@ Plug 'pangloss/vim-javascript'
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 
 " new features
+Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 
@@ -46,6 +46,9 @@ hi Comment gui=italic
 """""""""""""
 " environment
 """""""""""""
+
+" short updatetime https://github.com/airblade/vim-gitgutter#getting-started
+set updatetime=100
 
 " search highlighting
 set hlsearch
@@ -115,8 +118,9 @@ set nolist
 " don't open vim-plug output weird split buffers and shit
 let g:plug_window = 'new'
 
-" signify
-let g:signify_update_on_focusgained = 1
+" gitgutter
+let g:gitgutter_map_keys = 0
+let g:gitgutter_diff_args = '-w'
 
 " prettier
 let g:prettier#autoformat = 0
