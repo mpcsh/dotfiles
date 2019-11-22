@@ -158,5 +158,8 @@ nnoremap <silent> <S-Tab> <<
 " nohlsearch
 noremap <silent> <C-l> :nohlsearch<CR>
 
+" search for visual selection
+vnoremap * y/\V<C-r>=escape(@",'/\')<CR><CR>
+
 " fzf
 noremap <silent> <C-p> :Files<CR>
