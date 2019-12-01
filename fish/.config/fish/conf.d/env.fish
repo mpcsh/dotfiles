@@ -6,9 +6,6 @@ set -x FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
 set -x FZF_CTRL_R_OPTS "--reverse"
 set -x TERM xterm-256color
 
-# umask
-umask 077
-
 # don't show annoying welcome message
 set fish_greeting ""
 
