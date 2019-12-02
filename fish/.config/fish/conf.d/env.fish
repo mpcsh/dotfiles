@@ -26,3 +26,6 @@ end
 
 set -l autojump_bin /usr/local/share/autojump/autojump.fish
 test_source $autojump_bin
+
+set -l asdf_bin /usr/local/opt/asdf/asdf.fish
+test_source $asdf_bin
