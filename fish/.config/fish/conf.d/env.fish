@@ -24,8 +24,6 @@ function test_source
   end
 end
 
-set -l autojump_bin /usr/local/share/autojump/autojump.fish
-test_source $autojump_bin
+test_source /usr/local/share/autojump/autojump.fish
 
-set -l asdf_bin /usr/local/opt/asdf/asdf.fish
-test_source $asdf_bin
+test_source /usr/local/opt/asdf/asdf.fish
