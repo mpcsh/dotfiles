@@ -5,6 +5,7 @@ call plug#begin()
 Plug 'arcticicestudio/nord-vim'
 
 " sensible defaults
+Plug 'tpope/vim-repeat'
 Plug 'wincent/terminus'
 
 " language support
@@ -17,6 +18,7 @@ Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 
