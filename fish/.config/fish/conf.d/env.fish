@@ -18,6 +18,9 @@ set -x LESS_TERMCAP_so (printf "\033[01;44;33m")
 set -x LESS_TERMCAP_ue (printf "\033[0m")
 set -x LESS_TERMCAP_us (printf "\033[01;32m")
 
+# prompt
+starship init fish | source
+
 function test_source
   if test -e $argv[1]
     source $argv[1]
