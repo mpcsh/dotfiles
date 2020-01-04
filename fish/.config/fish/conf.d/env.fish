@@ -27,8 +27,5 @@ function test_source
   end
 end
 
-test_source /usr/local/share/autojump/autojump.fish
-test_source /usr/share/autojump/autojump.fish
-
 test_source /usr/local/opt/asdf/asdf.fish
 test_source ~/.asdf/asdf.fish
