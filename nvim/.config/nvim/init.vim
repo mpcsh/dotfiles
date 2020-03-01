@@ -11,6 +11,8 @@ Plug 'wincent/terminus'
 " language support
 Plug 'dag/vim-fish'
 Plug 'Glench/Vim-Jinja2-Syntax'
+Plug 'ianks/vim-tsx'
+Plug 'leafgarland/typescript-vim'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
@@ -129,7 +131,7 @@ let g:gitgutter_diff_args = '-w'
 let g:prettier#autoformat = 0
 let g:prettier#exec_cmd_async = 1
 let g:prettier#quickfix_auto_focus = 0
-autocmd BufWritePre *.js,*.css PrettierAsync
+autocmd BufWritePre *.js,*.ts,*.tsx,*.css PrettierAsync
 
 
 """"""""""
