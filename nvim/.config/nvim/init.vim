@@ -5,6 +5,7 @@ call plug#begin()
 Plug 'arcticicestudio/nord-vim'
 
 " sensible defaults
+Plug 'tommcdo/vim-exchange'
 Plug 'tpope/vim-repeat'
 Plug 'wincent/terminus'
 
