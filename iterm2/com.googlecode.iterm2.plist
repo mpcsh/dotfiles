@@ -6,6 +6,8 @@
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -1139,9 +1141,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 786 620 392 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>24 24 2508 1392 0 0 2560 1440 </string>
+	<string>24 24 1872 1152 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1292 24 1244 1392 0 0 2560 1440 </string>
+	<string>1292 925 668 491 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>176 680 588 491 0 0 2560 1440 </string>
 	<key>NeverWarnAboutShortLivedSessions_85AD9590-7C77-48DF-BB4B-8602BF84122E</key>
@@ -1576,14 +1578,14 @@ Make Text Bigger</string>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
-					<string>[1;3D</string>
+					<string>b</string>
 				</dict>
 				<key>0xf703-0x280000</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
-					<string>[1;3C</string>
+					<string>f</string>
 				</dict>
 			</dict>
 			<key>Link Color</key>
@@ -1721,6 +1723,7 @@ Make Text Bigger</string>
 		<string>3.3.20190919-nightly</string>
 		<string>3.3.20190809-nightly</string>
 		<string>3.3.20190929-nightly</string>
+		<string>3.3.8</string>
 		<string>3.3.20190820-nightly</string>
 		<string>3.3.20190904-nightly</string>
 		<string>3.3.7beta1</string>
@@ -1761,16 +1764,16 @@ Make Text Bigger</string>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {2560, 1440}}</string>
+		<string>{{0, 0}, {1920, 1200}}</string>
 		<key>topLeft</key>
-		<string>{475, 859}</string>
+		<string>{399, 942}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>A838470D-9723-44EB-ACB8-237D2857A487</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>167</integer>
+	<integer>171</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2479,12 +2482,6 @@ Make Text Bigger</string>
 			</dict>
 		</array>
 	</dict>
-	<key>NoSyncSearchHistory2</key>
-	<array>
-		<string>input</string>
-		<string>mark</string>
-		<string>project</string>
-	</array>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>586810211.735883</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -2516,7 +2513,7 @@ Make Text Bigger</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-13T19:52:36Z</date>
+	<date>2020-02-11T16:41:20Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -2548,6 +2545,6 @@ Make Text Bigger</string>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.7</string>
+	<string>3.3.8</string>
 </dict>
 </plist>
