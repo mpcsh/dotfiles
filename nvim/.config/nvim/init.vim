@@ -32,7 +32,7 @@ call plug#end()
 """""""""""""
 " colorscheme
 """""""""""""
-" colorscheme
+
 set termguicolors
 syntax enable
 set background=dark
