@@ -1115,7 +1115,7 @@
 	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
 	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
 	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
-	DIAIgAlRMSNAdKGdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
+	DIAIgAlRMSNAc7Gdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
 	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
 	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
 	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
@@ -1141,9 +1141,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 786 620 392 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>24 24 1872 1152 0 0 1920 1200 </string>
+	<string>24 24 2960 1644 0 0 3008 1692 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1292 925 668 491 0 0 2560 1440 </string>
+	<string>24 24 1468 1644 0 0 3008 1692 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>176 680 588 491 0 0 2560 1440 </string>
 	<key>NeverWarnAboutShortLivedSessions_85AD9590-7C77-48DF-BB4B-8602BF84122E</key>
@@ -1610,7 +1610,7 @@ Make Text Bigger</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>CascadiaMonoPL-Regular 14</string>
+			<string>Iosevka-Term 14</string>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -1743,16 +1743,18 @@ Make Text Bigger</string>
 		<string>3.3.20190812-nightly</string>
 		<string>3.3.20190814-nightly</string>
 		<string>3.3.20190914-nightly</string>
+		<string>3.3.9</string>
 		<string>3.3.20190816-nightly</string>
 		<string>3.3.20190806-nightly</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
-	<array/>
+	<array>
+		<string>Iosevka Term</string>
+		<string>Cascadia Mono PL</string>
+	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>Cascadia Mono PL</string>
-		<string>Cascadia Code</string>
-		<string>Iosevka</string>
+		<string>Iosevka Term</string>
 	</array>
 	<key>NoSyncFrame_SessionsPreferences</key>
 	<dict>
@@ -1764,16 +1766,16 @@ Make Text Bigger</string>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1920, 1200}}</string>
+		<string>{{0, 0}, {3008, 1692}}</string>
 		<key>topLeft</key>
-		<string>{399, 942}</string>
+		<string>{792, 1603}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>A838470D-9723-44EB-ACB8-237D2857A487</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>171</integer>
+	<integer>181</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2513,7 +2515,7 @@ Make Text Bigger</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-02-11T16:41:20Z</date>
+	<date>2020-03-26T14:46:34Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -2545,6 +2547,6 @@ Make Text Bigger</string>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.8</string>
+	<string>3.3.9</string>
 </dict>
 </plist>
