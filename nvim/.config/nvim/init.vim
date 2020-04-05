@@ -11,6 +11,7 @@ Plug 'wincent/terminus'
 
 " language support
 Plug 'sheerun/vim-polyglot'
+Plug 'dense-analysis/ale'
 
 " new features
 Plug 'airblade/vim-gitgutter'
@@ -41,6 +42,25 @@ hi MatchParen gui=bold
 
 " italic comments
 hi Comment gui=italic
+
+
+""""""""""""""
+" ide features
+""""""""""""""
+
+let g:ale_fix_on_save = 1
+
+let g:ale_linters = {
+\ 'javascript': ['eslint'],
+\ 'typescript': ['eslint'],
+\ 'typescriptreact': ['eslint'],
+\}
+
+let g:ale_fixers = {
+\ 'javascript': ['prettier'],
+\ 'typescript': ['prettier'],
+\ 'typescriptreact': ['prettier'],
+\}
 
 
 """""""""""""
@@ -109,12 +129,6 @@ set nolist
 " gitgutter
 let g:gitgutter_map_keys = 0
 let g:gitgutter_diff_args = '-w'
-
-" prettier
-let g:prettier#autoformat = 0
-let g:prettier#exec_cmd_async = 1
-let g:prettier#quickfix_auto_focus = 0
-autocmd BufWritePre *.js,*.ts,*.tsx,*.css PrettierAsync
 
 
 """"""""""
