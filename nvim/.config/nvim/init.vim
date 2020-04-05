@@ -81,23 +81,14 @@ set clipboard+=unnamedplus
 set ignorecase
 set smartcase
 
-" store all swap files centrally
-set directory=$HOME/.config/nvim/tmp/swap/
-if !isdirectory(expand(&directory))
-  call mkdir(expand(&directory), 'p')
-endif
-
-" store all backup files centrally
-set backupdir=$HOME/.config/nvim/tmp/backup/
-if !isdirectory(expand(&backupdir))
-  call mkdir(expand(&backupdir), 'p')
-endif
+" disable swap, backup files
+set noswapfile
+set nobackup
+set nowritebackup
 
 " persistent undo
 set undofile
 set undodir=$HOME/.config/nvim/tmp/undo/
-set undolevels=500
-set undoreload=500
 if !isdirectory(expand(&undodir))
   call mkdir(expand(&undodir), 'p')
 endif
