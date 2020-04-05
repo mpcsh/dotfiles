@@ -135,6 +135,9 @@ let g:gitgutter_diff_args = '-w'
 " keybinds
 """"""""""
 
+" reload vimrc
+nnoremap <silent> <leader>r :source ~/.config/nvim/init.vim<CR>
+
 " move inside of softwrapped lines
 noremap <silent> j gj
 noremap <silent> k gk
