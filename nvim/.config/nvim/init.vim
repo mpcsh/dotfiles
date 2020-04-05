@@ -106,9 +106,6 @@ set wrap
 set linebreak
 set nolist
 
-" don't open vim-plug output weird split buffers and shit
-let g:plug_window = 'new'
-
 " gitgutter
 let g:gitgutter_map_keys = 0
 let g:gitgutter_diff_args = '-w'
