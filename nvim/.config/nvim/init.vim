@@ -113,6 +113,10 @@ if !isdirectory(expand(&undodir))
   call mkdir(expand(&undodir), 'p')
 endif
 
+" spellchecking
+set spellfile=$HOME/.config/nvim/tmp/spellfile.utf-8.add
+autocmd BufNewFile,BufRead *.md setlocal spell
+
 " don't keep commenting on enter or o/O
 autocmd BufNewFile,BufRead * setlocal formatoptions-=ro
 
