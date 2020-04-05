@@ -49,20 +49,6 @@ function mkdir
   command mkdir -p $argv
 end
 
-# symlink by default
-function ln
-  command ln -s $argv
-end
-
-# rsync options
-function rsync
-  command rsync -avzHE --progress -h $argv
-end
-
-# make xclip use system clipboard
-function xclip
-  command xclip -selection clipboard $argv
-end
 
 ######################
 # default replacements
