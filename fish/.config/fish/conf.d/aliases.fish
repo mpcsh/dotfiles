@@ -78,6 +78,11 @@ function vim
   command nvim $argv
 end
 
+# git
+function g
+  command git $argv
+end
+
 
 #########################
 # custom functions & misc
