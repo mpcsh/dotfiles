@@ -121,9 +121,6 @@ autocmd BufWritePre *.js,*.ts,*.tsx,*.css PrettierAsync
 " keybinds
 """"""""""
 
-" reload vimrc
-nnoremap <silent> <leader>r :source ~/.config/nvim/init.vim<CR>
-
 " move inside of softwrapped lines
 noremap <silent> j gj
 noremap <silent> k gk
@@ -132,14 +129,12 @@ noremap <silent> k gk
 noremap <silent> H g^
 noremap <silent> L g$
 
-" disable "ex mode"
+" disable 'ex mode'
 nnoremap <silent> Q <Nop>
 
 " set <Tab>, <S-tab> to indent/unindent lines
 vnoremap <silent> <Tab> >gv
 vnoremap <silent> <S-Tab> <gv
-
-" normal mode equivalents
 nnoremap <silent> <Tab> >>
 nnoremap <silent> <S-Tab> <<
 
