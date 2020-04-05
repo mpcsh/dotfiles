@@ -24,5 +24,8 @@
 [core]
 	pager = less -FR
 	fileMode = false
+[color]
+	status = always
+	ui = always
 [url "git@github.com:"]
 	insteadOf = gh://
