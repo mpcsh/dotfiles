@@ -10,13 +10,7 @@ Plug 'tpope/vim-repeat'
 Plug 'wincent/terminus'
 
 " language support
-Plug 'dag/vim-fish'
-Plug 'Glench/Vim-Jinja2-Syntax'
-Plug 'ianks/vim-tsx'
-Plug 'leafgarland/typescript-vim'
-Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'pangloss/vim-javascript'
-Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+Plug 'sheerun/vim-polyglot'
 
 " new features
 Plug 'airblade/vim-gitgutter'
