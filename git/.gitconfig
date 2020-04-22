@@ -2,7 +2,7 @@
 	email = m@mpc.sh
 	name = Mark Cohen
 [push]
-	default = simple
+	default = current
 [pull]
 	rebase = true
 [alias]
