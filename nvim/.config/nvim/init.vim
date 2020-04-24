@@ -6,6 +6,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 
 " sensible defaults
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'tommcdo/vim-exchange'
 Plug 'tpope/vim-repeat'
 Plug 'wincent/terminus'
@@ -113,6 +114,9 @@ set undodir=$HOME/.cache/nvim/undo/
 if !isdirectory(expand(&undodir))
   call mkdir(expand(&undodir), 'p')
 endif
+
+" tags
+let g:gutentags_cache_dir = expand('~/.cache/nvim/tags/')
 
 " spellchecking
 set spellfile=$HOME/.cache/nvim/spellfile.utf-8.add
