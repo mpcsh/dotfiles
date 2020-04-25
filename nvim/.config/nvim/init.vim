@@ -39,6 +39,9 @@ silent! colorscheme gruvbox
 " remove tildes for blank lines
 hi EndOfBuffer guifg=bg
 
+" match gutter background
+hi SignColumn guibg=bg
+
 " closure highlighting
 hi LinkDelimiter gui=bold
 hi MatchParen gui=bold
