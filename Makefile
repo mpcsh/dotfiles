@@ -1,7 +1,7 @@
 .PHONY: default sync install uninstall
 
 # Modules
-MODULES = fish git nvim tmux
+MODULES = fish git nvim
 
 default: sync install
 
