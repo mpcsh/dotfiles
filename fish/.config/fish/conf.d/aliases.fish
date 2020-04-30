@@ -21,19 +21,6 @@ if type -q exa
   function lla
     command exa -lga $argv
   end
-else
-  function ls
-    command ls -1hF --color=auto $argv
-  end
-  function la
-    command ls -1hFA --color=auto $argv
-  end
-  function ll
-    command ls -lhF --color=auto $argv
-  end
-  function lla
-    command ls -lhFA --color=auto $argv
-  end
 end
 
 # work on directories
