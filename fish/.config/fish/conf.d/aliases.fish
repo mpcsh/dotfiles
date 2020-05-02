@@ -36,6 +36,10 @@ function mkdir
   command mkdir -p $argv
 end
 
+function rsync
+  command rsync -aAXvzHE $argv
+end
+
 
 ######################
 # default replacements
