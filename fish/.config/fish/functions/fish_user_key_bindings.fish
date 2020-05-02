@@ -26,7 +26,7 @@ end
 function __git_fzf_git_branch
   __git_fzf_is_in_git_repo; or return
   git branch -a | \
-    fzf -m --preview 'git la (echo {} | sed s/^..// | cut -d" " -f1)' | \
+    fzf -m --preview 'git hist (echo {} | sed s/^..// | cut -d" " -f1)' | \
     sed 's/^..//' | cut -d' ' -f1 | \
     sed 's#^remotes/##' | \
     while read -l r
@@ -63,7 +63,7 @@ end
 
 function __git_fzf_git_log
   __git_fzf_is_in_git_repo; or return
-  git la | \
+  git hist | \
     fzf -m --reverse --preview 'git show (echo {} | grep -o "[a-f0-9]\{7,\}")' | \
     sed -E 's/.*([a-f0-9]{7,}).*/\1/' | \
     while read -l r
