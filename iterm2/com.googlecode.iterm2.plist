@@ -1115,7 +1115,7 @@
 	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
 	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuUTAjQGjA
 	AAAAAAAI0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiJylYTlNP
-	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0B0oZ2yLQ5W0iUmNzhe
+	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0BzsZ2yLQ5W0iUmNzhe
 	TlNNdXRhYmxlQXJyYXmjNzkpV05TQXJyYXkACAARABoAJAApADIANwBJAEwAUgBUAGMA
 	aQBuAHkAgACDAIUAhwCJAJAAmACcAJ4AoACiAKYAqACqAKwArgC5AL8AxgDIANEA0gDX
 	AOIA6wD4APsBBAELAQ8BEQETARUBGQEbAR0BHwEhASMBLAExAUABRAAAAAAAAAIBAAAA
@@ -1143,7 +1143,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 493 620 392 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>852 535 668 491 0 0 1680 1050 </string>
+	<string>231 482 603 516 0 0 3008 1692 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>852 24 804 1002 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1612,7 +1612,7 @@ Make Text Bigger</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>CascadiaCodePL-Regular 14</string>
+			<string>Iosevka 14</string>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -1711,27 +1711,25 @@ Make Text Bigger</string>
 		<string>3.3.7</string>
 	</array>
 	<key>NoSyncBFPFavorites</key>
-	<array>
-		<string>Cascadia Mono PL</string>
-		<string>Iosevka Term</string>
-	</array>
+	<array/>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>Iosevka</string>
 		<string>Cascadia Code PL</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1680, 1050}}</string>
+		<string>{{0, 0}, {3008, 1692}}</string>
 		<key>topLeft</key>
-		<string>{0, 965}</string>
+		<string>{975, 760}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>C1656BB7-09B7-43C3-A11C-9C49630D1934</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>101</integer>
+	<integer>104</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2477,7 +2475,7 @@ Make Text Bigger</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-05-19T00:20:44Z</date>
+	<date>2020-06-06T17:29:21Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
