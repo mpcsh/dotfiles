@@ -2,8 +2,7 @@
 call plug#begin()
 
 " colorscheme
-Plug 'arcticicestudio/nord-vim'
-Plug 'morhetz/gruvbox'
+Plug 'overcache/NeoSolarized'
 
 " sensible defaults
 Plug 'tommcdo/vim-exchange'
@@ -33,7 +32,7 @@ call plug#end()
 set termguicolors
 syntax enable
 set background=dark
-silent! colorscheme gruvbox
+silent! colorscheme NeoSolarized
 
 " remove tildes for blank lines
 hi EndOfBuffer guifg=bg
