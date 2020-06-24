@@ -5,6 +5,7 @@ set -x FZF_DEFAULT_OPTS "--color=16,fg+:4 --ansi"
 set -x FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
 set -x FZF_CTRL_R_OPTS "--reverse"
 set -x TERM xterm-256color
+set -x NVIM_LISTEN_ADDRESS "/tmp/nvimsocket-$fish_pid"
 
 # don't show annoying welcome message
 set fish_greeting ""
