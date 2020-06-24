@@ -1,3 +1,7 @@
+if ! status --is-interactive
+  exit
+end
+
 function __git_fzf_is_in_git_repo
   command -s -q git
     and git rev-parse HEAD >/dev/null 2>&1
