@@ -31,21 +31,38 @@ call plug#end()
 
 set termguicolors
 syntax enable
-set background=dark
-silent! colorscheme NeoSolarized
 
-" remove tildes for blank lines
-hi EndOfBuffer guifg=bg
+function SetColorscheme()
+  if has("OSX")
+    let dark_enabled = split(system("osascript -e 'tell application \"System Events\" to tell appearance preferences to get dark mode'"))[0]
+  else
+    let dark_enabled = "true"
+  endif
 
-" match gutter background
-hi SignColumn guibg=bg
+  if dark_enabled ==? "true"
+    set background=dark
+  else
+    set background=light
+  endif
 
-" closure highlighting
-hi LinkDelimiter gui=bold
-hi MatchParen gui=bold
+  silent! colorscheme NeoSolarized
 
-" italic comments
-hi Comment gui=italic
+  " remove tildes for blank lines
+  hi EndOfBuffer guifg=bg
+
+  " match gutter background
+  hi SignColumn guibg=bg
+
+  " closure highlighting
+  hi LinkDelimiter gui=bold
+  hi MatchParen gui=bold
+
+  " italic comments
+  hi Comment gui=italic
+endfunction
+
+autocmd Signal SIGUSR1 call SetColorscheme()
+call SetColorscheme()
 
 
 """"""""""""""
