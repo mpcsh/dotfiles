@@ -11,7 +11,8 @@ LIGHT_THEME_NAME = "Solarized Light"
 DARK_THEME_NAME = "Solarized Dark"
 
 FAKE_NVIM_ATTACH = b'\x93\x02\xc4\x14nvim_set_client_info\x95\xaepython3-client\x80\xa6remote\x80\x80'
-FAKE_NVIM_SET_COLORSCHEME = b'\x94\x00\x02\xacnvim_command\x91\xb6:call SetColorscheme()'
+FAKE_NVIM_SET_LIGHT = b'\x94\x00\x02\xacnvim_command\x91\xb6:call SetLightColors()'
+FAKE_NVIM_SET_DARK = b'\x94\x00\x02\xacnvim_command\x91\xb5:call SetDarkColors()'
 
 async def select_preset(connection, theme):
     theme_name = DARK_THEME_NAME if "dark" in theme else LIGHT_THEME_NAME
@@ -25,20 +26,22 @@ async def set_profiles(connection, preset):
         await profile.async_set_color_preset(preset)
 
 
-def set_nvim():
+def set_nvim(theme):
     for base in filter(lambda f: re.match("^nvimsocket-[0-9]+$", f) is not None, os.listdir("/tmp")):
         path = "/tmp/" + base
         sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
         sock.connect(path)
         sock.sendall(FAKE_NVIM_ATTACH)
-        sock.sendall(FAKE_NVIM_SET_COLORSCHEME)
+        cmd = FAKE_NVIM_SET_DARK if "dark" in theme else FAKE_NVIM_SET_LIGHT
+        sock.sendall(cmd)
         sock.close()
 
 
-def set_fish():
-    for raw in subprocess.check_output(['pgrep', 'fish']).strip().split():
+def set_fish(theme):
+    for raw in subprocess.run(['pgrep', 'fish'], stdout=subprocess.PIPE).stdout.strip().split():
         pid = int(raw)
-        os.kill(pid, signal.SIGUSR1)
+        sig = signal.SIGUSR1 if "dark" in theme else signal.SIGUSR2
+        os.kill(pid, sig)
 
 
 async def main(connection):
@@ -47,8 +50,8 @@ async def main(connection):
     # set the appropriate theme on launch
     theme = await app.async_get_theme()
     preset = await select_preset(connection, theme)
-    set_nvim()
-    set_fish()
+    set_nvim(theme)
+    set_fish(theme)
     await set_profiles(connection, preset)
 
     # monitor for theme changes
@@ -56,8 +59,8 @@ async def main(connection):
         while True:
             theme = await mon.async_get()
             preset = await select_preset(connection, theme.split(" "))
-            set_nvim()
-            set_fish()
+            set_nvim(theme)
+            set_fish(theme)
             await set_profiles(connection, preset)
 
 
