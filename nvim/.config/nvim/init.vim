@@ -47,6 +47,9 @@ function SetColorscheme()
 
   " italic comments
   hi Comment gui=italic
+
+  " fzf
+  let g:fzf_colors = { 'bg+': ['bg', 'Normal'] }
 endfunction
 
 function SetDarkColors()
