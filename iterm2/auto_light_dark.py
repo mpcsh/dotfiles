@@ -3,7 +3,9 @@
 import iterm2
 import os
 import re
+import signal
 import socket
+import subprocess
 
 LIGHT_THEME_NAME = "Solarized Light"
 DARK_THEME_NAME = "Solarized Dark"
@@ -33,6 +35,12 @@ def set_nvim():
         sock.close()
 
 
+def set_fish():
+    for raw in subprocess.check_output(['pgrep', 'fish']).strip().split():
+        pid = int(raw)
+        os.kill(pid, signal.SIGUSR1)
+
+
 async def main(connection):
     app = await iterm2.async_get_app(connection)
 
@@ -40,6 +48,7 @@ async def main(connection):
     theme = await app.async_get_theme()
     preset = await select_preset(connection, theme)
     set_nvim()
+    set_fish()
     await set_profiles(connection, preset)
 
     # monitor for theme changes
@@ -48,6 +57,7 @@ async def main(connection):
             theme = await mon.async_get()
             preset = await select_preset(connection, theme.split(" "))
             set_nvim()
+            set_fish()
             await set_profiles(connection, preset)
 
 
