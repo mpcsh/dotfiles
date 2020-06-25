@@ -1,7 +1,6 @@
 # environment variables
 set -x EDITOR nvim
 set -x FZF_DEFAULT_COMMAND "rg --files-with-matches ."
-set -x FZF_DEFAULT_OPTS "--color=16,fg+:4 --ansi"
 set -x FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
 set -x FZF_CTRL_R_OPTS "--reverse"
 set -x TERM xterm-256color
@@ -41,6 +40,7 @@ function set_dark_colors
   set -U fish_pager_color_prefix "brgreen"
   set -U fish_color_comment "brgreen"
   set -U fish_color_autosuggestion "brgreen" "--underline"
+  set -Ux FZF_DEFAULT_OPTS "--color=16,fg+:4,bg+:0 --ansi"
   set_colors
 end
 
@@ -48,6 +48,7 @@ function set_light_colors
   set -U fish_pager_color_prefix "brcyan"
   set -U fish_color_comment "brcyan"
   set -U fish_color_autosuggestion "brcyan" "--underline"
+  set -Ux FZF_DEFAULT_OPTS "--color=16,fg+:4,bg+:7 --ansi"
   set_colors
 end
 
