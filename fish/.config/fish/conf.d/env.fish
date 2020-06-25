@@ -20,16 +20,35 @@ set -x LESS_TERMCAP_ue (printf "\033[0m")
 set -x LESS_TERMCAP_us (printf "\033[01;32m")
 
 # mode-dependent colors
+function set_colors
+  set -U fish_color_cancel "red"
+  set -U fish_color_command "foreground" "--bold"
+  set -U fish_color_end "yellow"
+  set -U fish_color_error "red" "--underline"
+  set -U fish_color_escape "cyan"
+  set -U fish_color_normal "normal"
+  set -U fish_color_operator "blue"
+  set -U fish_color_param "blue"
+  set -U fish_color_quote "green"
+  set -U fish_color_redirection "yellow"
+  set -U fish_color_search_match "--reverse"
+  set -U fish_pager_color_completion "normal" "--bold" "--underline"
+  set -U fish_pager_color_description "yellow"
+  set -U fish_pager_color_progress "yellow"
+end
+
 function set_dark_colors
   set -U fish_pager_color_prefix "brgreen"
   set -U fish_color_comment "brgreen"
   set -U fish_color_autosuggestion "brgreen" "--underline"
+  set_colors
 end
 
 function set_light_colors
   set -U fish_pager_color_prefix "brcyan"
   set -U fish_color_comment "brcyan"
   set -U fish_color_autosuggestion "brcyan" "--underline"
+  set_colors
 end
 
 if test (osascript -e 'tell application "System Events" to tell appearance preferences to get dark mode') = "true"
