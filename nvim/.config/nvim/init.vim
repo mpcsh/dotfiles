@@ -33,18 +33,6 @@ set termguicolors
 syntax enable
 
 function SetColorscheme()
-  if has("OSX")
-    let dark_enabled = split(system("osascript -e 'tell application \"System Events\" to tell appearance preferences to get dark mode'"))[0]
-  else
-    let dark_enabled = "true"
-  endif
-
-  if dark_enabled ==? "true"
-    set background=dark
-  else
-    set background=light
-  endif
-
   silent! colorscheme NeoSolarized
 
   " remove tildes for blank lines
@@ -61,8 +49,27 @@ function SetColorscheme()
   hi Comment gui=italic
 endfunction
 
-autocmd Signal SIGUSR1 call SetColorscheme()
-call SetColorscheme()
+function SetDarkColors()
+  set background=dark
+  call SetColorscheme()
+endfunction
+
+function SetLightColors()
+  set background=light
+  call SetColorscheme()
+endfunction
+
+if has("OSX")
+  let dark_enabled = split(system("osascript -e 'tell application \"System Events\" to tell appearance preferences to get dark mode'"))[0]
+else
+  let dark_enabled = "true"
+endif
+
+if dark_enabled ==? "true"
+  call SetDarkColors()
+else
+  call SetLightColors()
+endif
 
 
 """"""""""""""

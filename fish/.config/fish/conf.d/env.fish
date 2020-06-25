@@ -20,20 +20,26 @@ set -x LESS_TERMCAP_ue (printf "\033[0m")
 set -x LESS_TERMCAP_us (printf "\033[01;32m")
 
 # mode-dependent colors
-function set_light_dark_colors
-  if test (osascript -e 'tell application "System Events" to tell appearance preferences to get dark mode') = "true"
-    set -U fish_pager_color_prefix "brgreen"
-    set -U fish_color_comment "brgreen"
-    set -U fish_color_autosuggestion "brgreen" "--underline"
-  else
-    set -U fish_pager_color_prefix "brcyan"
-    set -U fish_color_comment "brcyan"
-    set -U fish_color_autosuggestion "brcyan" "--underline"
-  end
+function set_dark_colors
+  set -U fish_pager_color_prefix "brgreen"
+  set -U fish_color_comment "brgreen"
+  set -U fish_color_autosuggestion "brgreen" "--underline"
 end
 
-set_light_dark_colors
-trap "set_light_dark_colors" SIGUSR1
+function set_light_colors
+  set -U fish_pager_color_prefix "brcyan"
+  set -U fish_color_comment "brcyan"
+  set -U fish_color_autosuggestion "brcyan" "--underline"
+end
+
+if test (osascript -e 'tell application "System Events" to tell appearance preferences to get dark mode') = "true"
+  set_dark_colors
+else
+  set_light_colors
+end
+
+trap "set_dark_colors" SIGUSR1
+trap "set_light_colors" SIGUSR2
 
 if ! status --is-interactive
   exit
