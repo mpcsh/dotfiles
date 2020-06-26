@@ -26,7 +26,5 @@
 [color]
 	status = always
 	ui = always
-; [init]
-;   templateDir = ~/dotfiles/git-template
 [url "git@github.com:"]
 	insteadOf = gh://
