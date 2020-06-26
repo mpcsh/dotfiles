@@ -27,7 +27,7 @@ function set_colors
   set -U fish_color_escape "cyan"
   set -U fish_color_normal "normal"
   set -U fish_color_operator "blue"
-  set -U fish_color_param "blue"
+  set -U fish_color_param "normal"
   set -U fish_color_quote "green"
   set -U fish_color_redirection "yellow"
   set -U fish_color_search_match "--reverse"
