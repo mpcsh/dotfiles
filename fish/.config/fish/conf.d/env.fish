@@ -52,14 +52,17 @@ function set_light_colors
   set_colors
 end
 
-if test (osascript -e 'tell application "System Events" to tell appearance preferences to get dark mode') = "true"
-  set_dark_colors
+if type -q osascript
+  if test (osascript -e 'tell application "System Events" to tell appearance preferences to get dark mode') = "true"
+    set_dark_colors
+  else
+    set_light_colors
+  end
+  trap "set_dark_colors" SIGUSR1
+  trap "set_light_colors" SIGUSR2
 else
-  set_light_colors
+  set_dark_colors
 end
-
-trap "set_dark_colors" SIGUSR1
-trap "set_light_colors" SIGUSR2
 
 if ! status --is-interactive
   exit
