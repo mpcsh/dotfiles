@@ -1,8 +1,11 @@
-" load plugins
+"""""""""
+" plugins
+"""""""""
+
 call plug#begin()
 
 " colorscheme
-Plug 'overcache/NeoSolarized'
+Plug 'arcticicestudio/nord-vim'
 
 " sensible defaults
 Plug 'tommcdo/vim-exchange'
@@ -32,47 +35,17 @@ call plug#end()
 set termguicolors
 syntax enable
 
-function SetColorscheme()
-  silent! colorscheme NeoSolarized
+silent! colorscheme nord
 
-  " remove tildes for blank lines
-  hi EndOfBuffer guifg=bg
+" remove tildes for blank lines
+hi EndOfBuffer guifg=bg
 
-  " match gutter background
-  hi SignColumn guibg=bg
+" italic comments
+hi Comment gui=italic
 
-  " closure highlighting
-  hi LinkDelimiter gui=bold
-  hi MatchParen gui=bold
-
-  " italic comments
-  hi Comment gui=italic
-
-  " fzf
-  let g:fzf_colors = { 'bg+': ['bg', 'Normal'] }
-endfunction
-
-function SetDarkColors()
-  set background=dark
-  call SetColorscheme()
-endfunction
-
-function SetLightColors()
-  set background=light
-  call SetColorscheme()
-endfunction
-
-if has("OSX")
-  let dark_enabled = split(system("osascript -e 'tell application \"System Events\" to tell appearance preferences to get dark mode'"))[0]
-else
-  let dark_enabled = "true"
-endif
-
-if dark_enabled ==? "true"
-  call SetDarkColors()
-else
-  call SetLightColors()
-endif
+" closure highlighting
+hi LinkDelimiter gui=bold
+hi MatchParen gui=bold
 
 
 """"""""""""""
