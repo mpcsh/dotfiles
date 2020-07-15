@@ -5,7 +5,7 @@
 call plug#begin()
 
 " colorscheme
-Plug 'arcticicestudio/nord-vim'
+Plug 'sainnhe/gruvbox-material'
 
 " sensible defaults
 Plug 'tommcdo/vim-exchange'
@@ -35,7 +35,10 @@ call plug#end()
 set termguicolors
 syntax enable
 
-silent! colorscheme nord
+
+let g:gruvbox_material_palette = "original"
+let g:gruvbox_material_sign_column_background = "none"
+silent! colorscheme gruvbox-material
 
 " remove tildes for blank lines
 hi EndOfBuffer guifg=bg
