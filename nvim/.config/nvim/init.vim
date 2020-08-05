@@ -66,6 +66,7 @@ let g:ale_linters = {
 
 let g:ale_fixers = {
 \ 'javascript': ['prettier'],
+\ 'json': ['prettier'],
 \ 'typescript': ['prettier'],
 \ 'typescriptreact': ['prettier'],
 \}
