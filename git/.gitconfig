@@ -28,3 +28,5 @@
 	ui = always
 [url "git@github.com:"]
 	insteadOf = gh://
+[init]
+	defaultBranch = main
