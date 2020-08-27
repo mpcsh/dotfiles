@@ -32,3 +32,5 @@
 	insteadOf = gh://
 [init]
 	defaultBranch = main
+[merge]
+	conflictstyle = diff3
