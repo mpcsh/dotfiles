@@ -75,8 +75,3 @@ end
 function up
   cd (eval printf ../%.0s (seq 1 $argv))
 end
-
-# thefuck
-if type -q thefuck
-  thefuck --alias | source
-end
