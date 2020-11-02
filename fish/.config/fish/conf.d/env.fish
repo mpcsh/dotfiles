@@ -51,5 +51,14 @@ function test_source
   end
 end
 
+function test_exec
+  if type -q $argv[1]
+    $argv[1]
+  end
+end
+
 test_source /usr/local/opt/asdf/asdf.fish
 test_source ~/.asdf/asdf.fish
+
+test_source /usr/local/opt/fzf/shell/key-bindings.fish
+test_exec fzf_key_bindings
