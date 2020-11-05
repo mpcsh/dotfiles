@@ -15,6 +15,9 @@ Plug 'wincent/terminus'
 " language support
 Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
+Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-lua/completion-nvim'
+Plug 'nvim-lua/diagnostic-nvim'
 
 " new features
 Plug 'airblade/vim-gitgutter'
@@ -55,6 +58,30 @@ hi MatchParen gui=bold
 """"""""""""""
 " ide features
 """"""""""""""
+
+lua << EOF
+local on_attach = function(client)
+  require'completion'.on_attach(client)
+  require'diagnostic'.on_attach(client)
+end
+
+require'nvim_lsp'.tsserver.setup{on_attach=on_attach}
+require'nvim_lsp'.vimls.setup{on_attach=on_attach}
+EOF
+
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+set completeopt=menuone,noinsert,noselect
+
+let g:diagnostic_enable_virtual_text = 1
+
+nnoremap <silent> <C-]> <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> <leader>i <cmd>lua vim.lsp.buf.hover()<CR>
+
+" always show sign column to prevent shifting due to diagnostics when the sign
+" column isn't already showing
+set signcolumn=yes
 
 let g:ale_fix_on_save = 1
 
