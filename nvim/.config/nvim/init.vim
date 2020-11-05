@@ -87,18 +87,24 @@ let g:ale_fix_on_save = 1
 
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
+\ 'javascript.jsx': ['eslint'],
+\ 'javascriptreact': ['eslint'],
 \ 'typescript': ['eslint'],
+\ 'typescript.tsx': ['eslint'],
 \ 'typescriptreact': ['eslint'],
 \}
 
 let g:ale_fixers = {
 \ 'javascript': ['prettier'],
+\ 'javascript.jsx': ['prettier'],
+\ 'javascriptreact': ['prettier'],
+\ 'typescript': ['prettier'],
+\ 'typescript.tsx': ['prettier'],
+\ 'typescriptreact': ['prettier'],
 \ 'json': ['prettier'],
 \ 'html': ['prettier'],
 \ 'css': ['prettier'],
 \ 'markdown': ['prettier'],
-\ 'typescript': ['prettier'],
-\ 'typescriptreact': ['prettier'],
 \}
 
 
