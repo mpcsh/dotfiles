@@ -8,4 +8,3 @@
 - `fzf`
 - `exa`
 - `asdf`
-- `croc`
