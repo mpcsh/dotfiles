@@ -65,8 +65,8 @@ local on_attach = function(client)
   require'diagnostic'.on_attach(client)
 end
 
-require'nvim_lsp'.tsserver.setup{on_attach=on_attach}
-require'nvim_lsp'.vimls.setup{on_attach=on_attach}
+require'lspconfig'.tsserver.setup{on_attach=on_attach}
+require'lspconfig'.vimls.setup{on_attach=on_attach}
 EOF
 
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
