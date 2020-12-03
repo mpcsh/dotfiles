@@ -17,7 +17,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/completion-nvim'
-Plug 'nvim-lua/diagnostic-nvim'
 
 " new features
 Plug 'airblade/vim-gitgutter'
@@ -37,7 +36,6 @@ call plug#end()
 
 set termguicolors
 syntax enable
-
 
 let g:gruvbox_material_palette = "material"
 let g:gruvbox_material_background = "medium"
@@ -62,7 +60,6 @@ hi MatchParen gui=bold
 lua << EOF
 local on_attach = function(client)
   require'completion'.on_attach(client)
-  require'diagnostic'.on_attach(client)
 end
 
 require'lspconfig'.tsserver.setup{on_attach=on_attach}
@@ -73,8 +70,6 @@ inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 set completeopt=menuone,noinsert,noselect
-
-let g:diagnostic_enable_virtual_text = 1
 
 nnoremap <silent> <C-]> <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> <leader>i <cmd>lua vim.lsp.buf.hover()<CR>
