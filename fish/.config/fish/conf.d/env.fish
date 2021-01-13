@@ -3,8 +3,9 @@ set -x EDITOR nvim
 set -x FZF_DEFAULT_COMMAND "rg --files-with-matches ."
 set -x FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
 set -x FZF_CTRL_R_OPTS "--reverse"
-set -x TERM xterm-256color
+set -x NODEJS_CHECK_SIGNATURES "no"
 set -x NVIM_LISTEN_ADDRESS "/tmp/nvimsocket-$fish_pid"
+set -x TERM xterm-256color
 
 # don't show annoying welcome message
 set fish_greeting ""
