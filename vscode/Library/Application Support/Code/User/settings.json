@@ -1,13 +1,8 @@
 {
     "editor.fontFamily": "Cascadia Code PL",
-    "editor.fontSize": 14,
     "gruvboxMaterial.colorfulSyntax": true,
-    "workbench.colorTheme": "Gruvbox Material Light",
-    "workbench.preferredDarkColorTheme": "Gruvbox Material Dark",
-    "workbench.preferredLightColorTheme": "Gruvbox Material Light",
-    "window.autoDetectColorScheme": true,
+    "workbench.colorTheme": "Gruvbox Material Dark",
     "editor.fontLigatures": true,
-    "terminal.integrated.fontSize": 14,
     "terminal.integrated.scrollback": 10000,
     "editor.occurrencesHighlight": false,
     "editor.cursorBlinking": "solid",
@@ -24,8 +19,13 @@
     "diffEditor.ignoreTrimWhitespace": true,
     "diffEditor.renderSideBySide": true,
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
-    "gruvboxMaterial.lightContrast": "soft",
     "git.allowForcePush": true,
     "git.allowNoVerifyCommit": true,
-    "git.alwaysShowStagedChangesResourceGroup": true
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "hack.rememberedWorkspaces": {
+        "/Users/mcohen/work/webapp": "trusted"
+    },
+    "window.zoomLevel": 1,
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14
 }
