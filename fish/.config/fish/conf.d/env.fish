@@ -1,3 +1,6 @@
+# path
+set -x fish_user_paths /opt/homebrew/bin
+
 # environment variables
 set -x EDITOR nvim
 set -x FZF_DEFAULT_COMMAND "rg --files-with-matches ."
@@ -58,8 +61,77 @@ function test_exec
   end
 end
 
-test_source /usr/local/opt/asdf/asdf.fish
+test_source /opt/homebrew/opt/asdf/asdf.fish
 test_source ~/.asdf/asdf.fish
 
-test_source /usr/local/opt/fzf/shell/key-bindings.fish
+test_source /opt/homebrew/opt/fzf/shell/key-bindings.fish
 test_exec fzf_key_bindings
+
+
+###########
+# aliases
+###########
+
+# allows sudo to use aliases
+function sudo
+  command sudo -sE $argv
+end
+
+# better ls
+if type -q exa
+  function ls
+    command exa -1 $argv
+  end
+  function la
+    command exa -1a $argv
+  end
+  function ll
+    command exa -lg $argv
+  end
+  function lla
+    command exa -lga $argv
+  end
+end
+
+# work on directories
+function cp
+  command cp -r $argv
+end
+
+function rm
+  command rm -rf $argv
+end
+
+function mkdir
+  command mkdir -p $argv
+end
+
+function rsync
+  command rsync -aAXvzHE $argv
+end
+
+# make CLI rg match fzf
+function rg
+  command rg --hidden --smart-case --glob !.git $argv
+end
+
+# nvim
+function vim
+  command nvim $argv
+end
+
+# git
+function g
+  command git $argv
+end
+
+# mkdir and cd into it
+function mkcd
+  mkdir -p $argv
+  cd $argv
+end
+
+# cd .. repeatedly
+function up
+  cd (eval printf ../%.0s (seq 1 $argv))
+end
