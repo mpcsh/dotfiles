@@ -25,7 +25,9 @@
     "hack.rememberedWorkspaces": {
         "/Users/mcohen/work/webapp": "trusted"
     },
-    "window.zoomLevel": 1,
     "editor.fontSize": 14,
-    "terminal.integrated.fontSize": 14
+    "terminal.integrated.fontSize": 14,
+    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+    "liveshare.authenticationProvider": "GitHub",
+    "window.zoomLevel": 1
 }

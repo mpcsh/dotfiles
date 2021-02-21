@@ -9,23 +9,18 @@ Plug 'sainnhe/gruvbox-material'
 
 " sensible defaults
 Plug 'tommcdo/vim-exchange'
-Plug 'tpope/vim-repeat'
-Plug 'wincent/terminus'
-
-" language support
-Plug 'sheerun/vim-polyglot'
-Plug 'dense-analysis/ale'
-Plug 'neovim/nvim-lspconfig'
-Plug 'nvim-lua/completion-nvim'
-
-" new features
-Plug 'airblade/vim-gitgutter'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+
+" ide features
+if !exists('g:vscode')
+Plug 'airblade/vim-gitgutter'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-fugitive'
+Plug 'wincent/terminus'
+endif
 
 call plug#end()
 
@@ -33,6 +28,8 @@ call plug#end()
 """""""""""""
 " colorscheme
 """""""""""""
+
+if !exists('g:vscode')
 
 set termguicolors
 syntax enable
@@ -52,60 +49,14 @@ hi Comment gui=italic
 hi LinkDelimiter gui=bold
 hi MatchParen gui=bold
 
-
-""""""""""""""
-" ide features
-""""""""""""""
-
-lua << EOF
-local on_attach = function(client)
-  require'completion'.on_attach(client)
-end
-
-require'lspconfig'.tsserver.setup{on_attach=on_attach}
-require'lspconfig'.vimls.setup{on_attach=on_attach}
-EOF
-
-inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-set completeopt=menuone,noinsert,noselect
-
-nnoremap <silent> <C-]> <cmd>lua vim.lsp.buf.definition()<CR>
-nnoremap <silent> <leader>i <cmd>lua vim.lsp.buf.hover()<CR>
-
-" always show sign column to prevent shifting due to diagnostics when the sign
-" column isn't already showing
-set signcolumn=yes
-
-let g:ale_fix_on_save = 1
-
-let g:ale_linters = {
-\ 'javascript': ['eslint'],
-\ 'javascript.jsx': ['eslint'],
-\ 'javascriptreact': ['eslint'],
-\ 'typescript': ['eslint'],
-\ 'typescript.tsx': ['eslint'],
-\ 'typescriptreact': ['eslint'],
-\}
-
-let g:ale_fixers = {
-\ 'javascript': ['prettier'],
-\ 'javascript.jsx': ['prettier'],
-\ 'javascriptreact': ['prettier'],
-\ 'typescript': ['prettier'],
-\ 'typescript.tsx': ['prettier'],
-\ 'typescriptreact': ['prettier'],
-\ 'json': ['prettier'],
-\ 'html': ['prettier'],
-\ 'css': ['prettier'],
-\ 'markdown': ['prettier'],
-\}
+endif
 
 
 """""""""""""
 " environment
 """""""""""""
+
+if !exists('g:vscode')
 
 " short updatetime https://github.com/airblade/vim-gitgutter#getting-started
 set updatetime=100
@@ -178,6 +129,12 @@ set splitbelow
 let g:gitgutter_map_keys = 0
 let g:gitgutter_diff_args = '-w'
 
+" always show sign column to prevent shifting due to diagnostics when the sign
+" column isn't already showing
+set signcolumn=yes
+
+endif
+
 
 """"""""""
 " keybinds
@@ -208,6 +165,3 @@ noremap <silent> <C-l> :nohlsearch<CR>
 
 " search for visual selection
 vnoremap * y/\V<C-r>=escape(@",'/\')<CR><CR>
-
-" fzf
-noremap <silent> <C-p> :Files<CR>
