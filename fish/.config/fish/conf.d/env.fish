@@ -1,6 +1,3 @@
-# path
-set -x fish_user_paths /opt/homebrew/bin
-
 # environment variables
 set -x EDITOR nvim
 set -x FZF_DEFAULT_COMMAND "rg --files-with-matches ."
@@ -42,6 +39,21 @@ set -U fish_pager_color_prefix "brblack"
 set -U fish_pager_color_progress "yellow"
 set -Ux FZF_DEFAULT_OPTS "--color=16,fg+:4 --ansi"
 
+function is_apple_silicon
+  test (uname -sm) = "Darwin arm64"
+end
+
+function is_apple_intel
+  test (uname -sm) = "Darwin x86_64"
+end
+
+# homebrew path
+if is_apple_silicon
+  set -x fish_user_paths /opt/homebrew/bin
+else if is_apple_intel
+  set -x fish_user_paths /usr/local/bin
+end
+
 if ! status --is-interactive
   exit
 end
@@ -61,10 +73,15 @@ function test_exec
   end
 end
 
-test_source /opt/homebrew/opt/asdf/asdf.fish
-test_source ~/.asdf/asdf.fish
+if is_apple_silicon
+  test_source /opt/homebrew/opt/asdf/asdf.fish
+  test_source /opt/homebrew/opt/fzf/shell/key-bindings.fish
+else if is_apple_intel
+  test_source /usr/local/opt/asdf/asdf.fish
+  test_source /usr/local/opt/fzf/shell/key-bindings.fish
+end
 
-test_source /opt/homebrew/opt/fzf/shell/key-bindings.fish
+test_source ~/.asdf/asdf.fish
 test_exec fzf_key_bindings
 
 
