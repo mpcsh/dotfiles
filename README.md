@@ -8,6 +8,7 @@
 - `fzf`
 - `exa`
 - `asdf`
+- `gh`
 
 # casks
 - 1password
