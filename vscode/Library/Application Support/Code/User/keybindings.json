@@ -25,5 +25,21 @@
     {
         "key": "ctrl+shift+tab",
         "command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.navigateRight"
     }
 ]
