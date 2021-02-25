@@ -29,5 +29,7 @@
     "terminal.integrated.fontSize": 14,
     "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
     "liveshare.authenticationProvider": "GitHub",
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "explorer.confirmDragAndDrop": false,
+    "editor.tabSize": 2
 }
