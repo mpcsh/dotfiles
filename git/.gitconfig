@@ -24,6 +24,7 @@
 	changed = yellow
 	untracked = red
 [core]
+	excludesfile = ~/.gitignore_global
 	pager = less -FR
 	fileMode = false
 [color]
