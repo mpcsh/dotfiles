@@ -16,7 +16,7 @@
     "workbench.tree.indent": 14,
     "workbench.tree.renderIndentGuides": "always",
     "vim.enableNeovim": true,
-    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.renderSideBySide": true,
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     "git.allowForcePush": true,
@@ -33,5 +33,10 @@
     "editor.tabSize": 2,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "terminal.integrated.drawBoldTextInBrightColors": false,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "editor.insertSpaces": false,
+    "files.trimTrailingWhitespace": true,
+    "rust.clippy_preference": "on",
+    "rust-client.channel": "nightly",
+    "rust-client.rustupPath": "/Users/mpcsh/.asdf/shims/rustup"
 }
