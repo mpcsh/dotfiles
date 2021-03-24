@@ -91,60 +91,60 @@ test_exec fzf_key_bindings
 ###########
 
 # allows sudo to use aliases
-function sudo
+function sudo --wraps sudo
 	command sudo -sE $argv
 end
 
 # better ls
 if type -q exa
-	function ls
+	function ls --wraps exa
 		command exa -1 $argv
 	end
-	function la
+	function la --wraps exa
 		command exa -1a $argv
 	end
-	function ll
+	function ll --wraps exa
 		command exa -lg $argv
 	end
-	function lla
+	function lla --wraps exa
 		command exa -lga $argv
 	end
 end
 
 # work on directories
-function cp
+function cp --wraps cp
 	command cp -r $argv
 end
 
-function rm
+function rm --wraps rm
 	command rm -rf $argv
 end
 
-function mkdir
+function mkdir --wraps mkdir
 	command mkdir -p $argv
 end
 
-function rsync
+function rsync --wraps rsync
 	command rsync -aAXvzHE $argv
 end
 
 # make CLI rg match fzf
-function rg
+function rg --wraps rg
 	command rg --hidden --smart-case --glob !.git $argv
 end
 
 # nvim
-function vim
+function vim --wraps nvim
 	command nvim $argv
 end
 
 # git
-function g
+function g --wraps git
 	command git $argv
 end
 
 # mkdir and cd into it
-function mkcd
+function mkcd --wraps mkdir
 	mkdir -p $argv
 	cd $argv
 end
