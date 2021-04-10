@@ -33,7 +33,6 @@
     "editor.tabSize": 2,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "terminal.integrated.drawBoldTextInBrightColors": false,
-    "window.zoomLevel": 1,
     "editor.insertSpaces": false,
     "files.trimTrailingWhitespace": true,
     "rust.clippy_preference": "on",
