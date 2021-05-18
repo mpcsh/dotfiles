@@ -1,5 +1,9 @@
 [
     {
+        "key": "cmd+n",
+        "command": "explorer.newFile"
+    },
+    {
         "key": "ctrl+tab",
         "command": "workbench.action.nextEditor"
     },
