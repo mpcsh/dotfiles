@@ -125,7 +125,7 @@ function mkdir --wraps mkdir
 end
 
 function rsync --wraps rsync
-	command rsync -aAXvzHE $argv
+	command rsync -avz $argv
 end
 
 # make CLI rg match fzf
