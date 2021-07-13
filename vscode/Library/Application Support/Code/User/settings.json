@@ -38,5 +38,6 @@
     "files.trimTrailingWhitespace": true,
     "rust.clippy_preference": "on",
     "rust-client.channel": "nightly",
-    "rust-client.rustupPath": "/Users/mpcsh/.asdf/shims/rustup"
+    "rust-client.rustupPath": "/Users/mpcsh/.asdf/shims/rustup",
+    "security.workspace.trust.enabled": false
 }
