@@ -25,7 +25,7 @@
 	untracked = red
 [core]
 	excludesfile = ~/.gitignore_global
-	pager = less -FR
+	pager = diff-so-fancy | less --tabs=4 -RFX
 	fileMode = false
 [color]
 	status = always
