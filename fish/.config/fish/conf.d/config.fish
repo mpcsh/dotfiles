@@ -40,20 +40,8 @@ set -U fish_pager_color_progress yellow
 
 set -Ux FZF_DEFAULT_OPTS "--color=16,fg+:4 --ansi"
 
-function is_apple_silicon
-	test (uname -sm) = "Darwin arm64"
-end
-
-function is_apple_intel
-	test (uname -sm) = "Darwin x86_64"
-end
-
 # homebrew path
-if is_apple_silicon
-	set -x fish_user_paths /opt/homebrew/bin
-else if is_apple_intel
-	set -x fish_user_paths /usr/local/bin
-end
+set -x fish_user_paths (brew --prefix)/bin
 
 if ! status --is-interactive
 	exit
@@ -74,15 +62,12 @@ function test_exec
 	end
 end
 
-if is_apple_silicon
-	test_source /opt/homebrew/opt/asdf/asdf.fish
-	test_source /opt/homebrew/opt/fzf/shell/key-bindings.fish
-else if is_apple_intel
-	test_source /usr/local/opt/asdf/asdf.fish
-	test_source /usr/local/opt/fzf/shell/key-bindings.fish
-end
-
+# asdf
+test_source (brew --prefix asdf)/asdf.fish
 test_source ~/.asdf/asdf.fish
+
+# fzf
+test_source (brew --prefix fzf)/shell/key-bindings.fish
 test_exec fzf_key_bindings
 
 
