@@ -43,6 +43,7 @@ set -Ux FZF_DEFAULT_OPTS "--color=16,fg+:4 --ansi"
 # homebrew path
 set -x fish_user_paths (brew --prefix)/bin
 
+# bail if we don't need to set up the prompt
 if ! status --is-interactive
 	exit
 end
@@ -50,25 +51,12 @@ end
 # prompt
 starship init fish | source
 
-function test_source
-	if test -e $argv[1]
-		source $argv[1]
-	end
-end
-
-function test_exec
-	if type -q $argv[1]
-		$argv[1]
-	end
-end
-
 # asdf
-test_source (brew --prefix asdf)/asdf.fish
-test_source ~/.asdf/asdf.fish
+source (brew --prefix asdf)/libexec/asdf.fish
 
 # fzf
-test_source (brew --prefix fzf)/shell/key-bindings.fish
-test_exec fzf_key_bindings
+source (brew --prefix fzf)/shell/key-bindings.fish
+fzf_key_bindings
 
 
 ###########
