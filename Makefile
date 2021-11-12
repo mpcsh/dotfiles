@@ -1,6 +1,6 @@
 .PHONY: default sync install uninstall
 
-MODULES = fish git nvim tmux
+MODULES = fish git nvim tmux vscode
 
 default: sync install
 
