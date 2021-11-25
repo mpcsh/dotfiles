@@ -41,7 +41,7 @@ set -U fish_pager_color_progress yellow
 set -Ux FZF_DEFAULT_OPTS "--color=16,fg+:4 --ansi"
 
 # homebrew path
-set -x fish_user_paths (brew --prefix)/bin
+set -x fish_user_paths /opt/homebrew/bin /usr/local/bin
 
 # bail if we don't need to set up the prompt
 if ! status --is-interactive
