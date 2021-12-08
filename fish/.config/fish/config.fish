@@ -58,6 +58,9 @@ source (brew --prefix asdf)/libexec/asdf.fish
 source (brew --prefix fzf)/shell/key-bindings.fish
 fzf_key_bindings
 
+# direnv
+direnv hook fish | source
+
 
 ###########
 # aliases
