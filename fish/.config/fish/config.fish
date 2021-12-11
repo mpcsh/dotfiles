@@ -1,47 +1,45 @@
-# environment variables
-set -x EDITOR nvim
-set -x FZF_DEFAULT_COMMAND "rg --files-with-matches ."
-set -x FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
-set -x FZF_CTRL_R_OPTS --reverse
-set -x NODEJS_CHECK_SIGNATURES no
-
-set -x TERM xterm-256color
-
-# don't show annoying welcome message
+# hide the welcome message
 set fish_greeting ""
 
+# environment variables
+set -gx EDITOR nvim
+set -gx FZF_DEFAULT_COMMAND "rg --files-with-matches ."
+set -gx FZF_DEFAULT_OPTS "--color=16,fg+:4 --ansi"
+set -gx FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
+set -gx FZF_CTRL_R_OPTS --reverse
+set -gx NODEJS_CHECK_SIGNATURES no
+set -gx TERM xterm-256color
+
 # colorized manpages
-set -x LESS_TERMCAP_mb (printf "\033[01;31m")
-set -x LESS_TERMCAP_md (printf "\033[01;31m")
-set -x LESS_TERMCAP_me (printf "\033[0m")
-set -x LESS_TERMCAP_se (printf "\033[0m")
-set -x LESS_TERMCAP_so (printf "\033[01;44;33m")
-set -x LESS_TERMCAP_ue (printf "\033[0m")
-set -x LESS_TERMCAP_us (printf "\033[01;32m")
+set -gx LESS_TERMCAP_mb (printf "\033[01;31m")
+set -gx LESS_TERMCAP_md (printf "\033[01;31m")
+set -gx LESS_TERMCAP_me (printf "\033[0m")
+set -gx LESS_TERMCAP_se (printf "\033[0m")
+set -gx LESS_TERMCAP_so (printf "\033[01;44;33m")
+set -gx LESS_TERMCAP_ue (printf "\033[0m")
+set -gx LESS_TERMCAP_us (printf "\033[01;32m")
 
 # colors
-set -U fish_color_autosuggestion brblack --underline
-set -U fish_color_cancel red
-set -U fish_color_command normal --bold
-set -U fish_color_comment brblack
-set -U fish_color_end yellow
-set -U fish_color_error red --underline
-set -U fish_color_escape cyan
-set -U fish_color_normal normal
-set -U fish_color_operator blue
-set -U fish_color_param normal
-set -U fish_color_quote green
-set -U fish_color_redirection yellow
-set -U fish_color_search_match --reverse
-set -U fish_pager_color_completion normal --bold --underline
-set -U fish_pager_color_description yellow
-set -U fish_pager_color_prefix brblack
-set -U fish_pager_color_progress yellow
-
-set -Ux FZF_DEFAULT_OPTS "--color=16,fg+:4 --ansi"
+set -g fish_color_autosuggestion brblack --underline
+set -g fish_color_cancel red
+set -g fish_color_command normal --bold
+set -g fish_color_comment brblack
+set -g fish_color_end yellow
+set -g fish_color_error red --underline
+set -g fish_color_escape cyan
+set -g fish_color_normal normal
+set -g fish_color_operator blue
+set -g fish_color_param normal
+set -g fish_color_quote green
+set -g fish_color_redirection yellow
+set -g fish_color_search_match --reverse
+set -g fish_pager_color_completion normal --bold --underline
+set -g fish_pager_color_description yellow
+set -g fish_pager_color_prefix brblack
+set -g fish_pager_color_progress yellow
 
 # homebrew path
-set -x fish_user_paths /opt/homebrew/bin /usr/local/bin
+set -gx fish_user_paths /opt/homebrew/bin /usr/local/bin
 
 # bail if we don't need to set up the prompt
 if ! status --is-interactive
