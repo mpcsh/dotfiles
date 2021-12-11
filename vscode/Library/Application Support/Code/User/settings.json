@@ -46,5 +46,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.formatOnSaveMode": "modificationsIfAvailable",
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "files.associations": {
+    "*.emu": "ecmarkup"
+  }
 }
