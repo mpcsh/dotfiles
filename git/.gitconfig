@@ -12,6 +12,7 @@
 	ci = commit
 	st = status
 	staged = diff --cached
+	unstage = restore --staged
 	push-please = push --force-with-lease
 	hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	fixup = commit --amend --no-edit
