@@ -5,6 +5,7 @@
 call plug#begin()
 
 " colorscheme
+Plug 'ayu-theme/ayu-vim'
 Plug 'sainnhe/gruvbox-material'
 
 " sensible defaults
@@ -34,10 +35,12 @@ if !exists('g:vscode')
 set termguicolors
 syntax enable
 
-let g:gruvbox_material_palette = "material"
-let g:gruvbox_material_background = "medium"
-let g:gruvbox_material_sign_column_background = "none"
-silent! colorscheme gruvbox-material
+" let g:gruvbox_material_palette = "material"
+" let g:gruvbox_material_background = "medium"
+" let g:gruvbox_material_sign_column_background = "none"
+" silent! colorscheme gruvbox-material
+let ayucolor="mirage"
+silent! colorscheme ayu
 
 " remove tildes for blank lines
 hi EndOfBuffer guifg=bg
