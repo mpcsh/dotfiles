@@ -1,6 +1,6 @@
 .PHONY: default sync install uninstall
 
-MODULES = fish git nvim vscode
+MODULES = fish git nvim ssh vscode
 
 default: sync install
 
