@@ -49,5 +49,6 @@
   "files.insertFinalNewline": true,
   "files.associations": {
     "*.emu": "ecmarkup"
-  }
+  },
+  "explorer.fileNesting.enabled": true
 }
