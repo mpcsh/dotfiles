@@ -39,3 +39,5 @@
 	conflictstyle = diff3
 [fetch]
 	prune = true
+[log]
+	mailmap = true
