@@ -3,6 +3,7 @@ set fish_greeting ""
 
 # environment variables
 set -gx ASDF_NPM_DEFAULT_PACKAGES_FILE "$HOME/.config/asdf/npm-default-packages"
+set -gx ASDF_PYTHON_DEFAULT_PACKAGES_FILE "$HOME/.config/asdf/python-default-packages"
 set -gx EDITOR nvim
 set -gx FZF_DEFAULT_COMMAND "rg --files-with-matches ."
 set -gx FZF_DEFAULT_OPTS "--color=16,fg+:4 --ansi"
@@ -59,6 +60,11 @@ fzf_key_bindings
 
 # direnv
 direnv hook fish | source
+
+# pixlet
+if type -q pixlet
+    pixlet completion fish | source
+end
 
 
 ###########
