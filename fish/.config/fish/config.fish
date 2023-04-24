@@ -45,7 +45,7 @@ set -gx fish_user_paths /opt/homebrew/bin /usr/local/bin
 
 # bail if we don't need to set up the prompt
 if ! status --is-interactive
-	exit
+    exit
 end
 
 # prompt
@@ -73,64 +73,64 @@ end
 
 # allows sudo to use aliases
 function sudo --wraps sudo
-	command sudo -sE $argv
+    command sudo -sE $argv
 end
 
 # better ls
 if type -q exa
-	function ls --wraps exa
-		command exa -1 $argv
-	end
-	function la --wraps exa
-		command exa -1a $argv
-	end
-	function ll --wraps exa
-		command exa -lg $argv
-	end
-	function lla --wraps exa
-		command exa -lga $argv
-	end
+    function ls --wraps exa
+        command exa -1 $argv
+    end
+    function la --wraps exa
+        command exa -1a $argv
+    end
+    function ll --wraps exa
+        command exa -lg $argv
+    end
+    function lla --wraps exa
+        command exa -lga $argv
+    end
 end
 
 # work on directories
 function cp --wraps cp
-	command cp -r $argv
+    command cp -r $argv
 end
 
 function rm --wraps rm
-	command rm -rf $argv
+    command rm -rf $argv
 end
 
 function mkdir --wraps mkdir
-	command mkdir -p $argv
+    command mkdir -p $argv
 end
 
 function rsync --wraps rsync
-	command rsync -avz $argv
+    command rsync -avz $argv
 end
 
 # make CLI rg match fzf
 function rg --wraps rg
-	command rg --hidden --smart-case --glob !.git $argv
+    command rg --hidden --smart-case --glob !.git $argv
 end
 
 # nvim
 function vim --wraps nvim
-	command nvim $argv
+    command nvim $argv
 end
 
 # git
 function g --wraps git
-	command git $argv
+    command git $argv
 end
 
 # mkdir and cd into it
 function mkcd --wraps mkdir
-	mkdir -p $argv
-	cd $argv
+    mkdir -p $argv
+    cd $argv
 end
 
 # cd .. repeatedly
 function up
-	cd (eval printf ../%.0s (seq 1 $argv))
+    cd (eval printf ../%.0s (seq 1 $argv))
 end
