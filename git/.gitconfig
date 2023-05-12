@@ -1,5 +1,5 @@
 [user]
-	email = contact@mpc.sh
+	email = mail@mpc.sh
 	name = Mark Cohen
 [includeIf "gitdir:work/"]
   path = ~/.gitconfig.work
@@ -26,8 +26,14 @@
 	untracked = red
 [core]
 	excludesfile = ~/.gitignore_global
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = delta
 	fileMode = false
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+[diff]
+	colorMoved = default
 [color]
 	status = always
 	ui = always

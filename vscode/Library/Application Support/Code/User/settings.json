@@ -4,7 +4,6 @@
   "editor.cursorBlinking": "solid",
   "editor.fontFamily": "Cascadia Code PL",
   "editor.fontLigatures": true,
-  "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.insertSpaces": false,
   "editor.minimap.enabled": false,
@@ -45,10 +44,23 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "editor.formatOnSaveMode": "modifications",
   "files.insertFinalNewline": true,
   "files.associations": {
     "*.emu": "ecmarkup"
   },
-  "explorer.fileNesting.enabled": true
+  "liveshare.allowGuestDebugControl": true,
+  "liveshare.allowGuestTaskControl": true,
+  "liveshare.languages.allowGuestCommandControl": true,
+  "liveshare.launcherClient": "visualStudioCode",
+  "liveshare.notebooks.allowGuestExecuteCells": true,
+  "liveshare.openSharedServers": false,
+  "liveshare.presence": true,
+  "editor.experimental.useCustomCodeActionMenu": true,
+  "window.experimental.useSandbox": true,
+  "standard.engine": "standardx",
+  "standard.run": "onSave",
+  "standard.treatErrorsAsWarnings": true,
+  "editor.fontSize": 14,
+  "editor.stickyScroll.enabled": true
 }
