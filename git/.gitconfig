@@ -14,7 +14,7 @@
 	staged = diff --cached
 	unstage = restore --staged
 	push-please = push --force-with-lease
-	hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	hist = log --graph --pretty=format:'%C(red)%h%C(reset)%C(yellow)%d%C(reset) %s %C(green)(%ad)%C(reset) %C(blue)<%aN>%C(reset)' --date=format:'%Y-%m-%d %I:%M %p'
 	fixup = commit --amend --no-edit
 [advice]
 	detachedHead = false
