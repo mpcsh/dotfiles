@@ -6,7 +6,7 @@ call plug#begin()
 
 " colorscheme
 Plug 'ayu-theme/ayu-vim'
-Plug 'sainnhe/gruvbox-material'
+" Plug 'sainnhe/gruvbox-material'
 
 " sensible defaults
 Plug 'tommcdo/vim-exchange'
@@ -17,7 +17,12 @@ Plug 'tpope/vim-surround'
 
 " ide features
 if !exists('g:vscode')
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'neovim/nvim-lspconfig'
+
 Plug 'airblade/vim-gitgutter'
+Plug 'itchyny/lightline.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'wincent/terminus'
@@ -76,9 +81,6 @@ set number
 " no startup message
 set shortmess+=I
 
-" no statusline
-set laststatus=0
-
 " no ruler
 set noruler
 
@@ -136,6 +138,17 @@ let g:gitgutter_diff_args = '-w'
 " column isn't already showing
 set signcolumn=yes
 
+let g:lightline = {
+	\ 'component': {
+	\ 	'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
+	\ },
+	\ 'active': {
+	\ 	'left':  [ ['filename'], ['modified', 'readonly'], ['fugitive'] ],
+	\ 	'right': [ ['lineinfo'], ['filetype'] ]
+	\ },
+	\ 'colorscheme': 'ayu_mirage',
+\ }
+
 endif
 
 
@@ -157,7 +170,7 @@ noremap <silent> L g$
 " disable 'ex mode'
 nnoremap <silent> Q <Nop>
 
-" set <Tab>, <S-tab> to indent/unindent lines
+" set <Tab>, <S-Tab> to indent/unindent lines
 vnoremap <silent> <Tab> >gv
 vnoremap <silent> <S-Tab> <gv
 nnoremap <silent> <Tab> >>
