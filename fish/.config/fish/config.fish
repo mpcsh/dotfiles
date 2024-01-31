@@ -119,6 +119,11 @@ function vim --wraps nvim
     command nvim $argv
 end
 
+# soulver
+function soulver --wraps soulver
+    rlwrap command soulver $argv
+end
+
 # git
 function g --wraps git
     command git $argv
