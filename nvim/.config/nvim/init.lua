@@ -41,7 +41,7 @@ require("lazy").setup({
 	-- "hrsh7th/cmp-buffer",
 	-- "hrsh7th/cmp-path",
 
-	"airblade/vim-gitgutter",
+	"lewis6991/gitsigns.nvim",
 	"ggandor/leap.nvim",
 	"nvim-lualine/lualine.nvim",
 	"sheerun/vim-polyglot",
@@ -144,11 +144,8 @@ vim.opt.linebreak = true
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
--- gitgutter
-vim.g.gitgutter_map_keys = 0
-vim.g.gitgutter_diff_args = "-w"
--- short updatetime https://github.com/airblade/vim-gitgutter#getting-started
-vim.opt.updatetime = 100
+-- git status in gutter
+require("gitsigns").setup()
 
 require("lualine").setup({
 	options = {
