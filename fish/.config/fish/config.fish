@@ -77,18 +77,18 @@ function sudo --wraps sudo
 end
 
 # better ls
-if type -q exa
-    function ls --wraps exa
-        command exa -1 $argv
+if type -q eza
+    function ls --wraps eza
+        command eza -1 $argv
     end
-    function la --wraps exa
-        command exa -1a $argv
+    function la --wraps eza
+        command eza -1a $argv
     end
-    function ll --wraps exa
-        command exa -lg $argv
+    function ll --wraps eza
+        command eza -lg $argv
     end
-    function lla --wraps exa
-        command exa -lga $argv
+    function lla --wraps eza
+        command eza -lga $argv
     end
 end
 
