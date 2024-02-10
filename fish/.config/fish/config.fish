@@ -59,17 +59,30 @@ if type -q brew
 	source (brew --prefix asdf)/libexec/asdf.fish
 end
 
+# bat
+set -l bat_theme_src ~/.local/share/nvim/lazy/tokyonight.nvim/extras/sublime/tokyonight_night.tmTheme
+set -l bat_theme_dst ~/.config/bat/themes/(basename $bat_theme_src)
+if type -q bat
+	if test -e $bat_theme_src; and ! test -e $bat_theme_dst
+		mkdir -p (dirname $bat_theme_dst)
+		ln -s $bat_theme_src $bat_theme_dst
+	end
+	if test -e $bat_theme_dst
+		set -gx BAT_THEME (basename $bat_theme_src .tmTheme)
+	end
+end
+
+# direnv
+if type -q direnv
+	direnv hook fish | source
+end
+
 # fzf
 if type -q brew
 	source (brew --prefix fzf)/shell/key-bindings.fish
 end
 if type -q fzf
 	fzf_key_bindings
-end
-
-# direnv
-if type -q direnv
-	direnv hook fish | source
 end
 
 # pixlet
