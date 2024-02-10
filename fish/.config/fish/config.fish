@@ -85,10 +85,10 @@ if type -q eza
         command eza -1a $argv
     end
     function ll --wraps eza
-        command eza -lg $argv
+        command eza -lg --git $argv
     end
     function lla --wraps eza
-        command eza -lga $argv
+        command eza -lga --git $argv
     end
 end
 
