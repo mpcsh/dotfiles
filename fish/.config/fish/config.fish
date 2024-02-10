@@ -136,7 +136,7 @@ function soulver --wraps soulver --description "enable up arrow in soulver"
 end
 
 function sudo --wraps sudo --description "allows sudo to use aliases"
-	command sudo -sE $argv
+	command sudo -s $argv
 end
 
 function vim --wraps nvim
