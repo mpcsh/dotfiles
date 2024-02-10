@@ -77,14 +77,6 @@ if type -q direnv
 	direnv hook fish | source
 end
 
-# fzf
-if type -q brew
-	source (brew --prefix fzf)/shell/key-bindings.fish
-end
-if type -q fzf
-	fzf_key_bindings
-end
-
 # pixlet
 if type -q pixlet
 	pixlet completion fish | source
@@ -169,10 +161,16 @@ function up --description "cd .. repeatedly"
 end
 
 
-########
-# prompt
-########
+#########################
+# interactive-only config
+#########################
 
 if status --is-interactive
+	# set up prompt
 	starship init fish | source
+
+	# ensure fzf_key_bindings is available for fish_user_key_bindings
+	if type -q brew
+		source (brew --prefix fzf)/shell/key-bindings.fish
+	end
 end
