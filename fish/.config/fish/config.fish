@@ -1,3 +1,7 @@
+######
+# base
+######
+
 # hide the welcome message
 set fish_greeting ""
 
@@ -40,30 +44,37 @@ set -g fish_pager_color_description yellow
 set -g fish_pager_color_prefix brblack
 set -g fish_pager_color_progress yellow
 
-# homebrew path
-set -gx fish_user_paths /opt/homebrew/bin /usr/local/bin
 
-# bail if we don't need to set up the prompt
-if ! status --is-interactive
-    exit
+##########
+# commands
+##########
+
+# brew
+if test -e /opt/homebrew
+	set -gx fish_user_paths /opt/homebrew/bin /usr/local/bin
 end
 
-# prompt
-starship init fish | source
-
 # asdf
-source (brew --prefix asdf)/libexec/asdf.fish
+if type -q brew
+	source (brew --prefix asdf)/libexec/asdf.fish
+end
 
 # fzf
-source (brew --prefix fzf)/shell/key-bindings.fish
-fzf_key_bindings
+if type -q brew
+	source (brew --prefix fzf)/shell/key-bindings.fish
+end
+if type -q fzf
+	fzf_key_bindings
+end
 
 # direnv
-direnv hook fish | source
+if type -q direnv
+	direnv hook fish | source
+end
 
 # pixlet
 if type -q pixlet
-    pixlet completion fish | source
+	pixlet completion fish | source
 end
 
 
@@ -71,71 +82,84 @@ end
 # aliases
 ###########
 
-# allows sudo to use aliases
-function sudo --wraps sudo
-    command sudo -sE $argv
+function cp --wraps cp --description "cp recursively"
+	command cp -R $argv
 end
 
-# better ls
+function g --wraps git
+	command git $argv
+end
+
 if type -q eza
-    function ls --wraps eza
-        command eza -1 $argv
-    end
-    function la --wraps eza
-        command eza -1a $argv
-    end
-    function ll --wraps eza
-        command eza -lg --git $argv
-    end
-    function lla --wraps eza
-        command eza -lga --git $argv
-    end
+	function ls --wraps eza
+		command eza -1 $argv
+	end
+	function la --wraps eza
+		command eza -1a $argv
+	end
+	function ll --wraps eza
+		command eza -lg --git $argv
+	end
+	function lla --wraps eza
+		command eza -lga --git $argv
+	end
+else
+	function ls --wraps ls
+		command ls -1 $argv
+	end
+	function la --wraps ls
+		command ls -1A $argv
+	end
+	function ll --wraps ls
+		command ls -lhF $argv
+	end
+	function lla --wraps ls
+		command ls -lhFA $argv
+	end
 end
 
-# work on directories
-function cp --wraps cp
-    command cp -r $argv
-end
-
-function rm --wraps rm
-    command rm -rf $argv
+function mkcd --wraps cd --description "mkdir and cd into it"
+	mkdir -p $argv
+	cd $argv
 end
 
 function mkdir --wraps mkdir
-    command mkdir -p $argv
+	command mkdir -p $argv
 end
 
-function rsync --wraps rsync
-    command rsync -avz $argv
+function rg --wraps rg --description "TODO"
+	command rg --hidden --smart-case --glob !.git $argv
 end
 
-# make CLI rg match fzf
-function rg --wraps rg
-    command rg --hidden --smart-case --glob !.git $argv
+function rm --wraps rm
+	command rm -rf $argv
 end
 
-# nvim
+function rsync --wraps rsync --description "TODO"
+	command rsync -avz $argv
+end
+
+function soulver --wraps soulver --description "enable up arrow in soulver"
+	rlwrap command soulver $argv
+end
+
+function sudo --wraps sudo --description "allows sudo to use aliases"
+	command sudo -sE $argv
+end
+
 function vim --wraps nvim
-    command nvim $argv
+	command nvim $argv
 end
 
-# soulver
-function soulver --wraps soulver
-    rlwrap command soulver $argv
+function up --description "cd .. repeatedly"
+	cd (eval printf ../%.0s (seq 1 $argv))
 end
 
-# git
-function g --wraps git
-    command git $argv
-end
 
-# mkdir and cd into it
-function mkcd --wraps mkdir
-    mkdir -p $argv
-    cd $argv
-end
+########
+# prompt
+########
 
-# cd .. repeatedly
-function up
-    cd (eval printf ../%.0s (seq 1 $argv))
+if status --is-interactive
+	starship init fish | source
 end
