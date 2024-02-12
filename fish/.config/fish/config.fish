@@ -85,16 +85,16 @@ end
 
 if type -q eza
 	function ls --wraps eza
-		command eza -1F $argv
+		command eza -1 --classify $argv
 	end
 	function la --wraps eza
-		command eza -1Fa $argv
+		command eza -1a --classify $argv
 	end
 	function ll --wraps eza
-		command eza --git -lFg $argv
+		command eza --git -lg --classify $argv
 	end
 	function lla --wraps eza
-		command eza --git -lFga $argv
+		command eza --git -lga --classify $argv
 	end
 else
 	function ls --wraps ls
