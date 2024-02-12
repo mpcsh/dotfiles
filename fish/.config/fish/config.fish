@@ -85,29 +85,29 @@ end
 
 if type -q eza
 	function ls --wraps eza
-		command eza -1 $argv
+		command eza -1F $argv
 	end
 	function la --wraps eza
-		command eza -1a $argv
+		command eza -1Fa $argv
 	end
 	function ll --wraps eza
-		command eza --git -lgF $argv
+		command eza --git -lFg $argv
 	end
 	function lla --wraps eza
-		command eza --git -lgFa $argv
+		command eza --git -lFga $argv
 	end
 else
 	function ls --wraps ls
-		command ls -1 $argv
+		command ls -1F $argv
 	end
 	function la --wraps ls
-		command ls -1A $argv
+		command ls -1FA $argv
 	end
 	function ll --wraps ls
-		command ls -lhF $argv
+		command ls -lFh $argv
 	end
 	function lla --wraps ls
-		command ls -lhFA $argv
+		command ls -lFhA $argv
 	end
 end
 
