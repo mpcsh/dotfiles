@@ -24,6 +24,7 @@ set -gx LESS_TERMCAP_se (printf "\033[0m")
 set -gx LESS_TERMCAP_so (printf "\033[01;44;33m")
 set -gx LESS_TERMCAP_ue (printf "\033[0m")
 set -gx LESS_TERMCAP_us (printf "\033[01;32m")
+set -gx GROFF_NO_SGR 1
 
 # colors
 set -g fish_color_autosuggestion brblack --underline
