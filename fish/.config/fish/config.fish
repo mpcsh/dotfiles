@@ -10,7 +10,8 @@ set -gx ASDF_NPM_DEFAULT_PACKAGES_FILE "$HOME/.config/asdf/npm-default-packages"
 set -gx ASDF_PYTHON_DEFAULT_PACKAGES_FILE "$HOME/.config/asdf/python-default-packages"
 set -gx EDITOR nvim
 set -gx FZF_DEFAULT_COMMAND "rg --files-with-matches ."
-set -gx FZF_DEFAULT_OPTS "--color=16,fg+:4 --ansi"
+# set -gx FZF_DEFAULT_OPTS "--color=16,fg+:4 --ansi"
+set -gx FZF_DEFAULT_OPTS "--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
 set -gx FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
 set -gx FZF_CTRL_R_OPTS --reverse
 set -gx NODEJS_CHECK_SIGNATURES no
@@ -163,16 +164,17 @@ if status --is-interactive
 	end
 
 	# ensure bat theme is available
-	set -l bat_theme_src ~/.local/share/nvim/lazy/tokyonight.nvim/extras/sublime/tokyonight_night.tmTheme
-	set -l bat_theme_dst ~/.config/bat/themes/(basename $bat_theme_src)
-	if type -q bat
-		if test -e $bat_theme_src; and ! test -e $bat_theme_dst
-			mkdir -p (dirname $bat_theme_dst)
-			ln -s $bat_theme_src $bat_theme_dst
-			bat cache --build
-		end
-		if test -e $bat_theme_dst
-			set -gx BAT_THEME (basename $bat_theme_src .tmTheme)
-		end
-	end
+	# set -l bat_theme_src ~/.local/share/nvim/lazy/tokyonight.nvim/extras/sublime/tokyonight_night.tmTheme
+	# set -l bat_theme_dst ~/.config/bat/themes/(basename $bat_theme_src)
+	# if type -q bat
+	# 	if test -e $bat_theme_src; and ! test -e $bat_theme_dst
+	# 		mkdir -p (dirname $bat_theme_dst)
+	# 		ln -s $bat_theme_src $bat_theme_dst
+	# 		bat cache --build
+	# 	end
+	# 	if test -e $bat_theme_dst
+	# 		set -gx BAT_THEME (basename $bat_theme_src .tmTheme)
+	# 	end
+	# end
+	set -gx BAT_THEME "catppuccin-mocha"
 end

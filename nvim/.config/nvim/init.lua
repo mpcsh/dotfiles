@@ -22,6 +22,7 @@ require("lazy").setup({
 	-- opts = {},
 	-- },
 	"ellisonleao/gruvbox.nvim",
+	{ "catppuccin/nvim", name = "catppuccin" },
 
 	"tommcdo/vim-exchange",
 	"tpope/vim-abolish",
@@ -64,7 +65,7 @@ vim.opt.termguicolors = true
 -- silent! colorscheme gruvbox-material
 -- let ayucolor="mirage"
 -- silent! colorscheme ayu
-vim.cmd("colorscheme tokyonight-night")
+vim.cmd("colorscheme catppuccin-mocha")
 
 -- remove tildes for blank lines
 -- hi EndOfBuffer guifg=bg
@@ -150,7 +151,7 @@ require("gitsigns").setup()
 
 require("lualine").setup({
 	options = {
-		theme = "tokyonight",
+		theme = "catppuccin-mocha",
 	},
 	sections = {
 		lualine_a = { "mode" },
