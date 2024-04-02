@@ -1,10 +1,14 @@
 palette = "catppuccin_mocha"
 
 [nodejs]
-symbol = '⬢ '
+symbol = "⬢ "
 
 [status]
 disabled = false
+symbol = ""
+
+[git_status]
+deleted = "x"
 
 [palettes.catppuccin_macchiato]
 rosewater = "#f4dbd6"

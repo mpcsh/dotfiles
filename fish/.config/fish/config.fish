@@ -47,14 +47,25 @@ set -g fish_pager_color_prefix brblack
 set -g fish_pager_color_progress yellow
 
 
-##########
-# commands
-##########
+##################
+# package managers
+##################
 
 # brew
 if test -e /opt/homebrew
-	set -gx fish_user_paths /opt/homebrew/bin /usr/local/bin
+	fish_add_path --prepend --global /opt/homebrew/bin /usr/local/bin
 end
+
+# nix
+set -l nix_daemon /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
+if ! command -q nix; and test -e $nix_daemon
+	source $nix_daemon
+end
+
+
+##########
+# commands
+##########
 
 # asdf
 if type -q brew
@@ -156,25 +167,20 @@ end
 
 if status --is-interactive
 	# set up prompt
-	starship init fish | source
+	if type -q starship
+		starship init fish | source
+	end
 
 	# ensure fzf_key_bindings is available for fish_user_key_bindings
 	if type -q brew
 		source (brew --prefix fzf)/shell/key-bindings.fish
 	end
 
-	# ensure bat theme is available
-	# set -l bat_theme_src ~/.local/share/nvim/lazy/tokyonight.nvim/extras/sublime/tokyonight_night.tmTheme
-	# set -l bat_theme_dst ~/.config/bat/themes/(basename $bat_theme_src)
-	# if type -q bat
-	# 	if test -e $bat_theme_src; and ! test -e $bat_theme_dst
-	# 		mkdir -p (dirname $bat_theme_dst)
-	# 		ln -s $bat_theme_src $bat_theme_dst
-	# 		bat cache --build
-	# 	end
-	# 	if test -e $bat_theme_dst
-	# 		set -gx BAT_THEME (basename $bat_theme_src .tmTheme)
-	# 	end
-	# end
-	set -gx BAT_THEME "catppuccin-mocha"
+	if type -q bat
+		set -gx BAT_THEME "Catppuccin Mocha"
+	end
+
+	if type -q zoxide
+		zoxide init fish | source
+	end
 end
