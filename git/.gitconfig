@@ -27,8 +27,10 @@
 	untracked = red
 [core]
 	excludesfile = ~/.gitignore_global
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = delta
 	fileMode = false
+[interactive]
+	diffFilter = delta --color-only
 [color]
 	status = always
 	ui = always
@@ -36,7 +38,14 @@
 	insteadOf = gh://
 [init]
 	defaultBranch = main
+[diff]
+	colorMoved = default
 [merge]
 	conflictstyle = diff3
 [fetch]
 	prune = true
+[include]
+	path = ~/.local/share/catppuccin/delta/catppuccin.gitconfig
+[delta]
+	navigate = true
+	features = catppuccin-mocha
