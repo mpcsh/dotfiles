@@ -46,7 +46,16 @@ require("lazy").setup({
 	"lewis6991/gitsigns.nvim",
 	"ggandor/leap.nvim",
 	"nvim-lualine/lualine.nvim",
-	"sheerun/vim-polyglot",
+	-- "sheerun/vim-polyglot",
+	{
+		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate",
+	},
+	{
+		"nvim-treesitter/nvim-treesitter-context",
+		enabled = true,
+		opts = { mode = "cursor" },
+	},
 	"tpope/vim-fugitive",
 	"wincent/terminus",
 
