@@ -222,6 +222,30 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 	command = ":FormatWriteLock",
 })
 
+-- Set up lspconfig.
+-- local capabilities = require("cmp_nvim_lsp").default_capabilities()
+-- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+-- require("lspconfig")["lua_ls"].setup({
+-- 	capabilities = capabilities,
+-- })
+vim.opt.completeopt = "menu,menuone,noselect"
+
+require("lint").linters_by_ft = {
+	javascript = { "eslint" },
+	typescript = { "eslint" },
+	typescriptreact = { "eslint" },
+	html = { "eslint" },
+	css = { "eslint" },
+
+	lua = { "luacheck" },
+}
+
+vim.api.nvim_create_autocmd({ "BufEnter", "InsertLeave", "TextChanged", "BufWritePost" }, {
+	callback = function()
+		require("lint").try_lint()
+	end,
+})
+
 local cmp = require("cmp")
 cmp.setup({
 	snippet = {
@@ -247,30 +271,6 @@ cmp.setup({
 		["<Tab>"] = cmp.mapping.confirm({ select = true }),
 		["<CR>"] = cmp.mapping.confirm({ select = true }),
 	}),
-})
-
--- Set up lspconfig.
--- local capabilities = require("cmp_nvim_lsp").default_capabilities()
--- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
--- require("lspconfig")["lua_ls"].setup({
--- 	capabilities = capabilities,
--- })
-vim.opt.completeopt = "menu,menuone,noselect"
-
-require("lint").linters_by_ft = {
-	javascript = { "eslint" },
-	typescript = { "eslint" },
-	typescriptreact = { "eslint" },
-	html = { "eslint" },
-	css = { "eslint" },
-
-	lua = { "luacheck" },
-}
-
-vim.api.nvim_create_autocmd({ "BufEnter", "InsertLeave", "TextChanged", "BufWritePost" }, {
-	callback = function()
-		require("lint").try_lint()
-	end,
 })
 
 -----------
