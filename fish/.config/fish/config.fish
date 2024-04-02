@@ -6,7 +6,7 @@
 set fish_greeting ""
 
 # environment variables
-set -gx ASDF_NPM_DEFAULT_PACKAGES_FILE "$HOME/.config/asdf/npm-default-packages"
+set -gx ASDF_NPM_DEFAULT_PACKAGES_FILE "$HOME/.config/asdf/nodejs-default-packages"
 set -gx ASDF_PYTHON_DEFAULT_PACKAGES_FILE "$HOME/.config/asdf/python-default-packages"
 set -gx EDITOR nvim
 set -gx FZF_DEFAULT_COMMAND "rg --files-with-matches ."
