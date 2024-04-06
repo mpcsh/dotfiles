@@ -1,0 +1,11 @@
+imports:
+  catppuccin-bat: external/.config/bat/themes/
+  catppuccin-delta: external/.config/delta/
+
+git module catppuccin-bat:
+  url: https://github.com/catppuccin/bat
+  export: themes
+
+git module catppuccin-delta:
+  url: https://github.com/catppuccin/delta
+  pick: catppuccin.gitconfig

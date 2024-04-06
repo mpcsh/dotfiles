@@ -45,7 +45,7 @@
 [fetch]
 	prune = true
 [include]
-	path = ~/.local/share/catppuccin/delta/catppuccin.gitconfig
+	path = ~/.config/delta/catppuccin.gitconfig
 [delta]
 	navigate = true
 	features = catppuccin-mocha
