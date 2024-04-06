@@ -9,11 +9,8 @@ set fish_greeting ""
 set -gx ASDF_NPM_DEFAULT_PACKAGES_FILE "$HOME/.config/asdf/nodejs-default-packages"
 set -gx ASDF_PYTHON_DEFAULT_PACKAGES_FILE "$HOME/.config/asdf/python-default-packages"
 set -gx EDITOR nvim
-set -gx FZF_DEFAULT_COMMAND "rg --files-with-matches ."
-# set -gx FZF_DEFAULT_OPTS "--color=16,fg+:4 --ansi"
-set -gx FZF_DEFAULT_OPTS "--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
-set -gx FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
-set -gx FZF_CTRL_R_OPTS --reverse
+set -l fzf_catppuccin_mocha "--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
+set -gx FZF_DEFAULT_OPTS "$fzf_catppuccin_mocha --layout=reverse --height=50% --preview-window=wrap --marker='*'"
 set -gx NODEJS_CHECK_SIGNATURES no
 set -gx TERM xterm-256color
 
@@ -171,16 +168,17 @@ if status --is-interactive
 		starship init fish | source
 	end
 
-	# ensure fzf_key_bindings is available for fish_user_key_bindings
-	if type -q brew
-		source (brew --prefix fzf)/shell/key-bindings.fish
-	end
-
 	if type -q bat
 		set -gx BAT_THEME "Catppuccin Mocha"
 	end
 
 	if type -q zoxide
 		zoxide init fish | source
+	end
+
+	if type -q fzf_configure_bindings
+		fzf_configure_bindings --directory=\ct --git_log=\cg --git_status= --history=\cr --processes=\cp --variables=\cv
+		set fzf_fd_opts --hidden -t f
+		set fzf_history_opts --preview="" --with-nth=4..
 	end
 end

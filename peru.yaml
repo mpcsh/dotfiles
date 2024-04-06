@@ -1,6 +1,7 @@
 imports:
   catppuccin-bat: external/.config/bat/themes/
   catppuccin-delta: external/.config/delta/
+  fzf-fish: external/.config/fish/
 
 git module catppuccin-bat:
   url: https://github.com/catppuccin/bat
@@ -9,3 +10,7 @@ git module catppuccin-bat:
 git module catppuccin-delta:
   url: https://github.com/catppuccin/delta
   pick: catppuccin.gitconfig
+
+git module fzf-fish:
+  url: https://github.com/PatrickF1/fzf.fish
+  pick: [completions, conf.d, functions]
