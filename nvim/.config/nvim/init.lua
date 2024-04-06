@@ -16,12 +16,12 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	-- {
-	"folke/tokyonight.nvim",
+	-- "folke/tokyonight.nvim",
 	-- lazy = false,
 	-- priority = 1000,
 	-- opts = {},
 	-- },
-	"ellisonleao/gruvbox.nvim",
+	-- "ellisonleao/gruvbox.nvim",
 	{ "catppuccin/nvim", name = "catppuccin" },
 
 	"tommcdo/vim-exchange",
