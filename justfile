@@ -10,7 +10,7 @@ mac_fonts := "font-caskaydia-cove-nerd-font font-fira-code-nerd-font font-iosevk
 default:
 	install
 
-init: pkgs-init asdf-init
+bootstrap: pkgs-init asdf-init install
 
 pkgs-init:
 	#!/usr/bin/env fish
