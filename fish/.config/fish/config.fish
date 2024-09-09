@@ -82,7 +82,7 @@ end
 ##########
 
 # asdf
-if type -q brew
+if type -q brew; and brew --prefix --installed asdf > /dev/null
 	source (brew --prefix asdf)/libexec/asdf.fish
 end
 
