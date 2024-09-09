@@ -25,23 +25,45 @@ set -gx LESS_TERMCAP_us (printf "\033[01;32m")
 set -gx GROFF_NO_SGR 1
 
 # colors
-set -g fish_color_autosuggestion brblack --underline
-set -g fish_color_cancel red
-set -g fish_color_command normal --bold
-set -g fish_color_comment brblack
-set -g fish_color_end yellow
-set -g fish_color_error red --underline
-set -g fish_color_escape cyan
 set -g fish_color_normal normal
-set -g fish_color_operator blue
-set -g fish_color_param normal
+set -g fish_color_command normal --bold
+# set -g fish_color_keyword
 set -g fish_color_quote green
 set -g fish_color_redirection yellow
+set -g fish_color_end yellow
+set -g fish_color_error red --underline
+set -g fish_color_param normal
+# set -g fish_color_valid_path
+# set -g fish_color_option
+set -g fish_color_comment brblack
+# set -g fish_color_selection
+set -g fish_color_operator blue
+set -g fish_color_escape cyan
+set -g fish_color_autosuggestion brblack --underline
+# set -g fish_color_cwd
+# set -g fish_color_cwd_root
+# set -g fish_color_user
+# set -g fish_color_host
+# set -g fish_color_host_remote
+# set -g fish_color_status
+set -g fish_color_cancel red
 set -g fish_color_search_match --reverse
+# set -g fish_color_history_current
+
+set -g fish_pager_color_progress yellow
+# fish_pager_color_background
+set -g fish_pager_color_prefix brblack
 set -g fish_pager_color_completion normal --bold --underline
 set -g fish_pager_color_description yellow
-set -g fish_pager_color_prefix brblack
-set -g fish_pager_color_progress yellow
+# fish_pager_color_selected_background
+# fish_pager_color_selected_prefix
+# fish_pager_color_selected_completion
+# fish_pager_color_selected_description
+# fish_pager_color_secondary_background
+# fish_pager_color_secondary_prefix
+# fish_pager_color_secondary_completion
+# fish_pager_color_secondary_description
+
 
 
 ##################
