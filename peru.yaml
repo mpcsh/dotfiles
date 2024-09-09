@@ -1,8 +1,15 @@
 imports:
+  catppuccin-alacritty: external/.config/alacritty/
   catppuccin-bat: external/.config/bat/themes/
   catppuccin-delta: external/.config/delta/
+  catppuccin-helix: external/.config/helix/themes/
   fzf-fish: external/.config/fish/
   just-syntax: external/.config/bat/syntaxes/
+  tpm: external/.tmux/plugins/tpm/
+
+git module catppuccin-alacritty:
+  url: https://github.com/catppuccin/alacritty
+  pick: [catppuccin-latte.toml, catppuccin-frappe.toml, catppuccin-macchiato.toml, catppuccin-mocha.toml]
 
 git module catppuccin-bat:
   url: https://github.com/catppuccin/bat
@@ -12,6 +19,10 @@ git module catppuccin-delta:
   url: https://github.com/catppuccin/delta
   pick: catppuccin.gitconfig
 
+git module catppuccin-helix:
+  url: https://github.com/catppuccin/helix
+  export: themes/default
+
 git module fzf-fish:
   url: https://github.com/PatrickF1/fzf.fish
   pick: [completions, conf.d, functions]
@@ -19,3 +30,6 @@ git module fzf-fish:
 git module just-syntax:
   url: https://github.com/nk9/just_sublime
   pick: Syntax/Just.sublime-syntax
+
+git module tpm:
+  url: https://github.com/tmux-plugins/tpm
