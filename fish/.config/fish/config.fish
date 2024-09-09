@@ -73,12 +73,7 @@ set -g fish_pager_color_description yellow
 # brew
 if test -e /opt/homebrew
 	fish_add_path --prepend --global /opt/homebrew/bin /usr/local/bin
-end
-
-# nix
-set -l nix_daemon /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.fish
-if ! command -q nix; and test -e $nix_daemon
-	source $nix_daemon
+	set -gx HOMEBREW_NO_ENV_HINTS true
 end
 
 
