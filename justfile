@@ -32,9 +32,10 @@ asdf-init:
 install:
 	stow --no-folding -t ~ {{core_modules}}
 	peru sync
-	stow --no-folding -t ~ external
+	stow -t ~ external
 	@echo
 	@echo "For iTerm2, make sure to manually load the preferences .plist through the preferences GUI"!
 
 uninstall:
-	stow --no-folding -t ~ -D {{core_modules}} external
+	stow --no-folding -t ~ -D {{core_modules}}
+	stow -t ~ -D external
