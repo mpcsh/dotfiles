@@ -17,7 +17,7 @@
 	hist = log --graph --pretty=format:'%C(red)%h%C(reset)%C(yellow)%d%C(reset) %s %C(green)(%ad)%C(reset) %C(blue)<%aN>%C(reset)' --date=format:'%Y-%m-%d %I:%M %p'
 	hst = hist -n 10
 	fixup = commit --amend --no-edit
-	rewrite = rebase -i --committer-date-is-author-date
+	rewrite = rebase --committer-date-is-author-date
 [advice]
 	detachedHead = false
 [help]
