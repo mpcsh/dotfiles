@@ -1,4 +1,4 @@
-core_modules := "fish git nvim ssh vscode"
+core_modules := "fish git nvim ssh tmux vscode"
 
 core_packages := "asdf direnv fish fzf gh gist git-delta jq neofetch neovim nmap rlwrap rsync starship stow stylua tealdeer telnet tmux"
 better_coreutils := "bat bottom eza fd gh hwatch just mosh ripgrep sd xh zoxide"
