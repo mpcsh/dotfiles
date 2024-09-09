@@ -198,4 +198,9 @@ if status --is-interactive
 		set fzf_fd_opts --hidden --exclude .git/ -t f
 		set fzf_history_opts --preview="" --with-nth=4..
 	end
+
+	set -l HB_CNF_HANDLER (brew --repository)"/Library/Taps/homebrew/homebrew-command-not-found/handler.fish"
+	if test -f $HB_CNF_HANDLER
+		 source $HB_CNF_HANDLER
+	end
 end
