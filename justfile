@@ -14,6 +14,7 @@ bootstrap: pkgs-init asdf-init install
 
 pkgs-init:
 	#!/usr/bin/env fish
+	# this is a problem! fish won't be installed yet!
 	if test (uname -sm) = "Darwin arm64"
 		if ! type -q brew
 			bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
