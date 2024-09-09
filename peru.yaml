@@ -1,4 +1,5 @@
 imports:
+  bass: external/.config/fish/
   catppuccin-alacritty: external/.config/alacritty/
   catppuccin-bat: external/.config/bat/themes/
   catppuccin-delta: external/.config/delta/
@@ -6,6 +7,10 @@ imports:
   fzf-fish: external/.config/fish/
   just-syntax: external/.config/bat/syntaxes/
   tpm: external/.tmux/plugins/tpm/
+
+git module bass:
+  url: https://github.com/edc/bass
+  pick: functions
 
 git module catppuccin-alacritty:
   url: https://github.com/catppuccin/alacritty
