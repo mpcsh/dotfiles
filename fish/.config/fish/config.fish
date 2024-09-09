@@ -195,7 +195,7 @@ if status --is-interactive
 
 	if type -q fzf_configure_bindings
 		fzf_configure_bindings --directory=\ct --git_log=\cg --git_status= --history=\cr --processes=\cp --variables=\cv
-		set fzf_fd_opts --hidden -t f
+		set fzf_fd_opts --hidden --exclude .git/ -t f
 		set fzf_history_opts --preview="" --with-nth=4..
 	end
 end
