@@ -30,8 +30,8 @@ asdf-init:
 	asdf install nodejs latest
 
 install:
-	stow --no-folding -t ~ {{core_modules}}
 	peru sync
+	stow --no-folding -t ~ {{core_modules}}
 	stow -t ~ external
 	@echo
 	@echo "For iTerm2, make sure to manually load the preferences .plist through the preferences GUI"!
