@@ -71,8 +71,8 @@ set -g fish_pager_color_description yellow
 ##################
 
 # brew
-if test -e /opt/homebrew
-	fish_add_path --prepend --global /opt/homebrew/bin /usr/local/bin
+if test -e /opt/homebrew/bin/brew
+	eval (/opt/homebrew/bin/brew shellenv)
 	set -gx HOMEBREW_NO_ENV_HINTS true
 end
 
