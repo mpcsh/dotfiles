@@ -14,7 +14,7 @@ option_as_alt = "Both"
 history = 100000
 
 [font]
-normal = { family = "Iosevka Nerd Font Mono", style = "Regular" }
+normal = { family = "M+1Code Nerd Font", style = "Regular" }
 size = 18
 
 [keyboard]
