@@ -22,7 +22,7 @@ require("lazy").setup({
 	-- opts = {},
 	-- },
 	-- "ellisonleao/gruvbox.nvim",
-	{ "catppuccin/nvim", name = "catppuccin" },
+	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
 	"tommcdo/vim-exchange",
 	"tpope/vim-abolish",
