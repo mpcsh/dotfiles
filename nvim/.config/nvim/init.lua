@@ -323,12 +323,12 @@ require("telescope").setup({
 -----------
 
 -- move inside of softwrapped lines
-vim.keymap.set("n", "j", "gj")
-vim.keymap.set("n", "k", "gk")
+vim.keymap.set({ "n", "v" }, "j", "gj")
+vim.keymap.set({ "n", "v" }, "k", "gk")
 
 -- make H/L jump to the extreme of their lowercase counterparts
-vim.keymap.set("n", "H", "g^")
-vim.keymap.set("n", "L", "g$")
+vim.keymap.set({ "n", "v" }, "H", "g^")
+vim.keymap.set({ "n", "v" }, "L", "g$")
 
 -- disable 'ex mode'
 vim.keymap.set("n", "Q", "<Nop>")
