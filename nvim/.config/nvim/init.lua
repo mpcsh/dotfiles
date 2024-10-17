@@ -379,6 +379,9 @@ vim.keymap.set("n", "<C-p>", require("telescope.builtin").find_files, {})
 vim.keymap.set("n", "<C-k>", function()
 	vim.cmd("Telescope")
 end)
+
+vim.keymap.set("n", "<Leader>S", require("nvim-tree.api").tree.toggle)
+
 vim.opt.list = true
 -- vim.opt.listchars = "tab:• ,trail:·"
 
