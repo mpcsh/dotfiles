@@ -349,6 +349,10 @@ end, { silent = true })
 -- better leader key
 vim.g.mapleader = ","
 
+-- don't yank on paste by default
+vim.keymap.set("v", "p", "P", { noremap = true })
+vim.keymap.set("v", "P", "p", { noremap = true })
+
 -- create tabs
 -- vim.keymap.set("n", "<Leader>t", function()
 -- 	vim.cmd("tabe")
