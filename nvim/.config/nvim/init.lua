@@ -246,6 +246,7 @@ require("formatter").setup({
 		typescriptreact = { require("formatter.filetypes.typescriptreact").prettier },
 		html = { require("formatter.filetypes.html").prettier },
 		css = { require("formatter.filetypes.css").prettier },
+		md = { require("formatter.filetypes.markdown").prettier },
 
 		lua = { require("formatter.filetypes.lua").stylua },
 
