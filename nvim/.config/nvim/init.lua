@@ -296,7 +296,7 @@ cmp.setup({
 		{ name = "buffer" },
 	}),
 	mapping = cmp.mapping.preset.insert({
-		["<C-Tab>"] = cmp.mapping.complete(), -- show completion suggestions
+		-- ["<C-Tab>"] = cmp.mapping.complete(), -- show completion suggestions
 		["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
 		["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
 		["<C-y>"] = cmp.mapping.scroll_docs(-1),
