@@ -341,7 +341,10 @@ vim.keymap.set("v", "<Tab>", ">gv")
 vim.keymap.set("v", "<S-Tab>", "<gv")
 
 -- clear search highlighting
-vim.keymap.set("n", "<C-l>", ":nohlsearch<CR>", { silent = true })
+vim.keymap.set({ "n", "i", "v" }, "<C-l>", function()
+	vim.cmd("nohlsearch")
+end, { silent = true })
+
 -- open telescope
 vim.keymap.set("n", "<C-p>", require("telescope.builtin").find_files, {})
 vim.keymap.set("n", "<C-k>", function()
