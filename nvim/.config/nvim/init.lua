@@ -61,6 +61,10 @@ require("lazy").setup({
 
 	{ "nvim-tree/nvim-tree.lua", dependencies = { "nvim-tree/nvim-web-devicons" } },
 	{ "folke/trouble.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
+	{
+		"nvim-telescope/telescope.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+	},
 })
 
 --------------
@@ -292,6 +296,14 @@ cmp.setup({
 	}),
 })
 
+require("telescope").setup({
+	pickers = {
+		find_files = {
+			find_command = vim.split("fd --hidden --exclude .git/ -t f --strip-cwd-prefix", " "),
+		},
+	},
+})
+
 -----------
 -- keybinds
 -----------
@@ -315,3 +327,8 @@ vim.keymap.set("v", "<S-Tab>", "<gv")
 
 -- clear search highlighting
 vim.keymap.set("n", "<C-l>", ":nohlsearch<CR>", { silent = true })
+-- open telescope
+vim.keymap.set("n", "<C-p>", require("telescope.builtin").find_files, {})
+vim.keymap.set("n", "<C-k>", function()
+	vim.cmd("Telescope")
+end)
