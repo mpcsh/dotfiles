@@ -41,7 +41,7 @@ require("lazy").setup({
 	},
 	{
 		"nvim-treesitter/nvim-treesitter-context",
-		enabled = true,
+		enabled = false,
 		opts = { mode = "cursor" },
 	},
 
@@ -89,6 +89,8 @@ vim.cmd("hi Comment gui=italic")
 -- hi MatchParen gui=bold
 vim.cmd("hi LinkDelimiter gui=bold")
 vim.cmd("hi MatchParen gui=bold")
+
+-- vim.cmd("hi TreeSitterContextBottom gui=none")
 
 --------------
 -- environment
