@@ -345,6 +345,30 @@ vim.keymap.set({ "n", "i", "v" }, "<C-l>", function()
 	vim.cmd("nohlsearch")
 end, { silent = true })
 
+-- better leader key
+vim.g.mapleader = ","
+
+-- create tabs
+-- vim.keymap.set("n", "<Leader>t", function()
+-- 	vim.cmd("tabe")
+-- end)
+
+-- cycle tabs
+-- vim.keymap.set("n", "<Leader><Tab>", function()
+-- 	vim.cmd("tabnext")
+-- end)
+-- vim.keymap.set("n", "<Leader><S-Tab>", function()
+-- 	vim.cmd("tabprevious")
+-- end)
+
+-- cycle buffers
+vim.keymap.set("n", "<Leader><Tab>", function()
+	vim.cmd("bnext")
+end)
+vim.keymap.set("n", "<Leader><S-Tab>", function()
+	vim.cmd("bprevious")
+end)
+
 -- open telescope
 vim.keymap.set("n", "<C-p>", require("telescope.builtin").find_files, {})
 vim.keymap.set("n", "<C-k>", function()
