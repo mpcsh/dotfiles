@@ -65,6 +65,8 @@ require("lazy").setup({
 		"nvim-telescope/telescope.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
+
+	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
 })
 
 --------------
@@ -177,6 +179,8 @@ require("lualine").setup({
 		lualine_z = { "location" },
 	},
 })
+
+require("bufferline").setup({})
 
 vim.keymap.set("n", "<Leader>l", "<Plug>(leap-forward)")
 vim.keymap.set("n", "<Leader>L", "<Plug>(leap-backward)")
