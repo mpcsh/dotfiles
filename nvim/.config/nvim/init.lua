@@ -118,13 +118,18 @@ vim.opt.clipboard:append("unnamedplus")
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
--- disable swap, backup files
+-- disable swap files
 -- set noswapfile
--- set nobackup
--- set nowritebackup
 vim.opt.swapfile = false
-vim.opt.backup = false
-vim.opt.writebackup = false
+
+-- persistent backups
+local backupdir = vim.fn.stdpath("cache") .. "backup"
+if not vim.loop.fs_stat(backupdir) then
+	vim.fn.system({ "mkdir", "-p", backupdir })
+end
+vim.opt.backup = true
+vim.opt.writebackup = true
+vim.opt.backupdir = backupdir
 
 -- persistent undo
 local undodir = vim.fn.stdpath("cache") .. "undo"
