@@ -174,6 +174,8 @@ require("gitsigns").setup()
 require("lualine").setup({
 	options = {
 		theme = "catppuccin-mocha",
+		component_separators = { left = "▓▒░", right = "░▒▓" },
+		section_separators = { left = "▓▒░", right = "░▒▓" },
 	},
 	sections = {
 		lualine_a = { "mode" },
