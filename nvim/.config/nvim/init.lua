@@ -66,6 +66,7 @@ require("lazy").setup({
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
 
+	-- { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
 })
 
@@ -374,3 +375,8 @@ vim.keymap.set("n", "<C-p>", require("telescope.builtin").find_files, {})
 vim.keymap.set("n", "<C-k>", function()
 	vim.cmd("Telescope")
 end)
+vim.opt.list = true
+-- vim.opt.listchars = "tab:• ,trail:·"
+
+-- require("ibl").setup()
+
