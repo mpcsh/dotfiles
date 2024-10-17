@@ -14,6 +14,7 @@ set -gx FZF_DEFAULT_OPTS "$fzf_catppuccin_mocha --layout=reverse --height=50% --
 set -gx LANG "en_US.UTF-8"
 set -gx LC_ALL "en_US.UTF-8"
 set -gx LC_CTYPE "en_US.UTF-8"
+set -gx MANPAGER "less -i"
 set -gx NODEJS_CHECK_SIGNATURES no
 set -gx TERM xterm-256color
 
