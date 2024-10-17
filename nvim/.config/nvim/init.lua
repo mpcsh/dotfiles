@@ -73,6 +73,7 @@ require("lazy").setup({
 -- colorscheme
 --------------
 vim.opt.termguicolors = true
+vim.opt.title = true
 
 -- let g:gruvbox_material_palette = "material"
 -- let g:gruvbox_material_background = "medium"
