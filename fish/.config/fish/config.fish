@@ -99,6 +99,11 @@ if type -q pixlet
 	pixlet completion fish | source
 end
 
+# asdf installed packages
+if type -q asdf; and test -e ~/.local/bin
+	fish_add_path ~/.local/bin
+end
+
 
 ###########
 # aliases
