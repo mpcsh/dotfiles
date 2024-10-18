@@ -374,6 +374,14 @@ vim.keymap.set("n", "<Leader><S-Tab>", function()
 	vim.cmd("bprevious")
 end)
 
+-- go to definition, go back and forward
+-- C-o goes back in the jump list; C-t goes back in the tag list, which is a subset of the jump list
+-- can't use C-[, because apparently that's the same as Esc
+-- https://vi.stackexchange.com/questions/24852/how-to-remove-the-mapping-from-ctrl-to-escape
+vim.keymap.set("n", "<Leader>\\", "<C-]>", { noremap = true })
+vim.keymap.set("n", "<Leader>[", "<C-o>", { noremap = true })
+vim.keymap.set("n", "<Leader>]", "<C-i>", { noremap = true })
+
 -- open telescope
 vim.keymap.set("n", "<C-p>", require("telescope.builtin").find_files, {})
 vim.keymap.set("n", "<C-k>", function()
