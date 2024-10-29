@@ -347,7 +347,7 @@ vim.keymap.set({ "n", "i", "v" }, "<C-l>", function()
 end, { silent = true })
 
 -- better leader key
-vim.g.mapleader = ","
+vim.g.mapleader = "\\"
 
 -- don't yank on paste by default
 vim.keymap.set("v", "p", "P", { noremap = true })
