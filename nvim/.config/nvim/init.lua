@@ -378,12 +378,14 @@ end)
 -- C-o goes back in the jump list; C-t goes back in the tag list, which is a subset of the jump list
 -- can't use C-[, because apparently that's the same as Esc
 -- https://vi.stackexchange.com/questions/24852/how-to-remove-the-mapping-from-ctrl-to-escape
-vim.keymap.set("n", "<Leader>\\", "<C-]>", { noremap = true })
+local telescope = require("telescope.builtin")
+vim.keymap.set("n", "<Leader>\\", telescope.lsp_definitions, { noremap = true })
 vim.keymap.set("n", "<Leader>[", "<C-o>", { noremap = true })
 vim.keymap.set("n", "<Leader>]", "<C-i>", { noremap = true })
+vim.keymap.set("n", "<Leader>'", telescope.lsp_references, { noremap = true })
 
 -- open telescope
-vim.keymap.set("n", "<C-p>", require("telescope.builtin").find_files, {})
+vim.keymap.set("n", "<C-p>", telescope.find_files, { noremap = true })
 vim.keymap.set("n", "<C-k>", function()
 	vim.cmd("Telescope")
 end)
