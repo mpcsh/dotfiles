@@ -9,6 +9,9 @@ symbol = ""
 
 [git_status]
 deleted = "x"
+ahead = "↑ "
+behind = "↓ "
+diverged = "⇕ "
 
 [palettes.catppuccin_macchiato]
 rosewater = "#f4dbd6"

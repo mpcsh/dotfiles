@@ -16,11 +16,11 @@ size = 18
 
 [keyboard]
 bindings = [
-  { key = "Tab", mods = "Control", action = "SelectNextTab" },
-  { key = "Tab", mods = "Control|Shift", action = "SelectPreviousTab" },
+	{ key = "Tab", mods = "Control", action = "SelectNextTab" },
+	{ key = "Tab", mods = "Control|Shift", action = "SelectPreviousTab" },
 ]
 
 [general]
 import = [
-  "~/.config/alacritty/catppuccin-mocha.toml"
+	"~/.config/alacritty/catppuccin-mocha.toml"
 ]
