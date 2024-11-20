@@ -270,11 +270,11 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 vim.opt.completeopt = "menu,menuone,noselect"
 
 require("lint").linters_by_ft = {
-	javascript = { "eslint" },
-	typescript = { "eslint" },
-	typescriptreact = { "eslint" },
-	html = { "eslint" },
-	css = { "eslint" },
+	javascript = { "eslint_d" },
+	typescript = { "eslint_d" },
+	typescriptreact = { "eslint_d" },
+	html = { "eslint_d" },
+	css = { "eslint_d" },
 
 	lua = { "luacheck" },
 }
