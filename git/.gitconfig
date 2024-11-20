@@ -1,6 +1,8 @@
 [user]
 	email = git@mail.mpc.sh
 	name = Mark Cohen
+[include]
+	path = ~/.gitconfig.local
 [includeIf "gitdir:work/"]
   path = ~/.gitconfig.work
 [push]
