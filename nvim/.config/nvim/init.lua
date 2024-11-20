@@ -397,4 +397,6 @@ vim.opt.list = true
 
 -- require("ibl").setup()
 
+vim.keymap.set("n", "<Leader>i", vim.diagnostic.open_float)
+
 vim.opt.cursorline = true
