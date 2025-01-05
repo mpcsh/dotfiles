@@ -189,17 +189,8 @@ end
 #########################
 
 if status --is-interactive
-	# set up prompt
 	if type -q starship
 		starship init fish | source
-	end
-
-	if type -q bat
-		set -gx BAT_THEME "Catppuccin Mocha"
-	end
-
-	if type -q zoxide
-		zoxide init fish | source
 	end
 
 	if type -q fzf_configure_bindings
@@ -215,5 +206,13 @@ if status --is-interactive
 	set -l HB_CNF_HANDLER (brew --repository)"/Library/Taps/homebrew/homebrew-command-not-found/handler.fish"
 	if test -f $HB_CNF_HANDLER
 		 source $HB_CNF_HANDLER
+	end
+
+	if type -q bat
+		set -gx BAT_THEME "Catppuccin Mocha"
+	end
+
+	if type -q zoxide
+		zoxide init fish | source
 	end
 end
