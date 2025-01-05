@@ -1,44 +1,52 @@
 core_modules := "alacritty asdf atuin fish git nvim ssh starship tmux vscode"
 
-core_packages := "asdf direnv fish fzf gh gist git-delta jq neofetch neovim nmap rlwrap rsync starship stow stylua tealdeer telnet tmux"
-better_coreutils := "bat bottom eza fd gh hwatch just mosh ripgrep sd xh zoxide"
+brew_formulae := "atuin asdf bandwhich bat bottom direnv eza fd fish fzf gh gist git-delta htop hwatch jq just magic-wormhole mosh neofetch neovim nmap ouch pastel pidof ripgrep rlwrap rnr rsync sd starship stow tealdeer telnet tmux watchexec wget xh zoxide"
 
-mac_packages := "trash"
-mac_apps := "1password alfred appcleaner arc audio-hijack bartender contexts dash discord fantastical firefox fission google-chrome google-earth-pro iina iterm2 keyboard-maestro linearmouse logitech-g-hub loopback metaimage monitorcontrol moom mullvadvpn notion obsidian omnifocus postman qmk-toolbox rocket signal soulver soulver-cli soundsource spotify via visual-studio-code wireshark zoom"
-mac_fonts := "font-caskaydia-cove-nerd-font font-fira-code-nerd-font font-iosevka-nerd-font font-mononoki-nerd-font font-mplus-nerd-font"
+brew_casks := "1password alfred appcleaner audio-hijack chromium contexts fantastical firefox fission font-caskaydia-cove-nerd-font font-fira-code-nerd-font font-ia-writer-quattro font-iosevka-nerd-font font-mononoki-nerd-font font-m+-nerd-font iina iterm2 jordanbaird-ice keyboard-maestro linearmouse logitech-g-hub loopback monitorcontrol moom obsidian rocket soulver soulver-cli soundsource spotify via visual-studio-code wireshark zen-browser zoom"
 
-default: install
+brew_cask_extras := "chirp discord garmin-express insta360-studio metaimage mullvadvpn notion omnifocus powerphotos signal"
 
-bootstrap: pkgs-init asdf-init install
+default:
+	@echo just [bootstrap|install|install-extras|uninstall]
 
-pkgs-init:
+bootstrap: init-pkgs install-core init-asdf install-external
+
+init-pkgs:
+	#!/usr/bin/env sh
+	if command -v brew > /dev/null 2>&1; then
+		brew install {{brew_formulae}}
+		brew install --cask {{brew_casks}}
+	fi
+
+init-asdf:
 	#!/usr/bin/env fish
-	# this is a problem! fish won't be installed yet!
-	if test (uname -sm) = "Darwin arm64"
-		if ! type -q brew
-			bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	if type -q asdf
+		for lang in deno nodejs python
+			asdf plugin add $lang
+			asdf install $lang latest
+			asdf global $lang latest
 		end
-		brew install {{core_packages}} {{better_coreutils}} {{mac_packages}}
-		brew install --cask {{mac_apps}} {{mac_fonts}}
 	end
 
-asdf-init:
-	#!/usr/bin/env fish
-	asdf plugin add python
-	asdf install python latest
-	asdf plugin add nodejs
-	asdf install nodejs latest
+install: install-core install-external
 
-install:
+install-core:
+	#!/usr/bin/env fish
+	stow --no-folding -t ~ {{core_modules}}
+	echo
+	echo "For iTerm2, make sure to manually load the preferences .plist through the preferences GUI"!
+
+install-external:
 	#!/usr/bin/env fish
 	peru sync
-	stow --no-folding -t ~ {{core_modules}}
 	stow -t ~ external
 	if type -q bat
 		bat cache --build
 	end
-	echo
-	echo "For iTerm2, make sure to manually load the preferences .plist through the preferences GUI"!
+
+install-extras:
+	#!/usr/bin/env fish
+	brew install {{brew_cask_extras}}
 
 uninstall:
 	#!/usr/bin/env fish
