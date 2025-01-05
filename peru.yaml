@@ -4,6 +4,7 @@ imports:
   catppuccin-bat: external/.config/bat/themes/
   catppuccin-delta: external/.config/delta/
   catppuccin-helix: external/.config/helix/themes/
+  dq: external/.local/bin/
   fzf-fish: external/.config/fish/
   just-syntax: external/.config/bat/syntaxes/
   tpm: external/.tmux/plugins/tpm/
@@ -27,6 +28,11 @@ git module catppuccin-delta:
 git module catppuccin-helix:
   url: https://github.com/catppuccin/helix
   export: themes/default
+
+curl module dq:
+  url: https://raw.githubusercontent.com/david-crespo/dotfiles/refs/heads/main/bin/dq.ts
+  filename: dq
+  executable: dq
 
 git module fzf-fish:
   url: https://github.com/PatrickF1/fzf.fish
