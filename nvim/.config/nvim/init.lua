@@ -154,13 +154,10 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
 	end,
 })
 
--- 2-space width tabs
--- set tabstop=2
--- set shiftwidth=2
--- set expandtab
 vim.opt.tabstop = 2
 -- uses tabstop value when set to zero
 vim.opt.shiftwidth = 0
+-- vim.opt.expandtab = true
 
 -- set up line wrapping http://vimcasts.org/episodes/soft-wrapping-text/
 vim.opt.wrap = true
