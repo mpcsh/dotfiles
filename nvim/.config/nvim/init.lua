@@ -1,4 +1,3 @@
--- luacheck: globals vim
 vim.opt.shell = "/usr/bin/env sh"
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -276,7 +275,7 @@ require("lint").linters_by_ft = {
 	html = { "eslint_d" },
 	css = { "eslint_d" },
 
-	lua = { "luacheck" },
+	lua = { "selene" },
 }
 
 vim.api.nvim_create_autocmd({ "BufEnter", "InsertLeave", "TextChanged", "BufWritePost" }, {
