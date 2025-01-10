@@ -2,9 +2,9 @@ core_modules := "alacritty asdf atuin fish git nvim ssh starship tmux vscode"
 
 brew_formulae := "atuin asdf bandwhich bat bottom direnv eza fd fish fzf gh gist git-delta htop hwatch jq just magic-wormhole mosh neofetch neovim nmap ouch pastel pidof ripgrep rlwrap rnr rsync sd starship stow tealdeer telnet tmux watchexec wget xh zoxide"
 
-brew_casks := "1password alfred appcleaner audio-hijack chromium contexts fantastical firefox fission font-caskaydia-cove-nerd-font font-fira-code-nerd-font font-ia-writer-quattro font-iosevka-nerd-font font-mononoki-nerd-font font-m+-nerd-font iina iterm2 jordanbaird-ice keyboard-maestro linearmouse logitech-g-hub loopback monitorcontrol moom obsidian rocket soulver soulver-cli soundsource spotify via visual-studio-code wireshark zen-browser zoom"
+brew_casks := "1password alacritty alfred appcleaner audio-hijack chromium contexts fantastical firefox fission font-caskaydia-cove-nerd-font font-fira-code-nerd-font font-ia-writer-quattro font-iosevka-nerd-font font-mononoki-nerd-font font-m+-nerd-font iina iterm2 jordanbaird-ice keyboard-maestro linearmouse loopback monitorcontrol moom obsidian rocket soulver soulver-cli soundsource spotify visual-studio-code wireshark zen-browser zoom"
 
-brew_cask_extras := "chirp discord garmin-express insta360-studio metaimage mullvadvpn notion omnifocus powerphotos signal"
+brew_cask_extras := "chirp discord garmin-express insta360-studio logitech-g-hub metaimage mullvadvpn notion omnifocus powerphotos signal via"
 
 default:
 	@echo just [bootstrap|install|install-extras|uninstall]
