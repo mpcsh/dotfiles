@@ -102,7 +102,7 @@ end
 
 # asdf installed packages
 if type -q asdf; and test -e ~/.local/bin
-	fish_add_path ~/.local/bin
+	fish_add_path -g ~/.local/bin
 end
 
 
