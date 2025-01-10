@@ -10,4 +10,7 @@ if [ "$(uname -sm)" = "Darwin arm64" ]; then
 		brew install just
 	fi
 	just bootstrap
+	echo "/opt/homebrew/bin/fish" | sudo tee -a /etc/shells > /dev/null
+	chsh -s /opt/homebrew/bin/fish
+	sudo chsh -s /opt/homebrew/bin/fish
 fi
