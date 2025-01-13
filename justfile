@@ -1,4 +1,4 @@
-core_modules := "alacritty asdf atuin fish git nvim ssh starship tmux vscode"
+core_modules := "alacritty asdf atuin fish ghostty git nvim ssh starship tmux vscode"
 
 brew_formulae := "atuin asdf bandwhich bat bottom direnv eza fd fish fzf gh gist git-delta htop hwatch jq just magic-wormhole mosh neofetch neovim nmap ouch pastel pidof ripgrep rlwrap rnr rsync sd starship stow tealdeer telnet tmux watchexec wget xh zoxide"
 

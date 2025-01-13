@@ -1,0 +1,24 @@
+theme = catppuccin-mocha
+
+font-family = Berkeley Mono Variable
+font-size = 20
+font-style = Book ExtraCondensed
+font-style-bold = Black ExtraCondensed
+font-style-italic = ExtraCondensed Oblique
+font-style-bold-italic = Black ExtraCondensed Oblique
+
+font-feature = -calt
+font-synthetic-style = false
+adjust-underline-position = 5
+adjust-underline-thickness = -50%
+
+window-inherit-font-size = false
+window-padding-x = 18
+window-padding-y = 18
+unfocused-split-opacity = 1
+
+scrollback-limit = 1048576
+
+shell-integration-features = no-cursor
+cursor-style = block
+cursor-style-blink = false
