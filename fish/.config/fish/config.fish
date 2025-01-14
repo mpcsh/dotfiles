@@ -203,9 +203,11 @@ if status --is-interactive
 		atuin init fish --disable-up-arrow | source
 	end
 
-	set -l HB_CNF_HANDLER (brew --repository)"/Library/Taps/homebrew/homebrew-command-not-found/handler.fish"
-	if test -f $HB_CNF_HANDLER
-		 source $HB_CNF_HANDLER
+	if type -q brew
+		set -l HB_CNF_HANDLER (brew --repository)"/Library/Taps/homebrew/homebrew-command-not-found/handler.fish"
+		if test -f $HB_CNF_HANDLER
+			 source $HB_CNF_HANDLER
+		end
 	end
 
 	if type -q bat
