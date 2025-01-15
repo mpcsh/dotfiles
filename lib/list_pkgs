@@ -26,9 +26,7 @@ fi
 echo htop
 echo hwatch
 echo jq
-echo just
 echo magic-wormhole
-echo mosh
 echo neofetch
 echo neovim
 echo nmap

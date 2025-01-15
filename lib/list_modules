@@ -15,6 +15,3 @@ if [ $(platform) = "macOS" ]; then
 fi
 echo starship
 echo tmux
-if [ $(platform) = "macOS" ]; then
-	echo vscode
-fi

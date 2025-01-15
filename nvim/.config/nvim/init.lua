@@ -228,12 +228,6 @@ require("nvim-treesitter.configs").setup({
 	},
 })
 
-vim.filetype.add({
-	filename = {
-		["justfile"] = "just",
-	},
-})
-
 require("formatter").setup({
 	logging = true,
 	log_level = vim.log.levels.WARN,

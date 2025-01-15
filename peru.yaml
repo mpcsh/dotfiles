@@ -1,10 +1,8 @@
 imports:
   catppuccin-bat: external/.config/bat/themes/
   catppuccin-delta: external/.config/delta/
-  catppuccin-helix: external/.config/helix/themes/
   dq: external/.local/bin/
   fzf-fish: external/.config/fish/
-  just-syntax: external/.config/bat/syntaxes/
   tpm: external/.tmux/plugins/tpm/
 
 git module catppuccin-bat:
@@ -15,10 +13,6 @@ git module catppuccin-delta:
   url: https://github.com/catppuccin/delta
   pick: catppuccin.gitconfig
 
-git module catppuccin-helix:
-  url: https://github.com/catppuccin/helix
-  export: themes/default
-
 curl module dq:
   url: https://raw.githubusercontent.com/david-crespo/dotfiles/refs/heads/main/bin/dq.ts
   filename: dq
@@ -27,10 +21,6 @@ curl module dq:
 git module fzf-fish:
   url: https://github.com/PatrickF1/fzf.fish
   pick: [completions, conf.d, functions]
-
-git module just-syntax:
-  url: https://github.com/nk9/just_sublime
-  pick: Syntax/Just.sublime-syntax
 
 git module tpm:
   url: https://github.com/tmux-plugins/tpm
