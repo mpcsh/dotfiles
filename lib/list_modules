@@ -2,9 +2,6 @@
 set -eu
 source "$(dirname $(realpath $0))/env"
 
-if [ $(platform) = "macOS" ]; then
-	echo alacritty
-fi
 echo asdf
 echo atuin
 echo fish

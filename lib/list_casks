@@ -4,7 +4,6 @@ source "$(dirname $(realpath $0))/env"
 
 cat << EOF
 1password
-alacritty
 alfred
 appcleaner
 audio-hijack
@@ -24,7 +23,6 @@ font-mononoki-nerd-font
 garmin-express
 iina
 insta360-studio
-iterm2
 jordanbaird-ice
 keyboard-maestro
 linearmouse
