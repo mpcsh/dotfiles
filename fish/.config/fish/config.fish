@@ -69,7 +69,6 @@ set -g fish_pager_color_description yellow
 # fish_pager_color_secondary_description
 
 
-
 ##################
 # package managers
 ##################
@@ -119,7 +118,7 @@ end
 # aliases
 ###########
 
-function cp --wraps cp --description "cp recursively"
+function cp --wraps cp
 	command cp -R $argv
 end
 
@@ -155,7 +154,7 @@ else
 	end
 end
 
-function mkcd --wraps cd --description "mkdir and cd into it"
+function mkcd --wraps cd
 	mkdir -p $argv
 	cd $argv
 end
@@ -164,7 +163,7 @@ function mkdir --wraps mkdir
 	command mkdir -p $argv
 end
 
-function rg --wraps rg --description "TODO"
+function rg --wraps rg
 	command rg --hidden --smart-case --glob !.git $argv
 end
 
@@ -172,15 +171,15 @@ function rm --wraps rm
 	command rm -rf $argv
 end
 
-function rsync --wraps rsync --description "TODO"
+function rsync --wraps rsync
 	command rsync -avz $argv
 end
 
-function soulver --wraps soulver --description "enable up arrow in soulver"
+function soulver --wraps soulver
 	rlwrap command soulver $argv
 end
 
-function sudo --wraps sudo --description "allows sudo to use aliases"
+function sudo --wraps sudo
 	command sudo -sE $argv
 end
 
@@ -188,7 +187,7 @@ function vim --wraps nvim
 	command nvim $argv
 end
 
-function up --description "cd .. repeatedly"
+function up
 	cd (eval printf ../%.0s (seq 1 $argv))
 end
 
