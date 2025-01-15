@@ -99,6 +99,11 @@ end
 # commands
 ##########
 
+# custom scripts
+if test -e ~/.local/bin
+	fish_add_path -g ~/.local/bin
+end
+
 # direnv
 if type -q direnv
 	direnv hook fish | source
@@ -107,11 +112,6 @@ end
 # pixlet
 if type -q pixlet
 	pixlet completion fish | source
-end
-
-# asdf installed packages
-if type -q asdf; and test -e ~/.local/bin
-	fish_add_path -g ~/.local/bin
 end
 
 
