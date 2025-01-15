@@ -1,17 +1,71 @@
 palette = "catppuccin_mocha"
 
-[nodejs]
-symbol = "⬢ "
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$line_break\
 
-[status]
-disabled = false
-symbol = ""
+$status\
+$jobs\
+$container\
+$nix_shell\
+$character\
+"""
+
+right_format = """
+$battery\
+$cmd_duration\
+$time\
+"""
+
+[username]
+format = "🧑🏻‍💻 [$user]($style)"
+
+[hostname]
+ssh_symbol = "🌐 "
+format = " ❯ $ssh_symbol[$hostname]($style)"
+trim_at = ""
+
+[directory]
+format = " ❯ [$path]($style)[$read_only]($read_only_style)"
+repo_root_format = " ❯ [$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style)"
+before_repo_root_style = "dimmed white"
+repo_root_style = "bold purple"
+truncate_to_repo = false
+truncation_symbol = "…/"
+
+[git_branch]
+format = " ❯ [$symbol$branch(:$remote_branch)]($style) "
 
 [git_status]
 deleted = "x"
 ahead = "↑ "
 behind = "↓ "
 diverged = "⇕ "
+
+[status]
+disabled = false
+symbol = ""
+
+[container]
+format = ' ❯ [$symbol \[$name\]]($style)'
+
+[nix_shell]
+format = ' ❯ [$symbol$state( \($name\))]($style)'
+
+[cmd_duration]
+format = "[$duration]($style) ❮ "
+
+[time]
+disabled = false
+format = "[$time]($style)"
+
 
 [palettes.catppuccin_macchiato]
 rosewater = "#f4dbd6"
