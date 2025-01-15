@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+set -eu
+source "$(dirname $(realpath $0))/env"
+
+export USERNAME="${1:-$USER}"
+
+if [ "$(platform)" = "macOS" ]; then
+	dscacheutil -q user -a name "$USERNAME" | grep "^shell:" | sed 's/^shell: //'
+elif [ "$(platform)" = "linux_with_nix" ]; then
+	getent passwd "$USERNAME" | cut -d ":" -f 7
+fi

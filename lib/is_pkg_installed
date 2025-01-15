@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+set -eu
+source "$(dirname $(realpath $0))/env"
+
+if [ "$(platform)" = "macOS" ]; then
+	brew ls --versions "$1" > /dev/null
+elif [ "$(platform)" = "linux_with_nix" ]; then
+	[ "$(nix profile list --json | jq '.elements | has("'"$1"'")')" = "true" ]
+else
+	echo "Cannot check if $1 is installed without a package manager!"
+	exit 1
+fi

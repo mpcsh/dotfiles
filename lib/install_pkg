@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+set -eu
+source "$(dirname $(realpath $0))/env"
+
+if [ "$(platform)" = "macOS" ]; then
+	assert_has_cmd brew
+	brew install "$1"
+elif [ "$(platform)" = "linux_with_nix" ]; then
+	assert_has_cmd nix
+	nix profile install "nixpkgs#$1"
+else
+	echo "Cannot install $1 without a package manager!"
+	exit 1
+fi

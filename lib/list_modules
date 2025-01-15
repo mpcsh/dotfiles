@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+set -eu
+source "$(dirname $(realpath $0))/env"
+
+if [ $(platform) = "macOS" ]; then
+	echo alacritty
+fi
+echo asdf
+echo atuin
+echo fish
+if [ $(platform) = "macOS" ]; then
+	echo ghostty
+fi
+echo git
+echo nvim
+if [ $(platform) = "macOS" ]; then
+	echo ssh
+fi
+echo starship
+echo tmux
+if [ $(platform) = "macOS" ]; then
+	echo vscode
+fi

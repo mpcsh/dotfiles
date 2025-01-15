@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+set -eu
+source "$(dirname $(realpath $0))/env"
+
+if [ "$(uname -om)" = "Darwin arm64" ]; then
+	echo "macOS"
+elif [ "$(uname -om)" = "x86_64 GNU/Linux" ] && has_cmd nix; then
+	echo "linux_with_nix"
+fi

@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+set -eu
+source "$(dirname $(realpath $0))/env"
+
+command -v $1 > /dev/null 2>&1
