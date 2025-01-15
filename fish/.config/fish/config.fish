@@ -80,15 +80,24 @@ if test -e /opt/homebrew/bin/brew
 	set -gx HOMEBREW_NO_ENV_HINTS true
 end
 
+# nix
+if test -e ~/.nix-profile
+	fish_add_path -g ~/.nix-profile/bin
+end
+
+# asdf (macOS)
+if type -q brew; and brew --prefix --installed asdf > /dev/null
+	source (brew --prefix asdf)/libexec/asdf.fish
+end
+
+# asdf (nix)
+if test -e ~/.nix-profile/share/asdf-vm
+	source ~/.nix-profile/share/asdf-vm/asdf.fish
+end
 
 ##########
 # commands
 ##########
-
-# asdf
-if type -q brew; and brew --prefix --installed asdf > /dev/null
-	source (brew --prefix asdf)/libexec/asdf.fish
-end
 
 # direnv
 if type -q direnv
