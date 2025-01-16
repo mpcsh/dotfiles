@@ -49,10 +49,12 @@ if [ "$(platform)" = "macOS" ] && [ "$(get_login_shell root)" != "$FISH_PATH" ];
 fi
 
 if [ "$(platform)" = "macOS" ]; then
-	export PATH=/opt/homebrew/bin:$PATH
+	export PATH="/opt/homebrew/bin:$PATH"
 elif [ "$(platform)" = "linux_with_nix" ]; then
-	export PATH=$HOME/.nix-profile/bin:$PATH
+	export PATH="$HOME/.nix-profile/bin:$PATH"
 fi
+
+export PATH="$HOME/.local/bin:$PATH"
 
 assert_has_cmd stow
 for module in $(list_modules); do
@@ -70,7 +72,7 @@ bat cache --build
 
 assert_has_cmd asdf
 for lang in deno nodejs python rust; do
-	if ! asdf plugin list | grep "^$lang\$"; then
+	if ! asdf plugin list | grep "^$lang\$" > /dev/null; then
 		echo "Adding $lang with asdf..."
 		asdf plugin add "$lang"
 		asdf install "$lang" latest
