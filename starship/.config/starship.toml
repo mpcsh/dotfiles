@@ -25,25 +25,26 @@ $time\
 """
 
 [username]
-format = "🧑🏻‍💻 [$user]($style)"
+format = "🧑🏻‍💻 [$user]($style) ❯ "
 
 [hostname]
 ssh_symbol = "🌐 "
-format = " ❯ $ssh_symbol[$hostname]($style)"
+format = "$ssh_symbol[$hostname]($style) ❯ "
 trim_at = ""
 
 [directory]
-format = " ❯ [$path]($style)[$read_only]($read_only_style)"
-repo_root_format = " ❯ [$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style)"
+format = "[$path]($style)[$read_only]($read_only_style) ❯ "
+repo_root_format = "[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) ❯ "
 before_repo_root_style = "dimmed white"
 repo_root_style = "bold purple"
 truncate_to_repo = false
 truncation_symbol = "…/"
 
 [git_branch]
-format = " ❯ [$symbol$branch(:$remote_branch)]($style) "
+format = "[$symbol$branch(:$remote_branch)]($style) "
 
 [git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )❯ '
 deleted = "x"
 ahead = "↑ "
 behind = "↓ "
@@ -54,17 +55,17 @@ disabled = false
 symbol = ""
 
 [container]
-format = ' ❯ [$symbol \[$name\]]($style)'
+format = '[$symbol \[$name\]]($style) ❯ '
 
 [nix_shell]
-format = ' ❯ [$symbol$state( \($name\))]($style)'
+format = '[$symbol$state( \($name\))]($style) ❯ '
 
 [cmd_duration]
-format = "[$duration]($style) ❮ "
+format = " ❮ [$duration]($style)"
 
 [time]
 disabled = false
-format = "[$time]($style)"
+format = " ❮ [$time]($style)"
 
 
 [palettes.catppuccin_macchiato]
