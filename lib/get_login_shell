@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 set -eu
-source "$(dirname $(realpath $0))/env"
+export PATH="$(dirname $(realpath $0)):$PATH"
 
 export USERNAME="${1:-$USER}"
 

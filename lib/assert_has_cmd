@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 set -eu
-source "$(dirname $(realpath $0))/env"
+export PATH="$(dirname $(realpath $0)):$PATH"
 
 if ! has_cmd $1; then
 	echo "\`$1\` not found in \$PATH after installation!"

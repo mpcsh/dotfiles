@@ -1,4 +1,0 @@
-#!/usr/bin/env sh
-set -eu
-
-export PATH="$HOME/dotfiles/lib:$PATH"

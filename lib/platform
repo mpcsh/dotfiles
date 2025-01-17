@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 set -eu
-source "$(dirname $(realpath $0))/env"
+export PATH="$(dirname $(realpath $0)):$PATH"
 
 if [ "$(uname -om)" = "Darwin arm64" ]; then
 	echo "macOS"

@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 set -eu
-source "$(dirname $(realpath $0))/env"
+export PATH="$(dirname $(realpath $0)):$PATH"
 
 command -v $1 > /dev/null 2>&1
