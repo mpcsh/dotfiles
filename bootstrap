@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 set -eu
-export PATH="$(dirname $(realpath $0))/lib:$PATH"
+export DOTDIR="$(dirname $(realpath $0))"
+export PATH="$DOTDIR/lib:$PATH"
 
 if [ "$(platform)" = "macOS" ]; then
 	if ! has_cmd brew; then
@@ -59,11 +60,11 @@ export PATH="$HOME/.local/bin:$PATH"
 assert_has_cmd stow
 for module in $(list_modules); do
 	echo "Stowing $module..."
-	stow --no-folding -t ~ $module
+	stow --no-folding --dir "$DOTDIR" --target "$HOME" "$module"
 done
 
 assert_has_cmd peru
-peru --file peru.yaml --sync-dir "$HOME" sync
+peru --file "$DOTDIR/peru.yaml" --sync-dir "$HOME" --state-dir "$DOTDIR/.peru" --cache-dir "$DOTDIR/.peru/cache" sync
 
 assert_has_cmd bat
 bat cache --build
