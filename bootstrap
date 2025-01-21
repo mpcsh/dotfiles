@@ -63,9 +63,7 @@ for module in $(list_modules); do
 done
 
 assert_has_cmd peru
-peru sync
-echo "Stowing external..."
-stow -t ~ external
+peru --file peru.yaml --sync-dir "$HOME" sync
 
 assert_has_cmd bat
 bat cache --build

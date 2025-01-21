@@ -1,9 +1,9 @@
 imports:
-  catppuccin-bat: external/.config/bat/themes/
-  catppuccin-delta: external/.config/delta/
-  dq: external/.local/bin/
-  fzf-fish: external/.config/fish/
-  tpm: external/.tmux/plugins/tpm/
+  catppuccin-bat: .config/bat/themes/
+  catppuccin-delta: .config/delta/
+  dq: .local/bin/
+  fzf-fish: .config/fish/
+  tpm: .tmux/plugins/tpm/
 
 git module catppuccin-bat:
   url: https://github.com/catppuccin/bat
