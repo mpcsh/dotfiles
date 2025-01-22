@@ -52,3 +52,4 @@
 [delta]
 	navigate = true
 	features = catppuccin-mocha
+	true-color = always
