@@ -14,4 +14,5 @@ if [ $(platform) = "macOS" ]; then
 	echo ssh
 fi
 echo starship
+echo tealdeer
 echo tmux

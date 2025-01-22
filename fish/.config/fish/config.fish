@@ -16,6 +16,9 @@ set -gx LC_ALL "en_US.UTF-8"
 set -gx LC_CTYPE "en_US.UTF-8"
 set -gx MANPAGER "less -i"
 set -gx NODEJS_CHECK_SIGNATURES no
+if test (uname -om) = "Darwin arm64"
+	set -gx TEALDEER_CONFIG_DIR "$HOME/.config/tealdeer"
+end
 
 # colorized manpages
 set -gx LESS_TERMCAP_mb (printf "\033[01;31m")
