@@ -1,10 +1,6 @@
 require("config.vim_options")
 require("config.lazy")
 
--- git status in gutter
-vim.keymap.set("n", "<Leader>l", "<Plug>(leap-forward)")
-vim.keymap.set("n", "<Leader>L", "<Plug>(leap-backward)")
-
 require("nvim-tree").setup()
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1

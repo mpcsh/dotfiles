@@ -10,6 +10,5 @@ return {
 	-- "hrsh7th/cmp-vsnip",
 	-- "hrsh7th/cmp-buffer",
 	-- "hrsh7th/cmp-path",
-	"ggandor/leap.nvim",
 	-- { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 }
