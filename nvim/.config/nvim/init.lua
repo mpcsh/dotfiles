@@ -2,26 +2,6 @@ require("config.vim_options")
 require("config.lazy")
 
 -- git status in gutter
-require("gitsigns").setup()
-
-require("lualine").setup({
-	options = {
-		theme = "catppuccin-mocha",
-		component_separators = { left = "▓▒░", right = "░▒▓" },
-		section_separators = { left = "▓▒░", right = "░▒▓" },
-	},
-	sections = {
-		lualine_a = { "mode" },
-		lualine_b = { "filename" },
-		lualine_c = { "branch", "diff", "diagnostics" },
-		lualine_x = { "" },
-		lualine_y = { "filetype" },
-		lualine_z = { "location" },
-	},
-})
-
-require("bufferline").setup({})
-
 vim.keymap.set("n", "<Leader>l", "<Plug>(leap-forward)")
 vim.keymap.set("n", "<Leader>L", "<Plug>(leap-backward)")
 
