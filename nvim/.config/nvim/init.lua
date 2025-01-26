@@ -1,112 +1,17 @@
+-- avoid using fish for plugin shell scripts
+-- (c.f. https://github.com/LunarVim/LunarVim/issues/1980)
 vim.opt.shell = "/usr/bin/env sh"
 
--- Bootstrap lazy.nvim
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
-	local lazyrepo = "https://github.com/folke/lazy.nvim.git"
-	local out = vim.fn.system({
-		"git",
-		"clone",
-		"--filter=blob:none",
-		"--branch=stable",
-		lazyrepo,
-		lazypath,
-	})
-	if vim.v.shell_error ~= 0 then
-		vim.api.nvim_echo({
-			{ "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-			{ out, "WarningMsg" },
-			{ "\nPress any key to exit..." },
-		}, true, {})
-		vim.fn.getchar()
-		os.exit(1)
-	end
-end
-vim.opt.rtp:prepend(lazypath)
+-- set leader key before setting up plugins
+vim.g.mapleader = "\\"
+vim.g.maplocalleader = "\\"
 
-require("lazy").setup({
-	-- {
-	-- "folke/tokyonight.nvim",
-	-- lazy = false,
-	-- priority = 1000,
-	-- opts = {},
-	-- },
-	-- "ellisonleao/gruvbox.nvim",
-	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-
-	"tommcdo/vim-exchange",
-	"tpope/vim-abolish",
-	"tpope/vim-commentary",
-	"tpope/vim-repeat",
-	"tpope/vim-surround",
-
-	"williamboman/mason.nvim",
-	"williamboman/mason-lspconfig.nvim",
-	"neovim/nvim-lspconfig",
-	"mfussenegger/nvim-lint",
-	"mhartington/formatter.nvim",
-	{
-		"nvim-treesitter/nvim-treesitter",
-		build = ":TSUpdate",
-	},
-	{
-		"nvim-treesitter/nvim-treesitter-context",
-		enabled = true,
-		opts = { mode = "cursor" },
-	},
-
-	"hrsh7th/nvim-cmp",
-	"hrsh7th/vim-vsnip",
-	"hrsh7th/cmp-nvim-lsp",
-	-- "hrsh7th/cmp-vsnip",
-	-- "hrsh7th/cmp-buffer",
-	-- "hrsh7th/cmp-path",
-
-	"lewis6991/gitsigns.nvim",
-	"ggandor/leap.nvim",
-	"nvim-lualine/lualine.nvim",
-	-- "sheerun/vim-polyglot",
-	"tpope/vim-fugitive",
-	"wincent/terminus",
-
-	{ "nvim-tree/nvim-tree.lua", dependencies = { "nvim-tree/nvim-web-devicons" } },
-	{ "folke/trouble.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
-	{
-		"nvim-telescope/telescope.nvim",
-		dependencies = { "nvim-lua/plenary.nvim" },
-	},
-
-	-- { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
-	{ "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
-})
+require("config.lazy")
 
 --------------
 -- colorscheme
 --------------
-vim.opt.termguicolors = true
 vim.opt.title = true
-
--- let g:gruvbox_material_palette = "material"
--- let g:gruvbox_material_background = "medium"
--- let g:gruvbox_material_sign_column_background = "none"
--- silent! colorscheme gruvbox-material
--- let ayucolor="mirage"
--- silent! colorscheme ayu
-vim.cmd("colorscheme catppuccin-mocha")
-
--- remove tildes for blank lines
--- hi EndOfBuffer guifg=bg
-vim.cmd("hi EndOfBuffer guifg=bg")
-
--- italic comments
--- hi Comment gui=italic
-vim.cmd("hi Comment gui=italic")
-
--- closure highlighting
--- hi LinkDelimiter gui=bold
--- hi MatchParen gui=bold
-vim.cmd("hi LinkDelimiter gui=bold")
-vim.cmd("hi MatchParen gui=bold")
 
 -- vim.cmd("hi TreeSitterContextBottom gui=none")
 
@@ -349,9 +254,6 @@ vim.keymap.set("v", "<S-Tab>", "<gv")
 vim.keymap.set({ "n", "i", "v" }, "<C-l>", function()
 	vim.cmd("nohlsearch")
 end, { silent = true })
-
--- better leader key
-vim.g.mapleader = "\\"
 
 -- don't yank on paste by default
 vim.keymap.set("v", "p", "P", { noremap = true })
