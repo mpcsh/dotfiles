@@ -22,3 +22,10 @@ scrollback-limit = 134217728
 shell-integration-features = no-cursor
 cursor-style = block
 cursor-style-blink = false
+
+keybind = cmd+-=new_split:down
+keybind = cmd+\=new_split:right
+keybind = cmd+h=goto_split:left
+keybind = cmd+j=goto_split:bottom
+keybind = cmd+k=goto_split:top
+keybind = cmd+l=goto_split:right
