@@ -6,8 +6,6 @@
 set fish_greeting ""
 
 # environment variables
-set -gx ASDF_NPM_DEFAULT_PACKAGES_FILE "$HOME/.config/asdf/nodejs-default-packages"
-set -gx ASDF_PYTHON_DEFAULT_PACKAGES_FILE "$HOME/.config/asdf/python-default-packages"
 set -gx EDITOR nvim
 set -l fzf_catppuccin_mocha "--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
 set -gx FZF_DEFAULT_OPTS "$fzf_catppuccin_mocha --layout=reverse --height=50% --preview-window=wrap --marker='*'"
@@ -15,6 +13,11 @@ set -gx LANG "en_US.UTF-8"
 set -gx LC_ALL "en_US.UTF-8"
 set -gx LC_CTYPE "en_US.UTF-8"
 set -gx MANPAGER "less -i"
+if test (uname -o) = "Darwin"
+	# mise is automagically activated when using brew and fish: https://mise.jdx.dev/getting-started.html
+	# disable this behavior to control path addition sequencing
+	set -gx MISE_FISH_AUTO_ACTIVATE 0
+end
 set -gx NODEJS_CHECK_SIGNATURES no
 if test (uname -om) = "Darwin arm64"
 	set -gx TEALDEER_CONFIG_DIR "$HOME/.config/tealdeer"
@@ -86,15 +89,6 @@ if test -e ~/.nix-profile
 	fish_add_path -g ~/.nix-profile/bin
 end
 
-# asdf (macOS)
-if type -q brew; and brew --prefix --installed asdf > /dev/null
-	source (brew --prefix asdf)/libexec/asdf.fish
-end
-
-# asdf (nix)
-if test -e ~/.nix-profile/share/asdf-vm
-	source ~/.nix-profile/share/asdf-vm/asdf.fish
-end
 
 ##########
 # commands
@@ -103,11 +97,6 @@ end
 # custom scripts
 if test -e ~/.local/bin
 	fish_add_path -g ~/.local/bin
-end
-
-# direnv
-if type -q direnv
-	direnv hook fish | source
 end
 
 # pixlet
@@ -222,6 +211,10 @@ if status --is-interactive
 
 	if type -q bat
 		set -gx BAT_THEME "Catppuccin Mocha"
+	end
+
+	if type -q mise
+		mise activate fish | source
 	end
 
 	if type -q zoxide

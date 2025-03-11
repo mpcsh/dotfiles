@@ -2,7 +2,6 @@
 set -eu
 export PATH="$(dirname $(realpath $0)):$PATH"
 
-echo asdf
 echo atuin
 echo fish
 if [ $(platform) = "macOS" ]; then

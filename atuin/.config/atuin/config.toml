@@ -32,9 +32,9 @@ common_subcommands = [
   "tmux",
   "yarn",
 
-  "asdf",
   "brew",
   "g",
+  "mise",
   "npx",
 ]
 

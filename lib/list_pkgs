@@ -3,15 +3,9 @@ set -eu
 export PATH="$(dirname $(realpath $0)):$PATH"
 
 echo atuin
-if [ "$(platform)" = "macOS" ]; then
-	echo asdf
-elif [ "$(platform)" = "linux_with_nix" ]; then
-	echo asdf-vm
-fi
 echo bandwhich
 echo bat
 echo bottom
-echo direnv
 echo eza
 echo fd
 echo fish
@@ -27,6 +21,7 @@ echo htop
 echo hwatch
 echo jq
 echo magic-wormhole
+echo mise
 echo neofetch
 echo neovim
 echo nmap
