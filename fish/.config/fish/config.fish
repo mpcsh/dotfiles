@@ -163,7 +163,7 @@ function rm --wraps rm
 end
 
 function rsync --wraps rsync
-	command rsync -avz $argv
+	command rsync --compress --recursive --update --progress --partial --human-readable --verbose $argv
 end
 
 function soulver --wraps soulver
