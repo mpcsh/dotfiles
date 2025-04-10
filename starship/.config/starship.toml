@@ -24,7 +24,7 @@ $cmd_duration\
 $time\
 """
 
-command_timeout = 1000
+command_timeout = 5000
 
 [username]
 format = "🧑🏻‍💻 [$user]($style) ❯ "
