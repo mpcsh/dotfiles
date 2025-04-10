@@ -213,6 +213,10 @@ if status --is-interactive
 		set -gx BAT_THEME "Catppuccin Mocha"
 	end
 
+	if type -q jj
+		env COMPLETE=fish jj | source
+	end
+
 	if type -q mise
 		mise activate fish | source
 	end
