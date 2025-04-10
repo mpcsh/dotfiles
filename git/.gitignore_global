@@ -1,2 +1,5 @@
 .DS_Store
 mise.local.toml
+# ignore vim-session files, for now
+# TODO: remove after adopting a real session management system
+*.vim-session
