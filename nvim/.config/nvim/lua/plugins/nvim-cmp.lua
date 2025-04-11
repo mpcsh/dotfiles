@@ -1,5 +1,6 @@
 return {
 	"hrsh7th/nvim-cmp",
+	event = { "BufNewFile", "BufReadPost" },
 	config = function()
 		local cmp = require("cmp")
 		cmp.setup({
