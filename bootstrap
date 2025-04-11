@@ -30,7 +30,7 @@ fi
 
 if [ "$(platform)" = "macOS" ]; then
 	export FISH_PATH="/opt/homebrew/bin/fish"
-elif [ "$(platform)" = "linux_with_nix" ]; then
+elif [ "$(platform)" = "coder" ]; then
 	export FISH_PATH="/usr/bin/fish"
 fi
 
@@ -51,7 +51,7 @@ fi
 
 if [ "$(platform)" = "macOS" ]; then
 	export PATH="/opt/homebrew/bin:$PATH"
-elif [ "$(platform)" = "linux_with_nix" ]; then
+elif [ "$(platform)" = "coder" ]; then
 	export PATH="$HOME/.nix-profile/bin:$PATH"
 fi
 

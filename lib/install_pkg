@@ -5,9 +5,12 @@ export PATH="$(dirname $(realpath $0)):$PATH"
 if [ "$(platform)" = "macOS" ]; then
 	assert_has_cmd brew
 	brew install "$1"
-elif [ "$(platform)" = "linux_with_nix" ]; then
+elif [ "$(platform)" = "coder" ]; then
 	assert_has_cmd nix
-	nix profile install "nixpkgs#$1"
+	if ! nix registry list | grep -q unstable 2>/dev/null; then
+		nix registry add nixpkgs-unstable github:NixOS/nixpkgs/nixpkgs-unstable
+	fi
+	nix profile install "nixpkgs-unstable#$1"
 else
 	echo "Cannot install $1 without a package manager!"
 	exit 1

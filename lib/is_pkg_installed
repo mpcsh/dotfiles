@@ -4,7 +4,7 @@ export PATH="$(dirname $(realpath $0)):$PATH"
 
 if [ "$(platform)" = "macOS" ]; then
 	brew ls --versions "$1" > /dev/null
-elif [ "$(platform)" = "linux_with_nix" ]; then
+elif [ "$(platform)" = "coder" ]; then
 	[ "$(nix profile list --json | jq '.elements | has("'"$1"'")')" = "true" ]
 else
 	echo "Cannot check if $1 is installed without a package manager!"

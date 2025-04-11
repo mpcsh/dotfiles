@@ -14,7 +14,7 @@ echo gh
 echo gist
 if [ "$(platform)" = "macOS" ]; then
 	echo git-delta
-elif [ "$(platform)" = "linux_with_nix" ]; then
+elif [ "$(platform)" = "coder" ]; then
 	echo delta
 fi
 echo htop
