@@ -78,3 +78,30 @@ vim.opt.linebreak = true
 -- vsplit right, hsplit down
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+
+-- show whitespace
+vim.opt.list = true
+-- vim.opt.listchars = "tab:• ,trail:·"
+
+-- highlight current line
+vim.opt.cursorline = true
+
+-- disable netrw (:h netrw-noload)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- format on write
+-- TODO: delete after migrating to conform
+vim.api.nvim_create_augroup("__formatter__", { clear = true })
+vim.api.nvim_create_autocmd("BufWritePost", {
+	group = "__formatter__",
+	command = ":FormatWriteLock",
+})
+
+-- Set up lspconfig.
+-- local capabilities = require("cmp_nvim_lsp").default_capabilities()
+-- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+-- require("lspconfig")["lua_ls"].setup({
+-- 	capabilities = capabilities,
+-- })
+vim.opt.completeopt = "menu,menuone,noselect"
