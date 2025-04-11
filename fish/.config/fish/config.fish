@@ -19,6 +19,7 @@ if test (uname -o) = "Darwin"
 	set -gx MISE_FISH_AUTO_ACTIVATE 0
 end
 set -gx NODEJS_CHECK_SIGNATURES no
+set -gx SHELL "fish"
 if test (uname -om) = "Darwin arm64"
 	set -gx TEALDEER_CONFIG_DIR "$HOME/.config/tealdeer"
 end
