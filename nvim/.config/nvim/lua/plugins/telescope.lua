@@ -7,6 +7,10 @@ return {
 			find_files = {
 				find_command = vim.split("fd --hidden --exclude .git/ -t f --strip-cwd-prefix", " "),
 			},
+			colorscheme = {
+				enable_preview = true,
+				ignore_builtins = true,
+			},
 		},
 	},
 	cmd = "Telescope",
