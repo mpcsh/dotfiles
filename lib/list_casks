@@ -21,6 +21,7 @@ font-iosevka-nerd-font
 font-m+-nerd-font
 font-mononoki-nerd-font
 garmin-express
+ghostty
 iina
 insta360-studio
 jordanbaird-ice
@@ -32,9 +33,7 @@ metaimage
 monitorcontrol
 moom
 mullvadvpn
-notion
 obsidian
-omnifocus
 powerphotos
 rocket
 signal
@@ -45,5 +44,6 @@ spotify
 via
 visual-studio-code
 wireshark
+zen-browser
 zoom
 EOF
