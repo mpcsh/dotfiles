@@ -5,11 +5,11 @@ export PATH="$(dirname $(realpath $0)):$PATH"
 cat << EOF
 1password
 alfred
+alt-tab
 appcleaner
 audio-hijack
 chirp
 chromium
-contexts
 discord
 fantastical
 firefox
