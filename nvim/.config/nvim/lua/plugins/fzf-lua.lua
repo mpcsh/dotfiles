@@ -35,7 +35,7 @@ return {
 	},
 	cmd = "FzfLua",
 	keys = {
-		{ [[<Leader>\\]], [[<cmd>FzfLua lsp_definitions<cr>]] },
+		{ [[<Leader>\]], [[<cmd>FzfLua lsp_definitions<cr>]] },
 		{ [[<Leader>']], [[<cmd>FzfLua lsp_references<cr>]] },
 		{ [[<Leader>"]], [[<cmd>FzfLua lsp_incoming_calls<cr>]] },
 		{ [[<C-p>]], [[<cmd>FzfLua files<cr>]] },
