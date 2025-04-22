@@ -3,30 +3,42 @@ set -eu
 export DOTDIR="$(dirname $(realpath $0))"
 export PATH="$DOTDIR/lib:$PATH"
 
+echo_bold() {
+	echo "$(tput bold)$1$(tput sgr0)"
+}
+
 if [ "$(platform)" = "macOS" ]; then
 	if ! has_cmd brew; then
-		echo "Installing brew..."
+		echo_bold "Installing brew..."
 		bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 		eval "$(/opt/homebrew/bin/brew shellenv)"
 		assert_has_cmd brew
 	fi
 fi
 
+echo_bold "Installing packages..."
+
 for pkg in $(list_pkgs); do
 	if ! is_pkg_installed "$pkg"; then
-		echo "Installing $pkg..."
+		echo "$pkg..."
 		install_pkg "$pkg"
+	else
+		echo "$pkg ✅"
 	fi
 done
 
 if [ "$(platform)" = "macOS" ]; then
 	for cask in $(list_casks); do
-		if ! is_pkg_installed --cask "$pkg"; then
-			echo "Installing $pkg..."
-			install_pkg --cask "$pkg"
+		if ! is_pkg_installed --cask "$cask"; then
+			echo "$cask..."
+			install_pkg --cask "$cask"
+		else
+			echo "$cask ✅"
 		fi
 	done
 fi
+
+echo_bold "Setting login shell..."
 
 if [ "$(platform)" = "macOS" ]; then
 	export FISH_PATH="/opt/homebrew/bin/fish"
@@ -58,13 +70,16 @@ fi
 export PATH="$HOME/.local/bin:$PATH"
 
 assert_has_cmd stow
+echo_bold "Stowing modules..."
 for module in $(list_modules); do
-	echo "Stowing $module..."
+	echo "$module..."
 	stow --no-folding --dir "$DOTDIR" --target "$HOME" "$module"
 done
 
 assert_has_cmd peru
+echo_bold "Running peru sync..."
 peru --file "$DOTDIR/peru.yaml" --sync-dir "$HOME" --state-dir "$DOTDIR/.peru" --cache-dir "$DOTDIR/.peru/cache" sync
 
 assert_has_cmd bat
+echo_bold "Running bat cache --build..."
 bat cache --build
