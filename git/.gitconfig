@@ -51,6 +51,7 @@
 	path = ~/.config/delta/catppuccin.gitconfig
 [delta]
 	side-by-side = true
+	line-numbers = true
 	navigate = true
 	features = catppuccin-mocha
 	true-color = always
