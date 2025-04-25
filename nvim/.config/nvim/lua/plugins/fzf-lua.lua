@@ -32,6 +32,13 @@ return {
 				"^zellner$",
 			},
 		},
+		winopts = {
+			preview = {
+				vertical = "down:40%",
+				horizontal = "right:40%",
+				flip_columns = 192,
+			},
+		},
 	},
 	cmd = "FzfLua",
 	keys = {
