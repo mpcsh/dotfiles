@@ -44,7 +44,7 @@
 [diff]
 	colorMoved = default
 [merge]
-	conflictstyle = diff3
+	conflictstyle = zdiff3
 [fetch]
 	prune = true
 [include]

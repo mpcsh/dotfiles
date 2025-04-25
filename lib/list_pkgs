@@ -12,6 +12,7 @@ echo fish
 echo fzf
 echo gh
 echo gist
+echo git
 if [ "$(platform)" = "macOS" ]; then
 	echo git-delta
 elif [ "$(platform)" = "coder" ]; then
