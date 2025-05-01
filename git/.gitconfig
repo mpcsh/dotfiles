@@ -50,8 +50,16 @@
 [include]
 	path = ~/.config/delta/catppuccin.gitconfig
 [delta]
-	side-by-side = true
 	line-numbers = true
 	navigate = true
 	features = catppuccin-mocha
 	true-color = always
+	file-style = bold brightwhite
+	file-decoration-style = bold brightwhite box
+	line-numbers-left-style = black
+	line-numbers-right-style = black
+	line-numbers-zero-style = black
+	line-numbers-minus-style = red
+	line-numbers-plus-style = green
+	minus-emph-style = black red
+	plus-emph-style = black green
