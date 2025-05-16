@@ -28,6 +28,7 @@ for pkg in $(list_pkgs); do
 done
 
 if [ "$(platform)" = "macOS" ]; then
+	echo_bold "Installing casks..."
 	for cask in $(list_casks); do
 		if ! is_pkg_installed --cask "$cask"; then
 			echo "$cask..."
