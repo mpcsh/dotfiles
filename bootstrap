@@ -74,7 +74,9 @@ assert_has_cmd stow
 echo_bold "Stowing modules..."
 for module in $(list_modules); do
 	echo "$module..."
+	set +e
 	stow --no-folding --dir "$DOTDIR" --target "$HOME" "$module"
+	set -e
 done
 
 assert_has_cmd peru
