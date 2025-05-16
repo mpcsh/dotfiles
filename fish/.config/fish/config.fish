@@ -190,7 +190,7 @@ if status --is-interactive
 	end
 
 	if type -q fzf_configure_bindings
-		fzf_configure_bindings --directory=\ct --git_log=\cg --git_status=\cs --history= --processes=\cp --variables=\cv
+		fzf_configure_bindings --directory=\cp --git_log=\cg --git_status=\cs --history= --processes= --variables=
 		set fzf_fd_opts --hidden --exclude .git/ -t f
 		set fzf_history_opts --preview="" --with-nth=4..
 	end
