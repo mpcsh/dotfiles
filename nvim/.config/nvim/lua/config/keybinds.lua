@@ -11,6 +11,7 @@ end)
 -- lsp functions
 bind("n", "<Leader>i", vim.diagnostic.open_float)
 bind("n", "<Leader>?", vim.lsp.buf.hover)
+bind("n", "<Leader>n", vim.lsp.buf.rename)
 
 -- go to definition, go back and forward
 -- C-o goes back in the jump list; C-t goes back in the tag list, which is a subset of the jump list

@@ -32,6 +32,14 @@ return {
 				"^zellner$",
 			},
 		},
+		files = {
+			fd_opts = "--color=never --type f --hidden --exclude .git",
+		},
+		lsp = {
+			finder = {
+				includeDeclaration = false,
+			},
+		},
 		winopts = {
 			preview = {
 				vertical = "down:40%",
@@ -46,6 +54,8 @@ return {
 		{ [[<Leader>']], [[<cmd>FzfLua lsp_references<cr>]] },
 		{ [[<Leader>"]], [[<cmd>FzfLua lsp_incoming_calls<cr>]] },
 		{ [[<C-p>]], [[<cmd>FzfLua files<cr>]] },
+		{ [[<C-b>]], [[<cmd>FzfLua buffers<cr>]] },
+		{ [[<C-g>]], [[<cmd>FzfLua live_grep_native<cr>]] },
 		{ [[<C-k>]], [[<cmd>FzfLua<cr>]] },
 	},
 }
