@@ -1,9 +1,0 @@
-#!/usr/bin/env sh
-set -eu
-export PATH="$(dirname $(realpath $0)):$PATH"
-
-if [ "$(uname -om)" = "Darwin arm64" ]; then
-	echo "macOS"
-elif [ "$(uname -om)" = "x86_64 GNU/Linux" ] && has_cmd nix && echo "$(hostname)" | grep -q "coder" 2>/dev/null; then
-	echo "coder"
-fi

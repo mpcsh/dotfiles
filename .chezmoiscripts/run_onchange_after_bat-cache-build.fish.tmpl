@@ -1,0 +1,17 @@
+#!/usr/bin/env fish
+
+{{ $themes := glob (joinPath .chezmoi.homeDir ".config/bat/themes/*.tmTheme") -}}
+{{ range $themes -}}
+  # {{ . }}: {{ include . | sha256sum }}
+{{ end -}}
+{{ $syntaxes := glob (joinPath .chezmoi.homeDir ".config/bat/syntaxes/*.sublime-syntax") -}}
+{{ range $syntaxes -}}
+  # {{ . }}: {{ include . | sha256sum -}}
+{{ end -}}
+
+if type -q bat
+	set_color --bold
+	echo Running bat cache --build...
+	set_color normal
+	bat cache --build
+end

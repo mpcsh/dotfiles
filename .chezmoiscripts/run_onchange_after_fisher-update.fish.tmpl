@@ -1,0 +1,9 @@
+#!/usr/bin/env fish
+
+# fish_plugins hash: {{ include "dot_config/fish/fish_plugins" | sha256sum }}
+if type -q fisher
+	set_color --bold
+	echo Running fisher update...
+	set_color normal
+	fisher update
+end

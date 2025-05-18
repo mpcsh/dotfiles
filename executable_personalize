@@ -1,0 +1,4 @@
+#!/usr/bin/env fish
+
+command chezmoi git pull
+command chezmoi apply --refresh-externals

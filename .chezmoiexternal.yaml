@@ -1,0 +1,32 @@
+.config/bat/themes/:
+  type: archive
+  url: https://github.com/catppuccin/bat/archive/main.tar.gz
+  exact: true
+  stripComponents: 2
+  include: ["*/themes/**"]
+
+.config/delta/catppuccin.gitconfig:
+  type: archive-file
+  url: https://github.com/catppuccin/delta/archive/main.tar.gz
+  exact: true
+  path: delta-main/catppuccin.gitconfig
+
+.local/bin/dq:
+  type: archive-file
+  url: https://github.com/david-crespo/dotfiles/archive/main.tar.gz
+  exact: true
+  path: dotfiles-main/bin/dq.ts
+  executable: true
+
+.config/fish/functions/fisher.fish:
+  type: archive-file
+  url: https://github.com/jorgebucaran/fisher/archive/main.tar.gz
+  exact: true
+  path: fisher-main/functions/fisher.fish
+
+.tmux/plugins/tpm/:
+  type: archive
+  url: https://github.com/tmux-plugins/tpm/archive/master.tar.gz
+  exact: true
+  stripComponents: 1
+  include: ["*/tpm", "*/bin/**", "*/bindings/**", "*/lib/**", "*/scripts/**"]

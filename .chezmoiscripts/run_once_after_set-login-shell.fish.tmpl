@@ -1,0 +1,40 @@
+#!/usr/bin/env fish
+
+function get_login_shell
+	set -l user (whoami)
+	if count $argv > /dev/null
+		set user $argv[1]
+	end
+{{- if eq .chezmoi.os "darwin" }}
+	dscacheutil -q user -a name (whoami) | rg "^shell:" | sd "^shell: " ""
+{{ else if eq .chezmoi.username "discord" }}
+	getent passwd (whoami) | cut -d ":" -f 7
+{{ end -}}
+end
+
+set_color --bold
+echo Setting login shell to fish...
+set_color normal
+
+{{- if eq .chezmoi.os "darwin" }}
+set -l fish_path /opt/homebrew/bin/fish
+{{- else if eq .chezmoi.username "discord" }}
+set -l fish_path /usr/bin/fish
+{{- end }}
+
+if ! rg -q "^$fish_path\$" /etc/shells; then
+	echo "Adding $fish_path to /etc/shells..."
+	echo "$fish_path" | sudo tee -a /etc/shells >/dev/null
+end
+
+if test (get_login_shell) != $fish_path
+	echo "Setting $fish_path as the login shell for $(whoami)..."
+	chsh -s "$fish_path"
+end
+
+{{ if eq .chezmoi.os "darwin" -}}
+if test (get_login_shell root) != $fish_path
+	echo "Setting $fish_path as the login shell for root..."
+	sudo chsh -s "$fish_path"
+end
+{{ end -}}

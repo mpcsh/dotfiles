@@ -1,0 +1,45 @@
+#!/usr/bin/env sh
+set -eu
+
+echo "$(tput bold)Installing packages...$(tput sgr0)"
+
+{{ if eq .chezmoi.os "darwin" -}}
+if ! command -v brew > /dev/null 2>&1; then
+	echo "$(tput bold)Installing brew first...$(tput sgr0)"
+	bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+	assert_has_cmd brew
+fi
+
+export BREW_FILE="$(mktemp -t pkgs-brew."$(date -Iseconds)".XXXXXXXXXX)"
+cat << EOF > "$BREW_FILE"
+{{ range .pkgs.common -}}
+brew {{ . | quote }}
+{{ end -}}
+{{ range .pkgs.darwin -}}
+brew {{ . | quote }}
+{{ end -}}
+{{ range .pkgs.casks -}}
+cask {{ . | quote }}
+{{ end -}}
+EOF
+brew bundle --file "$BREW_FILE"
+
+{{ else if eq .chezmoi.username "discord" -}}
+export NIX_FILE="$(mktemp -t pkgs-nix."$(date -Iseconds)".XXXXXXXXXX)"
+cat << EOF > "$NIX_FILE"
+let
+	pkgsUnstable = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/nixpkgs-unstable.tar.gz") {};
+in
+	with pkgsUnstable; [
+		{{ range .pkgs.common -}}
+		{{ . }}
+		{{ end -}}
+		{{ range .pkgs.coder -}}
+		{{ . }}
+		{{ end }}
+	]
+EOF
+nix-env --file "$NIX_FILE" --install
+
+{{ end -}}
