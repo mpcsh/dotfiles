@@ -1,5 +1,24 @@
 return {
 	"folke/trouble.nvim",
-	event = { "BufNewFile", "BufReadPost" },
 	dependencies = { "nvim-tree/nvim-web-devicons" },
+	opts = {
+		modes = {
+			diagnostics = {
+				preview = {
+					type = "split",
+					relative = "win",
+					position = "right",
+					size = 0.5,
+				},
+			},
+		},
+	},
+	cmd = "Trouble",
+	keys = {
+		{
+			[[<Leader>T]],
+			[[<cmd>Trouble diagnostics toggle<cr>]],
+			desc = "Quickfix List (Trouble)",
+		},
+	},
 }
