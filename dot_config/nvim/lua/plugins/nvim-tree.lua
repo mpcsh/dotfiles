@@ -4,6 +4,6 @@ return {
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	opts = {},
 	keys = {
-		{ [[<Leader>S]], [[<cmd>NvimTreeToggle<cr>]] },
+		{ [[<Leader>S]], [[<cmd>NvimTreeFindFileToggle<cr>]] },
 	},
 }
