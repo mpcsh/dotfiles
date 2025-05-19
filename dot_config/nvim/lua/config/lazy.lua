@@ -19,4 +19,7 @@ require("lazy").setup({
 		{ import = "plugins" },
 	},
 	checker = { enabled = true },
+	install = {
+		colorscheme = { "catppuccin-mocha", "habamax" },
+	},
 })
