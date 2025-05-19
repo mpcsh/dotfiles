@@ -1,6 +1,5 @@
 return {
 	"nvim-tree/nvim-tree.lua",
-	event = "UIEnter",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	opts = {},
 	keys = {
