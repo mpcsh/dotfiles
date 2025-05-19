@@ -2,7 +2,13 @@ return {
 	"mfussenegger/nvim-lint",
 	event = { "BufNewFile", "BufReadPost" },
 	config = function()
-		require("lint").linters_by_ft = {
+		local lint = require("lint")
+
+		-- read selene config from stdin
+		lint.linters.selene.args = [[--config -]]
+		lint.linters.selene.stdin = [[std="vim"]]
+
+		lint.linters_by_ft = {
 			javascript = { "eslint_d" },
 			javascriptreact = { "eslint_d" },
 			typescript = { "eslint_d" },
