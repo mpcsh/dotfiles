@@ -22,4 +22,5 @@ require("lazy").setup({
 	install = {
 		colorscheme = { "catppuccin-mocha", "habamax" },
 	},
+	dev = { path = "~/projects" },
 })
