@@ -44,7 +44,7 @@ vim.api.nvim_create_autocmd("LspProgress", {
 
 return {
 	"folke/snacks.nvim",
-	event = "BufReadPre",
+	event = "UIEnter",
 	opts = {
 		notifier = {
 			enabled = true,
