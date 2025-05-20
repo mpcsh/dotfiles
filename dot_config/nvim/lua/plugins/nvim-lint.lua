@@ -5,7 +5,7 @@ return {
 		local lint = require("lint")
 
 		-- read selene config from stdin
-		lint.linters.selene.args = [[--config -]]
+		lint.linters.selene.args = { [[--config -]] }
 		lint.linters.selene.stdin = [[std="vim"]]
 
 		lint.linters_by_ft = {
