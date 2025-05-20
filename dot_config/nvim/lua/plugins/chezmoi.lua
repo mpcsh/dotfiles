@@ -1,19 +1,9 @@
-vim.api.nvim_create_autocmd({ "BufNewFile", "BufReadPost" }, {
-	pattern = { os.getenv("HOME") .. "/.local/share/chezmoi/*" },
-	callback = function(ev)
-		vim.schedule(function()
-			require("chezmoi.commands.__edit").watch(ev.buf)
-		end)
-	end,
-})
-
 return {
 	"xvzc/chezmoi.nvim",
 	dependencies = { "nvim-lua/plenary.nvim" },
-	event = { "BufNewFile", "BufReadPost" },
+	-- TODO: define an event. eager loading for now
 	config = function()
-		local chezmoi = require("chezmoi")
-		chezmoi.setup({
+		require("chezmoi").setup({
 			edit = {
 				watch = true,
 				force = false,
@@ -29,6 +19,15 @@ return {
 					notification = { enable = true },
 				},
 			},
+		})
+
+		vim.api.nvim_create_autocmd({ "BufNewFile", "BufReadPost" }, {
+			pattern = { os.getenv("HOME") .. "/.local/share/chezmoi/*" },
+			callback = function(ev)
+				vim.schedule(function()
+					require("chezmoi.commands.__edit").watch(ev.buf)
+				end)
+			end,
 		})
 	end,
 }
