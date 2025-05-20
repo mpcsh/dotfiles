@@ -17,9 +17,10 @@ return {
 			css = { "eslint_d" },
 			lua = { "selene" },
 		}
+
 		vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost" }, {
 			callback = function()
-				require("lint").try_lint()
+				lint.try_lint()
 			end,
 		})
 	end,
