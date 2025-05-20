@@ -36,9 +36,8 @@ return {
 			fd_opts = "--color=never --type f --hidden --exclude .git",
 		},
 		lsp = {
-			finder = {
-				includeDeclaration = false,
-			},
+			ignore_current_line = true,
+			includeDeclaration = false,
 		},
 		winopts = {
 			preview = {
