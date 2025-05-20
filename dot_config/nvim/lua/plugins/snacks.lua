@@ -46,6 +46,10 @@ return {
 	"folke/snacks.nvim",
 	event = "BufReadPre",
 	opts = {
-		notifier = { enabled = true },
+		notifier = {
+			enabled = true,
+			top_down = false,
+			margin = { right = 0, bottom = 1 },
+		},
 	},
 }
