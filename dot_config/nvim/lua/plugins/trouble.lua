@@ -7,7 +7,7 @@ return {
 				preview = {
 					type = "split",
 					relative = "win",
-					position = "bottom",
+					position = "right",
 					size = 0.5,
 				},
 			},
@@ -17,7 +17,7 @@ return {
 	keys = {
 		{
 			[[<Leader>T]],
-			[[<cmd>Trouble diagnostics toggle focus=true win.position=right<cr>]],
+			[[<cmd>Trouble diagnostics toggle focus=true win.position=bottom<cr>]],
 			desc = "Quickfix List (Trouble)",
 		},
 	},
