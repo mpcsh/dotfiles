@@ -207,13 +207,6 @@ if status --is-interactive
 		atuin init fish --disable-up-arrow | source
 	end
 
-	if type -q brew
-		set -l HB_CNF_HANDLER (brew --repository)"/Library/Taps/homebrew/homebrew-command-not-found/handler.fish"
-		if test -f $HB_CNF_HANDLER
-			 source $HB_CNF_HANDLER
-		end
-	end
-
 	if type -q bat
 		set -gx BAT_THEME "Catppuccin Mocha"
 	end
@@ -224,6 +217,15 @@ if status --is-interactive
 
 	if type -q mise
 		mise activate fish | source
+	end
+
+	# TODO: mise is clobbering brew's command-not-found handler
+	# should try to fix upstream: https://github.com/search?q=repo%3Ajdx%2Fmise+fish_command_not_found&type=code
+	if type -q brew
+		set -l HB_CNF_HANDLER (brew --repository)"/Library/Taps/homebrew/homebrew-command-not-found/handler.fish"
+		if test -f $HB_CNF_HANDLER
+			source $HB_CNF_HANDLER
+		end
 	end
 
 	if type -q zoxide
