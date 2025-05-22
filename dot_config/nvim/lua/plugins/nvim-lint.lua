@@ -4,10 +4,6 @@ return {
 	config = function()
 		local lint = require("lint")
 
-		-- read selene config from stdin
-		lint.linters.selene.args = { [[--config -]] }
-		lint.linters.selene.stdin = [[std="vim"]]
-
 		lint.linters_by_ft = {
 			javascript = { "eslint_d" },
 			javascriptreact = { "eslint_d" },
@@ -16,6 +12,15 @@ return {
 			html = { "eslint_d" },
 			css = { "eslint_d" },
 			lua = { "selene" },
+			["*"] = { "codespell" },
+		}
+
+		lint.linters.selene.args = { [[--config -]] }
+		lint.linters.selene.stdin = [[std="vim"]]
+
+		lint.linters.codespell = {
+			prepend_args = { "--ignore-words-list=" .. table.concat(require("utils").codespell_ignored_words, ",") },
+			stdin = true,
 		}
 
 		vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost" }, {
