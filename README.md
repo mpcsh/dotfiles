@@ -1,3 +1,3 @@
 ```sh
-curl -fsLS mpc.sh/.bootsrap | sh
+curl -fsLS mpc.sh/.bootstrap | sh
 ```
