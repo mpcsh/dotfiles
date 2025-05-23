@@ -114,10 +114,6 @@ function cz --wraps chezmoi
 	command chezmoi $argv
 end
 
-function cze --wraps "chezmoi edit"
-	command chezmoi edit --watch $argv
-end
-
 function g --wraps git
 	command git $argv
 end
