@@ -1,10 +1,8 @@
 [user]
 	email = {{ b64dec "Z2l0QG1haWwubXBjLnNo" }}
 	name = Mark Cohen
-[include]
-	path = ~/.gitconfig.local
 [includeIf "gitdir:work/"]
-  path = ~/.gitconfig.work
+  path = ~/.config/git/config.work
 [push]
 	default = current
 [pull]
@@ -29,7 +27,7 @@
 	changed = yellow
 	untracked = red
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.config/git/gitignore_global
 	pager = delta
 	fileMode = false
 [interactive]
