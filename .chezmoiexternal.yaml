@@ -24,7 +24,7 @@
   exact: true
   path: fisher-main/functions/fisher.fish
 
-.tmux/plugins/tpm/:
+.local/share/tmux/plugins/tpm/:
   type: archive
   url: https://github.com/tmux-plugins/tpm/archive/master.tar.gz
   exact: true
