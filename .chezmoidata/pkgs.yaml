@@ -47,6 +47,7 @@ pkgs:
     - "alfred"
     - "alt-tab"
     - "appcleaner"
+    - "arc"
     - "audio-hijack"
     - "chirp"
     - "chromium"
@@ -83,5 +84,4 @@ pkgs:
     - "via"
     - "visual-studio-code"
     - "wireshark"
-    - "zen"
     - "zoom"
