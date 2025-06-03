@@ -29,3 +29,5 @@ keybind = cmd+h=goto_split:left
 keybind = cmd+j=goto_split:bottom
 keybind = cmd+k=goto_split:top
 keybind = cmd+l=goto_split:right
+keybind = f13=ignore
+keybind = f14=ignore
