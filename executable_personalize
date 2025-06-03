@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
-set -eu
+#!/usr/bin/env fish
 
-sh -c "$(curl -fsLS https://get.chezmoi.io)" -- -b "$(mktemp -d)" init mpcsh --ssh --apply --refresh-externals
+command chezmoi git pull
+command chezmoi apply --refresh-externals

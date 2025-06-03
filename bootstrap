@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+set -eu
+
+sh -c "$(curl -fsLS https://get.chezmoi.io)" -- -b "$(mktemp -d)" init mpcsh --ssh --apply --refresh-externals
