@@ -1,4 +1,11 @@
-#!/usr/bin/env fish
+#!/usr/bin/env sh
 
-command chezmoi git pull
-command chezmoi apply --refresh-externals
+CHEZMOI_DIR="$(mktemp -d)"
+CHEZMOI_BIN="$CHEZMOI_DIR/chezmoi"
+
+sh -c "$(curl -fsLS https://get.chezmoi.io)" -- -b "$CHEZMOI_DIR" init mpcsh --ssh --apply --refresh-externals
+
+"$CHEZMOI_BIN" init mpcsh --ssh
+"$CHEZMOI_BIN" git pull
+"$CHEZMOI_BIN" state reset --force
+"$CHEZMOI_BIN" apply --refresh-externals
