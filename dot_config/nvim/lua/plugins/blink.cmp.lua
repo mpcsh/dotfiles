@@ -5,12 +5,12 @@ return {
 	event = { "BufNewFile", "BufReadPost" },
 	opts = {
 		sources = {
-			default = { "lsp", "path", "buffer" },
+			default = { "lsp", "path" },
 		},
 		fuzzy = { implementation = "prefer_rust_with_warning" },
 		keymap = {
-			-- https://cmp.saghen.dev/configuration/keymap.html#super-tab
-			preset = "super-tab",
+			preset = "default",
+			["<Tab>"] = { "accept", "hide", "fallback" },
 		},
 	},
 }
