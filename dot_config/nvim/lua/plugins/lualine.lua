@@ -4,7 +4,6 @@ return {
 	-- TODO: ORRRR apparently lazy.nvim doesn't like symlinks?! As soon as I stowed `nvim` without `--no-folding` everything works?!
 	opts = {
 		options = {
-			theme = "catppuccin-mocha",
 			component_separators = { left = "▓▒░", right = "░▒▓" },
 			section_separators = { left = "▓▒░", right = "░▒▓" },
 		},
