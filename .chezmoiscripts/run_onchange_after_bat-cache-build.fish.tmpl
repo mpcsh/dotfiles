@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-{{ $themes := glob (joinPath .chezmoi.homeDir ".config/bat/themes/*.tmTheme") -}}
+{{ $themes := glob (joinPath .chezmoi.homeDir ".config/bat/themes/**/*.tmTheme") -}}
 {{ range $themes -}}
   # {{ . }}: {{ include . | sha256sum }}
 {{ end -}}

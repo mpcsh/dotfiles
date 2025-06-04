@@ -7,8 +7,8 @@ set fish_greeting ""
 
 # environment variables
 set -gx EDITOR nvim
-set -l fzf_catppuccin_mocha "--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
-set -gx FZF_DEFAULT_OPTS "$fzf_catppuccin_mocha --layout=reverse --height=50% --preview-window=wrap --marker='*'"
+set -l fzf_rose_pine_moon "--color=fg:#908caa,bg:#232136,hl:#ea9a97 --color=fg+:#e0def4,bg+:#393552,hl+:#ea9a97 --color=border:#44415a,header:#3e8fb0,gutter:#232136 --color=spinner:#f6c177,info:#9ccfd8 --color=pointer:#c4a7e7,marker:#eb6f92,prompt:#908caa"
+set -gx FZF_DEFAULT_OPTS "$fzf_rose_pine_moon --layout=reverse --height=50% --preview-window=wrap --marker='*'"
 set -gx MANPAGER "less -i"
 if test (uname -o) = "Darwin"
 	# mise is automagically activated when using brew and fish: https://mise.jdx.dev/getting-started.html
@@ -204,7 +204,7 @@ if status --is-interactive
 	end
 
 	if type -q bat
-		set -gx BAT_THEME "Catppuccin Mocha"
+		set -gx BAT_THEME "rose-pine-moon"
 	end
 
 	if type -q jj

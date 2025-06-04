@@ -1,7 +1,6 @@
-local default_colorscheme_module = "catppuccin"
-local default_colorscheme = "catppuccin-mocha"
+local utils = require("utils")
 
-local colorschemes = {
+local colorscheme_modules = {
 	["catppuccin"] = "catppuccin/nvim",
 	["everforest"] = {
 		repo = "sainnhe/everforest",
@@ -12,6 +11,16 @@ local colorschemes = {
 	["gruvbox"] = "ellisonleao/gruvbox.nvim",
 	["gruvbox-material"] = "sainnhe/gruvbox-material",
 	["nordic"] = "AlexvZyl/nordic.nvim",
+	["rose-pine"] = {
+		repo = "rose-pine/neovim",
+		name = "rose-pine",
+		opts = {
+			variant = "auto",
+			dark_variant = "moon",
+			dim_inactive_windows = true,
+			extend_background_behind_borders = true,
+		},
+	},
 	["tokyonight"] = "folke/tokyonight.nvim",
 }
 
@@ -40,7 +49,7 @@ local function after_config(module)
 end
 
 local specs = {}
-for name, val in pairs(colorschemes) do
+for name, val in pairs(colorscheme_modules) do
 	local module
 	if type(val) == "string" then
 		module = { repo = val }
@@ -50,7 +59,7 @@ for name, val in pairs(colorschemes) do
 
 	local spec = { module.repo, name = name }
 
-	if name == default_colorscheme_module then
+	if name == utils.default_colorscheme_module then
 		spec.lazy = false
 		spec.priority = 1000
 	else
@@ -59,8 +68,8 @@ for name, val in pairs(colorschemes) do
 
 	spec.config = function()
 		before_config(module)
-		if name == default_colorscheme_module then
-			vim.cmd("colorscheme " .. default_colorscheme)
+		if name == utils.default_colorscheme_module then
+			vim.cmd("colorscheme " .. utils.default_colorscheme)
 		end
 		after_config(module)
 	end

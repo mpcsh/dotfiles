@@ -1,9 +1,16 @@
-.config/bat/themes/:
+.config/bat/themes/catppuccin/:
   type: archive
   url: https://github.com/catppuccin/bat/archive/main.tar.gz
   exact: true
   stripComponents: 2
   include: ["*/themes/**"]
+
+.config/bat/themes/rose-pine/:
+  type: archive
+  url: https://github.com/rose-pine/tm-theme/archive/main.tar.gz
+  exact: true
+  stripComponents: 3
+  include: ["*/dist/themes/**"]
 
 .config/delta/catppuccin.gitconfig:
   type: archive-file
