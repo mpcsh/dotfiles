@@ -9,7 +9,7 @@ function get_login_shell
 	dscacheutil -q user -a name (whoami) | rg "^shell:" | sd "^shell: " ""
 {{ else if eq .chezmoi.username "discord" }}
 	getent passwd (whoami) | cut -d ":" -f 7
-{{ end -}}
+{{ end }}
 end
 
 set_color --bold
