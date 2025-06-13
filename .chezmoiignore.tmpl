@@ -1,15 +1,15 @@
 bootstrap
 LICENSE.md
 README.md
-
+{{ if eq .chezmoi.os "darwin" -}}
+.config/systemd/
+{{ end -}}
 {{ if ne .chezmoi.os "darwin" -}}
 .config/ghostty/
 {{ end -}}
-
 {{ if eq .chezmoi.username "discord" -}}
 .ssh/
 {{ end -}}
-
 {{ if ne .chezmoi.username "discord" -}}
 personalize
 {{ end -}}

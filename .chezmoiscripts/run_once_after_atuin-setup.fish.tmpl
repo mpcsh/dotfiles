@@ -1,0 +1,16 @@
+#!/usr/bin/env fish
+
+if type -q atuin
+	set_color --bold
+	echo Starting atuin daemon...
+	{{- if eq .chezmoi.os "darwin" }}
+	brew services start atuin
+	{{- else if eq .chezmoi.os "linux" }}
+	systemctl --user enable --now atuin
+	{{- end }}
+	set_color normal
+	set_color --bold
+	echo Logging in to atuin...
+	set_color normal
+	atuin login
+end

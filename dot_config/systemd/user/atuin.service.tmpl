@@ -1,0 +1,9 @@
+[Unit]
+Description=Atuin daemon
+
+[Service]
+Type=simple
+ExecStart={{ lookPath "atuin" }} daemon
+
+[Install]
+WantedBy=default.target
