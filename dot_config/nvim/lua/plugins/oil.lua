@@ -9,7 +9,9 @@ return {
 			bufhidden = "",
 			buflisted = true,
 		},
-		natural_order = false,
-		show_hidden = true,
+		view_options = {
+			natural_order = false,
+			show_hidden = true,
+		},
 	},
 }
