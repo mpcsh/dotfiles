@@ -64,6 +64,7 @@ pkgs:
     - "garmin-express"
     - "ghostty"
     - "iina"
+    - "insta360-link-controller"
     - "insta360-studio"
     - "jordanbaird-ice"
     - "keyboard-maestro"
