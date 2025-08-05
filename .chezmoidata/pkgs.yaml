@@ -98,5 +98,5 @@ pkgs:
     - "steam"
     - "via"
     - "visual-studio-code"
-    - "wireshark"
+    - "wireshark-app"
     - "zoom"
