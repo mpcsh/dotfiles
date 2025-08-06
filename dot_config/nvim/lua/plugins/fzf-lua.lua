@@ -36,7 +36,7 @@ return {
 			fd_opts = "--color=never --type f --hidden --exclude .git",
 		},
 		grep = {
-			rg_opts = "--hidden --smart-case --glob !.git",
+			rg_opts = "--line-number --column --hidden --smart-case --glob !.git",
 		},
 		lsp = {
 			ignore_current_line = true,
