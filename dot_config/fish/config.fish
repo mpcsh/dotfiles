@@ -218,9 +218,9 @@ if status --is-interactive
 	# TODO: mise is clobbering brew's command-not-found handler
 	# should try to fix upstream: https://github.com/search?q=repo%3Ajdx%2Fmise+fish_command_not_found&type=code
 	if type -q brew
-		set -l HB_CNF_HANDLER (brew --repository)"/Library/Taps/homebrew/homebrew-command-not-found/handler.fish"
-		if test -f $HB_CNF_HANDLER
-			source $HB_CNF_HANDLER
+		set HOMEBREW_COMMAND_NOT_FOUND_HANDLER (brew --repository)/Library/Homebrew/command-not-found/handler.fish
+		if test -f $HOMEBREW_COMMAND_NOT_FOUND_HANDLER
+			source $HOMEBREW_COMMAND_NOT_FOUND_HANDLER
 		end
 	end
 
