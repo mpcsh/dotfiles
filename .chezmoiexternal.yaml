@@ -9,8 +9,8 @@
   type: archive
   url: https://github.com/rose-pine/tm-theme/archive/main.tar.gz
   exact: true
-  stripComponents: 3
-  include: ["*/dist/themes/**"]
+  stripComponents: 2
+  include: ["*/dist/**"]
 
 .config/delta/catppuccin.gitconfig:
   type: archive-file
