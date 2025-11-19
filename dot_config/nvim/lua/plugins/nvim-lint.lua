@@ -9,8 +9,8 @@ return {
 			javascriptreact = { "eslint_d" },
 			typescript = { "eslint_d" },
 			typescriptreact = { "eslint_d" },
-			html = { "eslint_d" },
-			css = { "eslint_d" },
+			html = { "stylelint" },
+			css = { "stylelint" },
 			lua = { "selene" },
 			["*"] = { "codespell" },
 		}
