@@ -9,6 +9,7 @@ return {
 			"buf_ls",
 			"clangd",
 			"cssls",
+			"cssmodules_ls",
 			"css_variables",
 			"html",
 			"lua_ls",
