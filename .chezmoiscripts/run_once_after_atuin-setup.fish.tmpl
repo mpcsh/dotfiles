@@ -9,8 +9,10 @@ if type -q atuin
 	systemctl --user enable --now atuin
 	{{- end }}
 	set_color normal
-	set_color --bold
-	echo Logging in to atuin...
-	set_color normal
-	atuin login
+	if ! test -e ~/.local/share/atuin/session
+		set_color --bold
+		echo Logging in to atuin...
+		set_color normal
+		atuin login
+	end
 end
