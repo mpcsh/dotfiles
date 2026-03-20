@@ -4,9 +4,12 @@
 [includeIf "gitdir:work/"]
   path = ~/.config/git/config.work
 [push]
-	default = current
+	autoSetupRemote = true
+	default = simple
 [pull]
-	rebase = true
+	rebase = merges
+[rebase]
+	autoStash = true
 [alias]
 	co = checkout
 	ci = commit
@@ -42,6 +45,7 @@
 [diff]
 	colorMoved = default
 [merge]
+	autoStash = true
 	conflictstyle = zdiff3
 [fetch]
 	prune = true
