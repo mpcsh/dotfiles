@@ -19,7 +19,10 @@ unfocused-split-opacity = 1
 
 scrollback-limit = 134217728
 
-shell-integration-features = no-cursor
+# no-cursor: prevent shell integration from overriding cursor style
+# ssh-terminfo: try to install xterm-ghostty terminfo on ssh connections
+# ssh-env: fall back to xterm-256color if the above fails
+shell-integration-features = no-cursor,ssh-terminfo,ssh-env
 cursor-style = block
 cursor-style-blink = false
 
