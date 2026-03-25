@@ -35,3 +35,4 @@ keybind = cmd+l=goto_split:right
 keybind = f13=ignore
 keybind = f14=ignore
 keybind = shift+enter=text:\n
+keybind = cmd+w=close_tab
