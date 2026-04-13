@@ -58,6 +58,7 @@ return {
 		{ [[<C-p>]], [[<cmd>FzfLua files<cr>]] },
 		{ [[<C-b>]], [[<cmd>FzfLua buffers<cr>]] },
 		{ [[<C-g>]], [[<cmd>FzfLua live_grep_native<cr>]] },
+		{ [[<C-s>]], [[<cmd>FzfLua git_status<cr>]] },
 		{ [[<C-k>]], [[<cmd>FzfLua<cr>]] },
 	},
 }
