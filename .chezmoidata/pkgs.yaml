@@ -50,7 +50,6 @@ pkgs:
     - "1password"
     - "alcove"
     - "alfred"
-    - "android-studio"
     - "appcleaner"
     - "arc"
     - "audio-hijack"
