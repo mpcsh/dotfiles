@@ -76,7 +76,6 @@ pkgs:
     - "keyboard-maestro"
     - "linearmouse"
     - "logitech-g-hub"
-    - "loom"
     - "loopback"
     - "metaimage"
     - "monitorcontrol"
