@@ -88,7 +88,6 @@ pkgs:
     - "soulver"
     - "soulver-cli"
     - "soundsource"
-    - "spotify"
     - "steam"
     - "thaw"
     - "via"
