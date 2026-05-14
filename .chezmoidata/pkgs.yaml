@@ -83,7 +83,6 @@ pkgs:
     - "obsidian"
     - "piezo"
     - "powerphotos"
-    - "rive"
     - "rocket"
     - "signal"
     - "soulver"
