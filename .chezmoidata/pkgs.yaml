@@ -91,6 +91,5 @@ pkgs:
     - "steam"
     - "thaw"
     - "via"
-    - "visual-studio-code"
     - "wireshark-app"
     - "zoom"
