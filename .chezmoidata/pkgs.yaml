@@ -81,7 +81,6 @@ pkgs:
     - "piezo"
     - "rocket"
     - "soulver"
-    - "soulver-cli"
     - "soundsource"
     - "steam"
     - "thaw"
