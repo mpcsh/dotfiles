@@ -80,7 +80,6 @@ pkgs:
     - "pearcleaner"
     - "piezo"
     - "rocket"
-    - "soulver"
     - "soundsource"
     - "steam"
     - "thaw"
