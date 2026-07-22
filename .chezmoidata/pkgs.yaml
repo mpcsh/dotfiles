@@ -41,7 +41,6 @@ pkgs:
     - "zoxide"
   darwin:
     - "git-delta"
-    - "pidof"
     - "telnet"
     - "terminal-notifier"
   coder:
