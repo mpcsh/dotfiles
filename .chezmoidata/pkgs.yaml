@@ -83,6 +83,5 @@ pkgs:
     - "steam"
     - "thaw"
     - "ungoogled-chromium"
-    - "via"
     - "wireshark-app"
     - "zoom"
