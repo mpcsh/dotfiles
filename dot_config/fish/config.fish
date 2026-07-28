@@ -120,16 +120,16 @@ end
 
 if type -q eza
 	function ls --wraps eza
-		command eza -1 --classify $argv
+		command eza -1 --classify=always $argv
 	end
 	function la --wraps eza
-		command eza -1a --classify $argv
+		command eza -1a --classify=always $argv
 	end
 	function ll --wraps eza
-		command eza --git -lg --classify $argv
+		command eza --git -lg --classify=always $argv
 	end
 	function lla --wraps eza
-		command eza --git -lga --classify $argv
+		command eza --git -lga --classify=always $argv
 	end
 else
 	function ls --wraps ls
