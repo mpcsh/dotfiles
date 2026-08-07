@@ -99,6 +99,13 @@ if ! status --is-interactive
 	return
 end
 
+# this has to come before `atuin init`
+if type -q fzf_configure_bindings
+	fzf_configure_bindings --directory=\cp --git_log=\cg --git_status=\cs --history= --processes= --variables=
+	set fzf_fd_opts --hidden --exclude .git/ -t f
+	set fzf_history_opts --preview="" --with-nth=4..
+end
+
 
 ###########
 # aliases
@@ -214,13 +221,7 @@ if type -q zoxide
 	zoxide init fish | source
 end
 
-if type -q fzf_configure_bindings
-	fzf_configure_bindings --directory=\cp --git_log=\cg --git_status=\cs --history= --processes= --variables=
-	set fzf_fd_opts --hidden --exclude .git/ -t f
-	set fzf_history_opts --preview="" --with-nth=4..
-end
-
-# TODO: mise is clobbering brew's command-not-found handler
+# this has to come after `mise activate` because mise is clobbering brew's command-not-found handler
 # should try to fix upstream: https://github.com/search?q=repo%3Ajdx%2Fmise+fish_command_not_found&type=code
 if type -q brew
 	set HOMEBREW_COMMAND_NOT_FOUND_HANDLER (brew --repository)/Library/Homebrew/command-not-found/handler.fish
