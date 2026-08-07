@@ -86,19 +86,17 @@ if test -e ~/.nix-profile
 	fish_add_path -g ~/.nix-profile/bin
 end
 
-
-##########
-# commands
-##########
-
 # custom scripts
 if test -e ~/.local/bin
 	fish_add_path -g ~/.local/bin
 end
 
-# pixlet
-if type -q pixlet
-	pixlet completion fish | source
+#########################
+# interactive-only config
+#########################
+
+if ! status --is-interactive
+	return
 end
 
 
@@ -175,56 +173,58 @@ function sudo --wraps sudo
 	command sudo -sE $argv
 end
 
-function vim --wraps nvim
-	command nvim $argv
-end
-
 function up
 	cd (eval printf ../%.0s (seq 1 $argv))
 end
 
+function vim --wraps nvim
+	command nvim $argv
+end
 
-#########################
-# interactive-only config
-#########################
 
-if status --is-interactive
-	if type -q starship
-		starship init fish | source
-	end
+#######################
+# command-specific init
+#######################
 
-	if type -q fzf_configure_bindings
-		fzf_configure_bindings --directory=\cp --git_log=\cg --git_status=\cs --history= --processes= --variables=
-		set fzf_fd_opts --hidden --exclude .git/ -t f
-		set fzf_history_opts --preview="" --with-nth=4..
-	end
+if type -q starship
+	starship init fish | source
+end
 
-	if type -q atuin
-		atuin init fish --disable-up-arrow | source
-	end
+if type -q atuin
+	atuin init fish --disable-up-arrow | source
+end
 
-	if type -q bat
-		set -gx BAT_THEME "rose-pine-moon"
-	end
+if type -q bat
+	set -gx BAT_THEME "rose-pine-moon"
+end
 
-	if type -q jj
-		env COMPLETE=fish jj | source
-	end
+if type -q jj
+	env COMPLETE=fish jj | source
+end
 
-	if type -q mise
-		mise activate fish | source
-	end
+if type -q mise
+	mise activate fish | source
+end
 
-	# TODO: mise is clobbering brew's command-not-found handler
-	# should try to fix upstream: https://github.com/search?q=repo%3Ajdx%2Fmise+fish_command_not_found&type=code
-	if type -q brew
-		set HOMEBREW_COMMAND_NOT_FOUND_HANDLER (brew --repository)/Library/Homebrew/command-not-found/handler.fish
-		if test -f $HOMEBREW_COMMAND_NOT_FOUND_HANDLER
-			source $HOMEBREW_COMMAND_NOT_FOUND_HANDLER
-		end
-	end
+if type -q pixlet
+	pixlet completion fish | source
+end
 
-	if type -q zoxide
-		zoxide init fish | source
+if type -q zoxide
+	zoxide init fish | source
+end
+
+if type -q fzf_configure_bindings
+	fzf_configure_bindings --directory=\cp --git_log=\cg --git_status=\cs --history= --processes= --variables=
+	set fzf_fd_opts --hidden --exclude .git/ -t f
+	set fzf_history_opts --preview="" --with-nth=4..
+end
+
+# TODO: mise is clobbering brew's command-not-found handler
+# should try to fix upstream: https://github.com/search?q=repo%3Ajdx%2Fmise+fish_command_not_found&type=code
+if type -q brew
+	set HOMEBREW_COMMAND_NOT_FOUND_HANDLER (brew --repository)/Library/Homebrew/command-not-found/handler.fish
+	if test -f $HOMEBREW_COMMAND_NOT_FOUND_HANDLER
+		source $HOMEBREW_COMMAND_NOT_FOUND_HANDLER
 	end
 end
