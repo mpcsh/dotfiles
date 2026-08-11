@@ -1,3 +1,18 @@
+----------------
+-- hot reloading
+----------------
+hs.pathwatcher
+	.new(os.getenv("HOME") .. "/.hammerspoon/", function(files)
+		for _, file in pairs(files) do
+			if file:sub(-4) == ".lua" then
+				hs.reload()
+				hs.printf("Reloading due to change in: %s", file)
+				break
+			end
+		end
+	end)
+	:start()
+
 -------------------------------------
 -- sync headphone EQ to output device
 -------------------------------------
