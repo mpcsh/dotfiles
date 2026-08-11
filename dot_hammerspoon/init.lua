@@ -1,3 +1,6 @@
+-------------------------------------
+-- sync headphone EQ to output device
+-------------------------------------
 local function audioDeviceChanged(event)
 	if event ~= "dOut" then
 		return
@@ -12,3 +15,27 @@ end
 
 hs.audiodevice.watcher.setCallback(audioDeviceChanged)
 hs.audiodevice.watcher.start()
+
+--------------------------------------------
+-- disable display filters for photo editing
+--------------------------------------------
+local photoApps = {
+	["Capture One"] = true,
+	["Photos"] = true,
+}
+local nightshift = table.concat({ os.getenv("HOME"), ".local", "bin", "nightshift" }, "/")
+local truetone = table.concat({ os.getenv("HOME"), ".local", "bin", "truetone" }, "/")
+
+local function appWatcher(_, event, app)
+	if event == hs.application.watcher.activated and photoApps[app:name()] then
+		hs.execute(table.concat({ nightshift, "off" }, " "))
+		hs.execute(table.concat({ truetone, "off" }, " "))
+	elseif
+		event == hs.application.watcher.deactivated and not photoApps[hs.application.frontmostApplication():name()]
+	then
+		hs.execute(table.concat({ nightshift, "schedule", "sunset" }, " "))
+		hs.execute(table.concat({ truetone, "on" }, " "))
+	end
+end
+
+hs.application.watcher.new(appWatcher):start()

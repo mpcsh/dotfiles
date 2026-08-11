@@ -37,3 +37,9 @@
   exact: true
   stripComponents: 1
   include: ["*/tpm", "*/bin/**", "*/bindings/**", "*/lib/**", "*/scripts/**"]
+
+.local/share/corebright:
+    type: archive
+    url: https://github.com/theodrosyimer/corebright/archive/main.tar.gz
+    exact: true
+    stripComponents: 1

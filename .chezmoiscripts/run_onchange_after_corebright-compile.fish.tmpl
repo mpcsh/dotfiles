@@ -1,0 +1,15 @@
+#!/usr/bin/env fish
+
+{{ $srcDir := joinPath .chezmoi.homeDir ".local/share/corebright" -}}
+{{ $files := glob (joinPath $srcDir "**/*") -}}
+{{ range $files -}}
+	# {{ . }}: {{ include . | sha256sum }}
+{{ end -}}
+{{ $binDir := joinPath .chezmoi.homeDir ".local/bin" -}}
+
+cd {{ $srcDir }}
+
+make clean
+make
+mkdir -p {{ $binDir }}
+PREFIX={{ joinPath .chezmoi.homeDir ".local" }} make install
