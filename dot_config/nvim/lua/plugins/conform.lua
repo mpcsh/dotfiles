@@ -18,7 +18,7 @@ return {
 			["*"] = { "codespell" },
 			["_"] = { "trim_whitespace" },
 		},
-		format_after_save = { lsp_format = "fallback" },
+		format_on_save = { lsp_format = "fallback" },
 		formatters = {
 			codespell = {
 				prepend_args = { "--ignore-words-list=" .. table.concat(require("utils").codespell_ignored_words, ",") },
