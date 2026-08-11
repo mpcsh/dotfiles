@@ -70,7 +70,6 @@ pkgs:
     - "iina"
     - "insta360-link-controller"
     - "linearmouse"
-    - "logitech-g-hub"
     - "loopback"
     - "metaimage"
     - "monitorcontrol"
