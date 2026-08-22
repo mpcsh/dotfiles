@@ -13,7 +13,7 @@ return {
 			"css_variables",
 			"html",
 			"lua_ls",
-			"ts_ls",
+			"vtsls",
 		},
 	},
 }

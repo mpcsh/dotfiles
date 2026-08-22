@@ -15,11 +15,12 @@ vim.lsp.config("lua_ls", {
 	},
 })
 
-local ignoredCodes = { 6133, 6196 }
-vim.lsp.config("ts_ls", {
+vim.lsp.config("vtsls", {
 	settings = {
-		diagnostics = {
-			ignoredCodes = ignoredCodes,
+		typescript = {
+			tsserver = {
+				maxTsServerMemory = 16384,
+			},
 		},
 	},
 })
