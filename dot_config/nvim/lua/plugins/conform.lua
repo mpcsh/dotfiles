@@ -15,14 +15,8 @@ return {
 			rust = { "rustfmt" },
 			typescript = { "prettierd" },
 			typescriptreact = { "prettierd" },
-			["*"] = { "codespell" },
 			["_"] = { "trim_whitespace" },
 		},
 		format_on_save = { lsp_format = "fallback" },
-		formatters = {
-			codespell = {
-				prepend_args = { "--ignore-words-list=" .. table.concat(require("utils").codespell_ignored_words, ",") },
-			},
-		},
 	},
 }
