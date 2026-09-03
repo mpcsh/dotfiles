@@ -42,8 +42,10 @@ pkgs:
     - "git-delta"
     - "telnet"
     - "terminal-notifier"
+    - "tree-sitter-cli"
   coder:
     - "delta"
+    - "tree-sitter"
   casks:
     - "1password"
     - "alcove"
