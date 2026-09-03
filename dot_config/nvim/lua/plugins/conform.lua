@@ -11,7 +11,7 @@ return {
 			javascript = { "prettierd" },
 			javascriptreact = { "prettierd" },
 			lua = { "stylua" },
-			md = { "prettierd" },
+			markdown = { "prettierd" },
 			rust = { "rustfmt" },
 			typescript = { "prettierd" },
 			typescriptreact = { "prettierd" },
