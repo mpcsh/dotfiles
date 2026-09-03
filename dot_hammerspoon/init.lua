@@ -37,10 +37,12 @@ hs.audiodevice.watcher.start()
 local photoApps = {
 	["ASTAP"] = true,
 	["Capture One"] = true,
+	["Media Configuration Tool"] = true,
 	["MetaImage"] = true,
 	["Photos"] = true,
 	["PowerPhotos"] = true,
 	["Professional Print & Layout"] = true,
+	["Professional Print & Layout Job Manager"] = true,
 	["Siril"] = true,
 }
 
