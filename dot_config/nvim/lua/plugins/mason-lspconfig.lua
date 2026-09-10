@@ -1,7 +1,7 @@
 return {
-	"williamboman/mason-lspconfig.nvim",
+	"mason-org/mason-lspconfig.nvim",
 	event = { "BufNewFile", "BufReadPost" },
-	dependencies = { "williamboman/mason.nvim", "neovim/nvim-lspconfig" },
+	dependencies = { "mason-org/mason.nvim", "neovim/nvim-lspconfig" },
 	opts = {
 		ensure_installed = {
 			"basedpyright",

@@ -3,8 +3,8 @@ return {
 	event = { "BufNewFile", "BufReadPost" },
 	dependencies = {
 		{
-			"williamboman/mason-lspconfig.nvim",
-			dependencies = { "williamboman/mason.nvim" },
+			"mason-org/mason-lspconfig.nvim",
+			dependencies = { "mason-org/mason.nvim" },
 		},
 	},
 }
