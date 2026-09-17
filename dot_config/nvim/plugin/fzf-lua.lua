@@ -62,6 +62,10 @@ require("fzf-lua").setup({
 		},
 	},
 	files = {
+		actions = {
+			-- this opens a buffer for each selected file instead of using the quickfix list
+			["enter"] = require("fzf-lua").actions.file_edit,
+		},
 		fd_opts = "--color=never --type f --hidden --exclude .git",
 	},
 	grep = {
