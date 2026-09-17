@@ -1,7 +1,10 @@
 return {
 	"Saghen/blink.cmp",
-	-- use a release tag to download pre-built binaries
-	version = "1.*",
+	version = "2.*",
+	dependencies = { "Saghen/blink.lib" },
+	build = function()
+		require("blink.cmp").build():pwait()
+	end,
 	event = { "BufNewFile", "BufReadPost" },
 	opts = {
 		sources = {
