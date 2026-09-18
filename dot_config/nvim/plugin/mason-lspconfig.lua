@@ -10,5 +10,6 @@ require("mason-lspconfig").setup({
 		"html",
 		"lua_ls",
 		"vtsls",
+		"yamlls",
 	},
 })

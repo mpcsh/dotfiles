@@ -9,6 +9,7 @@ lint.linters_by_ft = {
 	html = { "stylelint" },
 	css = { "stylelint" },
 	lua = { "selene" },
+	yaml = { "yamllint" },
 }
 
 lint.linters.selene.args = { [[--config -]] }

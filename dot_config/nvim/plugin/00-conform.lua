@@ -12,6 +12,7 @@ require("conform").setup({
 		rust = { "rustfmt" },
 		typescript = { "prettierd" },
 		typescriptreact = { "prettierd" },
+		yaml = { "yamlfmt" },
 		["_"] = { "trim_whitespace" },
 	},
 	format_on_save = { lsp_format = "fallback" },
