@@ -9,6 +9,7 @@ require("mason-lspconfig").setup({
 		"cssmodules_ls",
 		"html",
 		"lua_ls",
+		"tombi",
 		"vtsls",
 		"yamlls",
 	},

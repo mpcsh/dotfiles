@@ -10,6 +10,7 @@ require("conform").setup({
 		lua = { "stylua" },
 		markdown = { "prettierd" },
 		rust = { "rustfmt" },
+		toml = { "tombi" },
 		typescript = { "prettierd" },
 		typescriptreact = { "prettierd" },
 		yaml = { "yamlfmt" },
