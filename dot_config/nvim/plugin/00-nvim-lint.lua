@@ -2,13 +2,13 @@ vim.pack.add({ "https://github.com/mfussenegger/nvim-lint" })
 local lint = require("lint")
 
 lint.linters_by_ft = {
+	css = { "stylelint" },
+	html = { "stylelint" },
 	javascript = { "eslint_d" },
 	javascriptreact = { "eslint_d" },
+	lua = { "selene" },
 	typescript = { "eslint_d" },
 	typescriptreact = { "eslint_d" },
-	html = { "stylelint" },
-	css = { "stylelint" },
-	lua = { "selene" },
 	yaml = { "yamllint" },
 }
 
