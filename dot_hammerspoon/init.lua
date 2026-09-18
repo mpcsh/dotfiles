@@ -1,3 +1,5 @@
+hs.loadSpoon("EmmyLua")
+
 ----------------
 -- hot reloading
 ----------------

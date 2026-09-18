@@ -8,8 +8,8 @@ vim.lsp.log.set_level(vim.log.levels.WARN)
 vim.lsp.config("lua_ls", {
 	settings = {
 		Lua = {
-			diagnostics = {
-				globals = { "hs" },
+			workspace = {
+				library = { os.getenv("HOME") .. "/.hammerspoon/Spoons/EmmyLua.spoon/annotations" },
 			},
 		},
 	},

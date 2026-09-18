@@ -13,3 +13,7 @@ README.md
 {{ if ne .chezmoi.username "discord" -}}
 personalize
 {{ end -}}
+{{ if eq .chezmoi.os "darwin" -}}
+# EmmyLua generates its annotations at runtime; `chezmoi apply` will blow them away unless they're ignored
+.hammerspoon/Spoons/EmmyLua.spoon/annotations
+{{ end -}}
