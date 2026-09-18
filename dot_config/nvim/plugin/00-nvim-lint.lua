@@ -13,8 +13,7 @@ lint.linters_by_ft = {
 	yaml = { "yamllint" },
 }
 
-lint.linters.selene.args = { [[--config -]] }
-lint.linters.selene.stdin = [[std="vim"]]
+vim.list_extend(lint.linters.selene.args, { "--config", os.getenv("HOME") .. "/.config/selene/selene.toml" })
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost" }, {
 	callback = function()
