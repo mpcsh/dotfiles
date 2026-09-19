@@ -86,6 +86,9 @@ vim.opt.list = true
 -- highlight current line
 vim.opt.cursorline = true
 
+-- prevent the cursor from overlapping treesitter-context
+vim.opt.scrolloff = 9
+
 -- disable netrw (:h netrw-noload)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
