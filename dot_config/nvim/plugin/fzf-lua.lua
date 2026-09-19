@@ -69,6 +69,9 @@ require("fzf-lua").setup({
 		fd_opts = "--color=never --type f --hidden --exclude .git",
 	},
 	grep = {
+		-- fzf-lua intentionally does not pass this by default
+		-- https://github.com/88maomao/fzf-lua/commit/f438477d3628fcf7a8959dfdb96f0564193cf4d9
+		RIPGREP_CONFIG_PATH = vim.env.RIPGREP_CONFIG_PATH,
 		rg_opts = "--line-number --column --hidden --smart-case --glob !.git",
 	},
 	lsp = {
