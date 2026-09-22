@@ -1,5 +1,8 @@
 vim.pack.add({ "https://github.com/nvim-tree/nvim-web-devicons" })
 vim.pack.add({ "https://github.com/ibhagwan/fzf-lua" })
+
+local builtin_colorschemes = vim.fn.glob(vim.env.VIMRUNTIME .. "/colors/*.{vim,lua}", true, true)
+
 require("fzf-lua").setup({
 	keymap = {
 		fzf = {
@@ -37,34 +40,9 @@ require("fzf-lua").setup({
 		},
 	},
 	colorschemes = {
-		ignore_patterns = {
-			"^blue$",
-			"^darkblue$",
-			"^default$",
-			"^delek$",
-			"^desert$",
-			"^elflord$",
-			"^evening$",
-			"^habamax$",
-			"^industry$",
-			"^koehler$",
-			"^lunaperche$",
-			"^morning$",
-			"^murphy$",
-			"^pablo$",
-			"^peachpuff$",
-			"^quiet$",
-			"^retrobox$",
-			"^ron$",
-			"^shine$",
-			"^slate$",
-			"^sorbet$",
-			"^torte$",
-			"^vim$",
-			"^wildcharm$",
-			"^zaibatsu$",
-			"^zellner$",
-		},
+		ignore_patterns = vim.tbl_map(function(path)
+			return "^" .. vim.fn.fnamemodify(path, ":t:r") .. "$"
+		end, builtin_colorschemes),
 	},
 	files = {
 		actions = {
