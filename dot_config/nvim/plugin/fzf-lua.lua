@@ -1,6 +1,11 @@
 vim.pack.add({ "https://github.com/nvim-tree/nvim-web-devicons" })
 vim.pack.add({ "https://github.com/ibhagwan/fzf-lua" })
 require("fzf-lua").setup({
+	keymap = {
+		fzf = {
+			change = "first",
+		},
+	},
 	buffers = {
 		actions = {
 			-- this allows closing the current buffer
