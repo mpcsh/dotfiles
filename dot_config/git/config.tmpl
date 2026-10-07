@@ -32,7 +32,11 @@
 [core]
 	pager = delta
 	fileMode = false
-	untrackedCache = true
+	fsmonitor = true
+[feature]
+	manyFiles = true
+[maintenance]
+	repo = {{ .chezmoi.homeDir }}/work/discord
 [interactive]
 	diffFilter = delta --color-only --syntax-theme rose-pine-moon
 [color]
