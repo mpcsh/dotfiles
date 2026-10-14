@@ -1,2 +1,17 @@
 vim.pack.add({ "https://github.com/lewis6991/gitsigns.nvim" })
-require("gitsigns").setup({})
+local gitsigns = require("gitsigns")
+gitsigns.setup({})
+
+local bind = vim.keymap.set
+bind("n", "<Leader>j", function()
+	gitsigns.nav_hunk("next")
+end)
+bind("n", "<Leader>J", function()
+	gitsigns.nav_hunk("last")
+end)
+bind("n", "<Leader>k", function()
+	gitsigns.nav_hunk("prev")
+end)
+bind("n", "<Leader>K", function()
+	gitsigns.nav_hunk("first")
+end)
