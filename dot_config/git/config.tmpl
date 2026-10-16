@@ -21,6 +21,7 @@
 	hst = hist -n 10
 	fixup = commit --amend --no-edit
 	rewrite = rebase --committer-date-is-author-date
+	ls-stack = log --reverse --decorate-refs=refs/heads/ --simplify-by-decoration --format=%D main..HEAD
 [advice]
 	detachedHead = false
 [help]
