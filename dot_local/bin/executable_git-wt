@@ -1,0 +1,45 @@
+#!/usr/bin/env fish
+
+function log
+	echo "[git-wt] $argv"
+end
+
+function err
+	log $argv >&2
+	exit 1
+end
+
+argparse 'b/base=' -- $argv; or err "error parsing arguments from `$argv`"
+test (count $argv) -eq 1; or err "usage: git wt [-b|--base <ref>] <branch>"
+set -l branch $argv[1]
+
+set -l common_dir (git rev-parse --path-format=absolute --git-common-dir); or err "could not find git common dir"
+set -l container_dir (path dirname $common_dir)
+set -l template_dir $container_dir/.worktree-template
+set -l hooks_dir $container_dir/.worktree-hooks
+set -l worktree_dir $container_dir/$branch
+
+set -l missing_deps
+for dep in stow
+	type -q $dep; or set -a missing_deps $dep
+end
+set -q missing_deps[1]; and err "missing dependencies: $missing_deps"
+
+test -d $template_dir; or err "$template_dir not found"
+
+if git show-ref --verify --quiet refs/heads/$branch; or test -n "$(git for-each-ref "refs/remotes/*/$branch")"
+	set -q _flag_base; and err "branch $branch already exists; --base is not allowed"
+	git worktree add $worktree_dir $branch; or err "failed to create worktree at $worktree_dir"
+else
+	set -q _flag_base; or err "branch $branch does not exist; --base is required"
+	git worktree add -b $branch $worktree_dir $_flag_base; or err "failed to create worktree at $worktree_dir"
+end
+
+stow --no-folding -d $container_dir -t $worktree_dir (path basename $template_dir); or err "failed to link $template_dir into $worktree_dir"
+
+set -l post_create $hooks_dir/post-create
+if test -e $post_create
+	test -x $post_create; or err "$post_create is not executable"
+	cd $worktree_dir; or err "cannot cd into $worktree_dir"
+	$post_create; or err "failure while running $post_create"
+end
