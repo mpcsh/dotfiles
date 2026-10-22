@@ -27,6 +27,11 @@ set -q missing_deps[1]; and err "missing dependencies: $missing_deps"
 
 test -d $template_dir; or err "$template_dir not found"
 
+read -l -P "fetch before creating worktree? [Yn] " fetch_answer; or exit 1
+if not string match -qi 'n*' -- $fetch_answer
+	git fetch origin; or err "failed to fetch origin"
+end
+
 if git show-ref --verify --quiet refs/heads/$branch; or test -n "$(git for-each-ref "refs/remotes/*/$branch")"
 	set -q _flag_base; and err "branch $branch already exists; --base is not allowed"
 	git worktree add $worktree_dir $branch; or err "failed to create worktree at $worktree_dir"
