@@ -31,8 +31,9 @@ if git show-ref --verify --quiet refs/heads/$branch; or test -n "$(git for-each-
 	set -q _flag_base; and err "branch $branch already exists; --base is not allowed"
 	git worktree add $worktree_dir $branch; or err "failed to create worktree at $worktree_dir"
 else
-	set -q _flag_base; or err "branch $branch does not exist; --base is required"
-	git worktree add -b $branch $worktree_dir $_flag_base; or err "failed to create worktree at $worktree_dir"
+	set -l base origin/main
+	set -q _flag_base; and set base $_flag_base
+	git worktree add -b $branch $worktree_dir $base; or err "failed to create worktree at $worktree_dir"
 end
 
 stow --no-folding -d $container_dir -t $worktree_dir (path basename $template_dir); or err "failed to link $template_dir into $worktree_dir"
