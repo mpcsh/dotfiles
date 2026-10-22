@@ -7,6 +7,8 @@
 	rebase = merges
 [rebase]
 	autoStash = true
+	autoSquash = true
+	updateRefs = true
 [alias]
 	co = checkout
 	ci = commit
@@ -18,7 +20,7 @@
 	hst = hist -n 10
 	fixup = commit --amend --no-edit
 	rewrite = rebase --committer-date-is-author-date
-	ls-stack = log --reverse --decorate-refs=refs/heads/ --simplify-by-decoration --format=%D main..HEAD
+	ls-stack = log --reverse --decorate-refs=refs/heads/ --simplify-by-decoration --format=%D origin/main..HEAD
 [advice]
 	detachedHead = false
 [help]
