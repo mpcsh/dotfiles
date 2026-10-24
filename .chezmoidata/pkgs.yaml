@@ -50,7 +50,6 @@ pkgs:
     - "1password"
     - "alfred"
     - "alt-tab"
-    - "arc"
     - "audio-hijack"
     - "bartender"
     - "discord"
