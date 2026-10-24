@@ -4,6 +4,10 @@ local one_day = 24 * 60 * 60
 vim.api.nvim_create_autocmd("VimEnter", {
 	once = true,
 	callback = function()
+		if vim.fn.filereadable(log) == 0 then
+			vim.pack.update(nil, { force = true })
+			return nil
+		end
 		if vim.fn.executable("rg") == 0 then
 			vim.notify("can't check last vim.pack update time: `rg` not found", vim.log.levels.WARN)
 			return nil
