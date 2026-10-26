@@ -30,7 +30,7 @@
 	changed = yellow
 	untracked = red
 [core]
-	pager = delta
+	pager = fish -ic delta
 	fileMode = false
 	fsmonitor = true
 [feature]
@@ -39,8 +39,10 @@
 	repo = {{ .chezmoi.homeDir }}/work/discord
 [maintenance "prefetch"]
 	enabled = false
+[include]
+	path = ~/.config/delta/rose-pine.gitconfig
 [interactive]
-	diffFilter = delta --color-only --syntax-theme rose-pine-moon
+	diffFilter = fish -ic 'delta --color-only'
 [color]
 	status = always
 	ui = always
