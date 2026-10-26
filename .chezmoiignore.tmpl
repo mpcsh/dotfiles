@@ -1,19 +1,24 @@
 bootstrap
 LICENSE.md
 README.md
-{{ if eq .chezmoi.os "darwin" -}}
-.config/systemd/
-{{ end -}}
-{{ if ne .chezmoi.os "darwin" -}}
-.config/ghostty/
-{{ end -}}
-{{ if eq .chezmoi.username "discord" -}}
-.ssh/
-{{ end -}}
+
 {{ if ne .chezmoi.username "discord" -}}
 personalize
 {{ end -}}
+
+{{ if ne .chezmoi.os "darwin" -}}
+.config/ghostty/
+{{ end -}}
+
+{{ if ne .chezmoi.os "linux" -}}
+.config/systemd/
+{{ end -}}
+
 {{ if eq .chezmoi.os "darwin" -}}
 # EmmyLua generates its annotations at runtime; `chezmoi apply` will blow them away unless they're ignored
 .hammerspoon/Spoons/EmmyLua.spoon/annotations
+{{ end -}}
+
+{{ if eq .chezmoi.username "discord" -}}
+.ssh/
 {{ end -}}
