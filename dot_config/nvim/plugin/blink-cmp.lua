@@ -1,9 +1,16 @@
 vim.pack.add({ "https://github.com/Saghen/blink.lib" })
 vim.pack.add({ "https://github.com/Saghen/blink.cmp" })
 
+---@module "blink.lib"
 local cmp = require("blink.cmp")
 
-cmp.build():pwait()
+if not cmp.library_available() then
+	cmp.build():on_resolve(function()
+		vim.schedule(function()
+			require("blink.cmp.fuzzy").set_implementation("rust")
+		end)
+	end)
+end
 
 cmp.setup({
 	sources = {
