@@ -19,7 +19,7 @@ hs.pathwatcher
 -- sync headphone EQ to output device
 -------------------------------------
 local function audioDeviceChanged(event)
-	if event ~= "doubt" then
+	if event ~= "dOut" then
 		return
 	end
 
