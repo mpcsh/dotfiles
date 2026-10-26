@@ -8,6 +8,7 @@ if not cmp.library_available() then
 	cmp.build():on_resolve(function()
 		vim.schedule(function()
 			require("blink.cmp.fuzzy").set_implementation("rust")
+			vim.notify("blink.cmp library compilation completed", vim.log.levels.INFO)
 		end)
 	end)
 end
