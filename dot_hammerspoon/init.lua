@@ -19,6 +19,8 @@ hs.pathwatcher
 -- sync headphone EQ to output device
 -------------------------------------
 local function audioDeviceChanged(event)
+	hs.printf("Audio device changed event received: %s", event)
+
 	if event ~= "dOut" then
 		return
 	end
@@ -52,6 +54,8 @@ local nightshift = table.concat({ os.getenv("HOME"), ".local", "bin", "nightshif
 local truetone = table.concat({ os.getenv("HOME"), ".local", "bin", "truetone" }, "/")
 
 local function appWatcher(_, event, app)
+	hs.printf("Event received for %s: %s", app, event)
+
 	if event == hs.application.watcher.activated and photoApps[app:name()] then
 		hs.execute(table.concat({ nightshift, "off" }, " "))
 		hs.execute(table.concat({ truetone, "off" }, " "))
