@@ -118,14 +118,6 @@ function cz --wraps chezmoi
 	command chezmoi $argv
 end
 
-function delta --wraps delta
-	set -l theme rose-pine-moon
-	if test "$fish_terminal_color_theme" = light
-		set theme rose-pine-dawn
-	end
-	command delta --syntax-theme=$theme $argv
-end
-
 function fzf --wraps fzf
 	set -l _fzf_rose_pine_moon "
 		fg:#908caa,
@@ -250,6 +242,14 @@ if type -q bat
 	set -gx BAT_THEME auto
 	set -gx BAT_THEME_DARK rose-pine-moon
 	set -gx BAT_THEME_LIGHT rose-pine-dawn
+end
+
+function __export_delta_features --on-variable fish_terminal_color_theme
+	if test "$fish_terminal_color_theme" = light
+		set -gx DELTA_FEATURES light-mode
+	else
+		set -gx DELTA_FEATURES dark-mode
+	end
 end
 
 if type -q jj

@@ -30,7 +30,7 @@
 	changed = yellow
 	untracked = red
 [core]
-	pager = fish -ic delta
+	pager = delta
 	fileMode = false
 	fsmonitor = true
 [feature]
@@ -42,7 +42,7 @@
 [include]
 	path = ~/.config/delta/rose-pine.gitconfig
 [interactive]
-	diffFilter = fish -ic 'delta --color-only'
+	diffFilter = delta --color-only
 [color]
 	status = always
 	ui = always
@@ -61,14 +61,14 @@
 	line-numbers = true
 	navigate = true
 	true-color = always
-	file-style = bold brightwhite
-	file-decoration-style = bold brightwhite box
-	line-numbers-left-style = black
-	line-numbers-right-style = black
-	line-numbers-zero-style = black
-	line-numbers-minus-style = red
-	line-numbers-plus-style = green
-	minus-emph-style = black red
-	plus-emph-style = black green
+	features = dark-mode
+[delta "light-mode"]
+	light = true
+	features = rose-pine-dawn
+	syntax-theme = rose-pine-dawn
+[delta "dark-mode"]
+	dark = true
+	features = rose-pine-moon
+	syntax-theme = rose-pine-moon
 [rerere]
 	enabled = 1
