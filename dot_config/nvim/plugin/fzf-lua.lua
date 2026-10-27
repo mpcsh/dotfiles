@@ -51,11 +51,23 @@ require("fzf-lua").setup({
 		},
 		fd_opts = "--color=never --type f --hidden --exclude .git",
 	},
+	git = {
+		status = {
+			actions = {
+				-- this opens a buffer for each selected file instead of using the quickfix list
+				["enter"] = require("fzf-lua").actions.file_edit,
+			},
+		},
+	},
 	grep = {
 		-- fzf-lua intentionally does not pass this by default
 		-- https://github.com/88maomao/fzf-lua/commit/f438477d3628fcf7a8959dfdb96f0564193cf4d9
 		RIPGREP_CONFIG_PATH = vim.env.RIPGREP_CONFIG_PATH,
 		rg_opts = "--line-number --column --hidden --smart-case --glob !.git",
+		actions = {
+			-- this opens a buffer for each selected file instead of using the quickfix list
+			["enter"] = require("fzf-lua").actions.file_edit,
+		},
 	},
 	lsp = {
 		ignore_current_line = true,
