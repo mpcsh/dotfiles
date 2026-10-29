@@ -51,7 +51,6 @@ pkgs:
     - "alfred"
     - "alt-tab"
     - "audio-hijack"
-    - "bartender"
     - "discord"
     - "discord@ptb"
     - "discord@canary"
