@@ -83,4 +83,3 @@ pkgs:
     - "ungoogled-chromium"
     - "wireshark-app"
     - "zen"
-    - "zoom"
