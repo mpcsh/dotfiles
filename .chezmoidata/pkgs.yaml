@@ -82,4 +82,5 @@ pkgs:
     - "steam"
     - "ungoogled-chromium"
     - "wireshark-app"
+    - "zen"
     - "zoom"
