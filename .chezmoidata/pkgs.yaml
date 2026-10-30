@@ -80,5 +80,6 @@ pkgs:
     - "soundsource"
     - "steam"
     - "ungoogled-chromium"
+    - "wifiman"
     - "wireshark-app"
     - "zen"
