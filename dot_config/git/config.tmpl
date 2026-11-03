@@ -21,6 +21,7 @@
 	fixup = commit --amend --no-edit
 	rewrite = rebase --committer-date-is-author-date
 	ls-stack = log --reverse --decorate-refs=refs/heads/ --simplify-by-decoration --format=%D origin/main..HEAD
+	why-config = config --show-origin --get-all
 [advice]
 	detachedHead = false
 [help]
