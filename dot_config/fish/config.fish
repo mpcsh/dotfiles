@@ -94,7 +94,7 @@ end
 # interactive-only config
 #########################
 
-if ! status --is-interactive
+if ! status is-interactive
 	return
 end
 
