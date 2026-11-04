@@ -198,22 +198,24 @@ end
 function __adapt_to_system_color_theme --on-variable fish_terminal_color_theme
 	set -l fzf_opts_base "--layout=reverse --height=50% --preview-window=wrap --marker='*'"
 	if test "$fish_terminal_color_theme" = light
+		set -gx BAT_THEME rose-pine-dawn
 		set -gx DELTA_FEATURES light-mode
 		set -gx FZF_DEFAULT_OPTS "--color=fg:#797593,bg:#faf4ed,hl:#d7827e,fg+:#575279,bg+:#f2e9e1,hl+:#d7827e,border:#dfdad9,header:#286983,gutter:#faf4ed,spinner:#ea9d34,info:#56949f,pointer:#907aa9,marker:#b4637a,prompt:#797593 $fzf_opts_base"
+		if test -n "$LS_COLORS_LIGHT"
+			set -gx LS_COLORS $LS_COLORS_LIGHT
+		end
 	else
+		set -gx BAT_THEME rose-pine-moon
 		set -gx DELTA_FEATURES dark-mode
 		set -gx FZF_DEFAULT_OPTS "--color=fg:#908caa,bg:#232136,hl:#ea9a97,fg+:#e0def4,bg+:#393552,hl+:#ea9a97,border:#44415a,header:#3e8fb0,gutter:#232136,spinner:#f6c177,info:#9ccfd8,pointer:#c4a7e7,marker:#eb6f92,prompt:#908caa $fzf_opts_base"
+		if test -n "$LS_COLORS_DARK"
+			set -gx LS_COLORS $LS_COLORS_DARK
+		end
 	end
 end
 
 if type -q atuin
 	atuin init fish --disable-up-arrow | source
-end
-
-if type -q bat
-	set -gx BAT_THEME auto
-	set -gx BAT_THEME_DARK rose-pine-moon
-	set -gx BAT_THEME_LIGHT rose-pine-dawn
 end
 
 if type -q jj
@@ -226,6 +228,11 @@ end
 
 if type -q pixlet
 	pixlet completion fish | source
+end
+
+if type -q vivid
+	set -g LS_COLORS_LIGHT (vivid generate rose-pine-dawn)
+	set -g LS_COLORS_DARK (vivid generate rose-pine-moon)
 end
 
 if type -q zoxide

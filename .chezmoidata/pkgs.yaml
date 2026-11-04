@@ -33,6 +33,7 @@ pkgs:
     - "stow"
     - "tealdeer"
     - "tmux"
+    - "vivid"
     - "watchexec"
     - "wget"
     - "xh"
