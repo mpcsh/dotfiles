@@ -5,6 +5,30 @@ vim.opt.shell = "/usr/bin/env sh"
 vim.g.mapleader = "\\"
 vim.g.maplocalleader = "\\"
 
+require("vim._core.ui2").enable({
+	msg = {
+		targets = { progress = "msg" },
+	},
+})
+
+vim.api.nvim_create_autocmd("LspProgress", {
+	callback = function(ev)
+		local client = vim.lsp.get_client_by_id(ev.data.client_id)
+		local value = ev.data.params.value
+		if not client or type(value) ~= "table" then
+			return
+		end
+		vim.api.nvim_echo({ { value.message or (value.kind == "end" and "done" or "") } }, false, {
+			id = "lsp." .. client.id .. "." .. ev.data.params.token,
+			kind = "progress",
+			source = client.name,
+			title = value.title,
+			status = value.kind == "end" and "success" or "running",
+			percent = value.kind == "end" and 100 or value.percentage,
+		})
+	end,
+})
+
 --------------
 -- colorscheme
 --------------

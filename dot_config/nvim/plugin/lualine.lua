@@ -8,7 +8,7 @@ require("lualine").setup({
 		lualine_a = { "mode" },
 		lualine_b = { { "filename", path = 1 } },
 		lualine_c = {},
-		lualine_x = {},
+		lualine_x = { vim.ui.progress_status },
 		lualine_y = { "filetype" },
 		lualine_z = { "location" },
 	},
