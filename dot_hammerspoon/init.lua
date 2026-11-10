@@ -59,15 +59,13 @@ local function appWatcher(_, event, app)
 	if event == hs.application.watcher.activated and photoApps[app:name()] then
 		hs.execute(table.concat({ nightshift, "off" }, " "))
 		hs.execute(table.concat({ truetone, "off" }, " "))
-	elseif
-		event == hs.application.watcher.deactivated
-		and not (
-			photoApps[hs.application.frontmostApplication():name()]
-			or hs.application.frontmostApplication():name() == "Finder"
-		)
-	then
-		hs.execute(table.concat({ nightshift, "schedule", "sunset" }, " "))
-		hs.execute(table.concat({ truetone, "on" }, " "))
+	elseif event == hs.application.watcher.deactivated then
+		local frontmost = hs.application.frontmostApplication()
+		local name = frontmost and frontmost:name()
+		if not (photoApps[name] or name == "Finder") then
+			hs.execute(table.concat({ nightshift, "schedule", "sunset" }, " "))
+			hs.execute(table.concat({ truetone, "on" }, " "))
+		end
 	end
 end
 
