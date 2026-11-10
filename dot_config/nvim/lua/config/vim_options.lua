@@ -7,7 +7,7 @@ vim.g.maplocalleader = "\\"
 
 require("vim._core.ui2").enable({
 	msg = {
-		targets = { progress = "msg" },
+		targets = "msg",
 	},
 })
 
